@@ -1,0 +1,29 @@
+{
+  
+    "type": "botanypots:soil",
+  
+  
+  
+    "input": {
+  
+      "item": "kubejs:chromatic_compound_block"
+  
+    },
+  
+  
+  
+    "display": {
+  
+      "block": "kubejs:chromatic_compound_block"
+  
+    },
+  
+  
+  
+    "growthModifier": 1,
+  
+  
+  
+    "categories": ["chromatic"]
+  
+}
