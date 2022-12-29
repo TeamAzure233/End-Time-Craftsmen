@@ -1,5 +1,134 @@
 events.listen('recipes', event => {
     event.custom({
+      "type": "interactio:item_fluid_transform",
+      "inputs": [
+      {
+        "item": "gofish:can_dirty",
+        "count": 1,
+        "return_chance": 0
+      }
+      ],
+      "fluid": {
+      "fluid": "minecraft:water"
+      },
+      "output": {
+      "entries": [
+      {
+        "result": {
+          "item": "gofish:can_empty",
+          "count": 1
+        },
+        "weight": 10
+      } 
+      ],
+      },
+      "consume_fluid": 0.01
+    })
+    event.custom({
+      "type": "interactio:item_fluid_transform",
+      "inputs": [
+      {
+        "item": 'quark:deepslate',
+        "count": 1,
+        "return_chance": 0
+      }
+      ],
+      "fluid": {
+      "fluid": "minecraft:lava"
+      },
+      "output": {
+      "entries": [
+      {
+        "result": {
+          "item": "minecraft:netherrack",
+          "count": 1
+        },
+        "weight": 10
+      } 
+      ],
+        "empty_weight": 0
+      },
+      "consume_fluid": 1
+    })
+    event.custom({
+      "type": "interactio:item_fluid_transform",
+      "inputs": [
+      {
+        "item": 'minecraft:gunpowder',
+        "count": 3,
+        "return_chance": 0
+      }
+      ],
+      "fluid": {
+      "fluid": "minecraft:lava"
+      },
+      "output": {
+      "entries": [
+      {
+        "result": {
+          "item": 'minecraft:blaze_powder',
+          "count": 1
+        },
+        "weight": 8
+      } 
+      ],
+        "empty_weight": 2
+      },
+      "consume_fluid": 1
+    })
+    event.custom({
+      "type": "interactio:item_fluid_transform",
+      "inputs": [
+      {
+        "tag": 'forge:mushrooms',
+        "count": 1,
+        "return_chance": 0
+      }
+      ],
+      "fluid": {
+      "fluid": "minecraft:lava"
+      },
+      "output": {
+      "entries": [
+      {
+        "result": {
+          "item": 'minecraft:nether_wart',
+          "count": 1
+        },
+        "weight": 10
+      } 
+      ],
+        "empty_weight": 0
+      },
+      "consume_fluid": 1
+    })
+    event.custom({
+      "type": "interactio:item_fluid_transform",
+      "inputs": [
+      {
+        "item": "create:brass_block",
+        "count": 10,
+        "return_chance": 0.01
+      }
+      ],
+      "fluid": {
+      "fluid": "tconstruct:blazing_blood"
+      },
+      "output": {
+      "entries": [
+      {
+        "result": {
+          "item": "kubejs:blaze_brass",
+          "count": 1
+        },
+        "weight": 3
+      } 
+      ],
+        "empty_weight": 7
+      },
+      "consume_fluid": 0.8
+    })
+    event.custom({
         "type": "interactio:item_explode",
         "inputs": [{
             "item": "kubejs:fragments",
@@ -43,73 +172,4 @@ events.listen('recipes', event => {
         "empty_weight": 1
       }
   })
-  event.custom({
-    "type": "interactio:item_explode",
-    "inputs": [{
-        "item": "extendedcrafting:ultimate_singularity",
-        "count": 1
-        }
-    ],
-        "output": {
-          "entries": [
-            {
-                "result": {
-                  "item": "kubejs:world_heart",
-                  "count": 1
-                },
-                "weight": 0.001
-            },
-            {
-              "result": {
-                "item": "kubejs:natural_heart",
-                "count": 1
-              },
-              "weight": 1
-            }
-            ,{
-              "result": {
-                "item": "kubejs:magical_heart",
-                "count": 1
-              },
-              "weight": 1
-            }
-            ,{
-                "result": {
-                  "item": "kubejs:industrial_heart",
-                  "count": 1
-                },
-                "weight": 1
-            }
-            ,{
-                "result": {
-                  "item": "create:creative_motor",
-                  "count": 1
-                },
-                "weight": 1
-            }
-            ,{
-                "result": {
-                  "item": "create:creative_fluid_tank",
-                  "count": 1
-                },
-                "weight": 1
-            }
-            ,{
-                "result": {
-                  "item": "thermal:rf_coil_creative_augment",
-                  "count": 1
-                },
-                "weight": 1
-            }
-            ,{
-                "result": {
-                  "item": "appliedenergistics2:creative_storage_cell",
-                  "count": 1
-                },
-                "weight": 1
-            }
-          ],
-          "empty_weight": 2.999,
-        }
-     })
 })

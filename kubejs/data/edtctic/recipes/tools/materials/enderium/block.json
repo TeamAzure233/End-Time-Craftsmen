@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "thermal:enderium_block"
+  },
+  "value": 9,
+  "needed": 1,
+  "material": "edtctic:enderium",
+  "leftover": {
+    "item": "thermal:enderium_ingot"
+  }
+}

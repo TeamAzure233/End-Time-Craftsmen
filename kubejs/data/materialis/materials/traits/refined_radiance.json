@@ -1,0 +1,32 @@
+{
+  "default": [
+    {
+      "name": "materialis:residual_light",
+      "level": 1
+    },
+    {
+      "name": "tconstruct:lightweight",
+      "level": 3
+    },
+    {
+      "name": "tconstruct:enhanced",
+      "level": 1
+    },
+    {
+      "name": "tconstruct:experienced",
+      "level": 3
+    },
+    {
+      "name": "tconstruct:lustrous",
+      "level": 5
+    },
+    {
+      "name": "tconstruct:luck",
+      "level": 3
+    },
+    {
+      "name": "tconstruct:glowing",
+      "level": 1
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "kubejs:cast_iron_block"
+  },
+  "value": 9,
+  "needed": 1,
+  "material": "edtctic:cast_iron",
+  "leftover": {
+    "item": "steampowered:cast_iron_ingot"
+  }
+}

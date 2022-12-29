@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "edtctic:insanium",
+  "temperature": 1100,
+  "result": {
+    "fluid": "kubejs:molten_insanium",
+    "amount": 144
+  }
+}

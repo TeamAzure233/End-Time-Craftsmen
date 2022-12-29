@@ -1,5 +1,5 @@
 onEvent('block.modification', event => {
-    event.modify('#minecraft:logs', block => {
-        block.requiredTool(True)
+    event.modify('minecraft:torch', block => {
+      block.lightEmission = 15
     })
-})
+  })

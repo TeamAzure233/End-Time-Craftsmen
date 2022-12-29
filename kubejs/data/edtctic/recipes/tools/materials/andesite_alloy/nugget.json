@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "kubejs:andesite_alloy_nugget"
+  },
+  "value": 1,
+  "needed": 4,
+  "material": "edtctic:andesite_alloy"
+}

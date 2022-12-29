@@ -1,0 +1,11 @@
+{
+    "name": "Game Flow",
+    "icon": "supplementaries:sign_post_dreamwood",
+    "category": "gamestages",
+    "pages": [
+        {
+            "type": "text",
+            "text": "This chapter introduces the general flow of the game"
+        }
+    ]
+}

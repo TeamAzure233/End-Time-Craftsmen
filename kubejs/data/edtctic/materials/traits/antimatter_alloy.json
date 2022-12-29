@@ -1,0 +1,20 @@
+{
+    "default": [
+      {
+        "name": "tconstruct:insatiable",
+        "level": 5
+      },
+      {
+        "name": "tconstruct:momentum",
+        "level": 5
+      },
+      {
+        "name": "tconstruct:lightweight",
+        "level": 5
+      },
+      {
+        "name": "tconstruct:unbreakable",
+        "level": 1
+      }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "create:zinc_block"
+  },
+  "value": 9,
+  "needed": 1,
+  "material": "edtctic:zinc",
+  "leftover": {
+    "item": "create:zinc_ingot"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "thermal:lumium_block"
+  },
+  "value": 9,
+  "needed": 1,
+  "material": "edtctic:lumium",
+  "leftover": {
+    "item": "thermal:lumium_ingot"
+  }
+}

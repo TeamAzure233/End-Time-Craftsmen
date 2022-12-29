@@ -1,0 +1,14 @@
+{
+    "tooltip.itemstages.hidden_name":"未知物品",
+    "tooltip.itemstages.item.description":"你需要阶段 [%s] 以正常获得与使用这个物品",
+    "message.itemstages.drop":"你丢掉了 %s.",
+    "message.itemstages.mine":"你对 %s 知之甚少",
+    "message.itemstages.attack":"你对 %s 知之甚少",
+    "message.itemstages.use":"你对 %s 知之甚少",
+    "message.itemstages.pickup":"你对 %s 知之甚少",
+    "tooltip.itemstages.debug.drop":"- 这个物品将会从你的背包中丢掉",
+    "tooltip.itemstages.debug.pickup":"- 这个物品不能被捡起",
+    "tooltip.itemstages.debug.use":"- 这个物品不能被使用",
+    "tooltip.itemstages.debug.attack":"- 这个物品不能作为武器来使用",
+    "tooltip.itemstages.debug.jei":"- 这个物品将会在JEI中隐藏"
+}

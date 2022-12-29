@@ -1,0 +1,24 @@
+{
+  "default": [
+    {
+      "name": "materialis:manaripper",
+      "level": 2
+    },
+    {
+      "name": "materialis:manashield",
+      "level": 2
+    },
+    {
+      "name": "materialis:terrabeam",
+      "level": 2
+    },
+    {
+      "name": "materialis:pixiecaller",
+      "level": 2
+    },
+    {
+      "name": "materialis:manaburner",
+      "level": 2
+    }
+  ]
+}
