@@ -20,7 +20,7 @@ onEvent('item.registry', event => {
     event.create('asylum_of_elves').displayName('精灵之庇护').glow(true).rarity(RARITY_UNCOMMON)
     event.create('asylum_of_starlight').displayName('星光之庇护').glow(true).rarity(RARITY_UNCOMMON)
 
-    event.create('catalyst_star').displayName('催化之星').glow(true).rarity(RARITY_UNCOMMON)
+    event.create('catalyst_star').displayName('催化之星').glow(true).rarity(RARITY_UNCOMMON).tooltip('未完成物品')
     event.create('kinetic_mechanism').displayName('动能构件')
     event.create('liquid_mechanism').displayName('流体构件')
     event.create('steam_mechanism').displayName('蒸汽构件')
@@ -65,8 +65,4 @@ onEvent('item.registry', event => {
     event.create('antimatter_alloy').displayName('反物质合金').glow(true).rarity(RARITY_EPIC)
     event.create('infinite_evidence').displayName('§6无尽之证').glow(true).rarity(RARITY_EPIC).tooltip('§6如果你做出这个，那么你就毕业了！')
     event.create('dream_mechanism').displayName('梦之构件').rarity(RARITY_EPIC)
-
-    event.create('taz_mascot').displayName('希洛娜多').rarity(RARITY_EPIC)
-    event.create('taz_dev_pigeon').displayName('TAz开发组之鸽').rarity(RARITY_EPIC)
-    event.create('taz_art_pigeon').displayName('TAz美术组之鸽').rarity(RARITY_EPIC)
 })

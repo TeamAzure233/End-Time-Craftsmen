@@ -117,5 +117,13 @@ onEvent('ftbquests.custom_reward.0909AEC1A58A8710', event => {
         callback.data.tell('§b是的，结束了，该醒了……');
         event.server.runCommandSilent(`effect give @p haoyuezeughaus:nothingness 60 1`)
         event.server.runCommandSilent(`gamemode spectator @p`);
+        event.player.giveInHand('haoyuezeughaus:yong_heng_zhi_ren');
+        callback.data.tell('§9[作者的话]§b最后的最后，感谢您游玩该整合包！');
+        callback.data.tell('§9[作者的话]§b如果喜欢这个整合包，记得给我们的官号三连+关注，这是我们坚持下去的动力！');
+        callback.data.tell('§9[作者的话]§b如果不喜欢的话就去看看别的包吧，肯定有喜欢的');
+        callback.data.tell('§9[作者的话]§b也可以期待我们的下一个整合包呢~');
+    })
+    event.server.scheduleInTicks(200, event.server, function (callback) {
+        callback.data.tell('[SYSTEM]§9在击败梦境守护者后，你从梦中醒了过来，看着手里的永恒之刃，不禁回想起那个就像自己亲历的那个梦，这时，你突然发现这个世界正在崩解！你被一股强大的引力吸入了虚空，就算永恒之刃也无法与这股力量对抗……');
     })
 })

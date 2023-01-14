@@ -1,8 +1,4 @@
 {
-    "block.create.cogwheel":"木齿轮",
-    "block.create.large_cogwheel":"木大齿轮",
-    "item.mekanism.salt":"工业盐",
-    "item.croptopia.salt":"食用盐",
     "block.realistictorches.torch":"火把",
     "item.realistictorches.matchbox":"火柴盒",
     "item.realistictorches.glowstone_crystal":"辉光水晶",
@@ -20,7 +16,7 @@
     "edtc.tip.basin_filter": "工作盆的配方过滤器是个好东西（才不是因为懒得改配方才加的这条",
     "edtc.tip.pots": "如果找不到足够的材料，不妨去试一下种植吧",
     "edtc.tip.ma": "强烈建议发展神秘农业",
-    "edtc.tip.website": "我们（整合包开发团队）的官网：https://teamazure233.github.io/",
+    "edtc.tip.website": "我们的官网：https://teamazure233.github.io/",
     "edtc.tip.mascot": "你永远不知道我们有多少吉祥物。或许没有吉祥物，亦或是所有人都是吉祥物（",
     "edtc.tip.coding": "《论听音游曲写代码手会不会起飞》",
     "edtc.tip.github": "整合包已在GitHub上开源",
@@ -59,5 +55,5 @@
     "edtc.tip.aw": "阿伟，你又在打电动哦，休息一下吧",
     "edtc.tip.gostudy": "初三/高三党 现在 立刻 马上 去学习！",
     "edtc.tip.nin": "工作室成员现状：您 您 您 （ （ （",
-    "edtc.tip.tools": "原版的工具只能用作合成，并不能使用（当然还是能拿来打怪（小声"
+    "edtc.tip.tools": "原版的工具（锹和剑除外）只能用作合成，并不能使用（当然还是能拿来打怪（小声"
 }

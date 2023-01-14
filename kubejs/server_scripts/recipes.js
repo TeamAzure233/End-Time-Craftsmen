@@ -1008,8 +1008,6 @@ onEvent('recipes', event => {
         event.recipes.createPressing(['kubejs:incomplete_oil_cake'], ['kubejs:incomplete_oil_cake']),
         event.recipes.createCutting('gofish:oil_cake', 'kubejs:incomplete_oil_cake').processingTime(25)
     ]).transitionalItem('kubejs:incomplete_oil_cake').loops(1)
-    
-    //WIP 月饼（占位符
 
     event.recipes.createSequencedAssembly([
         Item.of('gofish:universal_wrench').withChance(80.0),
@@ -1114,7 +1112,6 @@ onEvent('recipes', event => {
         event.recipes.createDeploying('kubejs:incomplete_core_desolate', ['kubejs:incomplete_core_desolate', 'minecraft:end_crystal']),
         event.recipes.createPressing(['kubejs:core_desolate'], ['kubejs:incomplete_core_desolate'])
    ]).transitionalItem('kubejs:incomplete_core_desolate').loops(1)
-
     event.shaped('4x kubejs:ether_drop', [
         'EEE',
         'EGE',
@@ -1138,17 +1135,16 @@ onEvent('recipes', event => {
         event.recipes.createDeploying('kubejs:incomplete_core_hollow', ['kubejs:incomplete_core_hollow', 'minecraft:ender_eye']),
         event.recipes.createPressing(['kubejs:core_hollow'], ['kubejs:incomplete_core_hollow'])
     ]).transitionalItem('kubejs:incomplete_core_hollow').loops(1)
-
     event.remove({id: 'rftoolsbase:dimensionalshard'})
     event.remove({id: 'create:mixing/chromatic_compound'})
-    event.recipes.createMixing(['6x create:chromatic_compound'],['4x astralsorcery:illumination_powder','4x astralsorcery:nocturnal_powder','4x #forge:dusts/obsidian','10x kubejs:rose_quartz_block','kubejs:chorus_chrome_block','botania:terrasteel_block']).superheated()
+    event.recipes.createMixing(['6x create:chromatic_compound'],['3x #forge:dusts/glowstone','2x #forge:dusts/obsidian','4x kubejs:rose_quartz_block','kubejs:chorus_chrome_block','botania:terrasteel_block','astralsorcery:starmetal']).superheated()
 
     event.custom({
-		"type": "thermal:rock_gen",
-		"adjacent":"minecraft:packed_ice",
-		"below":"kubejs:andesite_alloy_block",
-		"result": {"item":'minecraft:andesite'}
-	})
+		  "type": "thermal:rock_gen",
+		  "adjacent":"minecraft:packed_ice",
+		  "below":"kubejs:andesite_alloy_block",
+		  "result": {"item":'minecraft:andesite'}
+	  })
 
     event.remove({id: 'mysticalagriculture:infusion_altar'})
     event.recipes.thermal.smelter('mysticalagriculture:infusion_altar', ['24x mysticalagriculture:supremium_gemstone_block', '8x thermal:lumium_block', '64x minecraft:stone']).energy(1048576)
@@ -1248,7 +1244,6 @@ onEvent('recipes', event => {
         event.recipes.createDeploying('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism', 'minecraft:clock']),
         event.recipes.createPressing('create:incomplete_precision_mechanism', ['create:incomplete_precision_mechanism'])
       ]).transitionalItem('create:incomplete_precision_mechanism').loops(1)
-
     event.shaped('kubejs:precision_mechanical_box', [
         'AAA',
         'ABA',
@@ -1973,11 +1968,11 @@ onEvent('recipes', event => {
         event.recipes.createDeploying('kubejs:incomplete_chromatic_mechanism', ['kubejs:incomplete_chromatic_mechanism', 'create:shadow_steel']),
         event.recipes.createDeploying('kubejs:incomplete_chromatic_mechanism', ['kubejs:incomplete_chromatic_mechanism', 'create:refined_radiance']),
         event.recipes.createDeploying('kubejs:incomplete_chromatic_mechanism', ['kubejs:incomplete_chromatic_mechanism', 'createaddition:overcharged_alloy']),
-        event.recipes.createDeploying('kubejs:incomplete_chromatic_mechanism', ['kubejs:incomplete_chromatic_mechanism', 'create:chromatic_compound']),
         event.recipes.createPressing('kubejs:incomplete_chromatic_mechanism', ['kubejs:incomplete_chromatic_mechanism']),
       ]).transitionalItem('kubejs:incomplete_chromatic_mechanism').loops(1)
 
     event.remove({output: '#kubejs:chromatic_machine'})
+    event.smithing('mekanism:formulaic_assemblicator', 'thermal:machine_crafter', 'mekanism:basic_control_circuit')
     event.recipes.createMechanicalCrafting('mekanismgenerators:wind_generator', [
         '  O  ',
         '  A  ',
@@ -2580,7 +2575,7 @@ onEvent('recipes', event => {
             },
             "output":
             {
-                "item":"mekanism:basic_control_circuit"
+                "item":"2x mekanism:basic_control_circuit"
             }
         }
     )
@@ -2608,8 +2603,7 @@ onEvent('recipes', event => {
     event.remove({id: 'mekanism:control_circuit/ultimate'})
     event.remove({id: 'mekanismgenerators:generator/wind'})
     event.remove({id: 'mekanism:teleportation_core'})
-    event.remove({id: 'mekanismgenerators:fission_reactor/casing'})
-    event.remove({id: 'mekanismgenerators:reactor/frame'})
+    event.replaceInput({id: 'mekanismgenerators:reactor/frame'}, 'mekanism:steel_casing', 'mekanismgenerators:fission_reactor_casing')
     event.remove({id: 'mekanism:hazmat_mask'})
     event.remove({id: 'mekanism:hazmat_gown'})
     event.remove({id: 'mekanism:hazmat_pants'})
@@ -2925,7 +2919,7 @@ onEvent('recipes', event => {
                 "count": 1
               }
             ],
-            "focus_constellation": "astralsorcery:horologium",
+            "focus_constellation": "astralsorcery:aevitas",
             "relay_inputs": [
                 {
                     "item": "endless:neutronium_ingot"
@@ -2987,7 +2981,7 @@ onEvent('recipes', event => {
                 "count": 1
               }
             ],
-            "focus_constellation": "astralsorcery:aevitas",
+            "focus_constellation": "astralsorcery:mineralis",
             "relay_inputs": [
                 {
                     "item": "endless:neutronium_ingot"
@@ -3239,7 +3233,7 @@ onEvent('recipes', event => {
             "duration": 200,
             "starlight": 800,
             "pattern": [
-              "FBBBF",
+              "FBMBF",
               "ELJLE",
               "GIKHG",
               "DLALD",
@@ -3269,11 +3263,7 @@ onEvent('recipes', event => {
                 "tag": "astralsorcery:stardust"
               },
               "G": {
-                "type": "forge:nbt",
-                "item": "astralsorcery:attuned_celestial_crystal",
-                "nbt": {
-                  "constellationName": "astralsorcery:vicio"
-                }
+                "tag": "kubejs:shifting_stars"
               },
               "H": {
                 "item": "appliedenergistics2:wireless_terminal"
@@ -3289,6 +3279,9 @@ onEvent('recipes', event => {
               },
               "L": {
                 "item": "projecte:red_matter"
+              },
+              "M": {
+                "item": "thermal:upgrade_augment_3"
               }
             },
             "output": [
@@ -3538,4 +3531,102 @@ onEvent('recipes', event => {
     )
 
     event.remove({output: '#kubejs:disabled'})
+
+    event.custom(
+      {
+          "type": "astralsorcery:altar",
+          "altar_type": 2,
+          "duration": 100,
+          "starlight": 600,
+          "pattern": [
+            "GH_HD",
+            "IDADI",
+            "_BFC_",
+            "IDEDI",
+            "DH_HG"
+          ],
+          "key": {
+            "A": {
+              "item": "minecraft:red_dye"
+            },
+            "B": {
+              "item": "minecraft:blue_dye"
+            },
+            "C": {
+              "item": "minecraft:yellow_dye"
+            },
+            "D": {
+              "item": "minecraft:feather"
+            },
+            "E": {
+              "item": "minecraft:black_dye"
+            },
+            "F": {
+              "item": "minecraft:white_dye"
+            },
+            "G": {
+              "item": "astralsorcery:resonating_gem"
+            },
+            "H": {
+              "item": "astralsorcery:stardust"
+            },
+            "I": {
+              "item": "astralsorcery:illumination_powder"
+            },
+          },
+          "output": [
+            {
+              "item": "gofish:taz_art_pigeon",
+              "count": 1
+            }
+          ],
+          "effects": [
+            "astralsorcery:built_in_effect_discovery_central_beam"
+          ]
+      }
+  )
+    event.custom(
+      {
+          "type": "astralsorcery:altar",
+          "altar_type": 2,
+          "duration": 100,
+          "starlight": 600,
+          "pattern": [
+            "GD_DG",
+            "IF FI",
+            "_BAB_",
+            "IF FI",
+            "GD_DG"
+          ],
+          "key": {
+            "A": {
+              "item": "minecraft:redstone_block"
+            },
+            "B": {
+              "item": "kubejs:kinetic_mechanism"
+            },
+            "F": {
+              "item": "minecraft:feather"
+            },
+            "G": {
+              "item": "astralsorcery:resonating_gem"
+            },
+            "D": {
+              "item": "astralsorcery:stardust"
+            },
+            "I": {
+              "item": "astralsorcery:illumination_powder"
+            },
+          },
+          "output": [
+            {
+              "item": "gofish:taz_dev_pigeon",
+              "count": 1
+            }
+          ],
+          "effects": [
+            "astralsorcery:built_in_effect_discovery_central_beam"
+          ]
+      }
+  )
 })
