@@ -3,6 +3,6 @@
 
 下载见Releases。
 
-也可以网盘（https://pan.baidu.com/s/10AkspfStw-CHAGfNahgduw?pwd=2333，https://cloud.189.cn/web/share?code=2emi2iURJ3uy）
+也可以网盘（https://pan.baidu.com/s/10AkspfStw-CHAGfNahgduw?pwd=2333 ，https://cloud.189.cn/web/share?code=2emi2iURJ3uy ）
 
-或者进群下（https://jq.qq.com/?_wv=1027&k=1nnafqPM）
+或者进群下（https://jq.qq.com/?_wv=1027&k=1nnafqPM ）
