@@ -107,7 +107,7 @@ events.listen('recipes', event => {
       "inputs": [
       {
         "item": "create:brass_block",
-        "count": 10,
+        "count": 3,
         "return_chance": 0.01
       }
       ],
@@ -121,10 +121,10 @@ events.listen('recipes', event => {
           "item": "kubejs:blaze_brass",
           "count": 1
         },
-        "weight": 3
+        "weight": 5
       } 
       ],
-        "empty_weight": 7
+        "empty_weight": 5
       },
       "consume_fluid": 0.8
     })

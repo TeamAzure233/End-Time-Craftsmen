@@ -1,0 +1,22 @@
+{
+  "default": [
+    {
+      "name": "tinkersarchery:chaining",
+      "level": 1
+    }
+  ],
+  "perStat": {
+    "tinkersarchery:bow": [
+      {
+        "name": "tinkersarchery:groovy",
+        "level": 1
+      }
+    ],
+    "tinkersarchery:bowguide": [
+      {
+        "name": "tinkersarchery:groovy",
+        "level": 1
+      }
+    ]
+  }
+}

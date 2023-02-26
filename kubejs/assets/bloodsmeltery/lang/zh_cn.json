@@ -1,0 +1,44 @@
+{
+
+	"fluid.bloodsmeltery.blood_stone": "熔融浸血石",
+	"fluid.bloodsmeltery.default_will": "熔融恶魔意志",
+	"fluid.bloodsmeltery.corrosive_will": "熔融腐蚀意志",
+	"fluid.bloodsmeltery.destructive_will": "熔融破坏意志",
+	"fluid.bloodsmeltery.vengeful_will": "熔融复仇意志",
+	"fluid.bloodsmeltery.steadfast_will": "熔融坚毅意志",
+	"fluid.bloodsmeltery.molten_bloodbrass": "熔融浸血黄铜",
+
+	"item.bloodsmeltery.blood_stone_bucket": "熔融浸血石桶",
+	"item.bloodsmeltery.default_will_bucket": "熔融恶魔意志桶",
+	"item.bloodsmeltery.corrosive_will_bucket": "熔融腐蚀意志桶",
+	"item.bloodsmeltery.destructive_will_bucket": "熔融破坏意志桶",
+	"item.bloodsmeltery.vengeful_will_bucket": "熔融复仇意志桶",
+	"item.bloodsmeltery.steadfast_will_bucket": "熔融坚毅意志桶",
+	"item.bloodsmeltery.molten_bloodbrass_bucket": "熔融浸血黄铜桶",
+	"item.bloodsmeltery.bloodbrass_ingot": "浸血黄铜锭",
+	"item.bloodsmeltery.bloodbrass_nugget": "浸血黄铜粒",
+	
+	"block.bloodsmeltery.bloodbrass_block": "浸血黄铜块",
+	"block.bloodsmeltery.bloodbrass_block.tooltip": "可以作为信标底座使用",
+
+	"modifier.bloodsmeltery.sentient": "感知",
+	"modifier.bloodsmeltery.sentient.flavor": "它活着！",
+	"modifier.bloodsmeltery.sentient.description": "你携带的恶魔意志越多，你就越强大",
+	
+	"modifier.bloodsmeltery.divination": "占卜",
+	"modifier.bloodsmeltery.divination.flavor": "阅读灵魂",
+	"modifier.bloodsmeltery.divination.description": "显示更多关于血之祭坛的信息和当前使用的lp。",
+	"recipe.bloodsmeltery.modifier.divination.level_2": "占卜II需要的配方与第一级不同",
+	
+	"modifier.bloodsmeltery.bloodstained": "血迹斑斑",
+	"modifier.bloodsmeltery.bloodstained.flavor": "由你的…敌人的血铸造?",
+	"modifier.bloodsmeltery.bloodstained.description": "从你的灵魂网络使用lp自我修复。",
+	
+	"modifier.bloodsmeltery.exsanguinate": "吸血",
+	"modifier.bloodsmeltery.exsanguinate.flavor": "让人耳目一新！",
+	"modifier.bloodsmeltery.exsanguinate.description": "每当你杀死一个怪物时，将lp添加到你的灵魂网络中",
+	
+	"material.bloodsmeltery.blood_stone": "血符文",
+	"material.bloodsmeltery.bloodbrass": "浸血黄铜"
+
+}

@@ -1,0 +1,17 @@
+{
+    "name": "§o欢迎游玩",
+    "icon": "minecraft:grass_block",
+    "category": "quick_start",
+    "pages": [
+        {
+            "type": "text",
+            "text": "欢迎游玩$(#07E1D3)末世工匠整合包$()！$(br2)这本书将对该整合包中的一些机制、内容进行讲解"
+        },
+        {
+            "type": "link",
+            "text": "这是我们的官方网站，戳下面的按钮访问！",
+            "url": "https://teamazure.rth1.one/#/",
+            "link_text": "访问官网"
+        }
+    ]
+}

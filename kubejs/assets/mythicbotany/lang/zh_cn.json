@@ -1,0 +1,7 @@
+{
+  "tooltip.mythicbotany.rune_master": "主符文支架之符文",
+  "block.mythicbotany.master_rune_holder": "主符文支架",
+  "lexicon.mythicbotany.rune_rituals.page1": "符文所蕴含力量远超众人的想象。然而，想要完全理解掌握这股力量，你必须先饮用过来自于$(l:mythicbotany:mythic_botany/mimir)密米尔之泉$()的泉水。若想进行符文仪式，首先你得用符文在地上摆出特定的形状。为此，你需要先准备一些符文支架。位于中心的符文支架必须是主符文支架。",
+  "lexicon.mythicbotany.rune_rituals.page2": "仪式只会消耗位于主符文支架上的符文，其余的符文则会返还回来。符文摆放形状的方向对仪式没有丝毫影响，你可以任意旋转而无需担心仪式出差错。仪式可能会需要特定的原料参与其中，你只需将这些原料扔在主符文支架旁即可。一些仪式还会需要到魔力。你可以通过物品栏中的魔力指环为其供给魔力。",
+  "lexicon.mythicbotany.rune_rituals.page3": "手持森林法杖右击主符文支架，即可开启仪式。仪式若是中断，则它的仪式进度会被重置，除却消耗掉的魔力，其余的原料都将会被返还。"
+}

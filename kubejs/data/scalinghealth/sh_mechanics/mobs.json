@@ -4,14 +4,14 @@
     "scaling_reduction" : 1
   },
   "general" : {
-    "passiveMultiplier" : 0.5,
-    "hostileMultiplier" : 2,
+    "passiveMultiplier" : 1,
+    "hostileMultiplier" : 1.5,
     "hostilePotionChance" : 0.08,
     "peacefulPotionChance" : 0.005,
-    "damageBoostScale" : 0.5,
-    "maxDamageBoost" : 10,
+    "damageBoostScale" : 0.025,
+    "maxDamageBoost" : 100,
     "spawnerModifier" : 0.3,
-    "xpBoost" : 0.03
+    "xpBoost" : 0.05
   },
   "effects" :
   [

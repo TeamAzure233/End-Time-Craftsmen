@@ -23,14 +23,14 @@ onEvent('block.registry', event => {
       block.resistance(6)
       block.harvestTool('pickaxe', 1)
     })
-  event.create('cast_iron_block', block => {
-          block.material('iron')
-        block.hardness(5.5)
-        block.displayName('铸铁块')
-        block.requiresTool(true)
-        block.resistance(5.5)
-        block.harvestTool('pickaxe', 1)
-    })
+  event.create('machinery_alloy_block', block => {
+      block.material('iron')
+    block.hardness(6)
+    block.displayName('机械合金块')
+    block.requiresTool(true)
+    block.resistance(6)
+    block.harvestTool('pickaxe', 1)
+  })
   event.create('chromatic_compound_block', block => {
         block.material('iron')
       block.hardness(10)
@@ -129,7 +129,7 @@ onEvent('block.registry', event => {
         block.harvestTool('pickaxe', 1)
     })
 
-    event.create('kinetic_mechanical_box', block => {
+  event.create('kinetic_mechanical_box', block => {
       block.material('lantern')
     block.hardness(6)
     block.displayName('动能机械箱')
@@ -200,17 +200,5 @@ onEvent('block.registry', event => {
     block.notSolid()
     block.fullBlock(false)
     block.renderType('solid')
-    })
-  event.create('electricity_mechanical_box', block => {
-      block.material('lantern')
-    block.hardness(7.5)
-    block.displayName('§e电气机械箱')
-    block.requiresTool(true)
-    block.resistance(7.5)
-    block.harvestTool('pickaxe', 1)
-    block.model('kubejs:block/electricity_mechanical_box')
-    block.notSolid()
-    block.fullBlock(false)
-    block.renderType('solid')
-    })
+  })
 })

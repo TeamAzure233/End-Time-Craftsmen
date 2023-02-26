@@ -1,0 +1,16 @@
+{
+    "name": "Researches",
+    "icon": "create:goggles",
+    "category": "quick_start",
+    "pages": [
+        {
+            "type": "text",
+            "text": "A 'research' system based on the quest book and game stages is a feature of the modpack. This chapter will give a detailed introduction to the research system"
+        },
+        {
+            "type": "image",
+            "images": "edtc:texture/guide/research1.png",
+            "text": ""
+        }
+    ]
+}

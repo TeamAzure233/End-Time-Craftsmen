@@ -115,7 +115,7 @@ onEvent('recipes', event => {
         {
           "type": "tconstruct:melting",
           "ingredient": {
-            "item": "steampowered:cast_iron_ingot"
+            "tag": "forge:ingots/cast_iron"
           },
           "result": {
             "fluid": "kubejs:molten_cast_iron",
@@ -129,7 +129,7 @@ onEvent('recipes', event => {
         {
           "type": "tconstruct:melting",
           "ingredient": {
-            "item": "steampowered:cast_iron_sheet"
+            "tag": "forge:plates/cast_iron"
           },
           "result": {
             "fluid": "kubejs:molten_cast_iron",
@@ -143,7 +143,7 @@ onEvent('recipes', event => {
         {
             "type": "tconstruct:melting",
             "ingredient": {
-              "item": "kubejs:cast_iron_block"
+              "tag": "forge:storage_blocks/cast_iron"
             },
             "result": {
               "fluid": "kubejs:molten_cast_iron",
@@ -157,7 +157,7 @@ onEvent('recipes', event => {
         {
             "type": "tconstruct:melting",
             "ingredient": {
-              "item": "kubejs:cast_iron_nugget"
+              "tag": "forge:nuggets/cast_iron"
             },
             "result": {
               "fluid": "kubejs:molten_cast_iron",
@@ -174,7 +174,9 @@ onEvent('recipes', event => {
           "name": "kubejs:molten_cast_iron",
           "amount": 1296
         },
-        "result": "kubejs:cast_iron_block",
+        "result": {
+          "tag": "forge:storage_blocks/cast_iron"
+        },
         "cooling_time": 180
       }
     )
@@ -188,7 +190,9 @@ onEvent('recipes', event => {
               "name": "kubejs:molten_cast_iron",
               "amount": 144
             },
-            "result": "steampowered:cast_iron_ingot",
+            "result": {
+              "tag": "forge:ingots/cast_iron"
+            },
             "cooling_time": 60
         }
     )
@@ -203,7 +207,9 @@ onEvent('recipes', event => {
               "name": "kubejs:molten_cast_iron",
               "amount": 144
             },
-            "result": "steampowered:cast_iron_ingot",
+            "result": {
+              "tag": "forge:ingots/cast_iron"
+            },
             "cooling_time": 60
         }
     )
@@ -217,7 +223,9 @@ onEvent('recipes', event => {
               "name": "kubejs:molten_cast_iron",
               "amount": 144
             },
-            "result": "steampowered:cast_iron_sheet",
+            "result": {
+              "tag": "forge:plates/cast_iron"
+            },
             "cooling_time": 60
         }
     )
@@ -232,7 +240,9 @@ onEvent('recipes', event => {
               "name": "kubejs:molten_cast_iron",
               "amount": 144
             },
-            "result": "steampowered:cast_iron_sheet",
+            "result": {
+              "tag": "forge:plates/cast_iron"
+            },
             "cooling_time": 60
         }
     )
@@ -246,7 +256,9 @@ onEvent('recipes', event => {
             "name": "kubejs:molten_cast_iron",
             "amount": 16
           },
-          "result": "kubejs:cast_iron_nugget",
+          "result": {
+            "tag": "forge:nuggets/cast_iron"
+          },
           "cooling_time": 13
       }
   )
@@ -261,7 +273,9 @@ onEvent('recipes', event => {
             "name": "kubejs:molten_cast_iron",
             "amount": 16
           },
-          "result": "kubejs:cast_iron_nugget",
+          "result": {
+            "tag": "forge:nuggets/cast_iron"
+          },
           "cooling_time": 13
       }
   )
@@ -471,118 +485,6 @@ onEvent('recipes', event => {
         "temperature": 1500,
         "time": 270
       }
-    )
-
-    event.custom(
-        {
-        "type": "tconstruct:casting_basin",
-        "fluid": {
-          "name": "kubejs:molten_insanium",
-          "amount": 1296
-        },
-        "result": "mysticalagradditions:insanium_ingot_block",
-        "cooling_time": 270
-      }
-    )
-    event.custom(
-        {
-            "type": "tconstruct:casting_table",
-            "cast": {
-              "tag": "tconstruct:casts/multi_use/ingot"
-            },
-            "fluid": {
-              "name": "kubejs:molten_insanium",
-              "amount": 144
-            },
-            "result": "mysticalagradditions:insanium_ingot",
-            "cooling_time": 30
-        }
-    )
-    event.custom(
-        {
-            "type": "tconstruct:casting_table",
-            "cast": {
-              "tag": "tconstruct:casts/single_use/ingot",
-              "cast_consumed": true,
-            },
-            "fluid": {
-              "name": "kubejs:molten_insanium",
-              "amount": 144
-            },
-            "result": "mysticalagradditions:insanium_ingot",
-            "cooling_time": 30
-        }
-    )
-    event.custom(
-        {
-            "type": "tconstruct:melting",
-            "ingredient": {
-              "item": "mysticalagradditions:insanium_ingot_block"
-            },
-            "result": {
-              "fluid": "kubejs:molten_insanium",
-              "amount": 1296
-            },
-            "temperature": 1100,
-            "time": 270
-        }
-    )
-    event.custom(
-      {
-        "type": "tconstruct:melting",
-        "ingredient": {
-          "item": "mysticalagradditions:insanium_ingot"
-        },
-        "result": {
-          "fluid": "kubejs:molten_insanium",
-          "amount": 144
-        },
-        "temperature": 1100,
-        "time": 30
-      }
-    )
-    event.custom(
-      {
-          "type": "tconstruct:casting_table",
-          "cast": {
-            "tag": "tconstruct:casts/multi_use/nugget"
-          },
-          "fluid": {
-            "name": "kubejs:molten_insanium",
-            "amount": 16
-          },
-          "result": "mysticalagradditions:insanium_nugget",
-          "cooling_time": 4
-      }
-    )
-    event.custom(
-      {
-          "type": "tconstruct:casting_table",
-          "cast": {
-            "tag": "tconstruct:casts/single_use/nugget",
-            "cast_consumed": true,
-          },
-          "fluid": {
-            "name": "kubejs:molten_insanium",
-            "amount": 16
-          },
-          "result": "mysticalagradditions:insanium_nugget",
-          "cooling_time": 4
-      }
-    )
-    event.custom(
-        {
-            "type": "tconstruct:melting",
-            "ingredient": {
-              "item": "mysticalagradditions:insanium_nugget"
-            },
-            "result": {
-              "fluid": "kubejs:molten_insanium",
-              "amount": 16
-            },
-            "temperature": 1100,
-            "time": 4
-        }
     )
 
     event.custom(

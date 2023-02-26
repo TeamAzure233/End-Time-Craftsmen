@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:material",
   "ingredient": {
-    "item": "thermal:enderium_ingot"
+    "tag": "forge:ingots/enderium"
   },
   "value": 1,
   "needed": 1,

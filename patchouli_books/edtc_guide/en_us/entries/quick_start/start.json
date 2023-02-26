@@ -1,0 +1,11 @@
+{
+    "name": "The Start",
+    "icon": "scalinghealth:enchanted_heart",
+    "category": "quick_start",
+    "pages": [
+        {
+            "type": "text",
+            "text": "This chapter introduces the start of the game$(br2)The English version is WIP!"
+        }
+    ]
+}

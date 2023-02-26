@@ -11,7 +11,7 @@
         "durability": 600,
         "miningSpeed": 7,
         "harvestLevel": 3,
-        "attack": 6
+        "attack": 20
       }
     }
 }

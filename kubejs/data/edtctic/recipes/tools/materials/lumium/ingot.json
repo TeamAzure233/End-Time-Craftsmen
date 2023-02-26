@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:material",
   "ingredient": {
-    "item": "thermal:lumium_ingot"
+    "tag": "forge:ingots/lumium"
   },
   "value": 1,
   "needed": 1,

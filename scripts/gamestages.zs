@@ -18,15 +18,6 @@ CTEventManager.register<GameStageAdded>((event) => {
     if (event.stage == "melting") {
         event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§emelting§b！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n在熔化炉中熔炼矿石\n制作更多的武器、工具\n§8——————————————————————————————");
     }
-    if (event.stage == "foundry") {
-        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§efoundry§b！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n在熔铸炉中熔炼矿石（还可以获得一些副产物）\n§8——————————————————————————————");
-    }
-    if (event.stage == "alloyer") {
-        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§ealloyer§b！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n在合金炉中制作合金\n§8——————————————————————————————");
-    }
-    if (event.stage == "smeltry") {
-        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§esmeltry§b！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n在冶炼炉中熔炼矿石、制作合金\n§8——————————————————————————————");
-    }
 
     if (event.stage == "create_start") {
         event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§ecreate_start§b！\n恭喜步入机械时代~\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n玩机械\n消耗自己肝的寿命（不是\n§8——————————————————————————————");
@@ -46,6 +37,9 @@ CTEventManager.register<GameStageAdded>((event) => {
     if (event.stage == "electricity_era") {
         event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§eelectricity_era§b！\n恭喜步入电力时代~\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n实现应力与电力间的相互转化\n玩机器\n§8——————————————————————————————\n§b游戏难度提升！\n+10\n§8——————————————————————————————");
     }
+    if (event.stage == "integration_era") {
+        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§eintegration_era§b！\n恭喜步入集成时代~\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n制造便携易用的单方块机器\n§8——————————————————————————————\n§8——————————————————————————————");
+    }
     if (event.stage == "digital_era") {
         event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§edigital_era§b！\n恭喜步入数字时代~\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n使用ME网络存储大量物品\n更方便的自动化\n§8——————————————————————————————");
     }
@@ -59,9 +53,6 @@ CTEventManager.register<GameStageAdded>((event) => {
         event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§eatomic_era§b！\n恭喜步入原子时代~\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n利用原子能来产生更多的电力\n打造更强大的工具、武器、装备甚至近乎无敌\n§8——————————————————————————————\n§b游戏难度提升！\n300-->480\n§8——————————————————————————————");
     }
 
-    if (event.stage == "dimensions") {
-        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§edimensions§b！\n§8——————————————————————————————\n§6通过这些疑似来自其他世界的岩石，你理解了「维度」这个概念。\n§8——————————————————————————————");
-    }
     if (event.stage == "asylum_of_elves") {
         event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§easylum_of_elves§b！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n进入下界\n§8——————————————————————————————");
     }
@@ -84,24 +75,28 @@ CTEventManager.register<GameStageAdded>((event) => {
     if (event.stage == "botania") {
         event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§ebotania§b！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n利用自然的力量改变世界\n§8——————————————————————————————");
     }
-    if (event.stage == "astralsorcery_ores") {
-        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§eastralsorcery_ores§b！\n恭喜击杀盖亚守护者！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n挖掘星辉魔法的矿物\n§8——————————————————————————————\n§b游戏难度提升！\n+20\n§8——————————————————————————————");
+    if (event.stage == "gaia_killer") {
+        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§egaia_killer§b！\n恭喜击杀盖亚守护者！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n挖掘星辉魔法的矿物\n§8——————————————————————————————\n§b游戏难度提升！\n+20\n§8——————————————————————————————");
     }
     if (event.stage == "astralsorcery") {
         event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§eastralsorcery§b！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n利用星座的力量改变世界\n§8——————————————————————————————");
     }
-    if (event.stage == "mysticalagriculture") {
-        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§emysticalagriculture§b！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n种植矿物\n§8——————————————————————————————");
+    if (event.stage == "blood_wizard") {
+        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§eblood_wizard§b！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n掌控血腥中的魔力\n§8——————————————————————————————");
+    }
+
+    if (event.stage == "mahoutsukai_all") {
+        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§emahoutsukai_all§b！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n使用魔法使Mod中的所有魔法\n§8——————————————————————————————");
     }
 
     if (event.stage == "infinite") {
         event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§einfinite§b！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n制作水晶矩阵锭、中子锭、无尽锭\n使用终极工作台\n§8——————————————————————————————\n§b游戏难度提升！\n+100\n§8——————————————————————————————");
     }
     if (event.stage == "owner_of_infinity") {
-        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§eowner_of_infinity§b！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n可以利用无尽的力量\n§8——————————————————————————————");
+        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§eowner_of_infinity§b！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n可以利用无尽的力量\n§8——————————————————————————————\n§b游戏难度提升！\n+40\n§8——————————————————————————————");
     }
     if (event.stage == "the_last_dream") {
-        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§ethe_last_dream§b！\n结束了？\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n制作创造物品\n§8——————————————————————————————\n§b游戏难度提升！\n+80\n§8——————————————————————————————");
+        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§ethe_last_dream§b！\n结束了？\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n制作创造物品\n§8——————————————————————————————\n§b游戏难度提升！\n+40\n§8——————————————————————————————");
     }
     if (event.stage == "wake_up") {
         event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§ewake_up§b！\n结束了。\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n§k1145141919810\n§8——————————————————————————————");
@@ -110,18 +105,28 @@ CTEventManager.register<GameStageAdded>((event) => {
 
 DimensionStages.stageDimensionWithMessage("minecraft:the_nether", "你需要获得精灵的庇护才能进入下界！", "asylum_of_elves");
 DimensionStages.stageDimensionWithMessage("minecraft:the_end", "你需要获得星光的庇护才能进入末地！", "asylum_of_starlight");
-DimensionStages.stageDimensionWithMessage("edtc:the_real_world", "§k", "wake_up");
+
 ItemStages.restrict(<tag:items:tconstruct:tables>, "tinker_start")
 .restrict(<item:tconstruct:part_chest>)
-.restrict(<item:tconstruct:tinkers_chest>);
+.restrict(<item:tconstruct:tinkers_chest>)
+.setHiddenInJEI(false);
 
-ItemStages.restrict(<item:astralsorcery:aquamarine>, "astralsorcery_ores")
+ItemStages.restrict(<item:astralsorcery:aquamarine>, "gaia_killer")
 .restrict(<item:astralsorcery:rock_crystal>)
 .restrict(<item:astralsorcery:rock_crystal_ore>)
-.restrict(<item:astralsorcery:aquamarine_sand_ore>);
+.restrict(<item:astralsorcery:aquamarine_sand_ore>)
+.setHiddenInJEI(false);
 
-ItemStages.restrict(<item:kubejs:asylum_of_elves>, "dimensions")
-.restrict(<item:kubejs:asylum_of_starlight>);
+ItemStages.restrict(<item:mahoutsukai:dagger>, "mahoutsukai_all").setHiddenInJEI(false);
+
+ItemStages.restrict(<item:bloodmagic:altar>, "blood_wizard")
+.restrict(<item:bloodmagic:soulforge>)
+.restrict(<item:bloodmagic:demoncrucible>)
+.restrict(<item:bloodmagic:alchemytable>)
+.restrict(<item:bloodmagic:incensealtar>)
+.restrict(<item:bloodmagic:sacrificialdagger>)
+.restrict(<item:bloodmagic:alchemicalreactionchamber>)
+.setHiddenInJEI(false);
 
 ItemStages.restrict(<item:create:water_wheel>,"create_start")
 .restrict(<item:create:nozzle>)
@@ -142,13 +147,13 @@ ItemStages.restrict(<item:create:water_wheel>,"create_start")
 .restrict(<item:create:metal_bracket>)
 .restrict(<item:create:wooden_bracket>)
 .restrict(<item:create:goggles>)
-.restrict(<item:kubejs:kinetic_mechanism>);
+.restrict(<item:kubejs:kinetic_mechanism>)
+.setHiddenInJEI(false);
 
-ItemStages.restrict(<item:create:water_wheel>,"create_andesite")
-.restrict(<item:create:brass_nugget>)
-.restrict(<item:create:brass_sheet>)
-.restrict(<item:create:brass_ingot>)
-.restrict(<item:create:brass_block>)
+ItemStages.restrict(<item:create:brass_nugget>,"create_andesite")
+.restrict(<tag:items:forge:plates/brass>)
+.restrict(<tag:items:forge:ingots/brass>)
+.restrict(<tag:items:forge:storage_blocks/brass>)
 .restrict(<item:thermal:saw_blade>)
 .restrict(<item:thermal:drill_head>)
 .restrict(<item:kubejs:plough>)
@@ -192,7 +197,8 @@ ItemStages.restrict(<item:create:water_wheel>,"create_andesite")
 .restrict(<item:kubejs:liquid_mechanism>)
 .restrict(<item:create:precision_mechanism>)
 .restrict(<item:kubejs:kinetic_mechanical_box>)
-.restrict(<tag:items:kubejs:andesite_machine>);
+.restrict(<tag:items:kubejs:andesite_machine>)
+.setHiddenInJEI(false);
 
 ItemStages.restrict(<item:create:extendo_grip>,"create_brass")
 .restrict(<item:create:potato_cannon>)
@@ -207,16 +213,17 @@ ItemStages.restrict(<item:create:extendo_grip>,"create_brass")
 .restrict(<tag:items:forge:plates/bronze>)
 .restrict(<tag:items:forge:ingots/bronze>)
 .restrict(<tag:items:forge:storage_blocks/bronze>)
-.restrict(<item:steampowered:cast_iron_sheet>)
-.restrict(<item:steampowered:cast_iron_ingot>)
-.restrict(<item:kubejs:cast_iron_block>)
+.restrict(<tag:items:forge:plates/cast_iron>)
+.restrict(<tag:items:forge:ingots/cast_iron>)
+.restrict(<tag:items:forge:storage_blocks/cast_iron>)
 .restrict(<tag:items:forge:ingots/steel>)
 .restrict(<tag:items:forge:plates/steel>)
 .restrict(<tag:items:forge:storage_blocks/steel>)
 .restrict(<item:steampowered:bronze_large_cogwheel>)
 .restrict(<item:steampowered:bronze_cogwheel>)
 .restrict(<item:kubejs:scorched_alloy>)
-.restrict(<item:kubejs:seared_alloy>);
+.restrict(<item:kubejs:seared_alloy>)
+.setHiddenInJEI(false);
 
 ItemStages.restrict(<tag:items:create:valve_handles>,"create_liquid")
 .restrict(<item:create:fluid_pipe>)
@@ -224,7 +231,8 @@ ItemStages.restrict(<tag:items:create:valve_handles>,"create_liquid")
 .restrict(<item:create:copper_casing>)
 .restrict(<item:kubejs:liquid_mechanical_box>)
 .restrict(<item:kubejs:steam_mechanism>)
-.restrict(<tag:items:kubejs:liquid_machine>);
+.restrict(<tag:items:kubejs:liquid_machine>)
+.setHiddenInJEI(false);
 
 ItemStages.restrict(<item:kubejs:electricity_mechanism>,"create_steam")
 .restrict(<item:kubejs:bronze_casing>)
@@ -239,31 +247,40 @@ ItemStages.restrict(<item:kubejs:electricity_mechanism>,"create_steam")
 .restrict(<item:steampowered:steel_cogwheel>)
 .restrict(<item:steampowered:steel_large_cogwheel>)
 .restrict(<item:steampowered:pressurized_gas_container>)
-.restrict(<item:steampowered:pressurized_steam_container>);
+.restrict(<item:steampowered:pressurized_steam_container>)
+.setHiddenInJEI(false);
 
-ItemStages.restrict(<item:kubejs:chorus_chrome>,"electricity_era")
+ItemStages.restrict(<tag:items:kubejs:electricity_machine>,"electricity_era")
+.restrict(<item:immersiveengineering:light_engineering>)
+.restrict(<item:immersiveengineering:heavy_engineering>)
+.restrict(<item:immersiveengineering:rs_engineering>)
+.restrict(<item:mekanism:cardboard_box>)
+.restrict(<item:kubejs:empty_timeinabottle>)
+.restrict(<item:tiab:timeinabottle>)
+.setHiddenInJEI(false);
+
+ItemStages.restrict(<item:kubejs:chorus_chrome>,"integration_era")
 .restrict(<item:kubejs:core_hollow>)
 .restrict(<item:kubejs:core_desolate>)
 .restrict(<item:kubejs:fragments>)
 .restrict(<item:kubejs:ether_drop>)
 .restrict(<item:kubejs:chorus_crystal>)
 .restrict(<item:kubejs:ether_essence>)
-.restrict(<item:kubejs:empty_timeinabottle>)
-.restrict(<item:tiab:timeinabottle>)
-.restrict(<item:kubejs:flux_tool_casing>)
-.restrict(<item:kubejs:electricity_mechanical_box>)
-.restrict(<tag:items:kubejs:electricity_machine>)
-.restrict(<item:createaddition:redstone_relay>)
-.restrict(<item:createaddition:tesla_coil>)
-.restrict(<item:createaddition:multimeter>)
-.restrict(<item:createaddition:capacitor>)
-.restrict(<item:createaddition:gold_spool>)
-.restrict(<item:createaddition:copper_spool>)
-.restrict(<item:createaddition:connector>)
-.restrict(<item:createaddition:spool>)
-.restrict(<item:createaddition:accumulator>)
-.restrict(<item:createaddition:heater>)
-.restrict(<item:mekanism:cardboard_box>);
+.restrict(<tag:items:kubejs:integration_machine>)
+.restrict(<item:create:chromatic_compound>)
+.restrict(<item:create:shadow_steel>)
+.restrict(<item:create:refined_radiance>)
+.restrict(<item:create:shadow_steel_casing>)
+.restrict(<item:create:refined_radiance_casing>)
+.restrict(<item:createaddition:overcharged_alloy>)
+.restrict(<item:createaddition:overcharged_casing>)
+.restrict(<item:createaddition:overcharged_hammer>)
+.restrict(<item:kubejs:chromatic_compound_block>)
+.restrict(<item:kubejs:shadow_steel_block>)
+.restrict(<item:kubejs:refined_radiance_block>)
+.restrict(<item:kubejs:overcharged_alloy_block>)
+.restrict(<item:kubejs:chromatic_mechanism>)
+.setHiddenInJEI(false);
 
 ItemStages.restrict(<item:appliedenergistics2:2_cubed_spatial_cell_component>,"digital_era")
 .restrict(<item:appliedenergistics2:16_cubed_spatial_cell_component>)
@@ -394,31 +411,12 @@ ItemStages.restrict(<item:appliedenergistics2:2_cubed_spatial_cell_component>,"d
 .restrict(<tag:items:appliedenergistics2:covered_cable>)
 .restrict(<tag:items:appliedenergistics2:glass_cable>)
 .restrict(<tag:items:appliedenergistics2:covered_dense_cable>)
-.restrict(<tag:items:appliedenergistics2:smart_dense_cable>);
-
-ItemStages.restrict(<item:kubejs:chromatic_mechanism>,"chromatic_era")
-.restrict(<item:create:chromatic_compound>)
-.restrict(<item:create:shadow_steel>)
-.restrict(<item:create:refined_radiance>)
-.restrict(<item:create:shadow_steel_casing>)
-.restrict(<item:create:refined_radiance_casing>)
-.restrict(<item:createaddition:overcharged_alloy>)
-.restrict(<item:createaddition:overcharged_casing>)
-.restrict(<item:createaddition:overcharged_hammer>)
-.restrict(<item:kubejs:chromatic_compound_block>)
-.restrict(<item:kubejs:shadow_steel_block>)
-.restrict(<item:kubejs:refined_radiance_block>)
-.restrict(<item:kubejs:overcharged_alloy_block>);
-
-ItemStages.restrict(<item:mysticalagriculture:infusion_altar>,"mysticalagriculture")
-.restrict(<item:mysticalagriculture:infusion_pedestal>)
-.restrict(<tag:items:mysticalagriculture:infusion_crystals>);
+.restrict(<tag:items:appliedenergistics2:smart_dense_cable>)
+.setHiddenInJEI(false);
 
 ItemStages.restrict(<item:mekanismgenerators:advanced_solar_generator>,"industrial_era")
-.restrict(<item:mekanismgenerators:bio_generator>)
 .restrict(<item:mekanismgenerators:gas_burning_generator>)
 .restrict(<item:mekanismgenerators:solar_generator>)
-.restrict(<item:mekanismgenerators:heat_generator>)
 .restrict(<item:mekanismgenerators:turbine_rotor>)
 .restrict(<item:mekanismgenerators:turbine_blade>)
 .restrict(<item:mekanismgenerators:solar_panel>)
@@ -427,11 +425,13 @@ ItemStages.restrict(<item:mekanismgenerators:advanced_solar_generator>,"industri
 .restrict(<item:mekanismgenerators:turbine_valve>)
 .restrict(<item:mekanismgenerators:turbine_casing>)
 .restrict(<item:mekanismgenerators:electromagnetic_coil>)
-.restrict(<item:mekanismgenerators:rotational_complex>);
+.restrict(<item:mekanismgenerators:rotational_complex>)
+.setHiddenInJEI(false);
+
 ItemStages.restrict(<tag:items:kubejs:restrict_mek>, "industrial_era")
 .restrict(<tag:items:kubejs:chromatic_machine>)
 .restrict(<tag:items:kubejs:mek_factory>)
-.restrict(<item:mekanismgenerators:bioethanol_bucket>);
+.setHiddenInJEI(false);
 
 ItemStages.restrict(<item:mekanism:radioactive_waste_barrel>, "atomic_era")
 .restrict(<item:mekanism:modification_station>)
@@ -460,7 +460,6 @@ ItemStages.restrict(<item:mekanism:radioactive_waste_barrel>, "atomic_era")
 .restrict(<item:mekanism:hazmat_gown>)
 .restrict(<item:mekanism:hazmat_pants>)
 .restrict(<item:mekanism:hazmat_boots>)
-.restrict(<item:kubejs:hazmat_cloth>)
 .restrict(<item:mekanism:isotopic_centrifuge>)
 .restrict(<item:kubejs:meka_plate>)
 .restrict(<item:mekanism:mekasuit_boots>)
@@ -476,7 +475,10 @@ ItemStages.restrict(<item:mekanism:radioactive_waste_barrel>, "atomic_era")
 .restrict(<item:mekanism:pellet_plutonium>)
 .restrict(<item:mekanism:pellet_polonium>)
 .restrict(<item:mekanism:reprocessed_fissile_fragment>)
-.restrict(<item:endless:diamond_lattice>);
+.restrict(<item:compactvoidminers:void_pump>)
+.restrict(<item:compactvoidminers:void_miner>)
+.restrict(<item:endless:diamond_lattice>)
+.setHiddenInJEI(false);
 
 ItemStages.restrict(<item:tconstruct:seared_ingot_gauge>,"melting")
 .restrict(<item:tconstruct:seared_fuel_gauge>)
@@ -486,28 +488,7 @@ ItemStages.restrict(<item:tconstruct:seared_ingot_gauge>,"melting")
 .restrict(<item:tconstruct:seared_basin>)
 .restrict(<item:tconstruct:seared_channel>)
 .restrict(<item:tconstruct:seared_faucet>)
-.restrict(<item:tconstruct:seared_lantern>);
-
-ItemStages.restrict(<item:tconstruct:scorched_ingot_gauge>,"foundry")
-.restrict(<item:tconstruct:scorched_fuel_tank>)
-.restrict(<item:tconstruct:scorched_ingot_tank>)
-.restrict(<item:tconstruct:scorched_lantern>)
-.restrict(<item:tconstruct:scorched_faucet>)
-.restrict(<item:tconstruct:scorched_channel>)
-.restrict(<item:tconstruct:scorched_table>)
-.restrict(<item:tconstruct:scorched_basin>)
-.restrict(<item:tconstruct:foundry_controller>)
-.restrict(<item:tconstruct:scorched_fuel_gauge>)
-.restrict(<item:tconstruct:scorched_chute>)
-.restrict(<item:tconstruct:scorched_duct>)
-.restrict(<item:tconstruct:scorched_drain>);
-
-ItemStages.restrict(<item:tconstruct:scorched_alloyer>,"alloyer");
-
-ItemStages.restrict(<item:tconstruct:smeltery_controller>,"smeltry")
-.restrict(<item:tconstruct:seared_drain>)
-.restrict(<item:tconstruct:seared_duct>)
-.restrict(<item:tconstruct:seared_chute>);
+.setHiddenInJEI(false);
 
 ItemStages.restrict(<item:extendedcrafting:compressor>,"infinite")
 .restrict(<item:extendedcrafting:ultimate_singularity>)
@@ -525,10 +506,6 @@ ItemStages.restrict(<item:extendedcrafting:compressor>,"infinite")
 .restrict(<item:endless:ultimate_stew>)
 .restrict(<item:endless:cosmic_meatballs>)
 .restrict(<item:endless:skullfire_sword>)
-.restrict(<item:endless:neutronium_collector>)
-.restrict(<item:endless:dense_neutronium_collector>)
-.restrict(<item:endless:denser_neutronium_collector>)
-.restrict(<item:endless:densest_neutronium_collector>)
 .restrict(<item:endless:extreme_crafting_table>)
 .restrict(<item:endless:neutronium_block>)
 .restrict(<item:endless:crystal_matrix_block>)
@@ -569,7 +546,8 @@ ItemStages.restrict(<item:extendedcrafting:compressor>,"infinite")
 .restrict(<item:projecte:evertide_amulet>)
 .restrict(<item:projecte:volcanite_amulet>)
 .restrict(<item:projecte:watch_of_flowing_time>)
-.restrict(<item:projecte:repair_talisman>);
+.restrict(<item:projecte:repair_talisman>)
+.setHiddenInJEI(false);
 
 ItemStages.restrict(<item:kubejs:infinite_evidence>,"owner_of_infinity")
 .restrict(<item:endless:infinity_sword>)
@@ -581,7 +559,9 @@ ItemStages.restrict(<item:kubejs:infinite_evidence>,"owner_of_infinity")
 .restrict(<item:endless:infinity_bucket>)
 .restrict(<item:endless:infinity_crossbow>)
 .restrict(<item:endless:infinity_bow>)
-.restrict(<item:endless:infinity_arrow>);
+.restrict(<item:endless:infinity_arrow>)
+.restrict(<item:endless:infinity_totem>)
+.setHiddenInJEI(false);
 
 ItemStages.restrict(<item:botania:creative_pool>,"the_last_dream")
 .restrict(<item:create:creative_motor>)
@@ -591,14 +571,17 @@ ItemStages.restrict(<item:botania:creative_pool>,"the_last_dream")
 .restrict(<item:mekanism:creative_fluid_tank>)
 .restrict(<item:mekanism:creative_energy_cube>)
 .restrict(<item:mekanism:creative_chemical_tank>)
-.restrict(<item:mysticalagradditions:creative_essence>)
 .restrict(<item:storagedrawers:creative_storage_upgrade>)
 .restrict(<item:storagedrawers:creative_vending_upgrade>)
 .restrict(<item:tconstruct:creative_slot>)
-.restrict(<item:mysticalagriculture:creative_soulium_dagger>)
 .restrict(<item:thermal:rf_coil_creative_augment>)
 .restrict(<item:thermal:fluid_tank_creative_augment>)
 .restrict(<item:thermal:machine_efficiency_creative_augment>)
-.restrict(<item:thermal:machine_catalyst_creative_augment>);
+.restrict(<item:thermal:machine_catalyst_creative_augment>)
+.setHiddenInJEI(false);
 
 ItemStages.restrict(<tag:items:kubejs:disabled>,"disabled");
+
+mods.champions.ChampionStages.addTierStage("gaia_killer", 3);
+mods.champions.ChampionStages.addTierStage("wither_killer", 5);
+mods.champions.ChampionStages.addTierStage("dragon_killer", 7);

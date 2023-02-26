@@ -26,6 +26,15 @@ onEvent("lootjs", (event) => {
     .thenAdd('thermal:rubber')
 
     event
+    .addLootTypeModifier(LootType.CHEST)
+    .randomChance(0.4)
+    .thenAdd(Item.of('ftbquests:lootcrate', '{type:"bullet"}'))
+    .randomChance(0.3)
+    .thenAdd(Item.of('ftbquests:lootcrate', '{type:"basic"}'))
+    .randomChance(0.2)
+    .thenAdd(Item.of('ftbquests:lootcrate', '{type:"rare"}'))
+
+    event
     .addLootTypeModifier(LootType.UNKNOWN)
     .randomChance(0.005)
     .thenAdd('kubejs:data')
@@ -53,20 +62,4 @@ onEvent("lootjs", (event) => {
     .addLootTypeModifier(LootType.GIFT)
     .randomChance(0.6)
     .thenAdd('kubejs:data')
-
-    event
-    .addLootTypeModifier(LootType.ENTITY)
-    .thenRemove('scalinghealth:cursed_heart')
-    .thenRemove('scalinghealth:enchanted_heart')
-    .thenRemove('scalinghealth:chance_heart')
-    .thenRemove('scalinghealth:heart_crystal')
-    .thenRemove('scalinghealth:power_crystal')
-    event
-    .addLootTypeModifier(LootType.ENTITY)
-    .randomChance(0.01)
-    .thenAdd('scalinghealth:heart_crystal')
-    event
-    .addLootTypeModifier(LootType.ENTITY)
-    .randomChance(0.01)
-    .thenAdd('scalinghealth:power_crystal')
 });

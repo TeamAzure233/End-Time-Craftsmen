@@ -1,0 +1,11 @@
+{
+    "name": "Welcome",
+    "icon": "minecraft:grass_block",
+    "category": "quick_start",
+    "pages": [
+        {
+            "type": "text",
+            "text": "The English version is WIP!"
+        }
+    ]
+}

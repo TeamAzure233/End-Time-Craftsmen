@@ -9,18 +9,34 @@ onEvent('player.logged_in', event => {
     player.runCommandSilent(`/flywheel backend on`)
     if (!player.stages.has('starting_items')) {
       player.stages.add('starting_items')
-      player.give(Item.of('akashictome:tome', '{"akashictome:data":{extendedcrafting:{id:"patchouli:guide_book",Count:1b,tag:{"patchouli:book":"extendedcrafting:guide"}},tconstruct:{id:"tconstruct:encyclopedia",Count:1b,tag:{mantle:{book:{current_page:"armor.plate_chestplate"}}}},botania:{id:"botania:lexicon",Count:1b},astralsorcery:{id:"astralsorcery:tome",Count:1b},ftbquests:{id:"ftbquests:book",Count:1b},thermal:{id:"patchouli:guide_book",Count:1b,tag:{"patchouli:book":"thermal:guidebook"}},patchouli:{id:"patchouli:guide_book",Count:1b,tag:{"patchouli:book":"patchouli:edtc_guide"}},supplementaries:{id:"patchouli:guide_book",Count:1b,tag:{"patchouli:book":"supplementaries:supplementaries_guide"}},rftoolsbase:{id:"rftoolsbase:manual",Count:1b},croptopia:{id:"croptopia:guide",Count:1b},mysticalagriculture:{id:"patchouli:guide_book",Count:1b,tag:{"patchouli:book":"mysticalagriculture:guide"}}}}'))
+      player.give(Item.of('akashictome:tome', '{"akashictome:data":{tconstruct:{id:"tconstruct:encyclopedia",Count:1b,tag:{mantle:{book:{current_page:"armor.plate_chestplate"}}}},astralsorcery:{id:"astralsorcery:tome",Count:1b},ftbquests:{id:"ftbquests:book",Count:1b},immersiveengineering:{id:"immersiveengineering:manual",Count:1b},woot:{id:"patchouli:guide_book",Count:1b,tag:{"patchouli:book":"woot:wootguide"}},mahoutsukai:{id:"mahoutsukai:guidebook",Count:1b},extendedcrafting:{id:"patchouli:guide_book",Count:1b,tag:{"patchouli:book":"extendedcrafting:guide"}},modularrouters:{id:"patchouli:guide_book",Count:1b,tag:{"patchouli:book":"modularrouters:book"}},botania:{id:"botania:lexicon",Count:1b},bloodmagic:{id:"patchouli:guide_book",Count:1b,tag:{"patchouli:book":"bloodmagic:guide"}},thermal:{id:"patchouli:guide_book",Count:1b,tag:{"patchouli:book":"thermal:guidebook"}},patchouli:{id:"patchouli:guide_book",Count:1b,tag:{"patchouli:book":"patchouli:edtc_guide"}},supplementaries:{id:"patchouli:guide_book",Count:1b,tag:{"patchouli:book":"supplementaries:supplementaries_guide"}},rftoolsbase:{id:"rftoolsbase:manual",Count:1b},croptopia:{id:"croptopia:guide",Count:1b},parcool:{id:"parcool:parcool_guide",Count:1b}}}'))
       player.give(Item.of('patchouli:guide_book', '{"patchouli:book":"patchouli:edtc_guide"}'))
       player.give('solpotato:food_book')
       player.give('sereneseasons:calendar')
       player.give('ftbquests:book')
       player.give('pouchofunknown:pouch')
       server.runCommandSilent(`gamerule keepInventory true`)
-      server.runCommandSilent(`gamerule keepSkills true`)
       server.runCommandSilent(`gamerule doTraderSpawning false`)
       server.runCommandSilent(`gamerule naturalRegeneration false`)
+      player.tell("§9[System]§bbi~bi~检测到您是第一次进入游戏~")
+      player.tell("§9[System]§b请打开任务书，进入序章，跟随任务的指引开始在这世界上的生存吧~")
+      player.tell("§9[System]§b祝你好运~")
+      player.tell("§9[System]§b另一个提示是Endless这个Mod的，不是这个整合包的，不必注意~")
+    }
+    if (player.stages.has('primary_sponsor')) {
+        player.tell("§9[System]§b欢迎回来，初级赞助者§2" + `"${event.player.name}"`) 
+    }
+    if (player.stages.has('intermediate_sponsor')) {
+        player.tell("§9[System]§b欢迎回来，中级赞助者§3" + `"${event.player.name}"`) 
+    }
+    if (player.stages.has('advanced_sponsor')) {
+        player.tell("§9[System]§b欢迎回来，高级赞助者§6" + `"${event.player.name}"`) 
+    }
+    if (player.stages.has('super_sponsor')) {
+        player.tell("§9[System]§b欢迎回来，超级赞助者§6" + `"${event.player.name}"`) 
     }
 })
+
 onEvent('block.break', event => {
     let player = event.player;
     if (player.mainHandItem.hasTag('kubejs:banned_tools') == true && !player.creativeMode) {
@@ -28,18 +44,33 @@ onEvent('block.break', event => {
         event.cancel()
     }
 })
+
 onEvent('item.right_click', event => {
     if (event.item.id == 'kubejs:asylum_of_elves') {
         event.item.count--;
-        event.server.runCommandSilent(`gamestage add @p asylum_of_elves`)
+        event.server.runCommandSilent(`gamestage add "${event.player.name}" asylum_of_elves`)
     }
 })
 onEvent('item.right_click', event => {
     if (event.item.id == 'kubejs:asylum_of_starlight') {
         event.item.count--;
-        event.server.runCommandSilent(`gamestage add @p asylum_of_starlight`)
+        event.server.runCommandSilent(`gamestage add "${event.player.name}" asylum_of_starlight`)
     }
 })
+onEvent('item.right_click', event => {
+    if (event.item.id == 'kubejs:blood_star') {
+        event.item.count--;
+        event.server.runCommandSilent(`gamestage add "${event.player.name}" blood_wizard`)
+    }
+})
+
+onEvent('item.right_click', event => {
+    if (event.item.id == 'kubejs:mahou_crystal_ball') {
+        event.item.count--;
+        event.server.runCommandSilent(`gamestage add "${event.player.name}" mahoutsukai_all`)
+    }
+})
+
 onEvent('item.right_click', event => {
     if (event.item.id == 'kubejs:hyperspace_time_broom_mk1') {
         event.server.runCommandSilent(`kill @e[type=item]`)
@@ -54,6 +85,7 @@ onEvent('item.right_click', event => {
         event.player.tell("§b清理完成！")
     }
 })
+
 onEvent('item.right_click', event => {
     let player = event.player;
     let target = player.rayTrace(5);
@@ -64,6 +96,7 @@ onEvent('item.right_click', event => {
         }
     }
 })
+
 onEvent('item.right_click', event =>{
     if (event.item.id == 'kubejs:infection_medicine_infuser') {
         event.player.statusMessage = `注射中……（这真的是注射）`;
@@ -73,8 +106,10 @@ onEvent('item.food_eaten', event =>{
     if (event.item.id == 'kubejs:infection_medicine_infuser') {
         event.player.statusMessage = `注射完成！`;
         event.player.give("kubejs:empty_infection_medicine_infuser");
+        event.server.runCommandSilent(`effect clear "${event.player.name}" hordes:infected`);
     }
 })
+
 onEvent('item.right_click', event => {
     if (event.item.id == 'kubejs:blood_imprinting') {
         event.item.count--;
@@ -105,25 +140,14 @@ onEvent('item.right_click', event => {
         event.player.runCommandSilent(`stopHordeEvent`)
     }
 })
-onEvent('ftbquests.custom_reward.0909AEC1A58A8710', event => {
-    event.server.runCommandSilent(`gamestage add @p wake_up`);
-    event.server.runCommandSilent(`advancement grant @p only edtc:end`)
-    event.server.scheduleInTicks(100, event.server, function (callback) {
-        callback.data.tell('§3“曲终人散，黄粱一梦。玩家开始了新的梦境。玩家再次做起了梦，更好的梦。玩家就是宇宙。玩家就是爱。”');
-        callback.data.tell('§3“你就是那个玩家。”');
-        callback.data.tell('§3“该醒了。”');
-        callback.data.tell('§3——终末之诗');
-        callback.data.tell('§b是的，这一切都是梦');
-        callback.data.tell('§b是的，结束了，该醒了……');
-        event.server.runCommandSilent(`effect give @p haoyuezeughaus:nothingness 60 1`)
-        event.server.runCommandSilent(`gamemode spectator @p`);
-        event.player.giveInHand('haoyuezeughaus:yong_heng_zhi_ren');
-        callback.data.tell('§9[作者的话]§b最后的最后，感谢您游玩该整合包！');
-        callback.data.tell('§9[作者的话]§b如果喜欢这个整合包，记得给我们的官号三连+关注，这是我们坚持下去的动力！');
-        callback.data.tell('§9[作者的话]§b如果不喜欢的话就去看看别的包吧，肯定有喜欢的');
-        callback.data.tell('§9[作者的话]§b也可以期待我们的下一个整合包呢~');
-    })
-    event.server.scheduleInTicks(200, event.server, function (callback) {
-        callback.data.tell('[SYSTEM]§9在击败梦境守护者后，你从梦中醒了过来，看着手里的永恒之刃，不禁回想起那个就像自己亲历的那个梦，这时，你突然发现这个世界正在崩解！你被一股强大的引力吸入了虚空，就算永恒之刃也无法与这股力量对抗……');
-    })
+
+onEvent('item.entity_interact', event => {
+    if (event.target.type == 'minecraft:villager' && event.player.getHeldItem(event.hand) == 'botania:rune_greed'){
+        event.player.mainHandItem.count-=1
+        event.target.kill()
+        var trader = event.world.createEntity('minecraft:wandering_trader');
+        trader.setPosition(event.target.x, event.target.y, event.target.z);
+        trader.spawn();
+        event.player.tell("§2村民吸收了贪婪符文的力量，变成了流浪商人！")
+    }
 })
