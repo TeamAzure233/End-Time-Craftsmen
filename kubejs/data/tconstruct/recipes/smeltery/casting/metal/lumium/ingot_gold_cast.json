@@ -17,7 +17,7 @@
     "amount": 144
   },
   "result": {
-    "tag": "forge:ingots/lumium"
+    "item": "emendatusenigmatica:lumium_ingot"
   },
   "cooling_time": 68
 }

@@ -1,9 +1,10 @@
-onEvent('recipes', event => { 
+onEvent('recipes', event => {
     event.remove({id: 'notreepunching:flint_pickaxe'})
     event.remove({id: 'notreepunching:flint_hoe'})
     event.remove({output: '#forge:tools/mattocks'})
     event.remove({id: 'tconstruct:common/flint'})
     event.shapeless(Item.of('patchouli:guide_book', '{"patchouli:book":"patchouli:edtc_guide"}'),['minecraft:book','minecraft:cobblestone'])
+    event.shapeless(Item.of('patchouli:guide_book', '{"patchouli:book":"patchouli:the_dawn_project"}'),['minecraft:book','#minecraft:planks'])
     event.shapeless(Item.of('akashictome:tome', '{"akashictome:data":{tconstruct:{id:"tconstruct:encyclopedia",Count:1b,tag:{mantle:{book:{current_page:"armor.plate_chestplate"}}}},astralsorcery:{id:"astralsorcery:tome",Count:1b},ftbquests:{id:"ftbquests:book",Count:1b},immersiveengineering:{id:"immersiveengineering:manual",Count:1b},woot:{id:"patchouli:guide_book",Count:1b,tag:{"patchouli:book":"woot:wootguide"}},mahoutsukai:{id:"mahoutsukai:guidebook",Count:1b},extendedcrafting:{id:"patchouli:guide_book",Count:1b,tag:{"patchouli:book":"extendedcrafting:guide"}},modularrouters:{id:"patchouli:guide_book",Count:1b,tag:{"patchouli:book":"modularrouters:book"}},botania:{id:"botania:lexicon",Count:1b},bloodmagic:{id:"patchouli:guide_book",Count:1b,tag:{"patchouli:book":"bloodmagic:guide"}},thermal:{id:"patchouli:guide_book",Count:1b,tag:{"patchouli:book":"thermal:guidebook"}},patchouli:{id:"patchouli:guide_book",Count:1b,tag:{"patchouli:book":"patchouli:edtc_guide"}},supplementaries:{id:"patchouli:guide_book",Count:1b,tag:{"patchouli:book":"supplementaries:supplementaries_guide"}},rftoolsbase:{id:"rftoolsbase:manual",Count:1b},croptopia:{id:"croptopia:guide",Count:1b},parcool:{id:"parcool:parcool_guide",Count:1b}}}'),['#forge:bookshelves',Item.of('akashictome:tome').ignoreNBT()])
     event.remove({id: 'croptopia:steamed_rice'})
     event.remove({id: 'minecraft:bread'})
@@ -46,18 +47,19 @@ onEvent('recipes', event => {
     event.shapeless('create:cogwheel', ['create:shaft','#minecraft:planks'])
     event.shapeless('create:large_cogwheel', ['create:shaft','#minecraft:planks','#minecraft:planks'])
     event.remove({output: 'minecraft:ender_eye'})
-    event.recipes.createMixing(['minecraft:ender_eye'],['minecraft:blaze_powder', 'minecraft:ender_pearl', Fluid.of('astralsorcery:liquid_starlight', 200)]).heated()
+    event.recipes.createMixing(['minecraft:ender_eye'],['minecraft:blaze_powder', 'minecraft:ender_pearl', Fluid.of('astralsorcery:liquid_starlight', 100)]).heated()
 
-    event.remove({id: 'miniutilities:ender_dust_to_ender_pearl'})
+    event.replaceInput({id: 'miniutilities:ender_dust_to_ender_pearl'}, 'miniutilities:ender_dust', '#forge:dusts/ender')
+
     event.remove({id: 'miniutilities:unstable_ingot'})
-    event.recipes.createCompacting(['2x miniutilities:unstable_ingot'],['4x minecraft:netherite_block' ,'8x minecraft:tnt', '2x #forge:storage_blocks/uranium']).superheated()
+    event.recipes.createCompacting(['4x miniutilities:unstable_ingot'],['4x minecraft:netherite_block' ,'8x minecraft:tnt', '2x #forge:storage_blocks/uranium']).superheated()
 
     event.remove({id: 'vehicle:fluid_mixer'})
     event.remove({id: 'vehicle:fluid_extracter'})
-    event.recipes.createMixing([Fluid.of('vehicle:ender_sap', 600)],['thermal:ender_pearl_dust']).heated()
-    event.recipes.createMixing([Fluid.of('vehicle:blaze_juice', 450)],['minecraft:blaze_rod']).heated()
-    event.recipes.createMixing([Fluid.of('vehicle:ender_sap', 1000)],['thermal:ender_pearl_dust']).superheated()
-    event.recipes.createMixing([Fluid.of('vehicle:blaze_juice', 650)],['minecraft:blaze_rod']).superheated()
+    event.recipes.createMixing([Fluid.of('vehicle:ender_sap', 600)],['#forge:dusts/ender']).heated()
+    event.recipes.createMixing([Fluid.of('vehicle:blaze_juice', 450)],['minecraft:blaze_powder']).heated()
+    event.recipes.createMixing([Fluid.of('vehicle:ender_sap', 1000)],['#forge:dusts/ender']).superheated()
+    event.recipes.createMixing([Fluid.of('vehicle:blaze_juice', 650)],['minecraft:blaze_powder']).superheated()
     event.recipes.createMixing([Fluid.of('vehicle:fuelium', 200)], [Fluid.of('vehicle:blaze_juice', 100), Fluid.of('vehicle:ender_sap', 100), 'minecraft:glowstone_dust']).superheated()
     
     event.shaped('kubejs:hyperspace_time_broom_mk1', [
@@ -68,7 +70,6 @@ onEvent('recipes', event => {
         A: 'minecraft:stick',
         B: 'minecraft:wheat'
     })
-    event.shapeless('kubejs:hyperspace_time_broom_mk2',['kubejs:hyperspace_time_broom_mk1', 'minecraft:diamond'])
 
     event.shaped('pouchofunknown:pouch', [
         ' B ',
@@ -308,7 +309,7 @@ onEvent('recipes', event => {
     event.custom(
       {
         "type": "botania:terra_plate",
-        "mana": 1000000,
+        "mana": 500000,
         "ingredients": [
           {
             "item": "botania:livingwood_twig"
@@ -347,7 +348,7 @@ onEvent('recipes', event => {
     event.custom(
       {
         "type": "botania:terra_plate",
-        "mana": 1000000,
+        "mana": 250000,
         "ingredients": [
           {
             "item": "botania:livingwood_twig"
@@ -365,26 +366,144 @@ onEvent('recipes', event => {
             "item": "botania:terrasteel_ingot"
           },
           {
-            "item": "botania:terrasteel_ingot"
-          },
-          {
-            "item": "botania:terrasteel_ingot"
-          },
-          {
-            "item": "botania:terrasteel_ingot"
-          },
-          {
-            "item": "botania:terrasteel_ingot"
-          },
-          {
-            "item": "botania:terrasteel_ingot"
-          },
-          {
             "item": "minecraft:glowstone"
           }
         ],
         "result": {
           "item": "botania:terra_axe"
+        }
+      }
+    )
+
+    event.remove({id: 'botania:terrasteel_helmet'})
+    event.remove({id: 'botania:terrasteel_chestplate'})
+    event.remove({id: 'botania:terrasteel_leggings'})
+    event.remove({id: 'botania:terrasteel_boots'})
+    event.custom(
+      {
+        "type": "botania:terra_plate",
+        "mana": 250000,
+        "ingredients": [
+          {
+            "item": "botania:manasteel_helmet"
+          },
+          {
+            "item": "botania:livingwood_twig"
+          },
+          {
+            "item": "botania:livingwood_twig"
+          },
+          {
+            "tag": "botania:runes/spring"
+          },
+          {
+            "item": "botania:terrasteel_ingot"
+          },
+          {
+            "item": "botania:terrasteel_ingot"
+          },
+          {
+            "item": "botania:terrasteel_ingot"
+          }
+        ],
+        "result": {
+          "item": "botania:terrasteel_helmet"
+        }
+      }
+    )
+    event.custom(
+      {
+        "type": "botania:terra_plate",
+        "mana": 250000,
+        "ingredients": [
+          {
+            "item": "botania:manasteel_chestplate"
+          },
+          {
+            "item": "botania:livingwood_twig"
+          },
+          {
+            "item": "botania:livingwood_twig"
+          },
+          {
+            "tag": "botania:runes/summer"
+          },
+          {
+            "item": "botania:terrasteel_ingot"
+          },
+          {
+            "item": "botania:terrasteel_ingot"
+          },
+          {
+            "item": "botania:terrasteel_ingot"
+          }
+        ],
+        "result": {
+          "item": "botania:terrasteel_chestplate"
+        }
+      }
+    )
+    event.custom(
+      {
+        "type": "botania:terra_plate",
+        "mana": 250000,
+        "ingredients": [
+          {
+            "item": "botania:manasteel_leggings"
+          },
+          {
+            "item": "botania:livingwood_twig"
+          },
+          {
+            "item": "botania:livingwood_twig"
+          },
+          {
+            "tag": "botania:runes/autumn"
+          },
+          {
+            "item": "botania:terrasteel_ingot"
+          },
+          {
+            "item": "botania:terrasteel_ingot"
+          },
+          {
+            "item": "botania:terrasteel_ingot"
+          }
+        ],
+        "result": {
+          "item": "botania:terrasteel_leggings"
+        }
+      }
+    )
+    event.custom(
+      {
+        "type": "botania:terra_plate",
+        "mana": 250000,
+        "ingredients": [
+          {
+            "item": "botania:manasteel_boots"
+          },
+          {
+            "item": "botania:livingwood_twig"
+          },
+          {
+            "item": "botania:livingwood_twig"
+          },
+          {
+            "tag": "botania:runes/winter"
+          },
+          {
+            "item": "botania:terrasteel_ingot"
+          },
+          {
+            "item": "botania:terrasteel_ingot"
+          },
+          {
+            "item": "botania:terrasteel_ingot"
+          }
+        ],
+        "result": {
+          "item": "botania:terrasteel_boots"
         }
       }
     )
@@ -1324,8 +1443,11 @@ onEvent('recipes', event => {
 
     event.remove({input: 'mahoutsukai:hammer'})
     event.remove({id: 'mahoutsukai:hammer'})
-    event.replaceInput({id: 'mahoutsukai:mortar'},'minecraft:diamond','astralsorcery:starmetal_ingot')
-    event.replaceInput({id: 'mahoutsukai:pestle'},'minecraft:diamond','astralsorcery:starmetal_ingot')
+    event.replaceInput({id: 'mahoutsukai:dagger'},'minecraft:iron_ingot','mythicbotany:alfsteel_ingot')
+    event.replaceInput({id: 'mahoutsukai:dagger'},'minecraft:gold_ingot','botania:terrasteel_ingot')
+    event.replaceInput({id: 'mahoutsukai:dagger'},'minecraft:stick','botania:dreamwood_twig')
+    event.replaceInput({id: 'mahoutsukai:mortar'},'minecraft:diamond','botania:elementium_ingot')
+    event.replaceInput({id: 'mahoutsukai:pestle'},'minecraft:diamond','botania:terrasteel_ingot')
     event.custom(
       {
         "type": "mythicbotany:infusion",
@@ -1370,8 +1492,8 @@ onEvent('recipes', event => {
     event.recipes.createDeploying(['create:andesite_casing'], ['#minecraft:logs', 'create:andesite_alloy'])
 
     event.remove({id: 'create:crafting/materials/brass_casing'})
-    event.shapeless('create:brass_casing',['#minecraft:logs', 'create:brass_sheet'])
-    event.recipes.createDeploying(['create:brass_casing'], ['#minecraft:logs', 'create:brass_sheet'])
+    event.shapeless('create:brass_casing',['#minecraft:logs', '#forge:plates/brass'])
+    event.recipes.createDeploying(['create:brass_casing'], ['#minecraft:logs', '#forge:plates/brass'])
 
     event.remove({id: 'create:crafting/materials/copper_casing'})
     event.shapeless('create:copper_casing',['#minecraft:logs', '#forge:plates/copper'])
@@ -1380,8 +1502,8 @@ onEvent('recipes', event => {
     event.shapeless('kubejs:bronze_casing',['#minecraft:logs', '#forge:plates/bronze'])
     event.recipes.createDeploying(['kubejs:bronze_casing'], ['#minecraft:logs', '#forge:plates/bronze'])
 
-    event.shapeless('kubejs:cast_iron_casing',['#minecraft:logs', 'steampowered:cast_iron_sheet'])
-    event.recipes.createDeploying(['kubejs:cast_iron_casing'], ['#minecraft:logs', 'steampowered:cast_iron_sheet'])
+    event.shapeless('kubejs:cast_iron_casing',['#minecraft:logs', '#forge:plates/cast_iron'])
+    event.recipes.createDeploying(['kubejs:cast_iron_casing'], ['#minecraft:logs', '#forge:plates/cast_iron'])
 
     event.shapeless('kubejs:steel_casing',['#minecraft:logs', '#forge:plates/steel'])
     event.recipes.createDeploying(['kubejs:steel_casing'], ['#minecraft:logs', '#forge:plates/steel'])
@@ -1754,6 +1876,19 @@ onEvent('recipes', event => {
         M: 'create:precision_mechanism',
         R: 'minecraft:red_concrete',
         G: 'minecraft:light_gray_concrete'
+    })
+    event.recipes.createMechanicalCrafting('tac:workbench', [
+        'MTM',
+        'LCL',
+        'IBI',
+        'I I'
+    ], {
+        C: 'create:mechanical_crafter',
+        T: '#create:toolboxes',
+        B: 'minecraft:iron_block',
+        I: 'minecraft:iron_ingot',
+        L: '#minecraft:logs',
+        M: 'create:precision_mechanism',
     })
     
     event.recipes.createSequencedAssembly([
@@ -10178,7 +10313,7 @@ onEvent('recipes', event => {
                 "item": "endless:crystal_matrix_block"
               },
               "C": {
-                "item": "endless:neutronium_block"
+                "item": "endless:neutronium_ingot"
               },
               "D": {
                 "item": "minecraft:smooth_stone"
@@ -10410,4 +10545,5 @@ onEvent('recipes', event => {
           ]
       }
   )
+  event.shapeless(Item.of('minecraft:player_head', '{SkullOwner:{Id:[I;807872109,-50642177,-1128450341,2001042160],Properties:{textures:[{Value:"ewogICJ0aW1lc3RhbXAiIDogMTY3Nzg5OTc1ODQ0NCwKICAicHJvZmlsZUlkIiA6ICIzMDI3MjY2ZGZjZmI0MmZmYmNiZDM2ZGI3NzQ1N2FmMCIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2Zpc2hmbHkyMzMzMzMiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzI3OTg3YWEwZGZmZjk3NGQ5MTI3MzQxMmY3ZTAxNTlhMzUwNzg0OGRjMGRmMDdlYjMyYzYyMTBiMzllY2IxZCIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9",Signature:"fLhoWqRQcRPH/PaVudTkxgUxv2kiC9Cz6+JMgb1MwYbKo8eN/8XwE9ZxX4G8kMa3YDuVDF+xCFVlRQmH6VEIaBu6J+BC02+IijOtZZdH9vgDW/YQM6EFS/7OlZ1QdkCemhddbKQaJwWyZQm1W5za0qVG2PniP2gRk8iVqs6wHBnpIBkL8ys5xNkgumfxe+oA2JMoBqEINSmSZC+6dVpZIjWog8YDLcG8eZdD3/GWo6KnqvdzqYKY2yRncuYzNqP3sOW9ctY73ww64vS/LqmxhVoy7tgBE46oaB4dcK9RVy0Rmj4gS3aZySOMnZDPO6Xmv4pXdDgdPqYwgtv/oLGggrxOKok1k/oko6c3Hm5g99aCigyh6jPUukAolzlHw4uihrqCxbVDEPfBzvJx/+QKC7qAxg3EuDFj0jE7Yls+zIdD8UAsK/wejNCVpQ1227mpzQC0W84vaQ4gptsme4D4VELAY7Asc8Gn0Tishq+B5YR2RcCO/vskcV9y6NYzOk3YxugziDb2dNBc6htuG/GqPkyJN9SsBJhAmV3FdkV8i4Padnpr7zhHg5RdJX9zXNLoNrtgZp9j52FCyPxJabP4ATqaSh4kERbclmbGVD2gsyeYXtAe4lt5i/cx4HNeq9iietUmdKfsecDGn02A3cTRSOEeeYQ6FO6iGxXapnox2V8="}]},Name:"Gofishfly233333"}}'), [Item.of('minecraft:name_tag', "{RepairCost:0,display:{Name:'{\"text\":\"咕咕咕\"}'}}")])
 })

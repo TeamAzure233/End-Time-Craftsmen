@@ -1,0 +1,15 @@
+{
+    "name": "多方块结构",
+    "icon": "kubejs:machinery_alloy",
+    "category": "others",
+    "pages": [
+        {
+            "type": "text",
+            "text": "该整合包使用$(l:https://www.mcmod.cn/class/3890.html) Masterful Machinery $(/l)实现自定义多方块结构，每种机器都有不同的功能。你可以在JEI中搜索$(5)@masterfulmachinery$()来获取所有模块化机械的蓝图和部件。每种模块化机械的搭建方法可以通过在JEI里点击$(9)蓝图$()或者在对应的任务里看到，在这里不再赘述。"
+        },
+        {
+            "type": "text",
+            "text": "$(5)机器的运作方式$()：在输入输出端口中放入/接入需要的材料，随后机器就会自动开始运行。"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "name": "残留记录卷7",
+    "icon": "minecraft:map",
+    "category": "residual_pages",
+    "advancement": "edtc:pages/page7",
+    "pages": [
+        {
+            "type": "text",
+            "text": "或许是上天的眷顾，我得以离开。区区一只手臂丢了便丢了"
+        }
+    ]
+}

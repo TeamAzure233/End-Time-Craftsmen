@@ -17,7 +17,7 @@
     "amount": 144
   },
   "result": {
-    "tag": "forge:plates/copper"
+    "item": "emendatusenigmatica:copper_plate"
   },
   "cooling_time": 50
 }

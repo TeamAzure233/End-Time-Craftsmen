@@ -18,7 +18,7 @@
     "amount": 16
   },
   "result": {
-    "tag": "forge:nuggets/bronze"
+    "item": "emendatusenigmatica:bronze_nugget"
   },
   "cooling_time": 19
 }

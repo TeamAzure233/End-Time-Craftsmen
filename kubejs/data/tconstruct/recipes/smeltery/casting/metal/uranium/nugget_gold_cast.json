@@ -17,7 +17,7 @@
     "amount": 16
   },
   "result": {
-    "tag": "forge:nuggets/uranium"
+    "item": "emendatusenigmatica:uranium_nugget"
   },
   "cooling_time": 20
 }

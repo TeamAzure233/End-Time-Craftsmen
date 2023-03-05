@@ -18,7 +18,7 @@
     "amount": 144
   },
   "result": {
-    "tag": "forge:plates/tin"
+    "item": "emendatusenigmatica:tin_plate"
   },
   "cooling_time": 39
 }

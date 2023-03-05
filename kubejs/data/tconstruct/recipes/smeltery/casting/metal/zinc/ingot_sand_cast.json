@@ -18,7 +18,7 @@
     "amount": 144
   },
   "result": {
-    "tag": "forge:ingots/zinc"
+    "item": "emendatusenigmatica:zinc_ingot"
   },
   "cooling_time": 47
 }

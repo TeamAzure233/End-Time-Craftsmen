@@ -17,7 +17,7 @@
     "amount": 72
   },
   "result": {
-    "tag": "forge:rods/brass"
+    "item": "emendatusenigmatica:brass_rod"
   },
   "cooling_time": 38
 }

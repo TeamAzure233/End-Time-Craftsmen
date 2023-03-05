@@ -1,0 +1,11 @@
+{
+    "name": "Story",
+    "icon": "minecraft:book",
+    "category": "others",
+    "pages": [
+        {
+            "type": "text",
+            "text": ""
+        }
+    ]
+}

@@ -1,0 +1,92 @@
+{
+  "general": {
+    "boltAction": false,
+    "rate": 35,
+    "rateSelector": [
+      0,
+      1
+    ],
+    "gripType": "tac:two_handed_mosin",
+    "recoilAngle": 7.85,
+    "recoilKick": 2.325,
+    "horizontalRecoilAngle": 0.325,
+    "recoilAdsReduction": 0.28,
+    "weaponRecoilDuration": 0.625,
+    "recoilDuration": 0.14,
+    "cameraRecoilModifier": 1.325,
+    "weightKilo": 6.0,
+
+    "spread": 1.0,
+    "firstShotSpread": 0.002,
+    "hipFireInaccuracy": 11.45,
+    "projToMinAccuracy": 2,
+    "msToAccuracyReset": 100,
+    "movementInaccuracy": 3.0
+  },
+  "reloads": {
+    "magFed": true,
+    "maxAmmo": 5,
+    "reloadMagTimer": 41,
+    "additionalReloadEmptyMagTimer": 24,
+    "maxAdditionalAmmoPerOC": [
+      3,
+      5,
+      7
+    ],
+    "preReloadPauseTicks": 0
+  },
+  "projectile": {
+    "item": "tac:lapua338",
+    "visible": false,
+    "gravity": true,
+    "damage": 32,
+    "size": 0.0,
+    "speed": 44.5,
+    "life": 32
+  },
+  "sounds": {
+    "fire": "tac:item.aiawp_fire",
+    "reloadNormal": "tac:animation.awp_reload_norm",
+    "reloadEmpty": "tac:animation.awp_reload_empty",
+    "draw": "tac:animation.awp_draw",
+    "inspect": "tac:animation.awp_inspect",
+    "pullBolt": "tac:animation.awp_bolt",
+    "cock": "tac:item.pistol.cock",
+    "silencedFire": "tac:item.aiawp_fire_s"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 8.1,
+      "zOffset": -22.80,
+      "size": 1.05
+    },
+    "weaponType": 5,
+    "showDynamicHipfire": false
+  },
+  "modules": {
+    "zoom": {
+      "fovModifier": 0.7,
+      "yOffset": 8.515,
+      "zOffset": -5.7
+    },
+    "attachments": {
+      "scope": {
+        "yOffset": 7.6,
+        "zOffset": 6.425,
+        "scale": 1.0
+      },
+      "pistolScope": {
+        "yOffset": 7.6,
+        "zOffset": 5.025,
+        "scale": 1.0,
+        "doRenderMount": true,
+        "doOnSlideMovement": false
+      },
+      "barrel": {
+        "yOffset": -100829.84,
+        "zOffset": -22.80,
+        "scale": 1.00
+      }
+    }
+  }
+}

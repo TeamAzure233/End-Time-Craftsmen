@@ -17,7 +17,7 @@
     "amount": 16
   },
   "result": {
-    "tag": "forge:nuggets/tin"
+    "item": "emendatusenigmatica:tin_nugget"
   },
   "cooling_time": 13
 }

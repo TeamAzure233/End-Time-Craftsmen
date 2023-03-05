@@ -17,7 +17,7 @@
     "amount": 144
   },
   "result": {
-    "tag": "forge:plates/constantan"
+    "item": "emendatusenigmatica:constantan_plate"
   },
   "cooling_time": 64
 }

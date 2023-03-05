@@ -18,7 +18,7 @@
     "amount": 72
   },
   "result": {
-    "tag": "forge:rods/invar"
+    "item": "emendatusenigmatica:invar_rod"
   },
   "cooling_time": 45
 }

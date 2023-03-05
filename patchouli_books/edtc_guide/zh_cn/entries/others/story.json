@@ -1,0 +1,11 @@
+{
+    "name": "剧情",
+    "icon": "minecraft:book",
+    "category": "others",
+    "pages": [
+        {
+            "type": "text",
+            "text": "请见《曙光计划™记录手册》"
+        }
+    ]
+}

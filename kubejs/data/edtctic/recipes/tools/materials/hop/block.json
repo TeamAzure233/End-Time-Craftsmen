@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material",
-  "ingredient": {
-    "item": "jaopca:storage_blocks.hop_graphite"
-  },
-  "value": 9,
-  "needed": 1,
-  "material": "edtctic:hop"
-}

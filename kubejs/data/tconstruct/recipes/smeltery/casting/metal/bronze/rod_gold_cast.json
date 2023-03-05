@@ -17,7 +17,7 @@
     "amount": 72
   },
   "result": {
-    "tag": "forge:rods/bronze"
+    "item": "emendatusenigmatica:bronze_rod"
   },
   "cooling_time": 40
 }

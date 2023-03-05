@@ -5,7 +5,7 @@
     "amount": 1296
   },
   "result": {
-    "tag": "forge:storage_blocks/copper"
+    "item": "emendatusenigmatica:copper_block"
   },
   "cooling_time": 150
 }

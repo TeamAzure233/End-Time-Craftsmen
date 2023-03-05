@@ -17,7 +17,7 @@
     "amount": 144
   },
   "result": {
-    "tag": "forge:plates/steel"
+    "item": "emendatusenigmatica:steel_plate"
   },
   "cooling_time": 65
 }

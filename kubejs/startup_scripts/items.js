@@ -1,9 +1,6 @@
 onEvent('item.registry', event => {
     event.create('data').displayName('Data')
-    event.create('hyperspace_time_broom_mk1').displayName('超时空扫帚MK1').tooltip('右键清除所有掉落物，供提升性能用')
-    event.create('hyperspace_time_broom_mk2').displayName('超时空扫帚MK2').tooltip('右键清除所有掉落物和怪物，供提升性能用（未完成）').glow(true)
-
-    event.create('sponsor_items_box').displayName('赞助者物品宝箱').tooltip("§b右键随机获得一个赞助者物品")
+    event.create('hyperspace_time_broom_mk1').displayName('超时空扫帚').tooltip('右键清除所有掉落物，供提升性能用')
 
     event.create('empty_infection_medicine_infuser').displayName('空的抗丧尸感染药剂注射器')
     event.create('infection_medicine_infuser').displayName('抗丧尸感染药剂注射器').food((food) => {food.hunger(0).saturation(0).effect('minecraft:regeneration', 100, 1, 1.0).alwaysEdible(true)})
@@ -20,7 +17,7 @@ onEvent('item.registry', event => {
 
     event.create('machinery_alloy').displayName('机械合金')
 
-    event.create('incomplete_asylum_of_elves_1').displayName('未完成的精灵之庇护').tooltip('§b下一步：使用注魔板进行泰拉凝聚')
+    event.create('incomplete_asylum_of_elves_1').displayName('未完成的精灵之庇护').tooltip('§b下一步：使用注魔板进行注魔')
     event.create('incomplete_asylum_of_elves_2').displayName('未完成的精灵之庇护').tooltip('§b下一步：丢入精灵门进行精灵交易')
     event.create('asylum_of_elves').displayName('精灵之庇护').glow(true).rarity(RARITY_UNCOMMON).tooltip('§b右键获得游戏阶段“asylum_of_elves”')
     event.create('asylum_of_starlight').displayName('星光之庇护').glow(true).rarity(RARITY_UNCOMMON).tooltip('§b右键获得游戏阶段“asylum_of_starlight”')

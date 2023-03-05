@@ -1,0 +1,89 @@
+{
+  "general": {
+    "auto": true,
+    "rate": 600,
+    "burstRate": 18,
+    "rateSelector": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "gripType": "tac:two_handed_ak47",
+    "recoilAngle": 1.65,
+    "recoilKick": 1.05,
+    "horizontalRecoilAngle": 0.525,
+    "recoilAdsReduction": 0.235,
+    "weaponRecoilOffset": 0.885,
+    "cameraRecoilModifier": 0.9,
+    "recoilDuration": 0.205,
+    "weightKilo": 3.9,
+
+    "spread": 1.425,
+    "firstShotSpread": 0.175,
+    "hipFireInaccuracy": 3.3,
+    "projToMinAccuracy": 3,
+    "msToAccuracyReset": 280,
+    "movementInaccuracy": 0.185
+  },
+  "reloads": {
+    "magFed": true,
+    "maxAmmo": 30,
+    "reloadMagTimer": 20,
+    "additionalReloadEmptyMagTimer": 15,
+    "maxAdditionalAmmoPerOC": [10, 15, 25],
+    "preReloadPauseTicks": 14
+  },
+  "projectile": {
+    "item": "tac:58x42",
+    "visible": false,
+    "damage": 7.0,
+    "size": 0.175,
+    "speed": 36.5,
+    "life": 12,
+    "trailLengthMultiplier": 3.75
+  },
+  "sounds": {
+    "fire": "tac:item.qbz95_fire",
+    "reloadNormal": "tac:animation.type_95_reload_norm",
+    "reloadEmpty": "tac:animation.type_95_reload_empty",
+    "draw": "tac:animation.type_95_draw",
+    "inspect": "tac:animation.type_95_inspect",
+    "cock": "tac:item.pistol.cock",
+    "silencedFire": "tac:item.qbz95_fire_s"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 8.35,
+      "zOffset": -19.55,
+      "size": 1.10,
+      "trailAdjust": 1.255
+    },
+    "weaponType": 0
+  },
+  "modules": {
+    "zoom":{
+      "fovModifier": 0.8,
+      "yOffset": 13.1,
+      "zOffset": -3.65
+    },"attachments": {
+      "barrel": {
+        "yOffset": -100829.84,
+        "zOffset": -21.55,
+        "scale": 1.00
+      },
+      "scope": {
+        "yOffset": 12.39,
+        "zOffset": 3.9,
+        "scale": 1.00
+      },
+      "pistolScope": {
+        "yOffset": 12.39,
+        "zOffset": 2.5,
+        "scale": 1.0,
+        "doRenderMount": true,
+        "doOnSlideMovement": false
+      }
+    }
+  }
+}

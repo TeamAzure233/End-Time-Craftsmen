@@ -18,7 +18,7 @@
     "amount": 72
   },
   "result": {
-    "tag": "forge:rods/tin"
+    "item": "emendatusenigmatica:tin_rod"
   },
   "cooling_time": 28
 }

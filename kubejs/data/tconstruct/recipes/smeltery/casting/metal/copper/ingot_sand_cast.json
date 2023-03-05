@@ -9,7 +9,7 @@
     "amount": 144
   },
   "result": {
-    "tag": "forge:ingots/copper"
+    "item": "emendatusenigmatica:copper_ingot"
   },
   "cooling_time": 50
 }

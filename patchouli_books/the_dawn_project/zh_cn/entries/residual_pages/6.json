@@ -1,0 +1,12 @@
+{
+    "name": "残留记录卷6",
+    "icon": "minecraft:map",
+    "category": "residual_pages",
+    "advancement": "edtc:pages/page6",
+    "pages": [
+        {
+            "type": "text",
+            "text": "黄天城也不安全了，我现在就像一只老鼠到处逃窜"
+        }
+    ]
+}

@@ -18,7 +18,7 @@
     "amount": 72
   },
   "result": {
-    "tag": "forge:rods/lead"
+    "item": "emendatusenigmatica:lead_rod"
   },
   "cooling_time": 31
 }

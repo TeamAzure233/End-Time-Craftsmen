@@ -1,5 +1,8 @@
 onEvent('ftbquests.custom_reward.495115228FCCA932', event => {
     event.server.runCommandSilent(`gamestage add "${event.player.name}" getting_start`)
+    event.player.tell(`<${event.player.name}> 完成了一个研究后，我似乎学会了这些，但我还得花时间来研究它们的价值……`)
+    event.server.runCommandSilent(`advancement grant "${event.player.name}" only edtc:pages/page0`)
+    event.server.runCommandSilent(`advancement grant "${event.player.name}" only edtc:diaries/diary1`)
 })
 onEvent('ftbquests.custom_reward.3EE53AB5BE072617', event => {
     event.server.runCommandSilent(`gamestage add "${event.player.name}" tinker_start`)
@@ -103,4 +106,7 @@ onEvent('ftbquests.custom_reward.0909AEC1A58A8710', event => {
     event.server.scheduleInTicks(200, event.server, function (callback) {
         callback.data.tell('[SYSTEM]§9在击败梦境守护者后，你从梦中醒了过来，才察觉到这一切只不过是梦。但看着手里的永恒之刃，这个梦又像是真实的……这时，你突然发现这个世界正在崩解！你被一股强大的引力吸入了虚空，就算永恒之刃也无法与这股力量对抗……');
     })
+})
+onEvent('ftbquests.custom_reward.5DFE7DD7259777DC', event => {
+    event.server.runCommandSilent(`kill "${event.player.name}"`)
 })

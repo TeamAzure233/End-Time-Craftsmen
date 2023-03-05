@@ -12,7 +12,7 @@
   ],
   "stats": {
     "base": {
-      "tconstruct:attack_damage": 7.0,
+      "tconstruct:attack_damage": 6.5,
       "tconstruct:attack_speed": 0.9
     }
   },

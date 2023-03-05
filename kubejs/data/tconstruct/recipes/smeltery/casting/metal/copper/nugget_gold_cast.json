@@ -8,7 +8,7 @@
     "amount": 16
   },
   "result": {
-    "tag": "forge:nuggets/copper"
+    "item": "emendatusenigmatica:copper_nugget"
   },
   "cooling_time": 17
 }

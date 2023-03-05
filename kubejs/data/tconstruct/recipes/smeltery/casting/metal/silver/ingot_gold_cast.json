@@ -17,7 +17,7 @@
     "amount": 144
   },
   "result": {
-    "tag": "forge:ingots/silver"
+    "item": "emendatusenigmatica:silver_ingot"
   },
   "cooling_time": 60
 }

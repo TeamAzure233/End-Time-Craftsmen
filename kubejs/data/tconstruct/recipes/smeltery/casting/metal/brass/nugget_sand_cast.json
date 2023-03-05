@@ -18,7 +18,7 @@
     "amount": 16
   },
   "result": {
-    "tag": "forge:nuggets/brass"
+    "item": "emendatusenigmatica:brass_nugget"
   },
   "cooling_time": 18
 }

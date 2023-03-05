@@ -27,12 +27,20 @@ onEvent("lootjs", (event) => {
 
     event
     .addLootTypeModifier(LootType.CHEST)
-    .randomChance(0.4)
-    .thenAdd(Item.of('ftbquests:lootcrate', '{type:"bullet"}'))
     .randomChance(0.3)
     .thenAdd(Item.of('ftbquests:lootcrate', '{type:"basic"}'))
     .randomChance(0.2)
     .thenAdd(Item.of('ftbquests:lootcrate', '{type:"rare"}'))
+    .randomChance(0.1)
+    .thenAdd(Item.of('ftbquests:lootcrate', '{type:"advanced"}'))
+    .randomChance(0.05)
+    .thenAdd(Item.of('ftbquests:lootcrate', '{type:"epic"}'))
+    .randomChance(0.01)
+    .thenAdd(Item.of('ftbquests:lootcrate', '{type:"legendry"}'))
+    .randomChance(0.1)
+    .thenAdd(Item.of('ftbquests:lootcrate', '{type:"guns"}'))
+    .randomChance(0.1)
+    .thenAdd(Item.of('ftbquests:lootcrate', '{type:"sponsors_items"}'))
 
     event
     .addLootTypeModifier(LootType.UNKNOWN)

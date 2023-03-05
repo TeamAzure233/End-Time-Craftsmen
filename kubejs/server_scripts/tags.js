@@ -10,6 +10,9 @@ onEvent('item.tags', event => {
     event.remove('forge:gems/certus_quartz', 'appliedenergistics2:charged_certus_quartz_crystal')
     event.add('forge:gems/charged_certus_quartz', 'appliedenergistics2:charged_certus_quartz_crystal')
 
+    event.add('forge:dusts/ender', ['thermal:ender_pearl_dust','appliedenergistics2:ender_dust'])
+    event.add('appliedenergistics2:ender_dust', ['thermal:ender_pearl_dust','emendatusenigmatica:ender_dust','miniutilities:ender_dust'])
+
     event.add('diet:proteins', 'gofish:soup_can_open')
     event.add('diet:vegetables', 'gofish:soup_can_open')
     event.add('diet:fruits', 'gofish:fruit_can_open')
@@ -31,26 +34,24 @@ onEvent('item.tags', event => {
     event.add('forge:meat_cooked', 'croptopia:cooked_shrimp')
     event.add('forge:meat_cooked', 'croptopia:cooked_tuna')
 
+    event.add('kubejs:gun_accessories', ['tac:coyote_sight', 'tac:aimpoint_t2', 'tac:aimpoint_t1', 'tac:eotech_n', 'tac:vortex_uh_1', 'tac:eotech_short', 'tac:srs_red_dot', 'tac:acog_4x_scope', 'tac:qmk152', 'tac:elcan_14x', 'tac:lpvo_1_6', 'tac:8x_scope', 'tac:old_8x_scope', 'tac:old_4x_scope', 'tac:mini_dot', 'tac:sro_dot', 'tac:silencer', 'tac:muzzle_brake', 'tac:muzzle_compensator', 'tac:pistol_silencer', 'tac:light_stock', 'tac:tactical_stock', 'tac:weighted_stock', 'tac:light_grip', 'tac:specialised_grip'])
+    event.add('kubejs:bullets', ['tac:round45', 'tac:ae50', 'tac:win_30-30', 'tac:bullet_308', 'tac:nato_556_bullet', 'tac:9mm_round', 'tac:10_gauge_round', 'tac:58x42', 'tac:762x25', 'tac:762x54', 'tac:762x39', 'tac:50bmg', 'tac:lapua338', 'tac:bullet68'])
+    event.add('kubejs:guns', ['tac:ai_awp', 'tac:db_short', 'tac:aa_12', 'tac:m870_classic', 'tac:m1014', 'tac:m60', 'tac:dp28', 'tac:rpk', 'tac:m1911', 'tac:glock_17', 'tac:sti2011', 'tac:deagle_357', 'tac:cz75', 'tac:cz75_auto', 'tac:tti_g34', 'tac:vector45', 'tac:micro_uzi', 'tac:hk_mp5a5', 'tac:mp7', 'tac:ak47', 'tac:m4', 'tac:qbz_95', 'tac:mk14', 'tac:hk416_a5', 'tac:type81_x', 'tac:fn_fal', 'tac:sks_tactical', 'tac:m16a4', 'tac:scar_h', 'tac:scar_l', 'tac:mk47', 'tac:spr15', 'tac:mk18_mod1', 'tac:m24'])
+
     event.add('kubejs:banned_tools', 'minecraft:wooden_pickaxe')
     event.add('kubejs:banned_tools', 'minecraft:wooden_axe')
-    event.add('kubejs:banned_tools', 'minecraft:wooden_hoe')
     event.add('kubejs:banned_tools', 'minecraft:stone_pickaxe')
     event.add('kubejs:banned_tools', 'minecraft:stone_axe')
-    event.add('kubejs:banned_tools', 'minecraft:stone_hoe')
     event.add('kubejs:banned_tools', 'minecraft:golden_pickaxe')
     event.add('kubejs:banned_tools', 'minecraft:golden_axe')
-    event.add('kubejs:banned_tools', 'minecraft:golden_hoe')
     event.add('kubejs:banned_tools', 'minecraft:iron_pickaxe')
     event.add('kubejs:banned_tools', 'minecraft:iron_axe')
-    event.add('kubejs:banned_tools', 'minecraft:iron_hoe')
     event.add('kubejs:banned_tools', 'minecraft:diamond_pickaxe')
     event.add('kubejs:banned_tools', 'minecraft:diamond_axe')
-    event.add('kubejs:banned_tools', 'minecraft:diamond_hoe')
     event.add('kubejs:banned_tools', 'minecraft:netherite_pickaxe')
     event.add('kubejs:banned_tools', 'minecraft:netherite_axe')
-    event.add('kubejs:banned_tools', 'minecraft:netherite_hoe')
-    event.add('kubejs:banned_tools', ['botania:manasteel_pick', 'botania:manasteel_hoe', 'botania:manasteel_axe', 'botania:elementium_pickaxe', 'botania:elementium_hoe', 'botania:elementium_axe'])
-    event.add('kubejs:banned_tools', ['appliedenergistics2:certus_quartz_axe', 'appliedenergistics2:certus_quartz_hoe', 'appliedenergistics2:certus_quartz_pickaxe', 'appliedenergistics2:nether_quartz_axe', 'appliedenergistics2:nether_quartz_hoe', 'appliedenergistics2:nether_quartz_pickaxe'])
+    event.add('kubejs:banned_tools', ['botania:manasteel_pick', 'botania:manasteel_axe', 'botania:elementium_pickaxe', 'botania:elementium_axe'])
+    event.add('kubejs:banned_tools', ['appliedenergistics2:certus_quartz_axe', 'appliedenergistics2:certus_quartz_pickaxe', 'appliedenergistics2:nether_quartz_axe', 'appliedenergistics2:nether_quartz_pickaxe'])
 
     event.add('forge:tools/axes', 'appliedenergistics2:certus_quartz_axe')
     event.add('forge:tools/axes', 'appliedenergistics2:nether_quartz_axe')
@@ -96,7 +97,7 @@ onEvent('item.tags', event => {
     event.add('kubejs:brass_machine', 'thermal:device_collector')
     event.add('kubejs:brass_machine', 'thermal:device_nullifier')
     event.add('kubejs:brass_machine', 'thermal:device_potion_diffuser')
-    event.add('kubejs:brass_machine', 'vehicle:workstation')
+    event.add('kubejs:brass_machine', ['vehicle:workstation', 'tac:workbench'])
 
     event.add('kubejs:liquid_machine', 'thermal:device_water_gen')
     event.add('kubejs:liquid_machine', 'create:mechanical_pump')
@@ -165,10 +166,6 @@ onEvent('item.tags', event => {
     event.add('kubejs:disabled', ['endless:neutron_compressor','extendedcrafting:compressor','endless:neutronium_collector','endless:dense_neutronium_collector','endless:denser_neutronium_collector','endless:densest_neutronium_collector'])
 
     event.add('kubejs:disabled', ['extendedcrafting:black_iron_ingot', 'extendedcrafting:redstone_ingot','extendedcrafting:crystaltine_ingot',  'extendedcrafting:black_iron_slate', 'extendedcrafting:basic_catalyst', 'extendedcrafting:advanced_catalyst', 'extendedcrafting:elite_catalyst', 'extendedcrafting:ultimate_catalyst', 'extendedcrafting:redstone_catalyst', 'extendedcrafting:ender_catalyst', 'extendedcrafting:enhanced_ender_catalyst', 'extendedcrafting:crystaltine_catalyst', 'extendedcrafting:the_ultimate_catalyst', 'extendedcrafting:basic_component', 'extendedcrafting:advanced_component', 'extendedcrafting:elite_component', 'extendedcrafting:ultimate_component', 'extendedcrafting:redstone_component', 'extendedcrafting:ender_component', 'extendedcrafting:enhanced_ender_component', 'extendedcrafting:crystaltine_component', 'extendedcrafting:the_ultimate_component', 'extendedcrafting:frame','extendedcrafting:enhanced_ender_ingot'])
-
-    event.remove('forge:wires/copper', 'createaddition:copper_wire')
-
-    event.removeAll(['emendatusenigmatica:charcoal_dust', 'emendatusenigmatica:lithium_dust', 'emendatusenigmatica:coke_dust', 'emendatusenigmatica:ender_dust', 'emendatusenigmatica:graphite_dust', 'emendatusenigmatica:fluorite_gem', 'emendatusenigmatica:fluorite_dust'])
 })
 onEvent('item.tags', event => {
     let materials = ['iron','gold','copper','silver','lead','nickel','uranium','aluminum','osmium','tin','zinc']

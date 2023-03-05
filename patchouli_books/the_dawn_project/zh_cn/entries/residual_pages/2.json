@@ -1,0 +1,12 @@
+{
+    "name": "残留记录卷2",
+    "icon": "minecraft:map",
+    "category": "residual_pages",
+    "advancement": "edtc:pages/page2",
+    "pages": [
+        {
+            "type": "text",
+            "text": "（书页似乎有些破损，像是用笔穿破的）这群疯 $(k)？$() ，他们自己更改实验数据。 $(k)**$() 他们怎么敢 $(k)？？$() 做，不行，我得 $(k)？？$() 这项实验，这样下去，谁也不知道 $(k)？？$() 会变成什么样！"
+        }
+    ]
+}

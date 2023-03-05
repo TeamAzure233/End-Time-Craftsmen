@@ -1,0 +1,12 @@
+{
+    "name": "实验记录1",
+    "icon": "minecraft:filled_map",
+    "category": "experiment_records",
+    "advancement": "edtc:records/record1",
+    "pages": [
+        {
+            "type": "text",
+            "text": "程序：接受$(br)危险度：零级$(br)意识：存在$(br)机体：安全$(br2)我们首先注射了2号药物，骨骼全部更换，实验很成功并没有出现任何异常。更换过骨骼后进行5号药物的注射，或许是更换骨骼的原因，实验数据上涨的非常慢"
+        }
+    ]
+}

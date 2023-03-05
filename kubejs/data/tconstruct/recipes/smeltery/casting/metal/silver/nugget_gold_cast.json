@@ -17,7 +17,7 @@
     "amount": 16
   },
   "result": {
-    "tag": "forge:nuggets/silver"
+    "item": "emendatusenigmatica:silver_nugget"
   },
   "cooling_time": 20
 }

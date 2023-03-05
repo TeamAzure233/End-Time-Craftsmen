@@ -1,0 +1,11 @@
+{
+    "name": "Multiblock",
+    "icon": "kubejs:machinery_alloy",
+    "category": "others",
+    "pages": [
+        {
+            "type": "text",
+            "text": ""
+        }
+    ]
+}

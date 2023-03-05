@@ -16,7 +16,7 @@ CTEventManager.register<GameStageAdded>((event) => {
         event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§etinker_start§b！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n制造武器、工具\n§8——————————————————————————————");
     }
     if (event.stage == "melting") {
-        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§emelting§b！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n在熔化炉中熔炼矿石\n制作更多的武器、工具\n§8——————————————————————————————");
+        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§emelting§b！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n在匠魂的炉中熔炼矿石\n制作更多的武器、工具\n§8——————————————————————————————");
     }
 
     if (event.stage == "create_start") {
@@ -255,8 +255,6 @@ ItemStages.restrict(<tag:items:kubejs:electricity_machine>,"electricity_era")
 .restrict(<item:immersiveengineering:heavy_engineering>)
 .restrict(<item:immersiveengineering:rs_engineering>)
 .restrict(<item:mekanism:cardboard_box>)
-.restrict(<item:kubejs:empty_timeinabottle>)
-.restrict(<item:tiab:timeinabottle>)
 .setHiddenInJEI(false);
 
 ItemStages.restrict(<item:kubejs:chorus_chrome>,"integration_era")
@@ -280,6 +278,8 @@ ItemStages.restrict(<item:kubejs:chorus_chrome>,"integration_era")
 .restrict(<item:kubejs:refined_radiance_block>)
 .restrict(<item:kubejs:overcharged_alloy_block>)
 .restrict(<item:kubejs:chromatic_mechanism>)
+.restrict(<item:kubejs:empty_timeinabottle>)
+.restrict(<item:tiab:timeinabottle>)
 .setHiddenInJEI(false);
 
 ItemStages.restrict(<item:appliedenergistics2:2_cubed_spatial_cell_component>,"digital_era")
@@ -488,6 +488,9 @@ ItemStages.restrict(<item:tconstruct:seared_ingot_gauge>,"melting")
 .restrict(<item:tconstruct:seared_basin>)
 .restrict(<item:tconstruct:seared_channel>)
 .restrict(<item:tconstruct:seared_faucet>)
+.restrict(<item:tconstruct:smeltery_controller>)
+.restrict(<item:tconstruct:foundry_controller>)
+.restrict(<item:tconstruct:scorched_alloyer>)
 .setHiddenInJEI(false);
 
 ItemStages.restrict(<item:extendedcrafting:compressor>,"infinite")

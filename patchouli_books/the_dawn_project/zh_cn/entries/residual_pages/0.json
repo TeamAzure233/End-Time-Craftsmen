@@ -1,0 +1,12 @@
+{
+    "name": "残留记录卷 —— 起始",
+    "icon": "minecraft:map",
+    "category": "residual_pages",
+    "advancement": "edtc:pages/page0",
+    "pages": [
+        {
+            "type": "text",
+            "text": "星历3304年，因未知原因，所有的智慧型生命体都已经死亡，并且变成了一些奇怪的生物。实验体复生人是这场危机中唯一幸存下来的。而复生人能活下来的原因，仅仅是因为他能复生……"
+        }
+    ]
+}

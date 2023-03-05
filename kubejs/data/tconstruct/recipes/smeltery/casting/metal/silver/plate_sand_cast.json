@@ -18,7 +18,7 @@
     "amount": 144
   },
   "result": {
-    "tag": "forge:plates/silver"
+    "item": "emendatusenigmatica:silver_plate"
   },
   "cooling_time": 60
 }

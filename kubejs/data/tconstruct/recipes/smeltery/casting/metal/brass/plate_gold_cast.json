@@ -17,7 +17,7 @@
     "amount": 144
   },
   "result": {
-    "tag": "forge:plates/brass"
+    "item": "emendatusenigmatica:brass_plate"
   },
   "cooling_time": 54
 }

@@ -12,7 +12,7 @@ onEvent('recipes', event => {
         event.replaceInput({}, `#forge:storage_blocks/${i}`, `${mod}:${i}_block`)
     }
 
-    let gems = ['charcoal','coke','fluorite','cinnabar','apatite','sulfur','potassium_nitrate']
+    let gems = ['coke','fluorite','cinnabar','apatite','sulfur','potassium_nitrate']
     for (let i of gems) {
         event.replaceOutput({}, `#forge:gems/${i}`, `${mod}:${i}_gem`)
         event.replaceOutput({}, `#forge:storage_blocks/${i}`, `${mod}:${i}_block`)
@@ -44,7 +44,7 @@ onEvent('recipes', event => {
         event.replaceInput({}, `#forge:gears/${i}`, `${mod}:${i}_gear`)
     }
 
-    let materials2 = ['wood','lithium','coal','charcoal','coke','fluorite','quartz','fluix','cinnabar','apatite','sulfur','potassium_nitrate']
+    let materials2 = ['wood','lithium','coal','charcoal','coke','fluorite','quartz','cinnabar','apatite','sulfur','potassium_nitrate','ender']
     for (let i of materials2) {
         event.replaceOutput({}, `#forge:dusts/${i}`, `${mod}:${i}_dust`)
         event.replaceInput({}, `#forge:dusts/${i}`, `${mod}:${i}_dust`)
@@ -59,7 +59,73 @@ onEvent('recipes', event => {
         event.recipes.createPressing([`#forge:plates/${i}`],[`#forge:ingots/${i}`])
         event.recipes.thermal.press(`#forge:plates/${i}`,`#forge:ingots/${i}`)
         event.recipes.immersiveengineeringMetalPress(`#forge:plates/${i}`, `#forge:ingots/${i}`, 'immersiveengineering:mold_plate')
+        event.custom(
+          {
+            "type": "tconstruct:casting_table",
+            "cast": {
+              "tag": "tconstruct:casts/multi_use/plate"
+            },
+            "fluid": {
+              "tag": `forge:molten_${i}`,
+              "amount": 144
+            },
+            "result": {
+              "item": `emendatusenigmatica:${i}_plate`
+            },
+            "cooling_time": 50
+          }
+        )
+        event.custom(
+          {
+            "type": "tconstruct:casting_table",
+            "cast": {
+              "tag": "tconstruct:casts/single_use/plate"
+            },
+            "cast_consumed": true,
+            "fluid": {
+              "tag": `forge:molten_${i}`,
+              "amount": 144
+            },
+            "result": {
+              "item": `emendatusenigmatica:${i}_plate`
+            },
+            "cooling_time": 50
+          }
+        )
     }
+    event.custom(
+      {
+        "type": "tconstruct:casting_table",
+        "cast": {
+          "tag": "tconstruct:casts/multi_use/plate"
+        },
+        "fluid": {
+          "tag": `forge:molten_netherite`,
+          "amount": 144
+        },
+        "result": {
+          "item": `thermal:netherite_plate`
+        },
+        "cooling_time": 100
+      }
+    )
+    event.custom(
+      {
+        "type": "tconstruct:casting_table",
+        "cast": {
+          "tag": "tconstruct:casts/single_use/plate"
+        },
+        "cast_consumed": true,
+        "fluid": {
+          "tag": `forge:molten_netherite`,
+          "amount": 144
+        },
+        "result": {
+          "item": `thermal:netherite_plate`
+        },
+        "cooling_time": 100
+      }
+    )
 
     let gems = ['lapis','diamond','emerald']
     for (let i of gems) {
@@ -230,9 +296,13 @@ onEvent('recipes', event => {
         )
     }
 
-    event.recipes.thermal.pulverizer('appliedenergistics2:ender_dust','minecraft:ender_pearl')
-    event.recipes.immersiveengineeringCrusher('appliedenergistics2:ender_dust', 'minecraft:ender_pearl')
-    event.recipes.bloodmagic.alchemytable('2x appliedenergistics2:ender_dust', ['minecraft:ender_pearl',"#bloodmagic:arc/cuttingfluid"]).syphon(400).ticks(200).upgradeLevel(1)
+    event.remove({output: `#forge:dusts/ender`})
+    event.recipes.createMilling([`4x emendatusenigmatica:ender_dust`],['minecraft:ender_pearl'])
+    event.recipes.thermal.pulverizer(`4x emendatusenigmatica:ender_dust`,'minecraft:ender_pearl')
+    event.recipes.immersiveengineeringCrusher(`4x emendatusenigmatica:ender_dust`, 'minecraft:ender_pearl')
+    event.recipes.mekanismCrushing(`4x emendatusenigmatica:ender_dust`, 'minecraft:ender_pearl')
+    event.recipes.immersiveengineeringCrusher('4x emendatusenigmatica:ender_dust', 'minecraft:ender_pearl')
+    event.recipes.bloodmagic.alchemytable('8x emendatusenigmatica:ender_dust', ['minecraft:ender_pearl',"#bloodmagic:arc/cuttingfluid"]).syphon(400).ticks(200).upgradeLevel(1)
     event.custom(
             {
                 "type": "bloodmagic:arc",
@@ -243,8 +313,8 @@ onEvent('recipes', event => {
                   "tag": "bloodmagic:arc/cuttingfluid"
                 },
                 "output": {
-                  "item": 'appliedenergistics2:ender_dust',
-                  "count": 2
+                  "item": 'emendatusenigmatica:ender_dust',
+                  "count": 8
                 },
                 "consumeingredient": false
             }
@@ -340,11 +410,44 @@ onEvent('recipes', event => {
                 },
                 "result": {
                     "item": `${mod}:${i}_rod`,
-                    "count": 2
+                    "count": 1
                 }
             }
         )
         event.recipes.immersiveengineeringMetalPress(`#forge:rods/${i}`, `#forge:ingots/${i}`, 'immersiveengineering:mold_rod')
+        event.custom(
+          {
+            "type": "tconstruct:casting_table",
+            "cast": {
+              "tag": "tconstruct:casts/multi_use/rod"
+            },
+            "fluid": {
+              "tag": `forge:molten_${i}`,
+              "amount": 72
+            },
+            "result": {
+              "item": `emendatusenigmatica:${i}_rod`
+            },
+            "cooling_time": 32
+          }
+        )
+        event.custom(
+          {
+            "type": "tconstruct:casting_table",
+            "cast": {
+              "tag": "tconstruct:casts/single_use/rod"
+            },
+            "cast_consumed": true,
+            "fluid": {
+              "tag": `forge:molten_${i}`,
+              "amount": 72
+            },
+            "result": {
+              "item": `emendatusenigmatica:${i}_rod`
+            },
+            "cooling_time": 32
+          }
+        )
     }
 
     let gems = ['lapis','diamond','emerald']
@@ -358,7 +461,7 @@ onEvent('recipes', event => {
                 },
                 "result": {
                     "item": `${mod}:${i}_rod`,
-                    "count": 2
+                    "count": 1
                 }
             }
         )

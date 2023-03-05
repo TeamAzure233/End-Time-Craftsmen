@@ -18,7 +18,7 @@
     "amount": 144
   },
   "result": {
-    "tag": "forge:plates/lead"
+    "item": "emendatusenigmatica:lead_plate"
   },
   "cooling_time": 43
 }

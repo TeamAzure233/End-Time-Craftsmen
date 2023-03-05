@@ -17,7 +17,7 @@
     "amount": 144
   },
   "result": {
-    "tag": "forge:ingots/tin"
+    "item": "emendatusenigmatica:tin_ingot"
   },
   "cooling_time": 39
 }
