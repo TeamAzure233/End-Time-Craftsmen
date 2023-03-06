@@ -214,7 +214,7 @@ onEvent('recipes', event => {
 
     event.recipes.createCompacting(['botania:blaze_block'],['18x minecraft:blaze_powder'])
     event.replaceInput({id: 'botania:natura_pylon'}, 'minecraft:ender_eye', 'botania:mana_pearl')
-    event.replaceInput({id: 'mythicbotany:alfsteel_pylon'}, 'minecraft:ghast_tear', 'botania:quartz_elven')
+    event.replaceInput({id: 'mythicbotany:alfsteel_pylon'}, 'minecraft:ghast_tear', 'botania:mana_powder')
     event.replaceInput({output: 'minecraft:beacon'}, 'minecraft:nether_star', 'botania:dragonstone_block')
     event.custom(
       {
