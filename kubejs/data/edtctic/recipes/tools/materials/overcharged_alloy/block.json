@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "kubejs:overcharged_alloy_block"
+  },
+  "value": 9,
+  "needed": 1,
+  "material": "edtctic:overcharged_alloy",
+  "leftover": {
+    "item": "createaddition:overcharged_alloy"
+  }
+}

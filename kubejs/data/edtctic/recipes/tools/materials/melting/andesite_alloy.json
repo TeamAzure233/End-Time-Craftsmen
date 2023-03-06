@@ -1,0 +1,9 @@
+{
+    "type": "tconstruct:material_melting",
+    "input": "edtctic:andesite_alloy",
+    "temperature": 800,
+    "result": {
+      "fluid": "kubejs:molten_andesite_alloy",
+      "amount": 144
+    }
+}

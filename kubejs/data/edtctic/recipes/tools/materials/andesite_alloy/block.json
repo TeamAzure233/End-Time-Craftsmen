@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "kubejs:andesite_alloy_block"
+  },
+  "value": 4,
+  "needed": 1,
+  "material": "edtctic:andesite_alloy",
+  "leftover": {
+    "item": "create:andesite_alloy"
+  }
+}

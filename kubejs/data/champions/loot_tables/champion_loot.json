@@ -1,0 +1,30 @@
+{
+  "pools": [
+    {
+      "name": "champions_loot",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "champions:entity_champion",
+              "entity": "this",
+              "minTier": 4
+            },
+            {
+              "condition": "killed_by_player"
+            }
+          ],
+          "functions": [
+            {
+              "function": "enchant_randomly"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

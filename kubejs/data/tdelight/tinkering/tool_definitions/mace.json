@@ -1,0 +1,33 @@
+{
+  "parts": [
+    {
+      "item": "tdelight:mace_head"
+    },
+    {
+      "item": "tconstruct:tool_handle"
+    },
+    {
+      "item": "tconstruct:tool_binding"
+    }
+  ],
+  "stats": {
+    "base": {
+      "tconstruct:attack_damage": 6.0,
+      "tconstruct:attack_speed": 1.1
+    },
+    "multipliers": {
+      "tconstruct:mining_speed": 0.5,
+      "tconstruct:durability": 1.2
+    }
+  },
+  "slots": {
+    "upgrades": 4,
+    "abilities": 2
+  },
+  "traits": [
+    {
+      "name": "tconstruct:knockback",
+      "level": 1
+    }
+  ]
+}

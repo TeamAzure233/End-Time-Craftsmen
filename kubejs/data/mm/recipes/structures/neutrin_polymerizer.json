@@ -1,0 +1,68 @@
+{
+  "type": "masterfulmachinery:machine_structure",
+  "controllerId": "multiblock",
+  "id": "neutrin_polymerizer",
+  "name": "中子素聚合器",
+  "layout": [
+    [
+      " )*) ",
+      ")+,+)",
+      "*,+,*",
+      ")+,+)",
+      " )*) "
+    ],
+    [
+      " -C- ",
+      "-   -",
+      ".   /",
+      "-   -",
+      " -0- "
+    ],
+    [
+      " -*- ",
+      "-   -",
+      "*   *",
+      "-   -",
+      " -1- "
+    ],
+    [
+      " )*) ",
+      "),2,)",
+      "*2,2*",
+      "),2,)",
+      " )*) "
+    ]
+  ],
+  "legend": {
+    "0": {
+      "block": "masterfulmachinery:multiblock_energy_port_energy_input"
+    },
+    "1": {
+      "block": "masterfulmachinery:multiblock_rotation_port_create_rotation_input"
+    },
+    "2": {
+      "block": "endless:crystal_matrix_block"
+    },
+    ")": {
+      "block": "kubejs:antimatter_alloy_block"
+    },
+    "*": {
+      "block": "kubejs:machinery_alloy_block"
+    },
+    "+": {
+      "block": "mekanism:steel_casing"
+    },
+    ",": {
+      "block": "mekanism:sps_casing"
+    },
+    "-": {
+      "block": "mekanismgenerators:reactor_glass"
+    },
+    ".": {
+      "block": "masterfulmachinery:multiblock_item_port_items_output"
+    },
+    "/": {
+      "block": "masterfulmachinery:multiblock_gas_port_mekanism_gas_input"
+    }
+  }
+}

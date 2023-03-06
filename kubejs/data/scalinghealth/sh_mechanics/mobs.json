@@ -1,0 +1,86 @@
+{
+  "healthMode" : {
+    "operation" : "MULTIPLY_BASE",
+    "scaling_reduction" : 1
+  },
+  "general" : {
+    "passiveMultiplier" : 1,
+    "hostileMultiplier" : 1.5,
+    "hostilePotionChance" : 0.08,
+    "peacefulPotionChance" : 0.005,
+    "damageBoostScale" : 0.03,
+    "maxDamageBoost" : 50,
+    "spawnerModifier" : 0.3,
+    "xpBoost" : 0.05
+  },
+  "effects" :
+  [
+    {
+      "effect" : "minecraft:speed",
+      "level" : 1,
+      "minDifficulty" : 15,
+      "durationInMinutes" : 10.0
+    },
+    {
+      "effect" : "minecraft:speed",
+      "level" : 2,
+      "minDifficulty" : 50,
+      "durationInMinutes" : 10.0
+    },
+    {
+      "effect" : "minecraft:strength",
+      "level" : 1,
+      "minDifficulty" : 30,
+      "durationInMinutes" : 10.0
+    },
+    {
+      "effect" : "minecraft:fire_resistance",
+      "level" : 1,
+      "minDifficulty" : 10,
+      "durationInMinutes" : 10.0
+    },
+    {
+      "effect" : "minecraft:resistance",
+      "level" : 1,
+      "minDifficulty" : 40,
+      "durationInMinutes" : 10.0
+    }
+  ],
+  "blights" : {
+    "blightChance" : 0.03,
+    "blightXpBoost" : 2,
+    "notifyBlightDeath" : true,
+    "blightDifficultyModifier" : 1.7,
+    "effects" :
+    [
+      {
+        "effect" : "minecraft:speed",
+        "level" : 4,
+        "minDifficulty" : 20,
+        "durationInMinutes" : 5.0
+      },
+      {
+        "effect" : "minecraft:fire_resistance",
+        "level" : 1,
+        "minDifficulty" : 0,
+        "durationInMinutes" : 10.0
+      },
+      {
+        "effect" : "minecraft:strength",
+        "level" : 2,
+        "minDifficulty" : 40,
+        "durationInMinutes" : 5.0
+      },
+      {
+        "effect" : "minecraft:resistance",
+        "level" : 2,
+        "minDifficulty" : 40,
+        "durationInMinutes" : 5.0
+      }
+    ]
+  },
+  "pets" : {
+    "petsRegenDelay" : 30,
+    "petsHealthCrystalGain" : 5
+  }
+}

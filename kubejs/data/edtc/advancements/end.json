@@ -1,0 +1,21 @@
+{
+    "display": {
+        "icon": {
+            "item": "kubejs:infinite_evidence"
+        },
+        "title": {
+            "translate": "advancements.edtc.end.title"
+        },
+        "description": {
+            "translate": "advancements.edtc.end.description"
+        },
+        "announce_to_chat": true,
+        "show_toast": true,
+        "frame": "goal"
+    },
+    "criteria": {
+        "end": {
+          "trigger": "minecraft:impossible"
+        }
+    }
+}

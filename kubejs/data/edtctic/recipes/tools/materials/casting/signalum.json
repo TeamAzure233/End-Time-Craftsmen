@@ -1,0 +1,9 @@
+{
+    "type": "tconstruct:material_fluid",
+    "fluid": {
+      "name": "tconstruct:molten_signalum",
+      "amount": 144
+    },
+    "temperature": 1125,
+    "output": "edtctic:signalum"
+}

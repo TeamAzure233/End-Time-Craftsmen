@@ -1,0 +1,39 @@
+{
+  "parts": [
+    {
+      "item": "tconstruct:small_blade"
+    },
+    {
+      "item": "tconstruct:tool_handle"
+    }
+  ],
+  "stats": {
+    "base": {
+      "tconstruct:attack_damage": 3.0,
+      "tconstruct:attack_speed": 1.25
+    },
+    "multipliers": {
+      "tconstruct:attack_damage": 1.15,
+      "tconstruct:mining_speed": 0.75,
+      "tconstruct:durability": 0.75
+    }
+  },
+  "slots": {
+    "upgrades": 4,
+    "abilities": 2
+  },
+  "traits": [
+    {
+      "name": "tconstruct:padded",
+      "level": 1
+    },
+    {
+      "name": "tconstruct:offhand_attack",
+      "level": 1
+    },
+    {
+      "name": "tconstruct:silky_shears",
+      "level": 1
+    }
+  ]
+}

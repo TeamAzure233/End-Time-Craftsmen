@@ -1,0 +1,16 @@
+{
+    "default": [
+      {
+        "name": "tconstruct:autosmelt",
+        "level": 1
+      },
+      {
+        "name": "tconstruct:fiery",
+        "level": 1
+      },
+      {
+        "name": "tconstruct:fire_protection",
+        "level": 1
+      }
+    ]
+}

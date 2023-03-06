@@ -1,0 +1,12 @@
+{
+  "default": [
+    {
+      "name": "materialis:manaripper",
+      "level": 1
+    },
+    {
+      "name": "tconstruct:cultivated",
+      "level": 1
+    }
+  ]
+}
