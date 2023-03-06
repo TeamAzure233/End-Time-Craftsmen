@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material",
-  "ingredient": {
-    "tag": "forge:ingots/enderium"
-  },
-  "value": 1,
-  "needed": 1,
-  "material": "edtctic:enderium"
-}

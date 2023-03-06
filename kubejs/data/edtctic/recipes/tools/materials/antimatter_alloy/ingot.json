@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material",
-  "ingredient": {
-    "item": "kubejs:antimatter_alloy"
-  },
-  "value": 1,
-  "needed": 1,
-  "material": "edtctic:antimatter_alloy"
-}

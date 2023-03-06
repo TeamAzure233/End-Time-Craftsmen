@@ -1,9 +1,0 @@
-{
-    "type": "tconstruct:material_melting",
-    "input": "edtctic:cast_iron",
-    "temperature": 900,
-    "result": {
-      "fluid": "kubejs:molten_cast_iron",
-      "amount": 144
-    }
-}

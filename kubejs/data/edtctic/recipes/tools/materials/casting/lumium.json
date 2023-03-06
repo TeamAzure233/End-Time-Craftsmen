@@ -1,9 +1,0 @@
-{
-    "type": "tconstruct:material_fluid",
-    "fluid": {
-      "name": "tconstruct:molten_lumium",
-      "amount": 144
-    },
-    "temperature": 1050,
-    "output": "edtctic:lumium"
-}

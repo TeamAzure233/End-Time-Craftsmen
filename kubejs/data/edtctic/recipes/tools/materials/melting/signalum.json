@@ -1,9 +1,0 @@
-{
-    "type": "tconstruct:material_melting",
-    "input": "edtctic:signalum",
-    "temperature": 1125,
-    "result": {
-      "fluid": "tconstruct:molten_signalum",
-      "amount": 144
-    }
-}

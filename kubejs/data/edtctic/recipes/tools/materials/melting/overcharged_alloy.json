@@ -1,9 +1,0 @@
-{
-    "type": "tconstruct:material_melting",
-    "input": "edtctic:overcharged_alloy",
-    "temperature": 1300,
-    "result": {
-      "fluid": "kubejs:molten_overcharged_alloy",
-      "amount": 144
-    }
-}

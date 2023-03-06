@@ -1,9 +1,0 @@
-{
-    "type": "tconstruct:material_melting",
-    "input": "edtctic:chorus_chrome",
-    "temperature": 1400,
-    "result": {
-      "fluid": "kubejs:molten_chorus_chrome",
-      "amount": 144
-    }
-}

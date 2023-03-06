@@ -1,9 +1,0 @@
-{
-    "type": "tconstruct:material_melting",
-    "input": "edtctic:antimatter_alloy",
-    "temperature": 1500,
-    "result": {
-      "fluid": "kubejs:molten_antimatter_alloy",
-      "amount": 144
-    }
-}

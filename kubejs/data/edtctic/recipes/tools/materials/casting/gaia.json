@@ -1,9 +1,0 @@
-{
-    "type": "tconstruct:material_fluid",
-    "fluid": {
-      "name": "kubejs:molten_gaia",
-      "amount": 144
-    },
-    "temperature": 1300,
-    "output": "edtctic:gaia"
-}

@@ -1,9 +1,0 @@
-{
-  "type": "tconstruct:material",
-  "ingredient": {
-    "item": "kubejs:blaze_brass"
-  },
-  "value": 1,
-  "needed": 1,
-  "material": "edtctic:blaze_brass"
-}

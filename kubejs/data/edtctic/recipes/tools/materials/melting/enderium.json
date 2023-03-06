@@ -1,9 +1,0 @@
-{
-    "type": "tconstruct:material_melting",
-    "input": "edtctic:enderium",
-    "temperature": 1350,
-    "result": {
-      "fluid": "tconstruct:molten_enderium",
-      "amount": 144
-    }
-}
