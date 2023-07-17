@@ -1,0 +1,413 @@
+{
+	id: "15B70F7BF157CEBA"
+	order_index: 32
+	title: "超级匠魂工具"
+	icon: "tconstruct:tinkers_anvil"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "tconstruct:vein_hammer"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.3f
+						"tconstruct:attack_damage": 1.25f
+						"tconstruct:durability": 5.0f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 1.43f
+						"tconstruct:mining_speed": 5.5935006f
+						"tconstruct:attack_damage": 61.6f
+						"tconstruct:harvest_level": 4.0f
+						"tconstruct:durability": 14394.0f
+					}
+					RepairCost: 0
+					display: {
+						Name: "{\"text\":\"超级连锁\"}"
+					}
+					tic_volatile_data: {
+						abilities: 25
+						"tconstruct:rarity": 2
+						"tconstruct:indestructible": 1b
+						upgrades: 11
+					}
+					tic_persistent_data: {
+						abilities: -19
+						"tconstruct:creative": {
+							abilities: 24
+							upgrades: 8
+						}
+						upgrades: -3
+						"tconstruct:reinforced": 24
+					}
+					tic_broken: 0b
+					HideFlags: 3
+					tic_modifiers: [
+						{
+							name: "tconstruct:unbreakable"
+							level: 1s
+						}
+						{
+							name: "materialis:manashield"
+							level: 8s
+						}
+						{
+							name: "tconstruct:creative_slot"
+							level: 1s
+						}
+						{
+							name: "tconstruct:diamond"
+							level: 1s
+						}
+						{
+							name: "tconstruct:expanded"
+							level: 10s
+						}
+						{
+							name: "tinkerslevellingaddon:improvable"
+							level: 1s
+						}
+						{
+							name: "tconstruct:luck"
+							level: 1s
+						}
+						{
+							name: "bettercompat:mana"
+							level: 8s
+						}
+						{
+							name: "materialis:manaburner"
+							level: 8s
+						}
+						{
+							name: "materialis:manaripper"
+							level: 8s
+						}
+						{
+							name: "tconstruct:netherite"
+							level: 1s
+						}
+						{
+							name: "tconstruct:piercing"
+							level: 2s
+						}
+						{
+							name: "materialis:pixiecaller"
+							level: 8s
+						}
+						{
+							name: "tconstruct:reach"
+							level: 8s
+						}
+						{
+							name: "tconstruct:reinforced"
+							level: 5s
+						}
+						{
+							name: "materialis:terrabeam"
+							level: 8s
+						}
+						{
+							name: "tconstruct:draconic"
+							level: 1s
+						}
+						{
+							name: "tconstruct:harmonious"
+							level: 1s
+						}
+						{
+							name: "tconstruct:recapitated"
+							level: 1s
+						}
+						{
+							name: "tconstruct:resurrected"
+							level: 1s
+						}
+						{
+							name: "tconstruct:two_handed"
+							level: 1s
+						}
+					]
+					tic_upgrades: [
+						{
+							name: "tconstruct:resurrected"
+							level: 1s
+						}
+						{
+							name: "tconstruct:recapitated"
+							level: 1s
+						}
+						{
+							name: "tconstruct:harmonious"
+							level: 1s
+						}
+						{
+							name: "tconstruct:draconic"
+							level: 1s
+						}
+						{
+							name: "tconstruct:luck"
+							level: 1s
+						}
+						{
+							name: "tconstruct:expanded"
+							level: 10s
+						}
+						{
+							name: "tconstruct:creative_slot"
+							level: 1s
+						}
+						{
+							name: "tconstruct:reach"
+							level: 8s
+						}
+						{
+							name: "tconstruct:reinforced"
+							level: 5s
+						}
+						{
+							name: "tconstruct:diamond"
+							level: 1s
+						}
+						{
+							name: "tconstruct:netherite"
+							level: 1s
+						}
+						{
+							name: "tconstruct:unbreakable"
+							level: 1s
+						}
+						{
+							name: "tinkerslevellingaddon:improvable"
+							level: 1s
+						}
+					]
+					tic_materials: [
+						"edtctic:gaia"
+						"edtctic:gaia"
+						"edtctic:gaia"
+						"edtctic:gaia"
+					]
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "tconstruct:sledge_hammer"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.4f
+						"tconstruct:attack_damage": 1.35f
+						"tconstruct:durability": 4.0f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 1.6125f
+						"tconstruct:mining_speed": 18.898f
+						"tconstruct:attack_damage": 68.7555f
+						"tconstruct:harvest_level": 4.0f
+						"tconstruct:durability": 11995.2f
+					}
+					RepairCost: 0
+					display: {
+						Name: "{\"text\":\"超级采矿锤\"}"
+					}
+					tic_volatile_data: {
+						abilities: 34
+						"tconstruct:rarity": 2
+						"tconstruct:indestructible": 1b
+						upgrades: 12
+					}
+					tic_persistent_data: {
+						abilities: -31
+						"tconstruct:creative": {
+							abilities: 32
+						}
+						"tinkerslevellingaddon:experience": 388
+						"tinkerslevellingaddon:level": 5
+						"tinkerslevellingaddon:stat_history": "durability;attackDamage;attackSpeed;miningSpeed;durability;"
+						"tinkerslevellingaddon:modifier_history": "upgrade;upgrade;upgrade;ability;upgrade;"
+						upgrades: -8
+						"tconstruct:reinforced": 24
+						"tconstruct:haste": 45
+					}
+					tic_broken: 0b
+					HideFlags: 3
+					tic_modifiers: [
+						{
+							name: "tconstruct:unbreakable"
+							level: 1s
+						}
+						{
+							name: "materialis:manashield"
+							level: 8s
+						}
+						{
+							name: "tconstruct:creative_slot"
+							level: 1s
+						}
+						{
+							name: "tconstruct:diamond"
+							level: 1s
+						}
+						{
+							name: "tconstruct:expanded"
+							level: 24s
+						}
+						{
+							name: "tconstruct:haste"
+							level: 5s
+						}
+						{
+							name: "tinkerslevellingaddon:improvable"
+							level: 1s
+						}
+						{
+							name: "tconstruct:luck"
+							level: 3s
+						}
+						{
+							name: "bettercompat:mana"
+							level: 8s
+						}
+						{
+							name: "materialis:manaburner"
+							level: 8s
+						}
+						{
+							name: "materialis:manaripper"
+							level: 8s
+						}
+						{
+							name: "tconstruct:netherite"
+							level: 1s
+						}
+						{
+							name: "materialis:pixiecaller"
+							level: 8s
+						}
+						{
+							name: "tconstruct:reach"
+							level: 4s
+						}
+						{
+							name: "tconstruct:reinforced"
+							level: 5s
+						}
+						{
+							name: "tconstruct:smite"
+							level: 2s
+						}
+						{
+							name: "materialis:terrabeam"
+							level: 8s
+						}
+						{
+							name: "tconstruct:gilded"
+							level: 2s
+						}
+						{
+							name: "tconstruct:draconic"
+							level: 1s
+						}
+						{
+							name: "tconstruct:harmonious"
+							level: 1s
+						}
+						{
+							name: "tconstruct:recapitated"
+							level: 1s
+						}
+						{
+							name: "tconstruct:resurrected"
+							level: 1s
+						}
+						{
+							name: "tconstruct:writable"
+							level: 1s
+						}
+						{
+							name: "tconstruct:two_handed"
+							level: 1s
+						}
+					]
+					tic_upgrades: [
+						{
+							name: "tconstruct:draconic"
+							level: 1s
+						}
+						{
+							name: "tconstruct:recapitated"
+							level: 1s
+						}
+						{
+							name: "tconstruct:harmonious"
+							level: 1s
+						}
+						{
+							name: "tconstruct:resurrected"
+							level: 1s
+						}
+						{
+							name: "tconstruct:diamond"
+							level: 1s
+						}
+						{
+							name: "tconstruct:writable"
+							level: 1s
+						}
+						{
+							name: "tinkerslevellingaddon:improvable"
+							level: 1s
+						}
+						{
+							name: "tconstruct:luck"
+							level: 3s
+						}
+						{
+							name: "tconstruct:reinforced"
+							level: 5s
+						}
+						{
+							name: "tconstruct:netherite"
+							level: 1s
+						}
+						{
+							name: "tconstruct:unbreakable"
+							level: 1s
+						}
+						{
+							name: "tconstruct:haste"
+							level: 5s
+						}
+						{
+							name: "tconstruct:creative_slot"
+							level: 1s
+						}
+						{
+							name: "tconstruct:expanded"
+							level: 24s
+						}
+						{
+							name: "tconstruct:gilded"
+							level: 2s
+						}
+						{
+							name: "tconstruct:reach"
+							level: 4s
+						}
+					]
+					tic_materials: [
+						"edtctic:gaia"
+						"edtctic:gaia"
+						"edtctic:gaia"
+						"edtctic:gaia"
+					]
+					Damage: 0
+				}
+			}
+		}
+	]
+}

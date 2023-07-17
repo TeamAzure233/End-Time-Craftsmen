@@ -1,0 +1,4098 @@
+{
+	id: "19A94A299D9D14F0"
+	group: "0F94B414230112AC"
+	order_index: 0
+	filename: "chapter1set_up_a_new_world"
+	title: "第一章 初入世间"
+	icon: "minecraft:grass_block"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: -8.0d
+			y: 0.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/start.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 35.5d
+			y: -10.5d
+			width: 5.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/rose_quartz.png"
+			hover: ["磨制玫瑰石英"]
+			click: ""
+			dev: false
+			corner: false
+			dependency: "58D4837307BEC7B1"
+		}
+		{
+			x: 14.5d
+			y: -10.0d
+			width: 8.0d
+			height: 5.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/andesite_alloy.png"
+			hover: ["安山合金"]
+			click: ""
+			dev: false
+			corner: false
+			dependency: "2CE021649BF900BE"
+		}
+		{
+			x: 36.5d
+			y: -0.5d
+			width: 5.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/kinetic_mechanism.png"
+			hover: ["动能构件"]
+			click: ""
+			dev: false
+			corner: false
+			dependency: "7F87DC84B2C4E490"
+		}
+		{
+			x: 37.5d
+			y: -5.5d
+			width: 5.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/precision_mechanism.png"
+			hover: ["精密构件"]
+			click: ""
+			dev: false
+			corner: false
+			dependency: "061F700E961C4572"
+		}
+		{
+			x: 38.0d
+			y: 8.0d
+			width: 5.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/liquid_mechanism.png"
+			hover: ["流体构件"]
+			click: ""
+			dev: false
+			corner: false
+			dependency: "11D29F0715183F9E"
+		}
+		{
+			x: 49.0d
+			y: 5.0d
+			width: 5.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/steam_mechanism.png"
+			hover: ["蒸汽构件"]
+			click: ""
+			dev: false
+			corner: false
+			dependency: "7B2BFB8FDDE87C19"
+		}
+		{
+			x: 57.5d
+			y: -6.5d
+			width: 5.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/electricity_mechanism.png"
+			hover: ["电气构件"]
+			click: ""
+			dev: false
+			corner: false
+			dependency: "465237AF1C585629"
+		}
+	]
+	quests: [
+		{
+			x: -3.0d
+			y: -1.5d
+			subtitle: "去获取一根木棍吧（你不能空手撸树"
+			description: ["注：木棍可以从树叶中获得"]
+			dependencies: ["18FE013B3405D2C2"]
+			id: "59FA6CBB1CABAAB8"
+			tasks: [{
+				id: "344233EE7B0DC7C2"
+				type: "item"
+				item: {
+					id: "minecraft:stick"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "68FCF989D4D5D85C"
+				type: "item"
+				item: {
+					id: "minecraft:stick"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			x: 8.0d
+			y: -0.5d
+			shape: "rsquare"
+			subtitle: "有了木板，接下来该干什么你就知道了吧？"
+			description: [
+				"什么你跟我说你不知道？那就好好看看这个任务"
+				"完成此任务后开启研究：匠魂"
+			]
+			dependencies: ["53C6D9A462A7CDA8"]
+			id: "5682910C34D2F4BA"
+			tasks: [{
+				id: "06589E94185BFC8C"
+				type: "item"
+				item: {
+					id: "minecraft:crafting_table"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "6604A6BE69928122"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			title: "铁矿！"
+			x: 14.0d
+			y: -0.5d
+			subtitle: "有了镐子自然就要下矿啦"
+			dependencies: ["3E458E3C59605FC9"]
+			id: "340DB86103FBA68D"
+			tasks: [{
+				id: "12A3DD31263236B0"
+				type: "item"
+				title: "Any #forge:ores/iron"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/iron"
+					}
+				}
+			}]
+		}
+		{
+			title: "锻造铁剑"
+			icon: {
+				id: "tconstruct:sword"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.5f
+						"tconstruct:durability": 1.1f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 1.6f
+						"tconstruct:mining_speed": 3.3000002f
+						"tconstruct:attack_damage": 14.437499f
+						"tconstruct:harvest_level": 2.0f
+						"tconstruct:durability": 438.625f
+					}
+					tic_broken: 0b
+					HideFlags: 3
+					tic_modifiers: [
+						{
+							name: "tconstruct:sturdy"
+							level: 3s
+						}
+						{
+							name: "tconstruct:silky_shears"
+							level: 1s
+						}
+					]
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:iron"
+						"tconstruct:iron"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 2
+						upgrades: 4
+					}
+				}
+			}
+			x: 13.5d
+			y: 1.5d
+			subtitle: "在这样一个世界中，没有一把趁手的武器是很难生存下去的"
+			dependencies: [
+				"7B968E0F6EEB5A0B"
+				"340DB86103FBA68D"
+			]
+			id: "50ECA2146C3388F7"
+			tasks: [
+				{
+					id: "6E6586737C90F953"
+					type: "item"
+					item: {
+						id: "tconstruct:small_blade"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:iron"
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "2BEE8127B3F2C7DB"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:iron"
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 2L
+				}
+			]
+			rewards: [
+				{
+					id: "4CFF018D1EE42409"
+					type: "item"
+					team_reward: false
+					item: {
+						id: "minecraft:iron_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "47798872473F6480"
+					type: "item"
+					team_reward: false
+					item: {
+						id: "minecraft:iron_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "16FE00F9A41F2DA4"
+					type: "item"
+					team_reward: false
+					item: {
+						id: "minecraft:iron_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "503CAF7D1A144057"
+					type: "item"
+					team_reward: false
+					item: {
+						id: "minecraft:shield"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4535CDE209C621B1"
+					type: "item"
+					team_reward: false
+					item: "scalinghealth:bandages"
+					count: 16
+				}
+				{
+					id: "6BAA60506F6C453D"
+					type: "item"
+					team_reward: false
+					item: {
+						id: "botania:brew_flask"
+						Count: 1b
+						tag: {
+							brewKey: "botania:absorption"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "钻石！"
+			x: 16.0d
+			y: 1.5d
+			subtitle: "挖到一颗钻石"
+			dependencies: ["193456CF7A20DDA1"]
+			id: "4BB767FDB83CA1E8"
+			tasks: [{
+				id: "4BA250A4853D3D76"
+				type: "item"
+				item: {
+					id: "minecraft:diamond"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "3836064925670DA0"
+				type: "item"
+				team_reward: false
+				item: "minecraft:diamond"
+			}]
+		}
+		{
+			title: "下界的敲门砖"
+			x: 18.0d
+			y: 1.5d
+			shape: "gear"
+			subtitle: "获得一块黑曜石"
+			description: ["你需要阶段”神秘的庇护“才能进入下界"]
+			dependencies: ["0DE7D2A608A3EB62"]
+			size: 1.5d
+			id: "5631AA219970CE56"
+			tasks: [{
+				id: "6BD059501FEFAA13"
+				type: "item"
+				item: {
+					id: "minecraft:obsidian"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "6C066C075A54B887"
+					type: "item"
+					team_reward: false
+					item: "minecraft:fire_charge"
+				}
+				{
+					id: "50E9B2ED6967EE87"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "匠魂——初步"
+			icon: {
+				id: "tconstruct:crafting_station"
+				Count: 1b
+				tag: {
+					texture: "minecraft:stripped_oak_log"
+				}
+			}
+			x: 10.0d
+			y: -0.5d
+			shape: "gear"
+			subtitle: "现在的你应该试着打造一些工具了"
+			dependencies: [
+				"5682910C34D2F4BA"
+				"452C84EBADBDD888"
+			]
+			size: 2.0d
+			id: "71C5B4E9CD372AEC"
+			tasks: [
+				{
+					id: "230119DB867A2B59"
+					type: "item"
+					item: {
+						id: "tconstruct:crafting_station"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "1CB1CBF63B524FDE"
+					type: "item"
+					item: {
+						id: "tconstruct:part_builder"
+						Count: 1b
+						tag: {
+							texture: "minecraft:oak_planks"
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "04FDEA0919597811"
+					type: "item"
+					item: {
+						id: "tconstruct:tinker_station"
+						Count: 1b
+						tag: {
+							texture: "minecraft:oak_planks"
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "1C45986A96604A54"
+					type: "gamestage"
+					stage: "tinker_start"
+				}
+			]
+			rewards: [
+				{
+					id: "68DADD242B22EF0E"
+					type: "item"
+					item: {
+						id: "tconstruct:part_chest"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "3EB436E1D357669D"
+					type: "item"
+					item: "tconstruct:tinkers_chest"
+				}
+				{
+					id: "584D8CD699D178B7"
+					type: "item"
+					item: {
+						id: "tconstruct:travelers_helmet"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:durability": 110.0f
+								"tconstruct:armor": 1.0f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [ ]
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								defense: 2
+								upgrades: 3
+							}
+						}
+					}
+				}
+				{
+					id: "1AAE6364073DBE20"
+					type: "item"
+					item: {
+						id: "tconstruct:travelers_chestplate"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:durability": 160.0f
+								"tconstruct:armor": 5.0f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [ ]
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								defense: 2
+								upgrades: 3
+							}
+						}
+					}
+				}
+				{
+					id: "43D9B8497821796B"
+					type: "item"
+					item: {
+						id: "tconstruct:travelers_leggings"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:durability": 150.0f
+								"tconstruct:armor": 4.0f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [ ]
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								defense: 2
+								upgrades: 3
+							}
+						}
+					}
+				}
+				{
+					id: "45062CB4367101AB"
+					type: "item"
+					item: {
+						id: "tconstruct:travelers_boots"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:durability": 130.0f
+								"tconstruct:armor": 1.0f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [ ]
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								defense: 2
+								upgrades: 3
+							}
+						}
+					}
+				}
+				{
+					id: "68DCAC6FF294A2A5"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "4A9243D54333C0DC"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "木板！"
+			x: 6.5d
+			y: -0.5d
+			subtitle: "去合成木板吧"
+			dependencies: ["07F6A932397096A0"]
+			id: "53C6D9A462A7CDA8"
+			tasks: [{
+				id: "235B832D3F78C2F4"
+				type: "item"
+				title: "Any #minecraft:planks"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:planks"
+					}
+				}
+			}]
+			rewards: [{
+				id: "64FF24C1A5E3AD86"
+				type: "item"
+				item: "minecraft:oak_planks"
+				count: 3
+			}]
+		}
+		{
+			title: "生存之始"
+			icon: "minecraft:grass_block"
+			x: -6.0d
+			y: -0.5d
+			shape: "rsquare"
+			subtitle: "梦开始的地方"
+			description: ["我必须尽快适应这里，或许我能做一些工具使我更好的生存。好在这里有一些矿物，我得想办法获取它们，这样一来我至少能在这里保全性命"]
+			dependencies: ["7959FEB808E2918C"]
+			hide: true
+			dependency_requirement: "one_completed"
+			size: 3.0d
+			id: "18FE013B3405D2C2"
+			tasks: [{
+				id: "5EE400AA197E8660"
+				type: "gamestage"
+				stage: "getting_start"
+			}]
+			rewards: [
+				{
+					id: "7AE63847D819AFE2"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "28DE5EF17AB36B35"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "制作镐子"
+			icon: {
+				id: "tconstruct:pickaxe"
+				Count: 1b
+				tag: {
+					tic_multipliers: { }
+					tic_stats: {
+						"tconstruct:attack_speed": 1.2f
+						"tconstruct:mining_speed": 2.0f
+						"tconstruct:attack_damage": 4.5f
+						"tconstruct:harvest_level": 0.0f
+						"tconstruct:durability": 60.0f
+					}
+					tic_broken: 0b
+					HideFlags: 3
+					tic_modifiers: [
+						{
+							name: "tconstruct:cultivated"
+							level: 3s
+						}
+						{
+							name: "tconstruct:piercing"
+							level: 1s
+						}
+					]
+					tic_materials: [
+						"tconstruct:wood"
+						"tconstruct:wood"
+						"tconstruct:wood"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 2
+						upgrades: 4
+					}
+				}
+			}
+			x: 12.0d
+			y: -0.5d
+			subtitle: "你应该学会制作工具了，来造一把镐子吧"
+			dependencies: ["71C5B4E9CD372AEC"]
+			id: "3E458E3C59605FC9"
+			tasks: [
+				{
+					id: "1252C676E80FE23A"
+					type: "item"
+					item: {
+						id: "tconstruct:pickaxe_head"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "100F6EE1AF7FDF32"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_handle"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "243D998C2E280C29"
+					type: "item"
+					item: {
+						id: "tconstruct:tool_binding"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:wood"
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "3AD6D8E71709AEC5"
+				type: "item"
+				team_reward: false
+				item: {
+					id: "tconstruct:pickaxe"
+					Count: 1b
+					tag: {
+						tic_multipliers: { }
+						tic_stats: {
+							"tconstruct:attack_speed": 1.2f
+							"tconstruct:mining_speed": 6.0f
+							"tconstruct:attack_damage": 11.5f
+							"tconstruct:harvest_level": 2.0f
+							"tconstruct:durability": 325.0f
+						}
+						tic_broken: 0b
+						HideFlags: 3
+						tic_modifiers: [
+							{
+								name: "tconstruct:cultivated"
+								level: 1s
+							}
+							{
+								name: "tconstruct:piercing"
+								level: 1s
+							}
+							{
+								name: "tconstruct:sturdy"
+								level: 2s
+							}
+						]
+						tic_materials: [
+							"tconstruct:iron"
+							"tconstruct:wood"
+							"tconstruct:iron"
+						]
+						Damage: 0
+						tic_persistent_data: {
+							abilities: 1
+							upgrades: 3
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "获得升级！"
+			icon: {
+				id: "tconstruct:pickaxe"
+				Count: 1b
+				tag: {
+					tic_multipliers: { }
+					tic_stats: {
+						"tconstruct:attack_speed": 1.2f
+						"tconstruct:mining_speed": 4.4f
+						"tconstruct:attack_damage": 7.5f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 112.0f
+					}
+					tic_broken: 0b
+					HideFlags: 3
+					tic_modifiers: [
+						{
+							name: "tconstruct:piercing"
+							level: 1s
+						}
+						{
+							name: "tconstruct:stonebound"
+							level: 3s
+						}
+					]
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 2
+						upgrades: 4
+					}
+				}
+			}
+			x: 13.0d
+			y: -2.0d
+			subtitle: "制造一把石镐"
+			dependencies: ["3E458E3C59605FC9"]
+			optional: true
+			id: "3A27203AEBFF31FE"
+			tasks: [{
+				id: "40656E8BB1B7B4F6"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "6C43F2CFC805DB90"
+				type: "advancement"
+				team_reward: false
+				auto: "invisible"
+				advancement: "minecraft:story/upgrade_tools"
+				criterion: ""
+			}]
+		}
+		{
+			title: "这不是铁镐么？"
+			icon: {
+				id: "tconstruct:pickaxe"
+				Count: 1b
+				tag: {
+					tic_multipliers: { }
+					tic_stats: {
+						"tconstruct:attack_speed": 1.2f
+						"tconstruct:mining_speed": 6.6000004f
+						"tconstruct:attack_damage": 12.099999f
+						"tconstruct:harvest_level": 2.0f
+						"tconstruct:durability": 398.75f
+					}
+					tic_broken: 0b
+					HideFlags: 3
+					tic_modifiers: [
+						{
+							name: "tconstruct:piercing"
+							level: 1s
+						}
+						{
+							name: "tconstruct:sturdy"
+							level: 3s
+						}
+					]
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:iron"
+						"tconstruct:iron"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 2
+						upgrades: 4
+					}
+				}
+			}
+			x: 14.5d
+			y: 1.5d
+			subtitle: "制造一把铁镐"
+			dependencies: [
+				"7B968E0F6EEB5A0B"
+				"340DB86103FBA68D"
+			]
+			id: "193456CF7A20DDA1"
+			tasks: [{
+				id: "6C1D9C5728C71426"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "00CED7E9E23214CF"
+				type: "advancement"
+				auto: "enabled"
+				advancement: "minecraft:story/iron_tools"
+				criterion: ""
+			}]
+		}
+		{
+			title: "初步存储"
+			x: 9.0d
+			y: -1.5d
+			subtitle: "制作任意木箱子"
+			dependencies: ["5682910C34D2F4BA"]
+			optional: true
+			id: "4A36F1C0A8B1FAE1"
+			tasks: [{
+				id: "232F30367D1C0874"
+				type: "item"
+				title: "Any #forge:chests/wooden"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:chests/wooden"
+					}
+				}
+			}]
+		}
+		{
+			title: "最原始的照明工具"
+			x: 11.0d
+			y: -2.0d
+			subtitle: "更科学的火把"
+			description: ["不！还我核动力火把！"]
+			dependencies: ["3E458E3C59605FC9"]
+			optional: true
+			id: "0D82AB23FFB782E1"
+			tasks: [{
+				id: "6D5452281CA337D8"
+				type: "item"
+				item: "realistictorches:unlit_torch"
+				count: 4L
+			}]
+			rewards: [{
+				id: "4CE8F6275E60C928"
+				type: "item"
+				item: {
+					id: "realistictorches:matchbox"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: -2.5d
+			subtitle: "调动机械的开始"
+			description: ["完成后开启研究：机械之初"]
+			dependencies: ["3E458E3C59605FC9"]
+			id: "1FECF4A4BFD9B7B5"
+			tasks: [{
+				id: "036C05DE9D550D5A"
+				type: "item"
+				item: "kubejs:andesite_alloy_nugget"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 1.0d
+			subtitle: "实在是方便"
+			dependencies: ["5682910C34D2F4BA"]
+			optional: true
+			id: "76540B234E339A03"
+			tasks: [{
+				id: "43BB76FDCAAD2DA0"
+				type: "item"
+				item: "extendedcrafting:handheld_table"
+			}]
+		}
+		{
+			x: 15.0d
+			y: -1.5d
+			subtitle: "不止可以升级装备"
+			dependencies: ["340DB86103FBA68D"]
+			id: "4DBF7CA9ED53A8A1"
+			tasks: [{
+				id: "18222F0CF9567BE6"
+				type: "item"
+				item: "minecraft:smithing_table"
+			}]
+		}
+		{
+			title: "床"
+			x: 7.0d
+			y: -1.5d
+			subtitle: "你怎么睡得着的？（"
+			description: ["我能在上一次睡觉的地方复生，真不知道是谁给我添加的这项指令……"]
+			dependencies: ["5682910C34D2F4BA"]
+			hide_text_until_complete: true
+			id: "07E55A8BB8C752DE"
+			tasks: [{
+				id: "1617A2CA59D6A556"
+				type: "item"
+				title: "Any #minecraft:beds"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:beds"
+					}
+				}
+			}]
+		}
+		{
+			title: "强化你的铁镐"
+			x: 18.0d
+			y: 3.0d
+			subtitle: "用钻石强化铁镐就可以挖黑曜石了"
+			dependencies: ["4BB767FDB83CA1E8"]
+			id: "0DE7D2A608A3EB62"
+			tasks: [{
+				id: "7F2FF3CE45E5685F"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 7.0d
+			subtitle: "操纵流体的必备"
+			dependencies: ["37551FD288EDB84F"]
+			id: "0599161A8D9A14C7"
+			tasks: [{
+				id: "1B6A169AC7208EF5"
+				type: "item"
+				item: "thermal:rubber"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.5d
+			subtitle: "拿着燧石对着石头右键即可"
+			dependencies: ["18FE013B3405D2C2"]
+			id: "7CB0F2EDE166BDC7"
+			tasks: [{
+				id: "247E7F5D108C0DBC"
+				type: "item"
+				item: "notreepunching:flint_shard"
+			}]
+			rewards: [{
+				id: "319DC13B47B1EEF4"
+				type: "item"
+				item: "minecraft:flint"
+				count: 4
+			}]
+		}
+		{
+			title: "打制石器"
+			x: -1.0d
+			y: -0.5d
+			subtitle: "（虽然是燧石）"
+			dependencies: [
+				"59FA6CBB1CABAAB8"
+				"7CB0F2EDE166BDC7"
+			]
+			id: "12F755C3D5A2A936"
+			tasks: [{
+				id: "2A2B29AC4614471B"
+				type: "item"
+				item: {
+					id: "notreepunching:flint_knife"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: -0.5d
+			subtitle: "用刀砍草就行"
+			dependencies: ["12F755C3D5A2A936"]
+			id: "243BD3AA6E453C84"
+			tasks: [{
+				id: "5F200413940283A4"
+				type: "item"
+				item: "notreepunching:plant_fiber"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -0.5d
+			dependencies: ["243BD3AA6E453C84"]
+			id: "4716BC12B40FCBB1"
+			tasks: [{
+				id: "72D0CA22E99785A4"
+				type: "item"
+				item: "notreepunching:plant_string"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -0.5d
+			dependencies: ["4716BC12B40FCBB1"]
+			id: "37551FD288EDB84F"
+			tasks: [{
+				id: "17001A54FCC8D715"
+				type: "item"
+				item: {
+					id: "notreepunching:flint_axe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "原木"
+			x: 5.0d
+			y: -0.5d
+			dependencies: ["37551FD288EDB84F"]
+			id: "07F6A932397096A0"
+			tasks: [{
+				id: "107554020FD7C86D"
+				type: "item"
+				title: "Any #minecraft:logs"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: 0.5d
+			subtitle: "对黏土块右键数次可以将其雕凿成未烧制的陶器"
+			dependencies: ["5682910C34D2F4BA"]
+			optional: true
+			id: "60E2F8B8C22305C7"
+			tasks: [{
+				id: "4277914AF2134512"
+				type: "item"
+				item: {
+					id: "notreepunching:clay_tool"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "钻木取火"
+			x: 2.0d
+			y: -2.0d
+			subtitle: "制作点火器"
+			description: ["真的需要吗"]
+			dependencies: ["4716BC12B40FCBB1"]
+			optional: true
+			id: "703C08BF9B36982E"
+			tasks: [{
+				id: "727CA068E5B5985E"
+				type: "item"
+				item: {
+					id: "notreepunching:fire_starter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 15.5d
+			y: -0.5d
+			dependencies: ["340DB86103FBA68D"]
+			optional: true
+			id: "2B0887CF06BC4670"
+			tasks: [{
+				id: "2A28C068A432B6DB"
+				type: "item"
+				item: {
+					id: "notreepunching:iron_saw"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 9.0d
+			y: 0.5d
+			dependencies: ["5682910C34D2F4BA"]
+			id: "19A5BF0AF9CE5E33"
+			tasks: [{
+				id: "4991CAA154D3D3F5"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 1.0d
+			shape: "diamond"
+			description: ["我并非不会死亡，相反，我被这些怪物杀死之后，我的机体似乎也变成了他们，而且各项数据比我更加强大。"]
+			dependencies: ["18FE013B3405D2C2"]
+			hide_text_until_complete: true
+			secret: true
+			id: "2FB3026A586CF54B"
+			tasks: [{
+				id: "47DB6042EAC37959"
+				type: "stat"
+				title: "死亡一次"
+				icon: {
+					id: "inventorypets:pet_grave"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				stat: "minecraft:deaths"
+				value: 1
+			}]
+		}
+		{
+			icon: "tconstruct:seared_melter"
+			x: 14.0d
+			y: 4.0d
+			shape: "rsquare"
+			subtitle: "低配版冶炼炉"
+			description: ["真是奇妙，沙子，砂砾以及黏土的混合物能让我烧制出砖块，而且它们能制作出比熔炉更好的炉子。使用它来烧炼矿物，我似乎能获得更加多的熔融金属。这玩意实在是太好用了"]
+			dependencies: [
+				"0A01706E237D6D6A"
+				"71C5B4E9CD372AEC"
+			]
+			size: 2.0d
+			id: "7B968E0F6EEB5A0B"
+			tasks: [
+				{
+					id: "0D9B8D62919C429C"
+					type: "item"
+					item: {
+						id: "tconstruct:seared_melter"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "1A40F54DD6308175"
+					type: "item"
+					item: {
+						id: "tconstruct:seared_heater"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "468D9F9CAC9A5DDB"
+					type: "item"
+					item: {
+						id: "tconstruct:seared_table"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "74AF8A7892E1C823"
+					type: "item"
+					item: {
+						id: "tconstruct:seared_basin"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "29E714CA3FFEFEBD"
+					type: "item"
+					item: {
+						id: "tconstruct:seared_faucet"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "590582F98700059B"
+					type: "gamestage"
+					stage: "melting"
+				}
+			]
+			rewards: [
+				{
+					id: "7DE10E10BE757D51"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "4A011881ADD0FAB0"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "冶炼炉"
+			icon: "tconstruct:smeltery_controller"
+			x: 16.0d
+			y: 6.0d
+			shape: "rsquare"
+			dependencies: ["7B968E0F6EEB5A0B"]
+			id: "12305B083CBBFB0A"
+			tasks: [{
+				id: "75853BCC3D4422CF"
+				type: "item"
+				item: {
+					id: "tconstruct:smeltery_controller"
+					Count: 1b
+					ForgeCaps: {
+						"customnpcs:itemscripteddata": { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "375F6F9B97A2AF1D"
+					type: "item"
+					item: "minecraft:lava_bucket"
+					count: 8
+				}
+				{
+					id: "1FB519B91F65917D"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "01C4A5CC9EA43289"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "铸模"
+			x: 14.0d
+			y: 6.0d
+			dependencies: ["7B968E0F6EEB5A0B"]
+			id: "7303D87D4ACE8B0A"
+			tasks: [{
+				id: "6E4C5198C8EA3F51"
+				type: "item"
+				title: "Any #tconstruct:casts"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tconstruct:casts"
+					}
+				}
+			}]
+		}
+		{
+			x: 16.0d
+			y: 4.0d
+			dependencies: ["7B968E0F6EEB5A0B"]
+			id: "61C2F20438E2FE2F"
+			tasks: [{
+				id: "441230D5632036CE"
+				type: "item"
+				item: "tconstruct:tinkers_anvil"
+			}]
+			rewards: [{
+				id: "51D5EBF18CE397CC"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			x: 18.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "手持右键获得游戏阶段“mysterious_asylum”"
+			dependencies: ["4BB767FDB83CA1E8"]
+			size: 1.5d
+			id: "0AEC05EF740D37E4"
+			tasks: [{
+				id: "2340723A62B9B551"
+				type: "item"
+				item: {
+					id: "kubejs:mysterious_amulet"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 14.0d
+			y: -2.0d
+			description: [
+				"盾牌可以和单手枪同时生效"
+				""
+			]
+			dependencies: ["340DB86103FBA68D"]
+			optional: true
+			id: "69666D410EA50DAD"
+			tasks: [{
+				id: "5DC458B862E0A71F"
+				type: "item"
+				item: {
+					id: "minecraft:shield"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "10AF284C51337691"
+				type: "item"
+				item: "tac:round45"
+				count: 128
+			}]
+		}
+		{
+			title: "安山时代"
+			icon: "create:andesite_casing"
+			x: 23.0d
+			y: -5.5d
+			shape: "gear"
+			subtitle: "制作安山机壳"
+			dependencies: [
+				"165AEE5D8EE710C4"
+				"78CC7D2C19C1076F"
+			]
+			size: 3.0d
+			id: "4D2B7428680B2A8D"
+			tasks: [
+				{
+					id: "727ECAC885363F7F"
+					type: "item"
+					item: "create:andesite_casing"
+				}
+				{
+					id: "71B31EED3839D735"
+					type: "gamestage"
+					stage: "create_andesite"
+				}
+			]
+			rewards: [
+				{
+					id: "668955602ECCEE40"
+					type: "item"
+					item: "create:andesite_casing"
+				}
+				{
+					id: "2BD06C69EEE93807"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "56209EDBD105FCDE"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "搅拌"
+			x: 29.0d
+			y: -5.5d
+			shape: "rsquare"
+			subtitle: "制作动力搅拌器和工作盆"
+			dependencies: ["2BB162CB9DAE093A"]
+			hide_text_until_complete: false
+			id: "263AD02070DC088E"
+			tasks: [
+				{
+					id: "7E09E36DCEE0F15C"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "31CDF353252DAEEE"
+					type: "item"
+					item: "create:basin"
+				}
+			]
+		}
+		{
+			title: "压板"
+			x: 27.5d
+			y: -5.5d
+			shape: "rsquare"
+			subtitle: "制作动力辊压机和置物台"
+			dependencies: ["148C97D45C2F986D"]
+			id: "2BB162CB9DAE093A"
+			tasks: [
+				{
+					id: "5BEE3C7C3E0470B6"
+					type: "item"
+					item: "create:mechanical_press"
+				}
+				{
+					id: "760E80275A9B8ABF"
+					type: "item"
+					item: "create:depot"
+				}
+			]
+		}
+		{
+			x: 27.0d
+			y: -4.5d
+			subtitle: "呼呼呼（风声"
+			dependencies: ["148C97D45C2F986D"]
+			id: "68461B5832FDA501"
+			tasks: [{
+				id: "7A9EAA7552797A16"
+				type: "item"
+				item: "create:encased_fan"
+			}]
+		}
+		{
+			title: "更高级的应力传输"
+			x: 23.5d
+			y: -3.5d
+			dependencies: ["4D2B7428680B2A8D"]
+			id: "73E379BC8E31A8B6"
+			tasks: [
+				{
+					id: "4696C63055B727A1"
+					type: "item"
+					item: "create:gearbox"
+				}
+				{
+					id: "2BC22DD35B6C3027"
+					type: "item"
+					item: "create:vertical_gearbox"
+				}
+				{
+					id: "4298655A75F83B25"
+					type: "item"
+					item: "create:encased_chain_drive"
+				}
+				{
+					id: "3F881847CD990123"
+					type: "item"
+					item: "create:adjustable_chain_gearshift"
+				}
+				{
+					id: "081D5AC7B4E9AF8C"
+					type: "item"
+					item: "create:gearshift"
+				}
+				{
+					id: "39BCEF21BDBA0C89"
+					type: "item"
+					item: "create:clutch"
+				}
+			]
+			rewards: [{
+				id: "1AD41C937E6460C9"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+		}
+		{
+			x: 25.5d
+			y: -3.0d
+			subtitle: "现在可能用不到但以后会用到的"
+			dependencies: ["148C97D45C2F986D"]
+			id: "7EDEC17D92282262"
+			tasks: [{
+				id: "0760C261FA22D501"
+				type: "item"
+				item: "createaddition:rolling_mill"
+			}]
+		}
+		{
+			x: 27.5d
+			y: -2.5d
+			subtitle: "去下界邀请我们的烈焰人好朋友来玩（做苦力）吧"
+			dependencies: ["2BB162CB9DAE093A"]
+			id: "095DF8503B85CCF4"
+			tasks: [{
+				id: "208667C5E682AD29"
+				type: "item"
+				item: "create:empty_blaze_burner"
+			}]
+		}
+		{
+			x: 29.0d
+			y: -2.5d
+			shape: "rsquare"
+			dependencies: [
+				"442E34AE51CD9D93"
+				"095DF8503B85CCF4"
+			]
+			id: "05FCDE2401CB1656"
+			tasks: [{
+				id: "584582FBD9300FD5"
+				type: "item"
+				item: "create:blaze_burner"
+			}]
+			rewards: [{
+				id: "4B3A7420FFD7D170"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			title: "黄铜锭"
+			x: 31.25d
+			y: -2.5d
+			shape: "rsquare"
+			subtitle: "铜锌合金"
+			dependencies: [
+				"05FCDE2401CB1656"
+				"263AD02070DC088E"
+			]
+			size: 1.25d
+			id: "733DB6B6CADF4CF4"
+			tasks: [{
+				id: "0D61CBD4E810AF52"
+				type: "item"
+				title: "Any #forge:ingots/brass"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/brass"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "5F69B1EC6E9EE933"
+					type: "item"
+					item: "create:brass_block"
+				}
+				{
+					id: "71BD9064CD0A66F8"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 31.25d
+			y: -5.625d
+			shape: "rsquare"
+			subtitle: "制作玫瑰石英"
+			dependencies: [
+				"05FCDE2401CB1656"
+				"263AD02070DC088E"
+			]
+			size: 1.25d
+			id: "3F67E533ACFEC407"
+			tasks: [{
+				id: "083F236DF2626498"
+				type: "item"
+				item: "create:rose_quartz"
+			}]
+			rewards: [{
+				id: "1BE5EDF13CF0259F"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			x: 31.5d
+			y: -7.5d
+			subtitle: "制作砂纸"
+			description: ["两种砂纸做一个就行"]
+			dependencies: ["3F67E533ACFEC407"]
+			min_required_tasks: 1
+			id: "2BFF3AE97A79B145"
+			tasks: [
+				{
+					id: "1AFF9839CE0CF966"
+					type: "item"
+					item: {
+						id: "create:sand_paper"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1D04FAE33BA6B4BF"
+					type: "item"
+					item: {
+						id: "create:red_sand_paper"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "更好的砂纸"
+			x: 31.5d
+			y: -9.5d
+			subtitle: "但是没什么用（"
+			dependencies: ["2BFF3AE97A79B145"]
+			optional: true
+			id: "6B4B50587C2361AE"
+			tasks: [{
+				id: "7B242210052FD35E"
+				type: "item"
+				item: {
+					id: "createaddition:diamond_grit_sandpaper"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 33.5d
+			y: -7.5d
+			subtitle: "使用砂纸打磨玫瑰石英"
+			description: [
+				"注：两手分别拿着玫瑰石英和砂纸然后长按右键"
+				"（或许还有一种能增产的方式"
+			]
+			dependencies: ["2BFF3AE97A79B145"]
+			id: "1DECC0483644A664"
+			tasks: [{
+				id: "5773BAC5ABA3106E"
+				type: "item"
+				item: "create:polished_rose_quartz"
+			}]
+		}
+		{
+			x: 33.5d
+			y: -5.5d
+			subtitle: "为什么机械时代就有不用电的电子管？"
+			dependencies: ["1DECC0483644A664"]
+			id: "4A9D7B69950093E2"
+			tasks: [{
+				id: "6039723C964A36FC"
+				type: "item"
+				item: "create:electron_tube"
+			}]
+		}
+		{
+			x: 35.5d
+			y: -7.5d
+			dependencies: ["1DECC0483644A664"]
+			id: "4DC2DFF370E4FF6D"
+			tasks: [{
+				id: "2BECC1F00314222C"
+				type: "item"
+				item: "kubejs:rose_quartz_block"
+			}]
+		}
+		{
+			icon: "kubejs:kinetic_mechanical_box"
+			x: 25.5d
+			y: -5.5d
+			shape: "gear"
+			description: ["我已经能制作比较高级的机器了，不过这些似乎还不是最高级的？让我想想，我似乎能用水来驱动机器的工作？"]
+			dependencies: ["4D2B7428680B2A8D"]
+			size: 2.0d
+			id: "148C97D45C2F986D"
+			tasks: [{
+				id: "67E2FE63BF598A14"
+				type: "item"
+				item: "kubejs:kinetic_mechanical_box"
+			}]
+			rewards: [
+				{
+					id: "69AD422271AA703E"
+					type: "item"
+					item: "kubejs:kinetic_mechanical_box"
+				}
+				{
+					id: "2490FE70B132C210"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 33.5d
+			y: -2.5d
+			dependencies: ["733DB6B6CADF4CF4"]
+			id: "6586A97D43F4BE32"
+			tasks: [{
+				id: "168776D7059B408B"
+				type: "item"
+				item: "create:deployer"
+			}]
+			rewards: [{
+				id: "32D58AEDFC9C2B05"
+				type: "item"
+				item: "create:deployer"
+				count: 2
+			}]
+		}
+		{
+			title: "磨制玫瑰石英自动化确认"
+			x: 33.5d
+			y: -9.5d
+			description: ["不会做可以先点检查标记，会弹出示例"]
+			dependencies: ["1DECC0483644A664"]
+			id: "58D4837307BEC7B1"
+			tasks: [{
+				id: "42EB04ACE6F1A942"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 35.5d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "完成此任务后开启研究「机械动力——黄铜时代」"
+			dependencies: [
+				"4A9D7B69950093E2"
+				"6586A97D43F4BE32"
+			]
+			size: 2.0d
+			id: "6E80B01023FAFF3A"
+			tasks: [{
+				id: "7F92E18166F825D2"
+				type: "item"
+				item: "create:precision_mechanism"
+			}]
+			rewards: [
+				{
+					id: "0D39D16E07CDD0DF"
+					type: "item"
+					item: "create:precision_mechanism"
+					count: 8
+				}
+				{
+					id: "49A906E445B39FFD"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 26.5d
+			y: -3.5d
+			subtitle: "便携式粉碎机"
+			dependencies: ["148C97D45C2F986D"]
+			id: "51978DA768DF5D6E"
+			tasks: [{
+				id: "77EB24DE7C1E911F"
+				type: "item"
+				item: "create:millstone"
+			}]
+		}
+		{
+			title: "精密构件自动化确认"
+			x: 35.5d
+			y: -5.5d
+			description: ["不会做可以先点检查标记，会弹出示例"]
+			dependencies: ["6E80B01023FAFF3A"]
+			hide: true
+			id: "061F700E961C4572"
+			tasks: [{
+				id: "75E39165CFFBF708"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 31.5d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "黄铜与烈焰的力量结合加以凛冰的冷却产生的合金"
+			dependencies: [
+				"260F273F3671C9A7"
+				"733DB6B6CADF4CF4"
+			]
+			id: "2EE3579FF96F39F5"
+			tasks: [{
+				id: "73B3DC1382D0AD66"
+				type: "item"
+				item: "kubejs:blaze_brass"
+			}]
+			rewards: [
+				{
+					id: "4F53EAFCF0DA8BC0"
+					type: "item"
+					item: "kubejs:blaze_brass_block"
+				}
+				{
+					id: "6B23DC5D91DCF931"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "更高级的物流"
+			x: 33.5d
+			y: -4.0d
+			subtitle: "高级物流组件"
+			description: ["pipez的管道会不会更好用"]
+			dependencies: [
+				"733DB6B6CADF4CF4"
+				"4A9D7B69950093E2"
+			]
+			optional: true
+			id: "2A9B5ECB8583D2A6"
+			tasks: [
+				{
+					id: "5A14FAE0AF38BD8D"
+					type: "item"
+					item: "create:brass_funnel"
+				}
+				{
+					id: "25316C7032334D88"
+					type: "item"
+					item: "create:brass_tunnel"
+				}
+				{
+					id: "551C9AE83B028A93"
+					type: "item"
+					item: {
+						id: "create:filter"
+						Count: 1b
+						tag: {
+							Items: { }
+						}
+					}
+				}
+				{
+					id: "23F2F5509B1154E0"
+					type: "item"
+					item: {
+						id: "create:attribute_filter"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "59BBAA6EBFF76D5D"
+					type: "item"
+					item: "create:smart_chute"
+				}
+			]
+			rewards: [{
+				id: "461AB57C3078FA09"
+				type: "item"
+				item: "create:brass_funnel"
+				count: 16
+			}]
+		}
+		{
+			title: "动能构件自动化确认"
+			x: 35.5d
+			y: -1.5d
+			description: ["不会做可以先点检查标记，会弹出示例"]
+			dependencies: ["6586A97D43F4BE32"]
+			hide: true
+			id: "7F87DC84B2C4E490"
+			tasks: [{
+				id: "6ADDC772688CAAA2"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "流体构件自动化确认"
+			x: 36.0d
+			y: 7.0d
+			description: ["不会做可以先点检查标记，会弹出示例"]
+			dependencies: ["6EB846C51CC1E7DE"]
+			hide: true
+			id: "11D29F0715183F9E"
+			tasks: [{
+				id: "0CFD4C260479429A"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 33.5d
+			y: 7.0d
+			shape: "gear"
+			subtitle: "完成此任务后开启研究「机械动力——流体时代」"
+			dependencies: [
+				"0599161A8D9A14C7"
+				"6586A97D43F4BE32"
+			]
+			size: 2.0d
+			id: "6EB846C51CC1E7DE"
+			tasks: [{
+				id: "7DF588F0FA63A385"
+				type: "item"
+				item: "kubejs:liquid_mechanism"
+			}]
+			rewards: [
+				{
+					id: "18649080C625C415"
+					type: "item"
+					item: "kubejs:liquid_mechanism"
+					count: 8
+				}
+				{
+					id: "11515AFF57802D67"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 24.5d
+			y: -3.0d
+			subtitle: "榨干大树"
+			dependencies: ["148C97D45C2F986D"]
+			id: "786EFFD3CF5EB06F"
+			tasks: [{
+				id: "05EDC59AC513BD1F"
+				type: "item"
+				item: "thermal:device_tree_extractor"
+			}]
+		}
+		{
+			title: "铜器时代"
+			icon: "create:copper_casing"
+			x: 33.5d
+			y: 10.5d
+			shape: "gear"
+			subtitle: "制作铜机壳"
+			dependencies: [
+				"4FDDBA0F692E7F37"
+				"6EB846C51CC1E7DE"
+			]
+			size: 3.0d
+			id: "5BC4BC7124F6E46D"
+			tasks: [
+				{
+					id: "401EDF364D18B5CF"
+					type: "item"
+					item: "create:copper_casing"
+				}
+				{
+					id: "4CEFDC6BC732E0C3"
+					type: "gamestage"
+					stage: "create_liquid"
+				}
+			]
+			rewards: [
+				{
+					id: "24B51705995F4187"
+					type: "item"
+					item: "create:copper_casing"
+				}
+				{
+					id: "3151D11046D0CD47"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "191AF59B5DAFE3D9"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "管道和储罐"
+			x: 36.0d
+			y: 12.5d
+			shape: "gear"
+			subtitle: "然而只有这两个玩意并不能用，你还需要一个动力泵"
+			dependencies: ["5BC4BC7124F6E46D"]
+			hide: true
+			size: 2.0d
+			id: "5F4274E3223E5EA0"
+			tasks: [
+				{
+					id: "3CF9219E1ADF80E9"
+					type: "item"
+					item: "create:fluid_pipe"
+				}
+				{
+					id: "4E8BE2A968B6FDE3"
+					type: "item"
+					item: "create:fluid_tank"
+				}
+			]
+			rewards: [{
+				id: "587A8B94D637AA53"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			x: 37.0d
+			y: 11.5d
+			subtitle: "带过滤的流体管道"
+			dependencies: ["5F4274E3223E5EA0"]
+			optional: true
+			id: "727E171B1FD1F6C7"
+			tasks: [{
+				id: "0BA5E5333F1C499D"
+				type: "item"
+				item: "create:smart_fluid_pipe"
+			}]
+		}
+		{
+			x: 36.0d
+			y: 14.0d
+			subtitle: "简单实惠好用（但是不怎么浪漫）的流体管道"
+			dependencies: ["5F4274E3223E5EA0"]
+			hide: false
+			optional: true
+			id: "55369659C118A0AC"
+			tasks: [{
+				id: "4CD9333DFF566426"
+				type: "item"
+				item: "pipez:fluid_pipe"
+				count: 32L
+			}]
+		}
+		{
+			x: 33.5d
+			y: 13.5d
+			subtitle: "更大的流体罐子"
+			dependencies: [
+				"5F4274E3223E5EA0"
+				"102855107CE4D4F6"
+			]
+			optional: true
+			id: "3F21381EAEB0AFE7"
+			tasks: [{
+				id: "4B079E8A147C2C18"
+				type: "item"
+				item: {
+					id: "thermal:fluid_cell"
+					Count: 1b
+					tag: {
+						Damage: 0
+						BlockEntityTag: {
+							TankInv: [{
+								FluidName: "minecraft:empty"
+								Capacity: 32000
+								Tank: 0b
+								Amount: 0
+							}]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 31.0d
+			y: 12.5d
+			shape: "gear"
+			description: ["水能驱动机器了，这真是一个好消息。不过每一次都要我自己运水，我得想个办法让水流动起来。或许也不止能驱动水呢？"]
+			dependencies: ["5BC4BC7124F6E46D"]
+			hide_text_until_complete: true
+			size: 2.0d
+			id: "102855107CE4D4F6"
+			tasks: [{
+				id: "4C9567E191825E4E"
+				type: "item"
+				item: "kubejs:liquid_mechanical_box"
+			}]
+			rewards: [
+				{
+					id: "59984958DAA78CD0"
+					type: "item"
+					item: "kubejs:liquid_mechanical_box"
+				}
+				{
+					id: "05A36A66D80C3EDD"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 37.0d
+			y: 13.5d
+			dependencies: ["5F4274E3223E5EA0"]
+			hide: false
+			optional: true
+			id: "5E127CFA2961EC04"
+			tasks: [{
+				id: "3E8A0BA240A1830A"
+				type: "item"
+				item: "create:fluid_valve"
+			}]
+		}
+		{
+			x: 29.5d
+			y: 12.5d
+			dependencies: ["102855107CE4D4F6"]
+			id: "24A89E641299F614"
+			tasks: [{
+				id: "3062ADB6566BCBE8"
+				type: "item"
+				item: "create:hose_pulley"
+			}]
+		}
+		{
+			x: 36.0d
+			y: 11.0d
+			dependencies: ["5F4274E3223E5EA0"]
+			optional: true
+			id: "1A2FB8F21721240F"
+			tasks: [{
+				id: "27B5D90E9429FC3B"
+				type: "item"
+				item: "create:spout"
+			}]
+		}
+		{
+			x: 37.5d
+			y: 12.5d
+			dependencies: ["5F4274E3223E5EA0"]
+			hide: false
+			optional: true
+			id: "7481E3C6B12FCB63"
+			tasks: [{
+				id: "7B243FB72737BDD9"
+				type: "item"
+				item: "create:item_drain"
+			}]
+		}
+		{
+			x: 38.0d
+			y: 14.0d
+			dependencies: ["5E127CFA2961EC04"]
+			optional: true
+			id: "52E2743052721B27"
+			tasks: [{
+				id: "3C9F17690CF2FA75"
+				type: "item"
+				item: "create:copper_valve_handle"
+			}]
+		}
+		{
+			x: 31.0d
+			y: 14.0d
+			dependencies: ["102855107CE4D4F6"]
+			id: "3BB9DC4CD8A6DF65"
+			tasks: [{
+				id: "751083CB9F4D6F66"
+				type: "item"
+				item: "thermal:device_water_gen"
+			}]
+		}
+		{
+			title: "操纵流体"
+			x: 33.5d
+			y: 12.5d
+			shape: "gear"
+			subtitle: "制作动力泵"
+			dependencies: [
+				"102855107CE4D4F6"
+				"5F4274E3223E5EA0"
+			]
+			id: "5CEA4C9EAB201129"
+			tasks: [{
+				id: "775FFDD53660FF31"
+				type: "item"
+				item: "create:mechanical_pump"
+			}]
+			rewards: [{
+				id: "5AED4B1BDC0A85B7"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			title: "黄铜时代"
+			icon: "create:brass_casing"
+			x: 40.0d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "制作黄铜机壳"
+			dependencies: [
+				"072B4ABFC07448EC"
+				"6E80B01023FAFF3A"
+			]
+			size: 3.0d
+			id: "0AF2863DA79B8E25"
+			tasks: [
+				{
+					id: "5DF98DD69ED7A1C4"
+					type: "item"
+					item: "create:brass_casing"
+				}
+				{
+					id: "2AEE78CBDE963E14"
+					type: "gamestage"
+					stage: "create_brass"
+				}
+			]
+			rewards: [
+				{
+					id: "3AD5AF02294F2960"
+					type: "item"
+					item: "create:brass_casing"
+				}
+				{
+					id: "037CC51A2C109513"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "38859ABB52729965"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 43.5d
+			y: -1.0d
+			subtitle: "可编程的应力控制方法"
+			dependencies: ["63E980F4C619C5DB"]
+			optional: true
+			id: "763D6E7DE022F3B6"
+			tasks: [{
+				id: "125569F42BEDC0B4"
+				type: "item"
+				item: "create:sequenced_gearshift"
+			}]
+		}
+		{
+			title: "精密的转速控制"
+			x: 44.5d
+			y: -1.5d
+			subtitle: "制作转速控制器"
+			dependencies: ["63E980F4C619C5DB"]
+			id: "4BC2F38C35619DE3"
+			tasks: [{
+				id: "2667176783139813"
+				type: "item"
+				item: "create:rotation_speed_controller"
+			}]
+		}
+		{
+			x: 44.5d
+			y: -2.5d
+			subtitle: "更好的自动化"
+			dependencies: ["63E980F4C619C5DB"]
+			hide: true
+			id: "7DDCEB0FF188BB01"
+			tasks: [{
+				id: "21419DE70EB6B403"
+				type: "item"
+				item: "create:mechanical_arm"
+			}]
+		}
+		{
+			title: "动力合成器"
+			x: 44.5d
+			y: -3.5d
+			shape: "rsquare"
+			dependencies: ["63E980F4C619C5DB"]
+			hide: true
+			id: "7A7DB75032F20B7F"
+			tasks: [{
+				id: "22D69281FD998A16"
+				type: "item"
+				item: "create:mechanical_crafter"
+				count: 3L
+			}]
+			rewards: [
+				{
+					id: "2F6FB136007D23A0"
+					type: "item"
+					team_reward: false
+					item: "create:mechanical_crafter"
+					count: 22
+				}
+				{
+					id: "32EDBC7E451E5C0C"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "粉碎轮"
+			x: 46.0d
+			y: -3.5d
+			subtitle: "请不要试图制作玩家粉"
+			dependencies: ["7A7DB75032F20B7F"]
+			id: "6D5D31B812EBE98D"
+			tasks: [{
+				id: "508E094E1484AB1E"
+				type: "item"
+				item: "create:crushing_wheel"
+				count: 2L
+			}]
+			rewards: [{
+				id: "070E117021C712AD"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			x: 47.5d
+			y: -3.5d
+			subtitle: "给你的烈焰人好朋友（苦力）吃的蛋糕，可以让它们更开心地和你玩（给你打工）"
+			description: ["注意：这里需要做流体时代的研究，不然看不到配方"]
+			dependencies: ["6D5D31B812EBE98D"]
+			id: "1968C2298B45DAAB"
+			tasks: [{
+				id: "78F2E0D101E51DAD"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
+			rewards: [{
+				id: "723C77947F3BA64E"
+				type: "item"
+				team_reward: false
+				item: "create:blaze_cake"
+				only_one: true
+			}]
+		}
+		{
+			title: "青铜、铸铁、钢"
+			icon: "mekanism:ingot_steel"
+			x: 47.5d
+			y: 2.5d
+			shape: "rsquare"
+			subtitle: "发现新材料！"
+			dependencies: ["054D4126EFCBB52C"]
+			id: "513F8CEDF4A8B4C5"
+			tasks: [
+				{
+					id: "5A5A5BC8D3D7548B"
+					type: "item"
+					title: "Any #forge:ingots/bronze"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ingots/bronze"
+						}
+					}
+				}
+				{
+					id: "506FB92A264342F6"
+					type: "item"
+					title: "Any #steampowered:ingots/cast_iron"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "steampowered:ingots/cast_iron"
+						}
+					}
+				}
+				{
+					id: "5739001AD0E7F502"
+					type: "item"
+					title: "Any #forge:ingots/steel"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ingots/steel"
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "31F586ABB1D39A0B"
+					type: "item"
+					item: "emendatusenigmatica:bronze_block"
+				}
+				{
+					id: "3FA3A7521B762166"
+					type: "item"
+					item: "emendatusenigmatica:cast_iron_block"
+				}
+				{
+					id: "579A3BB10316A03F"
+					type: "item"
+					item: "emendatusenigmatica:steel_block"
+				}
+				{
+					id: "5725AAC94D02EEDB"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 42.5d
+			y: -3.5d
+			shape: "gear"
+			description: ["简单的工作机械已经供应不上我的需求了，我利用铜矿以及锌矿制作出了黄铜，利用黄铜制作出来的机械似乎更加高级，不过一些简单的机械我还是不能利用黄铜制作。那我做黄铜干嘛？"]
+			dependencies: ["0AF2863DA79B8E25"]
+			size: 2.0d
+			id: "63E980F4C619C5DB"
+			tasks: [{
+				id: "2E8DA35873720125"
+				type: "item"
+				item: "kubejs:precision_mechanical_box"
+			}]
+			rewards: [
+				{
+					id: "533AFE6536CA7658"
+					type: "item"
+					item: "kubejs:precision_mechanical_box"
+				}
+				{
+					id: "5AAF3D62F3F16ECB"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 45.0d
+			y: -5.0d
+			dependencies: ["7A7DB75032F20B7F"]
+			hide: true
+			optional: true
+			id: "2854CA3F4B536A43"
+			tasks: [{
+				id: "6C87044C4E780FD9"
+				type: "item"
+				item: "vehicle:workstation"
+			}]
+			rewards: [
+				{
+					id: "61C00CA5E57CA97D"
+					type: "item"
+					item: {
+						id: "vehicle:jack"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "38C13046841EDC6E"
+					type: "item"
+					item: {
+						id: "vehicle:wrench"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "5960F90EA91CD896"
+					type: "item"
+					item: {
+						id: "vehicle:hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "制作元素燃料"
+			x: 45.5d
+			y: -6.5d
+			dependencies: ["2854CA3F4B536A43"]
+			hide: true
+			id: "6CFCF716E8645CA0"
+			tasks: [{
+				id: "7BA87411B345321C"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 42.5d
+			y: -1.0d
+			dependencies: ["63E980F4C619C5DB"]
+			id: "24F7186F522EF9DC"
+			tasks: [{
+				id: "2F1B8408961BF983"
+				type: "item"
+				item: "thermal:device_rock_gen"
+			}]
+		}
+		{
+			x: 41.5d
+			y: -1.0d
+			dependencies: ["63E980F4C619C5DB"]
+			id: "1421F0942152AB43"
+			tasks: [{
+				id: "0E5744348FD5D44F"
+				type: "item"
+				item: "thermal:device_collector"
+			}]
+		}
+		{
+			x: 40.5d
+			y: -1.5d
+			dependencies: ["63E980F4C619C5DB"]
+			id: "62B813B2BA421C2B"
+			tasks: [{
+				id: "3ABE19EB3ACC9EDE"
+				type: "item"
+				item: "thermal:device_nullifier"
+			}]
+		}
+		{
+			title: "青铜齿轮"
+			x: 49.0d
+			y: 2.5d
+			subtitle: "损耗较小"
+			dependencies: [
+				"513F8CEDF4A8B4C5"
+				"11CD0585D1E88A8B"
+			]
+			id: "4DCCFBADF93C9B0D"
+			tasks: [
+				{
+					id: "1EC1339D4851AA73"
+					type: "item"
+					item: "steampowered:bronze_cogwheel"
+				}
+				{
+					id: "3464527103F24AF0"
+					type: "item"
+					item: "steampowered:bronze_large_cogwheel"
+				}
+			]
+		}
+		{
+			x: 51.0d
+			y: 2.5d
+			shape: "gear"
+			subtitle: "完成此任务后开启研究「机械动力——蒸汽时代」"
+			dependencies: ["4DCCFBADF93C9B0D"]
+			size: 2.0d
+			id: "3D4C09855F5CCFE6"
+			tasks: [{
+				id: "77144C58FF3D3ADB"
+				type: "item"
+				item: "kubejs:steam_mechanism"
+			}]
+			rewards: [
+				{
+					id: "65BBC4F0833EC49F"
+					type: "item"
+					item: "kubejs:steam_mechanism"
+					count: 8
+				}
+				{
+					id: "757F05C70BF47D43"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			disable_toast: true
+			x: 51.0d
+			y: 4.0d
+			description: ["不会做可以先点检查标记，会弹出示例"]
+			dependencies: ["3D4C09855F5CCFE6"]
+			hide: true
+			id: "7B2BFB8FDDE87C19"
+			tasks: [{
+				id: "4023AC34AA5F1CBF"
+				type: "checkmark"
+				title: "蒸汽构件自动化确认"
+			}]
+		}
+		{
+			title: "高炉"
+			x: 47.5d
+			y: 0.25d
+			shape: "rsquare"
+			subtitle: "用高炉砖搭建一个3x3x3的立方体后用工程师锤右键"
+			dependencies: ["199949E74E82636E"]
+			id: "054D4126EFCBB52C"
+			tasks: [{
+				id: "3515C682B2E795C6"
+				type: "item"
+				item: "immersiveengineering:blastbrick"
+				count: 27L
+			}]
+			rewards: [{
+				id: "2E45820BCFE4C72E"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			title: "焦炉"
+			x: 47.5d
+			y: -2.0d
+			shape: "rsquare"
+			subtitle: "用焦炉砖搭建一个3x3x3的立方体后用工程师锤右键"
+			dependencies: ["1968C2298B45DAAB"]
+			id: "199949E74E82636E"
+			tasks: [{
+				id: "6B479DC58BFF40AA"
+				type: "item"
+				item: "immersiveengineering:cokebrick"
+				count: 27L
+			}]
+			rewards: [
+				{
+					id: "43269F0CD8B78861"
+					type: "item"
+					item: {
+						id: "immersiveengineering:hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "24EEA0587A111FBE"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 49.0d
+			y: -2.0d
+			dependencies: ["199949E74E82636E"]
+			id: "7118E055E204D12C"
+			tasks: [{
+				id: "62A5E017BA0FF20A"
+				type: "item"
+				item: "immersiveengineering:creosote_bucket"
+			}]
+			rewards: [{
+				id: "4060733CA52C85AC"
+				type: "item"
+				item: "immersiveengineering:jerrycan"
+			}]
+		}
+		{
+			title: "防腐木"
+			x: 49.0d
+			y: -0.5d
+			subtitle: "但是麦恩克拉夫特的木头会腐烂嘛？"
+			dependencies: ["7118E055E204D12C"]
+			id: "24F290F63198F8B8"
+			tasks: [{
+				id: "5696A592CE304B8E"
+				type: "item"
+				title: "Any #forge:treated_wood"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:treated_wood"
+					}
+				}
+			}]
+			rewards: [{
+				id: "04A6B592BA528706"
+				type: "item"
+				item: "immersiveengineering:treated_wood_horizontal"
+				count: 32
+			}]
+		}
+		{
+			x: 49.0d
+			y: 1.0d
+			dependencies: ["24F290F63198F8B8"]
+			id: "11CD0585D1E88A8B"
+			tasks: [{
+				id: "12B1D28182E491BB"
+				type: "item"
+				item: "immersiveengineering:workbench"
+			}]
+			rewards: [{
+				id: "5C65B3A43D6C2C6A"
+				type: "item"
+				item: {
+					id: "immersiveengineering:blueprint"
+					Count: 1b
+					tag: {
+						blueprint: "components"
+					}
+				}
+			}]
+		}
+		{
+			x: 44.0d
+			y: -5.0d
+			dependencies: ["7A7DB75032F20B7F"]
+			optional: true
+			id: "3C1E4994FE232E54"
+			tasks: [{
+				id: "18EA6D55E070F165"
+				type: "item"
+				item: "tac:workbench"
+			}]
+		}
+		{
+			title: "青铜蒸汽机"
+			x: 59.0d
+			y: 2.5d
+			subtitle: "使用蒸汽机产生应力"
+			dependencies: ["0A82CCB568C9CCC0"]
+			id: "6A3CA0EC52953176"
+			tasks: [
+				{
+					id: "17267919641C8D4C"
+					type: "item"
+					item: "steampowered:bronze_burner"
+				}
+				{
+					id: "2402A895EEBFB436"
+					type: "item"
+					item: "steampowered:bronze_boiler"
+				}
+				{
+					id: "53B8497AD70927CB"
+					type: "item"
+					item: "steampowered:bronze_steam_engine"
+				}
+				{
+					id: "7D3397B5D497D328"
+					type: "item"
+					item: "steampowered:bronze_flywheel"
+				}
+			]
+			rewards: [{
+				id: "15513AA23539C50D"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+		}
+		{
+			title: "铸铁齿轮"
+			x: 57.5d
+			y: 1.5d
+			subtitle: "损耗更小"
+			hide_dependency_lines: true
+			dependencies: [
+				"513F8CEDF4A8B4C5"
+				"0411F0A525559C72"
+			]
+			id: "7EB820215C308CFF"
+			tasks: [
+				{
+					id: "050FC3FE03CE9DAB"
+					type: "item"
+					item: "steampowered:cast_iron_cogwheel"
+				}
+				{
+					id: "4F27CA93199627CE"
+					type: "item"
+					item: "steampowered:cast_iron_large_cogwheel"
+				}
+			]
+		}
+		{
+			title: "铸铁蒸汽机"
+			x: 59.0d
+			y: 0.0d
+			subtitle: "获得升级！"
+			dependencies: [
+				"6A3CA0EC52953176"
+				"48BAF12725A535A2"
+			]
+			id: "6D2974E0836787F4"
+			tasks: [
+				{
+					id: "0CAF1C797C8FE9DB"
+					type: "item"
+					item: "steampowered:cast_iron_burner"
+				}
+				{
+					id: "356CE6D3B8806DBD"
+					type: "item"
+					item: "steampowered:cast_iron_boiler"
+				}
+				{
+					id: "57647333009F0191"
+					type: "item"
+					item: "steampowered:cast_iron_steam_engine"
+				}
+				{
+					id: "127D5E061624DC41"
+					type: "item"
+					item: "steampowered:cast_iron_flywheel"
+				}
+			]
+		}
+		{
+			title: "钢齿轮"
+			x: 53.0d
+			y: -2.5d
+			subtitle: "无损耗"
+			hide_dependency_lines: true
+			dependencies: [
+				"513F8CEDF4A8B4C5"
+				"0411F0A525559C72"
+			]
+			id: "06E5356D57628B9A"
+			tasks: [
+				{
+					id: "118450D7CCE38883"
+					type: "item"
+					item: "steampowered:steel_cogwheel"
+				}
+				{
+					id: "240972A87D3D206E"
+					type: "item"
+					item: "steampowered:steel_large_cogwheel"
+				}
+			]
+		}
+		{
+			title: "钢蒸汽机"
+			x: 59.0d
+			y: -2.5d
+			subtitle: "又一次的升级！"
+			dependencies: [
+				"6D2974E0836787F4"
+				"0004EB298BCE7308"
+			]
+			id: "30D675EAC564AA0C"
+			tasks: [
+				{
+					id: "3D2154F5161DE7A2"
+					type: "item"
+					item: "steampowered:steel_burner"
+				}
+				{
+					id: "1B60DFE839D59FD6"
+					type: "item"
+					item: "steampowered:steel_boiler"
+				}
+				{
+					id: "6CB5F8A25F10D772"
+					type: "item"
+					item: "steampowered:steel_steam_engine"
+				}
+				{
+					id: "552BA10EC2BFD875"
+					type: "item"
+					item: "steampowered:steel_flywheel"
+				}
+			]
+		}
+		{
+			title: "蒸汽时代"
+			icon: "kubejs:steel_casing"
+			x: 51.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "制作青铜、铸铁、钢机壳"
+			dependencies: ["65A195CB81F7A8E8"]
+			size: 2.0d
+			id: "0411F0A525559C72"
+			tasks: [
+				{
+					id: "2117D1807C86C040"
+					type: "item"
+					item: "kubejs:bronze_casing"
+				}
+				{
+					id: "1B724381064D8E97"
+					type: "item"
+					item: "kubejs:cast_iron_casing"
+				}
+				{
+					id: "45DB6F8385F4343A"
+					type: "item"
+					item: "kubejs:steel_casing"
+				}
+				{
+					id: "52AE065A6D87177B"
+					type: "gamestage"
+					stage: "create_steam"
+				}
+			]
+			rewards: [
+				{
+					id: "1A6CD8CF6799E6DF"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "23AD74589117B18C"
+					type: "item"
+					item: "kubejs:bronze_casing"
+				}
+				{
+					id: "5D5E8E61F9B751DC"
+					type: "item"
+					item: "kubejs:cast_iron_casing"
+				}
+				{
+					id: "3D09BB7656E7F212"
+					type: "item"
+					item: "kubejs:steel_casing"
+				}
+				{
+					id: "0A4ED142F3CCF38E"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 56.0d
+			y: 2.5d
+			shape: "gear"
+			description: ["水在沸腾之后会产生蒸汽，那我能不能用蒸汽来替代我的水流，使机械的工作效率提高？事实证明，我很聪明，这个方法也很可行。不过我似乎是在复兴这里的文明？"]
+			dependencies: [
+				"0411F0A525559C72"
+				"3D4C09855F5CCFE6"
+			]
+			size: 2.0d
+			id: "0A82CCB568C9CCC0"
+			tasks: [{
+				id: "0A9D7E654423ECCE"
+				type: "item"
+				item: "kubejs:steam_mechanical_box_mk1"
+			}]
+			rewards: [
+				{
+					id: "0AABCA2E70E91CDE"
+					type: "item"
+					item: "kubejs:steam_mechanical_box_mk1"
+				}
+				{
+					id: "38A621F7A8A7DC63"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 56.0d
+			y: 0.0d
+			shape: "gear"
+			dependencies: [
+				"7EB820215C308CFF"
+				"0411F0A525559C72"
+			]
+			size: 2.0d
+			id: "48BAF12725A535A2"
+			tasks: [{
+				id: "6044359DB7CA1503"
+				type: "item"
+				item: "kubejs:steam_mechanical_box_mk2"
+			}]
+			rewards: [
+				{
+					id: "6575A1E2679FD8EE"
+					type: "item"
+					item: "kubejs:steam_mechanical_box_mk2"
+				}
+				{
+					id: "2F7D4E125FBCBCA6"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 56.0d
+			y: -2.5d
+			shape: "gear"
+			dependencies: [
+				"06E5356D57628B9A"
+				"0411F0A525559C72"
+			]
+			size: 2.0d
+			id: "0004EB298BCE7308"
+			tasks: [{
+				id: "61FC24FE0FC7FDFC"
+				type: "item"
+				item: "kubejs:steam_mechanical_box_mk3"
+			}]
+			rewards: [
+				{
+					id: "3F8AE6C752C5CD70"
+					type: "item"
+					item: "kubejs:steam_mechanical_box_mk3"
+				}
+				{
+					id: "33E474A0507BB8BE"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 53.0d
+			y: -5.0d
+			shape: "gear"
+			dependencies: ["06E5356D57628B9A"]
+			size: 2.0d
+			id: "59B1DC73320B7266"
+			tasks: [{
+				id: "2A1C3BD653BB8AEA"
+				type: "item"
+				item: "kubejs:electricity_mechanism"
+			}]
+			rewards: [
+				{
+					id: "58D29BD528A12ED9"
+					type: "item"
+					team_reward: false
+					item: "kubejs:electricity_mechanism"
+					count: 8
+				}
+				{
+					id: "62251EB3EC14DE89"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "电气构件自动化确认"
+			x: 55.5d
+			y: -5.0d
+			description: ["不会做可以先点检查标记，会弹出示例"]
+			dependencies: ["59B1DC73320B7266"]
+			hide: true
+			id: "465237AF1C585629"
+			tasks: [{
+				id: "44B38BDFBA32852D"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "机械动力之始"
+			icon: "create:wrench"
+			x: 12.0d
+			y: -5.5d
+			shape: "rsquare"
+			subtitle: "这里是一些给你的工具，在接下来的机械动力旅程中会用到的"
+			description: ["好在他们给我灌输了知识，我能制造一些简单的机械带动生产，不过似乎这些机械有更高级的，能做到完完全全不需要我手动？"]
+			dependencies: [
+				"2E6CE901040A8995"
+				"1FECF4A4BFD9B7B5"
+			]
+			hide: true
+			size: 3.0d
+			id: "061AEBFBE77F2B2E"
+			tasks: [{
+				id: "39C38DE86E4F368E"
+				type: "gamestage"
+				stage: "create_start"
+			}]
+			rewards: [
+				{
+					id: "77D0C90D708DD0FA"
+					type: "item"
+					item: "create:wrench"
+				}
+				{
+					id: "7FD8722B4EBE06EB"
+					type: "item"
+					item: "create:goggles"
+				}
+				{
+					id: "5520C4D47B657CB2"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "7D9E746ADA9EFC41"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "安山合金自动化确认"
+			x: 14.5d
+			y: -7.5d
+			description: ["不会做可以先点检查标记，会弹出示例"]
+			dependencies: ["1FB5C6F37727E64B"]
+			id: "2CE021649BF900BE"
+			tasks: [{
+				id: "2E761D4CE3155F6D"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 14.5d
+			y: -5.5d
+			subtitle: "机械动力的最基础材料，标志着机械动力的开始"
+			dependencies: ["061AEBFBE77F2B2E"]
+			id: "1FB5C6F37727E64B"
+			tasks: [{
+				id: "63C104F25650EEA5"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+			rewards: [{
+				id: "4E6284D54AC88C57"
+				type: "item"
+				item: "kubejs:andesite_alloy_block"
+			}]
+		}
+		{
+			title: "简单的转速控制"
+			x: 16.0d
+			y: -7.0d
+			subtitle: "将小齿轮接到大齿轮上加倍转速（反之减半"
+			dependencies: ["5FE00391F475669C"]
+			id: "1F3F7CD9BBD83855"
+			tasks: [{
+				id: "7CA30567AC0D83EC"
+				type: "advancement"
+				advancement: "create:shifting_gears"
+				criterion: ""
+			}]
+		}
+		{
+			title: "基础应力传输"
+			x: 16.0d
+			y: -5.5d
+			subtitle: "传输应力的基础方式"
+			description: [
+				"4个任务完成3个即可"
+				"注意：木齿轮有损耗"
+				"后面的任务需要海带所以奖励里面有"
+			]
+			dependencies: ["1FB5C6F37727E64B"]
+			min_required_tasks: 3
+			id: "5FE00391F475669C"
+			tasks: [
+				{
+					id: "3C0793368F0F380E"
+					type: "item"
+					item: "create:shaft"
+				}
+				{
+					id: "22D0F5A6FA06D631"
+					type: "item"
+					item: "create:cogwheel"
+				}
+				{
+					id: "6FCEBE6936F38A79"
+					type: "item"
+					item: "create:large_cogwheel"
+				}
+				{
+					id: "0FE7A9A81460AC31"
+					type: "item"
+					item: "create:belt_connector"
+				}
+			]
+			rewards: [
+				{
+					id: "50713613E728EA0C"
+					type: "item"
+					item: "minecraft:kelp"
+					count: 16
+				}
+				{
+					id: "7CF889C57172DB28"
+					type: "item"
+					item: "create:cogwheel"
+					count: 32
+				}
+				{
+					id: "6D6B1F955291A163"
+					type: "item"
+					item: "create:large_cogwheel"
+					count: 16
+				}
+				{
+					id: "6A7DA11C905437AE"
+					type: "item"
+					item: "create:shaft"
+					count: 64
+				}
+			]
+		}
+		{
+			title: "基础物流"
+			x: 16.0d
+			y: -4.0d
+			shape: "circle"
+			subtitle: "基础物流组件"
+			description: ["pipez的管道会不会更好用"]
+			dependencies: ["5FE00391F475669C"]
+			optional: true
+			id: "213F58B14D11BF5E"
+			tasks: [
+				{
+					id: "0FCB4B97810742FD"
+					type: "item"
+					item: "create:andesite_funnel"
+				}
+				{
+					id: "401065AEFB52A8FD"
+					type: "item"
+					item: "create:andesite_tunnel"
+				}
+				{
+					id: "777FA8F8618C324E"
+					type: "item"
+					item: "create:chute"
+				}
+				{
+					id: "6BDB6E4A48BE021A"
+					type: "item"
+					item: {
+						id: "create:filter"
+						Count: 1b
+						tag: {
+							Items: { }
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "287DDA769E05F885"
+				type: "item"
+				item: "create:andesite_funnel"
+				count: 16
+			}]
+		}
+		{
+			x: 14.5d
+			y: -3.5d
+			subtitle: "简单实惠好用（但是不怎么浪漫）的物品管道"
+			dependencies: ["1FB5C6F37727E64B"]
+			id: "2E78E84CD90A356A"
+			tasks: [{
+				id: "4D5A4E2EA2FA9C84"
+				type: "item"
+				item: "pipez:item_pipe"
+				count: 32L
+			}]
+			rewards: [
+				{
+					id: "42E741CA511E6CAA"
+					type: "item"
+					item: "pipez:wrench"
+				}
+				{
+					id: "05EF4F76671ED6A2"
+					type: "item"
+					item: "pipez:advanced_upgrade"
+					count: 2
+				}
+				{
+					id: "1FB9F8E1BDA2B3DA"
+					type: "item"
+					item: "pipez:item_pipe"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "组装风车"
+			x: 18.0d
+			y: -4.5d
+			subtitle: "呼呼呼（风声"
+			dependencies: ["5FE00391F475669C"]
+			id: "5FE57C28885D88F9"
+			tasks: [
+				{
+					id: "2168F14D4697608D"
+					type: "item"
+					item: "create:windmill_bearing"
+				}
+				{
+					id: "6808A97536EA285F"
+					type: "item"
+					item: "create:sail_frame"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "47AFAB7C2379F6A8"
+				type: "item"
+				item: "create:white_sail"
+				count: 16
+			}]
+		}
+		{
+			title: "搭建水车"
+			x: 18.0d
+			y: -6.5d
+			subtitle: "哗啦哗啦（水声"
+			dependencies: ["5FE00391F475669C"]
+			id: "2A901C59339E250C"
+			tasks: [{
+				id: "72CFEE86394FE418"
+				type: "item"
+				item: "create:water_wheel"
+			}]
+		}
+		{
+			x: 20.0d
+			y: -5.5d
+			shape: "gear"
+			subtitle: "完成此任务后开启研究「机械动力——安山时代」"
+			description: ["这个任务只需要完成两个前置就可以"]
+			min_required_dependencies: 2
+			dependencies: [
+				"5FE00391F475669C"
+				"2A901C59339E250C"
+				"5FE57C28885D88F9"
+			]
+			size: 2.0d
+			id: "78CC7D2C19C1076F"
+			tasks: [{
+				id: "620F71A4CA91AEF8"
+				type: "item"
+				item: "kubejs:kinetic_mechanism"
+			}]
+			rewards: [
+				{
+					id: "1EDF209F45B19D34"
+					type: "item"
+					item: "kubejs:kinetic_mechanism"
+					count: 8
+				}
+				{
+					id: "0CC2CD0C42A20103"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 49.0d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "可用于激活暮色森林传送门"
+			dependencies: ["1968C2298B45DAAB"]
+			size: 1.5d
+			id: "41DE77F7F05DCACB"
+			tasks: [{
+				id: "63CBFA6B6F62690D"
+				type: "item"
+				item: {
+					id: "kubejs:twilight_gemstone"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "下界！"
+			x: 22.5d
+			y: 1.5d
+			shape: "diamond"
+			subtitle: "制造一个传送门去下界吧"
+			description: ["根据我被灌输的数据，这个世界似乎不止这一个“维度”？我依据我已存的数据，搭建出了一个门户，并且来到了其中一个维度：下界。不过为什么这里也有和主世界一样的怪物？甚至还有一些变种？"]
+			dependencies: [
+				"5631AA219970CE56"
+				"0AEC05EF740D37E4"
+			]
+			hide: true
+			size: 3.0d
+			id: "76B41B1F8531D5BE"
+			tasks: [{
+				id: "067CA040949D64E4"
+				type: "dimension"
+				dimension: "minecraft:the_nether"
+			}]
+			rewards: [
+				{
+					id: "1D8644962F822504"
+					type: "custom"
+					title: "阶段"
+					auto: "enabled"
+				}
+				{
+					id: "717ED467602360EF"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "0D40B312318C3373"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 21.5d
+			y: -0.5d
+			shape: "rsquare"
+			dependencies: ["76B41B1F8531D5BE"]
+			id: "6E228330C1C0C39E"
+			tasks: [{
+				id: "4485B486BDDC6A19"
+				type: "item"
+				item: "tconstruct:foundry_controller"
+			}]
+			rewards: [
+				{
+					id: "52C6DAC17854D935"
+					type: "item"
+					item: "minecraft:lava_bucket"
+					count: 4
+				}
+				{
+					id: "05C3490F198EC415"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "776C5FD58E5BA77F"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 23.5d
+			y: -0.5d
+			shape: "rsquare"
+			dependencies: ["76B41B1F8531D5BE"]
+			id: "40C61FC2DD6FC58A"
+			tasks: [{
+				id: "1673A488A522100E"
+				type: "item"
+				item: "tconstruct:scorched_alloyer"
+			}]
+			rewards: [
+				{
+					id: "40603BAB72936B6A"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "2080A70AE673FB8B"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 27.0d
+			y: 1.0d
+			subtitle: "哇！爆率真的很高（"
+			description: ["其实可以用精华（小声"]
+			dependencies: ["442E34AE51CD9D93"]
+			id: "1A121E7AD52A2595"
+			tasks: [{
+				id: "4ECBF325D2EAF6AB"
+				type: "item"
+				item: "tconstruct:blaze_head"
+			}]
+		}
+		{
+			title: "熔化烈焰人"
+			x: 29.5d
+			y: 0.5d
+			subtitle: "橙汁（不是"
+			dependencies: ["1A121E7AD52A2595"]
+			id: "260F273F3671C9A7"
+			tasks: [{
+				id: "29118CB14C24A8FF"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "3719656C7D5B06EA"
+				type: "item"
+				team_reward: false
+				item: "tconstruct:blaze_head"
+				count: 10
+			}]
+		}
+		{
+			title: "阴森（热闹）的要塞"
+			x: 25.0d
+			y: 1.5d
+			subtitle: "要塞里的怪物们会热情地欢迎你的（划掉"
+			dependencies: ["76B41B1F8531D5BE"]
+			dependency_requirement: "one_completed"
+			id: "442E34AE51CD9D93"
+			tasks: [{
+				id: "051F6D9636AB588C"
+				type: "structure"
+				title: "进入下界要塞"
+				icon: "minecraft:nether_bricks"
+				structure: "minecraft:fortress"
+			}]
+		}
+		{
+			title: "惊悚恐怖骷髅头"
+			x: 26.5d
+			y: 2.0d
+			subtitle: "打凋零骷髅概率掉落"
+			description: ["建议使用匠魂的劈刀"]
+			dependencies: ["442E34AE51CD9D93"]
+			id: "380941813B7149E3"
+			tasks: [{
+				id: "49C0F290AFBC7603"
+				type: "item"
+				item: "minecraft:wither_skeleton_skull"
+			}]
+			rewards: [{
+				id: "72991EADAD6552C3"
+				type: "item"
+				item: "minecraft:wither_skeleton_skull"
+			}]
+		}
+		{
+			title: "凋灵"
+			x: 27.0d
+			y: 3.5d
+			subtitle: "召唤凋灵"
+			description: ["记住一定不要在自己的庇护所附近召唤凋灵"]
+			dependencies: ["380941813B7149E3"]
+			id: "6F1DE8AE3A3CB9CC"
+			tasks: [
+				{
+					id: "0CB12B8B3F125E40"
+					type: "item"
+					item: "minecraft:soul_sand"
+					count: 4L
+				}
+				{
+					id: "48C23AB585E2660E"
+					type: "item"
+					item: "minecraft:wither_skeleton_skull"
+					count: 3L
+				}
+			]
+		}
+		{
+			title: "击杀凋灵"
+			icon: {
+				id: "inventorypets:pet_wither"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 27.0d
+			y: 5.25d
+			shape: "gear"
+			subtitle: "鲨凋（"
+			description: [
+				"这将会增加你的游戏难度"
+				"注意：Boss越打越强"
+			]
+			dependencies: ["6F1DE8AE3A3CB9CC"]
+			size: 1.5d
+			id: "20E5B2983BF8B84B"
+			tasks: [
+				{
+					id: "494DC8EFAF46ED84"
+					type: "item"
+					item: "minecraft:nether_star"
+				}
+				{
+					id: "24BA581A6E0A64EC"
+					type: "kill"
+					icon: {
+						id: "inventorypets:pet_wither"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					entity: "minecraft:wither"
+					value: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "3BBD6AB90000552C"
+					type: "custom"
+					title: "阶段"
+					auto: "enabled"
+				}
+				{
+					id: "6C3EDBAE4FB57C14"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "198FA9FB68570FD2"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+				{
+					id: "30DCC5E2912D0531"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 25.5d
+			y: 4.5d
+			subtitle: "原来的核动力火把回来了"
+			min_required_dependencies: 2
+			dependencies: [
+				"5813843576BABB6E"
+				"5ABD4FB90126BF3E"
+			]
+			optional: true
+			id: "0A7857BD675A6BCA"
+			tasks: [{
+				id: "4C4FC0AE6CA877AC"
+				type: "item"
+				item: "minecraft:torch"
+			}]
+		}
+		{
+			title: "荧石水晶"
+			x: 25.5d
+			y: 3.0d
+			subtitle: "用于制作荧石火把"
+			dependencies: ["43F0BABA7A595F13"]
+			optional: true
+			id: "5813843576BABB6E"
+			tasks: [{
+				id: "39909647EC507707"
+				type: "item"
+				item: "realistictorches:glowstone_crystal"
+			}]
+		}
+		{
+			x: 24.0d
+			y: 3.0d
+			dependencies: ["76B41B1F8531D5BE"]
+			id: "43F0BABA7A595F13"
+			tasks: [{
+				id: "3E7130D13C317378"
+				type: "item"
+				item: "minecraft:glowstone_dust"
+			}]
+		}
+		{
+			title: "荧石膏"
+			x: 24.0d
+			y: 4.5d
+			subtitle: "用于升级火把"
+			dependencies: ["43F0BABA7A595F13"]
+			optional: true
+			id: "5ABD4FB90126BF3E"
+			tasks: [{
+				id: "130667CE16FC3476"
+				type: "item"
+				item: "realistictorches:glowstone_paste"
+			}]
+		}
+		{
+			title: "远古残骸"
+			x: 22.5d
+			y: 4.0d
+			subtitle: "来自下界的残骸"
+			dependencies: ["76B41B1F8531D5BE"]
+			dependency_requirement: "one_completed"
+			id: "0A4D244F29E55A48"
+			tasks: [{
+				id: "7FD5491F49507CAA"
+				type: "item"
+				title: "Any #forge:ores/netherite_scrap"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ores/netherite_scrap"
+					}
+				}
+			}]
+		}
+		{
+			title: "熔炼残骸"
+			x: 23.0d
+			y: 5.5d
+			subtitle: "将残骸试着处理一下吧"
+			dependencies: ["0A4D244F29E55A48"]
+			id: "4F3FC14D00D15915"
+			tasks: [{
+				id: "27775F84E7B20247"
+				type: "item"
+				item: "minecraft:netherite_scrap"
+			}]
+		}
+		{
+			x: 24.5d
+			y: 6.0d
+			dependencies: ["4F3FC14D00D15915"]
+			id: "7352831E20E03F2D"
+			tasks: [{
+				id: "56D1CC7150F4E495"
+				type: "item"
+				item: "minecraft:netherite_ingot"
+			}]
+		}
+		{
+			title: "初见聚能水晶"
+			x: -4.5d
+			y: -2.0d
+			shape: "diamond"
+			subtitle: "这玩意是...魔法？"
+			description: ["你打量了打量这块在神秘的神殿中出现的水晶，它似乎有种星辰的力量，不过现在你还没有学会如何利用它"]
+			dependencies: ["18FE013B3405D2C2"]
+			hide_text_until_complete: true
+			secret: true
+			id: "33BCC7DA3F384759"
+			tasks: [{
+				id: "0B8FA77EBE38D8F7"
+				type: "observation"
+				icon: {
+					id: "astralsorcery:rock_collector_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellation: "astralsorcery:discidia"
+							crystalProperties: {
+								attributes: [
+									{
+										property: "astralsorcery:size"
+										pLevel: 3
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:purity"
+										pLevel: 2
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:shape"
+										pLevel: 3
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:collector.rate"
+										pLevel: 3
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:constellation.discidia"
+										pLevel: 2
+										discovered: 1b
+									}
+								]
+							}
+						}
+					}
+				}
+				timer: 0L
+				observe_type: 0
+				to_observe: "astralsorcery:rock_collector_crystal"
+			}]
+		}
+	]
+}

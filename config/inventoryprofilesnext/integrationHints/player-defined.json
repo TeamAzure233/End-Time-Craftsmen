@@ -1,0 +1,109 @@
+{
+    "net.minecraft.client.gui.screen.inventory.InventoryScreen": {
+        "buttonHints": {
+            "PROFILE_SELECTOR": {
+                "bottom": 30
+            },
+            "SHOW_EDITOR": {
+                "horizontalOffset": 28,
+                "top": 28
+            },
+            "SETTINGS": {
+                "horizontalOffset": 11,
+                "top": 13
+            }
+        }
+    },
+    "net.minecraft.client.gui.screen.inventory.CreativeScreen": {
+        "buttonHints": {
+            "SHOW_EDITOR": {
+                "horizontalOffset": 27,
+                "top": 29
+            },
+            "SETTINGS": {
+                "horizontalOffset": 10,
+                "top": 14
+            }
+        }
+    },
+    "net.minecraft.client.gui.screen.inventory.ChestScreen": {
+        "buttonHints": {
+            "MOVE_TO_CONTAINER": {
+                "horizontalOffset": 37,
+                "bottom": 1
+            },
+            "MOVE_TO_PLAYER": {
+                "horizontalOffset": 12
+            },
+            "SORT": {
+                "horizontalOffset": 12
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": 12
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": 12
+            }
+        }
+    },
+    "com.yuo.endless.Gui.ExtremeCraftScreen": {
+        "buttonHints": {
+            "MOVE_TO_PLAYER": {
+                "top": 11
+            },
+            "SORT": {
+                "top": 11
+            },
+            "SORT_COLUMNS": {
+                "top": 11
+            },
+            "SORT_ROWS": {
+                "top": 11
+            }
+        }
+    },
+    "appeng.client.gui.me.items.CraftingTermScreen": {
+        "buttonHints": {
+            "MOVE_TO_CONTAINER": {
+                "bottom": -1
+            },
+            "MOVE_TO_PLAYER": {
+                "top": 235
+            },
+            "SORT": {
+                "horizontalOffset": -36,
+                "top": 193
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": -24,
+                "top": 207
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": -12,
+                "top": 221
+            }
+        }
+    },
+    "appeng.client.gui.me.items.ItemTerminalScreen": {
+        "buttonHints": {
+            "MOVE_TO_CONTAINER": {
+                "bottom": -69
+            },
+            "MOVE_TO_PLAYER": {
+                "top": 304
+            },
+            "SORT": {
+                "horizontalOffset": -36,
+                "top": 262
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": -24,
+                "top": 275
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": -12,
+                "top": 288
+            }
+        }
+    }
+}

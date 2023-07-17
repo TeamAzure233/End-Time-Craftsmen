@@ -1,0 +1,36 @@
+
+[General]
+	#Value to scale energy usage by with speed upgrades [default:2]
+	#Range: 1.0 ~ 8.0
+	"Machine Energy Usage Speed Upgrade Scale" = 2.0
+	#Value to scale collection speed with speed upgrades [default:5]
+	#Range: 1 ~ 8
+	"Machine Speed Upgrade Scale" = 5
+	#Value to scale energy usage by with energy upgrades [default:1.3]
+	#Range: 1.0 ~ 4.0
+	"Machine Energy Usage Energy Upgrade Scale" = 1.2999999523162842
+	#Chunkloader radius in Chunks [default:1]
+	#Range: 0 ~ 1
+	"Chunkloader Radius" = 1
+	#Energy usage for machine with no upgrades [default:1024]
+	#Range: 1 ~ 1048576
+	"Base Machine Energy Usage" = 1024
+
+["Void Miner"]
+	#Void Miner Partial Tag Blacklist (case insensitive)
+	"Partial Tag Blacklist" = []
+	#Void Miner Wildcard Item ID Blacklist (Wildcard: *) (case insensitive) e.g. mekanism:*
+	"Wildcard Item Blacklist" = []
+	#Valid prefixes: storage_block,seed,plastic,plate,dye,gem,nugget,ore,ingot,glass,misc,rod,logs,crop,dust,stone
+	"Enabled Filters/Prefixes" = ["storage_block", "seed", "plastic", "plate", "dye", "gem", "nugget", "ore", "ingot", "glass", "misc", "rod", "logs", "crop", "dust", "stone"]
+	#Void Miner Item ID Blacklist (case insensitive) e.g. minecraft:stone
+	"Item Blacklist" = []
+	#Void Miner Exact Tag Blacklist (case sensitive)
+	"Exact Tag Blacklist" = []
+
+["Void Pump"]
+	#Void Pump Exact Fluid Blacklist (prefix fluid. not required) (case sensitive)
+	"Exact Fluid Blacklist" = []
+	#Void Pump Partial Fluid Blacklist (prefix fluid. not required) (case insensitive)
+	"Partial Fluid Blacklist" = []
+

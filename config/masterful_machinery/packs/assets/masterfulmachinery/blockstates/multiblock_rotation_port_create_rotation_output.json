@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "masterfulmachinery:block/multiblock_rotation_port_create_rotation_output"
+    }
+  }
+}

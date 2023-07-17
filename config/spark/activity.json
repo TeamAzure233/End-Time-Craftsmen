@@ -1,0 +1,15 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "Gofishfly233333",
+      "uniqueId": "3027266d-fcfb-42ff-bcbd-36db77457af0"
+    },
+    "time": 1674180262422,
+    "type": "Profiler",
+    "data": {
+      "type": "file",
+      "value": "D:\\Minecraft\\versions\\末世工匠\\config\\spark\\profile-2023-01-20_10.04.22.sparkprofile"
+    }
+  }
+]

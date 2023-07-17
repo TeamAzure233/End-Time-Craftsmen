@@ -1,0 +1,10 @@
+{
+  "type": "botania:mana_infusion",
+  "input": {
+    "tag": "forge:storage_blocks/lumium"
+  },
+  "output": {
+    "item": "botania:manasteel_block"
+  },
+  "mana": 27000
+}

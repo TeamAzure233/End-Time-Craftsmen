@@ -1,0 +1,12 @@
+#Elytra Bombing Setting
+#How long should the launched TNT's infusion time be?
+#Default is 80 ticks (4 sec), the same as Vanilla TNT.
+#Range: > 0
+infusion_time = 80
+#How long should the bombing cool-down time be?
+#Default is 60 ticks (3 sec).
+#Range: > 0
+bombing_cd = 60
+#Does TNT have inertia? If true, the player's real-time speed will influence the TNT's initial speed.
+inertia = true
+

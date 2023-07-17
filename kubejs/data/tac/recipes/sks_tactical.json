@@ -1,0 +1,26 @@
+{
+  "type": "tac:workbench",
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 70
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/gold"
+      },
+      "count": 10
+    },
+    {
+      "item": {
+        "item": "create:precision_mechanism"
+      },
+      "count": 7
+    }
+  ],
+  "result": {
+    "item": "tac:sks_tactical"
+  }
+}

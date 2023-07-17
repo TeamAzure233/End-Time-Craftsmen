@@ -1,0 +1,37 @@
+
+[general]
+	#End Shipwreck and End Beacon generation
+	end_shipwreck = true
+	#Cracked blocks generation in The End
+	end_deco = true
+	#End Crypt generation
+	end_crypt = true
+	#Endstone Coral generation
+	end_coral = true
+	#Random model size | If enabled, server logs can spam with warning about enderman spawning
+	enderman_tweaks = false
+	#End Crypt maximum size
+	#Range: 0 ~ 16
+	crypt_size = 8
+	#Crying Obsidian spawn rarity
+	#Range: 0 ~ 32
+	rarity_obsidian_ore = 13
+	#End Moss spawn rarity
+	#Range: 0 ~ 16
+	rarity_moss = 4
+	#End Moss spawn rarity
+	#Range: 0 ~ 16
+	rarity_ogana = 5
+	#Dragonite flower spawn rarity
+	#Range: 0 ~ 16
+	rarity_dragonite = 3
+	#Xorcite Clusters spawn rarity
+	#Range: 0 ~ 16
+	rarity_xorcite_clusters = 1
+	#Tungsten Ore spawn rarity
+	#Range: 0 ~ 16
+	rarity_tungsten_ore = 3
+	#Tungsten Ore spawn rarity
+	#Range: 0 ~ 16
+	rarity_tungsten_end = 2
+

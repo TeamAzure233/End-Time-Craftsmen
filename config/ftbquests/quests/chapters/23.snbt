@@ -1,0 +1,1593 @@
+{
+	id: "1E9C25A9D2B94DA7"
+	group: "0F94B414230112AC"
+	order_index: 2
+	filename: "23"
+	title: "第三章 交叉路口 科技线"
+	icon: "mekanism:steel_casing"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: -12.5d
+		y: -1.0d
+		width: 1.0d
+		height: 1.0d
+		rotation: 0.0d
+		image: "kubejs:textures/quest/start.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			x: -11.0d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "通用机械之始"
+			dependencies: [
+				"63D71350804D10F2"
+				"14AAE2BC400A17A2"
+			]
+			hide: true
+			size: 2.0d
+			id: "5FAA347926F42DAE"
+			tasks: [{
+				id: "1DC18679F62387B5"
+				type: "item"
+				item: "mekanism:metallurgic_infuser"
+			}]
+			rewards: [
+				{
+					id: "72155BC54E3C3FE7"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+				{
+					id: "46AF5B039482DA68"
+					type: "xp"
+					xp: 250
+				}
+				{
+					id: "37575D214159BBE2"
+					type: "item"
+					item: "mekanism:configurator"
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: 0.5d
+			dependencies: ["5FAA347926F42DAE"]
+			hide: true
+			id: "42E052EFEE02D9ED"
+			tasks: [{
+				id: "59D776852965141A"
+				type: "item"
+				item: "mekanism:basic_control_circuit"
+			}]
+		}
+		{
+			title: "工厂安装器"
+			x: -9.0d
+			y: -0.5d
+			shape: "diamond"
+			subtitle: "机器：获得升级！（"
+			description: ["4个任务完成一个即可"]
+			hide_dependency_lines: true
+			dependencies: [
+				"42E052EFEE02D9ED"
+				"73F657C733C16F95"
+				"4B75097BEAADF376"
+				"135EA75518903E50"
+			]
+			dependency_requirement: "one_completed"
+			min_required_tasks: 1
+			id: "3AA5900D6288E7A3"
+			tasks: [
+				{
+					id: "07865BF11E216FB9"
+					type: "item"
+					item: "mekanism:basic_tier_installer"
+				}
+				{
+					id: "21EE64745E9D9BD4"
+					type: "item"
+					item: "mekanism:advanced_tier_installer"
+				}
+				{
+					id: "0BACC02A24C178D3"
+					type: "item"
+					item: "mekanism:elite_tier_installer"
+				}
+				{
+					id: "32171EF995F74BF4"
+					type: "item"
+					item: "mekanism:ultimate_tier_installer"
+				}
+			]
+		}
+		{
+			x: -8.5d
+			y: -1.0d
+			dependencies: ["5FAA347926F42DAE"]
+			hide: true
+			id: "532034C7F03CFC0B"
+			tasks: [{
+				id: "466EAD2BBD7AAC7A"
+				type: "item"
+				item: "mekanism:alloy_infused"
+			}]
+		}
+		{
+			x: -8.5d
+			y: 0.5d
+			dependencies: [
+				"42E052EFEE02D9ED"
+				"532034C7F03CFC0B"
+			]
+			id: "73F657C733C16F95"
+			tasks: [{
+				id: "4B8E675B2B04FCCC"
+				type: "item"
+				item: "mekanism:advanced_control_circuit"
+			}]
+		}
+		{
+			x: -8.5d
+			y: 2.0d
+			dependencies: ["73F657C733C16F95"]
+			id: "6A156C1161F25603"
+			tasks: [{
+				id: "77E001783865A0E9"
+				type: "item"
+				item: {
+					id: "mekanism:jetpack"
+					Count: 1b
+					tag: {
+						HideFlags: 2
+					}
+				}
+			}]
+		}
+		{
+			x: -8.5d
+			y: 3.5d
+			dependencies: ["6A156C1161F25603"]
+			id: "6CD11F113C2162D6"
+			tasks: [{
+				id: "60E2169F80E47F7B"
+				type: "item"
+				item: "mekanism:jetpack_armored"
+			}]
+		}
+		{
+			x: -10.0d
+			y: 2.0d
+			dependencies: ["73F657C733C16F95"]
+			id: "404625C11A4A7F74"
+			tasks: [{
+				id: "010536AE069B847C"
+				type: "item"
+				item: {
+					id: "mekanism:atomic_disassembler"
+					Count: 1b
+					tag: {
+						HideFlags: 2
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: 0.5d
+			dependencies: ["216DA5BCD4647473"]
+			id: "7A04C985B80826E3"
+			tasks: [{
+				id: "64C5FF067F95FBFB"
+				type: "item"
+				item: "mekanism:alloy_atomic"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 2.0d
+			dependencies: [
+				"4B75097BEAADF376"
+				"7A04C985B80826E3"
+			]
+			id: "135EA75518903E50"
+			tasks: [{
+				id: "54A37647E66C58FB"
+				type: "item"
+				item: "mekanism:ultimate_control_circuit"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 1.5d
+			dependencies: [
+				"216DA5BCD4647473"
+				"73F657C733C16F95"
+			]
+			id: "4B75097BEAADF376"
+			tasks: [{
+				id: "57832E8601135B4B"
+				type: "item"
+				item: "mekanism:elite_control_circuit"
+			}]
+		}
+		{
+			x: -7.0d
+			y: 0.0d
+			dependencies: ["532034C7F03CFC0B"]
+			id: "216DA5BCD4647473"
+			tasks: [{
+				id: "20506608265A6815"
+				type: "item"
+				item: "mekanism:alloy_reinforced"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "工业时代"
+			description: ["经过不懈的研究，我发现了一些更高级的机械，他们或许是之前的产物。但不管怎样，我现在能利用这些机械帮助我自动化物品的制作以及给予我高科技时代才能实现的行为——飞行"]
+			dependencies: ["532034C7F03CFC0B"]
+			size: 2.0d
+			id: "10CE06C2043EF9C1"
+			tasks: [{
+				id: "52EEB17575967049"
+				type: "item"
+				item: "mekanism:steel_casing"
+			}]
+			rewards: [
+				{
+					id: "5C50395B67CD9B68"
+					type: "item"
+					item: {
+						id: "mekanism:steel_casing"
+						Count: 1b
+						tag: { }
+					}
+					count: 5
+				}
+				{
+					id: "608D9F0FC66D962C"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: 0.0d
+			subtitle: "简单好用而且帅（但是不怎么实惠）的气体管道"
+			description: [
+				"（有pipz的管道好么）"
+				"高缓存"
+			]
+			dependencies: ["64ABC01BB343A80D"]
+			optional: true
+			id: "36A6E6DD8BBFA556"
+			tasks: [{
+				id: "6A270CDDFA588780"
+				type: "item"
+				item: "mekanism:basic_pressurized_tube"
+				count: 8L
+			}]
+		}
+		{
+			x: -3.0d
+			y: -1.0d
+			dependencies: ["10CE06C2043EF9C1"]
+			id: "64ABC01BB343A80D"
+			tasks: [{
+				id: "6040048B882F6921"
+				type: "item"
+				item: "mekanism:electrolytic_separator"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.5d
+			subtitle: "简单实惠好用（但是不怎么浪漫）的气体管道"
+			dependencies: ["64ABC01BB343A80D"]
+			optional: true
+			id: "080593F50E1D084C"
+			tasks: [{
+				id: "38A10360C292180B"
+				type: "item"
+				item: "pipez:gas_pipe"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			subtitle: "来一套乙烯发电"
+			dependencies: ["64ABC01BB343A80D"]
+			id: "18C0DE60F229A656"
+			tasks: [{
+				id: "0251195091C536AC"
+				type: "item"
+				item: "mekanismgenerators:gas_burning_generator"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.0d
+			dependencies: [
+				"70D903A8198A28EC"
+				"64ABC01BB343A80D"
+			]
+			id: "3CEB7FAFC0D12896"
+			tasks: [{
+				id: "49D82554765DFDEA"
+				type: "item"
+				item: "mekanism:pressurized_reaction_chamber"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -3.0d
+			dependencies: ["10CE06C2043EF9C1"]
+			optional: true
+			id: "63FB193653C256D1"
+			tasks: [{
+				id: "711695A3463B8C92"
+				type: "item"
+				item: "mekanism:fuelwood_heater"
+			}]
+		}
+		{
+			title: "热力蒸馏塔"
+			x: -4.5d
+			y: -4.5d
+			shape: "rsquare"
+			dependencies: ["63FB193653C256D1"]
+			id: "3286B1AB5D72EA59"
+			tasks: [
+				{
+					id: "78C1A3A43EB37EBC"
+					type: "item"
+					item: "mekanism:thermal_evaporation_controller"
+				}
+				{
+					id: "6A3F66CD5FECDB74"
+					type: "item"
+					item: "mekanism:thermal_evaporation_valve"
+					count: 2L
+				}
+				{
+					id: "59AFCB5FFF8A2076"
+					type: "item"
+					item: "mekanism:thermal_evaporation_block"
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: -5.0d
+			dependencies: ["63FB193653C256D1"]
+			optional: true
+			id: "5ECD46614766C030"
+			tasks: [{
+				id: "10A3C1EE412BF664"
+				type: "item"
+				item: {
+					id: "mekanism:basic_thermodynamic_conductor"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "热力锅炉"
+			x: -6.5d
+			y: -4.5d
+			shape: "rsquare"
+			dependencies: ["63FB193653C256D1"]
+			optional: true
+			id: "02F62A605329ABE8"
+			tasks: [
+				{
+					id: "343983DDE10B947D"
+					type: "item"
+					item: "mekanism:boiler_casing"
+				}
+				{
+					id: "679B74F8A8725777"
+					type: "item"
+					item: "mekanism:pressure_disperser"
+				}
+				{
+					id: "113603E75E9EACE8"
+					type: "item"
+					item: "mekanism:superheating_element"
+				}
+				{
+					id: "5AFB06F1E07AED91"
+					type: "item"
+					item: "mekanism:structural_glass"
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: -3.0d
+			dependencies: ["10CE06C2043EF9C1"]
+			hide: false
+			id: "70D903A8198A28EC"
+			tasks: [{
+				id: "7F53597226EA51EC"
+				type: "item"
+				item: {
+					id: "mekanism:enrichment_chamber"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -3.0d
+			subtitle: "饼？能吃吗？来尝一口？（"
+			description: ["完成此任务和「化学溶解室」后开启研究：原子时代"]
+			dependencies: ["70D903A8198A28EC"]
+			dependency_requirement: "one_completed"
+			id: "721AF1BD2E6136DD"
+			tasks: [{
+				id: "0D90D300650ADCEE"
+				type: "item"
+				item: "mekanism:yellow_cake_uranium"
+			}]
+		}
+		{
+			icon: "mekanism:sulfuric_acid_bucket"
+			x: -1.0d
+			y: -4.5d
+			subtitle: "小心点，别沾到手上"
+			dependencies: [
+				"4F333F16ED7F31AB"
+				"48407016D5BA3C69"
+				"6DD0A95B22FFF76F"
+			]
+			id: "2B97B1DE0AC25777"
+			tasks: [{
+				id: "2B3F1FC49E4DEB70"
+				type: "checkmark"
+				title: "制作硫酸"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -6.0d
+			hide_dependency_lines: true
+			dependencies: ["10CE06C2043EF9C1"]
+			hide: true
+			optional: true
+			id: "6DD0A95B22FFF76F"
+			tasks: [{
+				id: "71DFEE043EFD2620"
+				type: "item"
+				item: "mekanism:rotary_condensentrator"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -6.5d
+			hide_dependency_lines: true
+			dependencies: ["10CE06C2043EF9C1"]
+			hide: true
+			optional: true
+			id: "48407016D5BA3C69"
+			tasks: [{
+				id: "742F1C5AF3F4E1B4"
+				type: "item"
+				item: "mekanism:chemical_infuser"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -6.0d
+			hide_dependency_lines: true
+			dependencies: ["10CE06C2043EF9C1"]
+			hide: true
+			optional: true
+			id: "4F333F16ED7F31AB"
+			tasks: [{
+				id: "353D2F68A314284E"
+				type: "item"
+				item: "mekanism:chemical_oxidizer"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -4.5d
+			subtitle: "五倍矿产线的核心之一"
+			description: ["完成此任务和「铀黄饼」后开启研究：原子时代"]
+			dependencies: ["2B97B1DE0AC25777"]
+			dependency_requirement: "one_completed"
+			id: "799BE644345F4FAC"
+			tasks: [{
+				id: "7C5D89AF1574FB62"
+				type: "item"
+				item: "mekanism:chemical_dissolution_chamber"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -3.0d
+			shape: "rsquare"
+			subtitle: "提取裂变之能"
+			dependencies: [
+				"721AF1BD2E6136DD"
+				"799BE644345F4FAC"
+				"10A9E9394A3ECBC4"
+			]
+			id: "3F97F557CF8A86C6"
+			tasks: [{
+				id: "292D3BCAFB626461"
+				type: "item"
+				item: "mekanism:isotopic_centrifuge"
+			}]
+			rewards: [{
+				id: "1CA41EA004CF2C79"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendry"
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			dependencies: ["3CEB7FAFC0D12896"]
+			id: "5B9D306A869009D7"
+			tasks: [{
+				id: "3FB51A3F7E2CD961"
+				type: "item"
+				item: "mekanism:hdpe_sheet"
+			}]
+		}
+		{
+			title: "改造"
+			x: 1.5d
+			y: 1.0d
+			subtitle: "改造你的Meka套装吧"
+			dependencies: ["61B8FCA7B158BF17"]
+			optional: true
+			id: "08BA93CCB16CC482"
+			tasks: [
+				{
+					id: "14161E4DC12A8D27"
+					type: "item"
+					item: "mekanism:modification_station"
+				}
+				{
+					id: "4B7096AC07AD905F"
+					type: "item"
+					item: "mekanism:module_base"
+				}
+			]
+		}
+		{
+			title: "Meka套装"
+			x: 3.5d
+			y: 1.0d
+			shape: "rsquare"
+			subtitle: "从合成表上看貌似就是给下界合金套裹了层塑料（"
+			dependencies: ["1954D2015EF79FDA"]
+			optional: true
+			id: "61B8FCA7B158BF17"
+			tasks: [
+				{
+					id: "1EDF85F40A94C873"
+					type: "item"
+					item: {
+						id: "mekanism:mekasuit_helmet"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "1349BE8BB19E9185"
+					type: "item"
+					item: {
+						id: "mekanism:mekasuit_bodyarmor"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "6E8261E3CC09D671"
+					type: "item"
+					item: {
+						id: "mekanism:mekasuit_pants"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "41AEEC1584AB040D"
+					type: "item"
+					item: {
+						id: "mekanism:mekasuit_boots"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "1FAD2BF1BA6435F5"
+					type: "item"
+					item: {
+						id: "mekanism:meka_tool"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "190602D189D84E6A"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendry"
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.0d
+			dependencies: ["5B9D306A869009D7"]
+			id: "23D201F3C8693444"
+			tasks: [{
+				id: "176AE43126F3ABFA"
+				type: "item"
+				item: "mekanism:solar_neutron_activator"
+			}]
+		}
+		{
+			title: "靶丸"
+			x: 5.5d
+			y: -1.0d
+			shape: "rsquare"
+			subtitle: "看起来好像挺好吃，来尝一口？（"
+			dependencies: [
+				"23D201F3C8693444"
+				"037D0B92037F491B"
+			]
+			id: "1954D2015EF79FDA"
+			tasks: [
+				{
+					id: "2B01846E70FFDDF0"
+					type: "item"
+					item: "mekanism:pellet_polonium"
+				}
+				{
+					id: "1F09F132E8898117"
+					type: "item"
+					item: "mekanism:pellet_plutonium"
+				}
+			]
+			rewards: [
+				{
+					id: "15451E0E2D890653"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+				{
+					id: "57E0C4F289416C35"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: 1.0d
+			dependencies: ["1954D2015EF79FDA"]
+			id: "6519F0CCD69F5903"
+			tasks: [{
+				id: "0F74107CAFAD80B8"
+				type: "item"
+				item: "mekanism:reprocessed_fissile_fragment"
+			}]
+		}
+		{
+			title: "超临界移相器"
+			x: 8.0d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "全自动吞电、吞钋机（"
+			description: ["72个外壳中包含12个用来做端口"]
+			dependencies: ["1954D2015EF79FDA"]
+			size: 2.0d
+			id: "0AD3B19FB30B7171"
+			tasks: [
+				{
+					id: "10901F8B26605919"
+					type: "item"
+					item: "mekanism:sps_casing"
+					count: 72L
+				}
+				{
+					id: "005ACDEBD2D0F08D"
+					type: "item"
+					item: "mekanism:sps_port"
+					count: 3L
+				}
+				{
+					id: "5A75BB779415640C"
+					type: "item"
+					item: "mekanism:supercharged_coil"
+				}
+			]
+			rewards: [
+				{
+					id: "0341D4CF9E5CEBA2"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "78FB058C54F25A0F"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: 1.0d
+			shape: "rsquare"
+			subtitle: "看起来好像挺好吃，来尝一口？（"
+			dependencies: ["0AD3B19FB30B7171"]
+			id: "73DD18E31390C999"
+			tasks: [{
+				id: "43023F83B788FA14"
+				type: "item"
+				item: "mekanism:pellet_antimatter"
+			}]
+			rewards: [{
+				id: "2E6FD269CB0CBEB0"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendry"
+					}
+				}
+			}]
+		}
+		{
+			x: 11.5d
+			y: 1.0d
+			shape: "rsquare"
+			dependencies: ["73DD18E31390C999"]
+			id: "0B9CB2710E2C8DBC"
+			tasks: [{
+				id: "67E7D56510B27D13"
+				type: "item"
+				item: "mekanism:antiprotonic_nucleosynthesizer"
+			}]
+			rewards: [
+				{
+					id: "365290A2D169E05C"
+					type: "item"
+					item: {
+						id: "mekanism:antiprotonic_nucleosynthesizer"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "26B4691A00BB8638"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 13.5d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "诞生于反物质的合金"
+			dependencies: ["0B9CB2710E2C8DBC"]
+			size: 2.0d
+			id: "0E67486615073974"
+			tasks: [{
+				id: "3DD69E3D58F04947"
+				type: "item"
+				item: "kubejs:antimatter_alloy"
+			}]
+			rewards: [
+				{
+					id: "3298F806D53007DF"
+					type: "item"
+					team_reward: false
+					item: {
+						id: "kubejs:antimatter_alloy_block"
+						Count: 1b
+						tag: { }
+					}
+					count: 2
+				}
+				{
+					id: "1D614815D0D76C7C"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "聚变反应堆"
+			x: 8.0d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "电力自由！"
+			description: [
+				"激光只要充400MFE就好"
+				"甚至可以使用木料加热器点燃"
+			]
+			dependencies: ["1954D2015EF79FDA"]
+			size: 2.0d
+			id: "33752CB32BBDF7B3"
+			tasks: [
+				{
+					id: "65441AFB48941996"
+					type: "item"
+					item: "mekanismgenerators:fusion_reactor_controller"
+				}
+				{
+					id: "1AD2134FAA6294FD"
+					type: "item"
+					item: "mekanismgenerators:fusion_reactor_frame"
+					count: 52L
+				}
+				{
+					id: "15BA530FAF8D5475"
+					type: "item"
+					item: "mekanismgenerators:fusion_reactor_port"
+					count: 3L
+				}
+				{
+					id: "74520BC4257D9ACA"
+					type: "item"
+					item: "mekanismgenerators:laser_focus_matrix"
+				}
+				{
+					id: "64E5F5BDBFED3E50"
+					type: "item"
+					item: "mekanism:laser"
+				}
+				{
+					id: "38039F852CC64CAC"
+					type: "item"
+					item: "mekanism:laser_amplifier"
+				}
+				{
+					id: "6B55B572DD3B8CF4"
+					type: "item"
+					item: "mekanism:laser_tractor_beam"
+				}
+			]
+			rewards: [
+				{
+					id: "71540C9866D41236"
+					type: "item"
+					item: {
+						id: "mekanism:ultimate_chemical_tank"
+						Count: 1b
+						tag: {
+							mekData: {
+								owner: [I;
+									-1866832633
+									2048734855
+									-1433754012
+									-1868334064
+								]
+								SlurryTanks: [ ]
+								InfusionTanks: [ ]
+								dumping: 0
+								controlType: 0
+								componentEjector: {
+									color1: -1
+									color2: -1
+									color0: -1
+									strictInput: 0b
+									color5: -1
+									color3: -1
+									color4: -1
+								}
+								componentConfig: {
+									config2: {
+										side4: 1
+										side3: 1
+										side5: 1
+										side0: 4
+										side2: 1
+										side1: 1
+									}
+									config3: {
+										side4: 1
+										side3: 1
+										side5: 1
+										side0: 4
+										side2: 1
+										side1: 1
+									}
+									config4: {
+										side4: 1
+										side3: 1
+										side5: 1
+										side0: 4
+										side2: 1
+										side1: 1
+									}
+									config5: {
+										side4: 1
+										side3: 1
+										side5: 1
+										side0: 4
+										side2: 1
+										side1: 1
+									}
+									config6: {
+										side4: 1
+										side3: 1
+										side5: 1
+										side0: 4
+										side2: 1
+										side1: 1
+									}
+									eject5: 1b
+									eject6: 0b
+									eject3: 1b
+									eject4: 1b
+									eject2: 1b
+								}
+								PigmentTanks: [ ]
+								securityMode: 0
+								GasTanks: [{
+									Tank: 0b
+									stored: {
+										gasName: "mekanismgenerators:fusion_fuel"
+										amount: 8192000L
+									}
+								}]
+								Items: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "4FCD4A9DD4106FB9"
+					type: "item"
+					item: {
+						id: "mekanism:ultimate_chemical_tank"
+						Count: 1b
+						tag: {
+							mekData: {
+								owner: [I;
+									-1866832633
+									2048734855
+									-1433754012
+									-1868334064
+								]
+								SlurryTanks: [ ]
+								InfusionTanks: [ ]
+								dumping: 0
+								controlType: 0
+								componentEjector: {
+									color1: -1
+									color2: -1
+									color0: -1
+									strictInput: 0b
+									color5: -1
+									color3: -1
+									color4: -1
+								}
+								componentConfig: {
+									config2: {
+										side4: 1
+										side3: 1
+										side5: 1
+										side0: 4
+										side2: 1
+										side1: 1
+									}
+									config3: {
+										side4: 1
+										side3: 1
+										side5: 1
+										side0: 4
+										side2: 1
+										side1: 1
+									}
+									config4: {
+										side4: 1
+										side3: 1
+										side5: 1
+										side0: 4
+										side2: 1
+										side1: 1
+									}
+									config5: {
+										side4: 1
+										side3: 1
+										side5: 1
+										side0: 4
+										side2: 1
+										side1: 1
+									}
+									config6: {
+										side4: 1
+										side3: 1
+										side5: 1
+										side0: 4
+										side2: 1
+										side1: 1
+									}
+									eject5: 1b
+									eject6: 0b
+									eject3: 1b
+									eject4: 1b
+									eject2: 1b
+								}
+								PigmentTanks: [ ]
+								securityMode: 0
+								GasTanks: [{
+									Tank: 0b
+									stored: {
+										gasName: "mekanismgenerators:deuterium"
+										amount: 8192000L
+									}
+								}]
+								Items: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "67F5EA1D9E71BB0C"
+					type: "item"
+					item: {
+						id: "mekanism:ultimate_chemical_tank"
+						Count: 1b
+						tag: {
+							mekData: {
+								owner: [I;
+									-1866832633
+									2048734855
+									-1433754012
+									-1868334064
+								]
+								SlurryTanks: [ ]
+								InfusionTanks: [ ]
+								dumping: 0
+								controlType: 0
+								componentEjector: {
+									color1: -1
+									color2: -1
+									color0: -1
+									strictInput: 0b
+									color5: -1
+									color3: -1
+									color4: -1
+								}
+								componentConfig: {
+									config2: {
+										side4: 1
+										side3: 1
+										side5: 1
+										side0: 4
+										side2: 1
+										side1: 1
+									}
+									config3: {
+										side4: 1
+										side3: 1
+										side5: 1
+										side0: 4
+										side2: 1
+										side1: 1
+									}
+									config4: {
+										side4: 1
+										side3: 1
+										side5: 1
+										side0: 4
+										side2: 1
+										side1: 1
+									}
+									config5: {
+										side4: 1
+										side3: 1
+										side5: 1
+										side0: 4
+										side2: 1
+										side1: 1
+									}
+									config6: {
+										side4: 1
+										side3: 1
+										side5: 1
+										side0: 4
+										side2: 1
+										side1: 1
+									}
+									eject5: 1b
+									eject6: 0b
+									eject3: 1b
+									eject4: 1b
+									eject2: 1b
+								}
+								PigmentTanks: [ ]
+								securityMode: 0
+								GasTanks: [{
+									Tank: 0b
+									stored: {
+										gasName: "mekanismgenerators:tritium"
+										amount: 8192000L
+									}
+								}]
+								Items: [ ]
+							}
+						}
+					}
+				}
+				{
+					id: "056493B7D800DEFC"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "653FF6131720C0F6"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			title: "蒸汽涡轮"
+			x: 8.0d
+			y: -3.0d
+			shape: "rsquare"
+			subtitle: "发电+回水"
+			description: ["产出的能量一定要及时导出"]
+			min_required_dependencies: 1
+			dependencies: ["037D0B92037F491B"]
+			dependency_requirement: "all_started"
+			id: "587290E9CC84231D"
+			tasks: [
+				{
+					id: "72C172DCEFF22616"
+					type: "item"
+					item: "mekanismgenerators:turbine_casing"
+				}
+				{
+					id: "712570BA6D2500D9"
+					type: "item"
+					item: "mekanism:pressure_disperser"
+				}
+				{
+					id: "43094DB5E0F048A4"
+					type: "item"
+					item: "mekanismgenerators:turbine_vent"
+				}
+				{
+					id: "725FB73DDBC3514B"
+					type: "item"
+					item: "mekanismgenerators:saturating_condenser"
+				}
+				{
+					id: "716A4F7DA952509D"
+					type: "item"
+					item: "mekanismgenerators:electromagnetic_coil"
+				}
+				{
+					id: "379A694062887993"
+					type: "item"
+					item: "mekanismgenerators:turbine_valve"
+				}
+				{
+					id: "2F3C1C8FB7D827D7"
+					type: "item"
+					item: "mekanismgenerators:turbine_rotor"
+				}
+				{
+					id: "5DF2D0C4310B41C8"
+					type: "item"
+					item: "mekanismgenerators:turbine_blade"
+				}
+			]
+		}
+		{
+			title: "裂变反应堆"
+			x: 5.5d
+			y: -3.0d
+			shape: "gear"
+			subtitle: "BOOM！！！"
+			dependencies: [
+				"157771602C680F4D"
+				"10A9E9394A3ECBC4"
+			]
+			size: 2.0d
+			id: "037D0B92037F491B"
+			tasks: [
+				{
+					id: "2BD0EE9F2155CE44"
+					type: "item"
+					item: "mekanismgenerators:fission_reactor_casing"
+				}
+				{
+					id: "67F15B4A0B0C8B07"
+					type: "item"
+					item: "mekanismgenerators:fission_reactor_port"
+				}
+				{
+					id: "2E7D95551B66532C"
+					type: "item"
+					item: "mekanismgenerators:fission_fuel_assembly"
+				}
+				{
+					id: "0A3B7A416B4FB33B"
+					type: "item"
+					item: "mekanismgenerators:control_rod_assembly"
+				}
+				{
+					id: "64BDD367967F5670"
+					type: "item"
+					item: "mekanismgenerators:reactor_glass"
+				}
+			]
+			rewards: [
+				{
+					id: "62AB1F18E701220E"
+					type: "item"
+					item: "mekanismgenerators:fission_reactor_logic_adapter"
+					count: 5
+				}
+				{
+					id: "2FFB36C76B756D92"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:fission_reactor_casing"
+						Count: 1b
+						tag: { }
+					}
+					count: 64
+				}
+				{
+					id: "4B140CB59B54E87E"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:fission_fuel_assembly"
+						Count: 1b
+						tag: { }
+					}
+					count: 32
+				}
+				{
+					id: "470E6047E98C373E"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:control_rod_assembly"
+						Count: 1b
+						tag: { }
+					}
+					count: 8
+				}
+				{
+					id: "75D86F95624B094B"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "59AD520FB09FB162"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: -3.0d
+			subtitle: "导引裂变之能"
+			dependencies: ["3F97F557CF8A86C6"]
+			id: "157771602C680F4D"
+			tasks: [{
+				id: "095FCEFE341407E8"
+				type: "checkmark"
+				title: "裂变燃料"
+			}]
+		}
+		{
+			title: "化学清洗机与化学结晶器"
+			x: 3.0d
+			y: -4.5d
+			subtitle: "五倍矿产线的核心之二"
+			dependencies: ["799BE644345F4FAC"]
+			optional: true
+			id: "2F9F88AFBF472427"
+			tasks: [
+				{
+					id: "2CB07F41C84226BB"
+					type: "item"
+					item: "mekanism:chemical_washer"
+				}
+				{
+					id: "757A10B445F2BADE"
+					type: "item"
+					item: "mekanism:chemical_crystallizer"
+				}
+			]
+		}
+		{
+			title: "防辐射套装"
+			x: 4.5d
+			y: -4.5d
+			subtitle: "这玩意可以不做"
+			dependencies: ["037D0B92037F491B"]
+			dependency_requirement: "all_started"
+			optional: true
+			id: "64A42CEDF2F049DF"
+			tasks: [
+				{
+					id: "1C4015A785FA15AE"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_mask"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "796437F9F3655B48"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_gown"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "1C9C62F09F1FFDF6"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_pants"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "59CAB6417AA7DF4F"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_boots"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: -4.5d
+			subtitle: "这难道要成为切尔诺贝利事件的重演吗"
+			description: ["这是你的最后一次机会"]
+			dependencies: ["037D0B92037F491B"]
+			hide: true
+			optional: true
+			id: "187441AD334DC6B9"
+			tasks: [{
+				id: "168E91FFDE56CD8A"
+				type: "checkmark"
+				title: "炸堆了，救命！"
+			}]
+			rewards: [
+				{
+					id: "0FD3AD7B5106787D"
+					type: "command"
+					auto: "enabled"
+					command: "/mek radiation removeAll"
+					player_command: false
+				}
+				{
+					id: "6E72A1E13EEA17FD"
+					type: "command"
+					auto: "enabled"
+					command: "/mek radiation heal"
+					player_command: false
+				}
+				{
+					id: "40C0404611940F8A"
+					type: "command"
+					auto: "enabled"
+					command: "/kill @p"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: -4.5d
+			dependencies: ["187441AD334DC6B9"]
+			hide: true
+			optional: true
+			id: "1CBA0B1D21D2DB87"
+			tasks: [{
+				id: "63DEE83AA5C89BEB"
+				type: "checkmark"
+				title: "什么，你堆又炸了？"
+			}]
+			rewards: [{
+				id: "172518F5503B3FB9"
+				type: "command"
+				title: "一个小惩罚"
+				auto: "enabled"
+				command: "/kill @p"
+				player_command: false
+			}]
+		}
+		{
+			x: 9.5d
+			y: -4.5d
+			shape: "circle"
+			subtitle: "最后一次机会"
+			dependencies: ["1CBA0B1D21D2DB87"]
+			hide: true
+			optional: true
+			id: "6715664FBB6FDDF0"
+			tasks: [{
+				id: "553469B6A230415C"
+				type: "checkmark"
+				title: "这堆真是容易炸呀"
+			}]
+			rewards: [
+				{
+					id: "366E0F81F20306EC"
+					type: "command"
+					auto: "enabled"
+					command: "/mek radiation removeAll"
+					player_command: false
+				}
+				{
+					id: "20F92EEFBCB4AB47"
+					type: "command"
+					auto: "enabled"
+					command: "/mek radiation heal"
+					player_command: false
+				}
+				{
+					id: "387B1D1901BEFE27"
+					type: "item"
+					item: "mekanismgenerators:fission_reactor_casing"
+					count: 68
+				}
+				{
+					id: "322E07353F9AC4C4"
+					type: "item"
+					item: "mekanismgenerators:fission_fuel_assembly"
+					count: 60
+				}
+				{
+					id: "2C97C2D0225A7EE8"
+					type: "item"
+					item: "mekanismgenerators:control_rod_assembly"
+					count: 13
+				}
+			]
+		}
+		{
+			x: 15.5d
+			y: 1.0d
+			subtitle: "抽奖机（确信"
+			dependencies: ["0E67486615073974"]
+			optional: true
+			id: "27474E5D6CEBF98F"
+			tasks: [{
+				id: "7914B99F1B088C70"
+				type: "item"
+				item: "compactvoidminers:void_miner"
+			}]
+		}
+		{
+			x: 17.0d
+			y: 1.0d
+			dependencies: ["27474E5D6CEBF98F"]
+			optional: true
+			id: "17DFBF7E6DEBFFB8"
+			tasks: [{
+				id: "45A56F05A83C0382"
+				type: "item"
+				item: "compactvoidminers:void_pump"
+			}]
+		}
+	]
+}

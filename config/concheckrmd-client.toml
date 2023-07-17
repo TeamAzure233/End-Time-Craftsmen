@@ -1,0 +1,82 @@
+
+["Customisable Chat Greeting Message"]
+	#Customisable message that will be displayed in chat when a world is loaded.
+	"#1) Display Chat Greeting Message?" = false
+	#The text to be displayed in chat.
+	"#2) Greeting Message Text" = "Hello there! Welcome to my modpack."
+	#The color of the message to be displayed in chat.
+	#Allowed Values: Blue, Green, Red, Aqua, Yellow, White, Black, Grey, Purple, Dark_Blue, Dark_Green, Dark_Red, Dark_Purple
+	"#3) Greeting Message Color" = "Purple"
+
+["Customisable Start Message"]
+	#Customisable message that will appear each time the game starts. This is useful for displaying credits.
+	"#1) Display message box?" = false
+	#Will the window show on top of all other windows? Recommended to keep set to True.
+	"#2) Display message box topmost?" = true
+	#The text that will be displayed in the message box.
+	"#3) Message Box Text" = "Hello Modpack Users! Made by matt_r__"
+
+["Customisable First Start Message"]
+	#A message box that will be displayed when the game is started for the first time. This is useful for displaying instructions.
+	"#1) Display message box?" = false
+	#Will the window show on top of all other windows? Recommended to keep set to True.
+	"#2) Display message box topmost?" = true
+	#The text that will be displayed in the message box.
+	"#3) Message Box Text" = "Welcome. Thank you for starting my modpack for the first time!"
+
+["Open A Website when the Game Starts"]
+	#Opens a webpage when the game starts. This is useful for modpack support.
+	"#1) Display Website when game starts?" = false
+	#The URL of the website that will be displayed. This can be formatted like: http://google.com, www.google.com or google.com.
+	"#2) Website URL" = "minecraft.curseforge.com/projects/config-checker"
+
+["Amount of RAM Recommended for Game to Start"]
+	#The amount of RAM recommended for stable gameplay.
+	#Range: 128 ~ 51200
+	"#1) Ram Recommended (IN MB)" = 4096
+	#If the player has less than the recommended amount of RAM assigned to the modpack then a warning will be displayed when the game is started.
+	"#2) Check RAM meets recommendation?" = true
+	#Will the window show on top of all other windows? I highly recommend this is left as true.
+	"#3) Display message box topmost?" = true
+	#Customise the text that appears in the warning message. Will display custom message instead of the default text.
+	"#4) Customise low RAM Warning?" = true
+	#The custom message to be displayed if you have set the previous setting to 'True'. Will display custom message instead of the default text.
+	"#5) Custom Message" = "您可能需要更多的内存以获得更好的性能"
+
+["Recommended RAM Chat Message"]
+	#The amount of RAM recommended for stable gameplay.
+	#Range: 128 ~ 51200
+	"#1) Ram Recommended (IN MB)" = 4096
+	#If the player has less than the recommended amount of RAM assigned to the modpack then a warning will be displayed in chat when a world is loaded.
+	"#2) Check RAM meets recommendation?" = true
+	#Customise the text that appears in the warning message. Will display custom message instead of the default text.
+	"#3) Customise low RAM Warning?" = true
+	#The custom message to be displayed in chat if you have set the previous setting to 'True'. Will display custom message instead of the default text.
+	"#4) Custom Message" = "您可能需要更多的内存以获得更好的性能"
+
+["Amount of RAM Required for Game to Start"]
+	#The amount of RAM required for the game to run.
+	#Range: 128 ~ 51200
+	"#1) Ram Required (IN MB)" = 3072
+	#If the player has less than the required amount of RAM assigned to the modpack then they will be alerted as the game starts and the game will close.
+	"#2) Check RAM meets requirement?" = true
+	#Will the window show on top of all other windows? I highly recommend this is left as true.
+	"#3) Display message box topmost?" = true
+	#Customise the text that appears in the error message. Will display custom message instead of the default text.
+	"#4) Display custom text in messagebox?" = true
+	#The custom message to be displayed if you have set the previous setting to 'True'. Will display custom message instead of the default text.
+	"#5) Custom Message" = "您分配的内存过少，游戏即将关闭"
+
+["Game Launch Time Limit"]
+	#The maximum amount of time the game will be allowed to spend booting. (IN SECONDS)
+	#Range: 5 ~ 5400
+	"#1) Launch Timeout (IN SECONDS)" = 30
+	#If the game exceeds the launch timeout then a messagebox will be displayed and the game will close.
+	"#2) Check game meets launch timeout?" = false
+	#Will the window show on top of all other windows? I highly recommend this is left as true.
+	"#3) Display message box topmost?" = true
+	#Customise the text that appears in the error message. Will display custom message instead of the default text.
+	"#4) Display custom text in error message?" = false
+	#The custom message to be displayed if you have set the previous setting to 'True'. Will display custom message instead of the default text.
+	"#5) Custom Message" = "The game has taken too long too start to start this modpack. This is probably due to insufficient system resources. The game will now close."
+

@@ -1,0 +1,22 @@
+{
+	id: "34479D7CF5EDB16F"
+	order_index: 9
+	title: "万能扳手"
+	icon: {
+		id: "gofish:universal_wrench"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	loot_size: 1
+	rewards: [{
+		item: {
+			id: "gofish:universal_wrench"
+			Count: 1b
+			tag: {
+				Damage: 0
+			}
+		}
+	}]
+}

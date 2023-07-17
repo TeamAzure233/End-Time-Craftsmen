@@ -1,0 +1,57 @@
+{
+    "ModSettings": {
+        "include_hotbar_modifier": {
+            "main": {
+                "keys": "KP_7"
+            }
+        },
+        "move_all_modifier": {
+            "main": {
+                "keys": "KP_8"
+            }
+        },
+        "move_focus_mach_modifier": {
+            "main": {
+                "keys": "KP_9"
+            }
+        },
+        "move_just_refill_modifier": {
+            "main": {
+                "keys": "KP_ADD"
+            }
+        },
+        "enable_auto_refill": false,
+        "enable_updates_check": false,
+        "first_run": false
+    },
+    "GuiSettings": {
+        "continuous_crafting_saved_value": false
+    },
+    "AutoRefillSettings": {
+        "refill_armor": false,
+        "refill_before_tool_break": false,
+        "visual_durability_notification": false,
+        "visual_replace_success_notification": false,
+        "visual_replace_failed_notification": false
+    },
+    "Hotkeys": {
+        "open_config_menu": {
+            "main": {
+                "keys": "R,C,LEFT_CONTROL",
+                "settings": {
+                    "modifier_key": "DIFFERENTIATE"
+                }
+            }
+        },
+        "reload_custom_configs": {
+            "main": {
+                "keys": "LEFT_SHIFT,HOME"
+            }
+        },
+        "sort_inventory": {
+            "main": {
+                "keys": "LEFT_CONTROL,R"
+            }
+        }
+    }
+}

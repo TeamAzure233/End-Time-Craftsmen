@@ -1,0 +1,74 @@
+{
+  "farmersdelight:fish_stew": [
+    {
+      "identity": {},
+      "group": "food",
+      "temperature": 1.5,
+      "duration": 2400
+    }
+  ],
+  "minecraft:mushroom_stew": [
+    {
+      "identity": {},
+      "group": "food",
+      "temperature": 1.0,
+      "duration": 1200
+    }
+  ],
+  "farmersdelight:hot_cocoa": [
+    {
+      "identity": {},
+      "group": "drink",
+      "temperature": 3.5,
+      "duration": 3600
+    }
+  ],
+  "minecraft:rabbit_stew": [
+    {
+      "identity": {},
+      "group": "food",
+      "temperature": 1.0,
+      "duration": 1200
+    }
+  ],
+  "farmersdelight:pumpkin_soup": [
+    {
+      "identity": {},
+      "group": "food",
+      "temperature": 1.5,
+      "duration": 2400
+    }
+  ],
+  "farmersdelight:beef_stew": [
+    {
+      "identity": {},
+      "group": "food",
+      "temperature": 1.5,
+      "duration": 2400
+    }
+  ],
+  "farmersdelight:chicken_soup": [
+    {
+      "identity": {},
+      "group": "food",
+      "temperature": 1.5,
+      "duration": 2400
+    }
+  ],
+  "farmersdelight:vegetable_soup": [
+    {
+      "identity": {},
+      "group": "food",
+      "temperature": 1.5,
+      "duration": 2400
+    }
+  ],
+  "farmersdelight:baked_cod_stew": [
+    {
+      "identity": {},
+      "group": "food",
+      "temperature": 1.5,
+      "duration": 2400
+    }
+  ]
+}

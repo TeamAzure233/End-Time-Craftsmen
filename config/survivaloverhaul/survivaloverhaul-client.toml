@@ -1,0 +1,21 @@
+
+# Options related to the heads up display.
+# These options will automatically update upon being saved.
+[hud]
+
+	[hud.temperature]
+		# How temperature is displayed. Accepted values are as follows:
+		#    SYMBOL - Display the player's current temperature as a symbol above the hotbar.
+		#    NONE - Disable the temperature indicator.
+		"Temperature Display Mode" = "SYMBOL"
+		# The X and Y offset of the temperature indicator. Set both to 0 for no offset.
+		"Temperature Display X Offset" = 0
+		"Temperature Display Y Offset" = 0
+
+		[hud.temperature.wetness]
+
+			# The X and Y offset of the wetness indicator. Set both to 0 for no offset.
+			[hud.temperature.wetness.offset]
+				"Wetness Indicator X Offset" = 0
+				"Wetness Indicator Y Offset" = 0
+

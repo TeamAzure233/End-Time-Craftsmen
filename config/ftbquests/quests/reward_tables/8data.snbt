@@ -1,0 +1,8 @@
+{
+	id: "65666BB5DC80D6E4"
+	order_index: 27
+	title: "出售物品换8Data"
+	icon: "kubejs:data"
+	loot_size: 1
+	rewards: [{ item: "kubejs:data", count: 8 }]
+}

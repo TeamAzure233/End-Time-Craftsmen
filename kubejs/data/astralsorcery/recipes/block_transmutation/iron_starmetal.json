@@ -1,0 +1,16 @@
+{
+  "type": "astralsorcery:block_transmutation",
+  "input": [
+    {
+      "tag": "forge:storage_blocks/enderium"
+    }
+  ],
+  "output": {
+    "block": "astralsorcery:starmetal_ore"
+  },
+  "display": {
+    "item": "astralsorcery:starmetal_ore",
+    "count": 1
+  },
+  "starlight": 100.0
+}

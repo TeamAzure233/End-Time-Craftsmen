@@ -1,0 +1,42 @@
+[
+    {
+        "dimension": "minecraft:overworld",
+        "mincount": {
+          "amount": 20,
+          "perchunk": true
+        },
+        "result": "deny"
+    },
+    {
+        "dimension": "minecraft:the_nether",
+        "mincount": {
+          "amount": 20,
+          "perchunk": true
+        },
+        "result": "deny"
+    },
+    {
+        "dimension": "minecraft:the_end",
+        "mincount": {
+          "amount": 20,
+          "perchunk": true
+        },
+        "result": "deny"
+    },
+    {
+        "dimension": "twilightforest:twilightforest",
+        "mincount": {
+          "amount": 20,
+          "perchunk": true
+        },
+        "result": "deny"
+    },
+    {
+        "dimension": "mythicbotany:alfheim",
+        "mincount": {
+          "amount": 20,
+          "perchunk": true
+        },
+        "result": "deny"
+    }
+]

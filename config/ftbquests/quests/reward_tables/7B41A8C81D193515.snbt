@@ -1,0 +1,7 @@
+{
+	id: "7B41A8C81D193515"
+	order_index: 10
+	title: "指路石"
+	loot_size: 1
+	rewards: [{ item: "waystones:waystone" }]
+}

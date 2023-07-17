@@ -1,0 +1,8 @@
+{
+	id: "4C7CD8B02EFE5641"
+	order_index: 6
+	title: "绷带"
+	icon: "scalinghealth:bandages"
+	loot_size: 1
+	rewards: [{ item: "scalinghealth:bandages", count: 2 }]
+}

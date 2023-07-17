@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "masterfulmachinery:block/multiblock_energy_port_energy_output"
+    }
+  }
+}

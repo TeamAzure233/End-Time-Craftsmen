@@ -1,0 +1,10 @@
+{
+  "type": "botania:mana_infusion",
+  "input": {
+    "item": "rftoolsbase:infused_enderpearl"
+  },
+  "output": {
+    "item": "botania:mana_pearl"
+  },
+  "mana": 6000
+}

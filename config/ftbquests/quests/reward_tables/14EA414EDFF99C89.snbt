@@ -1,0 +1,8 @@
+{
+	id: "14EA414EDFF99C89"
+	order_index: 16
+	title: "传送药水"
+	icon: "bountifulbaubles:potion_recall"
+	loot_size: 1
+	rewards: [{ item: "bountifulbaubles:potion_recall" }]
+}

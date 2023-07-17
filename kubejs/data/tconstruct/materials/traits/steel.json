@@ -1,0 +1,12 @@
+{
+  "default": [
+    {
+      "name": "tconstruct:ductile",
+      "level": 1
+    },
+    {
+      "name": "tconstruct:sturdy",
+      "level": 1
+    }
+  ]
+}

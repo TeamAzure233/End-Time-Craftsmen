@@ -1,0 +1,8 @@
+{
+	id: "7B29D25C3AA4AC23"
+	order_index: 28
+	title: "出售物品换2Data"
+	icon: "kubejs:data"
+	loot_size: 1
+	rewards: [{ item: "kubejs:data", count: 2 }]
+}

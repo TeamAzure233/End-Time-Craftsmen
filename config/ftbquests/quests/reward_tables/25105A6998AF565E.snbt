@@ -1,0 +1,8 @@
+{
+	id: "25105A6998AF565E"
+	order_index: 15
+	title: "超时空扫帚"
+	icon: "kubejs:hyperspace_time_broom_mk1"
+	loot_size: 1
+	rewards: [{ item: "kubejs:hyperspace_time_broom_mk1" }]
+}

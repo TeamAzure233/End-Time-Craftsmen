@@ -1,0 +1,23 @@
+{  
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:gems/sapphire",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "tconstruct:casts/single_use/gem"
+  },
+  "fluid": {
+    "name": "bettercompat:molten_sapphire",
+    "amount": 144
+  },
+  "result": {
+    "item": "emendatusenigmatica:sapphire_gem"
+  },
+  "cooling_time": 85
+}

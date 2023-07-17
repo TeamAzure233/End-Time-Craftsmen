@@ -1,0 +1,55 @@
+{
+	"mod": "mutantmore",
+	"spawn": {
+		// Array of all categories this mod has spawns for
+		"categories": {
+			"monster": {
+				// Set the limit per mob within this category
+				"spawns": {
+					"mutant_wither_skeleton": {
+						// Do not edit this name
+						"name": "mutant_wither_skeleton",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"mutant_hoglin": {
+						// Do not edit this name
+						"name": "mutant_hoglin",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"mutant_shulker_box": {
+						// Do not edit this name
+						"name": "mutant_shulker_box",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"mutant_blaze": {
+						// Do not edit this name
+						"name": "mutant_blaze",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"mutant_shulker": {
+						// Do not edit this name
+						"name": "mutant_shulker",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"mutant_husk": {
+						// Do not edit this name
+						"name": "mutant_husk",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"rodling": {
+						// Do not edit this name
+						"name": "rodling",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,94 @@
+{
+  "type": "masterfulmachinery:machine_structure",
+  "controllerId": "multiblock",
+  "id": "infinite_convergent_altar",
+  "name": "无尽聚合祭坛",
+  "layout": [
+    [
+      ")*   *)",
+      "*+,-,+*",
+      " ,./., ",
+      " 0/1/2 ",
+      " ,./., ",
+      "*+,3,+*",
+      ")*   *)"
+    ],
+    [
+      "       ",
+      " 4   4 ",
+      "       ",
+      "   C   ",
+      "       ",
+      " 4   4 ",
+      "       "
+    ],
+    [
+      "       ",
+      " 4   4 ",
+      "       ",
+      "       ",
+      "       ",
+      " 4   4 ",
+      "       "
+    ],
+    [
+      "       ",
+      " 5   6 ",
+      "       ",
+      "       ",
+      "       ",
+      " 7   8 ",
+      "       "
+    ]
+  ],
+  "legend": {
+    ")": {
+      "block": "botania:shimmerrock"
+    },
+    "*": {
+      "block": "bloodmagic:blankrune"
+    },
+    "+": {
+      "block": "astralsorcery:marble_runed"
+    },
+    ",": {
+      "block": "endless:crystal_matrix_block"
+    },
+    "-": {
+      "block": "masterfulmachinery:multiblock_energy_port_energy_input"
+    },
+    ".": {
+      "block": "kubejs:antimatter_alloy_block"
+    },
+    "/": {
+      "block": "mekanism:steel_casing"
+    },
+    "0": {
+      "block": "masterfulmachinery:multiblock_item_port_items_output"
+    },
+    "1": {
+      "block": "endless:neutronium_block"
+    },
+    "2": {
+      "block": "masterfulmachinery:multiblock_item_port_items_input"
+    },
+    "3": {
+      "block": "masterfulmachinery:multiblock_rotation_port_create_rotation_input"
+    },
+    "4": {
+      "block": "astralsorcery:marble_pillar"
+    },
+    "5": {
+      "block": "masterfulmachinery:multiblock_fluid_port_fluids_input"
+    },
+    "6": {
+      "block": "masterfulmachinery:multiblock_gas_port_mekanism_gas_input"
+    },
+    "7": {
+      "block": "masterfulmachinery:multiblock_starlight_port_astral_starlight_input"
+    },
+    "8": {
+      "block": "masterfulmachinery:multiblock_mana_port_botania_mana_input"
+    }
+  }
+}

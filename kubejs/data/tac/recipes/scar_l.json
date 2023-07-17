@@ -1,0 +1,26 @@
+{
+  "type": "tac:workbench",
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 72
+    },
+    {
+      "item": {
+        "tag": "forge:gems/diamond"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "item": "create:precision_mechanism"
+      },
+      "count": 7
+    }
+  ],
+  "result": {
+    "item": "tac:scar_l"
+  }
+}

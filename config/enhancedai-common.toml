@@ -1,0 +1,202 @@
+"Enable Base" = true
+"Enable Creeper" = true
+"Enable Skeleton" = true
+"Enable Zombie" = true
+"Enable Spider" = true
+
+[Base]
+	#Mobs will run away from exploding creepers / TNT
+	"Enable Avoid Explosions" = true
+	#Change how mobs target players
+	"Enable Targeting" = true
+
+	#Change how mobs target players
+	[Base.Targeting]
+		#Chance for a mob to be able to see players through blocks.
+		#Range: 0.0 ~ 1.0
+		"XRay Chance" = 0.0
+		#Mobs will no longer take random time to target a player.
+		"Instant Target" = true
+		#How far away can the mobs see the player. This overrides the vanilla value (16 for most mobs). Setting to 0 will leave the follow range as vanilla.
+		#Range: 0 ~ 128
+		"Follow Range Override" = 64
+
+		#Entities in here will not have the TargetAI changed
+		[Base.Targeting."Entity Blacklist"]
+			#If true the list will be treated as a whitelist instead of blacklist
+			"List as Whitelist" = false
+			Blacklist = []
+
+	[Base.Base]
+		#How far away from any player monsters will instantly despawn? Vanilla is 128
+		#Range: 0 ~ 128
+		"Monsters Despawning Distance" = 64
+		#How far away from any player monsters will be able to randomly despawn? Vanilla is 32
+		#Range: 0 ~ 128
+		"Min Monsters Despawning Distance" = 32
+
+[Creeper]
+	#Various changes to Creepers exploding. Ignoring Walls, Walking Fuse and smarter exploding based off explosion size
+	"Enable Creeper Swell" = false
+
+	#Various changes to Creepers exploding. Ignoring Walls, Walking Fuse and smarter exploding based off explosion size
+	[Creeper."Creeper Swell"]
+		#Percentage chance for a Creeper to not stand still while exploding.
+		#Range: 0.0 ~ 1.0
+		"Walking Fuse Chance" = 0.1
+		#Breaching creepers will try to open an hole in the wall to let mobs in.
+		#Range: 0.0 ~ 1.0
+		"Breach Chance" = 0.075
+		#If true creepers will ignite if damaged by an explosion.
+		"TNT Like" = false
+		#AND HIS NAME IS ...
+		#Range: 0.0 ~ 1.0
+		"Cena Chance" = 0.0
+		#Percentage chance for a Creeper to ignore walls while targeting a player. This means that a creeper will be able to explode if it's in the correct range from a player even if there's a wall between.
+		#Range: 0.0 ~ 1.0
+		"Ignore Walls Chance" = 0.1
+		#Launching creepers will try ignite and throw themselves at the player.
+		#Range: 0.0 ~ 1.0
+		"Launch Chance" = 0.05
+
+[Skeleton]
+	#Skeletons are more precise when shooting and strafing is removed, can hit a target from up to 64 blocks and try to stay away from the target.
+	"Enable Skeleton Shoot" = true
+
+	#Skeletons are more precise when shooting and strafing is removed, can hit a target from up to 64 blocks and try to stay away from the target.
+	[Skeleton."Skeleton Shoot"]
+		#How much inaccuracy does the arrow fired by skeletons have. Vanilla skeletons have 10/6/2 inaccuracy in easy/normal/hard difficulty.
+		#Range: 0.0 ~ 30.0
+		"Arrow Inaccuracy" = 2.0
+		#The max range from where a skeleton will shoot a player
+		#Range: 1 ~ 64
+		"Max Shooting Range" = 36
+		#Chance for a Skeleton to spawn with the ability to strafe (like vanilla)
+		#Range: 0.0 ~ 1.0
+		"Strafe chance" = 0.333
+		#The min range from where a skeleton will shoot a player
+		#Range: 1 ~ 64
+		"Min Shooting Range" = 16
+
+		#Entities that shouldn't get the enhanced Shoot AI
+		[Skeleton."Skeleton Shoot"."Entity Blacklist"]
+			#If true the list will be treated as a whitelist instead of blacklist
+			"List as Whitelist" = false
+			Blacklist = ["quark:forgotten"]
+
+		[Skeleton."Skeleton Shoot"."Flee from Target"]
+			#Speed multiplier when the skeleton avoids the player and it's within 7 blocks from him.
+			#Range: 0.0 ~ 4.0
+			"Flee speed Multiplier Near" = 1.6
+			#Chance for a Skeleton to spawn with the ability to avoid the player
+			#Range: 0.0 ~ 1.0
+			"Avoid Player chance" = 0.5
+			#Chance for a Skeleton to attack while running from a player
+			#Range: 0.0 ~ 1.0
+			"Attack When Avoiding Chance" = 0.5
+			#Speed multiplier when the skeleton avoids the player and it's farther than 7 blocks from him.
+			#Range: 0.0 ~ 4.0
+			"Flee speed Multiplier Far" = 1.3
+
+[Zombie]
+	#Let zombies use ender pearls. Either put ender pearls in main or off hand and when far enough from the player they will throw it.
+	"Enable Pearler Zombie" = true
+	"Enable Digger Zombie" = true
+
+	#Let zombies use ender pearls. Either put ender pearls in main or off hand and when far enough from the player they will throw it.
+	[Zombie."Pearler Zombie"]
+		#Chance for a Zombie to spawn with an ender pearl in the off hand. I highly recommend using something like Mobs Properties Randomness to have more control over mobs equipment.
+		#Range: 0.0 ~ 1.0
+		"Equip Ender Pearl Chance" = 0.04
+		#How many ender pearls will Zombies spawn with.
+		#Range: 1 ~ 16
+		"Ender Pearl Amount" = 2
+
+		#Entities that shouldn't get the Pearler AI
+		[Zombie."Pearler Zombie"."Entity Blacklist"]
+			#If true the list will be treated as a whitelist instead of blacklist
+			"List as Whitelist" = false
+			Blacklist = []
+
+	#No comment
+	[Zombie."Digger Zombie"]
+		#Multiplier for digger zombies mining speed. E.g. with this set to 2, zombies will take twice the time to mine a block.
+		#Range: 0.0 ~ 128.0
+		"Digger Speed Multiplier" = 1.0
+		#Chance for a Zombie to spawn with the digger ability
+		#Range: 0.0 ~ 1.0
+		"Digger Chance" = 0.05
+		#Zombies with Digger AI will not be able to break tile entities
+		"Blacklist Tile Entities" = false
+		#Zombies with Digger AI will mine only if their off-hand tool can mine targeted blocks (e.g. zombies with shovels will not mine stone). Blocks that require no tool (e.g. planks) will be minable.
+		"Digger Proper Tool Only" = false
+		#Zombies with Digger AI will mine only if they have a tool in the off-hand
+		"Digger Tool Only" = false
+
+		#Entities that shouldn't get the Digger AI
+		[Zombie."Digger Zombie"."Entity Blacklist"]
+			#If true the list will be treated as a whitelist instead of blacklist
+			"List as Whitelist" = false
+			Blacklist = []
+
+		#Blocks in here will not be minable by zombies (or will be the only minable in case it's whitelist)
+		[Zombie."Digger Zombie"."Block Blacklist"]
+			#If true the list will be treated as a whitelist instead of blacklist
+			"List as Whitelist" = false
+			Blacklist = []
+
+[Spider]
+	#Makes spiders throw a web at a player, slowing them.
+	"Enable Throwing Web" = true
+	#Various small changes to Spiders.
+	"Enable Miscellaneous" = true
+
+	#Various small changes to Spiders.
+	[Spider.Miscellaneous]
+		#Percentage reduction of the fall damage taken by spiders.
+		#Range: 0.0 ~ 1.0
+		"Fall Damage Reduction" = 0.9
+
+		#Entities that shouldn't get the Throwing Web AI
+		[Spider.Miscellaneous."Entity Blacklist"]
+			#If true the list will be treated as a whitelist instead of blacklist
+			"List as Whitelist" = false
+			Blacklist = []
+
+	#Makes spiders throw a web at a player, slowing them.
+	[Spider."Throwing Web"]
+		#After how many ticks will the web projectile's cobweb be destroyed?
+		#Range: 0 ~ 6000
+		"Destroy Web After" = 100
+		#Damage when the projectiles hits a mob. The damage is set for normal difficulty. Hard difficulty gets +50% damage and Easy gets (-50% + 1) damage.
+		#Range: 0.0 ~ 128.0
+		"Web Throw Chance" = 5.0
+		#Minimum distance required for the spider to throw webs. Setting this to 0 will make the spider throw webs even when attacking the player.
+		#Range: 0.0 ~ 64.0
+		"Min Distance" = 2.5
+		#Every how many ticks do spiders throw the projectile
+		#Range: 1 ~ 1200
+		"Projectile cooldown" = 100
+		#Maximum distance at which the spider will throw webs.
+		#Range: 0.0 ~ 64.0
+		"Max Distance" = 16.0
+
+		#Entities that shouldn't get the Throwing Web AI
+		[Spider."Throwing Web"."Entity Blacklist"]
+			#If true the list will be treated as a whitelist instead of blacklist
+			"List as Whitelist" = false
+			Blacklist = []
+
+		[Spider."Throwing Web".Slowness]
+			#Should multiple hits on a target with slowness increase the level of Slowness? (This works with any type of slowness)
+			"Stack Slowness Amplifier" = true
+			#How many ticks of slowness are applied to the target hit by the web?
+			#Range: 0 ~ 6000
+			"Slowness Tick" = 120
+			#How many max levels of slowness can be applied to the target?
+			#Range: 0 ~ 128
+			"Max Slowness Amplifier" = 1
+			#How many levels of slowness are applied to the target hit by the web?
+			#Range: 0 ~ 128
+			"Slowness Amplifier" = 2
+

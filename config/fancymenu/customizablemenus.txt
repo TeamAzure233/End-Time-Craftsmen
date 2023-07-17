@@ -1,0 +1,29 @@
+type = customizablemenus
+
+net.minecraft.client.gui.screen.IngameMenuScreen {
+}
+
+net.minecraft.client.gui.screen.DirtMessageScreen {
+}
+
+net.minecraft.client.gui.screen.inventory.CreativeScreen {
+}
+
+net.minecraft.client.gui.screen.inventory.InventoryScreen {
+}
+
+net.minecraft.client.gui.screen.CreateWorldScreen {
+}
+
+net.minecraft.client.gui.screen.WorldSelectionScreen {
+}
+
+the_fireplace.ias.gui.AccountListScreen {
+}
+
+net.minecraft.client.gui.screen.MainMenuScreen {
+}
+
+mcjty.lostcities.gui.GuiLCConfig {
+}
+

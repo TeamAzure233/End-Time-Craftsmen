@@ -1,0 +1,12 @@
+{
+  "default": [
+    {
+      "name": "materialis:manashield",
+      "level": 2
+    },
+    {
+      "name": "bettercompat:mana",
+      "level": 1
+    }
+  ]
+}

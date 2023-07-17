@@ -1,0 +1,61 @@
+{
+	"mod": "inventorypets",
+	"spawn": {
+		// Array of all categories this mod has spawns for
+		"categories": {
+			"creature": {
+				// Set the limit per mob within this category
+				"spawns": {
+					"bed_pet_entity": {
+						// Do not edit this name
+						"name": "bed_pet_entity",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 8
+					},
+					"satya_nadella_entity": {
+						// Do not edit this name
+						"name": "satya_nadella_entity",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 8
+					},
+					"siamese_entity": {
+						// Do not edit this name
+						"name": "siamese_entity",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 8
+					},
+					"anvil_pet_entity": {
+						// Do not edit this name
+						"name": "anvil_pet_entity",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 8
+					},
+					"bill_gates_entity": {
+						// Do not edit this name
+						"name": "bill_gates_entity",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 8
+					},
+					"mini_quantum_enderman_entity": {
+						// Do not edit this name
+						"name": "mini_quantum_enderman_entity",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 8
+					},
+					"steve_ballmer_entity": {
+						// Do not edit this name
+						"name": "steve_ballmer_entity",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 8
+					},
+					"mini_quantum_blaze_entity": {
+						// Do not edit this name
+						"name": "mini_quantum_blaze_entity",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 8
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+type = menu
+
+customization-meta {
+  identifier = sponsor
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  orientation = bottom-right
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = closegui
+  x = -132
+  width = 100
+  actionid = fdf1292d-d758-4948-a5f7-992028666b181669003408562
+  action = addbutton
+  y = -43
+  label = 返回
+  value = 
+  height = 20
+}
+

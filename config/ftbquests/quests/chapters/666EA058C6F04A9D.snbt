@@ -1,0 +1,706 @@
+{
+	id: "666EA058C6F04A9D"
+	group: "42669CA32286EFD8"
+	order_index: 2
+	filename: "666EA058C6F04A9D"
+	title: "支线-3 应用能源"
+	icon: "appliedenergistics2:controller"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: -6.5d
+		y: 0.0d
+		width: 1.0d
+		height: 1.0d
+		rotation: 0.0d
+		image: "kubejs:textures/quest/start.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			title: "应用能源之始"
+			icon: "appliedenergistics2:controller"
+			x: -5.0d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "这是什么？陨石？外星科技？"
+			description: ["陨石？为什么会有陨石？其中甚至还有一些模板？我查阅了那群疯子给我灌输的知识，也没找到过有关的记录。好在经过我的研究之后，制作出了一种能使物品数字化的机器，这样一来我终于可以不用为被我塞满的箱子发愁了"]
+			dependencies: [
+				"2A28B539AC1FB263"
+				"177E1D0222109D86"
+			]
+			hide: true
+			hide_text_until_complete: true
+			size: 2.0d
+			id: "52059A4AAD0C09A2"
+			tasks: [{
+				id: "51CE52B70C8175E1"
+				type: "gamestage"
+				stage: "digital_era"
+			}]
+			rewards: [
+				{
+					id: "5993F90A7ABD896D"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "568E49D037C865BE"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -1.5d
+			dependencies: ["52059A4AAD0C09A2"]
+			id: "06EECAC0C3355DE0"
+			tasks: [{
+				id: "25CF9DBFBF0BCA31"
+				type: "item"
+				item: "appliedenergistics2:fluix_crystal"
+			}]
+			rewards: [{
+				id: "2A9FC247CCEEEE11"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.5d
+			dependencies: ["06EECAC0C3355DE0"]
+			hide: true
+			id: "5B0CB24EB0EE05AF"
+			tasks: [{
+				id: "723801801780B67A"
+				type: "item"
+				item: "appliedenergistics2:inscriber"
+			}]
+			rewards: [{
+				id: "78DC163F388E7004"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			title: "处理器"
+			x: -0.5d
+			y: 0.0d
+			dependencies: [
+				"5B0CB24EB0EE05AF"
+				"0A9D4D27E094D114"
+			]
+			hide: true
+			id: "16B7C6DD65BAABDB"
+			tasks: [
+				{
+					id: "67B83EBB24AD3944"
+					type: "item"
+					item: "appliedenergistics2:logic_processor"
+				}
+				{
+					id: "0C8CF5BE61720B21"
+					type: "item"
+					item: "appliedenergistics2:calculation_processor"
+				}
+				{
+					id: "1CB85687392ABC9D"
+					type: "item"
+					item: "appliedenergistics2:engineering_processor"
+				}
+			]
+			rewards: [{
+				id: "58264C5AB5B5147B"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			title: "一陨石与四模板物语（"
+			x: -2.0d
+			y: 0.0d
+			shape: "rsquare"
+			subtitle: "找不到的话多找几个"
+			dependencies: ["52059A4AAD0C09A2"]
+			hide: true
+			id: "0A9D4D27E094D114"
+			tasks: [
+				{
+					id: "6490CBE10E7E6833"
+					type: "item"
+					item: "appliedenergistics2:sky_stone_block"
+				}
+				{
+					id: "68042B79DFCAAC5A"
+					type: "item"
+					item: "appliedenergistics2:calculation_processor_press"
+				}
+				{
+					id: "627E3D9451D04A41"
+					type: "item"
+					item: "appliedenergistics2:engineering_processor_press"
+				}
+				{
+					id: "641C151185F6B680"
+					type: "item"
+					item: "appliedenergistics2:logic_processor_press"
+				}
+				{
+					id: "72916A9CA0432A34"
+					type: "item"
+					item: "appliedenergistics2:silicon_press"
+				}
+			]
+			rewards: [{
+				id: "734605A4888661B9"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			title: "找陨石辅助器"
+			x: -2.0d
+			y: 1.5d
+			dependencies: ["52059A4AAD0C09A2"]
+			hide: true
+			optional: true
+			id: "5471A3496861ACDD"
+			tasks: [{
+				id: "175E7B048A3A35F8"
+				type: "item"
+				item: "appliedenergistics2:sky_compass"
+			}]
+			rewards: [{
+				id: "18D86BF607A9EA24"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			dependencies: ["16B7C6DD65BAABDB"]
+			hide: true
+			id: "5E24EB607841526B"
+			tasks: [{
+				id: "364A9E9D563AB0F5"
+				type: "item"
+				item: "appliedenergistics2:1k_cell_component"
+			}]
+			rewards: [
+				{
+					id: "5580DDB1965C317B"
+					type: "item"
+					item: "appliedenergistics2:1k_cell_component"
+					count: 2
+				}
+				{
+					id: "7F9DFE839C774B57"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:fluix_glass_cable"
+						Count: 1b
+						tag: { }
+					}
+					count: 64
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: 0.0d
+			dependencies: ["5E24EB607841526B"]
+			hide: true
+			id: "6F45F8C792920A52"
+			tasks: [{
+				id: "37D7E186CEA69894"
+				type: "item"
+				item: "appliedenergistics2:4k_cell_component"
+			}]
+			rewards: [{
+				id: "1C6E8357AC3614D8"
+				type: "item"
+				item: "appliedenergistics2:4k_cell_component"
+				count: 2
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["6F45F8C792920A52"]
+			hide: true
+			id: "586F15FFEFDB0670"
+			tasks: [{
+				id: "13DC035B2F411EB9"
+				type: "item"
+				item: "appliedenergistics2:16k_cell_component"
+			}]
+			rewards: [{
+				id: "0FDD8350028E81A0"
+				type: "item"
+				item: "appliedenergistics2:16k_cell_component"
+				count: 3
+			}]
+		}
+		{
+			x: 5.5d
+			y: 0.0d
+			dependencies: ["586F15FFEFDB0670"]
+			hide: true
+			id: "25C31E4AB809F44E"
+			tasks: [{
+				id: "028399540533729F"
+				type: "item"
+				item: {
+					id: "appliedenergistics2:16k_storage_cell"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "4CF76D4D3367F42A"
+					type: "item"
+					item: "appliedenergistics2:64k_crafting_storage"
+					count: 4
+				}
+				{
+					id: "5E4B4E1C3A225C7F"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:dense_energy_cell"
+						Count: 1b
+						tag: { }
+					}
+					count: 4
+				}
+				{
+					id: "530FA5442C0359BD"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:terminal"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "65256CCCCB84055A"
+					type: "item"
+					team_reward: false
+					item: {
+						id: "appliedenergistics2:fluix_covered_dense_cable"
+						Count: 1b
+						tag: { }
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: 0.0d
+			subtitle: "多快好省的外星科技存储方案（"
+			dependencies: ["25C31E4AB809F44E"]
+			hide: true
+			id: "58DEC63C09C14F34"
+			tasks: [{
+				id: "13BEB4A213B1478D"
+				type: "item"
+				item: "appliedenergistics2:chest"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "0B566F5971B5A28B"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			x: 8.5d
+			y: 0.0d
+			shape: "gear"
+			dependencies: ["58DEC63C09C14F34"]
+			hide: true
+			size: 1.5d
+			id: "0FF3BE7B74EFFE72"
+			tasks: [{
+				id: "3A8402756DF44349"
+				type: "item"
+				item: "appliedenergistics2:controller"
+			}]
+			rewards: [
+				{
+					id: "590145DD82022C96"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:64k_storage_cell"
+						Count: 1b
+						tag: { }
+					}
+					count: 5
+				}
+				{
+					id: "169CDE83C0CFB1FB"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:64k_fluid_storage_cell"
+						Count: 1b
+						tag: { }
+					}
+					count: 5
+				}
+				{
+					id: "21303F1E635A8CE9"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:drive"
+						Count: 1b
+						tag: { }
+					}
+					count: 2
+				}
+				{
+					id: "7F5E2C34F6673986"
+					type: "item"
+					team_reward: false
+					item: {
+						id: "appliedenergistics2:fluix_smart_cable"
+						Count: 1b
+						tag: { }
+					}
+					count: 32
+				}
+				{
+					id: "0F6B5CC19F24FBB0"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:dense_energy_cell"
+						Count: 1b
+						tag: { }
+					}
+					count: 4
+				}
+				{
+					id: "6E38678A2F616D08"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:energy_acceptor"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "13E6FE989AC154FD"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:interface"
+						Count: 1b
+						tag: { }
+					}
+					count: 4
+				}
+				{
+					id: "2BCD0026C5B9800E"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:fluid_interface"
+						Count: 1b
+						tag: { }
+					}
+					count: 4
+				}
+				{
+					id: "7E391C852CC020C7"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:64k_crafting_storage"
+						Count: 1b
+						tag: { }
+					}
+					count: 8
+				}
+				{
+					id: "23FBFD137A91CB17"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:molecular_assembler"
+						Count: 1b
+						tag: { }
+					}
+					count: 8
+				}
+				{
+					id: "0F90A8CAADEA4753"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:crafting_accelerator"
+						Count: 1b
+						tag: { }
+					}
+					count: 8
+				}
+				{
+					id: "0A4E2807CA15B4B6"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 8.5d
+			y: 1.5d
+			description: ["这个空间塔貌似因为未格式化无法使用，不过可以获得奖励"]
+			dependencies: ["0FF3BE7B74EFFE72"]
+			optional: true
+			id: "12D0D5A7B0375AC3"
+			tasks: [
+				{
+					id: "4BC04DC21FCB1243"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:spatial_pylon"
+						Count: 1b
+						tag: { }
+					}
+					consume_items: true
+				}
+				{
+					id: "0C55CCB176F3CE3A"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:128_cubed_spatial_storage_cell"
+						Count: 1b
+						tag: { }
+					}
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "17705E18E80C3449"
+					type: "item"
+					item: {
+						id: "mekanism:alloy_infused"
+						Count: 1b
+						tag: { }
+					}
+					count: 16
+				}
+				{
+					id: "348B322521E3BAE6"
+					type: "item"
+					item: {
+						id: "mekanism:advanced_energy_cube"
+						Count: 1b
+						tag: {
+							mekData: {
+								EnergyContainers: [{
+									Container: 0b
+									stored: "16000000"
+								}]
+							}
+						}
+					}
+				}
+				{
+					id: "6D898E43E3BC8E2B"
+					type: "item"
+					item: {
+						id: "mekanism:steel_casing"
+						Count: 1b
+						tag: { }
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			title: "无线WiFi"
+			icon: {
+				id: "appliedenergistics2:wireless_terminal"
+				Count: 1b
+				tag: { }
+			}
+			x: 10.0d
+			y: 0.0d
+			dependencies: ["0FF3BE7B74EFFE72"]
+			hide: true
+			id: "1908422C37A664EE"
+			tasks: [
+				{
+					id: "527C8387B7AD7BF5"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:wireless_terminal"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "52AA9CF22D1B65A3"
+					type: "item"
+					item: "appliedenergistics2:security_station"
+				}
+				{
+					id: "20DCC93A9C3C338A"
+					type: "item"
+					item: "appliedenergistics2:wireless_access_point"
+				}
+			]
+			rewards: [
+				{
+					id: "0AE14C398C10E31C"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:dense_energy_cell"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "08841E0F88E54339"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "远程ae"
+			icon: "appliedenergistics2:quantum_link"
+			x: 11.5d
+			y: 0.0d
+			shape: "rsquare"
+			description: [
+				"1.制作一对量子缠绕态奇点（必须为同一个奇点炸出的）"
+				"2.将ME量子环围绕链接仓一周 "
+				"3.将其中一个结构连接至你的ae网络（注：仅有在连接仓上下左右4个方向的ME量子环才能链接） "
+				"4.给另一个连接仓供电，之后就能从这个结构中访问您的ae网络了。"
+			]
+			dependencies: ["1908422C37A664EE"]
+			optional: true
+			id: "26EE5F980226297A"
+			tasks: [
+				{
+					id: "339C49DF6344D669"
+					type: "item"
+					item: "appliedenergistics2:quantum_link"
+				}
+				{
+					id: "26D4F2902BFC22B3"
+					type: "item"
+					item: "appliedenergistics2:quantum_ring"
+					count: 8L
+				}
+			]
+			rewards: [
+				{
+					id: "3A7D6FF7F7D8AE2A"
+					type: "item"
+					item: "appliedenergistics2:quantum_link"
+				}
+				{
+					id: "0471BFDDDCA2F844"
+					type: "item"
+					item: "appliedenergistics2:quantum_ring"
+					count: 8
+				}
+				{
+					id: "5AAF0FFEA2B8C9A0"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "增强信号"
+			x: 10.0d
+			y: -1.5d
+			description: ["WiFi增幅器"]
+			dependencies: ["1908422C37A664EE"]
+			hide: true
+			optional: true
+			id: "31DFE32E8869355C"
+			tasks: [{
+				id: "015C258DA7E9C99B"
+				type: "item"
+				item: "appliedenergistics2:wireless_booster"
+			}]
+			rewards: [{
+				id: "7EA44977E84F41EC"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+	]
+}

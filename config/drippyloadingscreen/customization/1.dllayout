@@ -1,0 +1,106 @@
+type = hud
+
+customization-meta {
+  fadeout = false
+  randomgroup = 1
+  keepaspectratio = false
+  backgroundimage = kubejs/assets/edtc/texture/special/background.png
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+  backgroundcolor = 
+}
+
+customization {
+  visible = false
+  x = -163
+  action = editlogo
+  y = 90
+}
+
+customization {
+  x = 1
+  action = editprogressbar
+  y = -72
+}
+
+customization {
+  path = kubejs/assets/edtc/texture/special/edtclogo.png
+  orientation = mid-centered
+  x = -9
+  width = 459
+  action = addtexture
+  actionid = 06ddcf6a-64a6-4bf5-b771-78235b2428a21674546204403
+  y = -27
+  height = 229
+}
+
+customization {
+  orientation = top-left
+  shadow = false
+  x = 0
+  textcolor = #ffffff
+  action = addtext
+  actionid = e3c4f475-73bd-49d0-8385-2f983df3f2d01667729140464
+  y = 20
+  scale = 1.0
+  alignment = left
+  value = 草
+}
+
+customization {
+  path = kubejs/assets/edtc/texture/special/minecraft.png
+  orientation = mid-centered
+  x = 0
+  width = 317
+  action = addtexture
+  actionid = cb920b77-a7da-46b6-98ec-b2f620c55b971668382469276
+  y = -148
+  height = 100
+}
+
+customization {
+  path = kubejs/assets/edtc/texture/special/edtclogo.png
+  orientation = mid-centered
+  x = -763
+  width = 545
+  action = addtexture
+  actionid = 847b58a5-6786-4575-aee6-3810cca40f941669124003150
+  y = -514
+  height = 179
+}
+
+customization {
+  path = kubejs/assets/edtc/texture/special/mojang.png
+  orientation = bottom-right
+  x = -8
+  width = 107
+  action = addtexture
+  actionid = 2897bf0a-ec49-4b5d-9fc1-84d87d63b39d1668382486764
+  y = -10
+  height = 31
+}
+
+customization {
+  path = kubejs/assets/edtc/texture/special/logo.png
+  orientation = loading-progress
+  orientation_element = fd2c59ba-986e-4255-88bb-6e3a300670ba1668217495504
+  x = 206
+  width = 130
+  action = addtexture
+  actionid = 58fb893a-1309-47da-a655-b479ce82b9ca1668038118148
+  y = -148
+  height = 130
+}
+
+customization {
+  path = kubejs/assets/edtc/texture/special/logo.png
+  orientation = mid-centered
+  x = 238
+  width = 164
+  action = addtexture
+  actionid = b177522c-5f1a-4414-aa9e-04a42517614f1669246954016
+  y = 60
+  height = 162
+}
+

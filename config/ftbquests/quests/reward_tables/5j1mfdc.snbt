@@ -1,0 +1,6 @@
+{
+	id: "4B882EBA8695BD6D"
+	order_index: 3
+	loot_size: 1
+	rewards: [{ item: "gofish:magic_soup_can" }]
+}

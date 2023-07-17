@@ -1,0 +1,10 @@
+{
+  "type": "botania:mana_infusion",
+  "input": {
+    "item": "rftoolsbase:infused_diamond"
+  },
+  "output": {
+    "item": "botania:mana_diamond"
+  },
+  "mana": 10000
+}

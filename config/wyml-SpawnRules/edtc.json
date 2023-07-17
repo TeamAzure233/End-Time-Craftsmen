@@ -1,0 +1,25 @@
+{
+	"mod": "edtc",
+	"spawn": {
+		// Array of all categories this mod has spawns for
+		"categories": {
+			"monster": {
+				// Set the limit per mob within this category
+				"spawns": {
+					"guardian_of_dream": {
+						// Do not edit this name
+						"name": "guardian_of_dream",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 70
+					},
+					"dream_servant": {
+						// Do not edit this name
+						"name": "dream_servant",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 70
+					}
+				}
+			}
+		}
+	}
+}

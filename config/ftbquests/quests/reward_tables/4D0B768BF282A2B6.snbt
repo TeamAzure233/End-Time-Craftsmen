@@ -1,0 +1,71 @@
+{
+	id: "4D0B768BF282A2B6"
+	order_index: 31
+	title: "众神奖励箱"
+	icon: {
+		id: "ftbquests:lootcrate"
+		Count: 64b
+		tag: {
+			type: "_"
+		}
+	}
+	loot_size: 1
+	rewards: [
+		{ item: "haoyuezeughaus:fused_ingot", weight: 4 }
+		{ item: "haoyuezeughaus:life_scepter" }
+		{ item: "haoyuezeughaus:life_amulet_module" }
+		{
+			item: {
+				id: "haoyuezeughaus:rong_armor_helmet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "haoyuezeughaus:rong_armor_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "haoyuezeughaus:rong_armor_leggings"
+				Count: 1b
+				tag: {
+					Damage: 0
+					AS_Amulet_Holder: [I;
+						1905826405
+						908017989
+						-1617945607
+						308989581
+					]
+				}
+			}
+		}
+		{
+			item: {
+				id: "haoyuezeughaus:rong_armor_boots"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "minecraft:dirt", weight: 990 }
+	]
+	loot_crate: {
+		drops: {
+			boss: 0
+			passive: 0
+			monster: 0
+		}
+		color: 0
+		item_name: "众神奖励箱"
+		string_id: "_"
+	}
+}

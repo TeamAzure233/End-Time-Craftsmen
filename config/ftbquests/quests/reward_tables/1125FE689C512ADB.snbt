@@ -1,0 +1,7 @@
+{
+	id: "1125FE689C512ADB"
+	order_index: 8
+	title: "压缩饼干"
+	loot_size: 1
+	rewards: [{ icon: "gofish:biscuit_dot_zip", item: "gofish:biscuit_dot_zip", count: 16 }]
+}

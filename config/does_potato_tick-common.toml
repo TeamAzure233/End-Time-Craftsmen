@@ -1,0 +1,22 @@
+
+#Does Potato Tick?
+[general]
+	#Living Entity Max Horizontal Tick Distance. Number Type: Integer. Default: 64
+	#Range: > 1
+	"living entity horizontal tick distance" = 64
+	#Living Entity Max Horizontal Tick Distance. Number Type: Integer. Default: 32
+	#Range: > 1
+	"living entity vertical tick distance" = 32
+	#Fluid Max Horizontal Tick Distance. Number Type: Integer. Default: 64
+	#Range: > 1
+	"fluid horizontal tick distance" = 64
+	#Fluid Max Horizontal Tick Distance. Number Type: Integer. Default: 32
+	#Range: > 1
+	"fluid vertical tick distance" = 32
+	#Optimize Item Movement (items move at 1/4 speed). Value Type: true / false. Don't write ture or flase here! Default: false
+	"slow down items in the world" = false
+	#With this turned on, the tick check will run a lot faster, but entities won't die if outside range. Value Type: true / false. Don't write ture or flase here! Default: false
+	"ignore dead entities" = false
+	#If you don't want an entity to be effected by the rule or got crashed when ticking an entity, you can write its registry name down here. modid:mobname, that's it. Example list: https://pastebin.ubuntu.com/p/J9qTSqZs2r/
+	whitelist = []
+

@@ -1,0 +1,7 @@
+{
+	id: "1B13D5E7C3FD69C2"
+	order_index: 11
+	title: "传送卷轴"
+	loot_size: 1
+	rewards: [{ item: "waystones:warp_scroll" }]
+}

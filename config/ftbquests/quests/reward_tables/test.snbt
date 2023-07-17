@@ -1,0 +1,288 @@
+{
+	id: "04728598F7FEA4CA"
+	order_index: 19
+	title: "基础奖励箱"
+	icon: {
+		id: "ftbquests:lootcrate"
+		Count: 1b
+		tag: {
+			type: "basic"
+		}
+	}
+	loot_size: 1
+	use_title: true
+	rewards: [
+		{
+			item: {
+				id: "minecraft:apple"
+				Count: 1b
+				tag: { }
+			}
+			count: 4
+			weight: 4
+		}
+		{
+			item: {
+				id: "kubejs:data"
+				Count: 1b
+				tag: { }
+			}
+			count: 8
+			weight: 4
+		}
+		{
+			item: {
+				id: "kubejs:data"
+				Count: 1b
+				tag: { }
+			}
+			count: 16
+			weight: 4
+		}
+		{
+			item: {
+				id: "gofish:soup_can"
+				Count: 1b
+				tag: { }
+			}
+			weight: 4
+		}
+		{
+			item: {
+				id: "gofish:fruit_can"
+				Count: 1b
+				tag: { }
+			}
+			weight: 4
+		}
+		{
+			item: {
+				id: "bountifulbaubles:magic_mirror"
+				Count: 1b
+				tag: { }
+			}
+			weight: 2
+		}
+		{
+			item: {
+				id: "bountifulbaubles:vitamins"
+				Count: 1b
+				tag: { }
+			}
+			weight: 2
+		}
+		{
+			item: {
+				id: "bountifulbaubles:amulet_sin_empty"
+				Count: 1b
+				tag: { }
+			}
+		}
+		{
+			item: {
+				id: "bountifulbaubles:balloon"
+				Count: 1b
+				tag: { }
+			}
+			weight: 4
+		}
+		{
+			item: {
+				id: "bountifulbaubles:apple"
+				Count: 1b
+				tag: { }
+			}
+			weight: 2
+		}
+		{
+			item: {
+				id: "bountifulbaubles:ring_overclocking"
+				Count: 1b
+				tag: { }
+			}
+			weight: 2
+		}
+		{
+			item: {
+				id: "inventorypets:pet_meta"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			count: 2
+			weight: 2
+		}
+		{
+			item: {
+				id: "bountifulbaubles:amulet_cross"
+				Count: 1b
+				tag: { }
+			}
+			weight: 2
+		}
+		{
+			item: {
+				id: "bountifulbaubles:bezoar"
+				Count: 1b
+				tag: { }
+			}
+		}
+		{
+			item: {
+				id: "bountifulbaubles:lucky_horseshoe"
+				Count: 1b
+				tag: { }
+			}
+			weight: 2
+		}
+		{
+			item: {
+				id: "kubejs:infection_medicine_infuser"
+				Count: 1b
+				tag: { }
+			}
+			count: 4
+			weight: 4
+		}
+		{
+			item: {
+				id: "waystones:waystone"
+				Count: 1b
+				tag: { }
+			}
+			count: 2
+			weight: 4
+		}
+		{
+			item: {
+				id: "kubejs:hyperspace_time_broom_mk1"
+				Count: 1b
+				tag: { }
+			}
+			weight: 6
+		}
+		{
+			item: {
+				id: "minecraft:emerald"
+				Count: 1b
+				tag: { }
+			}
+			count: 5
+		}
+		{
+			item: {
+				id: "minecraft:iron_ingot"
+				Count: 1b
+				tag: { }
+			}
+			count: 20
+		}
+		{
+			item: {
+				id: "minecraft:gold_ingot"
+				Count: 1b
+				tag: { }
+			}
+			count: 10
+			weight: 2
+		}
+		{
+			item: {
+				id: "bountifulbaubles:potion_wormhole"
+				Count: 1b
+				tag: { }
+			}
+			count: 10
+		}
+		{
+			item: {
+				id: "compactmachines:machine_small"
+				Count: 1b
+				tag: { }
+			}
+		}
+		{ item: "minecraft:bread", count: 6, weight: 4 }
+		{
+			item: {
+				id: "expandedstorage:wood_chest"
+				Count: 1b
+				tag: { }
+			}
+			weight: 3
+		}
+		{ item: "expandedstorage:iron_chest", weight: 2 }
+		{
+			item: {
+				id: "ftbquests:lootcrate"
+				Count: 1b
+				tag: {
+					type: "rare"
+				}
+			}
+		}
+		{
+			item: {
+				id: "ftbquests:lootcrate"
+				Count: 1b
+				tag: {
+					type: "sponsors_items"
+				}
+			}
+			weight: 2
+		}
+		{
+			item: {
+				id: "ftbquests:lootcrate"
+				Count: 1b
+				tag: {
+					type: "guns"
+				}
+			}
+		}
+		{ item: "krate:krate_basic", weight: 3 }
+		{ item: "storagedrawers:oak_full_drawers_1", weight: 4 }
+		{ item: "storagedrawers:obsidian_storage_upgrade", weight: 2 }
+		{
+			item: {
+				id: "minecraft:player_head"
+				Count: 1b
+				tag: {
+					SkullOwner: {
+						Id: [I;
+							807872109
+							-50642177
+							-1128450341
+							2001042160
+						]
+						Properties: {
+							textures: [{
+								Value: "ewogICJ0aW1lc3RhbXAiIDogMTY3Nzg5OTc1ODQ0NCwKICAicHJvZmlsZUlkIiA6ICIzMDI3MjY2ZGZjZmI0MmZmYmNiZDM2ZGI3NzQ1N2FmMCIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2Zpc2hmbHkyMzMzMzMiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzI3OTg3YWEwZGZmZjk3NGQ5MTI3MzQxMmY3ZTAxNTlhMzUwNzg0OGRjMGRmMDdlYjMyYzYyMTBiMzllY2IxZCIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"
+								Signature: "fLhoWqRQcRPH/PaVudTkxgUxv2kiC9Cz6+JMgb1MwYbKo8eN/8XwE9ZxX4G8kMa3YDuVDF+xCFVlRQmH6VEIaBu6J+BC02+IijOtZZdH9vgDW/YQM6EFS/7OlZ1QdkCemhddbKQaJwWyZQm1W5za0qVG2PniP2gRk8iVqs6wHBnpIBkL8ys5xNkgumfxe+oA2JMoBqEINSmSZC+6dVpZIjWog8YDLcG8eZdD3/GWo6KnqvdzqYKY2yRncuYzNqP3sOW9ctY73ww64vS/LqmxhVoy7tgBE46oaB4dcK9RVy0Rmj4gS3aZySOMnZDPO6Xmv4pXdDgdPqYwgtv/oLGggrxOKok1k/oko6c3Hm5g99aCigyh6jPUukAolzlHw4uihrqCxbVDEPfBzvJx/+QKC7qAxg3EuDFj0jE7Yls+zIdD8UAsK/wejNCVpQ1227mpzQC0W84vaQ4gptsme4D4VELAY7Asc8Gn0Tishq+B5YR2RcCO/vskcV9y6NYzOk3YxugziDb2dNBc6htuG/GqPkyJN9SsBJhAmV3FdkV8i4Padnpr7zhHg5RdJX9zXNLoNrtgZp9j52FCyPxJabP4ATqaSh4kERbclmbGVD2gsyeYXtAe4lt5i/cx4HNeq9iietUmdKfsecDGn02A3cTRSOEeeYQ6FO6iGxXapnox2V8="
+							}]
+						}
+						Name: "Gofishfly233333"
+					}
+				}
+			}
+		}
+		{ item: "extrabotany:rewardbaga", weight: 3 }
+		{ item: "miniutilities:experience_pearl", weight: 2 }
+		{ item: "sophisticatedbackpacks:iron_backpack" }
+		{
+			xp: 100
+			type: "xp"
+			weight: 3
+		}
+	]
+	loot_crate: {
+		drops: {
+			boss: 0
+			passive: 0
+			monster: 0
+		}
+		color: 11075481
+		item_name: "基础奖励箱"
+		string_id: "basic"
+	}
+}

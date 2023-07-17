@@ -1,0 +1,10 @@
+{
+  "type": "botania:mana_infusion",
+  "input": {
+    "tag": "forge:ingots/lumium"
+  },
+  "output": {
+    "item": "botania:manasteel_ingot"
+  },
+  "mana": 3000
+}

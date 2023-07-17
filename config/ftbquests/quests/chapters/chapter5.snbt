@@ -1,0 +1,769 @@
+{
+	id: "1D3168227A2F3623"
+	group: "0F94B414230112AC"
+	order_index: 4
+	filename: "chapter5"
+	title: "第四章 无尽之力"
+	icon: "endless:extreme_crafting_table"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: -8.5d
+		y: 0.0d
+		width: 1.0d
+		height: 1.0d
+		rotation: 0.0d
+		image: "kubejs:textures/quest/start.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			x: -0.5d
+			y: -0.5d
+			shape: "rsquare"
+			subtitle: "工作台PlusProMax+++++"
+			dependencies: ["32E6504A8315214F"]
+			id: "17D6CD93F5578CC9"
+			tasks: [{
+				id: "09EC3E1F6F4B4A2D"
+				type: "item"
+				item: "endless:extreme_crafting_table"
+			}]
+			rewards: [{
+				id: "7FE657546692E251"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendry"
+					}
+				}
+			}]
+		}
+		{
+			x: -7.0d
+			y: -0.5d
+			shape: "diamond"
+			subtitle: "反物质与星辉的融合"
+			description: ["物品都有他的价值，那如果我把物品的形式统一转化成价值，再转化成其他形式，我岂不是有了无穷无尽的物品。当然，这是一个很疯狂的想法，我需要大量有价值的材料进行研究。我暂且把这个想法称为等价交换"]
+			dependencies: ["615F196A9D2C264A"]
+			hide: true
+			hide_text_until_complete: true
+			size: 2.0d
+			id: "2A2E3C60F9CBCDA1"
+			tasks: [{
+				id: "2E9CF32E72C4CBFC"
+				type: "item"
+				item: "endless:crystal_matrix_ingot"
+			}]
+			rewards: [
+				{
+					id: "7D4ACEB12B1CE8B7"
+					type: "item"
+					item: "endless:crystal_matrix_block"
+				}
+				{
+					id: "2C2992D1A769DC84"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+					count: 6
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: -0.5d
+			subtitle: "致密恒星之心，化为一锭"
+			dependencies: ["048A132FAA433EDA"]
+			id: "4290389DC995C998"
+			tasks: [{
+				id: "73D2C7CC277D1DAD"
+				type: "item"
+				item: "endless:neutronium_ingot"
+			}]
+			rewards: [
+				{
+					id: "547514C9A3F7CF97"
+					type: "item"
+					item: "endless:neutronium_block"
+				}
+				{
+					id: "5B7FA8DBC4CAF107"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: -0.5d
+			shape: "rsquare"
+			subtitle: "万物归一"
+			dependencies: [
+				"17D6CD93F5578CC9"
+				"7452E750B86FAD7B"
+			]
+			id: "01D13703FC54BF76"
+			tasks: [{
+				id: "32F8AB944A5D561B"
+				type: "item"
+				item: "endless:infinity_catalyst"
+			}]
+			rewards: [
+				{
+					id: "78B92A933D1C1D7C"
+					type: "item"
+					item: "endless:infinity_catalyst"
+					count: 31
+				}
+				{
+					id: "6F6FF0EEDABF4A34"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "61DC5930FD844BF9"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			title: "无尽之持有者"
+			x: 2.5d
+			y: -0.5d
+			shape: "gear"
+			subtitle: "获得无尽锭"
+			description: [
+				"从未听说那群疯子给我添加了梦境程序，但我确确实实做了一个很长的梦。梦中我创造出了即使是他们也未能制作出的东西——无尽资源。"
+				""
+				"完成此任务后开启章节5-2"
+			]
+			dependencies: ["01D13703FC54BF76"]
+			hide_text_until_complete: true
+			size: 1.5d
+			id: "78AC251D4E720F96"
+			tasks: [{
+				id: "3D959CD44F64A65B"
+				type: "item"
+				item: "endless:infinity_ingot"
+			}]
+			rewards: [
+				{
+					id: "1A2F441E8E4B20A0"
+					type: "item"
+					item: "endless:infinity_block"
+					count: 2
+				}
+				{
+					id: "40269E85F5A89F1D"
+					type: "custom"
+					title: "阶段"
+				}
+				{
+					id: "252A635FEE392058"
+					type: "xp"
+					xp: 2000
+				}
+				{
+					id: "3DC80039872B548B"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			title: "中子素聚合器"
+			x: -5.0d
+			y: -0.5d
+			shape: "rsquare"
+			dependencies: ["2A2E3C60F9CBCDA1"]
+			id: "048A132FAA433EDA"
+			tasks: [{
+				id: "0DEF7B79FAD9785A"
+				type: "questsadditions:structure"
+				icon: "masterfulmachinery:multiblock_controller"
+				name: "neutrin_polymerizer"
+				hasCustomPicture: false
+				layer: true
+				ignoreState: false
+				rightclick: false
+			}]
+			rewards: [{
+				id: "3C5C54968A4E78E9"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendry"
+					}
+				}
+			}]
+		}
+		{
+			title: "无尽聚合祭坛"
+			x: -2.0d
+			y: -0.5d
+			shape: "rsquare"
+			dependencies: ["4290389DC995C998"]
+			id: "32E6504A8315214F"
+			tasks: [{
+				id: "704C83820C50D783"
+				type: "questsadditions:structure"
+				icon: "masterfulmachinery:multiblock_controller"
+				name: "infinite_convergent_altar"
+				hasCustomPicture: false
+				layer: true
+				ignoreState: false
+				rightclick: false
+			}]
+			rewards: [{
+				id: "30DB39D5FECB67F7"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendry"
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: 3.5d
+			shape: "rsquare"
+			subtitle: "无尽之持有者的证明"
+			description: ["结束了？"]
+			dependencies: ["78AC251D4E720F96"]
+			hide: true
+			hide_text_until_complete: true
+			size: 2.0d
+			id: "783C43C1BBD0B0C4"
+			tasks: [{
+				id: "0EF1DB6549F1C015"
+				type: "item"
+				item: "kubejs:infinite_evidence"
+			}]
+			rewards: [
+				{
+					id: "51D982DFDA94B668"
+					type: "item"
+					item: {
+						id: "kubejs:infinite_evidence"
+						Count: 1b
+						tag: { }
+					}
+					count: 2
+				}
+				{
+					id: "7A201D8F3391CDB7"
+					type: "custom"
+					title: "阶段"
+				}
+				{
+					id: "47279B13406BD410"
+					type: "xp"
+					xp: 5000
+				}
+				{
+					id: "3F714280C48E6791"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: 6.5d
+			dependencies: ["7DE7496CE32A6107"]
+			id: "74AF7B2A078024F2"
+			tasks: [{
+				id: "1B22F6A44D1490CB"
+				type: "item"
+				item: "storagedrawers:creative_vending_upgrade"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			dependencies: ["783C43C1BBD0B0C4"]
+			hide: true
+			id: "1E243ACCA24AAB5C"
+			tasks: [{
+				id: "533E61B666FD1F2C"
+				type: "item"
+				item: {
+					id: "mekanism:creative_energy_cube"
+					Count: 1b
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "18446744073709551615.9999"
+							}]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: 2.5d
+			dependencies: ["783C43C1BBD0B0C4"]
+			hide: true
+			id: "3D27E0B289D008E6"
+			tasks: [{
+				id: "291EA240EB96BAFD"
+				type: "item"
+				item: "create:creative_motor"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.5d
+			dependencies: ["783C43C1BBD0B0C4"]
+			hide: true
+			id: "30E79F29416BBA6E"
+			tasks: [{
+				id: "6A4C56CF5A59833C"
+				type: "item"
+				item: "create:creative_fluid_tank"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.5d
+			dependencies: ["783C43C1BBD0B0C4"]
+			hide: true
+			id: "26F5E54678807E72"
+			tasks: [{
+				id: "62385752D41274F0"
+				type: "item"
+				item: "create:creative_crate"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 5.5d
+			dependencies: ["783C43C1BBD0B0C4"]
+			hide: true
+			id: "1E80334A1B9E156E"
+			tasks: [{
+				id: "1245122197398A52"
+				type: "item"
+				item: "create:creative_blaze_cake"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 7.5d
+			dependencies: ["783C43C1BBD0B0C4"]
+			hide: true
+			id: "4766D5CC9A8858D2"
+			tasks: [{
+				id: "4CD0542517AB80F3"
+				type: "item"
+				item: {
+					id: "appliedenergistics2:creative_storage_cell"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "热力膨胀的创造升级"
+			x: 0.5d
+			y: 7.5d
+			dependencies: ["783C43C1BBD0B0C4"]
+			hide: true
+			id: "2820CCC41075C15C"
+			tasks: [
+				{
+					id: "6D47E757EDA130FD"
+					type: "item"
+					item: "thermal:rf_coil_creative_augment"
+				}
+				{
+					id: "06D98F34DD790BD8"
+					type: "item"
+					item: "thermal:fluid_tank_creative_augment"
+				}
+				{
+					id: "345992701D9D40FA"
+					type: "item"
+					item: "thermal:machine_efficiency_creative_augment"
+				}
+				{
+					id: "3E99B3AAB8E6D3A7"
+					type: "item"
+					item: "thermal:machine_catalyst_creative_augment"
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 5.5d
+			dependencies: ["783C43C1BBD0B0C4"]
+			hide: true
+			id: "00A8C7A634056B82"
+			tasks: [{
+				id: "3C764CEF54A9B669"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "defense"
+					}
+				}
+				only_from_crafting: true
+			}]
+		}
+		{
+			x: 6.5d
+			y: 4.5d
+			dependencies: ["783C43C1BBD0B0C4"]
+			hide: true
+			id: "783B24CAC802EADC"
+			tasks: [{
+				id: "0F2E9F3D751DBC36"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "souls"
+					}
+				}
+				only_from_crafting: true
+			}]
+		}
+		{
+			x: 6.5d
+			y: 3.5d
+			dependencies: ["783C43C1BBD0B0C4"]
+			hide: true
+			id: "4B82A8DA1D0FB5C5"
+			tasks: [{
+				id: "7C263AEE5C04CF1F"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "abilities"
+					}
+				}
+				only_from_crafting: true
+			}]
+		}
+		{
+			x: 6.5d
+			y: 2.5d
+			dependencies: ["783C43C1BBD0B0C4"]
+			hide: true
+			id: "67E10632494093E9"
+			tasks: [{
+				id: "3001D61F10552090"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "upgrades"
+					}
+				}
+				only_from_crafting: true
+			}]
+		}
+		{
+			x: 5.5d
+			y: 7.5d
+			dependencies: ["783C43C1BBD0B0C4"]
+			hide: true
+			id: "0339FE535B634580"
+			tasks: [{
+				id: "7A2F7A2FCBDA3179"
+				type: "item"
+				item: "botania:creative_pool"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 7.5d
+			dependencies: ["783C43C1BBD0B0C4"]
+			hide: true
+			id: "145BEDCD7519852C"
+			tasks: [{
+				id: "5E6D7E9C8E732137"
+				type: "item"
+				item: "projecte:tome"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 7.5d
+			dependencies: ["783C43C1BBD0B0C4"]
+			hide: true
+			id: "565FA5D8FCDCC818"
+			tasks: [{
+				id: "7E9EC3A2575BF736"
+				type: "item"
+				item: "mekanism:creative_fluid_tank"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 6.5d
+			dependencies: ["783C43C1BBD0B0C4"]
+			hide: true
+			id: "64797FECACC9D964"
+			tasks: [{
+				id: "4973D1F8EB933485"
+				type: "item"
+				item: {
+					id: "mekanism:creative_chemical_tank"
+					Count: 1b
+					tag: {
+						mekData: { }
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: 7.5d
+			dependencies: ["783C43C1BBD0B0C4"]
+			hide: true
+			id: "71DA4FF74AD0A648"
+			tasks: [{
+				id: "49FE9AB157A79C8F"
+				type: "item"
+				item: "pipez:infinity_upgrade"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 6.5d
+			dependencies: ["783C43C1BBD0B0C4"]
+			hide: true
+			id: "7DE7496CE32A6107"
+			tasks: [{
+				id: "270F63C3D5A5DCCF"
+				type: "item"
+				item: "storagedrawers:creative_storage_upgrade"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 1.5d
+			dependencies: ["783C43C1BBD0B0C4"]
+			hide: true
+			id: "132E5C0CAB80A259"
+			tasks: [{
+				id: "374CB198C33CCB0E"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "sensor"
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			shape: "hexagon"
+			subtitle: "炼金术师的挚友"
+			dependencies: ["65B9C03E57C73452"]
+			hide: true
+			id: "42D52B23056B3C1B"
+			tasks: [{
+				id: "27BC44EAC160997E"
+				type: "item"
+				item: {
+					id: "projecte:philosophers_stone"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "7C368CD38D670BFE"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "57388FDD96A6010B"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+					count: 14
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			subtitle: "万物归于物质！"
+			dependencies: ["42D52B23056B3C1B"]
+			id: "36091BF8FD434111"
+			tasks: [{
+				id: "77E2F23AD34DA1FB"
+				type: "item"
+				item: "projecte:dark_matter"
+			}]
+			rewards: [{
+				id: "100CA31D392A10D1"
+				type: "item"
+				item: "projecte:dark_matter_block"
+				count: 4
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.0d
+			subtitle: "更高级的物质！"
+			dependencies: ["36091BF8FD434111"]
+			id: "7452E750B86FAD7B"
+			tasks: [{
+				id: "46965B296D4F9C68"
+				type: "item"
+				item: "projecte:red_matter"
+			}]
+			rewards: [{
+				id: "573B1C54B8E3AB19"
+				type: "item"
+				item: "projecte:red_matter_block"
+				count: 4
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.0d
+			shape: "octagon"
+			subtitle: "转化物品！"
+			dependencies: ["7452E750B86FAD7B"]
+			id: "45D82F95F5C0904F"
+			tasks: [{
+				id: "26A560A5A0D1828D"
+				type: "item"
+				item: "projecte:transmutation_table"
+			}]
+			rewards: [
+				{
+					id: "6CC5749009B03C7E"
+					type: "item"
+					item: "projecte:transmutation_table"
+				}
+				{
+					id: "0846D5E1A2F4F653"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+					count: 15
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: -2.0d
+			subtitle: "转换从未止步！"
+			dependencies: ["45D82F95F5C0904F"]
+			optional: true
+			id: "5DAD3F48C702B146"
+			tasks: [{
+				id: "07693B2BDD5555E3"
+				type: "item"
+				item: "projecte:transmutation_tablet"
+			}]
+			rewards: [
+				{
+					id: "24C9C8631F61BF56"
+					type: "xp"
+					xp: 1000
+				}
+				{
+					id: "6CAC0774CBAAE1F3"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: -2.0d
+			shape: "diamond"
+			dependencies: ["4290389DC995C998"]
+			size: 1.25d
+			id: "65B9C03E57C73452"
+			tasks: [{
+				id: "73137CEE8C1CEE50"
+				type: "item"
+				item: "kubejs:item_value_conversion_core"
+			}]
+		}
+	]
+}

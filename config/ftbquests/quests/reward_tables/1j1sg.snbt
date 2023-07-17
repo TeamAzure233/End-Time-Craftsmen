@@ -1,0 +1,6 @@
+{
+	id: "43636A1EFD5BD9E3"
+	order_index: 1
+	loot_size: 1
+	rewards: [{ item: "gofish:fruit_can" }]
+}

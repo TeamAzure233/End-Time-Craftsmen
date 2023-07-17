@@ -1,0 +1,26 @@
+{
+  "type": "tac:workbench",
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 36
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/gold"
+      },
+      "count": 4
+    },
+    {
+      "item": {
+        "item": "create:precision_mechanism"
+      },
+      "count": 5
+    }
+  ],
+  "result": {
+    "item": "tac:sti2011"
+  }
+}

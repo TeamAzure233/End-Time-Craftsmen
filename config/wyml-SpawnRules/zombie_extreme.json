@@ -1,0 +1,192 @@
+{
+	"mod": "zombie_extreme",
+	"spawn": {
+		// Array of all categories this mod has spawns for
+		"categories": {
+			"creature": {
+				// Set the limit per mob within this category
+				"spawns": {
+					"murku_force_unit": {
+						// Do not edit this name
+						"name": "murku_force_unit",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 8
+					},
+					"survival": {
+						// Do not edit this name
+						"name": "survival",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 8
+					},
+					"survial": {
+						// Do not edit this name
+						"name": "survial",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 8
+					}
+				}
+			},
+			"monster": {
+				// Set the limit per mob within this category
+				"spawns": {
+					"radioactive_zombie": {
+						// Do not edit this name
+						"name": "radioactive_zombie",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"zero_patient": {
+						// Do not edit this name
+						"name": "zero_patient",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"zombie_brute": {
+						// Do not edit this name
+						"name": "zombie_brute",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"bombsuitzombie": {
+						// Do not edit this name
+						"name": "bombsuitzombie",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"demolisher": {
+						// Do not edit this name
+						"name": "demolisher",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"militarysoldier": {
+						// Do not edit this name
+						"name": "militarysoldier",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"soldier_zombie": {
+						// Do not edit this name
+						"name": "soldier_zombie",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"infectedperson": {
+						// Do not edit this name
+						"name": "infectedperson",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"rat_king": {
+						// Do not edit this name
+						"name": "rat_king",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"infected_bear": {
+						// Do not edit this name
+						"name": "infected_bear",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"policezombie": {
+						// Do not edit this name
+						"name": "policezombie",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"fast_zombie_v_2": {
+						// Do not edit this name
+						"name": "fast_zombie_v_2",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"night_hunter": {
+						// Do not edit this name
+						"name": "night_hunter",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"crawler_zombie": {
+						// Do not edit this name
+						"name": "crawler_zombie",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"infected_dog": {
+						// Do not edit this name
+						"name": "infected_dog",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"poisonous_zombie": {
+						// Do not edit this name
+						"name": "poisonous_zombie",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"explosive_zombie": {
+						// Do not edit this name
+						"name": "explosive_zombie",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"drawnedzombie": {
+						// Do not edit this name
+						"name": "drawnedzombie",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"clicker_zombie": {
+						// Do not edit this name
+						"name": "clicker_zombie",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"infected_hazmat": {
+						// Do not edit this name
+						"name": "infected_hazmat",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"parasite": {
+						// Do not edit this name
+						"name": "parasite",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"infected_spec_ops_soldier": {
+						// Do not edit this name
+						"name": "infected_spec_ops_soldier",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"wastland_spider": {
+						// Do not edit this name
+						"name": "wastland_spider",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"heavy_military": {
+						// Do not edit this name
+						"name": "heavy_military",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"boomerzombie": {
+						// Do not edit this name
+						"name": "boomerzombie",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"revived": {
+						// Do not edit this name
+						"name": "revived",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,8 @@
+{
+	id: "58F08008B2611E28"
+	order_index: 17
+	title: "虫洞药水"
+	icon: "bountifulbaubles:potion_wormhole"
+	loot_size: 1
+	rewards: [{ item: "bountifulbaubles:potion_wormhole" }]
+}

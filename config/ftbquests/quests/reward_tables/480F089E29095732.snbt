@@ -1,0 +1,80 @@
+{
+	id: "480F089E29095732"
+	order_index: 24
+	title: "赞助者物品宝箱"
+	icon: {
+		id: "ftbquests:lootcrate"
+		Count: 1b
+		tag: {
+			type: "sponsors_items"
+		}
+	}
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "tazsponsors:milans_sword"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "tazsponsors:one_dollar" }
+		{
+			item: {
+				id: "minecraft:potion"
+				Count: 1b
+				tag: {
+					CustomPotionColor: -19732
+					CustomPotionEffects: [
+						{
+							Duration: 9600
+							Ambient: 0b
+							Id: 10b
+							ShowIcon: 0b
+							ShowParticles: 0b
+						}
+						{
+							Duration: 9600
+							Ambient: 0b
+							Id: 16b
+							ShowIcon: 0b
+							ShowParticles: 0b
+						}
+					]
+					Effects: [
+						{
+							Duration: 9600
+							Ambient: 0b
+							Id: 10b
+							ShowIcon: 0b
+							ShowParticles: 0b
+						}
+						{
+							Duration: 9600
+							Ambient: 0b
+							Id: 16b
+							ShowIcon: 0b
+							ShowParticles: 0b
+						}
+					]
+					display: {
+						Lore: ["{\"text\":\"§b赞助者物品 By 狼姬\"}"]
+						Name: "{\"text\":\"§f狼姬的复合试剂\"}"
+					}
+				}
+			}
+		}
+	]
+	loot_crate: {
+		drops: {
+			boss: 0
+			passive: 0
+			monster: 0
+		}
+		color: 65518
+		item_name: "赞助者物品宝箱"
+		string_id: "sponsors_items"
+	}
+}

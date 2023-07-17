@@ -1,0 +1,7 @@
+{
+	id: "63ED2F55CBB7D19E"
+	order_index: 5
+	title: "附魔金苹果"
+	loot_size: 1
+	rewards: [{ item: "minecraft:enchanted_golden_apple" }]
+}

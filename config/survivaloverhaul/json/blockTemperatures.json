@@ -1,0 +1,222 @@
+{
+  "create:blaze_burner": [
+    {
+      "properties": {
+        "blaze": "smouldering"
+      },
+      "temperature": 2.5
+    },
+    {
+      "properties": {
+        "blaze": "kindled"
+      },
+      "temperature": 5.0
+    },
+    {
+      "properties": {
+        "blaze": "seething"
+      },
+      "temperature": 7.5
+    }
+  ],
+  "minecraft:soul_wall_torch": [
+    {
+      "properties": {},
+      "temperature": 0.75
+    }
+  ],
+  "minecraft:campfire": [
+    {
+      "properties": {
+        "lit": "true"
+      },
+      "temperature": 7.5
+    },
+    {
+      "properties": {
+        "lit": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "minecraft:soul_torch": [
+    {
+      "properties": {},
+      "temperature": 0.75
+    }
+  ],
+  "survivaloverhaul:cooling_coil": [
+    {
+      "properties": {
+        "powered": "true"
+      },
+      "temperature": -10.0
+    },
+    {
+      "properties": {
+        "powered": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "minecraft:smoker": [
+    {
+      "properties": {
+        "lit": "true"
+      },
+      "temperature": 5.0
+    },
+    {
+      "properties": {
+        "false": "true"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "minecraft:furnace": [
+    {
+      "properties": {
+        "lit": "true"
+      },
+      "temperature": 5.0
+    },
+    {
+      "properties": {
+        "lit": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "minecraft:magma_block": [
+    {
+      "properties": {},
+      "temperature": 7.5
+    }
+  ],
+  "realistictorches:torch_wall": [
+    {
+      "properties": {
+        "litstate": "2"
+      },
+      "temperature": 1.5
+    },
+    {
+      "properties": {
+        "litstate": "1"
+      },
+      "temperature": 0.75
+    },
+    {
+      "properties": {
+        "litstate": "0"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "minecraft:jack_o_lantern": [
+    {
+      "properties": {},
+      "temperature": 3.0
+    }
+  ],
+  "minecraft:soul_campfire": [
+    {
+      "properties": {
+        "lit": "true"
+      },
+      "temperature": 5.0
+    },
+    {
+      "properties": {
+        "lit": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "realistictorches:torch": [
+    {
+      "properties": {
+        "litstate": "2"
+      },
+      "temperature": 1.5
+    },
+    {
+      "properties": {
+        "litstate": "1"
+      },
+      "temperature": 0.75
+    },
+    {
+      "properties": {
+        "litstate": "0"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "farmersdelight:stove": [
+    {
+      "properties": {
+        "lit": "true"
+      },
+      "temperature": 7.5
+    },
+    {
+      "properties": {
+        "lit": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "minecraft:torch": [
+    {
+      "properties": {},
+      "temperature": 1.5
+    }
+  ],
+  "minecraft:wall_torch": [
+    {
+      "properties": {},
+      "temperature": 1.5
+    }
+  ],
+  "minecraft:fire": [
+    {
+      "properties": {},
+      "temperature": 5.0
+    }
+  ],
+  "survivaloverhaul:heating_coil": [
+    {
+      "properties": {
+        "powered": "true"
+      },
+      "temperature": 10.0
+    },
+    {
+      "properties": {
+        "powered": "false"
+      },
+      "temperature": 0.0
+    }
+  ],
+  "minecraft:soul_fire": [
+    {
+      "properties": {},
+      "temperature": 2.5
+    }
+  ],
+  "minecraft:blast_furnace": [
+    {
+      "properties": {
+        "lit": "true"
+      },
+      "temperature": 5.0
+    },
+    {
+      "properties": {
+        "lit": "false"
+      },
+      "temperature": 0.0
+    }
+  ]
+}

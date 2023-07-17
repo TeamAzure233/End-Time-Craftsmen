@@ -1,0 +1,31 @@
+{
+	"mod": "extrabotany",
+	"spawn": {
+		// Array of all categories this mod has spawns for
+		"categories": {
+			"creature": {
+				// Set the limit per mob within this category
+				"spawns": {
+					"egominion": {
+						// Do not edit this name
+						"name": "egominion",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 8
+					},
+					"ego": {
+						// Do not edit this name
+						"name": "ego",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 8
+					},
+					"herrscher": {
+						// Do not edit this name
+						"name": "herrscher",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 8
+					}
+				}
+			}
+		}
+	}
+}

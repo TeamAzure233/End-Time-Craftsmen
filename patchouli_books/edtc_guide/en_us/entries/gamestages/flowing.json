@@ -1,0 +1,11 @@
+{
+    "name": "Game Flow",
+    "icon": "botania:fork_light_relay",
+    "category": "gamestages",
+    "pages": [
+        {
+            "type": "text",
+            "text": "This chapter introduces the general flow of the game"
+        }
+    ]
+}

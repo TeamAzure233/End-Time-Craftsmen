@@ -1,0 +1,20 @@
+{
+    "default": [
+      {
+        "name": "tconstruct:lustrous",
+        "level": 2
+      },
+      {
+        "name": "tconstruct:experienced",
+        "level": 2
+      },
+      {
+        "name": "tconstruct:enderporting",
+        "level": 1
+      },
+      {
+        "name": "tconstruct:lightweight",
+        "level": 1
+      }
+    ]
+}

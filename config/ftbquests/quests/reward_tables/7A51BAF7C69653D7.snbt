@@ -1,0 +1,21 @@
+{
+	id: "7A51BAF7C69653D7"
+	order_index: 33
+	title: "璀璨棱镜"
+	loot_size: 1
+	rewards: [{
+		item: {
+			id: "astralsorcery:enchantment_amulet"
+			Count: 1b
+			tag: {
+				astralsorcery: {
+					amuletEnchantments: [{
+						type: 2
+						level: 6
+					}]
+					amuletColor: -11665439
+				}
+			}
+		}
+	}]
+}

@@ -1,0 +1,132 @@
+
+["Possibility of Actions"]
+	canCatLeap = true
+	canCrawl = true
+	#Possibility to Frontward-Dodge By double tapping a button
+	canFrontDodgeByDoubleTapping = true
+	canDodge = true
+	canFastRunning = true
+	canClingToCliff = true
+	canRoll = true
+	canVault = true
+	canWallJump = true
+	canDive = true
+	canFlipping = true
+	canBreakFall = true
+	canWallSlide = true
+	canHorizontalWallRun = true
+
+["Modifier Values"]
+	#Dodge Speed Modifier
+	#Range: 0.2 ~ 0.52
+	dodgeSpeedModifier = 0.4
+
+["Stamina HUD Configuration"]
+	#hide stamina HUD when Stamina is infinite
+	hideS_HUD = false
+	#use Light Stamina HUD
+	useLightHUD = false
+	#horizontal alignment
+	#Allowed Values: Left, Right
+	align_H_S_HUD = "Right"
+	#vertical alignment
+	#Allowed Values: Top, Bottom
+	align_V_S_HUD = "Bottom"
+	#horizontal margin
+	#Range: 0 ~ 100
+	margin_H_S_HUD = 3
+	#vertical margin
+	#Range: 0 ~ 100
+	margin_V_S_HUD = 3
+	#vertical offset of light stamina HUD
+	#Range: -50 ~ 50
+	offset_V_LS_HUD = 0
+
+[Animations]
+	#Disable custom animation of falling
+	disableFallingAnimation = false
+	#Disable custom animations
+	disableAnimation = false
+	#Disable first-person-view animations
+	disableFPVAnimation = true
+	disableCatLeapAnimation = false
+	disableClimbUpAnimation = false
+	disableClingToCliffAnimation = false
+	disableCrawlAnimation = false
+	disableDiveAnimation = false
+	disableDodgeAnimation = false
+	disableFastRunAnimation = false
+	disableFlippingAnimation = false
+	disableHorizontalWallRunAnimation = false
+	disableVaultAnimation = false
+	disableBreakfallAnimation = false
+	disableSlidingAnimation = false
+	disableWallJumpAnimation = false
+	disableWallSlideAnimation = false
+	#Disable Roll rotation of camera
+	disableCameraRotationRolling = false
+	#Disable Flipping rotation of camera
+	disableCameraRotationFlipping = false
+	#Disable Vault animation of camera
+	disableCameraAnimationVault = true
+	#Disable Horizontal-WallRun animation of camera
+	disableCameraAnimationH_WallRun = false
+
+["Other Configuration"]
+	#Auto turning forward when WallJump
+	autoTurningWallJump = false
+	#Disable WallJump toward a wall
+	disableWallJumpTowardWall = false
+	#Disable Double-Tapping For Dodge. Please Use Dodge Key instead
+	disableDoubleTapping = false
+	#Disable Crawl in air (experimental)
+	disableCrawlInAir = true
+	#Disable Vault in air (experimental)
+	disableVaultInAir = true
+	#Enable Roll While player is in creative mode (experimental)
+	enableRollCreative = false
+	#Make Vault Need Vault Key Pressed
+	vaultNeedKeyPressed = false
+	#Vault Animation(Dynamic is to select animation dynamically)
+	#Allowed Values: SpeedVault, KongVault, Dynamic
+	vaultAnimationMode = "Dynamic"
+	#do Fast-Running whenever you do a sprint of vanilla
+	replaceSprintWithFastRun = true
+	#enable players to do actions needing Fast-Running by sprint
+	substituteSprint = false
+	#Infinite Stamina(this needs a permission from server, even if it is on single player's game)
+	#Please check 'parcool-server.toml' in 'serverconfig' directory
+	infiniteStamina = false
+
+#Stamina Section may be affected by Server config
+[Stamina]
+	#ParCool consume hanger value instead of stamina
+	useHangerInstead = false
+	#Range: 300 ~ 10000
+	MaxValueOfStamina = 2000
+
+	[Stamina.Consumption]
+		#Range: 0 ~ 10000
+		Breakfall = 100
+		#Range: 0 ~ 10000
+		CatLeap = 150
+		#Range: 0 ~ 10000
+		ClingToCliff = 2
+		#Range: 0 ~ 10000
+		ClimbUp = 150
+		#Range: 0 ~ 10000
+		Dodge = 80
+		#Range: 0 ~ 10000
+		FastRunning = 2
+		#Range: 0 ~ 10000
+		Flipping = 80
+		#Range: 0 ~ 10000
+		Vault = 50
+		#Range: 0 ~ 10000
+		WallJump = 120
+
+	#About ParCool
+	[Stamina.ParCool]
+		#ParCool is Active
+		ParCool_Activation = true
+

@@ -1,0 +1,21 @@
+{
+	"message.hordes.EventStart":"你听到了丧尸群的咆哮……",
+	"message.hordes.EventEnd":"袭击停止了，一切事物都渐渐安静了下来……",
+	"message.hordes.TrySleep":"一个丧尸袭击正在来临……你紧张的无法入睡",
+	"message.hordes.title":"丧尸袭击",
+	"message.hordes.DeathMessage":"%1$s 死于丧尸袭击",
+	"message.hordes.DeathMessageFighting":"%1$s 在与 %2$s 交战时死于丧尸袭击 ",
+	"message.hordes.DeathMessageOther":"%1$s 死于丧尸袭击",
+	"hordes.subtitle.hordeHowls":"丧尸的咆哮",
+
+	"entity.hordes.ZombiePlayer.chat":"僵尸化的 %1$s",
+	"entity.hordes.DrownedPlayer.chat":"溺尸化的 %1$s",
+	"entity.hordes.ZombiePlayer.name":"丧尸化的玩家",
+
+	"effect.hordes.infected":"丧尸感染",
+	"death.attack.infection":"%1$s 死于丧尸感染",
+	"death.attack.infection.player":"%1$s 死于丧尸感染",
+
+	"jei.category.hordes.InfectionCures":"感染治疗",
+	"jei.description.hordes.InfectionCures":"对受感染的实体使用以治愈感染"
+}

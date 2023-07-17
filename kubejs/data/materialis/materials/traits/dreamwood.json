@@ -1,0 +1,16 @@
+{
+  "default": [
+    {
+      "name": "materialis:manaburner",
+      "level": 1
+    },
+    {
+      "name": "bettercompat:mana",
+      "level": 2
+    },
+    {
+      "name": "bettercompat:floras_blessing",
+      "level": 1
+    }
+  ]
+}

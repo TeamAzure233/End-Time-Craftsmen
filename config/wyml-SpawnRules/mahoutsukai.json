@@ -1,0 +1,19 @@
+{
+	"mod": "mahoutsukai",
+	"spawn": {
+		// Array of all categories this mod has spawns for
+		"categories": {
+			"creature": {
+				// Set the limit per mob within this category
+				"spawns": {
+					"fae": {
+						// Do not edit this name
+						"name": "fae",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 8
+					}
+				}
+			}
+		}
+	}
+}

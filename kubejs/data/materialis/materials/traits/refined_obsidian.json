@@ -1,0 +1,12 @@
+{
+  "default": [
+    {
+      "name": "materialis:short_sighted",
+      "level": 1
+    },
+    {
+      "name": "tconstruct:sharpweight",
+      "level": 1
+    }
+  ]
+}

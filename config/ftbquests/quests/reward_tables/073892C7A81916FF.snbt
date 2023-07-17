@@ -1,0 +1,267 @@
+{
+	id: "073892C7A81916FF"
+	order_index: 22
+	title: "史诗奖励箱"
+	icon: {
+		id: "ftbquests:lootcrate"
+		Count: 1b
+		tag: {
+			type: "epic"
+		}
+	}
+	loot_size: 1
+	rewards: [
+		{ item: "storagedrawers:diamond_storage_upgrade", weight: 2 }
+		{
+			item: {
+				id: "minecraft:player_head"
+				Count: 1b
+				tag: {
+					SkullOwner: {
+						Id: [I;
+							807872109
+							-50642177
+							-1128450341
+							2001042160
+						]
+						Properties: {
+							textures: [{
+								Value: "ewogICJ0aW1lc3RhbXAiIDogMTY3Nzg5OTc1ODQ0NCwKICAicHJvZmlsZUlkIiA6ICIzMDI3MjY2ZGZjZmI0MmZmYmNiZDM2ZGI3NzQ1N2FmMCIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2Zpc2hmbHkyMzMzMzMiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzI3OTg3YWEwZGZmZjk3NGQ5MTI3MzQxMmY3ZTAxNTlhMzUwNzg0OGRjMGRmMDdlYjMyYzYyMTBiMzllY2IxZCIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"
+								Signature: "fLhoWqRQcRPH/PaVudTkxgUxv2kiC9Cz6+JMgb1MwYbKo8eN/8XwE9ZxX4G8kMa3YDuVDF+xCFVlRQmH6VEIaBu6J+BC02+IijOtZZdH9vgDW/YQM6EFS/7OlZ1QdkCemhddbKQaJwWyZQm1W5za0qVG2PniP2gRk8iVqs6wHBnpIBkL8ys5xNkgumfxe+oA2JMoBqEINSmSZC+6dVpZIjWog8YDLcG8eZdD3/GWo6KnqvdzqYKY2yRncuYzNqP3sOW9ctY73ww64vS/LqmxhVoy7tgBE46oaB4dcK9RVy0Rmj4gS3aZySOMnZDPO6Xmv4pXdDgdPqYwgtv/oLGggrxOKok1k/oko6c3Hm5g99aCigyh6jPUukAolzlHw4uihrqCxbVDEPfBzvJx/+QKC7qAxg3EuDFj0jE7Yls+zIdD8UAsK/wejNCVpQ1227mpzQC0W84vaQ4gptsme4D4VELAY7Asc8Gn0Tishq+B5YR2RcCO/vskcV9y6NYzOk3YxugziDb2dNBc6htuG/GqPkyJN9SsBJhAmV3FdkV8i4Padnpr7zhHg5RdJX9zXNLoNrtgZp9j52FCyPxJabP4ATqaSh4kERbclmbGVD2gsyeYXtAe4lt5i/cx4HNeq9iietUmdKfsecDGn02A3cTRSOEeeYQ6FO6iGxXapnox2V8="
+							}]
+						}
+						Name: "Gofishfly233333"
+					}
+				}
+			}
+		}
+		{ item: "bountifulbaubles:amulet_sin_pride", weight: 3 }
+		{ item: "bountifulbaubles:amulet_sin_wrath", weight: 2 }
+		{ item: "bountifulbaubles:phylactery_charm", weight: 3 }
+		{ item: "bountifulbaubles:ankh_charm", weight: 2 }
+		{
+			item: {
+				id: "bountifulbaubles:shield_ankh"
+				Count: 1b
+				tag: {
+					Damage: 0
+					HideFlags: 2
+				}
+			}
+		}
+		{ item: "bountifulbaubles:black_dragon_scale", weight: 2 }
+		{ item: "bountifulbaubles:mixed_dragon_scale" }
+		{ item: "emendatusenigmatica:lumium_ingot" }
+		{ item: "emendatusenigmatica:enderium_ingot" }
+		{ item: "emendatusenigmatica:signalum_ingot", weight: 2 }
+		{ item: "expandedstorage:netherite_chest", weight: 3 }
+		{
+			item: {
+				id: "ftbquests:lootcrate"
+				Count: 1b
+				tag: {
+					type: "legendry"
+				}
+			}
+		}
+		{
+			item: {
+				id: "ftbquests:lootcrate"
+				Count: 1b
+				tag: {
+					type: "advanced"
+				}
+			}
+			weight: 3
+		}
+		{
+			item: {
+				id: "ftbquests:lootcrate"
+				Count: 1b
+				tag: {
+					type: "sponsors_items"
+				}
+			}
+			weight: 2
+		}
+		{
+			item: {
+				id: "ftbquests:lootcrate"
+				Count: 1b
+				tag: {
+					type: "guns"
+				}
+			}
+			weight: 2
+		}
+		{
+			item: {
+				id: "botania:mana_ring_greater"
+				Count: 1b
+				tag: {
+					mana: 2000000
+				}
+			}
+		}
+		{ item: "botania:mana_bomb" }
+		{ item: "extrabotany:rewardbagd" }
+		{ item: "gofish:taz_dev_pigeon" }
+		{ item: "gofish:taz_art_pigeon" }
+		{ item: "immersiveengineering:powerpack", weight: 2 }
+		{
+			item: {
+				id: "immersiveengineering:railgun"
+				Count: 1b
+				tag: {
+					ammo_slot: 7
+				}
+				ForgeCaps: {
+					Parent: {
+						Size: 3
+						Items: [ ]
+					}
+				}
+			}
+		}
+		{
+			item: {
+				id: "tiab:timeinabottle"
+				Count: 1b
+				tag: {
+					timeData: {
+						storedTime: 100
+					}
+				}
+			}
+		}
+		{ item: "scalinghealth:heart_crystal", count: 8 }
+		{ item: "scalinghealth:power_crystal", count: 8 }
+		{
+			item: {
+				id: "miniutilities:unstable_ingot"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "mahoutsukai:attuned_diamond"
+				Count: 1b
+				ForgeCaps: {
+					Parent: {
+						MAHOUTSUKAI_GEM_STORED_MANA: 0
+					}
+				}
+			}
+			weight: 2
+		}
+		{
+			item: {
+				id: "mahoutsukai:attuned_emerald"
+				Count: 1b
+				ForgeCaps: {
+					Parent: {
+						MAHOUTSUKAI_GEM_STORED_MANA: 0
+					}
+				}
+			}
+		}
+		{ item: "mahoutsukai:mystic_staff" }
+		{ item: "torchmaster:megatorch", weight: 3 }
+		{ item: "torchmaster:feral_flare_lantern", weight: 3 }
+		{ item: "miniutilities:experience_pearl_4x", weight: 3 }
+		{ item: "miniutilities:experience_pearl_5x", weight: 2 }
+		{ item: "miniutilities:experience_pearl_6x" }
+		{ item: "kubejs:blaze_brass", count: 8, weight: 2 }
+		{ item: "kubejs:chorus_chrome", count: 4 }
+		{ item: "sophisticatedbackpacks:netherite_backpack" }
+		{
+			item: {
+				id: "buildinggadgets:gadget_building"
+				Count: 1b
+				tag: {
+					state: {
+						serializer: "buildinggadgets:dummy_serializer"
+						state: {
+							Name: "minecraft:air"
+						}
+						data: { }
+					}
+					energy: 500000.0d
+				}
+			}
+		}
+		{
+			item: {
+				id: "buildinggadgets:gadget_exchanging"
+				Count: 1b
+				tag: {
+					state: {
+						serializer: "buildinggadgets:dummy_serializer"
+						state: {
+							Name: "minecraft:air"
+						}
+						data: { }
+					}
+					energy: 500000.0d
+				}
+			}
+		}
+		{
+			item: {
+				id: "buildinggadgets:gadget_copy_paste"
+				Count: 1b
+				tag: {
+					mode: 0b
+					template_id: [I;
+						2086889731
+						375213461
+						-1919271439
+						-1723370192
+					]
+					energy: 500000.0d
+				}
+			}
+		}
+		{
+			item: {
+				id: "buildinggadgets:gadget_destruction"
+				Count: 1b
+				tag: {
+					overlay: 1b
+					fuzzy: 1b
+					energy: 1000000.0d
+				}
+			}
+		}
+		{
+			item: {
+				id: "inventorypets:pet_meta"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			count: 8
+			weight: 4
+		}
+		{ item: "minecraft:phantom_membrane", count: 8, weight: 3 }
+		{
+			xp: 400
+			type: "xp"
+			weight: 3
+		}
+	]
+	loot_crate: {
+		drops: {
+			boss: 0
+			passive: 0
+			monster: 0
+		}
+		color: 12653055
+		item_name: "史诗奖励箱"
+		string_id: "epic"
+	}
+}

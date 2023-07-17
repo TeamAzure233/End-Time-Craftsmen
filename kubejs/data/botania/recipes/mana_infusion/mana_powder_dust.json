@@ -1,0 +1,12 @@
+{
+  "type": "botania:mana_infusion",
+  "input": [
+    {
+      "tag": "forge:dusts/lumium"
+    }
+  ],
+  "output": {
+    "item": "botania:mana_powder"
+  },
+  "mana": 500
+}

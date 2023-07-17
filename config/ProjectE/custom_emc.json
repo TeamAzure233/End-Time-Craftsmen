@@ -1,0 +1,28 @@
+{
+  "entries": [
+    {
+      "item": "thermal:bronze_dust",
+      "emc": 103
+    },
+    {
+      "item": "extendedcrafting:crystaltine_ingot",
+      "emc": 0
+    },
+    {
+      "item": "create:rose_quartz",
+      "emc": 768
+    },
+    {
+      "item": "extendedcrafting:crystaltine_nugget",
+      "emc": 0
+    },
+    {
+      "item": "extendedcrafting:crystaltine_block",
+      "emc": 0
+    },
+    {
+      "item": "create:zinc_ingot",
+      "emc": 128
+    }
+  ]
+}

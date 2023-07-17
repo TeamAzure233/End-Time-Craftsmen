@@ -1,0 +1,25 @@
+{
+	"mod": "endreborn",
+	"spawn": {
+		// Array of all categories this mod has spawns for
+		"categories": {
+			"monster": {
+				// Set the limit per mob within this category
+				"spawns": {
+					"endguard": {
+						// Do not edit this name
+						"name": "endguard",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"enderman": {
+						// Do not edit this name
+						"name": "enderman",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,279 @@
+type = menu
+
+customization-meta {
+  identifier = creators
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  path = kubejs/assets/edtc/texture/special/creators.png
+  orientation = top-centered
+  x = -319
+  width = 621
+  action = addtexture
+  actionid = 1b3aa808-3012-4841-a99a-d2d9c3992ee41668520477616
+  y = 0
+  height = %guiheight%
+}
+
+customization {
+  orientation = element
+  slim = true
+  scale = 30
+  showname = true
+  skinpath = kubejs/assets/edtc/texture/special/gofishfly233333.png
+  crouching = false
+  orientation_element = 1b3aa808-3012-4841-a99a-d2d9c3992ee41668520477616
+  x = 193
+  actionid = 786c086f-d6aa-4e33-abe5-a208900868811668219046697
+  action = addentity
+  y = 179
+  playername = [所有者]Gofishfly233333
+  parrot = false
+}
+
+customization {
+  orientation = element
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  label = Bilibili
+  loopbackgroundanimations = true
+  orientation_element = 786c086f-d6aa-4e33-abe5-a208900868811668219046697
+  x = -36
+  width = 75
+  actionid = 6bbb20a6-79ae-4ff9-bd92-257b54c9d74d1668219402142
+  action = addbutton
+  y = 1
+  value = https://space.bilibili.com/1493142442
+  height = 20
+}
+
+customization {
+  showname = true
+  orientation = element
+  crouching = false
+  orientation_element = 1b3aa808-3012-4841-a99a-d2d9c3992ee41668520477616
+  x = 309
+  slim = false
+  actionid = bb06d3b6-3c7f-4892-b3a6-1f85a57923951668469461417
+  action = addentity
+  y = 178
+  scale = 30
+  playername = [程序]haoyue
+  parrot = false
+}
+
+customization {
+  orientation = element
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  label = Bilibili
+  loopbackgroundanimations = true
+  orientation_element = bb06d3b6-3c7f-4892-b3a6-1f85a57923951668469461417
+  x = -36
+  width = 75
+  actionid = 2cd5e7d1-cf63-4a2d-a7d3-62ea2cd559a51668469485303
+  action = addbutton
+  y = 2
+  value = https://space.bilibili.com/1238167279
+  height = 20
+}
+
+customization {
+  showname = true
+  orientation = element
+  crouching = false
+  orientation_element = 1b3aa808-3012-4841-a99a-d2d9c3992ee41668520477616
+  x = 426
+  slim = false
+  actionid = ace5e696-8aa7-49c7-abf8-c7707aabdb981668520563157
+  action = addentity
+  y = 179
+  scale = 30
+  playername = [测试]dfnn
+  parrot = false
+}
+
+customization {
+  orientation = element
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  label = Bilibili
+  loopbackgroundanimations = true
+  orientation_element = ace5e696-8aa7-49c7-abf8-c7707aabdb981668520563157
+  x = -37
+  width = 75
+  actionid = 0ac2c5fd-f619-4fcc-8be4-56501e8751f21668520578659
+  action = addbutton
+  y = 1
+  value = https://space.bilibili.com/1064409217
+  height = 20
+}
+
+customization {
+  orientation = element
+  shadow = true
+  orientation_element = 1b3aa808-3012-4841-a99a-d2d9c3992ee41668520477616
+  x = 308
+  action = addtext
+  actionid = acbb707f-db79-414a-b1ec-cf634784bebc1668520703134
+  y = 45
+  scale = 3.0
+  alignment = centered
+  value = 参与人员名单
+}
+
+customization {
+  showname = true
+  orientation = element
+  crouching = false
+  orientation_element = 1b3aa808-3012-4841-a99a-d2d9c3992ee41668520477616
+  x = 195
+  slim = false
+  actionid = 7c5c0f87-031a-47bb-8abb-aca606e9c9ab1668520934387
+  action = addentity
+  y = 278
+  scale = 30
+  playername = [测试]嘤嘤怪慕沫
+  parrot = false
+}
+
+customization {
+  orientation = element
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  label = Bilibili
+  loopbackgroundanimations = true
+  orientation_element = 7c5c0f87-031a-47bb-8abb-aca606e9c9ab1668520934387
+  x = -36
+  width = 75
+  actionid = ae893863-ae3a-42c1-ae04-d020fbf077201668520953304
+  action = addbutton
+  y = 2
+  value = 
+  height = 20
+}
+
+customization {
+  showname = true
+  orientation = element
+  crouching = false
+  orientation_element = 1b3aa808-3012-4841-a99a-d2d9c3992ee41668520477616
+  x = 429
+  slim = true
+  actionid = 1fb8abd9-3a0d-49fa-9c7b-e15c28a7aac21668521067452
+  action = addentity
+  y = 377
+  scale = 30
+  playername = %playername%
+  parrot = false
+}
+
+customization {
+  orientation = element
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  label = Bilibili
+  loopbackgroundanimations = true
+  orientation_element = 1fb8abd9-3a0d-49fa-9c7b-e15c28a7aac21668521067452
+  x = -39
+  width = 75
+  actionid = 1a64460d-5908-4099-8b21-d2a535733ac11668521080801
+  action = addbutton
+  y = 2
+  value = https://space.bilibili.com/
+  height = 20
+}
+
+customization {
+  orientation = element
+  shadow = false
+  orientation_element = 1b3aa808-3012-4841-a99a-d2d9c3992ee41668520477616
+  x = 355
+  action = addtext
+  actionid = f672fea1-a50f-4ab0-a9e0-451e24922f631668521159485
+  y = 319
+  scale = 1.0
+  alignment = left
+  value = 特别鸣谢=>
+}
+
+customization {
+  orientation = element
+  shadow = false
+  orientation_element = 1b3aa808-3012-4841-a99a-d2d9c3992ee41668520477616
+  x = 385
+  action = addtext
+  actionid = f4253173-079c-4b3e-ab52-2389f8f3e3651668521202236
+  y = 401
+  scale = 1.0
+  alignment = left
+  value = 没错就是正在看着这个画面的您~
+}
+
+customization {
+  orientation = bottom-centered
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = closegui
+  x = -100
+  width = 200
+  actionid = 2d4bcc8a-5e87-4767-9698-267825da240f1668521416452
+  action = addbutton
+  y = -28
+  label = 返回
+  value = 
+  height = 20
+}
+
+customization {
+  showname = true
+  orientation = top-left
+  crouching = false
+  x = 471
+  slim = false
+  actionid = 53bba38c-02f5-4e87-96c8-77b0bd65c3aa1678030747744
+  action = addentity
+  y = 277
+  scale = 30
+  playername = [剧情]叶梓柠
+  parrot = false
+}
+
+customization {
+  orientation = element
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  label = Bilibili
+  loopbackgroundanimations = true
+  orientation_element = 53bba38c-02f5-4e87-96c8-77b0bd65c3aa1678030747744
+  x = -38
+  width = 75
+  actionid = 40a8a57a-8e87-4276-bf9d-b24a2a44951e1678030852570
+  action = addbutton
+  y = 4
+  value = https://space.bilibili.com/269001311
+  height = 20
+}
+
+customization {
+  orientation = element
+  shadow = false
+  orientation_element = 1b3aa808-3012-4841-a99a-d2d9c3992ee41668520477616
+  x = 387
+  action = addtext
+  actionid = 24680a90-244b-453a-becb-d10b44c081ab1678031029554
+  y = 416
+  scale = 1.0
+  alignment = left
+  value = （特别鸣谢这里赞助者们没地方写了，去官网/爱发电看吧）
+}
+

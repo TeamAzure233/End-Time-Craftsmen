@@ -1,0 +1,16 @@
+{
+  "default": [
+    {
+      "name": "materialis:manaripper",
+      "level": 1
+    },
+    {
+      "name": "tconstruct:cultivated",
+      "level": 1
+    },
+    {
+      "name": "bettercompat:floras_blessing",
+      "level": 1
+    }
+  ]
+}

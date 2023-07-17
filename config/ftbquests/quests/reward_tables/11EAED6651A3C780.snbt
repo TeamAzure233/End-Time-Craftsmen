@@ -1,0 +1,417 @@
+{
+	id: "11EAED6651A3C780"
+	order_index: 25
+	title: "枪械奖励箱"
+	icon: {
+		id: "ftbquests:lootcrate"
+		Count: 1b
+		tag: {
+			type: "guns"
+		}
+	}
+	loot_size: 1
+	rewards: [
+		{ item: "tac:coyote_sight" }
+		{ item: "tac:aimpoint_t2" }
+		{ item: "tac:aimpoint_t1" }
+		{ item: "tac:eotech_n" }
+		{ item: "tac:vortex_uh_1" }
+		{ item: "tac:eotech_short" }
+		{ item: "tac:srs_red_dot" }
+		{ item: "tac:acog_4x_scope" }
+		{ item: "tac:qmk152" }
+		{ item: "tac:elcan_14x" }
+		{ item: "tac:lpvo_1_6" }
+		{ item: "tac:8x_scope" }
+		{ item: "tac:old_8x_scope" }
+		{ item: "tac:old_4x_scope" }
+		{ item: "tac:mini_dot" }
+		{ item: "tac:sro_dot" }
+		{ item: "tac:silencer" }
+		{ item: "tac:muzzle_brake" }
+		{ item: "tac:muzzle_compensator" }
+		{ item: "tac:pistol_silencer" }
+		{ item: "tac:light_stock" }
+		{ item: "tac:tactical_stock" }
+		{ item: "tac:weighted_stock" }
+		{ item: "tac:light_grip" }
+		{ item: "tac:specialised_grip" }
+		{ item: "tac:round45", count: 64 }
+		{ item: "tac:ae50", count: 64 }
+		{ item: "tac:win_30-30", count: 64 }
+		{ item: "tac:bullet_308", count: 64 }
+		{ item: "tac:nato_556_bullet", count: 64 }
+		{ item: "tac:9mm_round", count: 64 }
+		{ item: "tac:10_gauge_round", count: 64 }
+		{ item: "tac:58x42", count: 64 }
+		{ item: "tac:762x25", count: 64 }
+		{ item: "tac:762x54", count: 64 }
+		{ item: "tac:762x39", count: 64 }
+		{ item: "tac:50bmg", count: 64 }
+		{ item: "tac:lapua338", count: 64 }
+		{ item: "tac:bullet68", count: 64 }
+		{
+			item: {
+				id: "tac:m24"
+				Count: 1b
+				tag: {
+					ID: [I;
+						331906894
+						1762148666
+						-2119297125
+						-1795061677
+					]
+					levelDmg: 0.0f
+					AmmoCount: 5
+					level: 1
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:ai_awp"
+				Count: 1b
+				tag: {
+					ID: [I;
+						789667440
+						-942718448
+						-1128238007
+						-1687847616
+					]
+					levelDmg: 0.0f
+					AmmoCount: 5
+					level: 1
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:db_short"
+				Count: 1b
+				tag: {
+					AmmoCount: 2
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:aa_12"
+				Count: 1b
+				tag: {
+					ID: [I;
+						-1868369121
+						-2120400338
+						-1319618725
+						-1522543075
+					]
+					levelDmg: 0.0f
+					AmmoCount: 8
+					level: 1
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:m870_classic"
+				Count: 1b
+				tag: {
+					AmmoCount: 8
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:m60"
+				Count: 1b
+				tag: {
+					ID: [I;
+						-1078406488
+						-1801239953
+						-1586155111
+						-1329357665
+					]
+					levelDmg: 0.0f
+					AmmoCount: 100
+					level: 1
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:dp28"
+				Count: 1b
+				tag: {
+					AmmoCount: 70
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:m1911"
+				Count: 1b
+				tag: {
+					ID: [I;
+						1165580445
+						-466665450
+						-2101640798
+						-2009998081
+					]
+					levelDmg: 0.0f
+					AmmoCount: 7
+					level: 1
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:glock_17"
+				Count: 1b
+				tag: {
+					AmmoCount: 17
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:sti2011"
+				Count: 1b
+				tag: {
+					AmmoCount: 13
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:deagle_357"
+				Count: 1b
+				tag: {
+					AmmoCount: 7
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:cz75"
+				Count: 1b
+				tag: {
+					AmmoCount: 16
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:cz75_auto"
+				Count: 1b
+				tag: {
+					AmmoCount: 16
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:tti_g34"
+				Count: 1b
+				tag: {
+					AmmoCount: 23
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:vector45"
+				Count: 1b
+				tag: {
+					ID: [I;
+						655028140
+						1111576106
+						-1106059941
+						-721195077
+					]
+					levelDmg: 0.0f
+					AmmoCount: 13
+					level: 1
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:micro_uzi"
+				Count: 1b
+				tag: {
+					AmmoCount: 32
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:hk_mp5a5"
+				Count: 1b
+				tag: {
+					AmmoCount: 30
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:mp7"
+				Count: 1b
+				tag: {
+					AmmoCount: 40
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:ak47"
+				Count: 1b
+				tag: {
+					AmmoCount: 30
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:m4"
+				Count: 1b
+				tag: {
+					AmmoCount: 30
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:qbz_95"
+				Count: 1b
+				tag: {
+					AmmoCount: 30
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:mk14"
+				Count: 1b
+				tag: {
+					AmmoCount: 10
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:hk416_a5"
+				Count: 1b
+				tag: {
+					AmmoCount: 30
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:type81_x"
+				Count: 1b
+				tag: {
+					ID: [I;
+						-1102701898
+						539184113
+						-2009516584
+						1275410781
+					]
+					levelDmg: 0.0f
+					AmmoCount: 30
+					level: 1
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:fn_fal"
+				Count: 1b
+				tag: {
+					AmmoCount: 10
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:sks_tactical"
+				Count: 1b
+				tag: {
+					AmmoCount: 20
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:m16a4"
+				Count: 1b
+				tag: {
+					AmmoCount: 30
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:scar_h"
+				Count: 1b
+				tag: {
+					AmmoCount: 18
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:scar_l"
+				Count: 1b
+				tag: {
+					AmmoCount: 30
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:mk47"
+				Count: 1b
+				tag: {
+					AmmoCount: 30
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:spr15"
+				Count: 1b
+				tag: {
+					AmmoCount: 20
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:mk18_mod1"
+				Count: 1b
+				tag: {
+					AmmoCount: 30
+				}
+			}
+		}
+		{
+			item: {
+				id: "tac:rpk"
+				Count: 1b
+				tag: {
+					AmmoCount: 40
+				}
+			}
+		}
+	]
+	loot_crate: {
+		drops: {
+			boss: 0
+			passive: 0
+			monster: 0
+		}
+		color: 11250603
+		item_name: "枪械奖励箱"
+		string_id: "guns"
+	}
+}

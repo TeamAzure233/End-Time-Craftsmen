@@ -1,0 +1,25 @@
+{
+	"mod": "hordes",
+	"spawn": {
+		// Array of all categories this mod has spawns for
+		"categories": {
+			"monster": {
+				// Set the limit per mob within this category
+				"spawns": {
+					"zombie_player": {
+						// Do not edit this name
+						"name": "zombie_player",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 70
+					},
+					"drowned_player": {
+						// Do not edit this name
+						"name": "drowned_player",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 70
+					}
+				}
+			}
+		}
+	}
+}

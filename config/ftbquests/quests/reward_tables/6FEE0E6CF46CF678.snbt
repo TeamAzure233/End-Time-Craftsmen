@@ -1,0 +1,228 @@
+{
+	id: "6FEE0E6CF46CF678"
+	order_index: 20
+	title: "稀有奖励箱"
+	icon: {
+		id: "ftbquests:lootcrate"
+		Count: 1b
+		tag: {
+			type: "rare"
+		}
+	}
+	loot_size: 1
+	use_title: true
+	rewards: [
+		{ item: "bountifulbaubles:wormhole_mirror", weight: 2 }
+		{ item: "compactmachines:machine_normal" }
+		{
+			item: {
+				id: "inventorypets:pet_meta"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			count: 2
+			weight: 2
+		}
+		{ item: "supplementaries:bamboo_spikes", weight: 2 }
+		{
+			item: {
+				id: "inventorypets:pet_crafting_table"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "inventorypets:pet_ender_chest"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "inventorypets:pet_furnace"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "bountifulbaubles:broken_heart" }
+		{
+			item: {
+				id: "supplementaries:wrench"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			weight: 3
+		}
+		{
+			item: {
+				id: "supplementaries:flute"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			weight: 3
+		}
+		{ item: "create:bar_of_chocolate", weight: 4 }
+		{ item: "create:sweet_roll", weight: 4 }
+		{ item: "create:chocolate_glazed_berries", weight: 4 }
+		{ item: "create:honeyed_apple", weight: 4 }
+		{ item: "create:builders_tea", weight: 2 }
+		{ item: "minecraft:golden_apple", weight: 2 }
+		{ item: "minecraft:enchanted_golden_apple" }
+		{
+			item: {
+				id: "grapplemod:grapplinghook"
+				Count: 1b
+				tag: {
+					Damage: 0
+					custom: {
+						motor: 1b
+						smartmotor: 1b
+						throwspeed: 3.5d
+						maxlen: 60
+						playermovementmult: 2
+					}
+				}
+			}
+		}
+		{ item: "tconstruct:jeweled_apple", weight: 2 }
+		{ item: "botanypots:botany_pot" }
+		{ item: "gofish:oil_cake", weight: 2 }
+		{ item: "gofish:essence_of_fish", weight: 2 }
+		{ item: "gofish:scoop_rice_with_sweet_wing", weight: 2 }
+		{ item: "create:andesite_alloy", count: 8, weight: 2 }
+		{ item: "emendatusenigmatica:copper_ingot", count: 8, weight: 2 }
+		{ item: "emendatusenigmatica:zinc_ingot", count: 8, weight: 2 }
+		{ item: "emendatusenigmatica:tin_ingot", count: 8 }
+		{ item: "emendatusenigmatica:silver_ingot", count: 8 }
+		{ item: "emendatusenigmatica:nickel_ingot", count: 8 }
+		{ item: "kubejs:data", count: 16, weight: 2 }
+		{ item: "kubejs:data", count: 24, weight: 2 }
+		{ item: "scalinghealth:heart_crystal" }
+		{ item: "scalinghealth:power_crystal" }
+		{ item: "survivaloverhaul:heart_fruit" }
+		{
+			item: {
+				id: "ftbquests:lootcrate"
+				Count: 1b
+				tag: {
+					type: "basic"
+				}
+			}
+			weight: 3
+		}
+		{
+			item: {
+				id: "ftbquests:lootcrate"
+				Count: 1b
+				tag: {
+					type: "advanced"
+				}
+			}
+		}
+		{ item: "expandedstorage:iron_chest", weight: 3 }
+		{ item: "expandedstorage:gold_chest", weight: 3 }
+		{
+			item: {
+				id: "ftbquests:lootcrate"
+				Count: 1b
+				tag: {
+					type: "sponsors_items"
+				}
+			}
+			weight: 2
+		}
+		{
+			item: {
+				id: "ftbquests:lootcrate"
+				Count: 1b
+				tag: {
+					type: "guns"
+				}
+			}
+		}
+		{ item: "krate:krate_big", weight: 3 }
+		{ item: "storagedrawers:iron_storage_upgrade", weight: 2 }
+		{
+			item: {
+				id: "minecraft:player_head"
+				Count: 1b
+				tag: {
+					SkullOwner: {
+						Id: [I;
+							807872109
+							-50642177
+							-1128450341
+							2001042160
+						]
+						Properties: {
+							textures: [{
+								Value: "ewogICJ0aW1lc3RhbXAiIDogMTY3Nzg5OTc1ODQ0NCwKICAicHJvZmlsZUlkIiA6ICIzMDI3MjY2ZGZjZmI0MmZmYmNiZDM2ZGI3NzQ1N2FmMCIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb2Zpc2hmbHkyMzMzMzMiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzI3OTg3YWEwZGZmZjk3NGQ5MTI3MzQxMmY3ZTAxNTlhMzUwNzg0OGRjMGRmMDdlYjMyYzYyMTBiMzllY2IxZCIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9"
+								Signature: "fLhoWqRQcRPH/PaVudTkxgUxv2kiC9Cz6+JMgb1MwYbKo8eN/8XwE9ZxX4G8kMa3YDuVDF+xCFVlRQmH6VEIaBu6J+BC02+IijOtZZdH9vgDW/YQM6EFS/7OlZ1QdkCemhddbKQaJwWyZQm1W5za0qVG2PniP2gRk8iVqs6wHBnpIBkL8ys5xNkgumfxe+oA2JMoBqEINSmSZC+6dVpZIjWog8YDLcG8eZdD3/GWo6KnqvdzqYKY2yRncuYzNqP3sOW9ctY73ww64vS/LqmxhVoy7tgBE46oaB4dcK9RVy0Rmj4gS3aZySOMnZDPO6Xmv4pXdDgdPqYwgtv/oLGggrxOKok1k/oko6c3Hm5g99aCigyh6jPUukAolzlHw4uihrqCxbVDEPfBzvJx/+QKC7qAxg3EuDFj0jE7Yls+zIdD8UAsK/wejNCVpQ1227mpzQC0W84vaQ4gptsme4D4VELAY7Asc8Gn0Tishq+B5YR2RcCO/vskcV9y6NYzOk3YxugziDb2dNBc6htuG/GqPkyJN9SsBJhAmV3FdkV8i4Padnpr7zhHg5RdJX9zXNLoNrtgZp9j52FCyPxJabP4ATqaSh4kERbclmbGVD2gsyeYXtAe4lt5i/cx4HNeq9iietUmdKfsecDGn02A3cTRSOEeeYQ6FO6iGxXapnox2V8="
+							}]
+						}
+						Name: "Gofishfly233333"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				id: "bountifulbaubles:gloves_digging_iron"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "bountifulbaubles:gloves_dexterity" }
+		{ item: "minecraft:diamond", count: 4, weight: 2 }
+		{ item: "botania:mana_diamond", count: 8 }
+		{ item: "botania:dragonstone", count: 4 }
+		{
+			item: {
+				id: "botania:mana_bottle"
+				Count: 1b
+				tag: {
+					randomSeed: 3564412692933449440L
+					swigsLeft: 5
+				}
+			}
+			weight: 2
+		}
+		{ item: "bountifulbaubles:bezoar" }
+		{ item: "gofish:soup_can", count: 8, weight: 4 }
+		{ item: "gofish:fruit_can", count: 8, weight: 4 }
+		{ item: "bountifulbaubles:amulet_sin_gluttony", weight: 2 }
+		{ item: "extrabotany:rewardbagb", count: 4, weight: 2 }
+		{ item: "miniutilities:experience_pearl_1x", weight: 2 }
+		{ item: "sophisticatedbackpacks:gold_backpack" }
+		{
+			xp: 200
+			type: "xp"
+			weight: 3
+		}
+	]
+	loot_crate: {
+		drops: {
+			boss: 0
+			passive: 0
+			monster: 0
+		}
+		color: 9275903
+		item_name: "稀有奖励箱"
+		string_id: "rare"
+	}
+}

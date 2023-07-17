@@ -1,0 +1,1351 @@
+{
+	id: "11AEC3D6B398F504"
+	group: "42669CA32286EFD8"
+	order_index: 4
+	filename: "32_2"
+	title: "支线-4.5 血魔法"
+	icon: "bloodmagic:altar"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: -11.0d
+		y: -2.5d
+		width: 1.0d
+		height: 1.0d
+		rotation: 0.0d
+		image: "kubejs:textures/quest/start.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			title: "血魔法之始"
+			icon: "bloodmagic:altar"
+			x: -9.5d
+			y: -2.5d
+			shape: "rsquare"
+			description: ["一把用来自残的匕首！我真是疯了，和那些科学家一样。不过我的血似乎能改变石头，我还得做一些东西来证明一下。同时我需要更多的血，不知道是不是一定要我的，那可真疼"]
+			dependencies: ["127FE1CA85D87A9A"]
+			hide: true
+			hide_text_until_complete: true
+			size: 2.0d
+			id: "37DE46DFD7D893E5"
+			tasks: [
+				{
+					id: "6C96134AA5AD4AA3"
+					type: "item"
+					item: "bloodmagic:altar"
+				}
+				{
+					id: "258607E916BFBFB3"
+					type: "item"
+					item: {
+						id: "bloodmagic:sacrificialdagger"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "077085233FADD676"
+					type: "gamestage"
+					stage: "blood_wizard"
+				}
+			]
+			rewards: [
+				{
+					id: "295B600B37FD8B1C"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "115A2882937732C7"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: -4.0d
+			dependencies: ["37DE46DFD7D893E5"]
+			id: "1518F375B10A5B28"
+			tasks: [{
+				id: "309685B938FBA996"
+				type: "item"
+				item: "bloodmagic:soulsnare"
+			}]
+			rewards: [{
+				id: "010EDC97D80B0F70"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			x: -8.0d
+			y: -2.5d
+			subtitle: "多读书"
+			description: ["能在搭建祭坛时帮上大忙"]
+			dependencies: ["37DE46DFD7D893E5"]
+			id: "03BA02AD1BF04F2D"
+			tasks: [{
+				id: "263744C91C639B23"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "bloodmagic:guide"
+					}
+				}
+			}]
+			rewards: [{
+				id: "201ACC9B839EA6D5"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			x: -6.5d
+			y: -4.0d
+			subtitle: "可投掷光源"
+			dependencies: ["69803A8E41D09013"]
+			id: "3194BF66503D4FD0"
+			tasks: [{
+				id: "6197D72DBAE35FE6"
+				type: "item"
+				item: {
+					id: "bloodmagic:bloodlightsigil"
+					Count: 1b
+					tag: {
+						binding: {
+							name: "derderhaoyue233"
+							id: [I;
+								377173986
+								1719548814
+								-1289361883
+								1166878008
+							]
+						}
+						ticksRemaining: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "36B9890964FB21C0"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			title: "用法阵制作"
+			x: -6.5d
+			y: -2.5d
+			dependencies: ["1461B4FBEF2B9417"]
+			id: "69803A8E41D09013"
+			tasks: [
+				{
+					id: "483EAF9DF2349CA7"
+					type: "item"
+					item: {
+						id: "bloodmagic:arcaneashes"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3A894080CB043CA7"
+					type: "item"
+					item: "bloodmagic:reagentbinding"
+				}
+			]
+			rewards: [{
+				id: "08989BAE96B21851"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			x: -6.5d
+			y: -1.0d
+			shape: "rsquare"
+			subtitle: "迟来的多倍矿"
+			dependencies: ["50B53A1A8A7D4999"]
+			id: "1461B4FBEF2B9417"
+			tasks: [{
+				id: "063B16D51D880EB2"
+				type: "item"
+				item: "bloodmagic:alchemytable"
+			}]
+			rewards: [{
+				id: "5507C20DCB2446FC"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			x: -6.5d
+			y: 0.5d
+			subtitle: "一级祭坛"
+			dependencies: ["37DE46DFD7D893E5"]
+			id: "50B53A1A8A7D4999"
+			tasks: [{
+				id: "55EDB5AD501B55EC"
+				type: "item"
+				item: "bloodmagic:blankslate"
+			}]
+			rewards: [{
+				id: "5E387F33682C100F"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			x: -8.0d
+			y: 0.5d
+			shape: "rsquare"
+			subtitle: "直接抽干"
+			description: ["搭建这个祭坛可以增加牺牲自我带来的LP值"]
+			dependencies: ["0C6862E69BEE5B1A"]
+			id: "60A19A11B468523A"
+			tasks: [{
+				id: "26E4D5CDC5C992F9"
+				type: "item"
+				item: "bloodmagic:incensealtar"
+			}]
+			rewards: [{
+				id: "65C9513CFC7B128A"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			x: -9.5d
+			y: 0.5d
+			subtitle: "这不是一次性物品"
+			dependencies: ["37DE46DFD7D893E5"]
+			id: "0C6862E69BEE5B1A"
+			tasks: [{
+				id: "26E0F5BA021DCA4F"
+				type: "item"
+				item: "bloodmagic:weakbloodorb"
+			}]
+			rewards: [{
+				id: "606AFC4C02FD0854"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			x: -8.0d
+			y: 2.0d
+			dependencies: ["4AF0194C4B573C4C"]
+			id: "3E1E9220A62DFDEF"
+			tasks: [{
+				id: "1ABC51E4F661B077"
+				type: "item"
+				item: "bloodmagic:apprenticebloodorb"
+			}]
+			rewards: [{
+				id: "6ECFE784743C05AB"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			x: -6.5d
+			y: 2.0d
+			subtitle: "二级祭坛"
+			description: ["注：2阶祭坛的八个符文中位于四角处的无法提供其本应拥有的任何增益，但仍需摆放"]
+			dependencies: ["50B53A1A8A7D4999"]
+			id: "4AF0194C4B573C4C"
+			tasks: [{
+				id: "1E75CE434F6DA08F"
+				type: "item"
+				item: "bloodmagic:reinforcedslate"
+			}]
+			rewards: [{
+				id: "51855F588F292339"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			x: -6.5d
+			y: 3.5d
+			subtitle: "三级祭坛"
+			dependencies: ["4AF0194C4B573C4C"]
+			id: "43458E86B8148EC2"
+			tasks: [{
+				id: "7C70820335B05C8A"
+				type: "item"
+				item: "bloodmagic:infusedslate"
+			}]
+			rewards: [{
+				id: "74F45CB64A2E9DAA"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			x: -8.0d
+			y: 3.5d
+			subtitle: "很关键，是解锁4级祭坛的必经之路"
+			dependencies: ["43458E86B8148EC2"]
+			id: "7C8806F64AB13A0D"
+			tasks: [{
+				id: "0AF0F0A63782063D"
+				type: "item"
+				item: "bloodmagic:magicianbloodorb"
+			}]
+			rewards: [{
+				id: "17B482B311B1B1BE"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			x: -8.0d
+			y: 5.0d
+			description: [
+				"想要执行隐域之缘仪式必须向一个法师/导师气血宝珠内注入80000LP"
+				"将宝珠放在有LP值的血之祭坛上即可充能"
+			]
+			dependencies: ["7C8806F64AB13A0D"]
+			id: "7B1EAC773CA42505"
+			tasks: [{
+				id: "5F685425893CD1DD"
+				type: "checkmark"
+				title: "将LP注入到气血宝石中"
+			}]
+			rewards: [
+				{
+					id: "24E8256179364679"
+					type: "item"
+					item: {
+						id: "bloodmagic:divinationsigil"
+						Count: 1b
+						tag: {
+							binding: {
+								name: "derderhaoyue233"
+								id: [I;
+									377173986
+									1719548814
+									-1289361883
+									1166878008
+								]
+							}
+						}
+					}
+				}
+				{
+					id: "66DC999472E484F5"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "基础元素铭文工具"
+			x: -5.0d
+			y: 3.5d
+			dependencies: ["43458E86B8148EC2"]
+			id: "65E559F06537FA19"
+			tasks: [
+				{
+					id: "4FA07BBC29B015F8"
+					type: "item"
+					item: {
+						id: "bloodmagic:airscribetool"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "58CB63C40695ED63"
+					type: "item"
+					item: {
+						id: "bloodmagic:firescribetool"
+						Count: 1b
+						tag: {
+							Damage: 0
+							AS_Amulet_Holder: [I;
+								377173986
+								1719548814
+								-1289361883
+								1166878008
+							]
+						}
+					}
+				}
+				{
+					id: "37153C70A78810A4"
+					type: "item"
+					item: {
+						id: "bloodmagic:waterscribetool"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1E6C1D5DA65A5829"
+					type: "item"
+					item: {
+						id: "bloodmagic:earthscribetool"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "5EC6A4ACE692648B"
+					type: "item"
+					item: "bloodmagic:ritualstone"
+					count: 64
+				}
+				{
+					id: "7CD70842E7417F0E"
+					type: "item"
+					item: "bloodmagic:masterritualstone"
+					count: 2
+				}
+				{
+					id: "75D01ABF182640EC"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "基础仪式"
+			x: -3.5d
+			y: 3.5d
+			subtitle: "现在，您可以进行基础仪式了"
+			description: [
+				"虚弱激活水晶可以激活所有仪式"
+				"在血染知书中可以看到各个仪式所需要的LP总量"
+			]
+			dependencies: ["65E559F06537FA19"]
+			id: "035BB7C1D2484A07"
+			tasks: [
+				{
+					id: "55A948013504C71A"
+					type: "item"
+					item: {
+						id: "bloodmagic:ritualdiviner"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "48A241D90442E5CF"
+					type: "item"
+					item: "bloodmagic:activationcrystalweak"
+				}
+			]
+			rewards: [
+				{
+					id: "55CFA5690FC04F2D"
+					type: "item"
+					item: "bloodmagic:activationcrystalweak"
+				}
+				{
+					id: "264A11D9700FAD00"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "隐域之缘仪式"
+			x: -3.5d
+			y: 5.0d
+			description: [
+				"使用激活水晶右键主仪式不久后会生成一个传送门，这是通往恶魔领域的指路石"
+				""
+				"这需要从您的灵魂网格中抽取约80000LP"
+			]
+			dependencies: [
+				"035BB7C1D2484A07"
+				"7B1EAC773CA42505"
+			]
+			id: "69D95607C668F088"
+			tasks: [
+				{
+					id: "4B7F01442CB4FDD0"
+					type: "item"
+					item: "bloodmagic:masterritualstone"
+				}
+				{
+					id: "1C692E290C28693A"
+					type: "item"
+					item: "bloodmagic:ritualstone"
+					count: 36L
+				}
+			]
+			rewards: [
+				{
+					id: "0F806EB1A8BA3A61"
+					type: "item"
+					item: "bloodmagic:simplekey"
+					count: 4
+				}
+				{
+					id: "14755870BEC8CD2C"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+				{
+					id: "02414F2B920AB311"
+					type: "item"
+					item: {
+						id: "haoyuezeughaus:rong_armor_helmet"
+						Count: 1b
+						tag: {
+							Damage: 1076
+							AS_Amulet_Holder: [I;
+								1905826405
+								908017989
+								-1617945607
+								308989581
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "收集血命果"
+			x: -3.5d
+			y: 6.5d
+			description: [
+				"血命果可以种植在耕地上，当它生长时上方有动物的话会吸收那个动物的血，然后成熟后会结出饱满血命果"
+				"每次生长上方都必须有动物其才能长成饱满血命果"
+				"这可能需要很长时间"
+			]
+			dependencies: ["69D95607C668F088"]
+			id: "574ED1F38811BB6B"
+			tasks: [
+				{
+					id: "6CF516E781004A2D"
+					type: "item"
+					item: "bloodmagic:weak_tau"
+				}
+				{
+					id: "39CF9FDE5CDA39ED"
+					type: "item"
+					item: "bloodmagic:strong_tau"
+				}
+			]
+			rewards: [
+				{
+					id: "6C8B98129C5BF640"
+					type: "item"
+					item: "bloodmagic:strong_tau"
+					count: 4
+				}
+				{
+					id: "1E3ABC2AE0595594"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "处理血命果"
+			x: -5.0d
+			y: 6.5d
+			description: ["这至少需要普通地狱魂石"]
+			dependencies: ["574ED1F38811BB6B"]
+			id: "69E12A06953A0AB9"
+			tasks: [
+				{
+					id: "372968F634BC4430"
+					type: "item"
+					item: "bloodmagic:alchemicalreactionchamber"
+				}
+				{
+					id: "6305347AD389B8C4"
+					type: "item"
+					item: {
+						id: "bloodmagic:sanguinereverter"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "51E02636C7D54875"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			x: -6.5d
+			y: 6.5d
+			subtitle: "四级祭坛"
+			dependencies: ["69E12A06953A0AB9"]
+			id: "3AA577B92E53D5E3"
+			tasks: [{
+				id: "27904DDE47678028"
+				type: "item"
+				item: "bloodmagic:demonslate"
+			}]
+			rewards: [{
+				id: "4B3C45F5823208C9"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
+		}
+		{
+			x: -6.5d
+			y: 8.0d
+			dependencies: ["3AA577B92E53D5E3"]
+			id: "6C3EB23BEF5E2FB8"
+			tasks: [{
+				id: "5F5B9AC087E18044"
+				type: "item"
+				item: {
+					id: "bloodmagic:duskscribetool"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "684BCB6D13F00657"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			x: -5.0d
+			y: 8.0d
+			description: ["我们可以进行更高级的仪式了"]
+			dependencies: ["6C3EB23BEF5E2FB8"]
+			id: "234B9CD965CC00F4"
+			tasks: [{
+				id: "612649B77C4114F9"
+				type: "item"
+				item: {
+					id: "bloodmagic:ritualdivinerdusk"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "50E644188D8ECC7B"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			x: -8.0d
+			y: 6.5d
+			dependencies: ["3AA577B92E53D5E3"]
+			dependency_requirement: "one_completed"
+			id: "0C644D723530BAF2"
+			tasks: [{
+				id: "508007A5ACB84E31"
+				type: "item"
+				item: "bloodmagic:masterbloodorb"
+			}]
+			rewards: [{
+				id: "2E7845C470E4489D"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
+		}
+		{
+			title: "感知工具"
+			x: -3.5d
+			y: 2.0d
+			description: [
+				"可以在铁砧上使用晶化意志进行修复。当玩家一次获得了较大数量的恶魔意志或更换了背包中恶魔意志的种类，玩家需要手持并按下右键更新感知工具的属性。感知工具会根据持有者所拥有的的恶魔意志种类来改变自身的伤害和攻速"
+				"使用感知工具击杀敌对生物后将掉落恶魔意志，不同的模式将掉落不同种类的恶魔意志。"
+				"——引用于MCMOD百科"
+				"https://www.mcmod.cn/item/551833.html"
+			]
+			dependencies: ["186A91F07D090193"]
+			id: "03FBAE8CFE9A5F47"
+			tasks: [
+				{
+					id: "0D96850990C64B18"
+					type: "item"
+					item: {
+						id: "bloodmagic:soulaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6B8ADA9D78549BD0"
+					type: "item"
+					item: {
+						id: "bloodmagic:soulpickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "23F6A7D808AEE875"
+					type: "item"
+					item: {
+						id: "bloodmagic:soulshovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3A72FA543C33F48A"
+					type: "item"
+					item: {
+						id: "bloodmagic:soulscythe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "3191F2B3C18E5F89"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.5d
+			dependencies: ["777B04FC2D8D9449"]
+			id: "186A91F07D090193"
+			tasks: [{
+				id: "23B26AD1AAF24755"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgempetty"
+					Count: 1b
+					tag: {
+						souls: 0.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "0F6D0007858A30F3"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.5d
+			description: [
+				"感知之剑会根据持有者所拥有的的恶魔意志种类来改变自身的伤害和攻速，以下是5种意志的感知之剑所能达到的状态："
+				"意志类型   伤害   攻速   额外效果"
+				"原生          10点    1.6         无"
+				"腐蚀       10点      1.6   给予敌人凋零2效果8秒"
+				"破坏     12点   1   无"
+				"复仇     8.5点   2.5   手持时+0.4的速度"
+				"坚毅    8.5点   1.6    击杀生物后，获得39秒伤害吸收，但是只会提供1点生命值。当玩家在39秒内再次击杀生物后，会重置时间，且获得2点生命值。最高可以获得10点生命值。"
+				"——引用于MCMOD百科"
+				"https://www.mcmod.cn/item/545647.html"
+			]
+			dependencies: ["186A91F07D090193"]
+			id: "002B8C8F3FA76276"
+			tasks: [{
+				id: "6E6F1760F7CECAF3"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulsword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "5413B85CDFDBD41D"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			x: -5.0d
+			y: 0.5d
+			shape: "rsquare"
+			description: ["一定要在jei中看好最少需要多少Will(意志）才能合成，免得出现无法合成的假象"]
+			dependencies: ["50B53A1A8A7D4999"]
+			id: "777B04FC2D8D9449"
+			tasks: [{
+				id: "6043A569F20EC6BE"
+				type: "item"
+				item: "bloodmagic:soulforge"
+			}]
+			rewards: [{
+				id: "1226D4883A0627B0"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			title: "爆炸的艺术"
+			x: -5.0d
+			y: -1.0d
+			subtitle: "为什么炸不出派大星状的云"
+			description: [
+				"好运：时运（与柔触冲突）"
+				"柔触：精准采集"
+				"高温工具：自动冶炼"
+			]
+			dependencies: [
+				"777B04FC2D8D9449"
+				"1461B4FBEF2B9417"
+			]
+			id: "2B13810295AF1065"
+			tasks: [
+				{
+					id: "1BD548C304E762A2"
+					type: "item"
+					title: "固形炸药(Shaped Charge)"
+					item: "bloodmagic:shaped_charge"
+				}
+				{
+					id: "00701A7FB764FF24"
+					type: "item"
+					title: "采伐炸药 (Deforester Charge)"
+					item: "bloodmagic:deforester_charge"
+				}
+				{
+					id: "769D1084BAF3FCB5"
+					type: "item"
+					title: "真菌炸药 (Fungal Charge)"
+					item: "bloodmagic:fungal_charge"
+				}
+				{
+					id: "68C4E927231A85FC"
+					type: "item"
+					title: "可控炸药 (Controlled Charge)"
+					item: "bloodmagic:veinmine_charge"
+				}
+			]
+			rewards: [{
+				id: "22E9856E0ABB879C"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: -1.0d
+			dependencies: ["186A91F07D090193"]
+			id: "547AB0C5CD94A2CD"
+			tasks: [{
+				id: "1DDB0B3942B9469E"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgemlesser"
+					Count: 1b
+					tag: {
+						souls: 0.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "4E32457F2998FF4E"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: -2.5d
+			dependencies: ["547AB0C5CD94A2CD"]
+			id: "0BBD8F6EBC50CC69"
+			tasks: [{
+				id: "20795797BC8869D6"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgemcommon"
+					Count: 1b
+					tag: {
+						souls: 0.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "616F4BCFDD6FFA5F"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			title: "束灵套"
+			x: -5.0d
+			y: -2.5d
+			description: ["可以加强"]
+			dependencies: ["69803A8E41D09013"]
+			id: "13BA66C4D87DE01E"
+			tasks: [
+				{
+					id: "69A533D37369542C"
+					type: "item"
+					item: {
+						id: "bloodmagic:livinghelmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2016C95B5A18C360"
+					type: "item"
+					item: {
+						id: "bloodmagic:livingplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+							livingStats: {
+								maxPoints: 100
+								upgrades: [
+									{
+										exp: 37.0d
+										key: "bloodmagic:jump"
+									}
+									{
+										exp: 4.0d
+										key: "bloodmagic:digging"
+									}
+									{
+										exp: 110.23959574962402d
+										key: "bloodmagic:speed"
+									}
+								]
+							}
+						}
+					}
+				}
+				{
+					id: "59F88025E6B433C0"
+					type: "item"
+					item: {
+						id: "bloodmagic:livingleggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "785C969D503645E9"
+					type: "item"
+					item: {
+						id: "bloodmagic:livingboots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "7FC77E702397593C"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: -4.0d
+			dependencies: ["0BBD8F6EBC50CC69"]
+			id: "0BF2DBEE54F4E3D2"
+			tasks: [{
+				id: "69BBC19120B3608C"
+				type: "item"
+				item: {
+					id: "bloodmagic:soulgemgreater"
+					Count: 1b
+					tag: {
+						souls: 0.0d
+					}
+				}
+			}]
+			rewards: [{
+				id: "62811203F3426E9A"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
+		}
+		{
+			x: -5.0d
+			y: -4.0d
+			description: [
+				"一套随着其穿戴者成长而成长的盔甲，随着穿戴者经历事件的增多会逐渐获得一些能力。"
+				"初始状态下拥有100点升级点数，最高可以达到400点。"
+				"坚韧手掌：最高等级X，提升你用牺牲匕首获得的lp。使用献祭匕首时升级。"
+				"迅捷双足：最高等级X，提升你的移动速度，高等级还能获得生命值提升、速度buff、再生buff（移动时）。移动时升级。"
+				"坚韧：最高等级X，提升你的近战伤害抗性。受到近战伤害时升级。"
+				"柔和落叶：最高等级V，减免你的摔落伤害。受到摔落伤害时升级。"
+				"壮实双腿：最高等级X，提升你的跳跃高度。跳跃时升级。"
+				"冲撞击打：最高等级V，提升你在跑步时的攻击伤害和击退。跑步时攻击升级。"
+				"强劲身躯：最高等级V，让穿戴者获得击退抗性和生命恢复。（高等级）吃东西时升级。"
+				"健壮体质：最高等级X，提升你的最大生命值。受伤后升级(无论是什么伤害）"
+			]
+			dependencies: ["13BA66C4D87DE01E"]
+			id: "39B834960E6B3257"
+			tasks: [{
+				id: "69EE2BB6C4418229"
+				type: "checkmark"
+				title: "束灵套升级"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -5.5d
+			description: [
+				"矮人之力：最高等级X，获得速度效果，并提升你的挖掘速度。挖掘时升级。"
+				"毒素抗性：最高等级V，消除小于你强化等级的中毒效果。受到中毒伤害后升级。"
+				"箭芒消涣：最高等级X，提升你对箭矢伤害的保护。被箭矢射中后升级。"
+				"经验老到：最高等级X，提升怪物掉落的经验提升百分之150。获得经验后升级。"
+				"焰火之礼：最高等级V，受到火焰伤害时获得一段时间的抗火，有冷却。被火焰伤害到后升级。"
+				"鞘翅：最高等级I，让护甲获得鞘翅的能力。其升级手册在炼金术桌中制作获得。"
+				"Quenched（淬火）：最高等级I，降低你束灵盔甲100点的升级点数消耗，相当于将升级点数提升至200。（与束灵进化可叠加至400）获得方式未知。手册都没写"
+			]
+			dependencies: ["39B834960E6B3257"]
+			id: "02B2CEFA020BB60A"
+			tasks: [{
+				id: "46AFD45968410168"
+				type: "checkmark"
+				title: "束灵套升级II"
+			}]
+			rewards: [{
+				id: "323FDCA61979AB5E"
+				type: "item"
+				item: {
+					id: "bloodmagic:upgradetome"
+					Count: 1b
+					tag: {
+						livingStats: {
+							maxPoints: 0
+							upgrades: [{
+								exp: 100.0d
+								key: "bloodmagic:quenched"
+							}]
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "净灵之音"
+			x: -6.0d
+			y: -7.0d
+			description: [
+				"移除束灵套装上所有的升级和降级，并退还给玩家对应的升级或降级手册。这些手册还能再次用于玩家的束灵套装。激活消耗：25,000LP，基础使用消耗：0LP。"
+				"这个仪式只能由仪式推测杖[薄暮]自动搭建"
+			]
+			dependencies: ["02B2CEFA020BB60A"]
+			id: "25AA2ABF7CE4C5AB"
+			tasks: [{
+				id: "7389E1FA00F3A86D"
+				type: "checkmark"
+				title: "束灵升级III"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -7.0d
+			description: ["用于将玩家的束灵套装升级点数提升到300点。激活消耗：50,000LP，基础使用消耗：0LP。使用时玩家需要站在主仪式石上，并且穿戴束灵套装并激活仪式。"]
+			dependencies: ["02B2CEFA020BB60A"]
+			id: "57166A07554A28F3"
+			tasks: [{
+				id: "3787DF28600AA142"
+				type: "checkmark"
+				title: "束灵进化"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -7.0d
+			description: [
+				"由53个仪式石搭建。激活消耗：10000LP，基础使用消耗：10LP。用于为束灵盔甲添加降级并“提供”一定的升级点数（实际上是减少已经消耗的点数，如已使用100/100时添加1级Battle Hungry变为已使用90/100）。使用时，在仪式绑定的箱子内放入对应降级所需的物品（如Battle Hungry需放入腐肉），并放入提供点数的物品，支持降级手册、升级手册、Synthetic Upgrade Point，同时存在时消耗顺序为降级手册、升级手册、Synthetic Upgrade Point。箱子内放好所需物品后身着需要添加降级的全套束灵盔甲站在主仪式石上，使用虚弱气血碎片激活，成功时会有一道闪电劈下。注意：在佩戴Living Armour Training Bracelet时，若其中限制了仪式将要添加的降级，则仪式无法进行。"
+				"降级效果详见https://www.mcmod.cn/item/694082.html"
+			]
+			dependencies: ["02B2CEFA020BB60A"]
+			id: "61A10B664706E67B"
+			tasks: [{
+				id: "0DAC256C4AF69A6B"
+				type: "checkmark"
+				title: "Penance of the Leaden Soul"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -8.5d
+			description: [
+				"以上是作者搜集到的资料，随着血魔法的更新这些资料可能有的已经过时仅作参考，具体效果以血染知书内描述为准"
+				"——引用于MCMOD百科"
+				"https://www.mcmod.cn/class/5501.html"
+			]
+			dependencies: [
+				"25AA2ABF7CE4C5AB"
+				"57166A07554A28F3"
+				"61A10B664706E67B"
+			]
+			id: "68341A967102A78E"
+			tasks: [{
+				id: "0D0E3BF7047787BE"
+				type: "checkmark"
+				title: "总结"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 8.0d
+			subtitle: "五级祭坛"
+			description: ["这大概就是血魔法的终点了吧"]
+			dependencies: ["3AA577B92E53D5E3"]
+			id: "6C4F64558E02CD76"
+			tasks: [{
+				id: "09CA052AFDD34219"
+				type: "item"
+				item: "bloodmagic:etherealslate"
+			}]
+			rewards: [
+				{
+					id: "608A265CD9E7D056"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+				}
+				{
+					id: "1D5764AEC025A161"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+				}
+			]
+		}
+	]
+}

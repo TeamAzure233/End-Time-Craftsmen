@@ -1,0 +1,54 @@
+{
+	"mod": "mutantbeasts",
+	"spawn": {
+		// Array of all categories this mod has spawns for
+		"categories": {
+			"creature": {
+				// Set the limit per mob within this category
+				"spawns": {
+					"spider_pig": {
+						// Do not edit this name
+						"name": "spider_pig",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 8
+					}
+				}
+			},
+			"monster": {
+				// Set the limit per mob within this category
+				"spawns": {
+					"mutant_enderman": {
+						// Do not edit this name
+						"name": "mutant_enderman",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"mutant_creeper": {
+						// Do not edit this name
+						"name": "mutant_creeper",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"mutant_skeleton": {
+						// Do not edit this name
+						"name": "mutant_skeleton",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"mutant_zombie": {
+						// Do not edit this name
+						"name": "mutant_zombie",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					},
+					"endersoul_clone": {
+						// Do not edit this name
+						"name": "endersoul_clone",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 60
+					}
+				}
+			}
+		}
+	}
+}

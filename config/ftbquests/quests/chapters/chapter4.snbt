@@ -1,0 +1,4199 @@
+{
+	id: "0B7CD03CA6B3510A"
+	group: "0F94B414230112AC"
+	order_index: 3
+	filename: "chapter4"
+	title: "第三章 交叉路口 魔法线"
+	icon: "botania:runic_altar"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: -7.5d
+		y: 0.0d
+		width: 1.0d
+		height: 1.0d
+		rotation: 0.0d
+		image: "kubejs:textures/quest/start.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			x: -4.5d
+			y: -1.0d
+			subtitle: "种点花"
+			dependencies: ["71F3E025A6D94E4B"]
+			hide: true
+			optional: true
+			id: "2EBC84EB52975187"
+			tasks: [{
+				id: "5B986DA87B842740"
+				type: "item"
+				item: "botania:fertilizer"
+			}]
+			rewards: [
+				{
+					id: "363E93D9BC7238F3"
+					type: "item"
+					item: "botania:fertilizer"
+					count: 16
+				}
+				{
+					id: "7E77DB136DF454D8"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: 0.0d
+			subtitle: "花~药~台"
+			dependencies: ["71F3E025A6D94E4B"]
+			id: "0BCFE4BF432A14F7"
+			tasks: [{
+				id: "339B283857F2DAE5"
+				type: "item"
+				item: "botania:apothecary_default"
+			}]
+			rewards: [
+				{
+					id: "1B99D5F3AA9EA8B4"
+					type: "item"
+					item: "minecraft:water_bucket"
+				}
+				{
+					id: "12B89D1CB6E1CD98"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			dependencies: ["0BCFE4BF432A14F7"]
+			id: "09ADB3BBE30BC00A"
+			tasks: [{
+				id: "7652EADF54454D68"
+				type: "item"
+				item: "botania:pure_daisy"
+			}]
+			rewards: [{
+				id: "1318FC8198FE577E"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			title: "活化"
+			x: -1.0d
+			y: 0.0d
+			dependencies: ["09ADB3BBE30BC00A"]
+			id: "4EDE3C1D68F394FE"
+			tasks: [
+				{
+					id: "492F22AA4F21681A"
+					type: "item"
+					item: "botania:livingrock"
+				}
+				{
+					id: "2D6538E5080226D0"
+					type: "item"
+					item: "botania:livingwood"
+				}
+			]
+			rewards: [
+				{
+					id: "654F4AA125934C1B"
+					type: "item"
+					item: "botania:livingwood"
+					count: 16
+				}
+				{
+					id: "0C65E7858361E2BB"
+					type: "item"
+					item: "botania:livingrock"
+					count: 16
+				}
+				{
+					id: "4FDB13ECB5398F3D"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "产魔三件套"
+			icon: {
+				id: "botania:mana_bottle"
+				Count: 1b
+				tag: { }
+			}
+			x: 0.5d
+			y: 0.0d
+			dependencies: ["4EDE3C1D68F394FE"]
+			id: "0C6D0A8ABFA01E83"
+			tasks: [
+				{
+					id: "5650A41B879B6BE4"
+					type: "item"
+					item: "botania:mana_spreader"
+				}
+				{
+					id: "01EC99C3353CC7FE"
+					type: "item"
+					item: "botania:mana_pool"
+				}
+				{
+					id: "27BD7D6C884EDE73"
+					type: "item"
+					title: "Any #botania:generating_special_flowers"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "botania:generating_special_flowers"
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "053FE600B4CD6588"
+					type: "item"
+					item: {
+						id: "botania:twig_wand"
+						Count: 1b
+						tag: {
+							color1: 0
+							color2: 0
+						}
+					}
+				}
+				{
+					id: "136EB84D20A8AB07"
+					type: "item"
+					item: "minecraft:coal_block"
+					count: 16
+				}
+				{
+					id: "157C7EA94E7C09B0"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "彼方兰阵列产魔"
+			x: 2.0d
+			y: 1.5d
+			subtitle: "好能吃"
+			description: ["请使用多种食物交替投喂"]
+			dependencies: ["4A217741F5A31CEC"]
+			optional: true
+			id: "6BB4D11F100082A0"
+			tasks: [{
+				id: "424EBFDE2E6ADEFF"
+				type: "item"
+				item: "botania:gourmaryllis"
+				count: 3L
+			}]
+			rewards: [
+				{
+					id: "65D57546763F4914"
+					type: "item"
+					item: "botania:gourmaryllis"
+					count: 3
+				}
+				{
+					id: "30B6FC045B93A95E"
+					type: "item"
+					item: "minecraft:cooked_beef"
+					count: 64
+				}
+				{
+					id: "4E01714301586C1F"
+					type: "item"
+					item: "minecraft:cooked_porkchop"
+					count: 64
+				}
+				{
+					id: "68FC18AB7C785809"
+					type: "item"
+					item: "botania:obedience_stick"
+				}
+				{
+					id: "1A04BD9475A54DD4"
+					type: "item"
+					item: "botania:mana_pool"
+					count: 8
+				}
+				{
+					id: "6B8EC0235D16C996"
+					type: "item"
+					item: "botania:spark"
+					count: 8
+				}
+				{
+					id: "6BA5DF8CD39E02A6"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "制作符文"
+			x: 2.0d
+			y: 0.0d
+			shape: "rsquare"
+			dependencies: ["0C6D0A8ABFA01E83"]
+			id: "4A217741F5A31CEC"
+			tasks: [{
+				id: "5B22713AD0C72BC4"
+				type: "item"
+				item: "botania:runic_altar"
+			}]
+			rewards: [
+				{
+					id: "6BD05C8B62AFDD9B"
+					type: "item"
+					team_reward: false
+					item: "botania:mana_diamond"
+					count: 4
+				}
+				{
+					id: "0A30E50CD12E9F25"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "439582C1AC7C00CD"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "制作泰拉钢"
+			x: 3.5d
+			y: 0.0d
+			subtitle: "半池魔力"
+			dependencies: ["4A217741F5A31CEC"]
+			id: "5D1BA2AF09C9B421"
+			tasks: [
+				{
+					id: "6511B536FE610148"
+					type: "item"
+					item: "botania:terra_plate"
+				}
+				{
+					id: "6E02A53E308A84B5"
+					type: "item"
+					item: "botania:terrasteel_ingot"
+				}
+			]
+			rewards: [
+				{
+					id: "51ED1886614913AD"
+					type: "item"
+					team_reward: false
+					item: {
+						id: "botania:mana_tablet"
+						Count: 1b
+						tag: {
+							mana: 500000
+						}
+					}
+				}
+				{
+					id: "3953864EA4F7D429"
+					type: "item"
+					item: "botania:terrasteel_block"
+				}
+				{
+					id: "28C1FBE24019FE0E"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "战盖亚推荐"
+			x: 6.5d
+			y: -1.0d
+			dependencies: [
+				"236C944A61DBCDB1"
+				"5D1BA2AF09C9B421"
+			]
+			hide: true
+			optional: true
+			id: "07863801216FCE66"
+			tasks: [
+				{
+					id: "502EF74AB02E56DF"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "459F4CA1FE1AE5EA"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "467D88A3D8EE791A"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7B55A08664131D68"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1F02D7DF7E23BD9C"
+					type: "item"
+					item: {
+						id: "tconstruct:small_blade"
+						Count: 1b
+						tag: {
+							Material: "materialis:terrasteel"
+						}
+					}
+				}
+				{
+					id: "0C28B6AD5F24EF40"
+					type: "item"
+					item: {
+						id: "botania:crystal_bow"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "3A2AB4D4431F56A9"
+					type: "item"
+					team_reward: false
+					item: "minecraft:enchanted_golden_apple"
+					count: 4
+				}
+				{
+					id: "743526E9AC6DD04F"
+					type: "item"
+					team_reward: false
+					item: {
+						id: "botania:brew_flask"
+						Count: 1b
+						tag: {
+							brewKey: "botania:absorption"
+						}
+					}
+				}
+				{
+					id: "37118E6312B97713"
+					type: "item"
+					team_reward: false
+					item: {
+						id: "thermal:potion_infuser"
+						Count: 1b
+						tag: {
+							RepairCost: 1
+							Damage: 0
+							Mode: 0
+							Enchantments: [{
+								lvl: 4s
+								id: "cofh_core:holding"
+							}]
+							Fluid: {
+								Tag: {
+									Potion: "quark:long_resistance"
+								}
+								FluidName: "cofh_core:potion"
+								Amount: 12000
+							}
+						}
+					}
+				}
+				{
+					id: "26ECD5A424EB4E6F"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "开！"
+			icon: "botania:alfheim_portal"
+			x: 5.0d
+			y: 0.0d
+			subtitle: "打开精灵门"
+			dependencies: ["5D1BA2AF09C9B421"]
+			id: "236C944A61DBCDB1"
+			tasks: [
+				{
+					id: "37B76D26B926ABC2"
+					type: "advancement"
+					advancement: "botania:main/elf_portal_open"
+					criterion: ""
+				}
+				{
+					id: "1F14E4635289D09E"
+					type: "item"
+					item: "botania:natura_pylon"
+					count: 2L
+				}
+				{
+					id: "5CEEE1E974840DA4"
+					type: "item"
+					item: "botania:alfheim_portal"
+				}
+				{
+					id: "6A8D116CF8043D9A"
+					type: "item"
+					item: "botania:glimmering_livingwood"
+					count: 3L
+				}
+			]
+			rewards: [
+				{
+					id: "0F3D3E0E0AE34E02"
+					type: "advancement"
+					auto: "invisible"
+					advancement: "botania:main/elf_portal_open"
+					criterion: ""
+				}
+				{
+					id: "3835780602616DB7"
+					type: "item"
+					item: "botania:terrasteel_ingot"
+					count: 6
+				}
+				{
+					id: "0D29D3E7FFAE54C8"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "死亡与追寻"
+			icon: "botania:life_essence"
+			x: 8.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "击杀盖亚守护者"
+			description: [
+				"这将会增加你的游戏难度"
+				"尽量佩戴精巧饰品的气球，躲避地上的盖亚陷阱"
+			]
+			dependencies: ["48A5978A6E39885B"]
+			size: 1.5d
+			id: "4592F792A915D8F1"
+			tasks: [
+				{
+					id: "36B7E0BA02DA82ED"
+					type: "questsadditions:killnbt"
+					icon: "botania:gaia_head"
+					entity: "botania:doppleganger"
+					value: 1L
+					nbt: { }
+					checkItem: false
+				}
+				{
+					id: "42FC324A6D58ED59"
+					type: "item"
+					item: "botania:gaia_pylon"
+					count: 4L
+				}
+				{
+					id: "73CDAF4C4B746FD6"
+					type: "item"
+					item: "minecraft:beacon"
+				}
+			]
+			rewards: [
+				{
+					id: "6BC3D1768C6A066A"
+					type: "item"
+					team_reward: false
+					item: "botania:gaia_ingot"
+				}
+				{
+					id: "7AF4B1416927F5C5"
+					type: "custom"
+					title: "阶段"
+					auto: "enabled"
+				}
+				{
+					id: "2042ACE77BF4FD84"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "77F9BB93B38DBFC3"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "沉梦之人"
+			x: 6.5d
+			y: 1.5d
+			shape: "rsquare"
+			subtitle: "击杀盖亚II"
+			dependencies: ["4592F792A915D8F1"]
+			id: "08A90E07FB5FC67D"
+			tasks: [{
+				id: "17694405EAD77FFB"
+				type: "item"
+				item: {
+					id: "botania:dice"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "20CFD13368D90E14"
+					type: "advancement"
+					auto: "no_toast"
+					advancement: "botania:challenge/gaia_guardian_hardmode"
+					criterion: ""
+				}
+				{
+					id: "5158A56C69FFF19C"
+					type: "item"
+					team_reward: false
+					item: "botania:blacker_lotus"
+					count: 8
+				}
+				{
+					id: "424DF8C3DCEABF54"
+					type: "item"
+					team_reward: false
+					item: "botania:bauble_box"
+				}
+				{
+					id: "4505EF59BF397F60"
+					type: "item"
+					team_reward: false
+					item: "botania:life_essence"
+					count: 16
+				}
+				{
+					id: "160B8ECD72BAF1FC"
+					type: "item"
+					team_reward: false
+					item: "botania:water_rod"
+				}
+				{
+					id: "54F950052B91AD85"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: 1.0d
+			subtitle: "多读书"
+			dependencies: [
+				"18FE013B3405D2C2"
+				"71F3E025A6D94E4B"
+			]
+			hide: true
+			optional: true
+			id: "7672E2103EB62C89"
+			tasks: [{
+				id: "205672AA5B1C1E80"
+				type: "item"
+				item: {
+					id: "botania:lexicon"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "0B68712A26728B44"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			title: "植物魔法之始"
+			icon: "botania:light_blue_double_flower"
+			x: -6.0d
+			y: 0.0d
+			description: ["这里似乎有一些不同的花，他们携带着某些能量，我研究了一会，似乎可以使用这些花创造出能量，这对我很有帮助。虽然我不知道现在这些能量有什么用罢了。"]
+			dependencies: ["42B4FB7CA47F0EAE"]
+			hide: true
+			hide_text_until_complete: true
+			size: 2.0d
+			id: "71F3E025A6D94E4B"
+			tasks: [{
+				id: "2AD4518ACBB3E9E2"
+				type: "gamestage"
+				stage: "botania"
+			}]
+			rewards: [
+				{
+					id: "65598F86E81CC314"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "324E02B3D80DCFDE"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "一级符文"
+			x: 2.0d
+			y: -1.5d
+			subtitle: "四种基础元素和魔力"
+			dependencies: ["4A217741F5A31CEC"]
+			optional: true
+			id: "357B9AECA5832A75"
+			tasks: [
+				{
+					id: "4236F1018BD5996E"
+					type: "item"
+					item: "botania:rune_water"
+				}
+				{
+					id: "1BDE79FDFF6386A5"
+					type: "item"
+					item: "botania:rune_fire"
+				}
+				{
+					id: "608FFBCEC6421A10"
+					type: "item"
+					item: "botania:rune_earth"
+				}
+				{
+					id: "6A2498845A87472C"
+					type: "item"
+					item: "botania:rune_air"
+				}
+				{
+					id: "1726AD42AC3173CC"
+					type: "item"
+					item: "botania:rune_mana"
+				}
+			]
+			rewards: [
+				{
+					id: "1103A70D0EC3AB16"
+					type: "item"
+					team_reward: false
+					item: "botania:rune_water"
+					count: 8
+				}
+				{
+					id: "6DE2CC51308FE014"
+					type: "item"
+					team_reward: false
+					item: "botania:rune_fire"
+					count: 8
+				}
+				{
+					id: "0E4130B2919553FD"
+					type: "item"
+					team_reward: false
+					item: "botania:rune_earth"
+					count: 8
+				}
+				{
+					id: "3235AD669A43F6A9"
+					type: "item"
+					team_reward: false
+					item: "botania:rune_air"
+					count: 8
+				}
+				{
+					id: "0C19DFE3AE5FE28F"
+					type: "item"
+					team_reward: false
+					item: "botania:rune_mana"
+					count: 4
+				}
+				{
+					id: "47F75C14A444F003"
+					type: "item"
+					item: "botania:manasteel_block"
+				}
+				{
+					id: "471036EA86B37B7A"
+					type: "item"
+					item: "botania:mana_diamond_block"
+				}
+				{
+					id: "6ABF769E1118649A"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "二级符文"
+			x: 2.0d
+			y: -3.0d
+			subtitle: "四季"
+			dependencies: ["357B9AECA5832A75"]
+			dependency_requirement: "all_started"
+			optional: true
+			id: "2A1B07F8B1EF775C"
+			tasks: [
+				{
+					id: "584E3D3D1E0056EB"
+					type: "item"
+					item: "botania:rune_spring"
+				}
+				{
+					id: "27B2671E79B51418"
+					type: "item"
+					item: "botania:rune_summer"
+				}
+				{
+					id: "28163628CA158B86"
+					type: "item"
+					item: "botania:rune_autumn"
+				}
+				{
+					id: "549D416B9C7D373B"
+					type: "item"
+					item: "botania:rune_winter"
+				}
+			]
+			rewards: [
+				{
+					id: "52BBE3A7EE775EC2"
+					type: "item"
+					team_reward: false
+					item: "botania:rune_spring"
+					count: 4
+				}
+				{
+					id: "59419C3D22F252E9"
+					type: "item"
+					team_reward: false
+					item: "botania:rune_summer"
+					count: 4
+				}
+				{
+					id: "37364EFFDB20A654"
+					type: "item"
+					team_reward: false
+					item: "botania:rune_autumn"
+					count: 4
+				}
+				{
+					id: "2D55FE0EE75D86C5"
+					type: "item"
+					team_reward: false
+					item: "botania:rune_winter"
+					count: 4
+				}
+				{
+					id: "76C97BD91330A599"
+					type: "item"
+					item: "botania:mana_pearl"
+					count: 16
+				}
+				{
+					id: "24F89D0511E857B6"
+					type: "item"
+					item: "botania:mana_powder"
+					count: 16
+				}
+				{
+					id: "096A166A4432EF71"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "三级符文"
+			x: 2.0d
+			y: -4.5d
+			subtitle: "七宗罪"
+			dependencies: ["2A1B07F8B1EF775C"]
+			dependency_requirement: "all_started"
+			optional: true
+			id: "16177E73765D982E"
+			tasks: [
+				{
+					id: "1755BA9D9CDC5B43"
+					type: "item"
+					item: "botania:rune_lust"
+				}
+				{
+					id: "15E020B3F9BCD521"
+					type: "item"
+					item: "botania:rune_gluttony"
+				}
+				{
+					id: "71E2D2D9DA23B73B"
+					type: "item"
+					item: "botania:rune_greed"
+				}
+				{
+					id: "6D3F6372C9B428AC"
+					type: "item"
+					item: "botania:rune_sloth"
+				}
+				{
+					id: "0223960198A6DDFA"
+					type: "item"
+					item: "botania:rune_wrath"
+				}
+				{
+					id: "7FFD7F73C56BE922"
+					type: "item"
+					item: "botania:rune_envy"
+				}
+				{
+					id: "1A4803464DE7CEFE"
+					type: "item"
+					item: "botania:rune_pride"
+				}
+			]
+			rewards: [
+				{
+					id: "5319FC4A3D2642E2"
+					type: "item"
+					item: "botania:rune_lust"
+					count: 2
+				}
+				{
+					id: "2FC6CC5EDC52BF26"
+					type: "item"
+					item: "botania:rune_gluttony"
+					count: 2
+				}
+				{
+					id: "35E6DC21BCCEB6C9"
+					type: "item"
+					item: "botania:rune_greed"
+					count: 2
+				}
+				{
+					id: "1CF4F41D1A3894B3"
+					type: "item"
+					item: "botania:rune_sloth"
+					count: 2
+				}
+				{
+					id: "0DFD6E586A1304D9"
+					type: "item"
+					item: "botania:rune_wrath"
+					count: 2
+				}
+				{
+					id: "1ACA27DDDF17527E"
+					type: "item"
+					item: "botania:rune_envy"
+					count: 2
+				}
+				{
+					id: "399C1758FD7FF553"
+					type: "item"
+					item: "botania:rune_pride"
+					count: 2
+				}
+				{
+					id: "525D7E6E67C780EA"
+					type: "item"
+					item: "botania:terrasteel_block"
+					count: 4
+				}
+				{
+					id: "43D1662CAB3673BF"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "TNT与热爆花"
+			x: 1.0d
+			y: 1.0d
+			dependencies: ["4A217741F5A31CEC"]
+			optional: true
+			id: "49E1C317AF2D6365"
+			tasks: [{
+				id: "1D74C5DE53B658B0"
+				type: "item"
+				item: "botania:entropinnyum"
+			}]
+			rewards: [
+				{
+					id: "6A5CFC70AA83BCC4"
+					type: "item"
+					item: "botania:hourglass"
+				}
+				{
+					id: "3BC8D71256318581"
+					type: "item"
+					item: "minecraft:tnt"
+					count: 64
+				}
+			]
+		}
+		{
+			title: "植物之功能"
+			x: 1.0d
+			y: -1.0d
+			subtitle: "合成任意功能花"
+			dependencies: ["4A217741F5A31CEC"]
+			optional: true
+			id: "3D90E3ADC22A83BB"
+			tasks: [{
+				id: "02431CDE2C73F1FC"
+				type: "item"
+				title: "Any #botania:functional_special_flowers"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "botania:functional_special_flowers"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "10079C4F16CD30A2"
+					type: "item"
+					item: "botania:fallen_kanade"
+					count: 6
+				}
+				{
+					id: "35761E6C1D1A61C8"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "魔力缓存站"
+			icon: { id: "botania:mana_pool", Count: 8b }
+			x: -1.0d
+			y: 1.5d
+			dependencies: ["0C6D0A8ABFA01E83"]
+			hide: true
+			optional: true
+			id: "34706827FF120C0D"
+			tasks: [{
+				id: "13D851EA3B567B8F"
+				type: "item"
+				item: "botania:mana_pool"
+				count: 27L
+			}]
+			rewards: [
+				{
+					id: "22C7C4C940E3808C"
+					type: "item"
+					team_reward: false
+					item: "botania:mana_pool"
+					count: 54
+				}
+				{
+					id: "5FC8D8164EA1A3DA"
+					type: "item"
+					team_reward: false
+					item: "botania:spark"
+					count: 16
+				}
+				{
+					id: "65B34E5EBFFE9700"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "产能花收藏家"
+			icon: "botania:hydroangeas_motif"
+			x: 3.0d
+			y: -1.0d
+			subtitle: "制作所有产能花"
+			dependencies: ["4A217741F5A31CEC"]
+			optional: true
+			id: "7C9C46069FD847A0"
+			tasks: [
+				{
+					id: "739048ACFC833F0D"
+					type: "item"
+					item: "botania:endoflame"
+				}
+				{
+					id: "4B0FA2493C64CE08"
+					type: "item"
+					item: "botania:hydroangeas"
+				}
+				{
+					id: "0092B5473DC1E5E8"
+					type: "item"
+					item: "botania:thermalily"
+				}
+				{
+					id: "6ACF01FC80E26931"
+					type: "item"
+					item: "botania:rosa_arcana"
+				}
+				{
+					id: "397D24EEEE33D052"
+					type: "item"
+					item: "botania:munchdew"
+				}
+				{
+					id: "7BCA6037D66205DD"
+					type: "item"
+					item: "botania:entropinnyum"
+				}
+				{
+					id: "06B2A6BB08F9588A"
+					type: "item"
+					item: "botania:kekimurus"
+				}
+				{
+					id: "7F2D1563BB3FFF2B"
+					type: "item"
+					item: "botania:gourmaryllis"
+				}
+				{
+					id: "71B837544566902D"
+					type: "item"
+					item: "botania:narslimmus"
+				}
+				{
+					id: "190F0FBDEB10A2B1"
+					type: "item"
+					item: "botania:spectrolus"
+				}
+				{
+					id: "68275F299E38934D"
+					type: "item"
+					item: "botania:dandelifeon"
+				}
+				{
+					id: "5D9B5B327DADCB85"
+					type: "item"
+					item: "botania:rafflowsia"
+				}
+				{
+					id: "3DB8651E21D045BE"
+					type: "item"
+					item: "botania:shulk_me_not"
+				}
+				{
+					id: "4555297D5AC5D5A7"
+					type: "item"
+					item: "mythicbotany:wither_aconite"
+				}
+				{
+					id: "38A39870E0FDBC23"
+					type: "item"
+					item: "mythicbotany:aquapanthus"
+				}
+				{
+					id: "13334CB1A05EADAE"
+					type: "item"
+					item: "mythicbotany:feysythia"
+				}
+			]
+			rewards: [
+				{
+					id: "6D312A247F495AAC"
+					type: "choice"
+					table_id: 4490389759258818882L
+				}
+				{
+					id: "7AC4BC9443125310"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "彼方兰阵列自动化确认"
+			x: 2.0d
+			y: 3.0d
+			description: [
+				"沙漏里放6个沙子"
+				"不会做可以先点检查标记，会弹出示例"
+				"真的有人会选择这个而不是tnt与热爆花嘛"
+			]
+			dependencies: ["6BB4D11F100082A0"]
+			id: "33957CA26B308356"
+			tasks: [{
+				id: "09257F02A5D7E368"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "催化器"
+			x: -1.0d
+			y: -1.5d
+			subtitle: "放到魔力池底下以让它合成更多的配方"
+			dependencies: [
+				"0C6D0A8ABFA01E83"
+				"4EDE3C1D68F394FE"
+			]
+			hide: true
+			optional: true
+			id: "3F7EA70A923B9BEA"
+			tasks: [
+				{
+					id: "06309520489920BB"
+					type: "item"
+					item: "botania:alchemy_catalyst"
+				}
+				{
+					id: "1C0F77F51FBBA04A"
+					type: "item"
+					item: "botania:conjuration_catalyst"
+				}
+				{
+					id: "1F7870943675BE6F"
+					type: "item"
+					item: "extrabotany:dimensioncatalyst"
+				}
+			]
+			rewards: [{
+				id: "6D4D55FE3532A0E1"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
+		}
+		{
+			title: "制作精灵钢"
+			x: 6.5d
+			y: 0.0d
+			subtitle: "两池魔力"
+			dependencies: ["236C944A61DBCDB1"]
+			id: "48A5978A6E39885B"
+			tasks: [
+				{
+					id: "4F94957F7CD0ACD9"
+					type: "item"
+					item: "mythicbotany:mana_infuser"
+				}
+				{
+					id: "2487AFD4C8C0E398"
+					type: "item"
+					item: "mythicbotany:alfsteel_ingot"
+				}
+			]
+			rewards: [
+				{
+					id: "0D036458DB4CB200"
+					type: "item"
+					item: "mythicbotany:alfsteel_block"
+				}
+				{
+					id: "50AADAB3EE34BDE1"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "世界树"
+			x: 5.0d
+			y: 1.5d
+			description: ["用一个号角放在一个空的世界树的枝干上，输入魔力。从装有智慧之泉水的号角喝水后获得符文仪式的知识。"]
+			dependencies: ["5D1BA2AF09C9B421"]
+			hide: true
+			id: "3DBEB4D613061A5B"
+			tasks: [
+				{
+					id: "6CFC879AA654A8C7"
+					type: "item"
+					item: "mythicbotany:yggdrasil_branch"
+				}
+				{
+					id: "1C161C08C0B3BD18"
+					type: "item"
+					item: "mythicbotany:gjallar_horn_empty"
+				}
+			]
+			rewards: [{
+				id: "453B0F12693E94B5"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.0d
+			dependencies: ["4A217741F5A31CEC"]
+			id: "172E003D439F3033"
+			tasks: [
+				{
+					id: "4977AFADAAB4BF89"
+					type: "item"
+					item: "mythicbotany:rune_holder"
+				}
+				{
+					id: "53940B63409AC99F"
+					type: "item"
+					item: "mythicbotany:master_rune_holder"
+				}
+			]
+			rewards: [{
+				id: "7027973FC24A263B"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: 3.0d
+			shape: "hexagon"
+			description: ["喝下那个泉水之后打盖亚2获得"]
+			dependencies: [
+				"08A90E07FB5FC67D"
+				"3DBEB4D613061A5B"
+			]
+			id: "44AB4CD268AADB64"
+			tasks: [{
+				id: "5A1BF0C42FE66ABD"
+				type: "item"
+				item: "mythicbotany:fimbultyr_tablet"
+			}]
+			rewards: [
+				{
+					id: "2813BAF3D8CBABF1"
+					type: "item"
+					item: "botania:life_essence"
+					count: 8
+				}
+				{
+					id: "6DD528F5CD3A2A48"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "四级符文"
+			x: 2.0d
+			y: -6.0d
+			subtitle: "九族"
+			dependencies: ["16177E73765D982E"]
+			optional: true
+			id: "5DAC597F7ADAE6C4"
+			tasks: [
+				{
+					id: "0B752687D1DBC3BC"
+					type: "item"
+					item: "mythicbotany:asgard_rune"
+				}
+				{
+					id: "3050F14927EF3715"
+					type: "item"
+					item: "mythicbotany:vanaheim_rune"
+				}
+				{
+					id: "473E529BC37F0410"
+					type: "item"
+					item: "mythicbotany:alfheim_rune"
+				}
+				{
+					id: "7D8B8744D6083CD8"
+					type: "item"
+					item: "mythicbotany:midgard_rune"
+				}
+				{
+					id: "4BD2421B0423A670"
+					type: "item"
+					item: "mythicbotany:joetunheim_rune"
+				}
+				{
+					id: "655E8C4B0910CE3E"
+					type: "item"
+					item: "mythicbotany:muspelheim_rune"
+				}
+				{
+					id: "76DEF9CB6827A97C"
+					type: "item"
+					item: "mythicbotany:niflheim_rune"
+				}
+				{
+					id: "4BC1460A8B15F625"
+					type: "item"
+					item: "mythicbotany:nidavellir_rune"
+				}
+				{
+					id: "3D3E312F5CF66BFD"
+					type: "item"
+					item: "mythicbotany:helheim_rune"
+				}
+			]
+			rewards: [
+				{
+					id: "696FF5E426B088BD"
+					type: "item"
+					item: "mythicbotany:asgard_rune"
+					count: 4
+				}
+				{
+					id: "186DDE34B2AD2742"
+					type: "item"
+					item: "mythicbotany:vanaheim_rune"
+					count: 4
+				}
+				{
+					id: "0CF93B9E2DF79A34"
+					type: "item"
+					item: "mythicbotany:alfheim_rune"
+					count: 4
+				}
+				{
+					id: "066367DA768EE793"
+					type: "item"
+					item: "mythicbotany:midgard_rune"
+					count: 4
+				}
+				{
+					id: "4A2178E57207DE58"
+					type: "item"
+					item: "mythicbotany:joetunheim_rune"
+					count: 4
+				}
+				{
+					id: "0F4043C4A756EA7E"
+					type: "item"
+					item: "mythicbotany:muspelheim_rune"
+					count: 4
+				}
+				{
+					id: "24FFDBB94B28C1F4"
+					type: "item"
+					item: "mythicbotany:niflheim_rune"
+					count: 4
+				}
+				{
+					id: "100A73C94411094F"
+					type: "item"
+					item: "mythicbotany:nidavellir_rune"
+					count: 4
+				}
+				{
+					id: "3497CBFCFA7605C4"
+					type: "item"
+					item: "mythicbotany:helheim_rune"
+					count: 4
+				}
+				{
+					id: "0DB12C770F53A538"
+					type: "item"
+					item: "mythicbotany:alfsteel_block"
+				}
+				{
+					id: "704A39B3981F562E"
+					type: "item"
+					item: "botania:elementium_block"
+				}
+				{
+					id: "5FC37F09A8C2B4AA"
+					type: "item"
+					item: "minecraft:netherite_block"
+				}
+				{
+					id: "4DEB205B6B2DBDEE"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: 3.0d
+			description: [
+				"Tip：用贪婪符文右键村民可以使其变成流浪商人"
+				"Tip2：村民刷怪蛋可以合成"
+			]
+			dependencies: [
+				"172E003D439F3033"
+				"44AB4CD268AADB64"
+			]
+			id: "3C8E4360083F32A3"
+			tasks: [{
+				id: "2E9B2CC06DAA5FF1"
+				type: "item"
+				item: "mythicbotany:kvasir_blood"
+			}]
+			rewards: [
+				{
+					id: "159A4284352484F5"
+					type: "item"
+					item: "mythicbotany:kvasir_blood"
+					count: 2
+				}
+				{
+					id: "496FEEF907E088B8"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 5.0d
+			subtitle: "喝下之后跳进精灵传送门试试？"
+			dependencies: ["3C8E4360083F32A3"]
+			id: "0CB5D88E2E8D6139"
+			tasks: [{
+				id: "42A946DF3067B04E"
+				type: "item"
+				item: "mythicbotany:kvasir_mead"
+			}]
+			rewards: [{
+				id: "3789D6A5AAF0FC5F"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			title: "亚尔夫海姆"
+			icon: "botania:dreamwood"
+			x: 6.75d
+			y: 5.0d
+			shape: "hexagon"
+			subtitle: "进入亚尔夫海姆维度"
+			dependencies: ["0CB5D88E2E8D6139"]
+			size: 1.5d
+			id: "1C8606FA3F310C38"
+			tasks: [{
+				id: "1FB4B8A4A5DB1C31"
+				type: "dimension"
+				dimension: "mythicbotany:alfheim"
+			}]
+			rewards: [
+				{
+					id: "1CA4E8F9509CB958"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "014E841FAD445EA5"
+					type: "custom"
+					title: "阶段"
+					auto: "invisible"
+				}
+				{
+					id: "14A97F155822BBB6"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: 1.75d
+			shape: "gear"
+			subtitle: "右键获得游戏阶段“mahoutsukai_all”"
+			dependencies: ["4592F792A915D8F1"]
+			size: 1.5d
+			id: "5FE1FFA92EE06E6D"
+			tasks: [{
+				id: "0B1D8CCA27C099A7"
+				type: "item"
+				item: "kubejs:mahou_crystal_ball"
+			}]
+			rewards: [{
+				id: "1710925FCBA568D4"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendry"
+					}
+				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: -3.0d
+			dependencies: ["2A1B07F8B1EF775C"]
+			optional: true
+			id: "74920AFE458D128D"
+			tasks: [{
+				id: "4516D5CC465C9787"
+				type: "item"
+				item: "extrabotany:elementrune"
+			}]
+			rewards: [{
+				id: "0F458E53AEDD1EAB"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			x: 3.5d
+			y: -4.5d
+			dependencies: ["16177E73765D982E"]
+			optional: true
+			id: "7C279FC470DA2666"
+			tasks: [{
+				id: "60C35DD97425B447"
+				type: "item"
+				item: "extrabotany:sinrune"
+			}]
+			rewards: [{
+				id: "0E7AA5DDF1D31271"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+				count: 4
+			}]
+		}
+		{
+			title: "额外的知识，从击败大地守护者开始……"
+			x: 12.5d
+			y: 0.0d
+			shape: "rsquare"
+			dependencies: ["4592F792A915D8F1"]
+			id: "5C1E19EEFDF0C818"
+			tasks: [{
+				id: "5D840B2C7F6E297E"
+				type: "item"
+				item: "botania:gaia_ingot"
+			}]
+			rewards: [
+				{
+					id: "025EBA9BC5B91912"
+					type: "item"
+					item: {
+						id: "quark:ancient_tome"
+						Count: 1b
+						tag: {
+							StoredEnchantments: [{
+								lvl: 4s
+								id: "minecraft:protection"
+							}]
+						}
+					}
+					count: 4
+				}
+				{
+					id: "2F1678B1A281696B"
+					type: "item"
+					item: "minecraft:phantom_membrane"
+					count: 16
+				}
+				{
+					id: "03FCBA64A6A12C4B"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "7D66DC3D4D1B95FE"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 14.0d
+			y: 1.5d
+			description: [
+				"只建议穿着银翼套时佩戴"
+				"进一步增加容错率"
+			]
+			dependencies: ["29CEABFD72BEC153"]
+			hide: true
+			id: "48B9008745F51CF1"
+			tasks: [{
+				id: "3BCE44D2A44A5086"
+				type: "item"
+				item: {
+					id: "extrabotany:potatochips"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "2B414C297EF727B9"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
+		}
+		{
+			title: "银翼套"
+			x: 12.5d
+			y: 1.5d
+			description: [
+				"更加昂贵但是容错率高"
+				"（砍假人也能回血）"
+			]
+			dependencies: ["5C1E19EEFDF0C818"]
+			hide: true
+			id: "29CEABFD72BEC153"
+			tasks: [
+				{
+					id: "6A0A6A2CA025A936"
+					type: "item"
+					item: {
+						id: "extrabotany:shootingguardian_helm"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "45E43A3B04A8727D"
+					type: "item"
+					item: {
+						id: "extrabotany:shootingguardian_chest"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5842B18BD3B18DD5"
+					type: "item"
+					item: {
+						id: "extrabotany:shootingguardian_legs"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "645B638C2686C48C"
+					type: "item"
+					item: {
+						id: "extrabotany:shootingguardian_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "26629CC6B24CCE48"
+					type: "item"
+					item: {
+						id: "extrabotany:trueshadowkatana"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "13CDB50524E51A43"
+					type: "item"
+					item: "dummmmmmy:target_dummy_placer"
+					count: 9
+				}
+				{
+					id: "3E19D27495C8C5C6"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "哥布林杀手套"
+			x: 15.5d
+			y: 1.5d
+			description: [
+				"加血量上限幅度十分高"
+				"并不是很好用（当然如果您有十分强力的生命回复手段也是可以用的）"
+			]
+			dependencies: ["5C1E19EEFDF0C818"]
+			hide: true
+			id: "12E5F84E9B9E4128"
+			tasks: [
+				{
+					id: "0B8513B160963F57"
+					type: "item"
+					item: {
+						id: "extrabotany:goblinslayer_helm"
+						Count: 1b
+						tag: {
+							Damage: 0
+							isday: 0b
+						}
+					}
+				}
+				{
+					id: "588E2D0E8FC1B906"
+					type: "item"
+					item: {
+						id: "extrabotany:goblinslayer_chest"
+						Count: 1b
+						tag: {
+							Damage: 0
+							isday: 0b
+						}
+					}
+				}
+				{
+					id: "39EC680D53616002"
+					type: "item"
+					item: {
+						id: "extrabotany:goblinslayer_legs"
+						Count: 1b
+						tag: {
+							Damage: 0
+							isday: 0b
+						}
+					}
+				}
+				{
+					id: "353E1DE23D59B9CF"
+					type: "item"
+					item: {
+						id: "extrabotany:goblinslayer_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+							isday: 0b
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4780C3E37FD19246"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
+		}
+		{
+			x: 12.5d
+			y: 3.0d
+			description: [
+				"召唤一次本我消耗200000自然之息"
+				"前置完成一个即可"
+			]
+			dependencies: [
+				"4696EB756080DE38"
+				"29CEABFD72BEC153"
+				"12E5F84E9B9E4128"
+			]
+			dependency_requirement: "one_completed"
+			id: "4B1A0E950C5D66D3"
+			tasks: [{
+				id: "63ACBAB905A99719"
+				type: "item"
+				item: {
+					id: "extrabotany:natureorb"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "63BDA4CC5C44BB28"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
+		}
+		{
+			title: "推荐饰品"
+			x: 11.0d
+			y: 1.5d
+			dependencies: [
+				"29CEABFD72BEC153"
+				"4696EB756080DE38"
+			]
+			hide: true
+			dependency_requirement: "one_started"
+			id: "5518B9989F58BFC4"
+			tasks: [
+				{
+					id: "4BC8C69A8B911BDD"
+					type: "item"
+					item: {
+						id: "extrabotany:powerglove"
+						Count: 1b
+						tag: {
+							baubleUUIDMost: -7631797404797615650L
+							baubleUUIDLeast: -5383306791582191288L
+						}
+					}
+				}
+				{
+					id: "7A81176324C7768E"
+					type: "item"
+					item: {
+						id: "extrabotany:thecommunity"
+						Count: 1b
+						tag: {
+							baubleUUIDMost: 5126561124264921636L
+							baubleUUIDLeast: -8596039942673654341L
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "1707D7822DEB1A51"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			title: "女仆套"
+			x: 9.5d
+			y: 1.5d
+			description: [
+				"我的推荐"
+				"要整整一组盖亚魂"
+				"空手，不要拿武器，依靠精卫之羽打出的拳风打伤害"
+				"可以主动清除负面效果（有延迟）"
+				""
+				"即使装备了薯片如果被打触发了薯片身穿女仆套生还几率很小"
+			]
+			dependencies: ["5C1E19EEFDF0C818"]
+			hide: true
+			id: "4696EB756080DE38"
+			tasks: [
+				{
+					id: "686EC64F849F3C78"
+					type: "item"
+					item: {
+						id: "extrabotany:maid_helm"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4171E1D2FA8A8891"
+					type: "item"
+					item: {
+						id: "extrabotany:maid_chest"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "50A5BEC09C215B38"
+					type: "item"
+					item: {
+						id: "extrabotany:maid_legs"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "73095076D9B57244"
+					type: "item"
+					item: {
+						id: "extrabotany:maid_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2C75D41C045CA7BA"
+					type: "item"
+					item: {
+						id: "extrabotany:jingweifeather"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "3DAF6E6D9E0512BC"
+					type: "item"
+					item: {
+						id: "extrabotany:splashgrenade"
+						Count: 1b
+						tag: {
+							brewKey: "botania:healing"
+						}
+					}
+					count: 64
+				}
+				{
+					id: "58559074C1EE0A03"
+					type: "item"
+					item: {
+						id: "extrabotany:splashgrenade"
+						Count: 1b
+						tag: {
+							brewKey: "extrabotany:revolution"
+						}
+					}
+					count: 8
+				}
+				{
+					id: "5CDA627962BDC5B2"
+					type: "item"
+					item: {
+						id: "extrabotany:splashgrenade"
+						Count: 1b
+						tag: {
+							brewKey: "botania:overload"
+						}
+					}
+					count: 8
+				}
+				{
+					id: "0C552C62F85E6DD9"
+					type: "item"
+					item: {
+						id: "extrabotany:splashgrenade"
+						Count: 1b
+						tag: {
+							brewKey: "extrabotany:shell"
+						}
+					}
+					count: 8
+				}
+				{
+					id: "2FED24F7878A7721"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: "extrabotany:powerframe"
+			x: 12.5d
+			y: 5.0d
+			description: [
+				"魔力的加护约提供 50 mana/s的被动产魔。"
+				"再生的加护与泰拉套生命再生基本无异（无法在非满饱食度加提供加成或自动回复hp）。"
+				"森罗的加护与昴星团战斗女仆套装效果（自动祛除debuff）无异 。"
+			]
+			dependencies: ["4B1A0E950C5D66D3"]
+			id: "16BFB4C4F49BD8D1"
+			tasks: [{
+				id: "717E17544843BC9A"
+				type: "checkmark"
+				title: "给宝珠充能"
+			}]
+			rewards: [{
+				id: "026E3122541035DE"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			title: "面对真实的自我"
+			icon: "extrabotany:challengeticket"
+			x: 8.1d
+			y: 8.1d
+			shape: "gear"
+			subtitle: "召唤并击杀本我"
+			dependencies: [
+				"16BFB4C4F49BD8D1"
+				"1C8606FA3F310C38"
+			]
+			dependency_requirement: "one_completed"
+			size: 1.8d
+			id: "023BF89CB3FE66CE"
+			tasks: [{
+				id: "133FF9BC1FC23181"
+				type: "item"
+				item: "extrabotany:treasurebox"
+			}]
+			rewards: [
+				{
+					id: "3E8D3D748DEA0457"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "3BF5A5D99B2EE78F"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+				{
+					id: "4E41147B4A37CB15"
+					type: "xp"
+					xp: 10000
+				}
+				{
+					id: "2A82F7B2234C01F7"
+					type: "custom"
+					title: "阶段"
+					auto: "enabled"
+				}
+				{
+					id: "37A0A3B08537D241"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "_"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "裸装打本我推荐装备"
+			x: 8.0d
+			y: 11.0d
+			shape: "diamond"
+			description: [
+				"使用最初分型的剑气攻击本我"
+				"使用文文的相机控制本我的小弟"
+				"尽量保持满生命"
+				"亲测可以打赢"
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"69E1F4B926982216"
+				"759D0AF1E11FCB15"
+			]
+			size: 1.25d
+			optional: true
+			id: "59A24C5C919439F1"
+			tasks: [
+				{
+					id: "163FB7974EB653BD"
+					type: "item"
+					item: {
+						id: "extrabotany:firstfractal"
+						Count: 1b
+						tag: {
+							Damage: 0
+							soulbindUUID: "167b37e2-667e-3b8e-b325-e625458d2538"
+						}
+					}
+				}
+				{
+					id: "78AB59824628D7BC"
+					type: "item"
+					item: {
+						id: "extrabotany:camera"
+						Count: 1b
+						tag: {
+							soulbindUUID: "167b37e2-667e-3b8e-b325-e625458d2538"
+						}
+					}
+				}
+				{
+					id: "1306A97391E14EB0"
+					type: "item"
+					item: {
+						id: "extrabotany:splashgrenade"
+						Count: 1b
+						tag: {
+							brewKey: "botania:healing"
+						}
+					}
+				}
+				{
+					id: "2C988831B539B133"
+					type: "item"
+					item: {
+						id: "extrabotany:infinitewine"
+						Count: 1b
+						tag: {
+							brewKey: "extrabotany:revolution"
+							soulbindUUID: "167b37e2-667e-3b8e-b325-e625458d2538"
+						}
+					}
+				}
+				{
+					id: "36C2E42AD9647DD7"
+					type: "item"
+					item: {
+						id: "extrabotany:infinitewine"
+						Count: 1b
+						tag: {
+							brewKey: "extrabotany:shell"
+							soulbindUUID: "167b37e2-667e-3b8e-b325-e625458d2538"
+						}
+					}
+				}
+				{
+					id: "2773DDE2B0935ADA"
+					type: "item"
+					item: {
+						id: "extrabotany:infinitewine"
+						Count: 1b
+						tag: {
+							brewKey: "extrabotany:deadpool"
+							soulbindUUID: "167b37e2-667e-3b8e-b325-e625458d2538"
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "1E79ADDE8F5D2EE2"
+					type: "item"
+					item: {
+						id: "extrabotany:splashgrenade"
+						Count: 1b
+						tag: {
+							brewKey: "botania:healing"
+						}
+					}
+					count: 96
+				}
+				{
+					id: "3C76B310FCCBA1D8"
+					type: "item"
+					item: {
+						id: "extrabotany:infinitewine"
+						Count: 1b
+						tag: {
+							brewKey: "extrabotany:revolution"
+							soulbindUUID: "167b37e2-667e-3b8e-b325-e625458d2538"
+						}
+					}
+				}
+				{
+					id: "29399CD023A2A9CB"
+					type: "item"
+					item: {
+						id: "extrabotany:infinitewine"
+						Count: 1b
+						tag: {
+							brewKey: "extrabotany:shell"
+							soulbindUUID: "167b37e2-667e-3b8e-b325-e625458d2538"
+						}
+					}
+				}
+				{
+					id: "45618A7D070EA0B8"
+					type: "item"
+					item: {
+						id: "extrabotany:infinitewine"
+						Count: 1b
+						tag: {
+							brewKey: "extrabotany:deadpool"
+							soulbindUUID: "167b37e2-667e-3b8e-b325-e625458d2538"
+						}
+					}
+				}
+				{
+					id: "11C110BBB50ED3FF"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 11.0d
+			y: 9.0d
+			description: ["绞肉机（）"]
+			dependencies: ["023BF89CB3FE66CE"]
+			hide: true
+			id: "69E1F4B926982216"
+			tasks: [{
+				id: "51B3601A80627BE4"
+				type: "item"
+				item: {
+					id: "extrabotany:firstfractal"
+					Count: 1b
+					tag: {
+						Damage: 0
+						soulbindUUID: "3027266d-fcfb-42ff-bcbd-36db77457af0"
+					}
+				}
+			}]
+			rewards: [{
+				id: "2AA62F22CEEB6B18"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendry"
+					}
+				}
+			}]
+		}
+		{
+			x: 10.0d
+			y: 10.0d
+			description: ["好在不会误伤其他生物"]
+			dependencies: ["023BF89CB3FE66CE"]
+			hide: true
+			id: "05D3B41F90AB7398"
+			tasks: [{
+				id: "57D5D4B094B5E836"
+				type: "item"
+				item: {
+					id: "extrabotany:excaliber"
+					Count: 1b
+					tag: {
+						Damage: 0
+						soulbindUUID: "3027266d-fcfb-42ff-bcbd-36db77457af0"
+					}
+				}
+			}]
+			rewards: [{
+				id: "72FB3995691DE6B6"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendry"
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 10.0d
+			description: ["飞的更舒服"]
+			dependencies: ["023BF89CB3FE66CE"]
+			hide: true
+			id: "19E074C2A5DAAE53"
+			tasks: [{
+				id: "5E76FAEFA4A25A4F"
+				type: "item"
+				item: {
+					id: "extrabotany:coregod"
+					Count: 1b
+					tag: {
+						variant: 0
+						soulbindUUID: "3027266d-fcfb-42ff-bcbd-36db77457af0"
+					}
+				}
+			}]
+			rewards: [{
+				id: "2BC67B380614286B"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendry"
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: 10.5d
+			description: ["真的有必要吗"]
+			dependencies: ["023BF89CB3FE66CE"]
+			hide: true
+			id: "4DF270BBB6ED72BF"
+			tasks: [{
+				id: "30453B7B93E44566"
+				type: "item"
+				item: {
+					id: "extrabotany:moonpendant"
+					Count: 1b
+					tag: {
+						baubleUUIDLeast: -5208713299022343134L
+						baubleUUIDMost: 7424933234927159646L
+						soulbindUUID: "3027266d-fcfb-42ff-bcbd-36db77457af0"
+					}
+				}
+			}]
+			rewards: [{
+				id: "67ADF6B97D222B8F"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendry"
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: 8.0d
+			description: ["可能使某些怪卡无敌bug"]
+			dependencies: ["023BF89CB3FE66CE"]
+			hide: true
+			id: "39726A5DF34E1084"
+			tasks: [{
+				id: "26BF218B60C8C48D"
+				type: "item"
+				item: {
+					id: "extrabotany:sunring"
+					Count: 1b
+					tag: {
+						baubleUUIDLeast: -8758055555493998117L
+						baubleUUIDMost: -1661853545281859648L
+						soulbindUUID: "3027266d-fcfb-42ff-bcbd-36db77457af0"
+					}
+				}
+			}]
+			rewards: [{
+				id: "1B5DB76FB85B6DF6"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendry"
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: 9.0d
+			description: ["真的可以充满吗"]
+			dependencies: ["023BF89CB3FE66CE"]
+			hide: true
+			id: "0E0DAA73C472BBB4"
+			tasks: [{
+				id: "164B0DAC937AA7A2"
+				type: "item"
+				item: {
+					id: "extrabotany:sagesmanaring"
+					Count: 1b
+					tag: {
+						soulbindUUID: "3027266d-fcfb-42ff-bcbd-36db77457af0"
+					}
+				}
+			}]
+			rewards: [{
+				id: "39831A2277C9B9F9"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendry"
+					}
+				}
+			}]
+		}
+		{
+			x: 9.0d
+			y: 10.5d
+			description: ["这伤害也不行啊"]
+			dependencies: ["023BF89CB3FE66CE"]
+			hide: true
+			id: "490183C9D8DD23FB"
+			tasks: [{
+				id: "1BCD72EE452B364D"
+				type: "item"
+				item: {
+					id: "extrabotany:failnaught"
+					Count: 1b
+					tag: {
+						soulbindUUID: "3027266d-fcfb-42ff-bcbd-36db77457af0"
+					}
+				}
+			}]
+			rewards: [{
+				id: "5AFAA56A004D96AE"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendry"
+					}
+				}
+			}]
+		}
+		{
+			x: 10.5d
+			y: 8.0d
+			description: ["甚至可以定格本我和队友"]
+			dependencies: ["023BF89CB3FE66CE"]
+			hide: true
+			id: "759D0AF1E11FCB15"
+			tasks: [{
+				id: "719CE8538EDE78FA"
+				type: "item"
+				item: {
+					id: "extrabotany:camera"
+					Count: 1b
+					tag: {
+						soulbindUUID: "3027266d-fcfb-42ff-bcbd-36db77457af0"
+					}
+				}
+			}]
+			rewards: [{
+				id: "378CC26A1E7E7066"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendry"
+					}
+				}
+			}]
+		}
+		{
+			title: "裸装打本我II"
+			x: 8.0d
+			y: 12.5d
+			description: ["这一套装备也是可以打赢的"]
+			dependencies: ["59A24C5C919439F1"]
+			hide: true
+			id: "6E289D3253ECD126"
+			tasks: [
+				{
+					id: "6C824906CA35F6FC"
+					type: "item"
+					item: {
+						id: "extrabotany:splashgrenade"
+						Count: 1b
+						tag: {
+							brewKey: "botania:overload"
+						}
+					}
+				}
+				{
+					id: "3F8E6DEA887EE6E6"
+					type: "item"
+					item: {
+						id: "extrabotany:splashgrenade"
+						Count: 1b
+						tag: {
+							brewKey: "extrabotany:revolution"
+						}
+					}
+				}
+				{
+					id: "538D51AD5F01976E"
+					type: "item"
+					item: {
+						id: "extrabotany:splashgrenade"
+						Count: 1b
+						tag: {
+							brewKey: "extrabotany:shell"
+						}
+					}
+				}
+				{
+					id: "2DBABF95804D2252"
+					type: "item"
+					item: {
+						id: "extrabotany:trueshadowkatana"
+						Count: 1b
+						tag: {
+							Damage: 0
+							soulbindUUID: "71989a65-361f-4145-9f90-1bf9126ace8d"
+						}
+					}
+				}
+				{
+					id: "2978D940772EF35D"
+					type: "item"
+					item: {
+						id: "extrabotany:natureorb"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "6F4266383F81C08E"
+					type: "item"
+					item: {
+						id: "extrabotany:splashgrenade"
+						Count: 1b
+						tag: {
+							brewKey: "botania:overload"
+						}
+					}
+					count: 32
+				}
+				{
+					id: "77649F867B1E89E2"
+					type: "item"
+					item: {
+						id: "extrabotany:splashgrenade"
+						Count: 1b
+						tag: {
+							brewKey: "extrabotany:revolution"
+						}
+					}
+					count: 32
+				}
+				{
+					id: "4874BE76BC589BA1"
+					type: "item"
+					item: {
+						id: "extrabotany:splashgrenade"
+						Count: 1b
+						tag: {
+							brewKey: "extrabotany:shell"
+						}
+					}
+					count: 32
+				}
+				{
+					id: "46744E49383172EF"
+					type: "item"
+					item: {
+						id: "extrabotany:natureorb"
+						Count: 1b
+						tag: {
+							xp: 500000
+						}
+					}
+				}
+				{
+					id: "0634C5E08F81EDA4"
+					type: "item"
+					item: {
+						id: "extrabotany:trueshadowkatana"
+						Count: 1b
+						tag: {
+							Damage: 0
+							soulbindUUID: "71989a65-361f-4145-9f90-1bf9126ace8d"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "单弓打本我"
+			x: 8.0d
+			y: 14.0d
+			description: ["难度很高，成功率极低，但是仍有机会获胜"]
+			dependencies: ["6E289D3253ECD126"]
+			id: "60B861B3C9522688"
+			tasks: [
+				{
+					id: "46726B540F061503"
+					type: "item"
+					item: {
+						id: "extrabotany:splashgrenade"
+						Count: 1b
+						tag: {
+							brewKey: "extrabotany:shell"
+						}
+					}
+				}
+				{
+					id: "11DB7F71BF916004"
+					type: "item"
+					item: {
+						id: "extrabotany:splashgrenade"
+						Count: 1b
+						tag: {
+							brewKey: "botania:overload"
+						}
+					}
+				}
+				{
+					id: "44A26FB23076917F"
+					type: "item"
+					item: {
+						id: "extrabotany:splashgrenade"
+						Count: 1b
+						tag: {
+							brewKey: "extrabotany:revolution"
+						}
+					}
+				}
+				{
+					id: "0678BDFFC6E1BE14"
+					type: "item"
+					item: {
+						id: "extrabotany:natureorb"
+						Count: 1b
+						tag: {
+							xp: 500000
+						}
+					}
+				}
+				{
+					id: "47B935AE61E4F428"
+					type: "item"
+					item: {
+						id: "botania:crystal_bow"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "再次观察水晶"
+			icon: {
+				id: "astralsorcery:rock_collector_crystal"
+				Count: 1b
+				tag: {
+					astralsorcery: {
+						constellation: "astralsorcery:horologium"
+						crystalProperties: {
+							attributes: [
+								{
+									property: "astralsorcery:size"
+									pLevel: 3
+									discovered: 1b
+								}
+								{
+									property: "astralsorcery:purity"
+									pLevel: 2
+									discovered: 1b
+								}
+								{
+									property: "astralsorcery:shape"
+									pLevel: 3
+									discovered: 1b
+								}
+								{
+									property: "astralsorcery:collector.rate"
+									pLevel: 3
+									discovered: 1b
+								}
+								{
+									property: "astralsorcery:constellation.horologium"
+									pLevel: 2
+									discovered: 1b
+								}
+							]
+						}
+					}
+				}
+			}
+			x: 8.0d
+			y: -3.0d
+			shape: "diamond"
+			subtitle: "再次观测神殿中的聚能水晶并进行思索"
+			description: ["在植物魔法（染料科技（x）这里取得突破之后，你相信了魔法的存在。在翻看日记时，你又想起了之前碰到的那个水晶，于是你决定再去观察一次，并对其进行研究"]
+			dependencies: [
+				"33BCC7DA3F384759"
+				"42BD2E975E511027"
+				"5D1BA2AF09C9B421"
+			]
+			hide: true
+			hide_text_until_complete: true
+			size: 3.0d
+			id: "2CEF894C5EB27447"
+			tasks: [{
+				id: "1E755BBAAAFF90E3"
+				type: "observation"
+				icon: {
+					id: "astralsorcery:rock_collector_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellation: "astralsorcery:aevitas"
+							crystalProperties: {
+								attributes: [
+									{
+										property: "astralsorcery:size"
+										pLevel: 2
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:purity"
+										pLevel: 2
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:shape"
+										pLevel: 2
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:collector.rate"
+										pLevel: 2
+										discovered: 1b
+									}
+								]
+							}
+						}
+					}
+				}
+				timer: 0L
+				observe_type: 0
+				to_observe: "astralsorcery:rock_collector_crystal"
+			}]
+			rewards: [
+				{
+					id: "0A57A6CFC2CD5CF1"
+					type: "item"
+					item: "astralsorcery:marble_raw"
+					count: 64
+				}
+				{
+					id: "5A1FD6F20A322677"
+					type: "item"
+					item: "astralsorcery:black_marble_raw"
+					count: 64
+				}
+				{
+					id: "161F0BE5918AC32F"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "599F9F9686D65EB5"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+				{
+					id: "68A6C780FA98434E"
+					type: "custom"
+					title: "思索结果"
+					auto: "enabled"
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: -4.0d
+			subtitle: "多读书"
+			dependencies: ["2CEF894C5EB27447"]
+			hide: true
+			id: "0BB591383FE5AE04"
+			tasks: [{
+				id: "31967F964C820A4E"
+				type: "item"
+				item: "astralsorcery:tome"
+			}]
+			rewards: [{
+				id: "4082AE72BA32C318"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			x: 9.5d
+			y: -2.0d
+			dependencies: ["2CEF894C5EB27447"]
+			hide: true
+			id: "66110567E042FE45"
+			tasks: [{
+				id: "5C8F4FE06877812C"
+				type: "item"
+				item: {
+					id: "astralsorcery:constellation_paper"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "658C03F2170C338B"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			title: "星辉合成"
+			icon: "astralsorcery:altar_discovery"
+			x: 11.0d
+			y: -3.0d
+			shape: "rsquare"
+			subtitle: "聚星座之力，合夜空之魔"
+			description: [
+				"星辉合成台制作方法：把工作台放在水晶附近"
+				"Tip：如果不会搭星辉的多方块结构可以用共振星杖右键祭坛一类的方块"
+			]
+			dependencies: ["2CEF894C5EB27447"]
+			hide: true
+			id: "48DBEDCF84B434D8"
+			tasks: [
+				{
+					id: "4080482B68A7582F"
+					type: "item"
+					item: "astralsorcery:altar_discovery"
+				}
+				{
+					id: "5CD6928DF2C4BA1A"
+					type: "item"
+					item: "astralsorcery:wand"
+				}
+			]
+			rewards: [
+				{
+					id: "6B9CE4E51F5667D4"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "7E429F1EFF25CF19"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "观星者"
+			x: 12.0d
+			y: -4.0d
+			subtitle: "制作望远镜"
+			dependencies: ["48DBEDCF84B434D8"]
+			hide: true
+			id: "2B3202BD01DDA213"
+			tasks: [{
+				id: "542C73EAC894029F"
+				type: "item"
+				item: "astralsorcery:hand_telescope"
+			}]
+			rewards: [{
+				id: "09F8E5A17334699E"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			x: 13.0d
+			y: -3.0d
+			subtitle: "在共振星杖的引导下找到水晶石吧"
+			dependencies: ["48DBEDCF84B434D8"]
+			id: "57AB65079567CAEF"
+			tasks: [{
+				id: "386EFE6C4B1FE130"
+				type: "item"
+				item: {
+					id: "astralsorcery:rock_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							crystalProperties: {
+								attributes: [
+									{
+										property: "astralsorcery:size"
+										pLevel: 2
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:purity"
+										pLevel: 2
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:shape"
+										pLevel: 1
+										discovered: 1b
+									}
+								]
+							}
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "70A80E988062B836"
+					type: "item"
+					item: "astralsorcery:rock_crystal_ore"
+					count: 4
+				}
+				{
+					id: "0F4A240207300E42"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 14.5d
+			y: -3.0d
+			dependencies: ["57AB65079567CAEF"]
+			id: "4C31AC328A2DAA24"
+			tasks: [{
+				id: "272BCE72077B396E"
+				type: "item"
+				item: "astralsorcery:well"
+			}]
+			rewards: [
+				{
+					id: "48E3A24D0ACF01B9"
+					type: "item"
+					item: "astralsorcery:well"
+					count: 3
+				}
+				{
+					id: "7BFA8B07246CA7BA"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "制取星能液"
+			x: 16.0d
+			y: -3.0d
+			subtitle: "把海蓝宝石或者水晶石放进聚星缸里"
+			dependencies: ["4C31AC328A2DAA24"]
+			id: "6644CFC04A973A8B"
+			tasks: [{
+				id: "051433AFAD39670D"
+				type: "item"
+				item: "astralsorcery:liquid_starlight_bucket"
+			}]
+			rewards: [
+				{
+					id: "5D5F4C3DC418D456"
+					type: "item"
+					item: "astralsorcery:liquid_starlight_bucket"
+				}
+				{
+					id: "3E518B7E9A8D10E1"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 16.0d
+			y: -1.5d
+			dependencies: ["6644CFC04A973A8B"]
+			id: "7A53151F687F0C52"
+			tasks: [
+				{
+					id: "37B10506F8151B7F"
+					type: "item"
+					item: "astralsorcery:spectral_relay"
+				}
+				{
+					id: "21676FB49E52F476"
+					type: "item"
+					item: "astralsorcery:glass_lens"
+				}
+			]
+			rewards: [
+				{
+					id: "494718DF85F9D806"
+					type: "item"
+					item: "astralsorcery:marble_chiseled"
+					count: 4
+				}
+				{
+					id: "064C8E27EC24B82C"
+					type: "item"
+					item: "astralsorcery:marble_arch"
+					count: 4
+				}
+				{
+					id: "77EC77FD5B7F19AA"
+					type: "item"
+					item: "astralsorcery:black_marble_raw"
+				}
+				{
+					id: "3361B57F8118C6BA"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 17.5d
+			y: -1.5d
+			subtitle: "把原木扔进星能液里"
+			dependencies: ["6644CFC04A973A8B"]
+			id: "40977337DA70E6A1"
+			tasks: [{
+				id: "0ADA3528B7E39701"
+				type: "item"
+				item: "astralsorcery:infused_wood"
+			}]
+			rewards: [{
+				id: "791073334CBB306B"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			title: "星辉祭坛"
+			x: 17.5d
+			y: -3.0d
+			shape: "rsquare"
+			subtitle: "升级完成！"
+			dependencies: ["6644CFC04A973A8B"]
+			hide: true
+			min_required_tasks: 1
+			id: "0464489347CE31E4"
+			tasks: [
+				{
+					id: "680016595BFBF1BD"
+					type: "advancement"
+					advancement: "astralsorcery:craft_t2_altar"
+					criterion: ""
+				}
+				{
+					id: "62C4C241E3C495AC"
+					type: "item"
+					item: "astralsorcery:altar_attunement"
+				}
+			]
+			rewards: [
+				{
+					id: "2411A9882D787EA7"
+					type: "advancement"
+					auto: "enabled"
+					advancement: "astralsorcery:craft_t2_altar"
+					criterion: ""
+				}
+				{
+					id: "0F8337FFC0F28C44"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "1DA7EED91C5987D8"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 17.5d
+			y: -4.5d
+			subtitle: "望远镜升级版"
+			dependencies: ["0464489347CE31E4"]
+			id: "466E47F0716D2583"
+			tasks: [{
+				id: "15D3645BD564CCDE"
+				type: "item"
+				item: "astralsorcery:telescope"
+			}]
+			rewards: [{
+				id: "4CE6D06FAB3E3EA0"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			title: "水晶石制成的凸透镜对星光的会聚作用"
+			x: 19.0d
+			y: -3.0d
+			subtitle: "制作水晶透镜"
+			dependencies: [
+				"0464489347CE31E4"
+				"40977337DA70E6A1"
+			]
+			hide: true
+			id: "1D81326312BC880C"
+			tasks: [
+				{
+					id: "51EA000B76430A94"
+					type: "item"
+					item: {
+						id: "astralsorcery:lens"
+						Count: 1b
+						tag: {
+							astralsorcery: {
+								crystalProperties: {
+									attributes: [
+										{
+											property: "astralsorcery:purity"
+											pLevel: 2
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:shape"
+											pLevel: 3
+											discovered: 1b
+										}
+									]
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "66592A028B47182B"
+					type: "item"
+					item: "astralsorcery:linking_tool"
+				}
+			]
+			rewards: [{
+				id: "39525CC75AD33A58"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			title: "星辉金属"
+			x: 20.5d
+			y: -3.0d
+			shape: "diamond"
+			dependencies: ["1D81326312BC880C"]
+			size: 1.25d
+			id: "4A7FC365C9F2AAA0"
+			tasks: [
+				{
+					id: "16CC1C8177C1A5DE"
+					type: "item"
+					item: "astralsorcery:starmetal_ore"
+				}
+				{
+					id: "3862055AA43DD12C"
+					type: "item"
+					item: "astralsorcery:starmetal_ingot"
+				}
+			]
+			rewards: [
+				{
+					id: "5B02A638EE7C08FF"
+					type: "item"
+					item: "astralsorcery:starmetal"
+				}
+				{
+					id: "2A64AD49E8616CA5"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 20.5d
+			y: -4.5d
+			shape: "rsquare"
+			subtitle: "星宿之力"
+			description: ["这祭坛搭建真烦"]
+			dependencies: ["4A7FC365C9F2AAA0"]
+			hide: true
+			id: "189E7FA81E0DFAAA"
+			tasks: [{
+				id: "6A7EFB634B04E104"
+				type: "item"
+				item: "astralsorcery:attunement_altar"
+			}]
+			rewards: [
+				{
+					id: "213B63BD25320E82"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "055FE3D40127B20A"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "个体共鸣"
+			x: 20.5d
+			y: -6.0d
+			dependencies: ["189E7FA81E0DFAAA"]
+			id: "323CC20406FB5175"
+			tasks: [{
+				id: "14883BE5F3A6B354"
+				type: "advancement"
+				advancement: "astralsorcery:attune_self"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "1E980B517F524C1B"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			x: 22.0d
+			y: -4.5d
+			description: ["水晶石：Daisuke（挡光"]
+			dependencies: ["189E7FA81E0DFAAA"]
+			hide_text_until_complete: true
+			optional: true
+			id: "2B897EE1E39F8F6A"
+			tasks: [{
+				id: "0FC9F23C5DB1A385"
+				type: "item"
+				item: {
+					id: "astralsorcery:attuned_rock_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							crystalProperties: {
+								attributes: [{ }]
+							}
+							constellationName: ""
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "4E9DD6945F6E9994"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			x: 22.0d
+			y: -3.0d
+			subtitle: "把要处理的东西扔到地上之后拿着它左键"
+			dependencies: ["4A7FC365C9F2AAA0"]
+			hide: true
+			id: "0905A71793563B78"
+			tasks: [{
+				id: "1CCB727B85913BC6"
+				type: "item"
+				item: {
+					id: "astralsorcery:chisel"
+					Count: 1b
+					tag: {
+						Damage: 3
+					}
+				}
+			}]
+			rewards: [{
+				id: "271AAD9354066048"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			x: 23.5d
+			y: -4.5d
+			subtitle: "建议配合鞘翅使用"
+			description: ["芜湖起飞"]
+			dependencies: ["19E083B442F65D3D"]
+			optional: true
+			id: "455175A62850F218"
+			tasks: [{
+				id: "6216A8220C4DDFF0"
+				type: "item"
+				item: {
+					id: "astralsorcery:blink_wand"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "777E064B106F0C6A"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			x: 23.5d
+			y: -3.0d
+			subtitle: "把星辉锭丢地上之后拿着切削工具左键"
+			dependencies: ["0905A71793563B78"]
+			hide: true
+			id: "19E083B442F65D3D"
+			tasks: [{
+				id: "66EF7B266B460B17"
+				type: "item"
+				item: "astralsorcery:stardust"
+			}]
+			rewards: [{
+				id: "57FB338F87711803"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			title: "建筑用星杖"
+			x: 23.5d
+			y: -1.5d
+			subtitle: "比建筑小帮手功能多点"
+			dependencies: ["19E083B442F65D3D"]
+			optional: true
+			id: "3E937E9AA992913C"
+			tasks: [
+				{
+					id: "1B5B346ADC05143A"
+					type: "item"
+					item: {
+						id: "astralsorcery:architect_wand"
+						Count: 1b
+						tag: {
+							astralsorcery: {
+								storedStates: [{
+									registryName: "astralsorcery:marble_arch"
+									properties: [ ]
+								}]
+							}
+						}
+					}
+				}
+				{
+					id: "4F9D285C119E88B9"
+					type: "item"
+					item: {
+						id: "astralsorcery:exchange_wand"
+						Count: 1b
+						tag: {
+							astralsorcery: {
+								storedStates: [
+									{
+										registryName: "astralsorcery:marble_arch"
+										properties: [ ]
+									}
+									{
+										registryName: "astralsorcery:marble_arch"
+										properties: [ ]
+									}
+								]
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "098F98E56A53B608"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			title: "天辉祭坛"
+			x: 25.0d
+			y: -3.0d
+			shape: "rsquare"
+			subtitle: "星痕于天"
+			dependencies: ["19E083B442F65D3D"]
+			hide: true
+			min_required_tasks: 1
+			id: "1FF27694C8C23707"
+			tasks: [
+				{
+					id: "616A562109BA153D"
+					type: "advancement"
+					advancement: "astralsorcery:craft_t3_altar"
+					criterion: ""
+				}
+				{
+					id: "5588749541790720"
+					type: "item"
+					item: "astralsorcery:altar_constellation"
+				}
+			]
+			rewards: [
+				{
+					id: "3F4EAE75B45C2B26"
+					type: "advancement"
+					auto: "enabled"
+					advancement: "astralsorcery:craft_t3_altar"
+					criterion: ""
+				}
+				{
+					id: "172DE5DBCD1B02BC"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "7101626E6524CAB5"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 26.5d
+			y: -3.0d
+			shape: "rsquare"
+			description: ["配合纳星圣杯食用效果更佳"]
+			dependencies: ["1FF27694C8C23707"]
+			id: "246D843657C6A7F9"
+			tasks: [{
+				id: "14058961BC5BDB49"
+				type: "item"
+				item: "astralsorcery:infuser"
+			}]
+			rewards: [{
+				id: "3AFA6A3FDB16CCA3"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			title: "五彩祭坛"
+			icon: "astralsorcery:altar_radiance"
+			x: 28.0d
+			y: -3.0d
+			shape: "rsquare"
+			subtitle: "看起来好像并不五彩（"
+			dependencies: [
+				"246D843657C6A7F9"
+				"07A68D99D3F56CCA"
+			]
+			hide: true
+			min_required_tasks: 1
+			id: "3B4BE96974D51287"
+			tasks: [
+				{
+					id: "6A334C515AF4BAE8"
+					type: "advancement"
+					advancement: "astralsorcery:craft_t4_altar"
+					criterion: ""
+				}
+				{
+					id: "016121A1CD56C724"
+					type: "item"
+					item: "astralsorcery:altar_radiance"
+				}
+			]
+			rewards: [
+				{
+					id: "187A5EC59B0278CE"
+					type: "advancement"
+					auto: "enabled"
+					advancement: "astralsorcery:craft_t4_altar"
+					criterion: ""
+				}
+				{
+					id: "7D1D5C103D0DF978"
+					type: "item"
+					item: "astralsorcery:marble_bricks"
+					count: 28
+				}
+				{
+					id: "11E043C7FF402CCA"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "2155B0D9345F3A1E"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 29.0d
+			y: -1.5d
+			description: ["可以看见朦胧的星座"]
+			dependencies: ["3B4BE96974D51287"]
+			optional: true
+			id: "1B1C3864A7DA1BA1"
+			tasks: [{
+				id: "41A65EB927C05FB3"
+				type: "item"
+				item: "astralsorcery:observatory"
+			}]
+			rewards: [{
+				id: "347E0CF05B3BE2ED"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
+		}
+		{
+			x: 28.0d
+			y: -1.5d
+			dependencies: ["3B4BE96974D51287"]
+			optional: true
+			id: "0FA1264A33349BEA"
+			tasks: [{
+				id: "56C864EB9A45F648"
+				type: "item"
+				item: {
+					id: "astralsorcery:mantle"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "7C441DEA7045DB44"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
+		}
+		{
+			x: 29.0d
+			y: 0.0d
+			subtitle: "可以禁锢生物"
+			description: ["什么本我传送，拿来吧"]
+			dependencies: ["5362371280CFF216"]
+			optional: true
+			id: "57F477C4740703E7"
+			tasks: [{
+				id: "328E239CF653AC04"
+				type: "item"
+				item: "astralsorcery:fountain_prime_vortex"
+			}]
+			rewards: [{
+				id: "657E6653D8185EB8"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
+		}
+		{
+			x: 27.0d
+			y: 0.0d
+			dependencies: ["0AF71314B452FA40"]
+			optional: true
+			id: "5362371280CFF216"
+			tasks: [{
+				id: "6C90AFDE67B872F7"
+				type: "item"
+				item: "astralsorcery:fountain"
+			}]
+			rewards: [{
+				id: "4775B64493CA552F"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
+		}
+		{
+			x: 27.0d
+			y: -1.5d
+			description: ["将加速星能聚合器工作速度，主动吸收星能液并为祭坛补充星能液，这将花费更少的星能液"]
+			dependencies: ["3B4BE96974D51287"]
+			optional: true
+			id: "0AF71314B452FA40"
+			tasks: [{
+				id: "1C9D2294F004E8EE"
+				type: "item"
+				item: "astralsorcery:chalice"
+			}]
+			rewards: [{
+				id: "73B84407DF05F2E8"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
+		}
+		{
+			x: 27.0d
+			y: 1.5d
+			subtitle: "可以发射削除射线挖穿地底（雾"
+			description: ["啊其实是拿来挖地下的液体用的"]
+			dependencies: ["5362371280CFF216"]
+			optional: true
+			id: "08AD5778B8A4659E"
+			tasks: [{
+				id: "6D0EF456213541A3"
+				type: "item"
+				item: "astralsorcery:fountain_prime_liquid"
+			}]
+			rewards: [{
+				id: "4281EB59374C8897"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
+		}
+		{
+			x: 25.75d
+			y: -4.5d
+			subtitle: "把水晶石和星尘丢进星能液后等待反应"
+			description: ["也许在星辉矿上种植并在星辉矿与聚能水晶之间建立链接会有奇效"]
+			dependencies: ["19E083B442F65D3D"]
+			id: "07A68D99D3F56CCA"
+			tasks: [{
+				id: "782B6FB125D7E637"
+				type: "item"
+				item: {
+					id: "astralsorcery:celestial_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							crystalProperties: {
+								attributes: [
+									{
+										property: "astralsorcery:size"
+										pLevel: 3
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:purity"
+										pLevel: 1
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:collector.rate"
+										pLevel: 2
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:constellation.discidia"
+										pLevel: 2
+										discovered: 1b
+									}
+								]
+							}
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "529F975B4289E79E"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			x: 20.5d
+			y: -1.5d
+			shape: "gear"
+			subtitle: "右键获得游戏阶段“blood_wizard”"
+			dependencies: ["4A7FC365C9F2AAA0"]
+			size: 1.5d
+			id: "127FE1CA85D87A9A"
+			tasks: [{
+				id: "4D055C338F35C457"
+				type: "item"
+				item: "kubejs:blood_star"
+			}]
+			rewards: [{
+				id: "3227E6E3891DD47B"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendry"
+					}
+				}
+			}]
+		}
+		{
+			title: "兑换璀璨棱镜"
+			x: 29.5d
+			y: -3.0d
+			description: ["这可能需要一条产线"]
+			dependencies: ["3B4BE96974D51287"]
+			hide: true
+			id: "1BDCBF377AAB784D"
+			tasks: [
+				{
+					id: "0E2167CBA35DBB19"
+					type: "item"
+					item: "astralsorcery:stardust"
+					count: 512L
+					consume_items: true
+				}
+				{
+					id: "7FA97F02297D6FA2"
+					type: "item"
+					item: "astralsorcery:resonating_gem"
+					count: 128L
+					consume_items: true
+				}
+				{
+					id: "4D8BD56D2AA9EDBD"
+					type: "fluid"
+					fluid: "astralsorcery:liquid_starlight_flowing"
+					amount: 128000L
+				}
+				{
+					id: "34E23811FB56EA4C"
+					type: "item"
+					item: {
+						id: "astralsorcery:enchantment_amulet"
+						Count: 1b
+						tag: {
+							astralsorcery: {
+								amuletEnchantments: [{
+									type: 2
+									level: 1
+								}]
+								amuletColor: -11665439
+							}
+						}
+					}
+					consume_items: false
+				}
+			]
+			rewards: [{
+				id: "7238BFD64CF8C414"
+				type: "loot"
+				icon: {
+					id: "astralsorcery:enchantment_amulet"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							amuletEnchantments: [{
+								type: 2
+								level: 6
+							}]
+							amuletColor: -11665439
+						}
+					}
+				}
+				table_id: 8814031519092200407L
+			}]
+		}
+	]
+}

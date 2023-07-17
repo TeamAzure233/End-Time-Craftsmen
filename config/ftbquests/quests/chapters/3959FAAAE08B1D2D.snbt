@@ -1,0 +1,1103 @@
+{
+	id: "3959FAAAE08B1D2D"
+	group: "42669CA32286EFD8"
+	order_index: 0
+	filename: "3959FAAAE08B1D2D"
+	title: "支线-1 实用的小玩意"
+	icon: "sophisticatedbackpacks:backpack"
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: true
+	images: [{
+		x: -10.5d
+		y: -9.5d
+		width: 6.0d
+		height: 3.0d
+		rotation: 0.0d
+		image: "kubejs:textures/quest/chapter_useful_things.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			title: "制作背包"
+			x: -11.5d
+			y: -1.5d
+			subtitle: "你可以制作一个背包来存放物品"
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "671413FBF8789100"
+			tasks: [{
+				id: "5248C8E2BD2AC8B8"
+				type: "item"
+				item: "sophisticatedbackpacks:backpack"
+			}]
+			rewards: [{
+				id: "6976195E12ADA725"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			title: "顶级背包！"
+			x: -11.5d
+			y: 0.0d
+			subtitle: "制作下界合金背包"
+			hide_dependency_lines: false
+			dependencies: ["671413FBF8789100"]
+			id: "717B378A7C1A311E"
+			tasks: [{
+				id: "3F3AE56479D1D59F"
+				type: "item"
+				item: "sophisticatedbackpacks:netherite_backpack"
+			}]
+			rewards: [{
+				id: "5CBAB9FD290C018F"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
+		}
+		{
+			title: "升级背包"
+			x: -9.5d
+			y: -1.5d
+			subtitle: "你可以给你的背包添加升级"
+			hide_dependency_lines: false
+			dependencies: ["671413FBF8789100"]
+			id: "768143BB706EA7DF"
+			tasks: [{
+				id: "4959929C72D9D8A9"
+				type: "item"
+				item: "sophisticatedbackpacks:upgrade_base"
+			}]
+			rewards: [{
+				id: "08CA29D91B7C6369"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: -7.5d
+			subtitle: "可以将时间存储起来以便不时之需"
+			description: ["不是喜欢加速吗？把瓶塞插你py里，给你好好加个速（"]
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			hide_text_until_complete: true
+			id: "4E06150EC6DF1BDF"
+			tasks: [{
+				id: "7F2D831C126B58CA"
+				type: "item"
+				item: {
+					id: "tiab:timeinabottle"
+					Count: 1b
+					tag: {
+						timeData: {
+							storedTime: 46740
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "6969CEFBA7235FF0"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
+		}
+		{
+			title: "实用的小玩意"
+			x: -13.5d
+			y: -9.5d
+			shape: "rsquare"
+			description: ["我得想想还有什么能帮助我生存下去，我可不想面对我的变异体"]
+			dependencies: ["7A2DCA78899D5E81"]
+			hide: true
+			hide_text_until_complete: true
+			id: "0D725709CCFE27F6"
+			tasks: [{
+				id: "0985268375617878"
+				type: "gamestage"
+				stage: "useful_things"
+			}]
+		}
+		{
+			title: "建筑手杖"
+			x: -9.5d
+			y: -6.0d
+			description: ["完成一个即可"]
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			min_required_tasks: 1
+			id: "793F97134FBE6BFA"
+			tasks: [
+				{
+					id: "7E5BC5D3BA17B581"
+					type: "item"
+					item: {
+						id: "constructionwand:stone_wand"
+						Count: 1b
+						tag: {
+							wand_options: { }
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0AEB434513A1AB0F"
+					type: "item"
+					item: {
+						id: "constructionwand:iron_wand"
+						Count: 1b
+						tag: {
+							wand_options: { }
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "571DACB9007C2BCB"
+					type: "item"
+					item: {
+						id: "constructionwand:diamond_wand"
+						Count: 1b
+						tag: {
+							wand_options: { }
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "37126227BBEA36E4"
+					type: "item"
+					item: {
+						id: "constructionwand:infinity_wand"
+						Count: 1b
+						tag: {
+							wand_options: { }
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4A2B36E54614DB88"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: -6.0d
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "2A84FBD1FEC15C0C"
+			tasks: [{
+				id: "72243050123168F5"
+				type: "item"
+				item: "compactmachines:machine_maximum"
+			}]
+			rewards: [
+				{
+					id: "3613F888D660B33A"
+					type: "item"
+					item: "compactmachines:personal_shrinking_device"
+				}
+				{
+					id: "05729BC15B5AA36B"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: -1.5d
+			subtitle: "可以帮助你攀爬"
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "0F56189812281CCD"
+			tasks: [{
+				id: "7E03CC68049172DA"
+				type: "item"
+				item: "farmersdelight:rope"
+			}]
+			rewards: [{
+				id: "27FE9EE819754568"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			title: "储物抽屉"
+			x: -9.5d
+			y: -4.5d
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "31C314BCC70FED00"
+			tasks: [{
+				id: "7B7FD6498B329D7C"
+				type: "item"
+				title: "Any #storagedrawers:drawers"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "storagedrawers:drawers"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "1693B1567BF1073C"
+					type: "item"
+					item: "storagedrawers:drawer_key"
+				}
+				{
+					id: "4ED7E9D8C64C733A"
+					type: "item"
+					item: "storagedrawers:quantify_key"
+				}
+				{
+					id: "01FB9A2CD93DC3B8"
+					type: "item"
+					item: "storagedrawers:shroud_key"
+				}
+				{
+					id: "6D1DE815D80D20AF"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "升级抽屉"
+			x: -7.5d
+			y: -4.5d
+			hide_dependency_lines: false
+			dependencies: ["31C314BCC70FED00"]
+			id: "268A205C857F5ED1"
+			tasks: [{
+				id: "4D2CDEEF2B403D69"
+				type: "item"
+				item: "storagedrawers:upgrade_template"
+			}]
+			rewards: [{
+				id: "5830A9F01BE0BB8E"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: -4.5d
+			dependencies: ["31C314BCC70FED00"]
+			id: "104B8A8FB2084637"
+			tasks: [{
+				id: "319EE437CE924C7A"
+				type: "item"
+				item: "storagedrawers:compacting_drawers_3"
+			}]
+			rewards: [{
+				id: "4D23C439387FE20E"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: -4.5d
+			subtitle: "可以接入其他的储存网络"
+			dependencies: ["31C314BCC70FED00"]
+			id: "6BBA0FA93D5633AB"
+			tasks: [{
+				id: "1E9791B1FA2605BA"
+				type: "item"
+				item: "storagedrawers:controller"
+			}]
+			rewards: [{
+				id: "39C3C4C955AD64B4"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			title: "漏式植物盆"
+			x: -5.5d
+			y: -3.0d
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "6A2F7676FB000DEA"
+			tasks: [{
+				id: "28E4EDD9AB382A08"
+				type: "item"
+				title: "Any #botanypots:hopper_botany_pots"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "botanypots:hopper_botany_pots"
+					}
+				}
+			}]
+			rewards: [{
+				id: "51FA0723F926AEB7"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			x: -11.5d
+			y: -7.5d
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "0225AA845A6394DC"
+			tasks: [{
+				id: "492629934B469B23"
+				type: "item"
+				item: "torchmaster:megatorch"
+			}]
+			rewards: [{
+				id: "76746C097DE8E36A"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: -7.5d
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "2E8164CD65F58B20"
+			tasks: [{
+				id: "6A66F5BB1760A7B6"
+				type: "item"
+				item: "torchmaster:dreadlamp"
+			}]
+			rewards: [{
+				id: "3818B2D2C369A226"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			x: -9.5d
+			y: -7.5d
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "48E0CBF3178E3AEC"
+			tasks: [{
+				id: "6CEE5D04FDC2D4B5"
+				type: "item"
+				item: "torchmaster:feral_flare_lantern"
+			}]
+			rewards: [{
+				id: "540577001E2ACFB9"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			x: -7.5d
+			y: -7.5d
+			hide_dependency_lines: false
+			dependencies: ["48E0CBF3178E3AEC"]
+			id: "7BCF6C00E13FE4C5"
+			tasks: [{
+				id: "313C8F6C690D9C3E"
+				type: "item"
+				item: "torchmaster:frozen_pearl"
+			}]
+			rewards: [{
+				id: "6026FF2822BF6400"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			x: -11.5d
+			y: -4.5d
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "4869CDA4C92661F5"
+			tasks: [{
+				id: "6FD65B954A28434C"
+				type: "item"
+				item: "krate:krate_large"
+			}]
+			rewards: [{
+				id: "5743DE627BD741A6"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: -1.5d
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "67B72DFD0C494230"
+			tasks: [{
+				id: "297E364AE3137AAB"
+				type: "item"
+				item: "chickenchunks:chunk_loader"
+			}]
+			rewards: [{
+				id: "001F7462277213D4"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			x: -7.5d
+			y: -6.0d
+			subtitle: "快速的搭建方块"
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "4F91986ED78E1CAE"
+			tasks: [{
+				id: "15A80A2F585A223E"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_building"
+					Count: 1b
+					tag: {
+						state: {
+							serializer: "buildinggadgets:dummy_serializer"
+							state: {
+								Name: "minecraft:air"
+							}
+							data: { }
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "66E6C0AC106ADF32"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: -6.0d
+			subtitle: "可用于但不仅限于快速搭建防御塔"
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "1DFF2B31395E95C9"
+			tasks: [{
+				id: "5E13FEB945AEF584"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_copy_paste"
+					Count: 1b
+					tag: {
+						mode: 0b
+						template_id: [I;
+							2013807730
+							-1946925075
+							-2014073862
+							-2070518956
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "5E720E15CE6D6BEF"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			x: -11.5d
+			y: -6.0d
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "45FEECCA11E7B40D"
+			tasks: [{
+				id: "40B36431675F7A55"
+				type: "item"
+				item: {
+					id: "grapplemod:grapplinghook"
+					Count: 1b
+					tag: {
+						Damage: 0
+						custom: {
+							doublehook: 0b
+							motor: 0b
+							phaserope: 0b
+							attract: 0b
+							rocket: 0b
+							hookgravity: 1.0d
+							repelforce: 1.0d
+							attractradius: 3.0d
+							pullbackwards: 1b
+							smartmotor: 0b
+							detachonkeyrelease: 0b
+							angle: 20.0d
+							crc32: 2252267022L
+							rocket_vertical_angle: 0.0d
+							rocket_force: 1.0d
+							rocket_refuel_ratio: 15.0d
+							motorwhencrouching: 0b
+							motorwhennotcrouching: 1b
+							motordampener: 0b
+							rocket_active_time: 0.5d
+							throwspeed: 2.0d
+							motoracceleration: 0.2d
+							enderstaff: 0b
+							oneropepull: 0b
+							sneakingverticalthrowangle: 0.0d
+							smartdoublemotor: 1b
+							repel: 0b
+							sneakingangle: 10.0d
+							motormaxspeed: 4.0d
+							playermovementmult: 1.0d
+							reelin: 1b
+							sticky: 0b
+							verticalthrowangle: 0.0d
+							maxlen: 30.0d
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "0990712A2F70F64E"
+					type: "item"
+					item: "grapplemod:block_grapple_modifier"
+				}
+				{
+					id: "57C5B9CF2D197114"
+					type: "item"
+					item: "grapplemod:motorupgradeitem"
+				}
+				{
+					id: "23A8EFEABFEAC3D0"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -11.5d
+			y: -3.0d
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "2EC16312635B5EE1"
+			tasks: [{
+				id: "395AA23876172B23"
+				type: "item"
+				item: "bountifulbaubles:magic_mirror"
+			}]
+			rewards: [{
+				id: "18793F6943301FF0"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			x: -9.5d
+			y: -3.0d
+			hide_dependency_lines: false
+			dependencies: ["2EC16312635B5EE1"]
+			id: "44911EA3E9881C8F"
+			tasks: [{
+				id: "49DCD2041EECF0EB"
+				type: "item"
+				item: "bountifulbaubles:wormhole_mirror"
+			}]
+			rewards: [{
+				id: "78C69ABB4ECFAF0E"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			x: -7.5d
+			y: -3.0d
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "3F68E046732DBB45"
+			tasks: [{
+				id: "2F2DB3295E1374A6"
+				type: "item"
+				item: "globalxp:xp_block"
+			}]
+			rewards: [{
+				id: "45D51D6A1C8B1456"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			x: -9.5d
+			y: 0.0d
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "5DA66317C6DCC521"
+			tasks: [{
+				id: "5758D6AC111C52C7"
+				type: "item"
+				item: "inventorypets:item_petrifier"
+			}]
+			rewards: [
+				{
+					id: "4633E9A1217AC96C"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 16
+				}
+				{
+					id: "4238722ED71A96E1"
+					type: "item"
+					item: {
+						id: "inventorypets:pet_meta"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5F51FC2AC0F1E057"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "背包宠物"
+			x: -7.5d
+			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["0D725709CCFE27F6"]
+			id: "2FB2753E0CD9E0F1"
+			tasks: [{
+				id: "18BEAE84243B25D5"
+				type: "item"
+				title: "Any #inventorypets:all_pets"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "inventorypets:all_pets"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "1E6544BB86D0A9D1"
+					type: "item"
+					item: {
+						id: "inventorypets:pet_meta"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "41D34FD5C627E7CB"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: 0.0d
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "5CA4D9639B809FE2"
+			tasks: [{
+				id: "68A64096E6A84636"
+				type: "item"
+				item: "miniutilities:iron_spikes"
+			}]
+			rewards: [{
+				id: "298DBF68B70D0C3A"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: 0.0d
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "003872CAF9F4DC5E"
+			tasks: [{
+				id: "4EFAB55232845C81"
+				type: "item"
+				item: "miniutilities:angel_block"
+			}]
+			rewards: [{
+				id: "44AABF9968922642"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			x: -11.5d
+			y: 1.5d
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "45A33EFF6CB565E8"
+			tasks: [{
+				id: "6B89F3FB3CD509FD"
+				type: "item"
+				item: "dummmmmmy:target_dummy_placer"
+			}]
+			rewards: [{
+				id: "1139669AD0527B92"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			x: -9.5d
+			y: 1.5d
+			subtitle: "低配版模拟拉杆"
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "0AD5D9B88E7F673D"
+			tasks: [{
+				id: "77AD2708A4BCD673"
+				type: "item"
+				item: "supplementaries:crank"
+			}]
+			rewards: [{
+				id: "3274204AFB2470A7"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			x: -7.5d
+			y: 1.5d
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "2AA0B6223C333CAE"
+			tasks: [{
+				id: "409D0B3C9BFA7EE2"
+				type: "item"
+				item: {
+					id: "naturescompass:naturescompass"
+					Count: 1b
+					tag: {
+						SearchRadius: 10000
+						BiomeKey: "byg:ethereal_forest"
+						State: 3
+						Samples: 24532
+					}
+				}
+			}]
+			rewards: [{
+				id: "45A6DA29F01B877E"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: 1.5d
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "47F2DF17C912A513"
+			tasks: [{
+				id: "3AD1C5AE2DAF3746"
+				type: "item"
+				item: {
+					id: "explorerscompass:explorerscompass"
+					Count: 1b
+					tag: {
+						FoundX: 7095
+						DisplayCoordinates: 1b
+						StructureKey: "supplementaries:way_sign"
+						State: 2
+						Samples: 421
+						SearchRadius: 250
+						FoundZ: 10968
+					}
+				}
+			}]
+			rewards: [{
+				id: "6910C700D40D2AE0"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			x: -3.5d
+			y: 1.5d
+			description: ["用在需要近程传输物品时很不错，中程的话 可能距离不太够？"]
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "11B28683A4ED4DDA"
+			tasks: [{
+				id: "68E77B99B7DA6B37"
+				type: "item"
+				item: "modularrouters:item_router"
+			}]
+			rewards: [{
+				id: "102E4F2C03EEBF1F"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			x: -7.5d
+			y: -1.5d
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "19DB9CA19CFD29F4"
+			tasks: [{
+				id: "3E21C461D723C5F4"
+				type: "item"
+				item: "expandedstorage:iron_chest"
+			}]
+			rewards: [{
+				id: "2F6B9E383B29EF1B"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			title: "吊床"
+			x: -3.5d
+			y: -3.0d
+			subtitle: "可以跳过白天"
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "21A309D05788320C"
+			tasks: [
+				{
+					id: "0CEE420CB242CCC6"
+					type: "item"
+					item: "comforts:hammock_white"
+				}
+				{
+					id: "7E91DA14D13BE8DE"
+					type: "item"
+					item: "comforts:rope_and_nail"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "5BDD734A67C296B4"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+	]
+}

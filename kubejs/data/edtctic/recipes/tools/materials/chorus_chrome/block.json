@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "kubejs:chorus_chrome_block"
+  },
+  "value": 9,
+  "needed": 1,
+  "material": "edtctic:chorus_chrome",
+  "leftover": {
+    "item": "kubejs:chorus_chrome"
+  }
+}

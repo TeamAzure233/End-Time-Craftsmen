@@ -1,0 +1,307 @@
+{
+	id: "50364354BA7BF7CF"
+	group: ""
+	order_index: 0
+	filename: "50364354BA7BF7CF"
+	title: "有说在先——序章"
+	icon: "minecraft:book"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: -3.5d
+			y: -3.5d
+			width: 6.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/chapter_prologue.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -6.5d
+			y: -1.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/start.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			title: "序章——1"
+			x: -5.0d
+			y: -1.0d
+			shape: "rsquare"
+			subtitle: "这个科技与魔法交集的，失落的世界，正等候着你的到来……"
+			description: [
+				"这是一个末世生存主题的科技魔法全能整合包"
+				"本整合包有较多且难的魔改，并非新手向整合包"
+				""
+				"整合包作者：Gofishfly、皓月当空 测试：minx_player、嘤嘤怪慕沫"
+				"剧情：叶梓柠"
+				""
+				"顺带一提，这是我们的第一个整合包，如有bug请向我们反馈"
+				"祝您玩得开心！"
+			]
+			hide_dependency_lines: false
+			size: 2.0d
+			id: "3EF3940398CBF776"
+			tasks: [{
+				id: "4993A09A1272ADDF"
+				type: "checkmark"
+				title: "初始"
+			}]
+		}
+		{
+			title: "序章——2"
+			x: -3.0d
+			y: -1.0d
+			subtitle: "这里是给你的一些初始物资。背起行囊，开始接下来的旅程吧"
+			description: ["记得善用超时空扫帚，后期做自动化可能会大幅度影响tps"]
+			dependencies: ["3EF3940398CBF776"]
+			id: "6D28387A6CC9A02D"
+			tasks: [{
+				id: "27E0DF4CD79075C4"
+				type: "checkmark"
+				title: "1"
+			}]
+			rewards: [
+				{
+					id: "1AF1A1E1FFF6A5A6"
+					type: "item"
+					item: {
+						id: "constructsarmory:material_armor_helmet"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:armor_toughness": 0.1f
+								"tconstruct:knockback_resistance": 0.0f
+								"tconstruct:durability": 457.69998f
+								"tconstruct:armor": 3.5f
+								"constructsarmory:movement_speed": 0.10125f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [
+								{
+									name: "tconstruct:diamond"
+									level: 1s
+								}
+								{
+									name: "tinkerslevellingaddon:improvable"
+									level: 1s
+								}
+								{
+									name: "tconstruct:protection"
+									level: 1s
+								}
+								{
+									name: "constructsarmory:shielding"
+									level: 1s
+								}
+								{
+									name: "constructsarmory:sturdy"
+									level: 1s
+								}
+							]
+							tic_upgrades: [
+								{
+									name: "tinkerslevellingaddon:improvable"
+									level: 1s
+								}
+								{
+									name: "tconstruct:protection"
+									level: 1s
+								}
+								{
+									name: "tconstruct:diamond"
+									level: 1s
+								}
+							]
+							tic_materials: [
+								"tconstruct:iron"
+								"tconstruct:lead"
+							]
+							Damage: 0
+							tic_volatile_data: {
+								"tconstruct:rarity": 1
+							}
+							tic_persistent_data: {
+								defense: 4
+								upgrades: 1
+							}
+						}
+					}
+				}
+				{
+					id: "7F71B28888483619"
+					type: "item"
+					item: "scalinghealth:bandages"
+					count: 8
+				}
+				{
+					id: "52310FCF20F82729"
+					type: "item"
+					item: "gofish:biscuit_dot_zip"
+					count: 64
+				}
+				{
+					id: "3E4CA59C0CC5F0D1"
+					type: "item"
+					item: "kubejs:hyperspace_time_broom_mk1"
+				}
+				{
+					id: "2657F7C4878F4308"
+					type: "item"
+					item: {
+						id: "watersource:leather_water_bag"
+						Count: 1b
+						tag: {
+							Damage: 1500
+						}
+					}
+				}
+				{
+					id: "0DDADF2F85C77908"
+					type: "item"
+					item: {
+						id: "watersource:paper_strainer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "64FC3A11D6508F50"
+					type: "item"
+					item: {
+						id: "tac:sti2011"
+						Count: 1b
+						tag: {
+							AmmoCount: 13
+						}
+					}
+				}
+				{
+					id: "3B6DE3D07EB94FEF"
+					type: "item"
+					item: "tac:round45"
+					count: 256
+				}
+				{
+					id: "5C793A88918B01E1"
+					type: "item"
+					item: "sophisticatedbackpacks:backpack"
+				}
+				{
+					id: "21D290ECDF8B257E"
+					type: "item"
+					item: {
+						id: "tconstruct:dagger"
+						Count: 1b
+						tag: {
+							tic_multipliers: {
+								"tconstruct:mining_speed": 0.75f
+								"tconstruct:attack_damage": 1.15f
+								"tconstruct:durability": 1.0f
+							}
+							tic_stats: {
+								"tconstruct:attack_speed": 1.58125f
+								"tconstruct:mining_speed": 5.8500004f
+								"tconstruct:attack_damage": 10.867499f
+								"tconstruct:harvest_level": 2.0f
+								"tconstruct:durability": 147.75f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [
+								{
+									name: "tconstruct:dwarven"
+									level: 1s
+								}
+								{
+									name: "tinkerslevellingaddon:improvable"
+									level: 1s
+								}
+								{
+									name: "tconstruct:padded"
+									level: 1s
+								}
+								{
+									name: "tconstruct:offhand_attack"
+									level: 1s
+								}
+								{
+									name: "materialis:featherweight"
+									level: 1s
+								}
+								{
+									name: "tconstruct:silky_shears"
+									level: 1s
+								}
+							]
+							tic_upgrades: [{
+								name: "tinkerslevellingaddon:improvable"
+								level: 1s
+							}]
+							tic_materials: [
+								"tconstruct:copper"
+								"materialis:aluminum"
+							]
+							Damage: 0
+							tic_volatile_data: {
+								"tconstruct:duel_wielding": 1b
+							}
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 4
+							}
+						}
+					}
+				}
+				{
+					id: "459D396C62031019"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+				{
+					id: "25C76FBA3D933151"
+					type: "item"
+					item: "kubejs:infection_medicine_infuser"
+					count: 4
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: -1.0d
+			subtitle: "还有一点：遇事不决任务书、指导书"
+			description: [
+				"呐，看完这句话就去「学习与研究」章节完成你的第一个研究吧"
+				"在后面的旅程中，研究系统会经常用到"
+			]
+			dependencies: ["6D28387A6CC9A02D"]
+			id: "19AE9DF94DE753B6"
+			tasks: [{
+				id: "6B1F27B324CCB636"
+				type: "checkmark"
+				title: "序章——3"
+			}]
+		}
+	]
+}

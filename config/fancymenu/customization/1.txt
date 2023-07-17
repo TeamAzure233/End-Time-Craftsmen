@@ -1,0 +1,386 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.screen.MainMenuScreen
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  name = cool_slideshow
+  action = setbackgroundslideshow
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=604346%
+  orientation = element
+  orientation_element = d8238671-df33-43c1-9ca3-23e310ab5fe31668082026182
+  x = -10
+  action = movebutton
+  y = 5
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = element
+  orientation_element = vanillabtn:400298
+  x = 0
+  action = movebutton
+  y = 27
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_accessibility_button%
+  orientation = top-right
+  x = -39
+  action = movebutton
+  y = 28
+}
+
+customization {
+  identifier = %id=376322%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = element
+  orientation_element = vanillabtn:400298
+  x = 0
+  action = movebutton
+  y = 81
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  orientation = element
+  orientation_element = vanillabtn:400298
+  x = 102
+  action = movebutton
+  y = 81
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  orientation = top-right
+  x = -39
+  action = movebutton
+  y = 56
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = element
+  orientation_element = 73d13baf-abaf-44dd-8c07-235bb2ab9b0a1674535355801
+  x = 96
+  action = movebutton
+  y = 166
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  orientation = element
+  orientation_element = vanillabtn:400298
+  x = 0
+  action = movebutton
+  y = 53
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  width = 200
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
+  orientation = mid-centered
+  x = 0
+  action = movebutton
+  y = -31
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 386
+  width = 189
+  action = deep_customization_element:title_screen_forge_top
+  actionid = cda55e9d-d34d-4974-aa03-146e6296aec31671344327987
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 2
+  width = 81
+  action = deep_customization_element:title_screen_branding
+  actionid = a4892473-3531-4174-80e0-bbac2659e11b1671344327992
+  y = 457
+  height = 50
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 794
+  width = 165
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = 3573b412-618a-4e9f-a702-e167e6795d6f1671344327992
+  y = 489
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 583
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = c717a2bf-58f9-4f7e-b443-10b0fcc25f711671344327992
+  y = 227
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 343
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = 1f4b13a7-29bf-45b9-905b-62c4f1a0739e1671344327992
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = true
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = bf5d2419-e308-4334-88c2-7020419cb3841671344327992
+  y = 0
+  height = 30
+}
+
+customization {
+  path = kubejs/assets/edtc/texture/special/edtclogo.png
+  orientation = top-centered
+  x = -202
+  width = 393
+  action = addtexture
+  actionid = 73d13baf-abaf-44dd-8c07-235bb2ab9b0a1674535355801
+  y = 55
+  height = 196
+}
+
+customization {
+  orientation = top-right
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  x = -39
+  width = 20
+  actionid = b392b25d-b261-4fba-81ef-d099e27aac431668080026980
+  action = addbutton
+  y = 84
+  label = 官网
+  value = https://teamazure.rth1.one/#/
+  height = 20
+}
+
+customization {
+  orientation = top-right
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  x = -39
+  width = 20
+  actionid = 4e7ebf3e-292c-4e56-95a0-7df77663a3111668080233923
+  action = addbutton
+  y = 113
+  label = Bilibili
+  value = https://space.bilibili.com/1825864910
+  height = 20
+}
+
+customization {
+  showname = true
+  orientation = element
+  crouching = false
+  orientation_element = vanillabtn:400346
+  x = 236
+  slim = true
+  actionid = d8238671-df33-43c1-9ca3-23e310ab5fe31668082026182
+  action = addentity
+  y = 50
+  scale = 30
+  playername = %playername%
+  parrot = false
+}
+
+customization {
+  path = kubejs/assets/edtc/texture/special/logo.png
+  orientation = element
+  orientation_element = 73d13baf-abaf-44dd-8c07-235bb2ab9b0a1674535355801
+  x = 354
+  width = 128
+  action = addtexture
+  actionid = 3bc39257-c9f6-4d34-bd24-747ddcb8b25d1668082310634
+  y = 126
+  height = 128
+}
+
+customization {
+  orientation = element
+  shadow = true
+  orientation_element = d8238671-df33-43c1-9ca3-23e310ab5fe31668082026182
+  x = -28
+  action = addtext
+  actionid = 7d64d9e2-e916-4a71-9df4-1398d476fbf21668157250674
+  y = -81
+  scale = 1.0
+  alignment = left
+  value = 当前登录的账号
+}
+
+customization {
+  orientation = element
+  slim = true
+  scale = 30
+  showname = true
+  skinpath = kubejs/assets/edtc/texture/special/gofishfly233333.png
+  crouching = false
+  orientation_element = 3bc39257-c9f6-4d34-bd24-747ddcb8b25d1668082310634
+  x = 65
+  actionid = 64f67b43-1ebe-49ff-9296-371a4877f43e1668080437406
+  action = addentity
+  y = 158
+  playername = [作者]Gofishfly233333
+  parrot = false
+}
+
+customization {
+  orientation = element
+  restartbackgroundanimations = true
+  buttonaction = opencustomgui
+  label = 参与人员名单
+  loopbackgroundanimations = true
+  orientation_element = 64f67b43-1ebe-49ff-9296-371a4877f43e1668080437406
+  x = -35
+  width = 73
+  actionid = e93ed3c4-9a74-451b-a5b6-6923dae973e71668176782765
+  action = addbutton
+  y = 4
+  value = creators
+  height = 20
+}
+
+customization {
+  path = kubejs/assets/edtc/texture/special/mojang.png
+  orientation = bottom-right
+  x = -90
+  width = 79
+  action = addtexture
+  actionid = 8394c310-3093-4a93-b526-867b8a97fb341668382396676
+  y = -38
+  height = 22
+}
+
+customization {
+  orientation = element
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  label = 赞助者列表
+  loopbackgroundanimations = true
+  orientation_element = e93ed3c4-9a74-451b-a5b6-6923dae973e71668176782765
+  x = 0
+  width = 73
+  actionid = d2a58309-05df-4d4f-b605-47477a6c36671668959525619
+  action = addbutton
+  y = 21
+  value = https://afdian.net/a/teamazure?tab=sponsor
+  height = 20
+}
+
+customization {
+  orientation = element
+  restartbackgroundanimations = true
+  buttonaction = reloadmenu
+  label = 重载主菜单
+  loopbackgroundanimations = true
+  orientation_element = 8394c310-3093-4a93-b526-867b8a97fb341668382396676
+  x = -58
+  width = 55
+  actionid = c2e62537-abc8-4951-839a-f490dc68c3df1669003497781
+  action = addbutton
+  y = 3
+  value = 
+  height = 20
+}
+
+customization {
+  orientation = element
+  basecolor = #ffff00
+  shadow = true
+  splashfilepath = kubejs/assets/minecraft/texts/splashes.txt
+  rotation = -20.0
+  scale = 1.2
+  refresh = true
+  bouncing = true
+  vanilla-like = false
+  orientation_element = 73d13baf-abaf-44dd-8c07-235bb2ab9b0a1674535355801
+  x = 327
+  actionid = 76d97ded-1abd-4e2d-a327-2e707d4de7941668081945030
+  action = addsplash
+  y = 137
+}
+
+customization {
+  orientation = top-right
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  x = -39
+  width = 20
+  actionid = 17ed4591-77a5-4779-b078-796d40e5a8431677989545037
+  action = addbutton
+  y = 140
+  label = MCMOD
+  value = https://www.mcmod.cn/modpack/553.html
+  height = 20
+}
+
+customization {
+  orientation = top-right
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  x = -39
+  width = 20
+  actionid = ee262250-4dbe-405c-a660-1d2e856c77b11677989565044
+  action = addbutton
+  y = 167
+  label = MCBBS
+  value = https://www.mcbbs.net/thread-1415258-1-1.html
+  height = 20
+}
+

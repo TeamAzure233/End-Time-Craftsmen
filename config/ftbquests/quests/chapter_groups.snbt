@@ -1,0 +1,6 @@
+{
+	chapter_groups: [
+		{ id: "0F94B414230112AC", title: "主线" }
+		{ id: "42669CA32286EFD8", title: "支线" }
+	]
+}

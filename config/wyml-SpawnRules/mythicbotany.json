@@ -1,0 +1,19 @@
+{
+	"mod": "mythicbotany",
+	"spawn": {
+		// Array of all categories this mod has spawns for
+		"categories": {
+			"creature": {
+				// Set the limit per mob within this category
+				"spawns": {
+					"alf_pixie": {
+						// Do not edit this name
+						"name": "alf_pixie",
+						// Maximum amount of this mob that can spawn per chunk
+						"limit": 8
+					}
+				}
+			}
+		}
+	}
+}

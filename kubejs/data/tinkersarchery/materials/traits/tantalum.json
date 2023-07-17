@@ -1,0 +1,22 @@
+{
+  "default": [
+    {
+      "name": "tinkersarchery:finishing",
+      "level": 1
+    }
+  ],
+  "perStat": {
+    "tinkersarchery:bow": [
+      {
+        "name": "tinkersarchery:accurate",
+        "level": 1
+      }
+    ],
+    "tinkersarchery:bowguide": [
+      {
+        "name": "tinkersarchery:accurate",
+        "level": 1
+      }
+    ]
+  }
+}

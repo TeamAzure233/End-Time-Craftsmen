@@ -1,0 +1,44 @@
+{
+	id: "3A283ACE1F38FBAD"
+	order_index: 29
+	title: "巫妖权杖"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "twilightforest:twilight_scepter"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "twilightforest:lifedrain_scepter"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "twilightforest:zombie_scepter"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "twilightforest:shield_scepter"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+	]
+}

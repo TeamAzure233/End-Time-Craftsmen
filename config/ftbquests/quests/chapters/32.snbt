@@ -1,0 +1,452 @@
+{
+	id: "0DA1764FE3C83D31"
+	group: "42669CA32286EFD8"
+	order_index: 3
+	filename: "32"
+	title: "支线-4 魔法使"
+	icon: {
+		id: "mahoutsukai:scroll_boundary_displacement"
+		Count: 1b
+		tag: {
+			MAHOUTSUKAI_CASTER_NAME: ""
+		}
+		ForgeCaps: {
+			Parent: {
+				MAHOUTSUKAI_CASTER_NAME: ""
+			}
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: -6.5d
+		y: 1.5d
+		width: 1.0d
+		height: 1.0d
+		rotation: 0.0d
+		image: "kubejs:textures/quest/start.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			title: "同调宝石"
+			x: -3.0d
+			y: 0.0d
+			subtitle: "存储法力值用的"
+			description: ["完成一个即可"]
+			dependencies: ["743B79CCCDB1A367"]
+			min_required_tasks: 1
+			id: "77B1195C7C9FAC57"
+			tasks: [
+				{
+					id: "74AF23CD85E47092"
+					type: "item"
+					item: {
+						id: "mahoutsukai:attuned_diamond"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								MAHOUTSUKAI_GEM_STORED_MANA: 0
+							}
+						}
+					}
+				}
+				{
+					id: "5F150F30D9CF51AD"
+					type: "item"
+					item: {
+						id: "mahoutsukai:attuned_emerald"
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								MAHOUTSUKAI_GEM_STORED_MANA: 0
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0A8D689771CE4B65"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			icon: "mahoutsukai:dagger"
+			x: -5.0d
+			y: 1.5d
+			shape: "diamond"
+			description: [
+				"用这个匕首右键可以获得流血效果并扣掉一点血量，随后按V键，你的前面一格会出现一个鲜血魔法阵，你需要在魔法阵上摆放不同的粉末才能使其发挥不同的效果，具体摆放方式请参阅《魔法使知识汇编》"
+				""
+				"这Mod内容不算太多，也不太好写成任务，所以这章就这么点，剩下的留给您们自己去探索吧~"
+				""
+				"——上面是作者的话——分割线——下面是剧情——"
+				""
+				"又一把用来自残的匕首！不过我的血似乎还能能刻画一些图案，真不知道这有什么用处。或者仅仅是用来给地面做装饰？那可真是太奢侈了"
+			]
+			dependencies: ["5FE1FFA92EE06E6D"]
+			hide: true
+			hide_text_until_complete: true
+			size: 2.0d
+			id: "1A5C91C879984860"
+			tasks: [
+				{
+					id: "09D49852058C9ED0"
+					type: "item"
+					item: "mahoutsukai:dagger"
+				}
+				{
+					id: "0256031FB7BBF82C"
+					type: "gamestage"
+					stage: "mahoutsukai_all"
+				}
+			]
+			rewards: [
+				{
+					id: "5DB38EB7403DEDEA"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "65E7BDB4B9691613"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "施放一次法术"
+			x: -3.0d
+			y: 1.5d
+			description: ["Tip：千万不要在家里用这Mod的法术"]
+			dependencies: ["1A5C91C879984860"]
+			id: "743B79CCCDB1A367"
+			tasks: [{
+				id: "0FC0DA1858749A5F"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			subtitle: "多读书"
+			dependencies: ["1A5C91C879984860"]
+			id: "43CB1BE4AF59445D"
+			tasks: [{
+				id: "3423F682F45D7450"
+				type: "item"
+				item: "mahoutsukai:guidebook"
+			}]
+			rewards: [{
+				id: "31D0707F88D7F998"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: 1.5d
+			subtitle: "制作卷轴所需要的材料之一"
+			description: ["制作卷轴的话把对应的法阵画到魔法布料上就行"]
+			dependencies: ["743B79CCCDB1A367"]
+			id: "2AF28ACD27EB9430"
+			tasks: [{
+				id: "02C72CA42396C4AA"
+				type: "item"
+				item: "mahoutsukai:spell_cloth"
+			}]
+			rewards: [{
+				id: "312CC09F60A86A1D"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			subtitle: "也是存储法力的"
+			dependencies: ["743B79CCCDB1A367"]
+			id: "1529ACAFAC48F8C4"
+			tasks: [{
+				id: "275CBAB874BEC79B"
+				type: "item"
+				item: "mahoutsukai:mana_circuit_magitech"
+			}]
+			rewards: [{
+				id: "3C6EFA1F2E9BCFF1"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			subtitle: "芜湖起飞"
+			dependencies: ["2340431D169CD626"]
+			id: "23546C2ABE6F8FAE"
+			tasks: [{
+				id: "5B6E481B864F1940"
+				type: "item"
+				item: "mahoutsukai:spatial_disorientation_staff"
+			}]
+			rewards: [{
+				id: "58890419A73F2996"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			dependencies: ["2AF28ACD27EB9430"]
+			id: "2340431D169CD626"
+			tasks: [{
+				id: "621D921E6CB8DFB3"
+				type: "checkmark"
+				title: "制作一个卷轴"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			subtitle: "人造陨石坑"
+			dependencies: ["2340431D169CD626"]
+			id: "3C7405A2A865A699"
+			tasks: [{
+				id: "79FA3F628D8C0B6E"
+				type: "item"
+				item: {
+					id: "mahoutsukai:mystic_staff"
+					Count: 1b
+					tag: {
+						MAHOUTSUKAI_AOE_MODE_ON: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "17C2ACE0926F70FA"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			description: [
+				"击杀精灵获得"
+				"需要使用灵视之魔眼卷轴才能看到精灵"
+				"可以作为合成材料，也可以画魔法阵"
+			]
+			dependencies: ["2340431D169CD626"]
+			id: "796DA81BDE0092A5"
+			tasks: [{
+				id: "0E5B8EE0D01F441F"
+				type: "item"
+				item: "mahoutsukai:fae_essence"
+			}]
+			rewards: [{
+				id: "59A6FA08D8BF1FF6"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			subtitle: "一拳超人"
+			dependencies: ["2340431D169CD626"]
+			id: "73AD0CDF020E374D"
+			tasks: [{
+				id: "0A51DC38F7FF88A2"
+				type: "item"
+				item: {
+					id: "mahoutsukai:scroll_borrowed_authority"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							MAHOUTSUKAI_CASTER_NAME: ""
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "4AABEABD96E67D80"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.5d
+			subtitle: "前面那个的升级版"
+			dependencies: ["796DA81BDE0092A5"]
+			id: "4365355E37653B72"
+			tasks: [{
+				id: "7315D0691EAB68F1"
+				type: "item"
+				item: "mahoutsukai:mana_circuit"
+			}]
+			rewards: [{
+				id: "3F9C0F22058FF2A1"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			dependencies: ["796DA81BDE0092A5"]
+			id: "7370AAD398519081"
+			tasks: [{
+				id: "6C7961C86828E1E0"
+				type: "item"
+				item: "mahoutsukai:faecake"
+			}]
+			rewards: [{
+				id: "505CBF3F949D7209"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.5d
+			subtitle: "礼装的变种，但是不消耗卷轴"
+			dependencies: ["796DA81BDE0092A5"]
+			id: "1332B6632FB16987"
+			tasks: [{
+				id: "325C72DB2E6760B5"
+				type: "item"
+				item: {
+					id: "mahoutsukai:mystic_code_first_sorcery"
+					Count: 1b
+					tag: {
+						capability: {
+							Size: 3
+							Items: [ ]
+						}
+						slot3: "SLOT EMPTY"
+						slot2: "SLOT EMPTY"
+						slot1: "SLOT EMPTY"
+						color: 2
+						slot_selected: 2
+						Damage: 0
+					}
+					ForgeCaps: {
+						Parent: [ ]
+					}
+				}
+			}]
+			rewards: [{
+				id: "267C8EE84E0E2066"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			subtitle: "可以存储3个卷轴，便于使用"
+			dependencies: ["2340431D169CD626"]
+			id: "446084F8BE7014FA"
+			tasks: [{
+				id: "7529C5FCA7EDFF20"
+				type: "item"
+				item: {
+					id: "mahoutsukai:mystic_code"
+					Count: 1b
+					ForgeCaps: {
+						Parent: [ ]
+					}
+				}
+			}]
+			rewards: [{
+				id: "5C8D731A457AD8EC"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+	]
+}

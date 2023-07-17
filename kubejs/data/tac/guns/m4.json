@@ -1,0 +1,101 @@
+{
+  "general": {
+    "auto": true,
+    "rate": 720,
+    "rateSelector": [
+      0,
+      1,
+      2
+    ],
+    "gripType": "tac:two_handed_ak47",
+    "recoilAngle": 3.35,
+    "horizontalRecoilAngle": 1.25,
+    "recoilKick": 1.325,
+    "recoilAdsReduction": 0.225,
+    "weaponRecoilOffset": 0.865,
+    "cameraRecoilDuration": 1.025,
+    "cameraRecoilModifier": 1.125,
+    "recoilDuration": 0.225,
+    "weightKilo": 3.55,
+
+    "spread": 1.4,
+    "firstShotSpread": 0.115,
+    "hipFireInaccuracy": 5.6,
+    "projToMinAccuracy": 6,
+    "msToAccuracyReset": 150,
+    "movementInaccuracy": 0.425
+  },
+  "reloads": {
+    "magFed": true,
+    "maxAmmo": 30,
+    "reloadMagTimer": 35,
+    "additionalReloadEmptyMagTimer": 12,
+    "maxAdditionalAmmoPerOC": [
+      10,
+      20,
+      30
+    ],
+    "preReloadPauseTicks": 0
+  },
+  "projectile": {
+    "item": "tac:nato_556_bullet",
+    "visible": false,
+    "damage": 13.5,
+    "size": 0.1,
+    "speed": 34.5,
+    "life": 9,
+    "ricochet": true
+  },
+  "sounds": {
+    "fire": "tac:item.m4a1_fire",
+    "reloadNormal": "tac:animation.m4_norm_reload",
+    "reloadEmpty": "tac:animation.m4_empty_reload",
+    "draw": "tac:animation.m4_draw",
+    "inspect": "tac:animation.m4_inspect",
+    "cock": "tac:item.pistol.cock",
+    "silencedFire": "tac:item.m4a1_fire_s"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 9.35,
+      "zOffset": -17.55,
+      "size": 0.90,
+      "trailAdjust": 1.1325
+    },
+    "weaponType": 0
+  },
+  "modules": {
+    "zoom": {
+      "fovModifier": 0.8,
+      "yOffset": 12.58,
+      "zOffset": -1.2
+    },
+    "attachments": {
+      "scope": {
+        "yOffset": 10.455,
+        "zOffset": 5.045,
+        "scale": 1.00
+      },
+      "barrel": {
+        "yOffset": -100829.84,
+        "zOffset": -11.55,
+        "scale": 1.00
+      },
+      "stock": {
+        "yOffset": 7.75,
+        "zOffset": -22.05,
+        "scale": 0.00
+      },
+      "underBarrel": {
+        "yOffset": 7.799,
+        "zOffset": -2.35,
+        "scale": 0.00
+      },
+      "sideRail": {
+        "yOffset": 7.799,
+        "zOffset": -2.35,
+        "scale": 0.00
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+	id: "3E5111B1E7AC7942"
+	order_index: 12
+	title: "产能花"
+	loot_size: 1
+	rewards: [
+		{ item: "botania:hydroangeas", count: 16 }
+		{ item: "botania:endoflame", count: 16 }
+		{ item: "botania:thermalily", count: 16 }
+		{ item: "botania:entropinnyum", count: 8 }
+		{ item: "botania:gourmaryllis", count: 8 }
+	]
+}

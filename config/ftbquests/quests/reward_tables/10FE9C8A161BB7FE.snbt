@@ -1,0 +1,22 @@
+{
+	id: "10FE9C8A161BB7FE"
+	order_index: 14
+	title: "传送石"
+	icon: {
+		id: "waystones:warp_stone"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	loot_size: 1
+	rewards: [{
+		item: {
+			id: "waystones:warp_stone"
+			Count: 1b
+			tag: {
+				Damage: 0
+			}
+		}
+	}]
+}

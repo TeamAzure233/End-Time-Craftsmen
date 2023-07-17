@@ -1,0 +1,78 @@
+{
+  "general": {
+    "auto": true,
+    "rate": 1000,
+    "rateSelector": [
+      0,
+      2
+    ],
+    "gripType": "tac:one_handed_m1911",
+    "recoilAngle": 2.825,
+    "horizontalRecoilAngle": 2.35,
+    "recoilKick": 2.25,
+    "recoilAdsReduction": 0.1925,
+    "weaponRecoilOffset": 0.975,
+    "cameraRecoilModifier": 1.875,
+    "recoilDuration": 0.125,
+    "weightKilo": 2.2,
+
+    "spread": 1.825,
+    "firstShotSpread": 0.25,
+    "hipFireInaccuracy": 3.2,
+    "projToMinAccuracy": 3,
+    "msToAccuracyReset": 220,
+    "movementInaccuracy": 0.125
+  },
+  "reloads": {
+    "magFed": true,
+    "maxAmmo": 16,
+    "reloadMagTimer": 21,
+    "additionalReloadEmptyMagTimer": 14,
+    "maxAdditionalAmmoPerOC": [
+      8,
+      14,
+      20
+    ],
+    "preReloadPauseTicks": 7
+  },
+  "projectile": {
+    "item": "tac:9mm_round",
+    "visible": false,
+    "damage": 10,
+    "size": 0.2,
+    "speed": 17.0,
+    "life": 6
+  },
+  "sounds": {
+    "fire": "tac:item.cz75auto_fire",
+    "reloadNormal": "tac:animation.cz75_auto_reload_norm",
+    "reloadEmpty": "tac:animation.cz75_auto_reload_empty",
+    "draw": "tac:animation.cz75_auto_draw",
+    "inspect": "tac:animation.cz75_auto_inspect",
+    "cock": "tac:item.pistol.cock",
+    "silencedFire": "tac:item.cz75auto_fire_s"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 9.475,
+      "zOffset": -12.09,
+      "size": 0.45,
+      "trailAdjust": 0.7675
+    },
+    "weaponType": 2
+  },
+  "modules": {
+    "zoom": {
+      "fovModifier": 0.9,
+      "yOffset": 11.4,
+      "zOffset": -5.85
+    },
+    "attachments": {
+      "barrel": {
+        "yOffset": -100829.84,
+        "zOffset": -11.8,
+        "scale": 1.00
+      }
+    }
+  }
+}

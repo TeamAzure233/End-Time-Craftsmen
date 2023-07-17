@@ -1,0 +1,2735 @@
+{
+	id: "15583F446FBD8A6A"
+	group: "0F94B414230112AC"
+	order_index: 1
+	filename: "chapter3"
+	title: "第二章 操纵电力"
+	icon: "immersiveengineering:coil_lv"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: -13.0d
+		y: 2.0d
+		width: 1.0d
+		height: 1.0d
+		rotation: 0.0d
+		image: "kubejs:textures/quest/start.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			title: "电力时代"
+			x: -6.5d
+			y: 1.5d
+			shape: "gear"
+			subtitle: "制造交流发电机和电动马达"
+			description: ["虽然我很讨厌那些科学家，但我有时候又不得不谢谢他们：我能产生电力了。这意味着，我能制作更多的物品，能节省更多的燃料去做别的事情了，这真是太美妙了！"]
+			dependencies: ["4CF50FCA4425F064"]
+			hide_text_until_complete: true
+			size: 2.0d
+			id: "2A28B539AC1FB263"
+			tasks: [
+				{
+					id: "79B768FA96D51914"
+					type: "item"
+					item: "createaddition:alternator"
+				}
+				{
+					id: "38D80F01321EF713"
+					type: "item"
+					item: "createaddition:electric_motor"
+				}
+			]
+			rewards: [
+				{
+					id: "283B56566FDB500E"
+					type: "item"
+					item: "immersiveengineering:voltmeter"
+				}
+				{
+					id: "08D2A9ADDEE3E5B3"
+					type: "item"
+					item: "immersiveengineering:screwdriver"
+				}
+				{
+					id: "5D1F4ED7B35F7462"
+					type: "item"
+					item: "createaddition:alternator"
+				}
+				{
+					id: "74F059159F26CB57"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "2385B7BB36CCD8E1"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "低压电全家桶"
+			x: -9.0d
+			y: 1.5d
+			dependencies: [
+				"0F347900D70C47B0"
+				"24F290F63198F8B8"
+				"065D1BD273F94726"
+			]
+			size: 1.25d
+			min_required_tasks: 3
+			id: "4CF50FCA4425F064"
+			tasks: [
+				{
+					id: "60E802BCF05CE196"
+					type: "item"
+					item: "immersiveengineering:wirecoil_copper"
+				}
+				{
+					id: "476B52A5D3E375E2"
+					type: "item"
+					item: "immersiveengineering:connector_lv"
+				}
+				{
+					id: "5A3FAD14253F2A13"
+					type: "item"
+					item: "immersiveengineering:connector_lv_relay"
+				}
+				{
+					id: "792CE86A1834F6D2"
+					type: "item"
+					item: "immersiveengineering:capacitor_lv"
+				}
+			]
+			rewards: [
+				{
+					id: "4DBF9FF3FD3B5752"
+					type: "item"
+					item: "immersiveengineering:connector_lv"
+					count: 8
+				}
+				{
+					id: "2DBD24F187E5934D"
+					type: "item"
+					item: "immersiveengineering:connector_lv_relay"
+					count: 4
+				}
+				{
+					id: "27A506E9253E14BC"
+					type: "item"
+					item: "immersiveengineering:wirecoil_copper_ins"
+					count: 16
+				}
+				{
+					id: "43AC438597B12811"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -6.5d
+			y: 4.5d
+			subtitle: "充电器"
+			dependencies: ["2A28B539AC1FB263"]
+			id: "0B3289B4DEB993F7"
+			tasks: [{
+				id: "58D4638E90F4C1EF"
+				type: "item"
+				item: "createaddition:tesla_coil"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 5.0d
+			subtitle: "熔炉变电炉"
+			dependencies: ["2A28B539AC1FB263"]
+			hide: true
+			optional: true
+			id: "7A77E3B3811DFFAB"
+			tasks: [{
+				id: "6E33D1EA98B9FBC7"
+				type: "item"
+				item: "createaddition:heater"
+			}]
+		}
+		{
+			x: -9.0d
+			y: 0.0d
+			subtitle: "可以放到天上以便布线"
+			dependencies: ["4CF50FCA4425F064"]
+			hide: true
+			optional: true
+			id: "08C734B3CC15D816"
+			tasks: [{
+				id: "540AFED32A3F528F"
+				type: "item"
+				item: {
+					id: "immersiveengineering:balloon"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "粉碎机"
+			icon: "immersiveengineering:crusher"
+			x: -5.5d
+			y: -1.0d
+			shape: "rsquare"
+			dependencies: ["2A28B539AC1FB263"]
+			id: "22280C5F05485B91"
+			tasks: [
+				{
+					id: "3CA0F14079A9D947"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 10L
+				}
+				{
+					id: "033977EC5842DDB8"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 10L
+				}
+				{
+					id: "12928809A24B5465"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "34F4E70ACB0FF61E"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 8L
+				}
+				{
+					id: "20E362592B2899CD"
+					type: "item"
+					item: "minecraft:hopper"
+					count: 9L
+				}
+			]
+		}
+		{
+			title: "杆子"
+			x: -9.0d
+			y: 3.0d
+			subtitle: "可以美化布线"
+			description: ["完成一个即可"]
+			dependencies: ["4CF50FCA4425F064"]
+			hide: true
+			optional: true
+			min_required_tasks: 1
+			id: "65AABED1DD8F6BF7"
+			tasks: [
+				{
+					id: "512B6B33A53C49D4"
+					type: "item"
+					item: "immersiveengineering:treated_post"
+				}
+				{
+					id: "485C55370AD5B978"
+					type: "item"
+					item: "immersiveengineering:steel_post"
+				}
+				{
+					id: "26BFF0275417E9A5"
+					type: "item"
+					item: "immersiveengineering:alu_post"
+				}
+			]
+		}
+		{
+			title: "中压电全家桶"
+			x: -2.5d
+			y: 6.25d
+			dependencies: ["2A28B539AC1FB263"]
+			hide: true
+			size: 1.25d
+			id: "2F25EB0251E94699"
+			tasks: [
+				{
+					id: "253D3181A863A6C5"
+					type: "item"
+					item: "immersiveengineering:wirecoil_electrum"
+				}
+				{
+					id: "0EE94BDEA804B4E1"
+					type: "item"
+					item: "immersiveengineering:connector_mv"
+				}
+				{
+					id: "4F89D6982CE81E5E"
+					type: "item"
+					item: "immersiveengineering:connector_mv_relay"
+				}
+				{
+					id: "0B39F27B0613C740"
+					type: "item"
+					item: "immersiveengineering:capacitor_mv"
+				}
+			]
+			rewards: [
+				{
+					id: "283D7CA239939A0C"
+					type: "item"
+					item: "immersiveengineering:connector_mv"
+					count: 8
+				}
+				{
+					id: "4F4C6ACE7814C95C"
+					type: "item"
+					item: "immersiveengineering:connector_mv_relay"
+					count: 4
+				}
+				{
+					id: "4134CF24959C78E6"
+					type: "item"
+					item: "immersiveengineering:wirecoil_electrum_ins"
+					count: 16
+				}
+				{
+					id: "30D10641776871A8"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 4.0d
+			dependencies: ["2A28B539AC1FB263"]
+			hide: true
+			id: "1793930B00A5A510"
+			tasks: [{
+				id: "150AE341767B92AE"
+				type: "item"
+				item: "immersiveengineering:transformer"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			dependencies: ["2A28B539AC1FB263"]
+			hide: true
+			optional: true
+			id: "1E9769D455052B2E"
+			tasks: [{
+				id: "0715CC377818A194"
+				type: "item"
+				item: "immersiveengineering:cloche"
+			}]
+		}
+		{
+			title: "沉浸工程的流体系统"
+			x: -1.0d
+			y: 0.0d
+			subtitle: "其实也可以用其他Mod的管道给机器供水的，但这个造多方块结构会用到"
+			dependencies: ["2A28B539AC1FB263"]
+			hide: true
+			id: "356A1C1B305D297E"
+			tasks: [
+				{
+					id: "6F7EBA8E6E219491"
+					type: "item"
+					item: "immersiveengineering:fluid_pump"
+				}
+				{
+					id: "6BB35F254F284DD4"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+				}
+			]
+		}
+		{
+			x: -6.5d
+			y: -1.5d
+			subtitle: "原力传送带"
+			description: ["其实我推荐用机械动力的，但是这个造多方块结构会用到"]
+			dependencies: ["2A28B539AC1FB263"]
+			id: "3859F29BD2CFE4D6"
+			tasks: [{
+				id: "4B01A10CABE7ED75"
+				type: "item"
+				item: "immersiveengineering:conveyor_basic"
+			}]
+		}
+		{
+			title: "高压电全家桶"
+			x: 7.75d
+			y: 1.5d
+			dependencies: [
+				"7C48F27695400664"
+				"1361153DA043E8AC"
+			]
+			hide: true
+			size: 1.25d
+			id: "41D21F87FCF09692"
+			tasks: [
+				{
+					id: "2A4FC36E62BE488D"
+					type: "item"
+					item: "immersiveengineering:wirecoil_steel"
+				}
+				{
+					id: "6E98B88BA09156EA"
+					type: "item"
+					item: "immersiveengineering:connector_hv"
+				}
+				{
+					id: "3B2BA0BE2D9CB7DA"
+					type: "item"
+					item: "immersiveengineering:connector_hv_relay"
+				}
+				{
+					id: "2D1705EADE1F452D"
+					type: "item"
+					item: "immersiveengineering:capacitor_hv"
+				}
+			]
+			rewards: [
+				{
+					id: "50323A7DFDA57C31"
+					type: "item"
+					item: "immersiveengineering:connector_hv"
+					count: 8
+				}
+				{
+					id: "4EEDB303D5822D46"
+					type: "item"
+					item: "immersiveengineering:connector_hv_relay"
+					count: 4
+				}
+				{
+					id: "051E38FF1EE8A76F"
+					type: "item"
+					item: "immersiveengineering:wirecoil_steel"
+					count: 16
+				}
+				{
+					id: "7FE63E05A1C5E2D5"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: 1.5d
+			dependencies: ["41D21F87FCF09692"]
+			id: "09007F17318052F9"
+			tasks: [{
+				id: "5DA08B7323930DA8"
+				type: "item"
+				item: "immersiveengineering:transformer_hv"
+			}]
+		}
+		{
+			title: "工业发酵机"
+			icon: "immersiveengineering:fermenter"
+			x: 0.0d
+			y: 1.5d
+			shape: "rsquare"
+			dependencies: ["2A28B539AC1FB263"]
+			id: "3DAC97A9AA2838F5"
+			tasks: [
+				{
+					id: "544866B70060EDDB"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 4L
+				}
+				{
+					id: "14914D4ED953D149"
+					type: "item"
+					item: "minecraft:cauldron"
+					count: 4L
+				}
+				{
+					id: "4E01C917CEC2E563"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "0B0D0F198E0FC920"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 2L
+				}
+				{
+					id: "007DE8DDA5500B1B"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "1556EC262AFFD3CA"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "炼油厂"
+			icon: "immersiveengineering:refinery"
+			x: 3.0d
+			y: 1.5d
+			shape: "rsquare"
+			dependencies: ["4F99104566F2AAC6"]
+			id: "6298F314DBA1B7CE"
+			tasks: [
+				{
+					id: "661FB8B48CA85F13"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 16L
+				}
+				{
+					id: "767A140E144FB155"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 8L
+				}
+				{
+					id: "54B5E5C712F23D8A"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "652B0B1EFFBB8022"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 2L
+				}
+				{
+					id: "222C05F94509A4F3"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+			]
+		}
+		{
+			title: "制取生物柴油"
+			icon: "immersiveengineering:biodiesel_bucket"
+			x: 4.5d
+			y: 1.5d
+			dependencies: ["6298F314DBA1B7CE"]
+			id: "561374E09F66B093"
+			tasks: [{
+				id: "29BABECAFB3B975F"
+				type: "checkmark"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			dependencies: ["561374E09F66B093"]
+			hide: true
+			optional: true
+			id: "0BD80C88A3E3DE45"
+			tasks: [{
+				id: "77386C74ED7069FD"
+				type: "item"
+				item: {
+					id: "immersiveengineering:buzzsaw"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 5
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "224316893F8D5849"
+				type: "item"
+				item: {
+					id: "immersiveengineering:sawblade"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			dependencies: ["561374E09F66B093"]
+			hide: true
+			optional: true
+			id: "53E3D1615F5B7D58"
+			tasks: [{
+				id: "76186F9161FEC31B"
+				type: "item"
+				item: {
+					id: "immersiveengineering:drill"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 5
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "3E3FB58034972D8A"
+				type: "item"
+				item: "immersiveengineering:drillhead_steel"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.5d
+			dependencies: [
+				"0BD80C88A3E3DE45"
+				"53E3D1615F5B7D58"
+			]
+			dependency_requirement: "one_completed"
+			optional: true
+			id: "0BAF52E53BB8294A"
+			tasks: [{
+				id: "6EBA7276A53B7310"
+				type: "item"
+				item: {
+					id: "immersiveengineering:maintenance_kit"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "柴油发电机"
+			icon: "immersiveengineering:diesel_generator"
+			x: 6.0d
+			y: 1.5d
+			shape: "rsquare"
+			dependencies: ["561374E09F66B093"]
+			id: "7C48F27695400664"
+			tasks: [
+				{
+					id: "111A81181F422168"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 13L
+				}
+				{
+					id: "748954050CB5D442"
+					type: "item"
+					item: "immersiveengineering:radiator"
+					count: 9L
+				}
+				{
+					id: "542C66569F7F3DBE"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "06AE804574F18796"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 5L
+				}
+				{
+					id: "7F01283014E333E6"
+					type: "item"
+					item: "immersiveengineering:generator"
+					count: 4L
+				}
+				{
+					id: "4D802B55C54C3996"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+			]
+		}
+		{
+			title: "工业挤压机"
+			icon: "immersiveengineering:squeezer"
+			x: 1.5d
+			y: 1.5d
+			shape: "rsquare"
+			subtitle: "造生物柴油不一定要用这个东西，但造石墨会用"
+			dependencies: ["3DAC97A9AA2838F5"]
+			id: "4F99104566F2AAC6"
+			tasks: [
+				{
+					id: "5F973615A197C3F4"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "75E5C4E9FD2D6DEC"
+					type: "item"
+					item: "immersiveengineering:wooden_barrel"
+					count: 4L
+				}
+				{
+					id: "32D802A810A43B53"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 3L
+				}
+				{
+					id: "02E2986C2477BE4B"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "09F29AEF4D8F2AE1"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 2L
+				}
+				{
+					id: "7074FF276FDBC243"
+					type: "item"
+					item: "minecraft:piston"
+				}
+				{
+					id: "39007870C460F258"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			dependencies: ["4F99104566F2AAC6"]
+			id: "1A350D9BC4FE2080"
+			tasks: [{
+				id: "616A5E620AEBD5E0"
+				type: "item"
+				item: "immersiveengineering:dust_hop_graphite"
+			}]
+		}
+		{
+			x: 7.75d
+			y: 3.0d
+			dependencies: ["1A350D9BC4FE2080"]
+			id: "1361153DA043E8AC"
+			tasks: [{
+				id: "2D0FA77671F53490"
+				type: "item"
+				item: "immersiveengineering:ingot_hop_graphite"
+			}]
+		}
+		{
+			title: "装配机"
+			icon: "immersiveengineering:assembler"
+			x: -7.0d
+			y: -3.0d
+			shape: "rsquare"
+			dependencies: ["3859F29BD2CFE4D6"]
+			id: "0739A9AC42B71E33"
+			tasks: [
+				{
+					id: "2604DFE495F3F1DF"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "3C629F8D8DC863BD"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+					count: 2L
+				}
+				{
+					id: "240E89A64B78215C"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "4E2E267A060F89E3"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 9L
+				}
+				{
+					id: "51656E6C2E010CC4"
+					type: "item"
+					item: "immersiveengineering:slab_sheetmetal_iron"
+					count: 6L
+				}
+				{
+					id: "1A86F63AC8A41C34"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 2L
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: -1.0d
+			dependencies: ["2A28B539AC1FB263"]
+			hide: true
+			optional: true
+			id: "7B4311C9745DF6AD"
+			tasks: [{
+				id: "5CB40B584F6B0D9B"
+				type: "item"
+				item: "immersiveengineering:charging_station"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 4.0d
+			dependencies: ["2A28B539AC1FB263"]
+			optional: true
+			id: "1FB9D139AB30C30F"
+			tasks: [{
+				id: "7C8A4E06673C26C8"
+				type: "item"
+				item: "immersiveengineering:powerpack"
+			}]
+		}
+		{
+			title: "斗轮式挖掘机"
+			icon: "immersiveengineering:bucket_wheel"
+			x: 6.0d
+			y: -1.0d
+			shape: "rsquare"
+			subtitle: "无中生矿"
+			description: ["这东西的耗电量相当于一个柴油发电机的发电量"]
+			dependencies: [
+				"3C5A132DC323348C"
+				"7C48F27695400664"
+			]
+			hide: true
+			id: "6498916AC9FA703A"
+			tasks: [
+				{
+					id: "0D32B9B73274D49F"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "48553FA92556B8F1"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 16L
+				}
+				{
+					id: "3AE0229C42AF3CB5"
+					type: "item"
+					item: "immersiveengineering:radiator"
+					count: 3L
+				}
+				{
+					id: "1581DE08FEF2097A"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 9L
+				}
+				{
+					id: "19D846C539466F54"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 4L
+				}
+				{
+					id: "498A6EDA7E50520A"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "7770D732DFAFD069"
+					type: "item"
+					title: "Any #forge:storage_blocks/steel"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:storage_blocks/steel"
+						}
+					}
+					count: 9L
+				}
+				{
+					id: "092B3CC8DCE72173"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 20L
+				}
+			]
+			rewards: [{
+				id: "046C6CACA414E0C8"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
+		}
+		{
+			title: "矿物勘测"
+			x: -2.5d
+			y: -3.0d
+			description: ["这里是支线，不必完成~"]
+			dependencies: ["2A28B539AC1FB263"]
+			hide: true
+			optional: true
+			id: "710E2B85849F045B"
+			tasks: [
+				{
+					id: "63010CA820719CC8"
+					type: "item"
+					item: {
+						id: "immersiveengineering:survey_tools"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "683F172EA4B35DC2"
+					type: "item"
+					item: "immersiveengineering:sample_drill"
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: -3.0d
+			dependencies: ["710E2B85849F045B"]
+			hide: true
+			id: "3C5A132DC323348C"
+			tasks: [{
+				id: "57A460AE00387714"
+				type: "item"
+				item: {
+					id: "immersiveengineering:coresample"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "强化高炉"
+			icon: "immersiveengineering:advanced_blast_furnace"
+			x: -7.5d
+			y: -1.0d
+			shape: "rsquare"
+			dependencies: ["2A28B539AC1FB263"]
+			id: "4CC2D8CAD07D7B2D"
+			tasks: [
+				{
+					id: "2F09CC7903BAEEF1"
+					type: "item"
+					item: "immersiveengineering:blastbrick_reinforced"
+					count: 27L
+				}
+				{
+					id: "358AB5D2EE941A00"
+					type: "item"
+					item: "minecraft:hopper"
+				}
+			]
+			rewards: [{
+				id: "5BEE23EFB3DF4721"
+				type: "item"
+				item: "immersiveengineering:blastfurnace_preheater"
+				count: 2
+			}]
+		}
+		{
+			title: "沉浸工程之始"
+			icon: "immersiveengineering:coil_lv"
+			x: -11.5d
+			y: 1.5d
+			shape: "rsquare"
+			dependencies: ["0F347900D70C47B0"]
+			hide: true
+			size: 2.0d
+			id: "065D1BD273F94726"
+			tasks: [{
+				id: "64705F84E7F72ADC"
+				type: "gamestage"
+				stage: "electricity_era"
+			}]
+			rewards: [
+				{
+					id: "29D3DAF1FF881FF9"
+					type: "item"
+					item: "immersivepetroleum:projector"
+				}
+				{
+					id: "3B1D17641242DEE9"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "6ED20C4E7427AB46"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "自动化工程师装配台"
+			icon: "immersiveengineering:auto_workbench"
+			x: -6.0d
+			y: -3.0d
+			shape: "rsquare"
+			dependencies: ["3859F29BD2CFE4D6"]
+			id: "4E453B7FF3568932"
+			tasks: [
+				{
+					id: "6174E94F28EC5DA9"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 5L
+				}
+				{
+					id: "652E3638F765ABAA"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 4L
+				}
+				{
+					id: "7F04724BB0B3EA4E"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 4L
+				}
+				{
+					id: "701C2A4B1A99CC42"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 2L
+				}
+				{
+					id: "5C7131C73F85E644"
+					type: "item"
+					title: "Any #forge:treated_wood_slab"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:treated_wood_slab"
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "43DE09D59898DC08"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+			]
+		}
+		{
+			title: "电弧炉"
+			icon: "immersiveengineering:arc_furnace"
+			x: 11.0d
+			y: 1.5d
+			shape: "rsquare"
+			dependencies: ["231BAE646E1AFB97"]
+			id: "357374024B065F9A"
+			tasks: [
+				{
+					id: "73AC458733212105"
+					type: "item"
+					item: "immersiveengineering:blastbrick_reinforced"
+					count: 27L
+				}
+				{
+					id: "0133BF1CD6B7CD21"
+					type: "item"
+					item: "immersiveengineering:slab_sheetmetal_steel"
+					count: 14L
+				}
+				{
+					id: "1AF924BD6A34EE00"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 10L
+				}
+				{
+					id: "6B5933C6C2DA7BFB"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 8L
+				}
+				{
+					id: "33F422D1F92D7AE5"
+					type: "item"
+					title: "Any #forge:storage_blocks/steel"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:storage_blocks/steel"
+						}
+					}
+					count: 6L
+				}
+				{
+					id: "177F0261683039C7"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 5L
+				}
+				{
+					id: "1D79812B96FEA3E2"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 5L
+				}
+				{
+					id: "6D54640CED4F092D"
+					type: "item"
+					item: "minecraft:cauldron"
+				}
+				{
+					id: "3546402018207A02"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+			]
+			rewards: [
+				{
+					id: "0D9D778D18B952CC"
+					type: "item"
+					item: {
+						id: "immersiveengineering:blueprint"
+						Count: 1b
+						tag: {
+							blueprint: "electrode"
+						}
+					}
+				}
+				{
+					id: "2059F14A8CDD2A4C"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 11.0d
+			y: 3.0d
+			dependencies: ["1361153DA043E8AC"]
+			id: "231BAE646E1AFB97"
+			tasks: [{
+				id: "20E2D1FD94E1A13D"
+				type: "item"
+				item: {
+					id: "immersiveengineering:graphite_electrode"
+					Count: 1b
+					tag: {
+						graphDmg: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "31441FA08A81E818"
+				type: "item"
+				item: {
+					id: "immersiveengineering:graphite_electrode"
+					Count: 1b
+					tag: {
+						graphDmg: 0
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			x: 15.0d
+			y: 1.5d
+			shape: "gear"
+			description: [
+				"这个东西目前无法全自动，因为电弧炉的石墨电极需要手动更换"
+				"后面的组合合成将解决这个问题"
+			]
+			dependencies: ["5C7A7264D50FAA5E"]
+			size: 2.0d
+			id: "2EE7F2B5E00B235D"
+			tasks: [{
+				id: "799FA265087F89FF"
+				type: "item"
+				item: "kubejs:integration_mechanism"
+			}]
+			rewards: [
+				{
+					id: "478DE6D23DCCB5AF"
+					type: "item"
+					item: "kubejs:integration_mechanism"
+					count: 8
+				}
+				{
+					id: "3139ADE1D27BD57F"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+				{
+					id: "12277AF571BDA5E5"
+					type: "random"
+					table_id: 1564736420538994362L
+				}
+			]
+		}
+		{
+			x: 8.5d
+			y: 0.0d
+			subtitle: "你手中闪烁的电光，是我此生不变的信仰，唯我超电磁炮永世长存！"
+			description: [
+				"可以使用金属棒或石墨电极作为弹药，长按右键蓄力后松开发射"
+				"建议搭配电容背包使用（因为这东西特别费电"
+				"建议使用时播放《Only My Railgun》，或许可以获得加成（不是"
+				"伤害超高"
+			]
+			dependencies: ["41D21F87FCF09692"]
+			optional: true
+			id: "7D15B8F04F26DEE4"
+			tasks: [{
+				id: "3B544121FCB8FE39"
+				type: "item"
+				item: {
+					id: "immersiveengineering:railgun"
+					Count: 1b
+					tag: {
+						ammo_slot: 11
+						energy: 0
+					}
+					ForgeCaps: {
+						Parent: {
+							Size: 3
+							Items: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "信素锭"
+			x: 13.0d
+			y: 1.5d
+			dependencies: ["357374024B065F9A"]
+			id: "5C7A7264D50FAA5E"
+			tasks: [{
+				id: "7C01FB243C6DE96B"
+				type: "item"
+				title: "Any #forge:ingots/signalum"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/signalum"
+					}
+				}
+			}]
+		}
+		{
+			title: "钻井"
+			icon: "immersivepetroleum:pumpjack"
+			x: 7.5d
+			y: -3.0d
+			shape: "rsquare"
+			subtitle: "无中生油"
+			description: ["这东西必须使用沉浸的流体管道才能工作"]
+			dependencies: ["3C5A132DC323348C"]
+			id: "3C96CBD1BB776929"
+			tasks: [
+				{
+					id: "653BD6EB96698E92"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 4L
+				}
+				{
+					id: "7C0E04F889F1FC4D"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 11L
+				}
+				{
+					id: "591704BEAE0701C4"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "1ECFC3BE5BB23E7A"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 2L
+				}
+				{
+					id: "68BEBE6E2219FA83"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 4L
+				}
+				{
+					id: "696AE9B540F84B13"
+					type: "item"
+					title: "Any #forge:storage_blocks/steel"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:storage_blocks/steel"
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "44CD3E1D4B2F845E"
+					type: "item"
+					item: "immersiveengineering:treated_fence"
+					count: 6L
+				}
+				{
+					id: "5FA7AA49C481D5B8"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+			]
+			rewards: [{
+				id: "5AA4E667FCE6D805"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
+		}
+		{
+			title: "精馏塔"
+			icon: "immersivepetroleum:distillationtower"
+			x: 9.0d
+			y: -3.0d
+			shape: "rsquare"
+			description: [
+				"后面懒得写了~反正也是支线~"
+				"其实我也不知道后面怎么写（小声）"
+			]
+			dependencies: ["3C96CBD1BB776929"]
+			hide_text_until_complete: true
+			id: "13C17EAA3181FC2A"
+			tasks: [
+				{
+					id: "4737A1BE8ECDFA7F"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 25L
+				}
+				{
+					id: "52B2FC05AC22AABD"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 4L
+				}
+				{
+					id: "04C63389E4A566AC"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "11BEE4DED15647BB"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 60L
+				}
+				{
+					id: "3154FE583FA31905"
+					type: "item"
+					item: "immersiveengineering:slab_steel_scaffolding_grate_top"
+					count: 30L
+				}
+				{
+					id: "4D7963FD33F11128"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 17L
+				}
+			]
+			rewards: [{
+				id: "38567EB87AB7CD6B"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: -4.0d
+			dependencies: ["53ACC802890A7F84"]
+			id: "38C2899B4CE73B90"
+			tasks: [{
+				id: "74DFE51B91653AC3"
+				type: "item"
+				item: {
+					id: "immersivepetroleum:speedboat"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 4
+							Items: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: -1.0d
+			dependencies: ["7CC634DEDA4B8B2F"]
+			id: "7779D3FEE0AE5C2D"
+			tasks: [{
+				id: "3C671CAB61925AE4"
+				type: "item"
+				item: "immersivepetroleum:auto_lubricator"
+			}]
+		}
+		{
+			x: 12.0d
+			y: -2.0d
+			dependencies: ["7CC634DEDA4B8B2F"]
+			id: "62477C8563F30D41"
+			tasks: [{
+				id: "15746548CB6EBD2B"
+				type: "item"
+				item: "immersivepetroleum:oil_can"
+			}]
+		}
+		{
+			title: "无线热能装置"
+			x: -0.5d
+			y: 5.0d
+			subtitle: "给升级的熔炉用的电力加热器"
+			dependencies: ["7A77E3B3811DFFAB"]
+			id: "214A458BEE4B7E95"
+			tasks: [
+				{
+					id: "6233749870485E74"
+					type: "item"
+					item: "ironfurnaces:item_heater"
+				}
+				{
+					id: "4F8870D003245EA6"
+					type: "item"
+					item: "ironfurnaces:heater"
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 3.0d
+			dependencies: ["2A28B539AC1FB263"]
+			hide: true
+			optional: true
+			id: "2E8DCCAE55C54D60"
+			tasks: [{
+				id: "7D5C7E667AA0B160"
+				type: "item"
+				item: "immersiveengineering:thermoelectric_generator"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 4.0d
+			dependencies: ["2A28B539AC1FB263"]
+			optional: true
+			id: "727FD00F34AB9D9A"
+			tasks: [{
+				id: "1778AD703B481760"
+				type: "item"
+				item: {
+					id: "thermal:flux_magnet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "硫磺回收装置"
+			icon: "immersivepetroleum:hydrotreater"
+			x: 10.5d
+			y: -3.0d
+			shape: "rsquare"
+			dependencies: ["13C17EAA3181FC2A"]
+			id: "413EDE5B9C91A064"
+			tasks: [
+				{
+					id: "15D0D3BDB94FA41C"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 10L
+				}
+				{
+					id: "7E0FD89561CA8F5A"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 4L
+				}
+				{
+					id: "3FF613D9E3A26679"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 15L
+				}
+				{
+					id: "313F0E37AFC0F0C9"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "20FF1A24B4AFA5E6"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "制取柴油"
+			icon: "immersivepetroleum:diesel_bucket"
+			x: 12.0d
+			y: -3.0d
+			description: ["这个可以拿去给柴油发电机发电"]
+			dependencies: ["413EDE5B9C91A064"]
+			id: "09570416DC5CCF97"
+			tasks: [{
+				id: "1B7B4A5B30DA9AFF"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "制取汽油"
+			icon: "immersivepetroleum:gasoline_bucket"
+			x: 10.5d
+			y: -4.0d
+			dependencies: ["13C17EAA3181FC2A"]
+			id: "53ACC802890A7F84"
+			tasks: [{
+				id: "6F0C0980324E50E7"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "制取润滑油"
+			icon: "immersivepetroleum:lubricant_bucket"
+			x: 10.5d
+			y: -2.0d
+			dependencies: ["13C17EAA3181FC2A"]
+			id: "7CC634DEDA4B8B2F"
+			tasks: [{
+				id: "1BB0C2F2810DD719"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "焦化器"
+			icon: "immersivepetroleum:cokerunit"
+			x: 9.0d
+			y: -4.5d
+			shape: "rsquare"
+			description: [
+				"想做的自己做吧，懒得写任务了（"
+				"答应我，造出来焦化器之后再点完成好不好"
+			]
+			dependencies: ["13C17EAA3181FC2A"]
+			id: "03FA59B33ACF70ED"
+			tasks: [{
+				id: "6D66C9CA913120E4"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "48701D7D04AD8DFD"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
+		}
+		{
+			x: 17.5d
+			y: 1.5d
+			shape: "gear"
+			subtitle: "热力膨胀之始"
+			description: ["我拥有了更多的电，这意味着我可以放弃一部分机械，使用电力机器。同时，制作出不同的机械，能让我制作出更多不一样的物品，我的工业甚至能再进一步"]
+			dependencies: [
+				"73B7431470E7625E"
+				"2EE7F2B5E00B235D"
+			]
+			hide: true
+			hide_text_until_complete: true
+			size: 2.0d
+			id: "2A644DBA8FE9C709"
+			tasks: [{
+				id: "54844C381536B1D1"
+				type: "item"
+				item: "thermal:machine_frame"
+			}]
+			rewards: [
+				{
+					id: "4F3DBFE2339D9EE4"
+					type: "item"
+					item: "thermal:machine_frame"
+				}
+				{
+					id: "015AB651B1590763"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "786B20E7750D3B60"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+				{
+					id: "1B55019E1F318216"
+					type: "item"
+					item: "thermal:wrench"
+				}
+			]
+		}
+		{
+			title: "XNet三件套"
+			icon: "xnet:controller"
+			x: 18.0d
+			y: -0.5d
+			subtitle: "这个任务只是为了让您知道这个包里有XNet"
+			description: [
+				"完成3个即可"
+				"（不知道为什么XNet的线缆没法用标签过滤器，一用就是缺失物品）"
+				"在后期大规模自动化时能极大程度上减少卡顿"
+				"十分的好用"
+			]
+			dependencies: ["2A644DBA8FE9C709"]
+			hide: true
+			min_required_tasks: 3
+			id: "19E54AB5D4E043A2"
+			tasks: [
+				{
+					id: "192B48AC5EA4FBD3"
+					type: "item"
+					item: "xnet:controller"
+				}
+				{
+					id: "33B274DC325EB553"
+					type: "item"
+					item: "xnet:netcable_green"
+				}
+				{
+					id: "216740E87D90F2CC"
+					type: "item"
+					item: "xnet:netcable_yellow"
+				}
+				{
+					id: "4EB8F245BF48CC01"
+					type: "item"
+					item: "xnet:netcable_red"
+				}
+				{
+					id: "3B08060C901036AA"
+					type: "item"
+					item: "xnet:netcable_blue"
+				}
+				{
+					id: "73157286FA332C24"
+					type: "item"
+					item: "xnet:connector_blue"
+				}
+				{
+					id: "5D8F8BFDA0BED100"
+					type: "item"
+					item: "xnet:connector_red"
+				}
+				{
+					id: "703074571B7E0132"
+					type: "item"
+					item: "xnet:connector_green"
+				}
+				{
+					id: "6D750E53EA6264C5"
+					type: "item"
+					item: "xnet:connector_yellow"
+				}
+			]
+		}
+		{
+			title: "通量工具"
+			x: 7.0d
+			y: 0.0d
+			dependencies: ["41D21F87FCF09692"]
+			optional: true
+			id: "7E4EED21A9741294"
+			tasks: [
+				{
+					id: "7BC4CF4322D93796"
+					type: "item"
+					item: {
+						id: "thermal:flux_drill"
+						Count: 1b
+						tag: {
+							Augments: [
+								{
+									id: "thermal:upgrade_augment_3"
+									Count: 1b
+								}
+								{
+									id: "thermal:area_radius_augment"
+									Count: 1b
+								}
+								{
+									id: "thermal:area_radius_augment"
+									Count: 1b
+								}
+								{
+									id: "thermal:area_radius_augment"
+									Count: 1b
+								}
+							]
+							Energy: 24000
+							Properties: {
+								BaseMod: 4.0f
+								Radius: 3.0f
+							}
+							Damage: 0
+							Mode: 3
+						}
+					}
+				}
+				{
+					id: "0EB1506103C01269"
+					type: "item"
+					item: {
+						id: "thermal:flux_saw"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [{
+				id: "749EFFFBD43AD2C2"
+				type: "item"
+				item: "thermal:area_radius_augment"
+				count: 2
+			}]
+		}
+		{
+			x: 20.0d
+			y: 0.0d
+			dependencies: ["2A644DBA8FE9C709"]
+			hide: true
+			id: "65C8270A864640EF"
+			tasks: [{
+				id: "05290B083B043548"
+				type: "item"
+				item: "thermal:machine_pyrolyzer"
+			}]
+		}
+		{
+			x: 21.0d
+			y: 0.5d
+			dependencies: ["2A644DBA8FE9C709"]
+			hide: true
+			id: "2AEF13B605DE7D24"
+			tasks: [{
+				id: "062D10EC202D88F9"
+				type: "item"
+				item: "thermal:machine_smelter"
+			}]
+		}
+		{
+			x: 21.5d
+			y: 1.5d
+			shape: "rsquare"
+			subtitle: "高温加热"
+			dependencies: ["2A644DBA8FE9C709"]
+			id: "7D8A78E465D17E68"
+			tasks: [{
+				id: "070068ACE610C293"
+				type: "item"
+				item: "thermal:machine_crucible"
+			}]
+			rewards: [{
+				id: "7AC820E754534512"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			x: 20.0d
+			y: 3.0d
+			dependencies: ["2A644DBA8FE9C709"]
+			id: "6FDC3AE41D933121"
+			tasks: [{
+				id: "75F78C713559E9A8"
+				type: "item"
+				item: "thermal:machine_bottler"
+			}]
+		}
+		{
+			title: "生物工厂"
+			x: 18.0d
+			y: 3.5d
+			subtitle: "这个任务只是为了让您知道这个包里有Woot"
+			dependencies: ["2A644DBA8FE9C709"]
+			hide: true
+			id: "13FA7C5FC56E8D4B"
+			tasks: [
+				{
+					id: "5ACBA4DC5C286E16"
+					type: "item"
+					item: "woot:heart"
+				}
+				{
+					id: "609DCB4CAD269F7E"
+					type: "item"
+					item: {
+						id: "woot:intern"
+						Count: 1b
+						tag: {
+							mode: "BUILD_1"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 23.5d
+			y: 1.5d
+			subtitle: "流溢出的光明"
+			dependencies: ["7D8A78E465D17E68"]
+			id: "6E9A9001E470EE7E"
+			tasks: [{
+				id: "10F4BC1C129ED46F"
+				type: "item"
+				item: "extendedcrafting:luminessence"
+			}]
+		}
+		{
+			x: 23.5d
+			y: 3.0d
+			description: ["不会做可以先点检查标记，会弹出示例"]
+			dependencies: ["7D8A78E465D17E68"]
+			hide: true
+			id: "4453999CBEE4CBB2"
+			tasks: [{
+				id: "5E6383825C652641"
+				type: "checkmark"
+				title: "烈焰合金自动化确认"
+			}]
+		}
+		{
+			title: "组合合成"
+			x: 25.5d
+			y: 1.5d
+			shape: "rsquare"
+			subtitle: "通过原子重组技术制造物品的精密仪器"
+			dependencies: ["6E9A9001E470EE7E"]
+			id: "63B0B0F7CE7FCD75"
+			tasks: [
+				{
+					id: "086DFA19C84424D3"
+					type: "item"
+					item: "extendedcrafting:crafting_core"
+				}
+				{
+					id: "68E0756B0BDF1781"
+					type: "item"
+					item: "extendedcrafting:pedestal"
+				}
+			]
+			rewards: [{
+				id: "3E56EEF2CAAE551B"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			x: 31.0d
+			y: -4.0d
+			description: ["夹带私货（阿卡伊"]
+			dependencies: ["020C911C31CD3D93"]
+			id: "6F11C407C226FBDF"
+			tasks: [{
+				id: "1BE10CC7A1635403"
+				type: "item"
+				item: "kubejs:ether_drop"
+			}]
+		}
+		{
+			title: "流明锭"
+			x: 27.5d
+			y: 1.5d
+			subtitle: "似魔非魔之材料"
+			dependencies: ["63B0B0F7CE7FCD75"]
+			id: "15825B8318BA76F5"
+			tasks: [{
+				id: "37D4957AE9972335"
+				type: "item"
+				title: "Any #forge:ingots/lumium"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/lumium"
+					}
+				}
+			}]
+		}
+		{
+			title: "末影锭"
+			x: 29.5d
+			y: 1.5d
+			subtitle: "有种末影的力量...但貌似会在晚上与星辰产生反应"
+			dependencies: ["15825B8318BA76F5"]
+			id: "42BD2E975E511027"
+			tasks: [{
+				id: "7A10495DAFDFBEFB"
+				type: "item"
+				title: "Any #forge:ingots/enderium"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/enderium"
+					}
+				}
+			}]
+		}
+		{
+			title: "中空与荒芜，破碎与最低"
+			x: 32.5d
+			y: -2.0d
+			dependencies: ["6F11C407C226FBDF"]
+			id: "1E2C77B3F0147E3A"
+			tasks: [
+				{
+					id: "027004AFAF1AF2DA"
+					type: "item"
+					item: "kubejs:core_hollow"
+				}
+				{
+					id: "4E15036E0310DD3E"
+					type: "item"
+					item: "kubejs:core_desolate"
+				}
+			]
+		}
+		{
+			x: 35.0d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "诞生于破碎与最低间的合金"
+			dependencies: ["1E2C77B3F0147E3A"]
+			size: 1.5d
+			id: "1D4B85787D268FCE"
+			tasks: [{
+				id: "108BE7411C0F4880"
+				type: "item"
+				item: "kubejs:chorus_chrome"
+			}]
+			rewards: [
+				{
+					id: "62440CB2915B0C56"
+					type: "item"
+					team_reward: false
+					item: {
+						id: "kubejs:chorus_chrome_block"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "7683645803E0BF0F"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+				{
+					id: "7B886E832AD90029"
+					type: "random"
+					table_id: 1564736420538994362L
+				}
+			]
+		}
+		{
+			x: 37.074999999999996d
+			y: -2.0d
+			shape: "rsquare"
+			subtitle: "一种奇妙的化合物"
+			dependencies: [
+				"4DC2DFF370E4FF6D"
+				"1D4B85787D268FCE"
+				"48DBEDCF84B434D8"
+				"5D1BA2AF09C9B421"
+			]
+			size: 1.15d
+			id: "21C016460E092370"
+			tasks: [{
+				id: "6A567DB043878CB1"
+				type: "item"
+				item: {
+					id: "create:chromatic_compound"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "46846232217E8767"
+					type: "item"
+					item: {
+						id: "kubejs:chromatic_compound_block"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "13DC3DB9A4C719DE"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 39.5d
+			y: -1.0d
+			subtitle: "由异彩化合物经过神秘转化而来"
+			description: ["丢信标光柱里"]
+			dependencies: ["21C016460E092370"]
+			id: "676CF88060A4AA6F"
+			tasks: [{
+				id: "2673084B645006AB"
+				type: "item"
+				item: "create:refined_radiance"
+			}]
+		}
+		{
+			x: 39.5d
+			y: -3.0d
+			subtitle: "由异彩化合物经过神秘转化而来"
+			description: ["丢虚空"]
+			dependencies: ["21C016460E092370"]
+			id: "009EF9F576D53515"
+			tasks: [{
+				id: "204D10DC6467F164"
+				type: "item"
+				item: "create:shadow_steel"
+			}]
+		}
+		{
+			x: 39.5d
+			y: -2.0d
+			subtitle: "由异彩化合物经过神秘转化而来"
+			description: ["用注能线圈充电"]
+			dependencies: ["21C016460E092370"]
+			id: "2EA89AAEBC00FB7E"
+			tasks: [{
+				id: "5F72193C08313FD1"
+				type: "item"
+				item: "createaddition:overcharged_alloy"
+			}]
+		}
+		{
+			title: "异彩时代"
+			x: 41.75d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "完成此任务后开启研究：通用机械"
+			dependencies: [
+				"009EF9F576D53515"
+				"676CF88060A4AA6F"
+				"2EA89AAEBC00FB7E"
+			]
+			size: 1.5d
+			id: "63D71350804D10F2"
+			tasks: [
+				{
+					id: "60060D43A832C171"
+					type: "item"
+					item: "kubejs:chromatic_mechanism"
+				}
+				{
+					id: "5513FF2FB3E683FB"
+					type: "item"
+					item: "create:shadow_steel_casing"
+				}
+				{
+					id: "29FBD91010F54057"
+					type: "item"
+					item: "create:refined_radiance_casing"
+				}
+				{
+					id: "30942A6A26DDD544"
+					type: "item"
+					item: "createaddition:overcharged_casing"
+				}
+			]
+			rewards: [
+				{
+					id: "02E07D5D85DCD93A"
+					type: "item"
+					item: "kubejs:chromatic_mechanism"
+					count: 8
+				}
+				{
+					id: "30ABB118353A8AA2"
+					type: "item"
+					item: "create:shadow_steel_casing"
+					count: 4
+				}
+				{
+					id: "1878E7FAA821D56C"
+					type: "item"
+					item: "create:refined_radiance_casing"
+					count: 4
+				}
+				{
+					id: "7CAACD87F542157F"
+					type: "item"
+					item: "createaddition:overcharged_casing"
+					count: 4
+				}
+				{
+					id: "6870DA4CECA6EEAF"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "21EF44F734E54345"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+				}
+				{
+					id: "3391D9C0338B2B15"
+					type: "random"
+					table_id: 1564736420538994362L
+				}
+			]
+		}
+		{
+			x: 21.0d
+			y: 2.5d
+			subtitle: "实用电池"
+			description: [
+				"容量不大，但有升级空间"
+				"配合升级食用更佳"
+			]
+			dependencies: ["2A644DBA8FE9C709"]
+			hide: true
+			id: "1522039F5A863E16"
+			tasks: [{
+				id: "44032AB14903B552"
+				type: "item"
+				item: {
+					id: "thermal:energy_cell"
+					Count: 1b
+					tag: {
+						Damage: 0
+						BlockEntityTag: {
+							EnergyMax: 1000000
+							EnergySend: 1000
+							Energy: 0
+							EnergyRecv: 1000
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "末地！"
+			icon: "minecraft:end_stone"
+			x: 27.0d
+			y: -1.0d
+			shape: "rsquare"
+			subtitle: "准备向末地进发吧"
+			dependencies: ["2953F2FE470AA573"]
+			hide: true
+			size: 2.0d
+			id: "52E472A087063798"
+			tasks: [{
+				id: "576CD4ED74A3D01C"
+				type: "gamestage"
+				stage: "ender_link"
+			}]
+			rewards: [
+				{
+					id: "56266A1D28D7EAA2"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "6F3434AD1EEACCD5"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "隔墙有眼"
+			icon: "minecraft:end_portal_frame"
+			x: 27.0d
+			y: -4.0d
+			subtitle: "找到要塞"
+			dependencies: ["52E472A087063798"]
+			min_required_tasks: 1
+			id: "5A0B9DEC3B7500CA"
+			tasks: [{
+				id: "175A43B728BFB4F7"
+				type: "structure"
+				structure: "minecraft:stronghold"
+			}]
+			rewards: [{
+				id: "4D9FF41FC8145A6D"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			title: "结束了？"
+			icon: "botania:ender_air_bottle"
+			x: 27.0d
+			y: -6.0d
+			shape: "rsquare"
+			subtitle: "进入末地"
+			description: ["我前往了另一个维度，不过这里净是些浮空的岛屿，况且为什么这里会有一条龙？而且他似乎能利用周边的水晶进行生命恢复。或许把它击败，我能去往更远处的浮岛"]
+			dependencies: ["5A0B9DEC3B7500CA"]
+			hide_text_until_complete: true
+			min_required_tasks: 1
+			id: "1BBB6B5CDAF81124"
+			tasks: [{
+				id: "51C3BE843E89AA5B"
+				type: "dimension"
+				dimension: "minecraft:the_end"
+			}]
+			rewards: [
+				{
+					id: "0E86C4E961DD93AE"
+					type: "custom"
+					title: "阶段"
+					auto: "enabled"
+				}
+				{
+					id: "78BF406F6AE4753A"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "5A0C27F5F3A0A769"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "解放末地"
+			icon: "minecraft:dragon_head"
+			x: 27.0d
+			y: -9.0d
+			shape: "gear"
+			subtitle: "击杀末影龙"
+			description: [
+				"这将会增加你的游戏难度"
+				"Tip：柱子里面可能也有水晶"
+			]
+			dependencies: ["1BBB6B5CDAF81124"]
+			size: 2.0d
+			min_required_tasks: 1
+			id: "671183FA9E622763"
+			tasks: [{
+				id: "1743FF153A341834"
+				type: "kill"
+				icon: "minecraft:dragon_head"
+				entity: "minecraft:ender_dragon"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "4CE0FAEA4640D6C3"
+					type: "custom"
+					title: "阶段"
+					auto: "enabled"
+				}
+				{
+					id: "12DCED1EE1A3207F"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+				}
+				{
+					id: "4F3497F8B80C93A4"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+				{
+					id: "0BD28492553F7DAD"
+					type: "xp"
+					xp: 250
+				}
+			]
+		}
+		{
+			title: "下一世代"
+			x: 29.5d
+			y: -7.5d
+			subtitle: "获得龙蛋（注意别让它掉传送门里了"
+			dependencies: ["671183FA9E622763"]
+			min_required_tasks: 1
+			id: "50FFE862CD4DF91C"
+			tasks: [{
+				id: "549450787E7E7698"
+				type: "item"
+				item: "minecraft:dragon_egg"
+			}]
+			rewards: [
+				{
+					id: "51F4CEAC629EACC7"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					id: "2DD955C4DA15105D"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "啪的一下就传送过去了，很快啊"
+			x: 31.5d
+			y: -7.5d
+			subtitle: "进入折跃门"
+			description: ["注：你可以按住C趴下，这样可以更方便的进入折跃门"]
+			dependencies: ["50FFE862CD4DF91C"]
+			hide: true
+			id: "5CFB85194B99356A"
+			tasks: [{
+				id: "5A8D37EF39E046DB"
+				type: "advancement"
+				advancement: "minecraft:end/enter_end_gateway"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "6AB2F451B6DEC311"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			title: "末地城与末地船"
+			x: 33.5d
+			y: -7.5d
+			subtitle: "小心里面的潜影贝"
+			dependencies: ["5CFB85194B99356A"]
+			id: "0E4F6327E251E095"
+			tasks: [{
+				id: "1F6AFBA73F875E8B"
+				type: "advancement"
+				advancement: "minecraft:end/find_end_city"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "261A9CF06A51EA53"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			title: "芜湖起飞"
+			x: 35.0d
+			y: -9.0d
+			subtitle: "在末地船上获得鞘翅"
+			dependencies: ["0E4F6327E251E095"]
+			optional: true
+			id: "7D446D6C030AC422"
+			tasks: [{
+				id: "3311535C55B93F16"
+				type: "item"
+				item: {
+					id: "minecraft:elytra"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "3799EF85BD8EE228"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
+		}
+		{
+			x: 35.5d
+			y: -7.5d
+			subtitle: "在末地船头获得（不要让它掉进虚空了"
+			dependencies: ["0E4F6327E251E095"]
+			optional: true
+			id: "297D146F0A66F783"
+			tasks: [{
+				id: "246B960492A1928B"
+				type: "item"
+				item: "minecraft:dragon_head"
+			}]
+			rewards: [{
+				id: "6C178503DC8DF91D"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			title: "哇这玩意真好看"
+			x: 33.0d
+			y: -6.0d
+			subtitle: "或许可以拿来做装饰"
+			description: [
+				"大概，也许有一些其他用途？"
+				"只能在末地高岛生物群系找到"
+			]
+			dependencies: ["5CFB85194B99356A"]
+			id: "5800EC0CFD3CF9ED"
+			tasks: [
+				{
+					id: "473B75C89E5EFDA7"
+					type: "item"
+					item: "quark:myalite_crystal"
+				}
+				{
+					id: "1C94D6A92EDCD6D5"
+					type: "item"
+					item: "quark:myalite"
+				}
+				{
+					id: "32978202AD537C6F"
+					type: "item"
+					item: "quark:dusky_myalite"
+				}
+				{
+					id: "6570ACE7CA4F9D2F"
+					type: "item"
+					item: "quark:basalt"
+				}
+			]
+			rewards: [{
+				id: "75CF140C46C0C586"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			x: 35.0d
+			y: -6.0d
+			subtitle: "这玩意可以戴在头上（"
+			dependencies: ["0E4F6327E251E095"]
+			id: "2708F915368C0743"
+			tasks: [{
+				id: "63A7AAB175F434B5"
+				type: "item"
+				item: "minecraft:shulker_shell"
+			}]
+			rewards: [{
+				id: "024E3CAA40F28572"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+			}]
+		}
+		{
+			x: 33.0d
+			y: -9.0d
+			subtitle: "看起来很好吃"
+			dependencies: ["5CFB85194B99356A"]
+			id: "369D16F79427657A"
+			tasks: [{
+				id: "6F29AF6F21694F7B"
+				type: "item"
+				item: "minecraft:chorus_fruit"
+			}]
+			rewards: [{
+				id: "58248E54AE298AC7"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			title: "再来一条"
+			x: 29.5d
+			y: -9.0d
+			description: ["注意：Boss越打越强"]
+			dependencies: ["671183FA9E622763"]
+			hide: true
+			optional: true
+			id: "75581F284422DAB4"
+			tasks: [{
+				id: "0B7B5F6FBD93C34E"
+				type: "advancement"
+				advancement: "minecraft:end/respawn_dragon"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "46432C240141CDAF"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "350699A9F7811B87"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 29.5d
+			y: -6.0d
+			dependencies: ["671183FA9E622763"]
+			id: "020C911C31CD3D93"
+			tasks: [{
+				id: "4EDE1D7C3EBCE806"
+				type: "item"
+				item: "minecraft:dragon_breath"
+			}]
+			rewards: [
+				{
+					id: "25ABCE3D2C3E0AE6"
+					type: "item"
+					item: {
+						id: "minecraft:dragon_breath"
+						Count: 1b
+						tag: { }
+					}
+					count: 8
+				}
+				{
+					id: "223130DE395C01AB"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 29.5d
+			y: -1.0d
+			shape: "rsquare"
+			subtitle: "手持右键获得游戏阶段“ender_link”"
+			dependencies: ["42BD2E975E511027"]
+			id: "2953F2FE470AA573"
+			tasks: [{
+				id: "527915EC929C0281"
+				type: "item"
+				item: {
+					id: "kubejs:ender_link"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+	]
+}

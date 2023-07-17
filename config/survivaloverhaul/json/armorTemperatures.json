@@ -1,0 +1,114 @@
+{
+  "minecraft:iron_chestplate": [
+    {
+      "insulation": 1.2,
+      "identity": {},
+      "temperature": 0.0
+    }
+  ],
+  "minecraft:leather_chestplate": [
+    {
+      "insulation": 0.9,
+      "identity": {},
+      "temperature": 1.0
+    }
+  ],
+  "survivaloverhaul:snow_chestplate": [
+    {
+      "insulation": 1.0,
+      "identity": {},
+      "temperature": 3.0
+    }
+  ],
+  "minecraft:iron_leggings": [
+    {
+      "insulation": 1.2,
+      "identity": {},
+      "temperature": 0.0
+    }
+  ],
+  "minecraft:leather_boots": [
+    {
+      "insulation": 0.9,
+      "identity": {},
+      "temperature": 0.25
+    }
+  ],
+  "minecraft:leather_leggings": [
+    {
+      "insulation": 0.9,
+      "identity": {},
+      "temperature": 0.75
+    }
+  ],
+  "survivaloverhaul:snow_boots": [
+    {
+      "insulation": 1.0,
+      "identity": {},
+      "temperature": 0.5
+    }
+  ],
+  "survivaloverhaul:desert_leggings": [
+    {
+      "insulation": 1.0,
+      "identity": {},
+      "temperature": -2.5
+    }
+  ],
+  "survivaloverhaul:desert_boots": [
+    {
+      "insulation": 1.0,
+      "identity": {},
+      "temperature": -0.5
+    }
+  ],
+  "survivaloverhaul:desert_chestplate": [
+    {
+      "insulation": 1.0,
+      "identity": {},
+      "temperature": -3.0
+    }
+  ],
+  "minecraft:iron_boots": [
+    {
+      "insulation": 1.2,
+      "identity": {},
+      "temperature": 0.0
+    }
+  ],
+  "minecraft:leather_helmet": [
+    {
+      "insulation": 0.9,
+      "identity": {},
+      "temperature": 0.5
+    }
+  ],
+  "minecraft:iron_helmet": [
+    {
+      "insulation": 1.2,
+      "identity": {},
+      "temperature": 0.0
+    }
+  ],
+  "survivaloverhaul:snow_leggings": [
+    {
+      "insulation": 1.0,
+      "identity": {},
+      "temperature": 2.5
+    }
+  ],
+  "survivaloverhaul:desert_helmet": [
+    {
+      "insulation": 1.0,
+      "identity": {},
+      "temperature": -1.5
+    }
+  ],
+  "survivaloverhaul:snow_helmet": [
+    {
+      "insulation": 1.0,
+      "identity": {},
+      "temperature": 1.5
+    }
+  ]
+}

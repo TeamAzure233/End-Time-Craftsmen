@@ -1,0 +1,14 @@
+{
+	id: "0FCFA8EBB99109D4"
+	order_index: 18
+	title: "抗丧尸感染药剂注射器"
+	icon: "kubejs:infection_medicine_infuser"
+	loot_size: 1
+	rewards: [{
+		item: {
+			id: "kubejs:infection_medicine_infuser"
+			Count: 1b
+			tag: { }
+		}
+	}]
+}

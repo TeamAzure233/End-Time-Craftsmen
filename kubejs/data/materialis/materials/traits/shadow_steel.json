@@ -1,0 +1,20 @@
+{
+  "default": [
+    {
+      "name": "materialis:voiding",
+      "level": 1
+    },
+    {
+      "name": "tconstruct:magnetic",
+      "level": 2
+    },
+    {
+      "name": "tconstruct:lightweight",
+      "level": 2
+    },
+    {
+      "name": "tconstruct:experienced",
+      "level": 1
+    }
+  ]
+}

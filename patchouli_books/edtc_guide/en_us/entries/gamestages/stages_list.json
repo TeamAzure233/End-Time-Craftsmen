@@ -1,0 +1,11 @@
+{
+    "name": "Stages List",
+    "icon": "minecraft:writable_book",
+    "category": "gamestages",
+    "pages": [
+        {
+            "type": "text",
+            "text": "This chapter describes some of the main game stages and what they do and how to get them, but at this version, not all of them are useful"
+        }
+    ]
+}

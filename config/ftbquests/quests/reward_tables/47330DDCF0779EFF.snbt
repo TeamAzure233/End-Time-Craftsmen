@@ -1,0 +1,42 @@
+{
+	id: "47330DDCF0779EFF"
+	order_index: 13
+	title: "陶器"
+	loot_size: 1
+	rewards: [
+		{
+			item: {
+				id: "notreepunching:ceramic_large_vessel"
+				Count: 1b
+				ForgeCaps: {
+					Parent: {
+						Size: 15
+						Items: [ ]
+					}
+				}
+			}
+			count: 2
+		}
+		{
+			item: {
+				id: "notreepunching:ceramic_small_vessel"
+				Count: 1b
+				tag: {
+					inventory: {
+						Size: 9
+						Items: [ ]
+					}
+				}
+				ForgeCaps: {
+					Parent: {
+						Size: 9
+						Items: [ ]
+					}
+				}
+			}
+			count: 4
+		}
+		{ item: "notreepunching:ceramic_bucket", count: 3 }
+		{ item: "minecraft:flower_pot", count: 5 }
+	]
+}

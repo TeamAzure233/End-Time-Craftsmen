@@ -1,0 +1,9 @@
+
+#Client only settings
+[client]
+	#If true, shows chat message on tool level ups.
+	message = true
+	#No comment
+	#Allowed Values: NONE, CHIME, SNARE_DRUM, YAY
+	sound = "SNARE_DRUM"
+

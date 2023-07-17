@@ -1,0 +1,9 @@
+{
+    "type": "tconstruct:material_melting",
+    "input": "edtctic:blaze_brass",
+    "temperature": 1100,
+    "result": {
+      "fluid": "kubejs:molten_blaze_brass",
+      "amount": 144
+    }
+}

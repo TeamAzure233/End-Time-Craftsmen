@@ -1,0 +1,841 @@
+{
+	id: "166C99694257D1CA"
+	group: ""
+	order_index: 3
+	filename: "166C99694257D1CA"
+	title: "学习与研究"
+	icon: "create:goggles"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: -6.0d
+			y: -1.5d
+			width: 6.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/chapter_research.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -6.0d
+			y: 1.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/start.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			title: "研究：主世界"
+			icon: "minecraft:grass_block"
+			x: -4.5d
+			y: 0.5d
+			shape: "diamond"
+			subtitle: "完成此研究后开启第一章"
+			description: ["我有很多点子，但想要实现他们还需要花时间研究。不过这些时间不算什么，我可以在探索这片区域的时候顺带把研究做完。我可真是太喜欢他们给我加的一心多用指令了"]
+			dependencies: ["19AE9DF94DE753B6"]
+			hide: true
+			hide_text_until_complete: true
+			size: 2.0d
+			id: "7959FEB808E2918C"
+			tasks: [{
+				id: "2CDB76BF6CE3F2ED"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "495115228FCCA932"
+					type: "custom"
+					title: "完成研究"
+				}
+				{
+					id: "6C5B51FC9CAC66A7"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			title: "研究：实用物品"
+			icon: "sophisticatedbackpacks:backpack"
+			x: -2.5d
+			y: -0.5d
+			subtitle: "完成此研究后开启支线-1"
+			dependencies: ["5B47E572E4067D09"]
+			id: "7A2DCA78899D5E81"
+			tasks: [{
+				id: "340257396E389317"
+				type: "questsadditions:time"
+				title: "研究剩余时间"
+				elapsedTime: 60L
+			}]
+			rewards: [
+				{
+					id: "54592CF737C8EDB9"
+					type: "custom"
+					title: "完成研究"
+				}
+				{
+					id: "0A1422D2833883C8"
+					type: "xp"
+					xp: 50
+				}
+			]
+		}
+		{
+			title: "研究：匠魂"
+			icon: {
+				id: "tconstruct:crafting_station"
+				Count: 1b
+				tag: {
+					texture: "minecraft:stripped_oak_wood"
+				}
+			}
+			x: -2.5d
+			y: 1.5d
+			subtitle: "学习制造工具"
+			dependencies: ["12BF9107EC864B12"]
+			id: "452C84EBADBDD888"
+			tasks: [
+				{
+					id: "202FA929B11E4E11"
+					type: "questsadditions:time"
+					title: "研究剩余时间"
+					elapsedTime: 120L
+				}
+				{
+					id: "15A9A53D92C89B12"
+					type: "item"
+					title: "研究材料"
+					item: "tconstruct:pattern"
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "3EE53AB5BE072617"
+					type: "custom"
+					title: "完成研究"
+				}
+				{
+					id: "5BB7EBBA0227494D"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "研究：机械之初"
+			icon: "create:cogwheel"
+			x: -2.0d
+			y: 0.5d
+			subtitle: "完成此研究后部分开启第一章机械动力部分"
+			dependencies: ["653D8B3A1F2A41E1"]
+			id: "2E6CE901040A8995"
+			tasks: [
+				{
+					id: "176EFB1E3E34F76C"
+					type: "questsadditions:time"
+					title: "研究剩余时间"
+					elapsedTime: 180L
+				}
+				{
+					id: "38A91DFFA848C3CC"
+					type: "item"
+					title: "研究材料"
+					item: "kubejs:andesite_alloy_nugget"
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "6644D4FC7F03C96A"
+					type: "custom"
+					title: "完成研究"
+				}
+				{
+					id: "75455978305B2CC1"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 1.5d
+			dependencies: [
+				"7959FEB808E2918C"
+				"5682910C34D2F4BA"
+			]
+			id: "12BF9107EC864B12"
+			tasks: [{
+				id: "09078AAD2F9EEA5B"
+				type: "checkmark"
+				title: "开始研究：匠魂"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 0.5d
+			dependencies: [
+				"7959FEB808E2918C"
+				"1FECF4A4BFD9B7B5"
+			]
+			id: "653D8B3A1F2A41E1"
+			tasks: [{
+				id: "59C328809A4FE67D"
+				type: "checkmark"
+				title: "开始研究：机械之初"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -0.5d
+			dependencies: [
+				"7959FEB808E2918C"
+				"18FE013B3405D2C2"
+			]
+			id: "5B47E572E4067D09"
+			tasks: [{
+				id: "5019495DFA01E14D"
+				type: "checkmark"
+				title: "开始研究：实用物品"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.5d
+			dependencies: ["452C84EBADBDD888"]
+			id: "4356796627060EDC"
+			tasks: [{
+				id: "2EF6DC96F38171BA"
+				type: "checkmark"
+				title: "开始研究：熔炼"
+			}]
+		}
+		{
+			title: "研究：熔炼"
+			icon: "tconstruct:seared_melter"
+			x: 0.0d
+			y: 1.5d
+			subtitle: "学习熔炼矿物"
+			dependencies: ["4356796627060EDC"]
+			id: "0A01706E237D6D6A"
+			tasks: [
+				{
+					id: "045CFABBDD5D16F6"
+					type: "questsadditions:time"
+					title: "研究剩余时间"
+					elapsedTime: 240L
+				}
+				{
+					id: "3112BEEC276C0E74"
+					type: "item"
+					title: "研究材料"
+					item: "tconstruct:seared_brick"
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "1E94E1F96F16EC80"
+					type: "custom"
+					title: "完成研究"
+				}
+				{
+					id: "17D5D4A7F122D550"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			dependencies: [
+				"2E6CE901040A8995"
+				"78CC7D2C19C1076F"
+			]
+			id: "30F3787F02DA740E"
+			tasks: [{
+				id: "60B0E09AE6CAA31C"
+				type: "checkmark"
+				title: "开始研究：机械动力——安山时代"
+			}]
+		}
+		{
+			title: "研究：机械动力——安山时代"
+			icon: "kubejs:kinetic_mechanical_box"
+			x: 0.0d
+			y: 0.5d
+			subtitle: "完成此研究后开启第一章机械动力——安山时代部分"
+			dependencies: ["30F3787F02DA740E"]
+			id: "165AEE5D8EE710C4"
+			tasks: [
+				{
+					id: "0D5F622CE9A59917"
+					type: "questsadditions:time"
+					title: "研究剩余时间"
+					elapsedTime: 480L
+				}
+				{
+					id: "36483F374AFD1956"
+					type: "item"
+					title: "研究材料"
+					item: "kubejs:kinetic_mechanism"
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "30DBDDC0F5FB5FC0"
+					type: "custom"
+					title: "完成研究"
+				}
+				{
+					id: "03B052544559B707"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			dependencies: [
+				"165AEE5D8EE710C4"
+				"6E80B01023FAFF3A"
+			]
+			id: "5F21E20F7A4CC174"
+			tasks: [{
+				id: "196F9F13069CB37F"
+				type: "checkmark"
+				title: "开始研究：机械动力——黄铜时代"
+			}]
+		}
+		{
+			title: "研究：机械动力——黄铜时代"
+			icon: "kubejs:precision_mechanical_box"
+			x: 2.0d
+			y: 0.0d
+			subtitle: "完成此研究后开启第一章机械动力——黄铜时代部分"
+			dependencies: ["5F21E20F7A4CC174"]
+			id: "072B4ABFC07448EC"
+			tasks: [
+				{
+					id: "7DC8A7084E85DDA4"
+					type: "questsadditions:time"
+					title: "研究剩余时间"
+					elapsedTime: 540L
+				}
+				{
+					id: "57B214198050AF30"
+					type: "item"
+					title: "研究材料"
+					item: "create:precision_mechanism"
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "1D5D8165BBA7C571"
+					type: "custom"
+					title: "完成研究"
+				}
+				{
+					id: "3CD59DF3ABB2ED5C"
+					type: "xp"
+					xp: 150
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 1.0d
+			dependencies: [
+				"165AEE5D8EE710C4"
+				"6EB846C51CC1E7DE"
+			]
+			id: "3A2352EFBE0C2786"
+			tasks: [{
+				id: "0A019DFA0B55F63C"
+				type: "checkmark"
+				title: "开始研究：机械动力——流体时代"
+			}]
+		}
+		{
+			title: "研究：机械动力——流体时代"
+			icon: "kubejs:liquid_mechanical_box"
+			x: 2.0d
+			y: 1.0d
+			subtitle: "完成此研究后开启第一章机械动力——流体时代部分"
+			dependencies: ["3A2352EFBE0C2786"]
+			id: "4FDDBA0F692E7F37"
+			tasks: [
+				{
+					id: "148F08316D5BD64F"
+					type: "questsadditions:time"
+					title: "研究剩余时间"
+					elapsedTime: 510L
+				}
+				{
+					id: "1571C4A69D038E17"
+					type: "item"
+					title: "研究材料"
+					item: "kubejs:liquid_mechanism"
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "5B15E04A208A0785"
+					type: "custom"
+					title: "完成研究"
+				}
+				{
+					id: "491452020F75D441"
+					type: "xp"
+					xp: 150
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: 0.5d
+			dependencies: [
+				"4FDDBA0F692E7F37"
+				"072B4ABFC07448EC"
+				"3D4C09855F5CCFE6"
+			]
+			id: "58AC1E4ADCF5447E"
+			tasks: [{
+				id: "4C4031BE3DA43359"
+				type: "checkmark"
+				title: "开始研究：机械动力——蒸汽时代"
+			}]
+		}
+		{
+			title: "研究：机械动力——蒸汽时代"
+			icon: "kubejs:steam_mechanical_box_mk1"
+			x: 4.0d
+			y: 0.5d
+			subtitle: "完成此研究后开启第一章机械动力——蒸汽时代部分"
+			dependencies: ["58AC1E4ADCF5447E"]
+			id: "65A195CB81F7A8E8"
+			tasks: [
+				{
+					id: "5A3CA193349792BE"
+					type: "questsadditions:time"
+					title: "研究剩余时间"
+					elapsedTime: 600L
+				}
+				{
+					id: "5A5D4E02BA6A4138"
+					type: "item"
+					title: "研究材料"
+					item: "kubejs:steam_mechanism"
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "50B68496D1A6632B"
+					type: "custom"
+					title: "完成研究"
+				}
+				{
+					id: "7566641B2BEDA11E"
+					type: "xp"
+					xp: 150
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: 0.5d
+			dependencies: [
+				"59B1DC73320B7266"
+				"65A195CB81F7A8E8"
+			]
+			id: "472175B543317936"
+			tasks: [{
+				id: "76CD7CCD2B796603"
+				type: "checkmark"
+				title: "开始研究：电力时代"
+			}]
+		}
+		{
+			title: "研究：电力时代"
+			icon: "kubejs:electricity_mechanism"
+			x: 6.0d
+			y: 0.5d
+			subtitle: "完成此研究后部分开启第二章"
+			dependencies: ["472175B543317936"]
+			id: "0F347900D70C47B0"
+			tasks: [
+				{
+					id: "30A595BE370B5733"
+					type: "questsadditions:time"
+					title: "研究剩余时间"
+					elapsedTime: 600L
+				}
+				{
+					id: "0F3DE1073D0C2493"
+					type: "item"
+					title: "研究材料"
+					item: "kubejs:electricity_mechanism"
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "7F706E1EED3CE67C"
+					type: "custom"
+					title: "完成研究"
+				}
+				{
+					id: "1122011E42EB388D"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: 0.5d
+			dependencies: [
+				"63D71350804D10F2"
+				"73B7431470E7625E"
+			]
+			id: "55B6BB67B82A3A4E"
+			tasks: [{
+				id: "7B4ACF84D61023D5"
+				type: "checkmark"
+				title: "开始研究：工业时代"
+			}]
+		}
+		{
+			title: "研究：工业时代"
+			icon: "mekanism:alloy_atomic"
+			x: 10.0d
+			y: 0.5d
+			subtitle: "完成此研究后开启第三章科技线前半部分"
+			dependencies: ["55B6BB67B82A3A4E"]
+			id: "14AAE2BC400A17A2"
+			tasks: [
+				{
+					id: "20A1792F33D81249"
+					type: "questsadditions:time"
+					title: "研究剩余时间"
+					elapsedTime: 720L
+				}
+				{
+					id: "0585254A93D4B16B"
+					type: "item"
+					title: "研究材料"
+					item: "kubejs:chromatic_mechanism"
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "3338004A87E298CC"
+					type: "custom"
+					title: "完成研究"
+				}
+				{
+					id: "511B7575CF3DAD92"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			x: 11.5d
+			y: 0.5d
+			dependencies: [
+				"14AAE2BC400A17A2"
+				"721AF1BD2E6136DD"
+				"799BE644345F4FAC"
+			]
+			id: "050502E495E87072"
+			tasks: [{
+				id: "28ABDAB38DFA3DFE"
+				type: "checkmark"
+				title: "开始研究：原子时代"
+			}]
+		}
+		{
+			title: "研究：原子时代"
+			icon: "mekanismgenerators:fusion_reactor_port"
+			x: 12.0d
+			y: 0.5d
+			subtitle: "完成此研究后完全开启第三章科技线"
+			dependencies: ["050502E495E87072"]
+			id: "10A9E9394A3ECBC4"
+			tasks: [
+				{
+					id: "539BDE5F8DB4665F"
+					type: "questsadditions:time"
+					title: "研究剩余时间"
+					elapsedTime: 720L
+				}
+				{
+					id: "308CC4CBF3DD90A5"
+					type: "item"
+					title: "研究材料"
+					item: "mekanism:yellow_cake_uranium"
+					count: 16L
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "696DF930A158EC44"
+					type: "custom"
+					title: "完成研究"
+				}
+				{
+					id: "4F49135C0A5699CC"
+					type: "xp"
+					xp: 250
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: 1.5d
+			dependencies: [
+				"0F347900D70C47B0"
+				"2A28B539AC1FB263"
+			]
+			id: "002D2EC9B54BCF32"
+			tasks: [{
+				id: "7392AA8A048C1163"
+				type: "checkmark"
+				title: "开始研究：数字时代"
+			}]
+		}
+		{
+			title: "研究：数字时代"
+			icon: "appliedenergistics2:controller"
+			x: 8.0d
+			y: 1.5d
+			subtitle: "完成此研究后开启支线-2"
+			dependencies: ["002D2EC9B54BCF32"]
+			id: "177E1D0222109D86"
+			tasks: [
+				{
+					id: "3C7AAEA9693225EB"
+					type: "questsadditions:time"
+					title: "研究剩余时间"
+					elapsedTime: 800L
+				}
+				{
+					id: "5CC574381A8DFDA8"
+					type: "item"
+					title: "研究材料"
+					item: "appliedenergistics2:sky_stone_block"
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "27EFC6276338B608"
+					type: "custom"
+					title: "完成研究"
+				}
+				{
+					id: "3F686016F826A613"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			x: 13.5d
+			y: 0.5d
+			dependencies: [
+				"10A9E9394A3ECBC4"
+				"0E67486615073974"
+			]
+			id: "75FC99F5CF45A6E9"
+			tasks: [{
+				id: "2FE7A152936CAB36"
+				type: "checkmark"
+				title: "开始研究：无尽之境界"
+			}]
+		}
+		{
+			title: "研究：无尽之境界"
+			icon: "endless:extreme_crafting_table"
+			x: 14.0d
+			y: 0.5d
+			subtitle: "完成此研究后开启第四章"
+			dependencies: ["75FC99F5CF45A6E9"]
+			id: "615F196A9D2C264A"
+			tasks: [
+				{
+					id: "089A544847A81BFA"
+					type: "questsadditions:time"
+					title: "研究剩余时间"
+					elapsedTime: 1800L
+				}
+				{
+					id: "5B95A8FB04401FF6"
+					type: "item"
+					title: "研究材料"
+					item: "endless:diamond_lattice"
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "7B7F335A9EA1D772"
+					type: "custom"
+					title: "完成研究"
+				}
+				{
+					id: "051A88C76F7E8832"
+					type: "xp"
+					xp: 300
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: 0.5d
+			dependencies: [
+				"0F347900D70C47B0"
+				"2EE7F2B5E00B235D"
+			]
+			id: "4646314EA7577E26"
+			tasks: [{
+				id: "7102DDB640C1CEF0"
+				type: "checkmark"
+				title: "开始研究：集成时代"
+			}]
+		}
+		{
+			title: "研究：集成时代"
+			icon: "kubejs:integration_mechanism"
+			x: 8.0d
+			y: 0.5d
+			subtitle: "完成此研究后完全开启第二章"
+			dependencies: ["4646314EA7577E26"]
+			id: "73B7431470E7625E"
+			tasks: [
+				{
+					id: "12397D6886EF2B7B"
+					type: "questsadditions:time"
+					title: "研究剩余时间"
+					elapsedTime: 600L
+				}
+				{
+					id: "43C5789481D8BE35"
+					type: "item"
+					title: "研究材料"
+					item: "kubejs:integration_mechanism"
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "08CB055795081BF6"
+					type: "custom"
+					title: "完成研究"
+				}
+				{
+					id: "78E2BC0CB37F5E8F"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: -0.5d
+			dependencies: [
+				"73B7431470E7625E"
+				"15825B8318BA76F5"
+			]
+			id: "6803C8199FD12AEA"
+			tasks: [{
+				id: "1146F4FF4E51E808"
+				type: "checkmark"
+				title: "开始研究：植物魔法"
+			}]
+		}
+		{
+			title: "研究：植物魔法"
+			icon: {
+				id: "botania:lexicon"
+				Count: 1b
+				tag: {
+					"botania:elven_unlock": 1b
+				}
+			}
+			x: 10.0d
+			y: -0.5d
+			subtitle: "完成此研究后开启第三章魔法线植物魔法部分"
+			dependencies: ["6803C8199FD12AEA"]
+			id: "42B4FB7CA47F0EAE"
+			tasks: [
+				{
+					id: "311246D1BE542931"
+					type: "questsadditions:time"
+					title: "研究剩余时间"
+					elapsedTime: 480L
+				}
+				{
+					id: "65F6E7C377F6B01E"
+					type: "item"
+					title: "研究材料"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "botania:petals"
+						}
+					}
+					count: 16L
+					consume_items: true
+				}
+				{
+					id: "79AA8E42D9B36500"
+					type: "item"
+					title: "研究材料"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ingots/lumium"
+						}
+					}
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "780DFB7C282AB16E"
+					type: "custom"
+					title: "完成研究"
+				}
+				{
+					id: "0CC2B8B1E2C8390A"
+					type: "xp"
+					xp: 200
+				}
+			]
+		}
+	]
+}

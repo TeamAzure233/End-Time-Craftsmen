@@ -1,0 +1,857 @@
+{
+	id: "69AB0AC40E8A5301"
+	group: ""
+	order_index: 2
+	filename: "69AB0AC40E8A5301"
+	title: "小卖部"
+	icon: "kubejs:data"
+	disable_toast: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: true
+	images: [{
+		x: 5.75d
+		y: -6.5d
+		width: 6.0d
+		height: 3.0d
+		rotation: 0.0d
+		image: "kubejs:textures/quest/chapter_shop.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			title: "10x 腐肉 --> 1Data"
+			disable_toast: true
+			x: 2.0d
+			y: -0.5d
+			dependencies: ["5301EB96F0EF2656"]
+			id: "02946438DCCA06EE"
+			tasks: [{
+				id: "58DE2E646C1248FE"
+				type: "item"
+				item: "minecraft:rotten_flesh"
+				count: 10L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "344817B42F61F325"
+				type: "questsadditions:repeat"
+				table_id: 2055434023738943033L
+			}]
+		}
+		{
+			title: "10x 骨头 --> 1Data"
+			disable_toast: true
+			x: 3.5d
+			y: -0.5d
+			dependencies: ["5301EB96F0EF2656"]
+			id: "01E0F08F0A3F7EB9"
+			tasks: [{
+				id: "69D24351326F0F51"
+				type: "item"
+				item: "minecraft:bone"
+				count: 10L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "0F7B38C1EB5BF5D1"
+				type: "questsadditions:repeat"
+				table_id: 2055434023738943033L
+			}]
+		}
+		{
+			title: "10x 火药 --> 1Data"
+			disable_toast: true
+			x: 5.0d
+			y: -0.5d
+			dependencies: ["5301EB96F0EF2656"]
+			id: "27D621B09CAA1CD5"
+			tasks: [{
+				id: "607D5A4AD719F034"
+				type: "item"
+				item: "minecraft:gunpowder"
+				count: 10L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "5B491E6881372C10"
+				type: "questsadditions:repeat"
+				table_id: 2055434023738943033L
+			}]
+		}
+		{
+			title: "64x 圆石 --> 1Data"
+			disable_toast: true
+			x: 9.5d
+			y: -2.0d
+			dependencies: ["5301EB96F0EF2656"]
+			id: "3A8677DC2F007C0D"
+			tasks: [{
+				id: "4A28B2733EC1FF72"
+				type: "item"
+				item: "minecraft:cobblestone"
+				count: 64L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "38E1BD1BA0A0B471"
+				type: "questsadditions:repeat"
+				table_id: 2055434023738943033L
+			}]
+		}
+		{
+			title: "16x 原木 --> 1Data"
+			disable_toast: true
+			x: 7.75d
+			y: -2.0d
+			dependencies: ["5301EB96F0EF2656"]
+			id: "3EF284C5D3A187E5"
+			tasks: [{
+				id: "551B9D047AC10AAB"
+				type: "item"
+				title: "Any #minecraft:logs"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "70ED1B746CB26243"
+				type: "questsadditions:repeat"
+				table_id: 2055434023738943033L
+			}]
+		}
+		{
+			title: "小卖部"
+			icon: "minecraft:chest"
+			disable_toast: true
+			x: 5.749999999999999d
+			y: -4.0d
+			shape: "pentagon"
+			subtitle: "这里是小卖部！"
+			description: [
+				"您可以通过Data在这里买东西"
+				"货币基本上干什么都可以获得"
+				"圆角正方形图标是出售，圆形图标的是收购"
+				"没错这个Data就是照着Phigros那个画的（"
+			]
+			dependencies: ["18FE013B3405D2C2"]
+			hide: true
+			size: 2.3d
+			id: "5301EB96F0EF2656"
+			tasks: [{
+				id: "404C9C91A80858F9"
+				type: "checkmark"
+			}]
+			rewards: [
+				{
+					id: "55570641AC78700B"
+					type: "item"
+					item: "kubejs:data"
+					count: 3
+				}
+				{
+					id: "4D779596C383031D"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "10Data --> 1炖菜罐头"
+			icon: "gofish:soup_can"
+			disable_toast: true
+			x: 8.0d
+			y: 2.5d
+			shape: "rsquare"
+			dependencies: ["5301EB96F0EF2656"]
+			id: "4B8F449E09F48C67"
+			tasks: [{
+				id: "652316EAA9E1BBEE"
+				type: "item"
+				item: "kubejs:data"
+				count: 10L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "74D3FF4BECD7716B"
+				type: "questsadditions:repeat"
+				icon: "gofish:soup_can"
+				table_id: 5950483360863236026L
+			}]
+		}
+		{
+			title: "10Data --> 1水果罐头"
+			icon: "gofish:fruit_can"
+			disable_toast: true
+			x: 6.5d
+			y: 2.5d
+			shape: "rsquare"
+			dependencies: ["5301EB96F0EF2656"]
+			id: "1396E228756EB133"
+			tasks: [{
+				id: "2E6CEE9FE6BF32B6"
+				type: "item"
+				item: "kubejs:data"
+				count: 10L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "1C4B77AD74D06D8A"
+				type: "questsadditions:repeat"
+				icon: "gofish:fruit_can"
+				table_id: 4855841504567744995L
+			}]
+		}
+		{
+			title: "20Data --> 1魔法炖菜罐头"
+			icon: "gofish:magic_soup_can"
+			disable_toast: true
+			x: 9.5d
+			y: 2.5d
+			shape: "rsquare"
+			dependencies: ["5301EB96F0EF2656"]
+			id: "42F741D0D8E99FAA"
+			tasks: [{
+				id: "3CFC48FF27C37B03"
+				type: "item"
+				item: "kubejs:data"
+				count: 20L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "39499EF18A1C3BB5"
+				type: "questsadditions:repeat"
+				icon: "gofish:magic_soup_can"
+				table_id: 5442651528333999469L
+			}]
+		}
+		{
+			title: "15Data --> 1金苹果"
+			icon: "minecraft:golden_apple"
+			disable_toast: true
+			x: 2.0d
+			y: 2.5d
+			shape: "rsquare"
+			dependencies: ["5301EB96F0EF2656"]
+			id: "307556D2F146D9BC"
+			tasks: [{
+				id: "244EAF3D59DD1169"
+				type: "item"
+				item: "kubejs:data"
+				count: 15L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "0882DBFB7CD2E089"
+				type: "questsadditions:repeat"
+				icon: "minecraft:golden_apple"
+				table_id: 8582169667602690865L
+			}]
+		}
+		{
+			title: "20Data --> 1附魔金苹果"
+			icon: "minecraft:enchanted_golden_apple"
+			disable_toast: true
+			x: 3.5d
+			y: 2.5d
+			shape: "rsquare"
+			dependencies: ["5301EB96F0EF2656"]
+			id: "319EEE705C4A5A72"
+			tasks: [{
+				id: "34A615664E27133C"
+				type: "item"
+				item: "kubejs:data"
+				count: 20L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "0AB0B1DE2BC74F01"
+				type: "questsadditions:repeat"
+				icon: "minecraft:enchanted_golden_apple"
+				table_id: 7200463424771838366L
+			}]
+		}
+		{
+			title: "5Data --> 64x 自选子弹"
+			icon: { id: "tac:round45", Count: 64b }
+			disable_toast: true
+			x: 2.0d
+			y: 1.0d
+			shape: "rsquare"
+			dependencies: ["5301EB96F0EF2656"]
+			dependency_requirement: "all_started"
+			id: "0C848CBD603BECE2"
+			tasks: [{
+				id: "71D9F2C9C4556C4D"
+				type: "item"
+				item: "kubejs:data"
+				count: 5L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "751E40022F319295"
+				type: "questsadditions:repeat_choice"
+				icon: { id: "tac:round45", Count: 64b }
+				table_id: 1917657421264242820L
+			}]
+		}
+		{
+			title: "1Data --> 2绷带"
+			icon: "scalinghealth:bandages"
+			disable_toast: true
+			x: 3.5d
+			y: 1.0d
+			shape: "rsquare"
+			dependencies: ["5301EB96F0EF2656"]
+			id: "78A500872691C7E5"
+			tasks: [{
+				id: "6D73D76534DAAE44"
+				type: "item"
+				item: "kubejs:data"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "0313BD0330F38555"
+				type: "questsadditions:repeat"
+				table_id: 5511518295208908353L
+			}]
+		}
+		{
+			title: "2Data --> 1医疗包"
+			icon: "scalinghealth:medkit"
+			disable_toast: true
+			x: 5.0d
+			y: 1.0d
+			shape: "rsquare"
+			dependencies: ["5301EB96F0EF2656"]
+			id: "064EB481A67E3E42"
+			tasks: [{
+				id: "3C3710C6F8A29718"
+				type: "item"
+				item: "kubejs:data"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "06DC90F33333E97F"
+				type: "questsadditions:repeat"
+				table_id: 2662403476408874925L
+			}]
+		}
+		{
+			title: "1Data --> 16压缩饼干"
+			icon: "gofish:biscuit_dot_zip"
+			disable_toast: true
+			x: 5.0d
+			y: 2.5d
+			shape: "rsquare"
+			dependencies: ["5301EB96F0EF2656"]
+			id: "093291E8B87E060C"
+			tasks: [{
+				id: "5B3FA9B8350C1727"
+				type: "item"
+				item: "kubejs:data"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "14CBBD198BB82FF2"
+				type: "questsadditions:repeat"
+				icon: "gofish:biscuit_dot_zip"
+				table_id: 1235673398035688155L
+			}]
+		}
+		{
+			title: "20Data --> 1万能扳手"
+			icon: {
+				id: "gofish:universal_wrench"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			disable_toast: true
+			x: 8.0d
+			y: 1.0d
+			shape: "rsquare"
+			dependencies: ["5301EB96F0EF2656"]
+			id: "049F6C741588869B"
+			tasks: [{
+				id: "1B1DB49381BCE54C"
+				type: "item"
+				item: "kubejs:data"
+				count: 20L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "01E0F34FF340A608"
+				type: "questsadditions:repeat"
+				icon: {
+					id: "gofish:universal_wrench"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				table_id: 3767152773346210159L
+			}]
+		}
+		{
+			title: "16Data --> 1指路石"
+			icon: "waystones:waystone"
+			disable_toast: true
+			x: 2.0d
+			y: 4.0d
+			shape: "rsquare"
+			dependencies: ["5301EB96F0EF2656"]
+			id: "0174DC7DCB87EA5B"
+			tasks: [{
+				id: "2D3E9010780F2F09"
+				type: "item"
+				item: "kubejs:data"
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "541707F6028ACD16"
+				type: "questsadditions:repeat"
+				icon: "waystones:waystone"
+				table_id: 8881565517586445589L
+			}]
+		}
+		{
+			title: "8Data --> 1狼姬的复合试剂"
+			icon: {
+				id: "minecraft:potion"
+				Count: 1b
+				tag: {
+					CustomPotionColor: -19732
+					CustomPotionEffects: [
+						{
+							Duration: 9600
+							Ambient: 0b
+							Id: 10b
+							ShowIcon: 0b
+							ShowParticles: 0b
+						}
+						{
+							Duration: 9600
+							Ambient: 0b
+							Id: 16b
+							ShowIcon: 0b
+							ShowParticles: 0b
+						}
+					]
+					Effects: [
+						{
+							Duration: 9600
+							Ambient: 0b
+							Id: 10b
+							ShowIcon: 0b
+							ShowParticles: 0b
+						}
+						{
+							Duration: 9600
+							Ambient: 0b
+							Id: 16b
+							ShowIcon: 0b
+							ShowParticles: 0b
+						}
+					]
+					display: {
+						Lore: ["{\"text\":\"§b赞助者物品 By 狼姬\"}"]
+						Name: "{\"text\":\"§f狼姬的复合试剂\"}"
+					}
+				}
+			}
+			disable_toast: true
+			x: 9.5d
+			y: 4.0d
+			shape: "rsquare"
+			subtitle: "赞助者物品 By 狼姬"
+			dependencies: ["5301EB96F0EF2656"]
+			id: "66F2A7D403EFA121"
+			tasks: [{
+				id: "216647CBBACC2920"
+				type: "item"
+				item: "kubejs:data"
+				count: 8L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "7C148808818056E4"
+				type: "questsadditions:repeat"
+				icon: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						CustomPotionColor: -19732
+						CustomPotionEffects: [
+							{
+								Duration: 9600
+								Ambient: 0b
+								Id: 10b
+								ShowIcon: 0b
+								ShowParticles: 0b
+							}
+							{
+								Duration: 9600
+								Ambient: 0b
+								Id: 16b
+								ShowIcon: 0b
+								ShowParticles: 0b
+							}
+						]
+						Effects: [
+							{
+								Duration: 9600
+								Ambient: 0b
+								Id: 10b
+								ShowIcon: 0b
+								ShowParticles: 0b
+							}
+							{
+								Duration: 9600
+								Ambient: 0b
+								Id: 16b
+								ShowIcon: 0b
+								ShowParticles: 0b
+							}
+						]
+						display: {
+							Lore: ["{\"text\":\"§b赞助者物品 By 狼姬\"}"]
+							Name: "{\"text\":\"§f狼姬的复合试剂\"}"
+						}
+					}
+				}
+				table_id: 573076024805879250L
+			}]
+		}
+		{
+			title: "5级经验 --> 1Data"
+			disable_toast: true
+			x: 9.5d
+			y: -0.5d
+			dependencies: ["5301EB96F0EF2656"]
+			id: "5938F2D3DCD89EC6"
+			tasks: [{
+				id: "281D4A0FF9DD5532"
+				type: "xp"
+				value: 56L
+				points: true
+			}]
+			rewards: [
+				{
+					id: "2D6D4013676E97EF"
+					type: "questsadditions:repeat"
+					table_id: 2055434023738943033L
+				}
+				{
+					id: "33F74B0A1C03E67E"
+					type: "loot"
+					table_id: 8874855834272967715L
+				}
+				{
+					id: "62267B72B36EA761"
+					type: "loot"
+					table_id: 8874855834272967715L
+				}
+			]
+		}
+		{
+			title: "3x 任意生肉 --> 1Data"
+			disable_toast: true
+			x: 8.0d
+			y: -0.5d
+			dependencies: ["5301EB96F0EF2656"]
+			id: "4EBC7F5FED322149"
+			tasks: [{
+				id: "3CA25870E7D4198F"
+				type: "item"
+				title: "Any #forge:foods/meat/raw"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:foods/meat/raw"
+					}
+				}
+				count: 3L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6020157B5B761602"
+				type: "questsadditions:repeat"
+				table_id: 2055434023738943033L
+			}]
+		}
+		{
+			title: "10x 线 --> 1Data"
+			disable_toast: true
+			x: 6.5d
+			y: -0.5d
+			dependencies: ["5301EB96F0EF2656"]
+			id: "12667D8C9D59AE7A"
+			tasks: [{
+				id: "3B0A6DB0423103E6"
+				type: "item"
+				item: "minecraft:string"
+				count: 10L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "54538A9861DF9918"
+				type: "questsadditions:repeat"
+				table_id: 2055434023738943033L
+			}]
+		}
+		{
+			title: "10Data --> 1传送石"
+			icon: {
+				id: "waystones:warp_stone"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			disable_toast: true
+			x: 3.5d
+			y: 4.0d
+			shape: "rsquare"
+			dependencies: ["5301EB96F0EF2656"]
+			id: "4469FBF509A8C117"
+			tasks: [{
+				id: "6E6AB1D116FEC0A8"
+				type: "item"
+				item: "kubejs:data"
+				count: 10L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "543F06FB8C559DD0"
+				type: "questsadditions:repeat"
+				icon: {
+					id: "waystones:warp_stone"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				table_id: 1224588265581688830L
+			}]
+		}
+		{
+			title: "1Data --> 1超时空扫帚"
+			icon: "kubejs:hyperspace_time_broom_mk1"
+			disable_toast: true
+			x: 9.5d
+			y: 1.0d
+			shape: "rsquare"
+			dependencies: ["5301EB96F0EF2656"]
+			id: "2AD205D7C893C5C2"
+			tasks: [{
+				id: "51DDA4DAC6A30FF6"
+				type: "item"
+				item: "kubejs:data"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "35C44180EEF20BC5"
+				type: "questsadditions:repeat"
+				icon: "kubejs:hyperspace_time_broom_mk1"
+				table_id: 2670733988610397790L
+			}]
+		}
+		{
+			title: "1Data --> 1传送药水"
+			icon: "bountifulbaubles:potion_recall"
+			disable_toast: true
+			x: 5.0d
+			y: 4.0d
+			shape: "rsquare"
+			dependencies: ["5301EB96F0EF2656"]
+			id: "0FDD8439344B86F3"
+			tasks: [{
+				id: "710D719920AB28AA"
+				type: "item"
+				item: "kubejs:data"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "4C75DB7665009D62"
+				type: "questsadditions:repeat"
+				team_reward: false
+				table_id: 1507088832329784457L
+			}]
+		}
+		{
+			title: "2Data --> 1虫洞药水"
+			icon: "bountifulbaubles:potion_wormhole"
+			disable_toast: true
+			x: 6.5d
+			y: 4.0d
+			shape: "rsquare"
+			dependencies: ["5301EB96F0EF2656"]
+			id: "290E64A03F90E906"
+			tasks: [{
+				id: "6F010336975C217C"
+				type: "item"
+				item: "kubejs:data"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "7B4E9E7812355A7C"
+				type: "questsadditions:repeat"
+				table_id: 6408763044589018664L
+			}]
+		}
+		{
+			title: "3Data --> 1抗丧尸感染药剂注射器"
+			icon: "kubejs:infection_medicine_infuser"
+			disable_toast: true
+			x: 6.5d
+			y: 1.0d
+			shape: "rsquare"
+			dependencies: ["5301EB96F0EF2656"]
+			id: "13AE8D2473EB36CD"
+			tasks: [{
+				id: "580FFDAB6A54C958"
+				type: "item"
+				item: "kubejs:data"
+				count: 3L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "123805A385911143"
+				type: "questsadditions:repeat"
+				icon: "kubejs:infection_medicine_infuser"
+				table_id: 1139314961132095956L
+			}]
+		}
+		{
+			title: "5Data --> 1基础奖励箱"
+			icon: {
+				id: "questsadditions:lootcrate_block"
+				Count: 1b
+				tag: {
+					BlockEntityTag: {
+						type: "basic"
+					}
+				}
+			}
+			disable_toast: true
+			x: 8.0d
+			y: 4.0d
+			shape: "rsquare"
+			dependencies: ["5301EB96F0EF2656"]
+			id: "215565671C97C23D"
+			tasks: [{
+				id: "5718C7C78807060B"
+				type: "item"
+				item: "kubejs:data"
+				count: 5L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "7BA9B8A74D50568B"
+				type: "questsadditions:repeat_random"
+				table_id: 320465415538910410L
+			}]
+		}
+		{
+			title: "16x 任意子弹 --> 1Data"
+			disable_toast: true
+			x: 2.0d
+			y: -2.0d
+			dependencies: ["5301EB96F0EF2656"]
+			id: "55FEFD019A8683E2"
+			tasks: [{
+				id: "6F14305D2A60D2C0"
+				type: "item"
+				title: "Any #kubejs:bullets"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "kubejs:bullets"
+					}
+				}
+				count: 16L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "6EB0EC7F024506C7"
+				type: "questsadditions:repeat"
+				table_id: 2055434023738943033L
+			}]
+		}
+		{
+			title: "1x任意枪械 --> 8Data"
+			disable_toast: true
+			x: 3.75d
+			y: -2.0d
+			dependencies: ["5301EB96F0EF2656"]
+			id: "0F5B8CFDF7895A07"
+			tasks: [{
+				id: "1C2482A66DDA39FB"
+				type: "item"
+				title: "Any #kubejs:guns"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "kubejs:guns"
+					}
+				}
+				consume_items: true
+			}]
+			rewards: [{
+				id: "46C2E2DC42FA922A"
+				type: "questsadditions:repeat"
+				icon: "kubejs:data"
+				table_id: 7306645874287892196L
+			}]
+		}
+		{
+			title: "1x任意枪械配件 --> 2Data"
+			disable_toast: true
+			x: 5.75d
+			y: -2.0d
+			dependencies: ["5301EB96F0EF2656"]
+			id: "09E78DC4C2D1F3E8"
+			tasks: [{
+				id: "5892B1F7E6620B9F"
+				type: "item"
+				title: "Any #kubejs:gun_accessories"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "kubejs:gun_accessories"
+					}
+				}
+				consume_items: true
+			}]
+			rewards: [{
+				id: "4F7A7B0FF6CB7BDB"
+				type: "questsadditions:repeat"
+				icon: "kubejs:data"
+				table_id: 8874855834272967715L
+			}]
+		}
+	]
+}

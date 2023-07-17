@@ -1,0 +1,20 @@
+{
+  "condition": {
+    "values": [
+      {
+        "prop": "force_integration_materials",
+        "type": "tconstruct:config"
+      },
+      {
+        "modid": "projecte",
+        "type": "forge:mod_loaded"
+      }
+    ],
+    "type": "forge:or"
+  },
+  "craftable": true,
+  "tier": 4,
+  "sortOrder": 2,
+  "textColor": "#900707",
+  "hidden": false
+}

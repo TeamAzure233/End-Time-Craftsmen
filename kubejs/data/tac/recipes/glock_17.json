@@ -1,0 +1,20 @@
+{
+  "type": "tac:workbench",
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 22
+    },
+    {
+      "item": {
+        "item": "create:precision_mechanism"
+      },
+      "count": 3
+    }
+  ],
+  "result": {
+    "item": "tac:glock_17"
+  }
+}

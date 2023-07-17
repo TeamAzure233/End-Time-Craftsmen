@@ -1,0 +1,7 @@
+{
+	id: "7719FDD7A7973331"
+	order_index: 4
+	title: "金苹果"
+	loot_size: 1
+	rewards: [{ item: "minecraft:golden_apple" }]
+}

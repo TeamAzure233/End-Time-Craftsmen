@@ -1,0 +1,32 @@
+{
+  "type": "tac:workbench",
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 80
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/gold"
+      },
+      "count": 20
+    },
+    {
+      "item": {
+        "tag": "forge:gems/diamond"
+      },
+      "count": 2
+    },
+    {
+      "item": {
+        "item": "create:precision_mechanism"
+      },
+      "count": 5
+    }
+  ],
+  "result": {
+    "item": "tac:aa_12"
+  }
+}

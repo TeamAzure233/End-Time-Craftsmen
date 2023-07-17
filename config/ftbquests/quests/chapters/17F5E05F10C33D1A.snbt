@@ -1,0 +1,2504 @@
+{
+	id: "17F5E05F10C33D1A"
+	group: ""
+	order_index: 1
+	filename: "17F5E05F10C33D1A"
+	title: "未曾设想的道路——挑战"
+	icon: {
+		id: "botania:terrasteel_helmet"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: 0.5d
+		y: -5.0d
+		width: 6.0d
+		height: 3.0d
+		rotation: 0.0d
+		image: "kubejs:textures/quest/chapter_challenge.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			title: "我要打100个"
+			x: 0.5d
+			y: -3.0d
+			dependencies: ["18FE013B3405D2C2"]
+			hide: true
+			id: "14B544CE1D2E79DB"
+			tasks: [{
+				id: "6F1FEAB1C8C384B5"
+				type: "stat"
+				icon: {
+					id: "minecraft:stone_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				stat: "minecraft:mob_kills"
+				value: 100
+			}]
+			rewards: [
+				{
+					id: "5E6AB59EF69AA28E"
+					type: "item"
+					team_reward: false
+					item: "scalinghealth:bandages"
+					count: 8
+				}
+				{
+					id: "245A74679D9776B9"
+					type: "item"
+					team_reward: false
+					item: "minecraft:golden_apple"
+					count: 2
+				}
+				{
+					id: "4D6E3597D6BAED44"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+				{
+					id: "7E2F41671F1919A6"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "千怪斩"
+			x: 0.5d
+			y: -1.5d
+			dependencies: ["14B544CE1D2E79DB"]
+			id: "37CBC9777606617D"
+			tasks: [{
+				id: "0B7D44850A8A3240"
+				type: "stat"
+				stat: "minecraft:mob_kills"
+				value: 1000
+			}]
+			rewards: [
+				{
+					id: "7F2EB6AF8B96BDAC"
+					type: "item"
+					team_reward: false
+					item: "scalinghealth:bandages"
+					count: 16
+				}
+				{
+					id: "799439613ECE8038"
+					type: "item"
+					team_reward: false
+					item: "minecraft:enchanted_golden_apple"
+				}
+				{
+					id: "67E457BAB3D76D27"
+					type: "item"
+					team_reward: false
+					item: {
+						id: "minecraft:netherite_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "39741CC232A19205"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+				{
+					id: "37BDB3AB24A44A56"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "守护者I"
+			x: 3.0d
+			y: -3.0d
+			dependencies: ["18FE013B3405D2C2"]
+			hide: true
+			id: "0D38A693D586B67D"
+			tasks: [{
+				id: "0B65FC9E3C24A02E"
+				type: "stat"
+				icon: {
+					id: "inventorypets:pet_shield"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				stat: "minecraft:damage_taken"
+				value: 10000
+			}]
+			rewards: [
+				{
+					id: "1C67FF85E80A56FC"
+					type: "item"
+					team_reward: false
+					item: "scalinghealth:bandages"
+					count: 8
+				}
+				{
+					id: "62FC8332B5578DE8"
+					type: "item"
+					team_reward: false
+					item: {
+						id: "botania:brew_flask"
+						Count: 1b
+						tag: {
+							brewKey: "botania:regen"
+						}
+					}
+				}
+				{
+					id: "16DA639DD584C0FD"
+					type: "item"
+					team_reward: false
+					item: "minecraft:gold_ingot"
+					count: 16
+				}
+				{
+					id: "4553DED82B3F2D2F"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+				{
+					id: "56D27CE1B34BEF56"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "守护者II"
+			x: 3.0d
+			y: -1.5d
+			dependencies: ["0D38A693D586B67D"]
+			id: "6FF4D2E6F62F2DD6"
+			tasks: [{
+				id: "2111ACFD1431FD41"
+				type: "stat"
+				icon: {
+					id: "inventorypets:pet_shield"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				stat: "minecraft:damage_taken"
+				value: 100000
+			}]
+			rewards: [
+				{
+					id: "53A13DE903A8CE26"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_golden_apple"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 2
+				}
+				{
+					id: "278C85F91C2C6F25"
+					type: "item"
+					item: {
+						id: "minecraft:golden_apple"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+					count: 16
+				}
+				{
+					id: "65DEF25D578E0F6F"
+					type: "item"
+					item: {
+						id: "botania:brew_flask"
+						Count: 1b
+						tag: {
+							brewKey: "botania:strength"
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "726EB2A3EB2C7F0A"
+					type: "item"
+					item: {
+						id: "botania:brew_flask"
+						Count: 1b
+						tag: {
+							brewKey: "botania:regen"
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "76911FFF2F2A03DC"
+					type: "item"
+					item: {
+						id: "botania:brew_flask"
+						Count: 1b
+						tag: {
+							brewKey: "botania:resistance"
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "771BAAB23D5835B9"
+					type: "item"
+					item: {
+						id: "botania:brew_flask"
+						Count: 1b
+						tag: {
+							brewKey: "botania:fire_resistance"
+						}
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
+					}
+				}
+				{
+					id: "6B7E62BEFBBA2B41"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+				{
+					id: "3FCA6AC9B20BE752"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "怪物天敌"
+			x: 0.5d
+			y: 0.0d
+			dependencies: ["37CBC9777606617D"]
+			id: "1FCD1B897A14C726"
+			tasks: [{
+				id: "4D4970343248102A"
+				type: "stat"
+				icon: {
+					id: "minecraft:diamond_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				stat: "minecraft:mob_kills"
+				value: 10000
+			}]
+			rewards: [
+				{
+					id: "0A36308BDD971325"
+					type: "item"
+					item: {
+						id: "tinker_rapier:rapier_tic"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:attack_speed": 3.81875f
+								"tconstruct:mining_speed": 8.25f
+								"tconstruct:attack_damage": 17.25f
+								"tconstruct:harvest_level": 2.0f
+								"tconstruct:durability": 1026.6f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [
+								{
+									name: "tconstruct:diamond"
+									level: 1s
+								}
+								{
+									name: "tinkerslevellingaddon:improvable"
+									level: 1s
+								}
+								{
+									name: "tconstruct:piercing"
+									level: 2s
+								}
+								{
+									name: "tconstruct:stonebound"
+									level: 3s
+								}
+								{
+									name: "tconstruct:sturdy"
+									level: 3s
+								}
+								{
+									name: "materialis:enhanced_quartz"
+									level: 1s
+								}
+							]
+							tic_upgrades: [
+								{
+									name: "tinkerslevellingaddon:improvable"
+									level: 1s
+								}
+								{
+									name: "tconstruct:diamond"
+									level: 1s
+								}
+							]
+							tic_materials: [
+								"edtctic:andesite_alloy"
+								"edtctic:andesite_alloy"
+								"materialis:rose_quartz"
+								"edtctic:andesite_alloy"
+							]
+							Damage: 0
+							tic_volatile_data: {
+								upgrades: 1
+								"tconstruct:rarity": 1
+							}
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 3
+								"tinkerslevellingaddon:experience": 6
+							}
+						}
+					}
+				}
+				{
+					id: "4AADBB6299D172D1"
+					type: "item"
+					item: "scalinghealth:power_crystal"
+					count: 4
+				}
+				{
+					id: "58005E1EFA4D1B1D"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "30509BC25EE67CE0"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "守护者III"
+			x: 3.0d
+			y: 0.0d
+			dependencies: ["6FF4D2E6F62F2DD6"]
+			id: "5350C67D92E23062"
+			tasks: [{
+				id: "27CB84CD2CEFD41C"
+				type: "stat"
+				icon: {
+					id: "inventorypets:pet_shield"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				stat: "minecraft:damage_taken"
+				value: 500000
+			}]
+			rewards: [
+				{
+					id: "49AB0BC231CF1D42"
+					type: "item"
+					item: "scalinghealth:heart_crystal"
+					count: 4
+				}
+				{
+					id: "0268CF377A5818E9"
+					type: "item"
+					item: {
+						id: "constructsarmory:material_armor_helmet"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:armor_toughness": 1.1f
+								"tconstruct:knockback_resistance": 0.0f
+								"tconstruct:durability": 408.0f
+								"tconstruct:armor": 3.5f
+								"constructsarmory:movement_speed": 0.10125f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [
+								{
+									name: "tconstruct:diamond"
+									level: 1s
+								}
+								{
+									name: "materialis:engineers_goggles"
+									level: 1s
+								}
+								{
+									name: "constructsarmory:hallowed"
+									level: 1s
+								}
+								{
+									name: "tinkerslevellingaddon:improvable"
+									level: 1s
+								}
+								{
+									name: "tconstruct:protection"
+									level: 1s
+								}
+								{
+									name: "constructsarmory:shielding"
+									level: 1s
+								}
+							]
+							tic_upgrades: [
+								{
+									name: "tinkerslevellingaddon:improvable"
+									level: 1s
+								}
+								{
+									name: "tconstruct:protection"
+									level: 1s
+								}
+								{
+									name: "materialis:engineers_goggles"
+									level: 1s
+								}
+								{
+									name: "tconstruct:diamond"
+									level: 1s
+								}
+							]
+							tic_materials: [
+								"tconstruct:silver"
+								"tconstruct:lead"
+							]
+							Damage: 0
+							tic_volatile_data: {
+								"tconstruct:rarity": 1
+							}
+							tic_persistent_data: {
+								defense: 4
+							}
+						}
+					}
+				}
+				{
+					id: "3DFBA84A8908601E"
+					type: "item"
+					item: {
+						id: "constructsarmory:material_armor_boots"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:armor_toughness": 1.1f
+								"tconstruct:knockback_resistance": 0.0f
+								"tconstruct:durability": 437.0f
+								"tconstruct:armor": 3.5f
+								"constructsarmory:movement_speed": 0.10125f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [
+								{
+									name: "tconstruct:diamond"
+									level: 1s
+								}
+								{
+									name: "constructsarmory:hallowed"
+									level: 1s
+								}
+								{
+									name: "tinkerslevellingaddon:improvable"
+									level: 1s
+								}
+								{
+									name: "tconstruct:protection"
+									level: 1s
+								}
+								{
+									name: "constructsarmory:shielding"
+									level: 1s
+								}
+							]
+							tic_upgrades: [
+								{
+									name: "tinkerslevellingaddon:improvable"
+									level: 1s
+								}
+								{
+									name: "tconstruct:diamond"
+									level: 1s
+								}
+								{
+									name: "tconstruct:protection"
+									level: 1s
+								}
+							]
+							tic_materials: [
+								"tconstruct:silver"
+								"tconstruct:lead"
+							]
+							Damage: 0
+							tic_volatile_data: {
+								"tconstruct:rarity": 1
+							}
+							tic_persistent_data: {
+								defense: 4
+								upgrades: 1
+							}
+						}
+					}
+				}
+				{
+					id: "33E1A95A5FCF1B6A"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "06C2A9B24689AABD"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "守护者V"
+			x: 3.0d
+			y: 3.0d
+			dependencies: ["28775036B9AB8C88"]
+			id: "556E81394A2F7A69"
+			tasks: [{
+				id: "63FC15089204159A"
+				type: "stat"
+				icon: {
+					id: "inventorypets:pet_shield"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				stat: "minecraft:damage_taken"
+				value: 10000000
+			}]
+			rewards: [
+				{
+					id: "24ADF577A4A0645E"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+				}
+				{
+					id: "4568F5AF2C18021A"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "327057B7281826DB"
+					type: "item"
+					item: "scalinghealth:heart_crystal"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "守护者IV"
+			x: 3.0d
+			y: 1.5d
+			dependencies: ["5350C67D92E23062"]
+			id: "28775036B9AB8C88"
+			tasks: [{
+				id: "015F46A5FAE8F585"
+				type: "stat"
+				icon: {
+					id: "inventorypets:pet_shield"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				stat: "minecraft:damage_taken"
+				value: 1000000
+			}]
+			rewards: [
+				{
+					id: "55DBEEE8FCE039DD"
+					type: "item"
+					item: {
+						id: "constructsarmory:material_armor_chestplate"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:attack_damage": 1.0f
+								"tconstruct:durability": 481.0f
+								"tconstruct:armor": 9.75f
+								"tconstruct:armor_toughness": 1.3f
+								"tconstruct:knockback_resistance": 0.0f
+								"constructsarmory:movement_speed": 0.10125f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [
+								{
+									name: "tconstruct:diamond"
+									level: 1s
+								}
+								{
+									name: "constructsarmory:hallowed"
+									level: 1s
+								}
+								{
+									name: "tinkerslevellingaddon:improvable"
+									level: 1s
+								}
+								{
+									name: "tconstruct:melee_protection"
+									level: 1s
+								}
+								{
+									name: "tconstruct:protection"
+									level: 1s
+								}
+								{
+									name: "constructsarmory:shielding"
+									level: 1s
+								}
+							]
+							tic_upgrades: [
+								{
+									name: "tconstruct:protection"
+									level: 1s
+								}
+								{
+									name: "tinkerslevellingaddon:improvable"
+									level: 1s
+								}
+								{
+									name: "tconstruct:diamond"
+									level: 1s
+								}
+								{
+									name: "tconstruct:melee_protection"
+									level: 1s
+								}
+							]
+							tic_materials: [
+								"tconstruct:silver"
+								"tconstruct:lead"
+							]
+							Damage: 0
+							tic_volatile_data: {
+								"tconstruct:rarity": 1
+							}
+							tic_persistent_data: {
+								"tconstruct:melee_protection": 24
+								defense: 3
+								upgrades: 1
+							}
+						}
+					}
+				}
+				{
+					id: "6AB4450F0841CDC2"
+					type: "item"
+					item: {
+						id: "constructsarmory:material_armor_leggings"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:armor_toughness": 1.2f
+								"tconstruct:knockback_resistance": 0.0f
+								"tconstruct:durability": 465.0f
+								"tconstruct:armor": 6.0f
+								"constructsarmory:movement_speed": 0.10125f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [
+								{
+									name: "tconstruct:diamond"
+									level: 1s
+								}
+								{
+									name: "constructsarmory:hallowed"
+									level: 1s
+								}
+								{
+									name: "tinkerslevellingaddon:improvable"
+									level: 1s
+								}
+								{
+									name: "tconstruct:protection"
+									level: 1s
+								}
+								{
+									name: "constructsarmory:shielding"
+									level: 1s
+								}
+							]
+							tic_upgrades: [
+								{
+									name: "tinkerslevellingaddon:improvable"
+									level: 1s
+								}
+								{
+									name: "tconstruct:diamond"
+									level: 1s
+								}
+								{
+									name: "tconstruct:protection"
+									level: 1s
+								}
+							]
+							tic_materials: [
+								"tconstruct:silver"
+								"tconstruct:lead"
+							]
+							Damage: 0
+							tic_volatile_data: {
+								"tconstruct:rarity": 1
+							}
+							tic_persistent_data: {
+								defense: 4
+								upgrades: 1
+							}
+						}
+					}
+				}
+				{
+					id: "134D89D38327B524"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "19A2979C90BA287A"
+					type: "item"
+					item: "scalinghealth:heart_crystal"
+					count: 8
+				}
+				{
+					id: "6A6EA0B663055CE5"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "观测——钟"
+			icon: "minecraft:bell"
+			x: -2.5d
+			y: 9.0d
+			subtitle: "村庄？"
+			description: [
+				"昔日热闹的村庄中已然破败不堪"
+				"友好的村民们已经不复存在，只剩似人非人，似怪非怪的奇怪生物"
+			]
+			hide_dependency_lines: false
+			dependencies: ["18FE013B3405D2C2"]
+			secret: true
+			id: "2D28EE54FC5CE1D1"
+			tasks: [{
+				id: "7627D118CF63AF9C"
+				type: "observation"
+				timer: 0L
+				observe_type: 0
+				to_observe: "minecraft:bell"
+			}]
+			rewards: [
+				{
+					id: "3784D58221F7E41C"
+					type: "item"
+					item: "minecraft:villager_spawn_egg"
+					count: 16
+				}
+				{
+					id: "75C55C5C7EAA9A52"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "盖亚杀手I"
+			x: -2.5d
+			y: 4.5d
+			dependencies: ["08A90E07FB5FC67D"]
+			hide: true
+			id: "7BD87B8211C3412B"
+			tasks: [{
+				id: "4565FB8E35048022"
+				type: "questsadditions:killnbt"
+				icon: "botania:gaia_head"
+				entity: "botania:doppleganger"
+				value: 10L
+				nbt: { }
+				checkItem: false
+			}]
+			rewards: [
+				{
+					id: "1F63824E8465D89B"
+					type: "item"
+					item: "botania:rune_water"
+				}
+				{
+					id: "15ACE71F522F6C26"
+					type: "item"
+					item: "botania:rune_fire"
+				}
+				{
+					id: "32B77D108F5583DD"
+					type: "item"
+					item: "botania:rune_earth"
+				}
+				{
+					id: "166D6C37EB67E383"
+					type: "item"
+					item: "botania:rune_air"
+				}
+				{
+					id: "51AE3DCBAD9F3F51"
+					type: "item"
+					item: "botania:rune_mana"
+				}
+				{
+					id: "7DE64586A776AB90"
+					type: "item"
+					item: "botania:terrasteel_ingot"
+					count: 4
+				}
+				{
+					id: "5F545658E29ADEFA"
+					type: "item"
+					item: "botania:manasteel_block"
+				}
+				{
+					id: "7080960D528A0702"
+					type: "item"
+					item: "botania:life_essence"
+					count: 8
+				}
+				{
+					id: "0DF46357AA388A5F"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "盖亚杀手II"
+			x: -1.0d
+			y: 4.5d
+			dependencies: ["7BD87B8211C3412B"]
+			id: "4A568FB6C29AE7E3"
+			tasks: [{
+				id: "68A58492A61F68FC"
+				type: "questsadditions:killnbt"
+				icon: "botania:gaia_head"
+				entity: "botania:doppleganger"
+				value: 20L
+				nbt: { }
+				checkItem: false
+			}]
+			rewards: [
+				{
+					id: "556BE3AA8148A3CE"
+					type: "item"
+					item: "botania:rune_spring"
+				}
+				{
+					id: "4265D87753412D6C"
+					type: "item"
+					item: "botania:rune_summer"
+				}
+				{
+					id: "28F4CFD68A24A83F"
+					type: "item"
+					item: "botania:rune_autumn"
+				}
+				{
+					id: "1541B565B0536E11"
+					type: "item"
+					item: "botania:rune_winter"
+				}
+				{
+					id: "717327020D2CD4D3"
+					type: "item"
+					item: "botania:terrasteel_ingot"
+					count: 8
+				}
+				{
+					id: "0218712B2666046E"
+					type: "item"
+					item: "botania:manasteel_block"
+					count: 2
+				}
+				{
+					id: "59CA6DE7E37A3136"
+					type: "item"
+					item: "botania:mana_diamond_block"
+				}
+				{
+					id: "08009F57F3892881"
+					type: "item"
+					item: "botania:life_essence"
+					count: 16
+				}
+				{
+					id: "37494FFCD0A4080B"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "盖亚杀手III"
+			x: 0.5d
+			y: 4.5d
+			dependencies: ["4A568FB6C29AE7E3"]
+			id: "6FEC22B0764CC413"
+			tasks: [{
+				id: "2A6F7186371F537B"
+				type: "questsadditions:killnbt"
+				icon: "botania:gaia_head"
+				entity: "botania:doppleganger"
+				value: 30L
+				nbt: { }
+				checkItem: false
+			}]
+			rewards: [
+				{
+					id: "1376DDC7A3C656CE"
+					type: "item"
+					item: "botania:rune_lust"
+				}
+				{
+					id: "4743D70F305A635A"
+					type: "item"
+					item: "botania:rune_gluttony"
+				}
+				{
+					id: "267353F8CBCE0D8F"
+					type: "item"
+					item: "botania:rune_greed"
+				}
+				{
+					id: "7F13B5A29DA606EE"
+					type: "item"
+					item: "botania:rune_sloth"
+				}
+				{
+					id: "01DF8CF024DC566B"
+					type: "item"
+					item: "botania:rune_wrath"
+				}
+				{
+					id: "42B9E77E5C07CF2A"
+					type: "item"
+					item: "botania:rune_envy"
+				}
+				{
+					id: "5989D9D45EC95EB3"
+					type: "item"
+					item: "botania:rune_pride"
+				}
+				{
+					id: "27BAA4BC4B33FFB5"
+					type: "item"
+					item: "botania:terrasteel_ingot"
+					count: 16
+				}
+				{
+					id: "0F00ACFFD0FF057C"
+					type: "item"
+					item: "botania:manasteel_block"
+					count: 4
+				}
+				{
+					id: "31CAFCC7C26C6994"
+					type: "item"
+					item: "botania:mana_diamond_block"
+					count: 4
+				}
+				{
+					id: "333E53B81772828B"
+					type: "item"
+					item: "botania:life_essence"
+					count: 32
+				}
+				{
+					id: "58E9BECD2DB1FB2C"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "盖亚杀手IV"
+			x: 2.0d
+			y: 4.5d
+			dependencies: ["6FEC22B0764CC413"]
+			id: "4CAD6FAA4A6A706E"
+			tasks: [{
+				id: "3DD9C9459D24859A"
+				type: "questsadditions:killnbt"
+				icon: "botania:gaia_head"
+				entity: "botania:doppleganger"
+				value: 40L
+				nbt: { }
+				checkItem: false
+			}]
+			rewards: [
+				{
+					id: "1B6E00190509F226"
+					type: "item"
+					item: "kubejs:gaia_block"
+					count: 16
+				}
+				{
+					id: "094097D6233798B0"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			title: "盖亚杀手V"
+			x: 3.5d
+			y: 4.5d
+			dependencies: ["4CAD6FAA4A6A706E"]
+			id: "2304FDD82D851D0F"
+			tasks: [{
+				id: "43AFC79341D3E2C3"
+				type: "questsadditions:killnbt"
+				icon: "botania:gaia_head"
+				entity: "botania:doppleganger"
+				value: 50L
+				nbt: { }
+				checkItem: false
+			}]
+			rewards: [
+				{
+					id: "0AF1935C37C9774E"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+					count: 3
+				}
+				{
+					id: "622C323CD674B80C"
+					type: "item"
+					item: "extrabotany:orichalcos"
+					count: 18
+				}
+				{
+					id: "1202C96972B6661A"
+					type: "item"
+					item: "gofish:taz_mascot"
+				}
+			]
+		}
+		{
+			title: "坚持不懈I"
+			x: -2.0d
+			y: -3.0d
+			dependencies: ["18FE013B3405D2C2"]
+			hide: true
+			id: "5F0B428087282690"
+			tasks: [{
+				id: "6F36B00664E4CFD5"
+				type: "questsadditions:days"
+				title: "度过10个游戏日"
+				days: 10
+			}]
+			rewards: [{
+				id: "0FF0021561C48770"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			title: "坚持不懈II"
+			x: -2.0d
+			y: -1.5d
+			dependencies: ["5F0B428087282690"]
+			id: "66D40DB83C28AEEE"
+			tasks: [{
+				id: "175A1A75937506F6"
+				type: "questsadditions:days"
+				title: "度过50个游戏日"
+				days: 50
+			}]
+			rewards: [{
+				id: "57206493597A68B9"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			title: "坚持不懈III"
+			x: -2.0d
+			y: 0.0d
+			dependencies: ["66D40DB83C28AEEE"]
+			id: "3BF448452A617140"
+			tasks: [{
+				id: "5D4489011EAD02A5"
+				type: "questsadditions:days"
+				title: "度过100个游戏日"
+				days: 100
+			}]
+			rewards: [{
+				id: "259EF694B33C89A4"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "advanced"
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			title: "坚持不懈IV"
+			x: -2.0d
+			y: 1.5d
+			dependencies: ["3BF448452A617140"]
+			id: "08B1EE7BEF148741"
+			tasks: [{
+				id: "3B323C43B1E1A38C"
+				type: "questsadditions:days"
+				title: "度过500个游戏日"
+				days: 500
+			}]
+			rewards: [{
+				id: "3E82AE42468AEA98"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			title: "坚持不懈V"
+			x: -2.0d
+			y: 3.0d
+			dependencies: ["08B1EE7BEF148741"]
+			id: "418AE907DBAD1F69"
+			tasks: [{
+				id: "4A041FA98667C225"
+				type: "questsadditions:days"
+				title: "度过1000个游戏日"
+				days: 1000
+			}]
+			rewards: [{
+				id: "7C4553A980BAB027"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "legendry"
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			title: "蔡"
+			x: -2.5d
+			y: 10.5d
+			subtitle: "死亡100次"
+			dependencies: ["18FE013B3405D2C2"]
+			secret: true
+			id: "27B774419012BF17"
+			tasks: [{
+				id: "0F376B966962676C"
+				type: "stat"
+				icon: {
+					id: "inventorypets:pet_grave"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				stat: "minecraft:deaths"
+				value: 100
+			}]
+			rewards: [{
+				id: "60DC3BD7A98F8D37"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			title: "坚挺"
+			x: -1.0d
+			y: 10.5d
+			subtitle: "1小时不死亡"
+			dependencies: ["18FE013B3405D2C2"]
+			secret: true
+			id: "459AAAE6205403A9"
+			tasks: [{
+				id: "51128F73F8F35B06"
+				type: "stat"
+				icon: {
+					id: "inventorypets:pet_black_hole"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				stat: "minecraft:time_since_death"
+				value: 72000
+			}]
+			rewards: [{
+				id: "607C4CC068794CF4"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			title: "工匠"
+			x: 3.5d
+			y: 10.5d
+			subtitle: "与工作台互动10000次"
+			dependencies: ["18FE013B3405D2C2"]
+			secret: true
+			id: "761350CC802F84F8"
+			tasks: [{
+				id: "148D337AE49ADBC5"
+				type: "stat"
+				icon: "minecraft:crafting_table"
+				stat: "minecraft:interact_with_crafting_table"
+				value: 10000
+			}]
+			rewards: [{
+				id: "529A7FAE6B04AA40"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			title: "I Just Wanna Jump! Jump! Jump! Jump! ……"
+			x: -1.0d
+			y: 9.0d
+			subtitle: "跳跃10000次"
+			dependencies: ["18FE013B3405D2C2"]
+			secret: true
+			id: "2D070F954AC79B4E"
+			tasks: [{
+				id: "05D92CB3D8B6B67B"
+				type: "stat"
+				icon: {
+					id: "tconstruct:sky_slime_sling"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				stat: "minecraft:jump"
+				value: 10000
+			}]
+			rewards: [{
+				id: "15096FA9E92F32A1"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			title: "熬夜卷王"
+			x: 2.0d
+			y: 9.0d
+			subtitle: "连续36个游戏日不睡觉"
+			dependencies: ["18FE013B3405D2C2"]
+			secret: true
+			id: "0DD416176160AAF5"
+			tasks: [{
+				id: "0950D83540D23CD7"
+				type: "stat"
+				icon: {
+					id: "inventorypets:pet_bed"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				stat: "minecraft:time_since_rest"
+				value: 864000
+			}]
+			rewards: [{
+				id: "195DD5D1DE6952D2"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			title: "是不是作弊了？"
+			x: 0.5d
+			y: 12.0d
+			subtitle: "获得阶段“disabled”"
+			dependencies: ["18FE013B3405D2C2"]
+			hide: true
+			secret: true
+			id: "2B70B93350626C5B"
+			tasks: [{
+				id: "5274A26A15E0B5D4"
+				type: "gamestage"
+				stage: "disabled"
+			}]
+			rewards: [{
+				id: "5DFE7DD7259777DC"
+				type: "custom"
+				title: "？？？"
+			}]
+		}
+		{
+			title: "旅行者"
+			icon: "supplementaries:globe"
+			x: 3.5d
+			y: 9.0d
+			subtitle: "发现所有生物群系"
+			dependencies: ["18FE013B3405D2C2"]
+			secret: true
+			id: "0641B43443A9C81A"
+			tasks: [{
+				id: "3149D7F9B6077670"
+				type: "advancement"
+				advancement: "minecraft:adventure/adventuring_time"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "7372C4D68BE2AB2B"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			title: "怪物天敌II"
+			x: 0.5d
+			y: 1.5d
+			dependencies: ["1FCD1B897A14C726"]
+			id: "32D322F4EC7C1527"
+			tasks: [{
+				id: "1F06B895CE382082"
+				type: "stat"
+				icon: {
+					id: "minecraft:netherite_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				stat: "minecraft:mob_kills"
+				value: 50000
+			}]
+			rewards: [
+				{
+					id: "14DF560719FBD1DD"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "316E17426A00452B"
+					type: "item"
+					item: "scalinghealth:power_crystal"
+					count: 8
+				}
+				{
+					id: "069B35AB0AF0621A"
+					type: "item"
+					item: {
+						id: "tinker_rapier:rapier_tic"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:attack_speed": 3.575f
+								"tconstruct:mining_speed": 10.2125f
+								"tconstruct:attack_damage": 41.903126f
+								"tconstruct:harvest_level": 4.0f
+								"tconstruct:durability": 2864.4001f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [
+								{
+									name: "materialis:manashield"
+									level: 3s
+								}
+								{
+									name: "tconstruct:diamond"
+									level: 1s
+								}
+								{
+									name: "materialis:elven_beam"
+									level: 1s
+								}
+								{
+									name: "bloodsmeltery:exsanguinate"
+									level: 1s
+								}
+								{
+									name: "tinkerslevellingaddon:improvable"
+									level: 1s
+								}
+								{
+									name: "tconstruct:invariant"
+									level: 1s
+								}
+								{
+									name: "bettercompat:mana"
+									level: 3s
+								}
+								{
+									name: "materialis:manaburner"
+									level: 2s
+								}
+								{
+									name: "materialis:manaripper"
+									level: 2s
+								}
+								{
+									name: "tconstruct:netherite"
+									level: 1s
+								}
+								{
+									name: "tconstruct:piercing"
+									level: 2s
+								}
+								{
+									name: "materialis:pixiecaller"
+									level: 2s
+								}
+								{
+									name: "materialis:terrabeam"
+									level: 2s
+								}
+							]
+							tic_upgrades: [
+								{
+									name: "tinkerslevellingaddon:improvable"
+									level: 1s
+								}
+								{
+									name: "tconstruct:diamond"
+									level: 1s
+								}
+								{
+									name: "tconstruct:netherite"
+									level: 1s
+								}
+							]
+							tic_materials: [
+								"edtctic:gaia"
+								"materialis:alfsteel"
+								"bloodsmeltery:bloodbrass"
+								"tconstruct:invar"
+							]
+							Damage: 0
+							tic_volatile_data: {
+								"tconstruct:indestructible": 1b
+								"tconstruct:rarity": 2
+							}
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 2
+							}
+						}
+					}
+				}
+				{
+					id: "579EC14E91D7C062"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "怪物之梦魇"
+			x: 0.5d
+			y: 3.0d
+			dependencies: ["32D322F4EC7C1527"]
+			id: "4CF839DEB85FD758"
+			tasks: [{
+				id: "0F34465D5F3C5089"
+				type: "stat"
+				icon: {
+					id: "endless:infinity_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Unbreakable: 1b
+					}
+				}
+				stat: "minecraft:mob_kills"
+				value: 100000
+			}]
+			rewards: [
+				{
+					id: "172465D39F4CAB2D"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+				}
+				{
+					id: "7ADAAF97AA6A345B"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "1BEC8AE163934FCF"
+					type: "item"
+					item: "scalinghealth:power_crystal"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "世界之零点"
+			x: 2.0d
+			y: 10.5d
+			subtitle: "到达坐标X0，Z0"
+			dependencies: ["18FE013B3405D2C2"]
+			secret: true
+			id: "46A2BD1655D8DFEE"
+			tasks: [{
+				id: "6AFB2B4FA0DEED95"
+				type: "location"
+				dimension: "minecraft:overworld"
+				ignore_dimension: true
+				position: [I;
+					0
+					0
+					0
+				]
+				size: [I;
+					1
+					256
+					1
+				]
+			}]
+			rewards: [{
+				id: "3000EF258B8323ED"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "basic"
+					}
+				}
+			}]
+		}
+		{
+			title: "凋灵杀手I"
+			x: -2.5d
+			y: 6.0d
+			dependencies: ["20E5B2983BF8B84B"]
+			hide: true
+			id: "2AB96263DE24A650"
+			tasks: [{
+				id: "4FE89AF32F64B786"
+				type: "questsadditions:killnbt"
+				icon: {
+					id: "inventorypets:pet_wither"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "minecraft:wither"
+				value: 10L
+				nbt: { }
+				checkItem: false
+			}]
+			rewards: [
+				{
+					id: "39C1000001C3A0CD"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "2ABD58F11A562D03"
+					type: "item"
+					item: "minecraft:nether_star"
+					count: 4
+				}
+				{
+					id: "4C626F3A8C3DD36F"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "174DF2564C8E2F77"
+					type: "item"
+					item: "minecraft:soul_sand"
+					count: 16
+				}
+				{
+					id: "563788ABBA8E4310"
+					type: "item"
+					item: "minecraft:wither_skeleton_skull"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "凋灵杀手II"
+			x: -1.0d
+			y: 6.0d
+			dependencies: ["2AB96263DE24A650"]
+			id: "67999CD07BF2D962"
+			tasks: [{
+				id: "4AD288FC33E66750"
+				type: "questsadditions:killnbt"
+				icon: {
+					id: "inventorypets:pet_wither"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "minecraft:wither"
+				value: 20L
+				nbt: { }
+				checkItem: false
+			}]
+			rewards: [
+				{
+					id: "52B4F17AC174EFBB"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "5F5733FE64955E0B"
+					type: "item"
+					item: "minecraft:nether_star"
+					count: 8
+				}
+				{
+					id: "3B1911F53661669A"
+					type: "item"
+					item: "minecraft:soul_sand"
+					count: 32
+				}
+				{
+					id: "79A222F2F9EBC813"
+					type: "item"
+					item: "minecraft:wither_skeleton_skull"
+					count: 8
+				}
+				{
+					id: "0EA739899932F941"
+					type: "xp"
+					xp: 300
+				}
+			]
+		}
+		{
+			title: "凋灵杀手III"
+			x: 0.5d
+			y: 6.0d
+			dependencies: ["67999CD07BF2D962"]
+			id: "50FB947709B70C2F"
+			tasks: [{
+				id: "7E94DE181C70733A"
+				type: "questsadditions:killnbt"
+				icon: {
+					id: "inventorypets:pet_wither"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "minecraft:wither"
+				value: 30L
+				nbt: { }
+				checkItem: false
+			}]
+			rewards: [
+				{
+					id: "097BB5C656B2654D"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "18F10E05C65FC708"
+					type: "item"
+					item: "bountifulbaubles:broken_black_dragon_scale"
+				}
+				{
+					id: "3E215BE4601EF3B0"
+					type: "item"
+					item: "botania:pinkinator"
+				}
+				{
+					id: "53B4081D8F8531AA"
+					type: "item"
+					item: "minecraft:soul_sand"
+					count: 64
+				}
+				{
+					id: "2CFCD6C56D48D02C"
+					type: "item"
+					item: "minecraft:wither_skeleton_skull"
+					count: 16
+				}
+				{
+					id: "3102F80F9092DBD8"
+					type: "item"
+					item: "minecraft:wither_rose"
+				}
+				{
+					id: "1ED7F7B600AAE411"
+					type: "item"
+					item: "minecraft:nether_star"
+					count: 8
+				}
+				{
+					id: "0E7B33DD00A90DC9"
+					type: "xp"
+					xp: 400
+				}
+			]
+		}
+		{
+			title: "凋灵杀手IV"
+			x: 2.0d
+			y: 6.0d
+			dependencies: ["50FB947709B70C2F"]
+			id: "03E0A5D481A21B0D"
+			tasks: [{
+				id: "27F5C39853E18517"
+				type: "questsadditions:killnbt"
+				icon: {
+					id: "inventorypets:pet_wither"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "minecraft:wither"
+				value: 40L
+				nbt: { }
+				checkItem: false
+			}]
+			rewards: [
+				{
+					id: "72E1C83BAC501EB3"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "54156E23435BA4D1"
+					type: "item"
+					item: "bountifulbaubles:black_dragon_scale"
+				}
+				{
+					id: "7E473AFD6C9D169B"
+					type: "item"
+					item: {
+						id: "inventorypets:pet_wither"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3F3D303C176DB19B"
+					type: "item"
+					item: "minecraft:wither_skeleton_skull"
+					count: 32
+				}
+				{
+					id: "74FC134EF6734133"
+					type: "item"
+					item: "minecraft:wither_rose"
+					count: 4
+				}
+				{
+					id: "52FF9759BD274EFD"
+					type: "item"
+					item: "minecraft:nether_star"
+					count: 16
+				}
+				{
+					id: "692F8355E6D99606"
+					type: "xp"
+					xp: 500
+				}
+			]
+		}
+		{
+			title: "凋灵杀手V"
+			x: 3.5d
+			y: 6.0d
+			dependencies: ["03E0A5D481A21B0D"]
+			id: "1C2618FE9D91CD9F"
+			tasks: [{
+				id: "44A468714E0A2033"
+				type: "questsadditions:killnbt"
+				icon: {
+					id: "inventorypets:pet_wither"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "minecraft:wither"
+				value: 50L
+				nbt: { }
+				checkItem: false
+			}]
+			rewards: [
+				{
+					id: "56EEBC9C4A512B52"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "0CD70F786CEFB35A"
+					type: "item"
+					item: "bountifulbaubles:mixed_dragon_scale"
+				}
+				{
+					id: "59FBF135AC6C198C"
+					type: "item"
+					item: "minecraft:wither_skeleton_skull"
+					count: 64
+				}
+				{
+					id: "2133B80A3927E0E9"
+					type: "item"
+					item: "minecraft:nether_star"
+					count: 32
+				}
+				{
+					id: "5EC438363679F5AF"
+					type: "item"
+					item: "minecraft:wither_rose"
+					count: 8
+				}
+				{
+					id: "2C74794F1962D047"
+					type: "xp"
+					xp: 600
+				}
+			]
+		}
+		{
+			title: "末影龙杀手I"
+			x: -2.5d
+			y: 7.5d
+			dependencies: ["671183FA9E622763"]
+			hide: true
+			id: "29C71282F9FCE299"
+			tasks: [{
+				id: "706C6794B6FB1108"
+				type: "questsadditions:killnbt"
+				icon: "minecraft:dragon_head"
+				entity: "minecraft:ender_dragon"
+				value: 10L
+				nbt: { }
+				checkItem: false
+			}]
+			rewards: [
+				{
+					id: "6AF19443305A376E"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+					count: 3
+				}
+				{
+					id: "14DD6D9742DE5EEE"
+					type: "item"
+					item: "minecraft:dragon_breath"
+					count: 16
+				}
+				{
+					id: "72E5CE4755171274"
+					type: "xp"
+					xp: 300
+				}
+				{
+					id: "31199C00D774DAEA"
+					type: "item"
+					item: "minecraft:dragon_egg"
+				}
+				{
+					id: "07520CA7EE5704DF"
+					type: "item"
+					item: "botania:dragonstone_block"
+					count: 4
+				}
+			]
+		}
+		{
+			title: "末影龙杀手II"
+			x: -1.0d
+			y: 7.5d
+			dependencies: ["29C71282F9FCE299"]
+			id: "417882410D349044"
+			tasks: [{
+				id: "7DD39F9141DAFBD1"
+				type: "questsadditions:killnbt"
+				icon: "minecraft:dragon_head"
+				entity: "minecraft:ender_dragon"
+				value: 20L
+				nbt: { }
+				checkItem: false
+			}]
+			rewards: [
+				{
+					id: "167AEFA27A4D4623"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+					count: 3
+				}
+				{
+					id: "141FDC3AC3ED11F1"
+					type: "item"
+					item: "minecraft:dragon_breath"
+					count: 32
+				}
+				{
+					id: "596D8CB27C7EB808"
+					type: "item"
+					item: "minecraft:dragon_head"
+				}
+				{
+					id: "77F287D463FF3DB2"
+					type: "item"
+					item: "botania:dragonstone_block"
+					count: 8
+				}
+				{
+					id: "43B8CBE6B33717E1"
+					type: "item"
+					item: "minecraft:dragon_egg"
+					count: 2
+				}
+				{
+					id: "4BE243DB93345FB5"
+					type: "xp"
+					xp: 400
+				}
+			]
+		}
+		{
+			title: "末影龙杀手III"
+			x: 0.5d
+			y: 7.5d
+			dependencies: ["417882410D349044"]
+			id: "712A8D34984F2443"
+			tasks: [{
+				id: "380723817EC20831"
+				type: "questsadditions:killnbt"
+				icon: "minecraft:dragon_head"
+				entity: "minecraft:ender_dragon"
+				value: 30L
+				nbt: { }
+				checkItem: false
+			}]
+			rewards: [
+				{
+					id: "60ABD96C738E65A6"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+					count: 3
+				}
+				{
+					id: "74B51CD944040D6A"
+					type: "item"
+					item: "minecraft:dragon_breath"
+					count: 64
+				}
+				{
+					id: "7E397A66DCC4AA4E"
+					type: "item"
+					item: "minecraft:dragon_head"
+					count: 2
+				}
+				{
+					id: "0D6679BE3C307866"
+					type: "item"
+					item: "minecraft:dragon_egg"
+					count: 4
+				}
+				{
+					id: "1E6115F7C480C9C7"
+					type: "item"
+					item: {
+						id: "botania:flight_tiara"
+						Count: 1b
+						tag: {
+							variant: 8
+						}
+					}
+				}
+				{
+					id: "750E064240F49E1A"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "4E2EB4050ADC3CC9"
+					type: "item"
+					item: {
+						id: "minecraft:elytra"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "末影龙杀手IV"
+			x: 2.0d
+			y: 7.5d
+			dependencies: ["712A8D34984F2443"]
+			id: "288CBE0D6322EFE7"
+			tasks: [{
+				id: "04A8A72F1C5D82CA"
+				type: "questsadditions:killnbt"
+				icon: "minecraft:dragon_head"
+				entity: "minecraft:ender_dragon"
+				value: 40L
+				nbt: { }
+				checkItem: false
+			}]
+			rewards: [
+				{
+					id: "5DDF180B51E140D6"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+					count: 3
+				}
+				{
+					id: "2F8E7767FA96C704"
+					type: "item"
+					item: "minecraft:dragon_breath"
+					count: 128
+				}
+				{
+					id: "32E5B8FBC8C91538"
+					type: "item"
+					item: "minecraft:dragon_egg"
+					count: 6
+				}
+				{
+					id: "19CF083FA1B82299"
+					type: "xp"
+					xp: 600
+				}
+				{
+					id: "4B05FF9BCC8B5AAA"
+					type: "item"
+					item: {
+						id: "tconstruct:slime_chestplate"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:durability": 672.0f
+								"tconstruct:armor": 0.0f
+							}
+							tic_broken: 0b
+							HideFlags: 3
+							tic_modifiers: [{
+								name: "tconstruct:wings"
+								level: 1s
+							}]
+							Damage: 0
+							tic_volatile_data: {
+								"tconstruct:elyta": 1b
+							}
+							tic_persistent_data: {
+								abilities: 1
+								upgrades: 5
+							}
+						}
+					}
+				}
+				{
+					id: "111F2D72D61A5251"
+					type: "item"
+					item: "kubejs:chorus_chrome"
+					count: 8
+				}
+			]
+		}
+		{
+			title: "末影龙杀手V"
+			x: 3.5d
+			y: 7.5d
+			dependencies: ["288CBE0D6322EFE7"]
+			id: "1995C715F89B1A2D"
+			tasks: [{
+				id: "4EC5B21469E9F592"
+				type: "questsadditions:killnbt"
+				icon: "minecraft:dragon_head"
+				entity: "minecraft:ender_dragon"
+				value: 50L
+				nbt: { }
+				checkItem: false
+			}]
+			rewards: [
+				{
+					id: "720B421A2D66AF1F"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+					count: 3
+				}
+				{
+					id: "01A7FA1E03161274"
+					type: "item"
+					item: {
+						id: "mekanism:hdpe_elytra"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "56BDBE56A1954B50"
+					type: "item"
+					item: "minecraft:dragon_breath"
+					count: 256
+				}
+				{
+					id: "3C56C1EAA68EA7CE"
+					type: "item"
+					item: "kubejs:chorus_chrome"
+					count: 16
+				}
+				{
+					id: "13C6C5BD54BA6188"
+					type: "xp"
+					xp: 700
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: 9.0d
+			subtitle: "使用机械臂播放唱片"
+			dependencies: ["7DDCEB0FF188BB01"]
+			secret: true
+			id: "0F425B1B77BF929D"
+			tasks: [{
+				id: "40216FB76A3D9F0E"
+				type: "advancement"
+				advancement: "create:musical_arm"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "746DB5543108B38B"
+					type: "item"
+					item: "minecraft:music_disc_11"
+				}
+				{
+					id: "38C379855159442E"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: 10.5d
+			dependencies: ["3B4F01FB78C01E66"]
+			secret: true
+			id: "10C412B0097DA565"
+			tasks: [{
+				id: "1CD60CF0C22F3D1F"
+				type: "advancement"
+				icon: "twilightforest:tower_wood"
+				advancement: "twilightforest:arborist"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "17773F81E44D29D5"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+				}
+				{
+					id: "1E99DE7841490FCA"
+					type: "item"
+					item: {
+						id: "twilightforest:glass_sword"
+						Count: 1b
+						tag: {
+							Unbreakable: 1b
+							AS_Amulet_Holder: [I;
+								1905826405
+								908017989
+								-1617945607
+								308989581
+							]
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+	]
+}

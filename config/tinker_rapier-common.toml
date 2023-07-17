@@ -1,0 +1,9 @@
+
+#General settings
+[general]
+	#the durability multiplier of Rapier
+	#Range: 0.1 ~ 2.0
+	rapier_durability = 0.75
+	#Is the rapier attack like classic TiC (Armor-piercing)
+	classic_attack = false
+

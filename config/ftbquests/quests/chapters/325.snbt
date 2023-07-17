@@ -1,0 +1,825 @@
+{
+	id: "6B3CF48CD998D688"
+	group: "42669CA32286EFD8"
+	order_index: 1
+	filename: "325"
+	title: "支线-2 暮色森林"
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [{
+		x: -5.0d
+		y: -0.5d
+		width: 1.0d
+		height: 1.0d
+		rotation: 0.0d
+		image: "kubejs:textures/quest/start.png"
+		hover: [ ]
+		click: ""
+		dev: false
+		corner: false
+	}]
+	quests: [
+		{
+			title: "初入暮色森林"
+			icon: "twilightforest:twilight_portal_miniature_structure"
+			x: -3.5d
+			y: -0.5d
+			shape: "rsquare"
+			description: ["我制造出了一个宝石，并将其丢进了一个被花朵围绕的水池之中。随着一道闪电劈下，那水池变成了传送门。我跳了进去，竟进入了一个被永恒之夜笼罩的森林世界。"]
+			dependencies: ["41DE77F7F05DCACB"]
+			hide: true
+			hide_text_until_complete: true
+			size: 2.0d
+			id: "3B4F01FB78C01E66"
+			tasks: [{
+				id: "16D2C58C63A40144"
+				type: "dimension"
+				dimension: "twilightforest:twilightforest"
+			}]
+			rewards: [
+				{
+					id: "6BE1885831118BE2"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "75778851A6CDAE03"
+					type: "custom"
+					title: "阶段"
+					auto: "enabled"
+				}
+				{
+					id: "3E6B92790E54DC2C"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 0.5d
+			subtitle: "一张魔法地图可以为你的暮色之旅提供极大的便利"
+			dependencies: ["3B4F01FB78C01E66"]
+			hide: true
+			id: "410F644C5CF938F3"
+			tasks: [{
+				id: "754F123B464694FD"
+				type: "item"
+				item: "twilightforest:magic_map_empty"
+			}]
+			rewards: [{
+				id: "709A3367076C6EE4"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "rare"
+					}
+				}
+			}]
+		}
+		{
+			title: "暮色的守门者"
+			icon: "twilightforest:naga_courtyard_miniature_structure"
+			x: -0.5d
+			y: -0.5d
+			subtitle: "击杀娜迦"
+			dependencies: ["3B4F01FB78C01E66"]
+			hide: true
+			id: "643E8A8EB06A7C20"
+			tasks: [{
+				id: "4BECC89D876BB1D8"
+				type: "item"
+				item: "twilightforest:naga_trophy"
+			}]
+			rewards: [
+				{
+					id: "73CC2C13D0E777B8"
+					type: "item"
+					item: "twilightforest:naga_scale"
+					count: 6
+				}
+				{
+					id: "0879004126DB5887"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "4A131480A2E3FAEA"
+					type: "advancement"
+					auto: "enabled"
+					advancement: "twilightforest:progress_naga"
+					criterion: ""
+				}
+				{
+					id: "195A5F2671F70AF6"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "物理 VS 魔法"
+			icon: {
+				id: "twilightforest:lich_tower_miniature_structure"
+				Count: 1b
+				tag: { }
+			}
+			x: 1.5d
+			y: -0.5d
+			subtitle: "击杀巫妖"
+			description: ["当然也可以是魔法vs魔法（"]
+			dependencies: ["643E8A8EB06A7C20"]
+			hide_text_until_complete: true
+			id: "024ACCD1348D0183"
+			tasks: [{
+				id: "40A1F4567EEC4901"
+				type: "item"
+				item: {
+					id: "twilightforest:lich_trophy"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "0EDFD96F023A2CFF"
+					type: "random"
+					table_id: 4190664110229748653L
+				}
+				{
+					id: "42FB89DF7E614F3E"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "1FEFBEF415CB466B"
+					type: "item"
+					item: "twilightforest:maze_map_empty"
+				}
+				{
+					id: "405B3149CDCFC461"
+					type: "advancement"
+					auto: "enabled"
+					advancement: "twilightforest:progress_lich"
+					criterion: ""
+				}
+				{
+					id: "625C1400134F7B36"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "迷宫探索者"
+			icon: "twilightforest:minoshroom_trophy"
+			x: 3.5d
+			y: -2.0d
+			subtitle: "击杀米诺菇"
+			dependencies: ["024ACCD1348D0183"]
+			hide: true
+			id: "736D0208A0B55F77"
+			tasks: [{
+				id: "6E3DDA622A9A0305"
+				type: "item"
+				item: "twilightforest:minoshroom_trophy"
+			}]
+			rewards: [
+				{
+					id: "37921E3FA0BF4C2D"
+					type: "item"
+					item: {
+						id: "twilightforest:mazebreaker_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									lvl: 4s
+									id: "minecraft:efficiency"
+								}
+								{
+									lvl: 3s
+									id: "minecraft:unbreaking"
+								}
+								{
+									lvl: 2s
+									id: "minecraft:fortune"
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "7365AE9BF72A6DB9"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "34DB314D8298ADF3"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "要塞征服者"
+			icon: {
+				id: "twilightforest:knight_phantom_trophy"
+				Count: 1b
+				tag: { }
+			}
+			x: 3.5d
+			y: -0.5d
+			subtitle: "击杀幻影骑士"
+			dependencies: ["024ACCD1348D0183"]
+			hide: true
+			id: "726A5A1BDF04CDF9"
+			tasks: [{
+				id: "630B792941B3EEB6"
+				type: "item"
+				item: {
+					id: "twilightforest:knight_phantom_trophy"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "56F644D2704D37C8"
+					type: "item"
+					item: {
+						id: "twilightforest:block_and_chain"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3E47F31A7B387E9A"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "3C71668F9519FC0E"
+					type: "advancement"
+					auto: "enabled"
+					advancement: "twilightforest:progress_knights"
+					criterion: ""
+				}
+				{
+					id: "72AD027C7B39A590"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "寒冰破裂者"
+			icon: {
+				id: "twilightforest:yeti_trophy"
+				Count: 1b
+				tag: { }
+			}
+			x: 3.5d
+			y: 1.0d
+			subtitle: "击杀雪怪首领"
+			dependencies: ["024ACCD1348D0183"]
+			hide: true
+			id: "5E9D89EEC0A59AFE"
+			tasks: [{
+				id: "382176C4D7249486"
+				type: "item"
+				item: "twilightforest:yeti_trophy"
+			}]
+			rewards: [
+				{
+					id: "379D20B41F50CD71"
+					type: "item"
+					item: "twilightforest:ice_bomb"
+					count: 4
+				}
+				{
+					id: "10FF5BBCE9D65074"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "2D6200D6BF8556CF"
+					type: "advancement"
+					auto: "enabled"
+					advancement: "twilightforest:progress_yeti"
+					criterion: ""
+				}
+				{
+					id: "51D34B047774CB2B"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "炽热之血"
+			icon: "twilightforest:hydra_trophy"
+			x: 5.5d
+			y: -2.0d
+			subtitle: "击杀九头蛇"
+			dependencies: ["736D0208A0B55F77"]
+			id: "6C3AC1DC133CEA2D"
+			tasks: [{
+				id: "158996010D5084B0"
+				type: "item"
+				item: "twilightforest:hydra_trophy"
+			}]
+			rewards: [
+				{
+					id: "44B9D7F3E5967BE3"
+					type: "item"
+					item: "twilightforest:fiery_ingot"
+					count: 8
+				}
+				{
+					id: "2BA4EA49FA45F261"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "33D3DA814F189FC3"
+					type: "advancement"
+					auto: "enabled"
+					advancement: "twilightforest:progress_hydra"
+					criterion: ""
+				}
+				{
+					id: "0ADE901E1C35D76E"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "恶魂之泪"
+			icon: {
+				id: "twilightforest:ur_ghast_trophy"
+				Count: 1b
+				tag: { }
+			}
+			x: 5.5d
+			y: -0.5d
+			subtitle: "击杀暮初恶魂"
+			dependencies: ["726A5A1BDF04CDF9"]
+			id: "623D476D86A58C01"
+			tasks: [{
+				id: "4B99A5C4819E2FE5"
+				type: "item"
+				item: {
+					id: "twilightforest:ur_ghast_trophy"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "26C91668B34A64F8"
+					type: "item"
+					item: "twilightforest:fiery_ingot"
+					count: 4
+				}
+				{
+					id: "3F070C4B96FF4A7C"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "2C974E3E0833B6CA"
+					type: "advancement"
+					auto: "enabled"
+					advancement: "twilightforest:progress_ur_ghast"
+					criterion: ""
+				}
+				{
+					id: "4DE37A0AE611FBE4"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "澄澈之空"
+			icon: {
+				id: "twilightforest:snow_queen_trophy"
+				Count: 1b
+				tag: { }
+			}
+			x: 5.5d
+			y: 1.0d
+			subtitle: "击杀冰雪女王"
+			dependencies: ["5E9D89EEC0A59AFE"]
+			id: "3CAF986B33485662"
+			tasks: [{
+				id: "034DB636859B9FC7"
+				type: "item"
+				item: {
+					id: "twilightforest:snow_queen_trophy"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "390D81BD7595A4E4"
+					type: "item"
+					item: {
+						id: "twilightforest:glass_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+					count: 4
+				}
+				{
+					id: "09ECAC7C529727E8"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "68A363BE08613CA6"
+					type: "advancement"
+					auto: "enabled"
+					advancement: "twilightforest:progress_glacier"
+					criterion: ""
+				}
+				{
+					id: "60BE92AB628E482B"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "加油，奥利给！"
+			icon: "twilightforest:magic_beans"
+			x: 7.5d
+			y: -0.5d
+			subtitle: "击杀洞穴巨魔并获取魔豆"
+			dependencies: [
+				"6C3AC1DC133CEA2D"
+				"623D476D86A58C01"
+				"3CAF986B33485662"
+			]
+			hide: true
+			id: "56010BFD489F98B2"
+			tasks: [
+				{
+					id: "656C7068EA4CC430"
+					type: "advancement"
+					advancement: "twilightforest:troll"
+					criterion: ""
+				}
+				{
+					id: "22B8C40497F96806"
+					type: "item"
+					item: "twilightforest:magic_beans"
+				}
+			]
+			rewards: [
+				{
+					id: "6B559BED64C8B30C"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+				{
+					id: "613407248E4458BF"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "24851553569CD920"
+					type: "advancement"
+					auto: "enabled"
+					advancement: "twilightforest:troll"
+					criterion: ""
+				}
+			]
+		}
+		{
+			title: "上云（物理"
+			icon: {
+				id: "twilightforest:giant_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 11.5d
+			y: -0.5d
+			subtitle: "击杀巨人矿工并带着巨人镐返回巨魔洞穴"
+			dependencies: ["4764CC9C946B2E9B"]
+			id: "5DD442DDB33D490A"
+			tasks: [
+				{
+					id: "0DEB8BBD8BCF9F90"
+					type: "item"
+					item: {
+						id: "twilightforest:giant_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "778C88DF47C6AC90"
+					type: "advancement"
+					advancement: "twilightforest:giants"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "70017A87DDD23EF6"
+					type: "item"
+					item: "krate:krate_large"
+				}
+				{
+					id: "4C658925A3DC4984"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+				{
+					id: "68A99CE718E535A5"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "6E79BABFFC7AEAFB"
+					type: "advancement"
+					auto: "enabled"
+					advancement: "twilightforest:giants"
+					criterion: ""
+				}
+			]
+		}
+		{
+			title: "烧焦荆棘"
+			x: 13.5d
+			y: -0.5d
+			subtitle: "获得余烬之灯"
+			description: ["统统被这大火焚灭吧！"]
+			dependencies: ["5DD442DDB33D490A"]
+			hide_text_until_complete: true
+			id: "5CA45A6F000961EC"
+			tasks: [{
+				id: "209C9E04FD417A76"
+				type: "item"
+				item: {
+					id: "twilightforest:lamp_of_cinders"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "7C85A52DC9388724"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+				{
+					id: "3FF4948E1B9E9D11"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "种豆得豆茎"
+			x: 9.5d
+			y: -0.5d
+			subtitle: "将魔豆种在云下的肥沃土壤上"
+			dependencies: ["56010BFD489F98B2"]
+			id: "4764CC9C946B2E9B"
+			tasks: [{
+				id: "476C412314E90F7F"
+				type: "advancement"
+				advancement: "twilightforest:beanstalk"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "417E50C621B8A175"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "29961EC8C8E873A3"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
+					}
+				}
+				{
+					id: "367C3867C4A3025E"
+					type: "advancement"
+					auto: "enabled"
+					advancement: "twilightforest:beanstalk"
+					criterion: ""
+				}
+			]
+		}
+		{
+			title: "穿越荆棘"
+			x: 15.5d
+			y: -0.5d
+			subtitle: "使用余烬之灯穿越荆棘丛"
+			dependencies: ["5CA45A6F000961EC"]
+			id: "20B6DCE5290D133F"
+			tasks: [{
+				id: "29C264247AACF990"
+				type: "biome"
+				icon: "twilightforest:brown_thorns"
+				biome: "twilightforest:thornlands"
+			}]
+			rewards: [
+				{
+					id: "57E3E2A9FDBFC843"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "4A38CABFAF009155"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "advanced"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "这就是城堡吗"
+			x: 17.5d
+			y: -0.5d
+			subtitle: "进入终焉城堡"
+			description: ["看上去可以拿来做建材"]
+			dependencies: ["20B6DCE5290D133F"]
+			hide_text_until_complete: true
+			id: "5BFBDD6004AE84B5"
+			tasks: [{
+				id: "02A15D8C17304C29"
+				type: "observation"
+				icon: { id: "twilightforest:castle_brick", Count: 9b }
+				timer: 0L
+				observe_type: 0
+				to_observe: "twilightforest:castle_brick"
+			}]
+			rewards: [
+				{
+					id: "6A449A59162FCC03"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "5A352ECFA4C6A894"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "羊の谜题"
+			x: -1.0d
+			y: -1.5d
+			subtitle: "完成谜题羊的任务"
+			dependencies: ["3B4F01FB78C01E66"]
+			hide: true
+			id: "084AA7AB0FFF4032"
+			tasks: [
+				{
+					id: "1413FA5D769A056E"
+					type: "item"
+					item: {
+						id: "twilightforest:quest_ram_trophy"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "26740FF28EE49E31"
+					type: "advancement"
+					advancement: "twilightforest:quest_ram"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "174F8A86BC3F625F"
+					type: "xp"
+					xp: 150
+				}
+				{
+					id: "2ACBEA894AE64276"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+			]
+		}
+	]
+}

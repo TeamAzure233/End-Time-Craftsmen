@@ -1,0 +1,20 @@
+{  
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:storage_blocks/ruby",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "type": "tconstruct:casting_basin",
+  "fluid": {
+    "name": "bettercompat:molten_ruby",
+    "amount": 1296
+  },
+  "result": {
+    "item": "emendatusenigmatica:ruby_block"
+  },
+  "cooling_time": 200
+}

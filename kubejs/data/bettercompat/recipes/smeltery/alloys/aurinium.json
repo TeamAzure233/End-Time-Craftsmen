@@ -1,0 +1,22 @@
+{  
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "name": "tconstruct:molten_glass",
+      "amount": 1000
+    },
+    {
+      "name": "tconstruct:molten_rose_gold",
+      "amount": 576
+    },
+    {
+      "name": "tconstruct:molten_manyullyn",
+      "amount": 576
+    }
+  ],
+  "result": {
+    "fluid": "bettercompat:molten_aurinium",
+    "amount": 288
+  },
+  "temperature": 1500
+}
