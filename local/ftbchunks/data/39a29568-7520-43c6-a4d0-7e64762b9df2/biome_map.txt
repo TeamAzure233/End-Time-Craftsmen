@@ -1,0 +1,12 @@
+#556 minecraft:beach
+#47F minecraft:birch_forest
+#4F9 minecraft:dark_forest
+#3DE minecraft:deep_ocean
+#010 minecraft:forest
+#79A minecraft:lukewarm_ocean
+#379 minecraft:mountains
+#4F1 minecraft:ocean
+#3DC minecraft:plains
+#5FF minecraft:river
+#774 minecraft:sunflower_plains
+#452 minecraft:wooded_hills

@@ -13,7 +13,7 @@
 		width: 6.0d
 		height: 3.0d
 		rotation: 0.0d
-		image: "kubejs:textures/quest/chapter_useful_things.png"
+		image: "kubejs:textures/quest/chapterz1.png"
 		hover: [ ]
 		click: ""
 		dev: false

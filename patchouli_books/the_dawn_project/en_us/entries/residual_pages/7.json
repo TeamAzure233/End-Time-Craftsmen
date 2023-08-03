@@ -1,0 +1,12 @@
+{
+    "name": "Residual Page 7",
+    "icon": "minecraft:map",
+    "category": "residual_pages",
+    "advancement": "edtc:pages/page7",
+    "pages": [
+        {
+            "type": "text",
+            "text": ""
+        }
+    ]
+}

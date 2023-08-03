@@ -1,0 +1,16 @@
+#556 minecraft:beach
+#47F minecraft:birch_forest
+#0D2 minecraft:birch_forest_hills
+#761 traverse:cliffs
+#34D minecraft:deep_lukewarm_ocean
+#010 minecraft:forest
+#79A minecraft:lukewarm_ocean
+#7B1 traverse:meadow
+#379 minecraft:mountains
+#4F1 minecraft:ocean
+#5FF minecraft:river
+#0A6 traverse:rolling_hills
+#406 minecraft:stone_shore
+#4D3 minecraft:swamp
+#2B7 minecraft:warm_ocean
+#306 minecraft:wooded_mountains

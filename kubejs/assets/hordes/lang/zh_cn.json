@@ -1,7 +1,7 @@
 {
 	"message.hordes.EventStart":"你听到了丧尸群的咆哮……",
 	"message.hordes.EventEnd":"袭击停止了，一切事物都渐渐安静了下来……",
-	"message.hordes.TrySleep":"一个丧尸袭击正在来临……你紧张的无法入睡",
+	"message.hordes.TrySleep":"一场丧尸袭击来临了……你紧张得无法入睡……",
 	"message.hordes.title":"丧尸袭击",
 	"message.hordes.DeathMessage":"%1$s 死于丧尸袭击",
 	"message.hordes.DeathMessageFighting":"%1$s 在与 %2$s 交战时死于丧尸袭击 ",

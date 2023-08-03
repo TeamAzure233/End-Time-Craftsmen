@@ -8,11 +8,11 @@
 	#Clean the memory according to the memory usage rate at most once every 2 minutes.
 	#If triggered frequently, it is still recommended to increase RAM or allocate more RAM.
 	#Range: 0 ~ 100
-	"memory usage" = 90
+	"memory usage" = 95
 	#Time between memory cleanups based on memory usage.
 	#Please do not make it larger than memory sweep time
 	#Range: > 2
-	"memory usage time" = 4
+	"memory usage time" = 3
 	#Clean memory when players join the world.
 	#Only the first player is valid.
 	"player join world sweep" = true

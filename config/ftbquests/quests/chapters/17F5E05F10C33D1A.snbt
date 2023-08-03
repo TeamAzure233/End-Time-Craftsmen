@@ -347,9 +347,9 @@
 						tag: {
 							tic_multipliers: { }
 							tic_stats: {
-								"tconstruct:attack_speed": 3.81875f
+								"tconstruct:attack_speed": 3.5249999f
 								"tconstruct:mining_speed": 8.25f
-								"tconstruct:attack_damage": 17.25f
+								"tconstruct:attack_damage": 12.925f
 								"tconstruct:harvest_level": 2.0f
 								"tconstruct:durability": 1026.6f
 							}
@@ -1577,9 +1577,9 @@
 						tag: {
 							tic_multipliers: { }
 							tic_stats: {
-								"tconstruct:attack_speed": 3.575f
-								"tconstruct:mining_speed": 10.2125f
-								"tconstruct:attack_damage": 41.903126f
+								"tconstruct:attack_speed": 3.3000002f
+								"tconstruct:mining_speed": 10.6875f
+								"tconstruct:attack_damage": 33.522503f
 								"tconstruct:harvest_level": 4.0f
 								"tconstruct:durability": 2864.4001f
 							}

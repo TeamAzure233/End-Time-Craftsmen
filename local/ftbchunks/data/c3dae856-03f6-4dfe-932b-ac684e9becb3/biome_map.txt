@@ -1,0 +1,12 @@
+#556 minecraft:beach
+#232 biomesoplenty:dead_forest
+#34D minecraft:deep_lukewarm_ocean
+#4ED biomesoplenty:dense_marsh
+#010 minecraft:forest
+#79A minecraft:lukewarm_ocean
+#20D biomesoplenty:marsh
+#4F1 minecraft:ocean
+#278 biomesoplenty:redwood_forest_edge
+#5FF minecraft:river
+#1A0 biomesoplenty:tall_dead_forest
+#452 minecraft:wooded_hills

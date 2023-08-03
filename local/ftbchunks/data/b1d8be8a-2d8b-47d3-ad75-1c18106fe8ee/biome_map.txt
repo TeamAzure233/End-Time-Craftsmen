@@ -1,0 +1,15 @@
+#556 minecraft:beach
+#47F minecraft:birch_forest
+#0D2 minecraft:birch_forest_hills
+#4F9 minecraft:dark_forest
+#4CC traverse:high_coniferous_forest
+#79A minecraft:lukewarm_ocean
+#7B1 traverse:meadow
+#379 minecraft:mountains
+#4F1 minecraft:ocean
+#3DC minecraft:plains
+#5FF minecraft:river
+#236 traverse:rocky_edge
+#774 minecraft:sunflower_plains
+#4D3 minecraft:swamp
+#165 traverse:wooded_plateau

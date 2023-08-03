@@ -103,7 +103,7 @@
 		#  - ${username}: The username.
 		# '$' can be escaped by using an extra '$'.
 		# Default: "Minecraft ${mcversion}"
-		simple_title = "末世工匠整合包 V1.1.1"
+		simple_title = "末世工匠整合包"
 		# The Minecraft window title.
 		# The current activity is not available.
 		# Variables:
@@ -113,7 +113,7 @@
 		#  - ${modversion:modid}: The version of the mod with the specified ID.
 		# '$' can be escaped by using an extra '$'.
 		# Default: "Minecraft ${mcversion}"
-		title = "末世工匠整合包 V1.1.1 by TeamAzure"
+		title = "末世工匠整合包 by TeamAzure"
 		# The Minecraft window title that also takes into account the current activity.
 		# Variables:
 		#  - ${mcversion}: The Minecraft version
@@ -123,7 +123,7 @@
 		#  - ${modversion:modid}: The version of the mod with the specified ID.
 		# '$' can be escaped by using an extra '$'.
 		# Default: "Minecraft ${mcversion} - ${activity}"
-		title_with_activity = "末世工匠整合包 V1.1.1 by TeamAzure - ${activity}"
+		title_with_activity = "末世工匠整合包 by  TeamAzure - ${activity}"
 		# Enables custom Minecraft window icons.
 		# Default: true
 		custom_icon = true

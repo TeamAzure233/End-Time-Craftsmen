@@ -1,0 +1,64 @@
+{
+  "controllerId": "infinite_convergent_altar",
+  "name": "\u65E0\u5C3D\u805A\u5408\u796D\u575B",
+  "textureOverride": "kubejs:block/infinite_convergent_altar_base_und",
+  "ports": [
+    {
+      "type": "masterfulmachinery:items",
+      "name": "\u7269\u54C1",
+      "id": "item",
+      "data": {
+        "rows": 5,
+        "columns": 5
+      }
+    },
+    {
+      "type": "masterfulmachinery:energy",
+      "name": "\u80FD\u91CF",
+      "id": "energy",
+      "data": {
+        "capacity": 102400000
+      }
+    },
+    {
+      "type": "masterfulmachinery:mekanism_gas",
+      "name": "\u6C14\u4F53",
+      "id": "gas",
+      "data": {
+        "capacity": 64000
+      }
+    },
+    {
+      "type": "masterfulmachinery:fluids",
+      "name": "\u6D41\u4F53",
+      "id": "fluid",
+      "data": {
+        "capacity": 32000
+      }
+    },
+    {
+      "type": "masterfulmachinery:create_rotation",
+      "name": "\u5E94\u529B",
+      "id": "rotation",
+      "data": {
+         "stress": 1024
+      }
+    },
+    {
+      "type": "masterfulmachinery:astral_starlight",
+      "name": "\u661F\u8F89",
+      "id": "star",
+      "data": {
+        "capacity": 10000
+      }
+    },
+    {
+      "type": "masterfulmachinery:botania_mana",
+      "name": "\u9B54\u529B",
+      "id": "mana",
+      "data": {
+        "capacity": 100000
+      }
+    }
+  ]
+}

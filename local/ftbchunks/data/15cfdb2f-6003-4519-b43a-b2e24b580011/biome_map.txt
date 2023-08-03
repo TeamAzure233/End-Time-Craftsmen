@@ -1,0 +1,15 @@
+#47F minecraft:birch_forest
+#112 biomesoplenty:dense_woodland
+#5EC biomesoplenty:dry_boneyard
+#7F0 biomesoplenty:dryland
+#010 minecraft:forest
+#467 biomesoplenty:highland
+#121 biomesoplenty:highland_crag
+#351 biomesoplenty:highland_moor
+#20D biomesoplenty:marsh
+#698 biomesoplenty:redwood_forest
+#278 biomesoplenty:redwood_forest_edge
+#36B biomesoplenty:redwood_hills
+#5FF minecraft:river
+#452 minecraft:wooded_hills
+#7F2 biomesoplenty:woodland

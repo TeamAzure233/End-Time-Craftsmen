@@ -36,8 +36,8 @@ onEvent('recipes', event => {
       "inputs": [
       {
         "tag": "forge:storage_blocks/brass",
-        "count": 2,
-        "return_chance": 0.01
+        "count": 1,
+        "return_chance": 0.0
       }
       ],
       "fluid": {
@@ -50,12 +50,12 @@ onEvent('recipes', event => {
           "item": "kubejs:blaze_brass",
           "count": 1
         },
-        "weight": 8
+        "weight": 9
       } 
       ],
-        "empty_weight": 2
+        "empty_weight": 1
       },
-      "consume_fluid": 0.8
+      "consume_fluid": 0.95
     })
     event.custom({
         "type": "interactio:item_explode",

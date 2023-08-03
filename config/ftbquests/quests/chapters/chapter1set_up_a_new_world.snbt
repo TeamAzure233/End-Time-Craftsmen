@@ -9,7 +9,7 @@
 	default_hide_dependency_lines: false
 	images: [
 		{
-			x: -8.0d
+			x: -7.0d
 			y: 0.0d
 			width: 1.0d
 			height: 1.0d
@@ -73,8 +73,8 @@
 			dependency: "061F700E961C4572"
 		}
 		{
-			x: 38.0d
-			y: 8.0d
+			x: 31.0d
+			y: 4.0d
 			width: 5.0d
 			height: 3.0d
 			rotation: 0.0d
@@ -111,10 +111,22 @@
 			corner: false
 			dependency: "465237AF1C585629"
 		}
+		{
+			x: -6.0d
+			y: -4.0d
+			width: 6.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/chapter1.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
 	]
 	quests: [
 		{
-			x: -3.0d
+			x: -0.5d
 			y: -1.5d
 			subtitle: "去获取一根木棍吧（你不能空手撸树"
 			description: ["注：木棍可以从树叶中获得"]
@@ -154,6 +166,7 @@
 				"完成此任务后开启研究：匠魂"
 			]
 			dependencies: ["53C6D9A462A7CDA8"]
+			hide: true
 			id: "5682910C34D2F4BA"
 			tasks: [{
 				id: "06589E94185BFC8C"
@@ -211,7 +224,7 @@
 					tic_stats: {
 						"tconstruct:attack_speed": 1.6f
 						"tconstruct:mining_speed": 3.3000002f
-						"tconstruct:attack_damage": 14.437499f
+						"tconstruct:attack_damage": 11.575f
 						"tconstruct:harvest_level": 2.0f
 						"tconstruct:durability": 438.625f
 					}
@@ -219,12 +232,12 @@
 					HideFlags: 3
 					tic_modifiers: [
 						{
-							name: "tconstruct:sturdy"
-							level: 3s
+							name: "tconstruct:piercing"
+							level: 1s
 						}
 						{
-							name: "tconstruct:silky_shears"
-							level: 1s
+							name: "tconstruct:sturdy"
+							level: 3s
 						}
 					]
 					tic_materials: [
@@ -354,6 +367,7 @@
 			y: 1.5d
 			subtitle: "挖到一颗钻石"
 			dependencies: ["193456CF7A20DDA1"]
+			hide: true
 			id: "4BB767FDB83CA1E8"
 			tasks: [{
 				id: "4BA250A4853D3D76"
@@ -431,6 +445,7 @@
 				"5682910C34D2F4BA"
 				"452C84EBADBDD888"
 			]
+			hide: true
 			size: 2.0d
 			id: "71C5B4E9CD372AEC"
 			tasks: [
@@ -639,7 +654,7 @@
 		{
 			title: "生存之始"
 			icon: "minecraft:grass_block"
-			x: -6.0d
+			x: -5.0d
 			y: -0.5d
 			shape: "rsquare"
 			subtitle: "梦开始的地方"
@@ -647,6 +662,7 @@
 			dependencies: ["7959FEB808E2918C"]
 			hide: true
 			dependency_requirement: "one_completed"
+			hide_text_until_complete: true
 			size: 3.0d
 			id: "18FE013B3405D2C2"
 			tasks: [{
@@ -683,7 +699,7 @@
 					tic_stats: {
 						"tconstruct:attack_speed": 1.2f
 						"tconstruct:mining_speed": 2.0f
-						"tconstruct:attack_damage": 4.5f
+						"tconstruct:attack_damage": 3.5f
 						"tconstruct:harvest_level": 0.0f
 						"tconstruct:durability": 60.0f
 					}
@@ -715,6 +731,7 @@
 			y: -0.5d
 			subtitle: "你应该学会制作工具了，来造一把镐子吧"
 			dependencies: ["71C5B4E9CD372AEC"]
+			hide: true
 			id: "3E458E3C59605FC9"
 			tasks: [
 				{
@@ -772,7 +789,7 @@
 						tic_stats: {
 							"tconstruct:attack_speed": 1.2f
 							"tconstruct:mining_speed": 6.0f
-							"tconstruct:attack_damage": 11.5f
+							"tconstruct:attack_damage": 10.5f
 							"tconstruct:harvest_level": 2.0f
 							"tconstruct:durability": 325.0f
 						}
@@ -816,7 +833,7 @@
 					tic_stats: {
 						"tconstruct:attack_speed": 1.2f
 						"tconstruct:mining_speed": 4.4f
-						"tconstruct:attack_damage": 7.5f
+						"tconstruct:attack_damage": 5.5f
 						"tconstruct:harvest_level": 1.0f
 						"tconstruct:durability": 112.0f
 					}
@@ -873,7 +890,7 @@
 					tic_stats: {
 						"tconstruct:attack_speed": 1.2f
 						"tconstruct:mining_speed": 6.6000004f
-						"tconstruct:attack_damage": 12.099999f
+						"tconstruct:attack_damage": 11.049999f
 						"tconstruct:harvest_level": 2.0f
 						"tconstruct:durability": 398.75f
 					}
@@ -1046,6 +1063,7 @@
 			y: 7.0d
 			subtitle: "操纵流体的必备"
 			dependencies: ["37551FD288EDB84F"]
+			hide: true
 			id: "0599161A8D9A14C7"
 			tasks: [{
 				id: "1B6A169AC7208EF5"
@@ -1054,7 +1072,7 @@
 			}]
 		}
 		{
-			x: -3.0d
+			x: -0.5d
 			y: 0.5d
 			subtitle: "拿着燧石对着石头右键即可"
 			dependencies: ["18FE013B3405D2C2"]
@@ -1072,32 +1090,11 @@
 			}]
 		}
 		{
-			title: "打制石器"
-			x: -1.0d
+			x: -1.5d
 			y: -0.5d
-			subtitle: "（虽然是燧石）"
-			dependencies: [
-				"59FA6CBB1CABAAB8"
-				"7CB0F2EDE166BDC7"
-			]
-			id: "12F755C3D5A2A936"
-			tasks: [{
-				id: "2A2B29AC4614471B"
-				type: "item"
-				item: {
-					id: "notreepunching:flint_knife"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
-			}]
-		}
-		{
-			x: 0.5d
-			y: -0.5d
-			subtitle: "用刀砍草就行"
-			dependencies: ["12F755C3D5A2A936"]
+			subtitle: "用你的匕首砍草就行"
+			description: ["当然也可以再造一把刀"]
+			dependencies: ["18FE013B3405D2C2"]
 			id: "243BD3AA6E453C84"
 			tasks: [{
 				id: "5F200413940283A4"
@@ -1106,7 +1103,7 @@
 			}]
 		}
 		{
-			x: 2.0d
+			x: 0.5d
 			y: -0.5d
 			dependencies: ["243BD3AA6E453C84"]
 			id: "4716BC12B40FCBB1"
@@ -1119,7 +1116,11 @@
 		{
 			x: 3.5d
 			y: -0.5d
-			dependencies: ["4716BC12B40FCBB1"]
+			dependencies: [
+				"4716BC12B40FCBB1"
+				"59FA6CBB1CABAAB8"
+				"7CB0F2EDE166BDC7"
+			]
 			id: "37551FD288EDB84F"
 			tasks: [{
 				id: "17001A54FCC8D715"
@@ -1170,26 +1171,10 @@
 					}
 				}
 			}]
-		}
-		{
-			title: "钻木取火"
-			x: 2.0d
-			y: -2.0d
-			subtitle: "制作点火器"
-			description: ["真的需要吗"]
-			dependencies: ["4716BC12B40FCBB1"]
-			optional: true
-			id: "703C08BF9B36982E"
-			tasks: [{
-				id: "727CA068E5B5985E"
+			rewards: [{
+				id: "1B6EFE47FEEEDC35"
 				type: "item"
-				item: {
-					id: "notreepunching:fire_starter"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
+				item: "minecraft:clay"
 			}]
 		}
 		{
@@ -1222,9 +1207,10 @@
 			}]
 		}
 		{
-			x: -4.5d
+			x: -3.5d
 			y: 1.0d
 			shape: "diamond"
+			subtitle: "XuX"
 			description: ["我并非不会死亡，相反，我被这些怪物杀死之后，我的机体似乎也变成了他们，而且各项数据比我更加强大。"]
 			dependencies: ["18FE013B3405D2C2"]
 			hide_text_until_complete: true
@@ -1256,6 +1242,8 @@
 				"0A01706E237D6D6A"
 				"71C5B4E9CD372AEC"
 			]
+			hide: true
+			hide_text_until_complete: true
 			size: 2.0d
 			id: "7B968E0F6EEB5A0B"
 			tasks: [
@@ -1347,17 +1335,29 @@
 			shape: "rsquare"
 			dependencies: ["7B968E0F6EEB5A0B"]
 			id: "12305B083CBBFB0A"
-			tasks: [{
-				id: "75853BCC3D4422CF"
-				type: "item"
-				item: {
-					id: "tconstruct:smeltery_controller"
-					Count: 1b
-					ForgeCaps: {
-						"customnpcs:itemscripteddata": { }
+			tasks: [
+				{
+					id: "75853BCC3D4422CF"
+					type: "item"
+					item: {
+						id: "tconstruct:smeltery_controller"
+						Count: 1b
+						ForgeCaps: {
+							"customnpcs:itemscripteddata": { }
+						}
 					}
 				}
-			}]
+				{
+					id: "600F2155A5CBD5F2"
+					type: "item"
+					item: "tconstruct:seared_fuel_tank"
+				}
+				{
+					id: "7BAC4F0863EF0EC0"
+					type: "item"
+					item: "tconstruct:seared_drain"
+				}
+			]
 			rewards: [
 				{
 					id: "375F6F9B97A2AF1D"
@@ -1381,6 +1381,12 @@
 						}
 					}
 				}
+				{
+					id: "6D0C23FFF6AE1FAB"
+					type: "item"
+					item: "tconstruct:seared_bricks"
+					count: 32
+				}
 			]
 		}
 		{
@@ -1400,6 +1406,11 @@
 						value: "tconstruct:casts"
 					}
 				}
+			}]
+			rewards: [{
+				id: "1A68C7BBD8902279"
+				type: "item"
+				item: "tconstruct:cast_chest"
 			}]
 		}
 		{
@@ -1481,6 +1492,7 @@
 				"165AEE5D8EE710C4"
 				"78CC7D2C19C1076F"
 			]
+			hide: true
 			size: 3.0d
 			id: "4D2B7428680B2A8D"
 			tasks: [
@@ -1521,11 +1533,12 @@
 		}
 		{
 			title: "搅拌"
-			x: 29.0d
+			x: 29.5d
 			y: -5.5d
 			shape: "rsquare"
 			subtitle: "制作动力搅拌器和工作盆"
 			dependencies: ["2BB162CB9DAE093A"]
+			hide: true
 			hide_text_until_complete: false
 			id: "263AD02070DC088E"
 			tasks: [
@@ -1543,7 +1556,7 @@
 		}
 		{
 			title: "压板"
-			x: 27.5d
+			x: 28.0d
 			y: -5.5d
 			shape: "rsquare"
 			subtitle: "制作动力辊压机和置物台"
@@ -1563,8 +1576,8 @@
 			]
 		}
 		{
-			x: 27.0d
-			y: -4.5d
+			x: 26.5d
+			y: -7.5d
 			subtitle: "呼呼呼（风声"
 			dependencies: ["148C97D45C2F986D"]
 			id: "68461B5832FDA501"
@@ -1576,9 +1589,10 @@
 		}
 		{
 			title: "更高级的应力传输"
-			x: 23.5d
-			y: -3.5d
+			x: 26.0d
+			y: -4.0d
 			dependencies: ["4D2B7428680B2A8D"]
+			hide: true
 			id: "73E379BC8E31A8B6"
 			tasks: [
 				{
@@ -1620,7 +1634,7 @@
 		}
 		{
 			x: 25.5d
-			y: -3.0d
+			y: -7.5d
 			subtitle: "现在可能用不到但以后会用到的"
 			dependencies: ["148C97D45C2F986D"]
 			id: "7EDEC17D92282262"
@@ -1631,10 +1645,11 @@
 			}]
 		}
 		{
-			x: 27.5d
+			x: 28.0d
 			y: -2.5d
 			subtitle: "去下界邀请我们的烈焰人好朋友来玩（做苦力）吧"
 			dependencies: ["2BB162CB9DAE093A"]
+			hide: true
 			id: "095DF8503B85CCF4"
 			tasks: [{
 				id: "208667C5E682AD29"
@@ -1643,13 +1658,14 @@
 			}]
 		}
 		{
-			x: 29.0d
+			x: 29.5d
 			y: -2.5d
 			shape: "rsquare"
 			dependencies: [
 				"442E34AE51CD9D93"
 				"095DF8503B85CCF4"
 			]
+			hide: true
 			id: "05FCDE2401CB1656"
 			tasks: [{
 				id: "584582FBD9300FD5"
@@ -1678,6 +1694,7 @@
 				"05FCDE2401CB1656"
 				"263AD02070DC088E"
 			]
+			hide: true
 			size: 1.25d
 			id: "733DB6B6CADF4CF4"
 			tasks: [{
@@ -1696,7 +1713,7 @@
 				{
 					id: "5F69B1EC6E9EE933"
 					type: "item"
-					item: "create:brass_block"
+					item: "emendatusenigmatica:brass_block"
 				}
 				{
 					id: "71BD9064CD0A66F8"
@@ -1720,6 +1737,7 @@
 				"05FCDE2401CB1656"
 				"263AD02070DC088E"
 			]
+			hide: true
 			size: 1.25d
 			id: "3F67E533ACFEC407"
 			tasks: [{
@@ -1727,17 +1745,25 @@
 				type: "item"
 				item: "create:rose_quartz"
 			}]
-			rewards: [{
-				id: "1BE5EDF13CF0259F"
-				type: "item"
-				item: {
-					id: "ftbquests:lootcrate"
-					Count: 1b
-					tag: {
-						type: "basic"
+			rewards: [
+				{
+					id: "1BE5EDF13CF0259F"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "basic"
+						}
 					}
 				}
-			}]
+				{
+					id: "3B96E6586CAD7580"
+					type: "item"
+					item: "create:rose_quartz"
+					count: 8
+				}
+			]
 		}
 		{
 			x: 31.5d
@@ -1807,6 +1833,24 @@
 				type: "item"
 				item: "create:polished_rose_quartz"
 			}]
+			rewards: [
+				{
+					id: "637E0AFF470D1A16"
+					type: "item"
+					item: "kubejs:rose_quartz_block"
+				}
+				{
+					id: "2ED53F44110645B2"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "rare"
+						}
+					}
+				}
+			]
 		}
 		{
 			x: 33.5d
@@ -1821,23 +1865,13 @@
 			}]
 		}
 		{
-			x: 35.5d
-			y: -7.5d
-			dependencies: ["1DECC0483644A664"]
-			id: "4DC2DFF370E4FF6D"
-			tasks: [{
-				id: "2BECC1F00314222C"
-				type: "item"
-				item: "kubejs:rose_quartz_block"
-			}]
-		}
-		{
 			icon: "kubejs:kinetic_mechanical_box"
-			x: 25.5d
+			x: 26.0d
 			y: -5.5d
 			shape: "gear"
 			description: ["我已经能制作比较高级的机器了，不过这些似乎还不是最高级的？让我想想，我似乎能用水来驱动机器的工作？"]
 			dependencies: ["4D2B7428680B2A8D"]
+			hide: true
 			size: 2.0d
 			id: "148C97D45C2F986D"
 			tasks: [{
@@ -1902,6 +1936,7 @@
 				"4A9D7B69950093E2"
 				"6586A97D43F4BE32"
 			]
+			hide: true
 			size: 2.0d
 			id: "6E80B01023FAFF3A"
 			tasks: [{
@@ -1930,8 +1965,8 @@
 			]
 		}
 		{
-			x: 26.5d
-			y: -3.5d
+			x: 27.5d
+			y: -7.0d
 			subtitle: "便携式粉碎机"
 			dependencies: ["148C97D45C2F986D"]
 			id: "51978DA768DF5D6E"
@@ -1963,6 +1998,7 @@
 				"260F273F3671C9A7"
 				"733DB6B6CADF4CF4"
 			]
+			hide: true
 			id: "2EE3579FF96F39F5"
 			tasks: [{
 				id: "73B3DC1382D0AD66"
@@ -2059,8 +2095,8 @@
 		}
 		{
 			title: "流体构件自动化确认"
-			x: 36.0d
-			y: 7.0d
+			x: 32.0d
+			y: 5.5d
 			description: ["不会做可以先点检查标记，会弹出示例"]
 			dependencies: ["6EB846C51CC1E7DE"]
 			hide: true
@@ -2079,6 +2115,7 @@
 				"0599161A8D9A14C7"
 				"6586A97D43F4BE32"
 			]
+			hide: true
 			size: 2.0d
 			id: "6EB846C51CC1E7DE"
 			tasks: [{
@@ -2108,7 +2145,7 @@
 		}
 		{
 			x: 24.5d
-			y: -3.0d
+			y: -7.0d
 			subtitle: "榨干大树"
 			dependencies: ["148C97D45C2F986D"]
 			id: "786EFFD3CF5EB06F"
@@ -2121,14 +2158,15 @@
 		{
 			title: "铜器时代"
 			icon: "create:copper_casing"
-			x: 33.5d
-			y: 10.5d
+			x: 36.0d
+			y: 7.0d
 			shape: "gear"
 			subtitle: "制作铜机壳"
 			dependencies: [
 				"4FDDBA0F692E7F37"
 				"6EB846C51CC1E7DE"
 			]
+			hide: true
 			size: 3.0d
 			id: "5BC4BC7124F6E46D"
 			tasks: [
@@ -2169,8 +2207,8 @@
 		}
 		{
 			title: "管道和储罐"
-			x: 36.0d
-			y: 12.5d
+			x: 40.0d
+			y: 5.5d
 			shape: "gear"
 			subtitle: "然而只有这两个玩意并不能用，你还需要一个动力泵"
 			dependencies: ["5BC4BC7124F6E46D"]
@@ -2202,8 +2240,8 @@
 			}]
 		}
 		{
-			x: 37.0d
-			y: 11.5d
+			x: 41.0d
+			y: 4.5d
 			subtitle: "带过滤的流体管道"
 			dependencies: ["5F4274E3223E5EA0"]
 			optional: true
@@ -2215,8 +2253,8 @@
 			}]
 		}
 		{
-			x: 36.0d
-			y: 14.0d
+			x: 39.0d
+			y: 4.5d
 			subtitle: "简单实惠好用（但是不怎么浪漫）的流体管道"
 			dependencies: ["5F4274E3223E5EA0"]
 			hide: false
@@ -2230,8 +2268,8 @@
 			}]
 		}
 		{
-			x: 33.5d
-			y: 13.5d
+			x: 40.0d
+			y: 7.0d
 			subtitle: "更大的流体罐子"
 			dependencies: [
 				"5F4274E3223E5EA0"
@@ -2260,8 +2298,8 @@
 			}]
 		}
 		{
-			x: 31.0d
-			y: 12.5d
+			x: 40.0d
+			y: 8.5d
 			shape: "gear"
 			description: ["水能驱动机器了，这真是一个好消息。不过每一次都要我自己运水，我得想个办法让水流动起来。或许也不止能驱动水呢？"]
 			dependencies: ["5BC4BC7124F6E46D"]
@@ -2293,8 +2331,8 @@
 			]
 		}
 		{
-			x: 37.0d
-			y: 13.5d
+			x: 41.0d
+			y: 6.5d
 			dependencies: ["5F4274E3223E5EA0"]
 			hide: false
 			optional: true
@@ -2306,8 +2344,8 @@
 			}]
 		}
 		{
-			x: 29.5d
-			y: 12.5d
+			x: 41.5d
+			y: 8.5d
 			dependencies: ["102855107CE4D4F6"]
 			id: "24A89E641299F614"
 			tasks: [{
@@ -2317,10 +2355,10 @@
 			}]
 		}
 		{
-			x: 36.0d
-			y: 11.0d
+			x: 40.0d
+			y: 4.0d
+			description: ["这玩意输入液体还需要管道输入"]
 			dependencies: ["5F4274E3223E5EA0"]
-			optional: true
 			id: "1A2FB8F21721240F"
 			tasks: [{
 				id: "27B5D90E9429FC3B"
@@ -2329,8 +2367,8 @@
 			}]
 		}
 		{
-			x: 37.5d
-			y: 12.5d
+			x: 41.5d
+			y: 5.5d
 			dependencies: ["5F4274E3223E5EA0"]
 			hide: false
 			optional: true
@@ -2342,8 +2380,8 @@
 			}]
 		}
 		{
-			x: 38.0d
-			y: 14.0d
+			x: 42.0d
+			y: 7.0d
 			dependencies: ["5E127CFA2961EC04"]
 			optional: true
 			id: "52E2743052721B27"
@@ -2354,8 +2392,8 @@
 			}]
 		}
 		{
-			x: 31.0d
-			y: 14.0d
+			x: 40.0d
+			y: 10.0d
 			dependencies: ["102855107CE4D4F6"]
 			id: "3BB9DC4CD8A6DF65"
 			tasks: [{
@@ -2366,14 +2404,15 @@
 		}
 		{
 			title: "操纵流体"
-			x: 33.5d
-			y: 12.5d
+			x: 38.5d
+			y: 7.0d
 			shape: "gear"
 			subtitle: "制作动力泵"
 			dependencies: [
 				"102855107CE4D4F6"
 				"5F4274E3223E5EA0"
 			]
+			hide: true
 			id: "5CEA4C9EAB201129"
 			tasks: [{
 				id: "775FFDD53660FF31"
@@ -2403,6 +2442,7 @@
 				"072B4ABFC07448EC"
 				"6E80B01023FAFF3A"
 			]
+			hide: true
 			size: 3.0d
 			id: "0AF2863DA79B8E25"
 			tasks: [
@@ -2468,7 +2508,7 @@
 			}]
 		}
 		{
-			x: 44.5d
+			x: 45.0d
 			y: -2.5d
 			subtitle: "更好的自动化"
 			dependencies: ["63E980F4C619C5DB"]
@@ -2544,8 +2584,10 @@
 			x: 47.5d
 			y: -3.5d
 			subtitle: "给你的烈焰人好朋友（苦力）吃的蛋糕，可以让它们更开心地和你玩（给你打工）"
-			description: ["注意：这里需要做流体时代的研究，不然看不到配方"]
-			dependencies: ["6D5D31B812EBE98D"]
+			dependencies: [
+				"6D5D31B812EBE98D"
+				"1A2FB8F21721240F"
+			]
 			id: "1968C2298B45DAAB"
 			tasks: [{
 				id: "78F2E0D101E51DAD"
@@ -2563,11 +2605,12 @@
 		{
 			title: "青铜、铸铁、钢"
 			icon: "mekanism:ingot_steel"
-			x: 47.5d
+			x: 47.0d
 			y: 2.5d
 			shape: "rsquare"
 			subtitle: "发现新材料！"
 			dependencies: ["054D4126EFCBB52C"]
+			hide: true
 			id: "513F8CEDF4A8B4C5"
 			tasks: [
 				{
@@ -2642,6 +2685,7 @@
 			shape: "gear"
 			description: ["简单的工作机械已经供应不上我的需求了，我利用铜矿以及锌矿制作出了黄铜，利用黄铜制作出来的机械似乎更加高级，不过一些简单的机械我还是不能利用黄铜制作。那我做黄铜干嘛？"]
 			dependencies: ["0AF2863DA79B8E25"]
+			hide_text_until_complete: true
 			size: 2.0d
 			id: "63E980F4C619C5DB"
 			tasks: [{
@@ -2766,6 +2810,7 @@
 				"513F8CEDF4A8B4C5"
 				"11CD0585D1E88A8B"
 			]
+			hide: true
 			id: "4DCCFBADF93C9B0D"
 			tasks: [
 				{
@@ -2786,6 +2831,7 @@
 			shape: "gear"
 			subtitle: "完成此任务后开启研究「机械动力——蒸汽时代」"
 			dependencies: ["4DCCFBADF93C9B0D"]
+			hide: true
 			size: 2.0d
 			id: "3D4C09855F5CCFE6"
 			tasks: [{
@@ -2829,11 +2875,12 @@
 		}
 		{
 			title: "高炉"
-			x: 47.5d
-			y: 0.25d
+			x: 47.0d
+			y: -2.0d
 			shape: "rsquare"
 			subtitle: "用高炉砖搭建一个3x3x3的立方体后用工程师锤右键"
-			dependencies: ["199949E74E82636E"]
+			dependencies: ["1968C2298B45DAAB"]
+			hide: true
 			id: "054D4126EFCBB52C"
 			tasks: [{
 				id: "3515C682B2E795C6"
@@ -2855,11 +2902,12 @@
 		}
 		{
 			title: "焦炉"
-			x: 47.5d
+			x: 48.0d
 			y: -2.0d
 			shape: "rsquare"
 			subtitle: "用焦炉砖搭建一个3x3x3的立方体后用工程师锤右键"
 			dependencies: ["1968C2298B45DAAB"]
+			hide: true
 			id: "199949E74E82636E"
 			tasks: [{
 				id: "6B479DC58BFF40AA"
@@ -2896,6 +2944,7 @@
 			x: 49.0d
 			y: -2.0d
 			dependencies: ["199949E74E82636E"]
+			hide: true
 			id: "7118E055E204D12C"
 			tasks: [{
 				id: "62A5E017BA0FF20A"
@@ -2960,6 +3009,7 @@
 			x: 44.0d
 			y: -5.0d
 			dependencies: ["7A7DB75032F20B7F"]
+			hide: true
 			optional: true
 			id: "3C1E4994FE232E54"
 			tasks: [{
@@ -3013,6 +3063,7 @@
 				"513F8CEDF4A8B4C5"
 				"0411F0A525559C72"
 			]
+			hide: true
 			id: "7EB820215C308CFF"
 			tasks: [
 				{
@@ -3125,6 +3176,7 @@
 			shape: "gear"
 			subtitle: "制作青铜、铸铁、钢机壳"
 			dependencies: ["65A195CB81F7A8E8"]
+			hide: true
 			size: 2.0d
 			id: "0411F0A525559C72"
 			tasks: [
@@ -3192,6 +3244,8 @@
 				"0411F0A525559C72"
 				"3D4C09855F5CCFE6"
 			]
+			hide: true
+			hide_text_until_complete: true
 			size: 2.0d
 			id: "0A82CCB568C9CCC0"
 			tasks: [{
@@ -3226,6 +3280,7 @@
 				"7EB820215C308CFF"
 				"0411F0A525559C72"
 			]
+			hide: true
 			size: 2.0d
 			id: "48BAF12725A535A2"
 			tasks: [{
@@ -3260,6 +3315,7 @@
 				"06E5356D57628B9A"
 				"0411F0A525559C72"
 			]
+			hide: true
 			size: 2.0d
 			id: "0004EB298BCE7308"
 			tasks: [{
@@ -3291,6 +3347,7 @@
 			y: -5.0d
 			shape: "gear"
 			dependencies: ["06E5356D57628B9A"]
+			hide: true
 			size: 2.0d
 			id: "59B1DC73320B7266"
 			tasks: [{
@@ -3345,6 +3402,7 @@
 				"1FECF4A4BFD9B7B5"
 			]
 			hide: true
+			hide_text_until_complete: true
 			size: 3.0d
 			id: "061AEBFBE77F2B2E"
 			tasks: [{
@@ -3648,6 +3706,7 @@
 			shape: "gear"
 			subtitle: "可用于激活暮色森林传送门"
 			dependencies: ["1968C2298B45DAAB"]
+			hide: true
 			size: 1.5d
 			id: "41DE77F7F05DCACB"
 			tasks: [{
@@ -3672,6 +3731,7 @@
 				"0AEC05EF740D37E4"
 			]
 			hide: true
+			hide_text_until_complete: true
 			size: 3.0d
 			id: "76B41B1F8531D5BE"
 			tasks: [{
@@ -3709,6 +3769,7 @@
 			y: -0.5d
 			shape: "rsquare"
 			dependencies: ["76B41B1F8531D5BE"]
+			hide: true
 			id: "6E228330C1C0C39E"
 			tasks: [{
 				id: "4485B486BDDC6A19"
@@ -3745,6 +3806,7 @@
 			y: -0.5d
 			shape: "rsquare"
 			dependencies: ["76B41B1F8531D5BE"]
+			hide: true
 			id: "40C61FC2DD6FC58A"
 			tasks: [{
 				id: "1673A488A522100E"
@@ -3774,7 +3836,7 @@
 			x: 27.0d
 			y: 1.0d
 			subtitle: "哇！爆率真的很高（"
-			description: ["其实可以用精华（小声"]
+			description: ["建议使用匠魂的劈刀"]
 			dependencies: ["442E34AE51CD9D93"]
 			id: "1A121E7AD52A2595"
 			tasks: [{
@@ -3788,7 +3850,9 @@
 			x: 29.5d
 			y: 0.5d
 			subtitle: "橙汁（不是"
+			description: ["其实烈焰棒也可以熔的（小声"]
 			dependencies: ["1A121E7AD52A2595"]
+			hide_text_until_complete: true
 			id: "260F273F3671C9A7"
 			tasks: [{
 				id: "29118CB14C24A8FF"
@@ -3808,6 +3872,7 @@
 			y: 1.5d
 			subtitle: "要塞里的怪物们会热情地欢迎你的（划掉"
 			dependencies: ["76B41B1F8531D5BE"]
+			hide: true
 			dependency_requirement: "one_completed"
 			id: "442E34AE51CD9D93"
 			tasks: [{
@@ -3940,12 +4005,11 @@
 			x: 25.5d
 			y: 4.5d
 			subtitle: "原来的核动力火把回来了"
-			min_required_dependencies: 2
 			dependencies: [
 				"5813843576BABB6E"
 				"5ABD4FB90126BF3E"
 			]
-			optional: true
+			dependency_requirement: "one_completed"
 			id: "0A7857BD675A6BCA"
 			tasks: [{
 				id: "4C4FC0AE6CA877AC"
@@ -3959,18 +4023,24 @@
 			y: 3.0d
 			subtitle: "用于制作荧石火把"
 			dependencies: ["43F0BABA7A595F13"]
-			optional: true
 			id: "5813843576BABB6E"
 			tasks: [{
 				id: "39909647EC507707"
 				type: "item"
 				item: "realistictorches:glowstone_crystal"
 			}]
+			rewards: [{
+				id: "6FFB8D9BC4C7382B"
+				type: "item"
+				item: "minecraft:glowstone"
+				count: 16
+			}]
 		}
 		{
 			x: 24.0d
 			y: 3.0d
 			dependencies: ["76B41B1F8531D5BE"]
+			hide: true
 			id: "43F0BABA7A595F13"
 			tasks: [{
 				id: "3E7130D13C317378"
@@ -3979,17 +4049,22 @@
 			}]
 		}
 		{
-			title: "荧石膏"
+			title: "荧石石膏"
 			x: 24.0d
 			y: 4.5d
 			subtitle: "用于升级火把"
 			dependencies: ["43F0BABA7A595F13"]
-			optional: true
 			id: "5ABD4FB90126BF3E"
 			tasks: [{
 				id: "130667CE16FC3476"
 				type: "item"
 				item: "realistictorches:glowstone_paste"
+			}]
+			rewards: [{
+				id: "2A48FAAA080EDB1C"
+				type: "item"
+				item: "minecraft:glowstone"
+				count: 16
 			}]
 		}
 		{
@@ -3998,6 +4073,7 @@
 			y: 4.0d
 			subtitle: "来自下界的残骸"
 			dependencies: ["76B41B1F8531D5BE"]
+			hide: true
 			dependency_requirement: "one_completed"
 			id: "0A4D244F29E55A48"
 			tasks: [{
@@ -4039,11 +4115,11 @@
 		}
 		{
 			title: "初见聚能水晶"
-			x: -4.5d
+			x: -3.5d
 			y: -2.0d
 			shape: "diamond"
 			subtitle: "这玩意是...魔法？"
-			description: ["你打量了打量这块在神秘的神殿中出现的水晶，它似乎有种星辰的力量，不过现在你还没有学会如何利用它"]
+			description: ["你打量了打量这块在神秘的神殿中出现的水晶，它似乎有种星辰的力量，不过现在你还没有学会如何利用它。"]
 			dependencies: ["18FE013B3405D2C2"]
 			hide_text_until_complete: true
 			secret: true

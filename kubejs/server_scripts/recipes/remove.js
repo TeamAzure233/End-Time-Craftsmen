@@ -6,6 +6,8 @@ settings.logSkippedRecipes = false
 settings.logErroringRecipes = true
 
 onEvent('recipes', event => {
+    event.remove({mod: 'zombie_extreme'})
+
     event.remove({id: 'notreepunching:flint_pickaxe'})
     event.remove({id: 'notreepunching:flint_hoe'})
     event.remove({output: '#forge:tools/mattocks'})
@@ -59,6 +61,8 @@ onEvent('recipes', event => {
     event.remove({id: 'create:crafting/materials/rose_quartz'})
     event.remove({id: 'scalinghealth:heart_crystal'})
     event.remove({id: 'scalinghealth:power_crystal'})
+    event.remove({output: ['botania:apothecary_default', 'botania:fertilizer']})
+    event.remove({output: 'astralsorcery:wand'})
     event.remove({output: ['bloodmagic:altar', 'bloodmagic:soulforge', 'bloodmagic:alchemytable', 'bloodmagic:incensealtar', 'bloodmagic:sacrificialdagger', 'bloodmagic:alchemicalreactionchamber']})
     event.remove({input: 'mahoutsukai:hammer'})
     event.remove({id: 'mahoutsukai:hammer'})
@@ -126,6 +130,8 @@ onEvent('recipes', event => {
     event.remove({id: 'createaddition:crafting/tesla_coil'})
     event.remove({id: 'createaddition:compat/immersiveengineering/constantan'})
     event.remove({id: 'createaddition:compat/immersiveengineering/electrum'})
+    event.remove({id: 'createaddition:mechanical_crafting/motor'})
+    event.remove({id: 'createaddition:mechanical_crafting/alternator'})
     event.remove({id: 'immersiveengineering:crafting/constantan_mix'})
     event.remove({id: 'immersiveengineering:crafting/electrum_mix'})
     event.remove({id: 'immersiveengineering:crafting/component_iron'})
@@ -149,14 +155,16 @@ onEvent('recipes', event => {
     event.remove({id: 'rftoolsbase:dimensionalshard'})
     event.remove({id: 'create:mixing/chromatic_compound'})
 
-    event.remove({output: 'mekanismgenerators:fusion_reactor_controller'})
+    event.remove({output: 'botania:runic_altar'})
+
+    event.remove({output: 'mekanism:basic_energy_cube'})
+    event.remove({output: 'mekanism:steel_casing'})
     event.remove({id: 'mekanism:metallurgic_infusing/alloy/infused'})
     event.remove({id: 'mekanism:control_circuit/basic'})
     event.remove({id: 'mekanism:control_circuit/advanced'})
     event.remove({id: 'mekanism:control_circuit/elite'})
     event.remove({id: 'mekanism:control_circuit/ultimate'})
     event.remove({id: 'mekanism:teleportation_core'})
-    event.remove({id: 'mekanism:supercharged_coil'})
     event.remove({id: 'mekanism:mekasuit_helmet'})
     event.remove({id: 'mekanism:mekasuit_bodyarmor'})
     event.remove({id: 'mekanism:mekasuit_pants'})

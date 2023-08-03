@@ -1,0 +1,52 @@
+{
+  "main": {
+    "6": {
+      "title": "查看难度（Scalling Health）",
+      "icon": {
+        "stack": "{id:\"scalinghealth:heart_crystal\",Count:1b}"
+      },
+      "action": {
+        "command": {
+          "command": "/sh_difficulty get",
+          "clipboard": false
+        }
+      }
+    },
+    "7": {
+      "title": "开启飞轮渲染引擎（Flywheel）",
+      "icon": {
+        "stack": "{id:\"create:flywheel\",Count:1b}"
+      },
+      "action": {
+        "command": {
+          "command": "/flywheel backend on",
+          "clipboard": false
+        }
+      }
+    },
+    "8": {
+      "title": "关闭飞轮渲染引擎（Flywheel）",
+      "icon": {
+        "stack": "{id:\"create:flywheel\",Count:1b}"
+      },
+      "action": {
+        "command": {
+          "command": "/flywheel backend off",
+          "clipboard": false
+        }
+      }
+    },
+    "9": {
+      "title": "清理内存（Memory Sweep）",
+      "icon": {
+        "stack": "{id:\"kubejs:hyperspace_time_broom_mk1\",Count:1b}"
+      },
+      "action": {
+        "command": {
+          "command": "/memorysweep",
+          "clipboard": false
+        }
+      }
+    }
+  }
+}

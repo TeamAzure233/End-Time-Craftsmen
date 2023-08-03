@@ -3,8 +3,8 @@
   "enchantedHeartChange": 0.0,
   "chanceHeartChange": 0.0,
   "heartCrystalBonusRegen": 3,
-  "heartCrystalLevelCost": 10,
+  "heartCrystalLevelCost": 5,
   "heartCrystalHealthIncrease": 1,
-  "powerCrystalLevelCost": 10,
+  "powerCrystalLevelCost": 5,
   "powerCrystalDamageIncrease": 1.0
 }

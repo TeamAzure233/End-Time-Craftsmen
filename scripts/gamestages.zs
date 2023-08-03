@@ -44,17 +44,17 @@ CTEventManager.register<GameStageAdded>((event) => {
         event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§edigital_era§b！\n恭喜步入数字时代~\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n使用ME网络存储大量物品\n更方便的自动化\n§8——————————————————————————————");
     }
     if (event.stage == "industrial_era") {
-        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§eindustrial_era§b！\n恭喜步入工业时代~\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n玩更多的机器\n能飞（指喷气背包\n再进一步消耗自己肝的寿命（不是\n§8——————————————————————————————\n§b游戏难度提升！\n280-->320\n§8——————————————————————————————");
+        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§eindustrial_era§b！\n恭喜步入工业时代~\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n玩更多的机器\n能飞（指喷气背包\n再进一步消耗自己肝的寿命（不是\n§8——————————————————————————————\n§b游戏难度提升！\n+80\n§8——————————————————————————————");
     }
     if (event.stage == "atomic_era") {
-        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§eatomic_era§b！\n恭喜步入原子时代~\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n利用原子能来产生更多的电力\n打造更强大的工具、武器、装备甚至近乎无敌\n§8——————————————————————————————\n§b游戏难度提升！\n300-->480\n§8——————————————————————————————");
+        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§eatomic_era§b！\n恭喜步入原子时代~\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n利用原子能来产生更多的电力\n打造更强大的工具、武器、装备甚至近乎无敌\n§8——————————————————————————————\n§b游戏难度提升！\n+100\n§8——————————————————————————————");
     }
 
     if (event.stage == "mysterious_asylum") {
         event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§emysterious_asylum§b！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n进入下界\n§8——————————————————————————————");
     }
     if (event.stage == "the_nether") {
-        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§ethe_nether§b！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n迎战凋灵\n探索下界要塞\n§8——————————————————————————————\n§b游戏难度提升！\n+20\n§8——————————————————————————————");
+        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§ethe_nether§b！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n探索下界要塞\n迎战凋灵\n§8——————————————————————————————\n§b游戏难度提升！\n+20\n§8——————————————————————————————");
     }
     if (event.stage == "wither_killer") {
         event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§ewither_killer§b！\n恭喜击杀凋灵！\n§8——————————————————————————————\n§b游戏难度提升！\n+20\n§8——————————————————————————————");
@@ -76,10 +76,13 @@ CTEventManager.register<GameStageAdded>((event) => {
         event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§ebotania§b！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n利用自然的力量改变世界\n§8——————————————————————————————");
     }
     if (event.stage == "gaia_killer") {
-        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§egaia_killer§b！\n恭喜击杀盖亚守护者！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n好像没什么（\n§8——————————————————————————————\n§b游戏难度提升！\n+60\n§8——————————————————————————————");
+        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§egaia_killer§b！\n恭喜击杀盖亚守护者！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n了解额外的知识\n§8——————————————————————————————\n§b游戏难度提升！\n+60\n§8——————————————————————————————");
     }
     if (event.stage == "alfheim") {
-        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§ealfheim§b！\n§8——————————————————————————————\n§b通过来到这个神秘的维度，你习得了更多的关于自然的知识……\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：迎战本我\n\n§8——————————————————————————————");
+        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§ealfheim§b！\n§8——————————————————————————————\n§b通过来到这个神秘的维度，你习得了更多的关于自然的知识……\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：迎战本我\n§8——————————————————————————————");
+    }
+        if (event.stage == "self_killer") {
+        event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§eself_killer§b！\n恭喜击杀本我！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n使用更多强大的魔法武器\n§8——————————————————————————————\n§b游戏难度提升！\n+60\n§8——————————————————————————————");
     }
     if (event.stage == "astralsorcery") {
         event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§eastralsorcery§b！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n利用星座的力量改变世界\n§8——————————————————————————————");
@@ -87,7 +90,6 @@ CTEventManager.register<GameStageAdded>((event) => {
     if (event.stage == "blood_wizard") {
         event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§eblood_wizard§b！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n掌控血腥中的魔力\n§8——————————————————————————————");
     }
-
     if (event.stage == "mahoutsukai_all") {
         event.player.sendMessage("§8——————————————————————————————\n§b你获得了游戏阶段：§emahoutsukai_all§b！\n§8——————————————————————————————\n§6你现在可以§7（包括但不限于）§b：\n使用魔法使Mod中的所有魔法\n§8——————————————————————————————");
     }
@@ -114,18 +116,17 @@ ItemStages.restrict(<tag:items:tconstruct:tables>, "tinker_start")
 .restrict(<item:tconstruct:tinkers_chest>)
 .setHiddenInJEI(false);
 
-ItemStages.restrict(<item:mahoutsukai:dagger>, "mahoutsukai_all").setHiddenInJEI(false);
-
-ItemStages.restrict(<item:bloodmagic:altar>, "blood_wizard")
-.restrict(<item:bloodmagic:soulforge>)
-.restrict(<item:bloodmagic:demoncrucible>)
-.restrict(<item:bloodmagic:alchemytable>)
-.restrict(<item:bloodmagic:incensealtar>)
-.restrict(<item:bloodmagic:sacrificialdagger>)
-.restrict(<item:bloodmagic:alchemicalreactionchamber>)
-.setHiddenInJEI(false);
-
-ItemStages.restrict(<item:extrabotany:challengeticket>, "alfheim")
+ItemStages.restrict(<item:tconstruct:seared_ingot_gauge>,"melting")
+.restrict(<item:tconstruct:seared_fuel_gauge>)
+.restrict(<item:tconstruct:seared_ingot_tank>)
+.restrict(<item:tconstruct:seared_fuel_tank>)
+.restrict(<item:tconstruct:seared_table>)
+.restrict(<item:tconstruct:seared_basin>)
+.restrict(<item:tconstruct:seared_channel>)
+.restrict(<item:tconstruct:seared_faucet>)
+.restrict(<item:tconstruct:smeltery_controller>)
+.restrict(<item:tconstruct:foundry_controller>)
+.restrict(<item:tconstruct:scorched_alloyer>)
 .setHiddenInJEI(false);
 
 ItemStages.restrict(<item:create:water_wheel>,"create_start")
@@ -273,6 +274,26 @@ ItemStages.restrict(<item:kubejs:chorus_chrome>,"integration_era")
 .restrict(<item:kubejs:chromatic_mechanism>)
 .restrict(<item:kubejs:empty_timeinabottle>)
 .restrict(<item:tiab:timeinabottle>)
+.setHiddenInJEI(false);
+
+ItemStages.restrict(<tag:items:kubejs:restrict_bot>, "botania").setHiddenInJEI(false);
+
+ItemStages.restrict(<tag:items:kubejs:extra_knowledge_bot>, "gaia_killer").setHiddenInJEI(false);
+
+ItemStages.restrict(<tag:items:kubejs:restrict_astral>, "astralsorcery").setHiddenInJEI(false);
+
+ItemStages.restrict(<item:mahoutsukai:dagger>, "mahoutsukai_all").setHiddenInJEI(false);
+
+ItemStages.restrict(<item:bloodmagic:altar>, "blood_wizard")
+.restrict(<item:bloodmagic:soulforge>)
+.restrict(<item:bloodmagic:demoncrucible>)
+.restrict(<item:bloodmagic:alchemytable>)
+.restrict(<item:bloodmagic:incensealtar>)
+.restrict(<item:bloodmagic:sacrificialdagger>)
+.restrict(<item:bloodmagic:alchemicalreactionchamber>)
+.setHiddenInJEI(false);
+
+ItemStages.restrict(<item:extrabotany:challengeticket>, "alfheim")
 .setHiddenInJEI(false);
 
 ItemStages.restrict(<item:appliedenergistics2:2_cubed_spatial_cell_component>,"digital_era")
@@ -473,22 +494,9 @@ ItemStages.restrict(<item:mekanism:radioactive_waste_barrel>, "atomic_era")
 .restrict(<item:endless:diamond_lattice>)
 .setHiddenInJEI(false);
 
-ItemStages.restrict(<item:tconstruct:seared_ingot_gauge>,"melting")
-.restrict(<item:tconstruct:seared_fuel_gauge>)
-.restrict(<item:tconstruct:seared_ingot_tank>)
-.restrict(<item:tconstruct:seared_fuel_tank>)
-.restrict(<item:tconstruct:seared_table>)
-.restrict(<item:tconstruct:seared_basin>)
-.restrict(<item:tconstruct:seared_channel>)
-.restrict(<item:tconstruct:seared_faucet>)
-.restrict(<item:tconstruct:smeltery_controller>)
-.restrict(<item:tconstruct:foundry_controller>)
-.restrict(<item:tconstruct:scorched_alloyer>)
-.setHiddenInJEI(false);
-
 ItemStages.restrict(<item:extendedcrafting:compressor>,"infinite")
-.restrict(<item:extendedcrafting:ultimate_singularity>)
-.restrict(<item:extendedcrafting:singularity>)
+.restrict(<item:kubejs:infinite_convergent_altar_base>)
+.restrict(<item:kubejs:neutrin_polymerizer_casing>)
 .restrict(<item:endless:infinity_block>)
 .restrict(<item:endless:infinity_catalyst>)
 .restrict(<item:endless:endest_pearl>)
@@ -527,6 +535,7 @@ ItemStages.restrict(<item:extendedcrafting:compressor>,"infinite")
 .restrict(<item:projecte:nova_catalyst>)
 .restrict(<item:projecte:nova_cataclysm>)
 .restrict(<item:projecte:transmutation_table>)
+.restrict(<item:projecte:transmutation_tablet>)
 .restrict(<item:projecte:relay_mk1>)
 .restrict(<item:projecte:relay_mk2>)
 .restrict(<item:projecte:relay_mk3>)
@@ -578,6 +587,5 @@ ItemStages.restrict(<item:botania:creative_pool>,"the_last_dream")
 
 ItemStages.restrict(<tag:items:kubejs:disabled>,"disabled");
 
-mods.champions.ChampionStages.addTierStage("wither_killer", 3);
-mods.champions.ChampionStages.addTierStage("gaia_killer", 5);
+mods.champions.ChampionStages.addTierStage("wither_killer", 5);
 mods.champions.ChampionStages.addTierStage("dragon_killer", 7);

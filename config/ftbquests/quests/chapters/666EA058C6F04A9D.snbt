@@ -7,18 +7,32 @@
 	icon: "appliedenergistics2:controller"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	images: [{
-		x: -6.5d
-		y: 0.0d
-		width: 1.0d
-		height: 1.0d
-		rotation: 0.0d
-		image: "kubejs:textures/quest/start.png"
-		hover: [ ]
-		click: ""
-		dev: false
-		corner: false
-	}]
+	images: [
+		{
+			x: -6.5d
+			y: 0.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/start.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -6.0d
+			y: -3.0d
+			width: 6.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/chapterz3.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
 	quests: [
 		{
 			title: "应用能源之始"

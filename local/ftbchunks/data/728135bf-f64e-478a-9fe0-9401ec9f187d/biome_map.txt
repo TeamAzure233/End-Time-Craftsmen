@@ -1,0 +1,17 @@
+#736 traverse:autumnal_woods
+#556 minecraft:beach
+#761 traverse:cliffs
+#109 minecraft:deep_cold_ocean
+#4ED biomesoplenty:dense_marsh
+#010 minecraft:forest
+#467 biomesoplenty:highland
+#121 biomesoplenty:highland_crag
+#20D biomesoplenty:marsh
+#379 minecraft:mountains
+#5FF minecraft:river
+#0A6 traverse:rolling_hills
+#108 biomesoplenty:seasonal_forest
+#0B4 biomesoplenty:seasonal_orchard
+#65A biomesoplenty:seasonal_pumpkin_patch
+#3D5 traverse:snowy_high_coniferous_forest
+#452 minecraft:wooded_hills

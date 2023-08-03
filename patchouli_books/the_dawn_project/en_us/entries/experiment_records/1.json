@@ -1,0 +1,12 @@
+{
+    "name": "Experiment Records 1",
+    "icon": "minecraft:filled_map",
+    "category": "experiment_records",
+    "advancement": "edtc:records/record1",
+    "pages": [
+        {
+            "type": "text",
+            "text": ""
+        }
+    ]
+}

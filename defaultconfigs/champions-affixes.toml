@@ -1,0 +1,114 @@
+
+#List of affix configurations
+[[affixes]]
+	identifier = "adaptable"
+	mobList = []
+	mobPermission = "BLACKLIST"
+	minTier = 1
+	enabled = true
+
+[[affixes]]
+	identifier = "arctic"
+	mobList = []
+	mobPermission = "BLACKLIST"
+	minTier = 1
+	enabled = true
+
+[[affixes]]
+	identifier = "dampening"
+	mobList = []
+	mobPermission = "BLACKLIST"
+	minTier = 1
+	enabled = true
+
+[[affixes]]
+	identifier = "desecrating"
+	mobList = []
+	mobPermission = "BLACKLIST"
+	minTier = 100
+	enabled = false
+
+[[affixes]]
+	identifier = "enkindling"
+	mobList = []
+	mobPermission = "BLACKLIST"
+	minTier = 1
+	enabled = true
+
+[[affixes]]
+	identifier = "hasty"
+	mobList = []
+	mobPermission = "BLACKLIST"
+	minTier = 1
+	enabled = true
+
+[[affixes]]
+	identifier = "infested"
+	mobList = []
+	mobPermission = "BLACKLIST"
+	minTier = 100
+	enabled = false
+
+[[affixes]]
+	identifier = "knocking"
+	mobList = []
+	mobPermission = "BLACKLIST"
+	minTier = 1
+	enabled = true
+
+[[affixes]]
+	identifier = "lively"
+	mobList = []
+	mobPermission = "BLACKLIST"
+	minTier = 1
+	enabled = true
+
+[[affixes]]
+	identifier = "magnetic"
+	mobList = []
+	mobPermission = "BLACKLIST"
+	minTier = 100
+	enabled = false
+
+[[affixes]]
+	identifier = "molten"
+	mobList = []
+	mobPermission = "BLACKLIST"
+	minTier = 1
+	enabled = true
+
+[[affixes]]
+	identifier = "paralyzing"
+	mobList = []
+	mobPermission = "BLACKLIST"
+	minTier = 100
+	enabled = false
+
+[[affixes]]
+	identifier = "plagued"
+	mobList = []
+	mobPermission = "BLACKLIST"
+	minTier = 1
+	enabled = true
+
+[[affixes]]
+	identifier = "reflective"
+	mobList = []
+	mobPermission = "BLACKLIST"
+	minTier = 1
+	enabled = false
+
+[[affixes]]
+	identifier = "shielding"
+	mobList = []
+	mobPermission = "BLACKLIST"
+	minTier = 100
+	enabled = false
+
+[[affixes]]
+	identifier = "wounding"
+	mobList = []
+	mobPermission = "BLACKLIST"
+	minTier = 1
+	enabled = true
+

@@ -1,0 +1,9 @@
+#556 minecraft:beach
+#34D minecraft:deep_lukewarm_ocean
+#7C8 biomesoplenty:golden_prairie
+#79A minecraft:lukewarm_ocean
+#4FE biomesoplenty:prairie
+#5FF minecraft:river
+#67B minecraft:savanna
+#706 minecraft:savanna_plateau
+#0FF minecraft:shattered_savanna_plateau

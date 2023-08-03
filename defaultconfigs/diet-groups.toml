@@ -1,0 +1,52 @@
+
+#List of diet groups
+[[groups]]
+	color = "#d4781c"
+	decay_multiplier = 0.8
+	beneficial = true
+	name = "proteins"
+	icon = "minecraft:cooked_beef"
+	gain_multiplier = 1.0
+	default_value = 0.5
+	order = 0
+
+[[groups]]
+	color = "#d4a31c"
+	decay_multiplier = 0.8
+	beneficial = true
+	name = "grains"
+	icon = "minecraft:bread"
+	gain_multiplier = 1.0
+	default_value = 0.5
+	order = 0
+
+[[groups]]
+	color = "#31d41c"
+	decay_multiplier = 0.8
+	beneficial = true
+	name = "vegetables"
+	icon = "minecraft:carrot"
+	gain_multiplier = 1.0
+	default_value = 0.5
+	order = 0
+
+[[groups]]
+	color = "#d41c53"
+	decay_multiplier = 0.8
+	beneficial = true
+	name = "fruits"
+	icon = "minecraft:apple"
+	gain_multiplier = 1.0
+	default_value = 0.5
+	order = 0
+
+[[groups]]
+	color = "#ff8fe9"
+	decay_multiplier = 0.8
+	beneficial = true
+	name = "sugars"
+	icon = "minecraft:honey_bottle"
+	gain_multiplier = 1.0
+	default_value = 0.5
+	order = 1
+

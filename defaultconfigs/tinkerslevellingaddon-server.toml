@@ -1,0 +1,125 @@
+
+#General addon settings
+[general]
+	#If true, modifier slots will be rewarded on level ups.
+	enableModifierSlots = true
+	#If true, raw stats will be rewarded on level ups.
+	enableStats = true
+	#Maximum tool level that could be achieved. If set to 0 there is no upper limit.
+	#Range: > 0
+	maxLevel = 5
+	#Base amount of experience required to reach next level.
+	#Range: > 1
+	baseExperience = 100
+	#How much the amount of experience required to reach next level will be multiplied per level.
+	#Range: 1.0 ~ 10.0
+	requiredXpMultiplier = 2.0
+	#Additional modifier for broad tools for experience required to level up.
+	#Range: 1.0 ~ 10.0
+	broadToolRequiredXpMultiplier = 3.0
+
+	#Modifiers settings
+	[general.modifiers]
+		#If true, instead of defined rotation order, tool modifiers will be awarded randomly on level ups.
+		toolsModifierTypeRandomOrder = false
+		#Set of modifier slot types from which random modifier will be awarded when leveling up tools.
+		#If empty default pool will be used (upgrade, upgrade, upgrade, upgrade, ability). 80% chance for upgrade and 20% chance for ability.
+		#Possible values: upgrade, ability, soul
+		toolsModifierTypeRandomPool = ["upgrade", "upgrade", "upgrade", "upgrade", "ability"]
+		#List of slot types (in order) that will be awarded when leveling up tools. If level is higher than list size the mod will start over.
+		#If empty default rotation will be used (upgrade, upgrade, upgrade, ability, upgrade).
+		#Possible values: upgrade, ability, soul
+		toolsModifierTypeRotation = ["upgrade", "upgrade", "upgrade", "ability", "upgrade"]
+		#If true, instead of defined rotation order, armor modifiers will be awarded randomly on level ups.
+		armorModifierTypeRandomOrder = false
+		#Set of stat types from which random modifier will be awarded when leveling up armor.
+		#If empty default pool will be used (upgrade, defense, upgrade, ability, defense).
+		#Possible values: upgrade, ability, soul, defense
+		armorModifierTypeRandomPool = ["upgrade", "defense", "upgrade", "ability", "defense"]
+		#List of slot types (in order) that will be awarded when leveling up armor. If level is higher than list size the mod will start over.
+		#If empty default rotation will be used (upgrade, defense, upgrade, ability, defense).
+		#Possible values: upgrade, ability, soul, defense
+		armorModifierTypeRotation = ["upgrade", "defense", "upgrade", "ability", "defense"]
+
+	#Stats settings
+	[general.stats]
+		#If true, instead of defined rotation order, tool stats will be awarded randomly on level ups.
+		toolsStatTypeRandomOrder = false
+		#Set of stat types from which random stat will be awarded when leveling up tools.
+		#If empty default pool will be used (durability, attackDamage, attackSpeed, miningSpeed). 25% chance for every stat.
+		#Possible values: durability, attackDamage, attackSpeed, miningSpeed
+		toolsStatTypeRandomPool = ["durability", "attackDamage", "attackSpeed", "miningSpeed"]
+		#List of slot types (in order) that will be awarded when leveling up tools. If level is higher than list size the mod will start over.
+		#If empty default rotation will be used (durability, attackDamage, attackSpeed, miningSpeed).
+		#Possible values: durability, attackDamage, attackSpeed, miningSpeed
+		toolsStatTypeRotation = ["durability", "attackDamage", "attackSpeed", "miningSpeed"]
+		#If true, instead of defined rotation order, armor modifiers will be awarded randomly on level ups.
+		armorStatTypeRandomOrder = false
+		#Set of stat types from which random modifier will be awarded when leveling up armor.
+		#If empty default pool will be used (durability, armor, armorToughness, knockbackResistance).
+		#Possible values: durability, armor, armorToughness, knockbackResistance
+		armorStatTypeRandomPool = ["durability", "armor", "armorToughness", "knockbackResistance"]
+		#List of stat types (in order) that will be awarded when leveling up armor. If level is higher than list size the mod will start over.
+		#If empty default rotation will be used (durability, armor, armorToughness, knockbackResistance).
+		#Possible values: durability, armor, armorToughness, knockbackResistance
+		armorStatTypeRotation = ["durability", "armor", "armorToughness", "knockbackResistance"]
+
+		#Tool stat values rewarded on level ups
+		[general.stats.toolValues]
+			#Range: 1 ~ 1000
+			durability = 50
+			#Range: 0.1 ~ 10.0
+			attackDamage = 0.5
+			#Range: 0.1 ~ 10.0
+			attackSpeed = 0.25
+			#Range: 0.1 ~ 10.0
+			miningSpeed = 1.0
+
+		#Armor stat values rewarded on level ups
+		[general.stats.armorValues]
+			#Range: 1 ~ 1000
+			durability = 50
+			#Range: 0.1 ~ 10.0
+			armor = 0.25
+			#Range: 0.1 ~ 10.0
+			armorToughness = 0.1
+			#Range: 0.1 ~ 1.0
+			knockbackResistance = 0.1
+
+#Tool levelling settings
+[toolLevelling]
+	#If true, base experience value gained for attacking is equal to damage dealt (rounded to whole number), otherwise 1.
+	damageDealt = true
+	#If true, base experience value gained for taking damage is equal to damage taken (rounded to whole number), otherwise 1.
+	damageTaken = true
+	#If true, allows to gain experience from dealing damage to or taking damage from other players.
+	pvp = true
+
+	#If true, given action will yield tool experience.
+	[toolLevelling.actions]
+		mining = true
+		harvesting = true
+		shearing = true
+		attacking = true
+		#Applies to armor only.
+		takingDamage = true
+		#Applies to armor only. Thorns modifier gives 15% chance per level to gain experience.
+		thorns = true
+
+	#Amount of bonus experience for performing actions. If set to 0 there is no bonus experience.
+	[toolLevelling.bonuses]
+		#Range: > 0
+		mining = 0
+		#Range: > 0
+		harvesting = 0
+		#Range: > 0
+		shearing = 0
+		#Range: > 0
+		attacking = 0
+		#Range: > 0
+		takingDamage = 0
+		#As with Thorns damage calculations, this is the upper bound of the bonus experience that could be granted.
+		#For example, for the value of 3 (default), we get: 1 (base xp) + 0 to 3 (bonus xp) = 1 to 4 (result xp)
+		#Range: > 0
+		thorns = 3
+

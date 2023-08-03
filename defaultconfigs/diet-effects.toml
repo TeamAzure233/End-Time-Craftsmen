@@ -1,0 +1,155 @@
+
+#List of diet effects
+[[effects]]
+
+	[[effects.attributes]]
+		amount = 1.0
+		name = "minecraft:generic.max_health"
+		operation = "multiply_total"
+
+	[[effects.attributes]]
+		amount = 1.0
+		name = "minecraft:generic.armor"
+		operation = "multiply_total"
+
+	[[effects.attributes]]
+		amount = 1.0
+		name = "minecraft:generic.attack_damage"
+		operation = "multiply_total"
+
+	[[effects.conditions]]
+		below = 1.0
+		match = "all"
+		above = 0.95
+		groups = ["proteins", "fruits", "vegetables", "grains", "sugar"]
+
+[[effects]]
+
+	[[effects.attributes]]
+		amount = 0.2
+		name = "minecraft:generic.max_health"
+		operation = "multiply_total"
+
+	[[effects.attributes]]
+		amount = 0.2
+		name = "minecraft:generic.armor"
+		operation = "multiply_total"
+
+	[[effects.attributes]]
+		amount = 0.1
+		name = "minecraft:generic.knockback_resistance"
+		operation = "multiply_total"
+
+	[[effects.conditions]]
+		below = 1.0
+		match = "every"
+		above = 0.75
+		groups = ["proteins","grains"]
+
+[[effects]]
+
+	[[effects.attributes]]
+		amount = 0.1
+		name = "minecraft:generic.attack_speed"
+		operation = "multiply_total"
+
+	[[effects.attributes]]
+		amount = 0.2
+		name = "minecraft:generic.attack_damage"
+		operation = "multiply_total"
+
+	[[effects.attributes]]
+		amount = 0.2
+		name = "minecraft:generic.armor_toughness"
+		operation = "multiply_total"
+
+	[[effects.conditions]]
+		below = 1.0
+		match = "every"
+		above = 0.75
+		groups = ["fruits", "vegetables"]
+
+[[effects]]
+
+	[[effects.attributes]]
+		amount = 0.4
+		name = "minecraft:generic.luck"
+		operation = "multiply_total"
+
+	[[effects.attributes]]
+		amount = 0.2
+		name = "minecraft:generic.movement_speed"
+		operation = "multiply_total"
+
+	[[effects.status_effects]]
+		name = "minecraft:hunger"
+		power = 2
+
+	[[effects.conditions]]
+		below = 1.0
+		match = "every"
+		above = 0.8
+		groups = ["sugar"]
+
+
+
+[[effects]]
+
+	[[effects.attributes]]
+		amount = -1.0
+		name = "minecraft:generic.max_health"
+		operation = "multiply_total"
+
+	[[effects.attributes]]
+		amount = -1.0
+		name = "minecraft:generic.armor"
+		operation = "multiply_total"
+
+	[[effects.status_effects]]
+		name = "minecraft:mining_fatigue"
+		power = 1
+
+	[[effects.conditions]]
+		below = 0.25
+		match = "every"
+		above = 0.0
+		groups = ["proteins","grains"]
+
+[[effects]]
+
+	[[effects.attributes]]
+		amount = -0.25
+		name = "minecraft:generic.attack_speed"
+		operation = "multiply_total"
+
+	[[effects.attributes]]
+		amount = -1.25
+		name = "minecraft:generic.attack_damage"
+		operation = "multiply_total"
+
+	[[effects.status_effects]]
+		name = "minecraft:weakness"
+		power = 1
+
+	[[effects.conditions]]
+		below = 0.25
+		match = "every"
+		above = 0.0
+		groups = ["fruits", "vegetables"]
+
+[[effects]]
+
+	[[effects.attributes]]
+		amount = -0.5
+		name = "minecraft:generic.armor_toughness"
+		operation = "multiply_total"
+
+	[[effects.status_effects]]
+		name = "minecraft:slowness"
+		power = 1
+
+	[[effects.conditions]]
+		below = 0.25
+		match = "every"
+		above = 0.0
+		groups = ["sugar"]

@@ -44,6 +44,10 @@ onEvent('ftbquests.custom_reward.7AF4B1416927F5C5', event => {
     event.server.runCommandSilent(`gamestage add "${event.player.name}" gaia_killer`)
     event.server.runCommandSilent(`sh_difficulty add "${event.player.name}" 60`)
 })
+onEvent('ftbquests.custom_reward.2A82F7B2234C01F7', event => {
+    event.server.runCommandSilent(`gamestage add "${event.player.name}" self_killer`)
+    event.server.runCommandSilent(`sh_difficulty add "${event.player.name}" 60`)
+})
 onEvent('ftbquests.custom_reward.68A6C780FA98434E', event => {
     event.server.runCommandSilent(`gamestage add "${event.player.name}" astralsorcery`)
 })

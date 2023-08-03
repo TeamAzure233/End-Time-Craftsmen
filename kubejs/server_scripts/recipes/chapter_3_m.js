@@ -7,6 +7,7 @@ settings.logErroringRecipes = true
 
 onEvent('recipes', event => {
     //植魔
+    event.recipes.createMixing(['4x botania:fertilizer'], ['#forge:dusts/lumium', '4x minecraft:bone_meal']).superheated()
     event.custom(
       {
         "type": "mythicbotany:rune_ritual",
@@ -361,22 +362,19 @@ onEvent('recipes', event => {
           ]
     })//亡灵退散之令
 
-    //
-
-
     //血魔法
     event.custom(
       {
           "type": "astralsorcery:altar",
-          "altar_type": 1,
+          "altar_type": 2,
           "duration": 100,
-          "starlight": 800,
+          "starlight": 400,
           "pattern": [
-            "C___C",
-            "_DBD_",
+            "CE_EC",
+            "EDBDE",
             "_FAF_",
-            "_DBD_",
-            "C___C"
+            "EDBDE",
+            "CE_EC"
           ],
           "key": {
             "A": {
@@ -386,7 +384,7 @@ onEvent('recipes', event => {
               "item": 'mythicbotany:midgard_rune'
             },
             "C": {
-              "item": 'kubejs:blood_imprinting',
+              "item": 'kubejs:blood_imprinting'
             },
             "D": {
               "item": "astralsorcery:nocturnal_powder"
@@ -404,47 +402,23 @@ onEvent('recipes', event => {
               "count": 1
             }
           ],
-          "focus_constellation": "astralsorcery:discidia",
-          "relay_inputs": [
-            {
-              "item": 'mythicbotany:kvasir_blood'
-            },
-            {
-              "tag": 'kubejs:shifting_stars'
-            },
-            {
-              "item": 'mythicbotany:kvasir_blood'
-            },
-            {
-              "tag": 'kubejs:shifting_stars'
-            }
-          ],
           "effects": [
-            "astralsorcery:built_in_effect_constellation_finish",
-            "astralsorcery:built_in_effect_trait_relay_highlight",
-            "astralsorcery:built_in_effect_discovery_central_beam",
-            "astralsorcery:built_in_effect_trait_focus_circle",
-            "astralsorcery:focus_dust_swirl",
-            "astralsorcery:focus_edge",
-            "astralsorcery:altar_focus_sparkle",
-            "astralsorcery:altar_default_sparkle",
-            "astralsorcery:built_in_effect_constellation_lines",
-            "astralsorcery:built_in_effect_attunement_sparkle"
+            "astralsorcery:built_in_effect_discovery_central_beam"
           ]
-    }
+      }
     )
     event.custom(
       {
           "type": "astralsorcery:altar",
-          "altar_type": 3,
-          "duration": 200,
-          "starlight": 1000,
+          "altar_type": 2,
+          "duration": 100,
+          "starlight": 500,
           "pattern": [
             "_____",
             "_DED_",
-            "BDADB",
+            "_DAD_",
             "FCCCF",
-            "FF_FF"
+            "BF_FB"
           ],
           "key": {
             "A": {
@@ -476,29 +450,8 @@ onEvent('recipes', event => {
               "count": 1
             }
           ],
-          "focus_constellation": "astralsorcery:evorsio",
-          "relay_inputs": [
-            {
-              "item": "astralsorcery:resonating_gem"
-            },
-            {
-              "item": "astralsorcery:nocturnal_powder"
-            },
-            {
-              "item": "astralsorcery:stardust"
-            }
-          ],
           "effects": [
-            "astralsorcery:built_in_effect_constellation_finish",
-            "astralsorcery:built_in_effect_trait_relay_highlight",
             "astralsorcery:built_in_effect_discovery_central_beam",
-            "astralsorcery:built_in_effect_trait_focus_circle",
-            "astralsorcery:focus_dust_swirl",
-            "astralsorcery:focus_edge",
-            "astralsorcery:altar_focus_sparkle",
-            "astralsorcery:altar_default_sparkle",
-            "astralsorcery:built_in_effect_constellation_lines",
-            "astralsorcery:built_in_effect_attunement_sparkle"
           ]
       }
     )
@@ -543,9 +496,9 @@ onEvent('recipes', event => {
     event.custom(
       {
           "type": "astralsorcery:altar",
-          "altar_type": 3,
-          "duration": 200,
-          "starlight": 1000,
+          "altar_type": 2,
+          "duration": 100,
+          "starlight": 500,
           "pattern": [
             "_____",
             "_B_B_",
@@ -576,38 +529,17 @@ onEvent('recipes', event => {
               "count": 1
             }
           ],
-          "focus_constellation": "astralsorcery:evorsio",
-          "relay_inputs": [
-            {
-              "item": "astralsorcery:nocturnal_powder"
-            },
-            {
-              "item": "astralsorcery:stardust"
-            },
-            {
-              "item": "astralsorcery:stardust"
-            }
-          ],
           "effects": [
-            "astralsorcery:built_in_effect_constellation_finish",
-            "astralsorcery:built_in_effect_trait_relay_highlight",
             "astralsorcery:built_in_effect_discovery_central_beam",
-            "astralsorcery:built_in_effect_trait_focus_circle",
-            "astralsorcery:focus_dust_swirl",
-            "astralsorcery:focus_edge",
-            "astralsorcery:altar_focus_sparkle",
-            "astralsorcery:altar_default_sparkle",
-            "astralsorcery:built_in_effect_constellation_lines",
-            "astralsorcery:built_in_effect_attunement_sparkle"
           ]
       }
     )
     event.custom(
       {
           "type": "astralsorcery:altar",
-          "altar_type": 3,
-          "duration": 200,
-          "starlight": 1000,
+          "altar_type": 2,
+          "duration": 100,
+          "starlight": 500,
           "pattern": [
             "_____",
             "DDDDD",
@@ -638,44 +570,23 @@ onEvent('recipes', event => {
               "count": 1
             }
           ],
-          "focus_constellation": "astralsorcery:evorsio",
-          "relay_inputs": [
-            {
-              "item": "astralsorcery:nocturnal_powder"
-            },
-            {
-              "item": "astralsorcery:stardust"
-            },
-            {
-              "item": "astralsorcery:stardust"
-            }
-          ],
           "effects": [
-            "astralsorcery:built_in_effect_constellation_finish",
-            "astralsorcery:built_in_effect_trait_relay_highlight",
             "astralsorcery:built_in_effect_discovery_central_beam",
-            "astralsorcery:built_in_effect_trait_focus_circle",
-            "astralsorcery:focus_dust_swirl",
-            "astralsorcery:focus_edge",
-            "astralsorcery:altar_focus_sparkle",
-            "astralsorcery:altar_default_sparkle",
-            "astralsorcery:built_in_effect_constellation_lines",
-            "astralsorcery:built_in_effect_attunement_sparkle"
           ]
       }
     )
     event.custom(
       {
           "type": "astralsorcery:altar",
-          "altar_type": 3,
-          "duration": 200,
-          "starlight": 1000,
+          "altar_type": 2,
+          "duration": 100,
+          "starlight": 500,
           "pattern": [
             "_____",
             "_B_B_",
-            "_C_C_",
             "_CEC_",
-            "BDADB"
+            "_CAC_",
+            "BD_DB"
           ],
           "key": {
             "A": {
@@ -701,44 +612,23 @@ onEvent('recipes', event => {
               "count": 1
             }
           ],
-          "focus_constellation": "astralsorcery:evorsio",
-          "relay_inputs": [
-            {
-              "item": "astralsorcery:nocturnal_powder"
-            },
-            {
-              "item": "astralsorcery:stardust"
-            },
-            {
-              "item": "astralsorcery:stardust"
-            }
-          ],
           "effects": [
-            "astralsorcery:built_in_effect_constellation_finish",
-            "astralsorcery:built_in_effect_trait_relay_highlight",
             "astralsorcery:built_in_effect_discovery_central_beam",
-            "astralsorcery:built_in_effect_trait_focus_circle",
-            "astralsorcery:focus_dust_swirl",
-            "astralsorcery:focus_edge",
-            "astralsorcery:altar_focus_sparkle",
-            "astralsorcery:altar_default_sparkle",
-            "astralsorcery:built_in_effect_constellation_lines",
-            "astralsorcery:built_in_effect_attunement_sparkle"
           ]
       }
     )
     event.custom(
       {
           "type": "astralsorcery:altar",
-          "altar_type": 3,
-          "duration": 200,
-          "starlight": 1000,
+          "altar_type": 2,
+          "duration": 100,
+          "starlight": 500,
           "pattern": [
             "_____",
             "_DDD_",
-            "BEFEB",
+            "_EFE_",
             "DCACD",
-            "_____"
+            "_B_B_"
           ],
           "key": {
             "A": {
@@ -767,35 +657,12 @@ onEvent('recipes', event => {
               "count": 1
             }
           ],
-          "focus_constellation": "astralsorcery:evorsio",
-          "relay_inputs": [
-            {
-              "item": "astralsorcery:nocturnal_powder"
-            },
-            {
-              "item": "astralsorcery:stardust"
-            },
-            {
-              "item": "astralsorcery:stardust"
-            }
-          ],
           "effects": [
-            "astralsorcery:built_in_effect_constellation_finish",
-            "astralsorcery:built_in_effect_trait_relay_highlight",
             "astralsorcery:built_in_effect_discovery_central_beam",
-            "astralsorcery:built_in_effect_trait_focus_circle",
-            "astralsorcery:focus_dust_swirl",
-            "astralsorcery:focus_edge",
-            "astralsorcery:altar_focus_sparkle",
-            "astralsorcery:altar_default_sparkle",
-            "astralsorcery:built_in_effect_constellation_lines",
-            "astralsorcery:built_in_effect_attunement_sparkle"
           ]
       }
     )
-
-    //
-
+    event.recipes.bloodmagic.altar('bloodmagic:etherealslate', 'bloodmagic:demonslate').upgradeLevel(3).altarSyphon(20000).consumptionRate(20).drainRate(10)
 
     //魔法使
     event.replaceInput({id: 'mahoutsukai:dagger'},'minecraft:iron_ingot','mythicbotany:alfsteel_ingot')

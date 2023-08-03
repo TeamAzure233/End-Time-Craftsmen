@@ -1,0 +1,12 @@
+{
+    "name": "残留记录卷1",
+    "icon": "minecraft:map",
+    "category": "residual_pages",
+    "advancement": "edtc:pages/page1",
+    "pages": [
+        {
+            "type": "text",
+            "text": "我还是拗不过他们，最终还是启动了这项实验，我不止一次的和他们阐述实验失败的后果，但尽管成功率只有十分之一，他们还是坚持要开启这一项实验。我被禁止参加这项实验了。这并不出乎我的意料。但我还是多多少少能知道这一项实验进度"
+        }
+    ]
+}

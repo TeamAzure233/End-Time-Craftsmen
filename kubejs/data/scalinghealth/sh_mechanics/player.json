@@ -1,7 +1,7 @@
 {
   "startingHealth" : 20,
   "minHealth" : 1,
-  "maxHealth" : 100,
+  "maxHealth" : 150,
   "setOnDeath": "maxHealth",
   "levelsPerHp": 1,
   "hpPerLevel": 1,
@@ -13,7 +13,7 @@
     "minFood": 1,
     "maxFood": 100,
     "minHealth": 1,
-    "maxHealth": 100,
+    "maxHealth": 150,
     "proportionalToMaxHealth": false
   }
 }

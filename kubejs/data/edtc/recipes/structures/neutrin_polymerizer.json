@@ -1,0 +1,86 @@
+{
+  "type": "masterfulmachinery:machine_structure",
+  "id": "neutrin_polymerizer",
+  "controllerId": "neutrin_polymerizer",
+  "name": "中子素聚合器",
+  "layout": [
+    [
+      " ))) ",
+      ")))))",
+      ")))))",
+      ")))))",
+      " ))) "
+    ],
+    [
+      ")))))",
+      "))*))",
+      ")*+*)",
+      "))*))",
+      ")))))"
+    ],
+    [
+      "))C))",
+      ")   )",
+      ", - .",
+      ")   )",
+      ")/)0)"
+    ],
+    [
+      ")111)",
+      "1   1",
+      "1   1",
+      "1   1",
+      ")111)"
+    ],
+    [
+      ")))))",
+      ")   )",
+      ") - )",
+      ")   )",
+      ")))))"
+    ],
+    [
+      ")))))",
+      "))*))",
+      ")*+*)",
+      "))*))",
+      ")))))"
+    ],
+    [
+      " ))) ",
+      ")))))",
+      ")))))",
+      ")))))",
+      " ))) "
+    ]
+  ],
+  "legend": {
+    "0": {
+      "block": "masterfulmachinery:neutrin_polymerizer_rotation_port_create_rotation_input"
+    },
+    "1": {
+      "block": "mekanismgenerators:reactor_glass"
+    },
+    ")": {
+      "block": "kubejs:neutrin_polymerizer_casing"
+    },
+    "*": {
+      "block": "endless:crystal_matrix_block"
+    },
+    "+": {
+      "block": "kubejs:antimatter_alloy_block"
+    },
+    ",": {
+      "block": "masterfulmachinery:neutrin_polymerizer_item_port_items_output"
+    },
+    "-": {
+      "block": "mekanism:supercharged_coil"
+    },
+    ".": {
+      "block": "masterfulmachinery:neutrin_polymerizer_gas_port_mekanism_gas_input"
+    },
+    "/": {
+      "block": "masterfulmachinery:neutrin_polymerizer_energy_port_energy_input"
+    }
+  }
+}

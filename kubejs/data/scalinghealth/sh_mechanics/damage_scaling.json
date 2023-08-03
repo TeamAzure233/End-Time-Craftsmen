@@ -1,14 +1,14 @@
 {
   "difficultyWeight": 1,
-  "genericScale": 0.0001,
+  "genericScale": 0.2,
   "affectHostiles": true,
   "affectPeacefuls": false,
   "modBlacklist": [],
   "mode": "MAX_HEALTH",
   "damageScales": [
     {
-      "damageTypes" : ["cactus"],
-      "scale" : 0
+      "damageTypes" : ["mob_attack", "magic", "indirect_magic", "#is_projectile", "wither", "wither_skull", "#is_explosion"],
+      "scale" : 0.2
     }
   ]
 }

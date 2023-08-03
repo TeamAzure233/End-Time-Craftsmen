@@ -1,0 +1,12 @@
+{
+    "name": "残留记录卷4",
+    "icon": "minecraft:map",
+    "category": "residual_pages",
+    "advancement": "edtc:pages/page4",
+    "pages": [
+        {
+            "type": "text",
+            "text": "科研所已经不能再继续住了，我必须赶紧离开这里。"
+        }
+    ]
+}

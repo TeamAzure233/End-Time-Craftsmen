@@ -27,7 +27,7 @@
 
 	["Coal Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
-		generate_in_the_nether = false
+		generate_in_the_nether = true
 		#Baseline Y-Level [Default: 90]
 		#Range: 0 ~ 128
 		nether_base = 90
@@ -50,7 +50,7 @@
 
 	["Coal Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
-		generate_in_the_end = false
+		generate_in_the_end = true
 		#Baseline Y-Level [Default: 80]
 		#Range: 0 ~ 256
 		end_base = 80
@@ -121,7 +121,7 @@
 
 	["Iron Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
-		generate_in_the_end = false
+		generate_in_the_end = true
 		#Baseline Y-Level [Default: 52]
 		#Range: 0 ~ 256
 		end_base = 52
@@ -175,13 +175,13 @@
 		nether_base = 46
 		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 16]
 		#Range: 0 ~ 128
-		nether_spread = 16
+		nether_spread = 32
 		#Average Ores per Chunk [Default: 7]
 		#Range: 0 ~ 64
-		nether_count = 7
+		nether_count = 8
 		#Ore Vein Size [Default: 8]
 		#Range: 0 ~ 64
-		nether_size = 8
+		nether_size = 10
 		#Use spread mechanic instead of random range [Default: true]
 		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
@@ -192,7 +192,7 @@
 
 	["Gold Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
-		generate_in_the_end = false
+		generate_in_the_end = true
 		#Baseline Y-Level [Default: 36]
 		#Range: 0 ~ 256
 		end_base = 36
@@ -204,7 +204,7 @@
 		end_count = 7
 		#Ore Vein Size [Default: 8]
 		#Range: 0 ~ 64
-		end_size = 8
+		end_size = 16
 		#Use spread mechanic instead of random range [Default: true]
 		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
@@ -240,7 +240,7 @@
 
 	["Diamond Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
-		generate_in_the_nether = false
+		generate_in_the_nether = true
 		#Baseline Y-Level [Default: 38]
 		#Range: 0 ~ 128
 		nether_base = 38
@@ -263,7 +263,7 @@
 
 	["Diamond Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
-		generate_in_the_end = false
+		generate_in_the_end = true
 		#Baseline Y-Level [Default: 28]
 		#Range: 0 ~ 256
 		end_base = 28
@@ -275,7 +275,7 @@
 		end_count = 3
 		#Ore Vein Size [Default: 8]
 		#Range: 0 ~ 64
-		end_size = 8
+		end_size = 10
 		#Use spread mechanic instead of random range [Default: true]
 		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
@@ -311,7 +311,7 @@
 
 	["Emerald Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
-		generate_in_the_nether = false
+		generate_in_the_nether = true
 		#Baseline Y-Level [Default: 186]
 		#Range: 0 ~ 128
 		nether_base = 128
@@ -334,7 +334,7 @@
 
 	["Emerald Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
-		generate_in_the_end = false
+		generate_in_the_end = true
 		#Baseline Y-Level [Default: 176]
 		#Range: 0 ~ 256
 		end_base = 176
@@ -346,7 +346,7 @@
 		end_count = 3
 		#Ore Vein Size [Default: 4]
 		#Range: 0 ~ 64
-		end_size = 4
+		end_size = 8
 		#Use spread mechanic instead of random range [Default: true]
 		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
@@ -382,7 +382,7 @@
 
 	["Lapis Lazuli Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
-		generate_in_the_nether = false
+		generate_in_the_nether = true
 		#Baseline Y-Level [Default: 38]
 		#Range: 0 ~ 128
 		nether_base = 38
@@ -405,7 +405,7 @@
 
 	["Lapis Lazuli Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
-		generate_in_the_end = false
+		generate_in_the_end = true
 		#Baseline Y-Level [Default: 28]
 		#Range: 0 ~ 256
 		end_base = 28
@@ -417,7 +417,7 @@
 		end_count = 4
 		#Ore Vein Size [Default: 7]
 		#Range: 0 ~ 64
-		end_size = 7
+		end_size = 14
 		#Use spread mechanic instead of random range [Default: true]
 		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
@@ -433,10 +433,10 @@
 		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 8]
 		#Range: 0 ~ 256
-		overworld_base = 8
+		overworld_base = 20
 		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 8]
 		#Range: 0 ~ 256
-		overworld_spread = 8
+		overworld_spread = 16
 		#Average Ores per Chunk [Default: 8]
 		#Range: 0 ~ 64
 		overworld_count = 8
@@ -453,19 +453,19 @@
 
 	["Redstone Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
-		generate_in_the_nether = false
+		generate_in_the_nether = true
 		#Baseline Y-Level [Default: 38]
 		#Range: 0 ~ 128
 		nether_base = 38
 		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 8]
 		#Range: 0 ~ 128
-		nether_spread = 8
+		nether_spread = 16
 		#Average Ores per Chunk [Default: 8]
 		#Range: 0 ~ 64
 		nether_count = 8
 		#Ore Vein Size [Default: 11]
 		#Range: 0 ~ 64
-		nether_size = 11
+		nether_size = 14
 		#Use spread mechanic instead of random range [Default: true]
 		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
@@ -476,19 +476,19 @@
 
 	["Redstone Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
-		generate_in_the_end = false
+		generate_in_the_end = true
 		#Baseline Y-Level [Default: 28]
 		#Range: 0 ~ 256
 		end_base = 28
 		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 8]
 		#Range: 0 ~ 256
-		end_spread = 8
+		end_spread = 16
 		#Average Ores per Chunk [Default: 8]
 		#Range: 0 ~ 64
 		end_count = 8
 		#Ore Vein Size [Default: 11]
 		#Range: 0 ~ 64
-		end_size = 11
+		end_size = 12
 		#Use spread mechanic instead of random range [Default: true]
 		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
@@ -595,7 +595,7 @@
 
 	["Copper Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
-		generate_in_the_nether = false
+		generate_in_the_nether = true
 		#Baseline Y-Level [Default: 82]
 		#Range: 0 ~ 128
 		nether_base = 82
@@ -618,7 +618,7 @@
 
 	["Copper Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
-		generate_in_the_end = false
+		generate_in_the_end = true
 		#Baseline Y-Level [Default: 72]
 		#Range: 0 ~ 256
 		end_base = 72
@@ -666,7 +666,7 @@
 
 	["Aluminum Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
-		generate_in_the_nether = false
+		generate_in_the_nether = true
 		#Baseline Y-Level [Default: 90]
 		#Range: 0 ~ 128
 		nether_base = 90
@@ -689,7 +689,7 @@
 
 	["Aluminum Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
-		generate_in_the_end = false
+		generate_in_the_end = true
 		#Baseline Y-Level [Default: 80]
 		#Range: 0 ~ 256
 		end_base = 80
@@ -760,7 +760,7 @@
 
 	["Silver Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
-		generate_in_the_end = false
+		generate_in_the_end = true
 		#Baseline Y-Level [Default: 54]
 		#Range: 0 ~ 256
 		end_base = 54
@@ -831,7 +831,7 @@
 
 	["Lead Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
-		generate_in_the_end = false
+		generate_in_the_end = true
 		#Baseline Y-Level [Default: 56]
 		#Range: 0 ~ 256
 		end_base = 56
@@ -902,7 +902,7 @@
 
 	["Nickel Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
-		generate_in_the_end = false
+		generate_in_the_end = true
 		#Baseline Y-Level [Default: 52]
 		#Range: 0 ~ 256
 		end_base = 52
@@ -950,7 +950,7 @@
 
 	["Uranium Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
-		generate_in_the_nether = false
+		generate_in_the_nether = true
 		#Baseline Y-Level [Default: 42]
 		#Range: 0 ~ 128
 		nether_base = 42
@@ -973,7 +973,7 @@
 
 	["Uranium Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
-		generate_in_the_end = false
+		generate_in_the_end = true
 		#Baseline Y-Level [Default: 32]
 		#Range: 0 ~ 256
 		end_base = 32
@@ -982,10 +982,10 @@
 		end_spread = 8
 		#Average Ores per Chunk [Default: 6]
 		#Range: 0 ~ 64
-		end_count = 6
+		end_count = 8
 		#Ore Vein Size [Default: 6]
 		#Range: 0 ~ 64
-		end_size = 6
+		end_size = 8
 		#Use spread mechanic instead of random range [Default: true]
 		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
@@ -1044,7 +1044,7 @@
 
 	["Osmium Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
-		generate_in_the_end = false
+		generate_in_the_end = true
 		#Baseline Y-Level [Default: 52]
 		#Range: 0 ~ 256
 		end_base = 52
@@ -1092,7 +1092,7 @@
 
 	["Tin Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
-		generate_in_the_nether = false
+		generate_in_the_nether = true
 		#Baseline Y-Level [Default: 77]
 		#Range: 0 ~ 128
 		nether_base = 77
@@ -1115,7 +1115,7 @@
 
 	["Tin Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
-		generate_in_the_end = false
+		generate_in_the_end = true
 		#Baseline Y-Level [Default: 67]
 		#Range: 0 ~ 256
 		end_base = 67
@@ -1163,7 +1163,7 @@
 
 	["Zinc Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
-		generate_in_the_nether = false
+		generate_in_the_nether = true
 		#Baseline Y-Level [Default: 72]
 		#Range: 0 ~ 128
 		nether_base = 72
@@ -1186,7 +1186,7 @@
 
 	["Zinc Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
-		generate_in_the_end = false
+		generate_in_the_end = true
 		#Baseline Y-Level [Default: 62]
 		#Range: 0 ~ 256
 		end_base = 62
@@ -1518,7 +1518,7 @@
 
 	["Fluorite Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
-		generate_in_the_nether = false
+		generate_in_the_nether = true
 		#Baseline Y-Level [Default: 46]
 		#Range: 0 ~ 128
 		nether_base = 46
@@ -1541,7 +1541,7 @@
 
 	["Fluorite Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
-		generate_in_the_end = false
+		generate_in_the_end = true
 		#Baseline Y-Level [Default: 36]
 		#Range: 0 ~ 256
 		end_base = 36
@@ -1637,7 +1637,7 @@
 
 	["Cinnabar Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = true
+		generate_in_the_overworld = false
 		#Baseline Y-Level [Default: 10]
 		#Range: 0 ~ 256
 		overworld_base = 10
@@ -1660,7 +1660,7 @@
 
 	["Cinnabar Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
-		generate_in_the_nether = false
+		generate_in_the_nether = true
 		#Baseline Y-Level [Default: 40]
 		#Range: 0 ~ 128
 		nether_base = 40
@@ -1731,7 +1731,7 @@
 
 	["Apatite Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
-		generate_in_the_nether = false
+		generate_in_the_nether = true
 		#Baseline Y-Level [Default: 126]
 		#Range: 0 ~ 128
 		nether_base = 126
@@ -1754,7 +1754,7 @@
 
 	["Apatite Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
-		generate_in_the_end = false
+		generate_in_the_end = true
 		#Baseline Y-Level [Default: 116]
 		#Range: 0 ~ 256
 		end_base = 116
@@ -1802,7 +1802,7 @@
 
 	["Sulfur Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
-		generate_in_the_nether = false
+		generate_in_the_nether = true
 		#Baseline Y-Level [Default: 38]
 		#Range: 0 ~ 128
 		nether_base = 38
@@ -1825,7 +1825,7 @@
 
 	["Sulfur Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
-		generate_in_the_end = false
+		generate_in_the_end = true
 		#Baseline Y-Level [Default: 28]
 		#Range: 0 ~ 256
 		end_base = 28
@@ -1873,7 +1873,7 @@
 
 	["Potassium Nitrate Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
-		generate_in_the_nether = false
+		generate_in_the_nether = true
 		#Baseline Y-Level [Default: 55]
 		#Range: 0 ~ 128
 		nether_base = 55
@@ -2095,7 +2095,7 @@
 		nether_spread = 1
 		#Average Ores per Chunk [Default: 8]
 		#Range: 0 ~ 64
-		nether_count = 8
+		nether_count = 10
 		#Ore Vein Size [Default: 12]
 		#Range: 0 ~ 64
 		nether_size = 12
@@ -2189,7 +2189,7 @@
 		end_spread = 1
 		#Average Ores per Chunk [Default: 8]
 		#Range: 0 ~ 64
-		end_count = 8
+		end_count = 10
 		#Ore Vein Size [Default: 12]
 		#Range: 0 ~ 64
 		end_size = 12
@@ -2277,58 +2277,58 @@
 	active = true
 
 ["Stratum Config: minecraft_andesite"]
-	active = false
+	active = true
 
 ["Stratum Config: minecraft_granite"]
-	active = false
+	active = true
 
 ["Stratum Config: minecraft_diorite"]
-	active = false
+	active = true
 
 ["Stratum Config: minecraft_sand"]
-	active = false
+	active = true
 
 ["Stratum Config: minecraft_gravel"]
-	active = false
+	active = true
 
 ["Stratum Config: minecraft_netherrack"]
-	active = false
+	active = true
 
 ["Stratum Config: minecraft_blackstone"]
-	active = false
+	active = true
 
 ["Stratum Config: minecraft_basalt"]
-	active = false
+	active = true
 
 ["Stratum Config: minecraft_soul_soil"]
-	active = false
+	active = true
 
 ["Stratum Config: minecraft_end_stone"]
-	active = false
+	active = true
 
 ["Stratum Config: create_gabbro"]
-	active = false
+	active = true
 
 ["Stratum Config: create_limestone"]
-	active = false
+	active = true
 
 ["Stratum Config: create_scoria"]
-	active = false
+	active = true
 
 ["Stratum Config: create_weathered_limestone"]
-	active = false
+	active = true
 
 ["Stratum Config: quark_jasper"]
-	active = false
+	active = true
 
 ["Stratum Config: quark_marble"]
-	active = false
+	active = true
 
 ["Stratum Config: quark_slate"]
-	active = false
+	active = true
 
 ["Stratum Config: quark_deepslate"]
-	active = false
+	active = true
 
 ["Stratum Config: byg_mossy_stone"]
 	active = false
@@ -2361,5 +2361,5 @@
 	active = false
 
 ["Stratum Config: astral_marble"]
-	active = false
+	active = true
 

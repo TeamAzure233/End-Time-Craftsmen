@@ -26,7 +26,7 @@
       "durability": 900,
       "miningSpeed": 5.5,
       "harvestLevel": 3,
-      "attack": 24.0
+      "attack": 12.75
     },
     "tinkersarchery:arrow_shaft": {
       "count": 1.0,

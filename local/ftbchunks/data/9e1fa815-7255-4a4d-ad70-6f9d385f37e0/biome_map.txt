@@ -1,0 +1,15 @@
+#556 minecraft:beach
+#47F minecraft:birch_forest
+#0D2 minecraft:birch_forest_hills
+#24C zombie_extreme:dead_sand
+#34D minecraft:deep_lukewarm_ocean
+#3DE minecraft:deep_ocean
+#005 biomesoplenty:gravel_beach
+#79A minecraft:lukewarm_ocean
+#4F1 minecraft:ocean
+#5A5 biomesoplenty:orchard
+#3DC minecraft:plains
+#278 biomesoplenty:redwood_forest_edge
+#5FF minecraft:river
+#67B minecraft:savanna
+#706 minecraft:savanna_plateau

@@ -1,0 +1,15 @@
+#0E1 traverse:arid_highlands
+#556 minecraft:beach
+#47F minecraft:birch_forest
+#0D2 minecraft:birch_forest_hills
+#761 traverse:cliffs
+#619 traverse:desert_shrubland
+#005 biomesoplenty:gravel_beach
+#79A minecraft:lukewarm_ocean
+#4F1 minecraft:ocean
+#5FF minecraft:river
+#274 biomesoplenty:scrubland
+#2CF biomesoplenty:shrubland
+#462 biomesoplenty:shrubland_hills
+#764 minecraft:tall_birch_hills
+#201 biomesoplenty:wooded_scrubland

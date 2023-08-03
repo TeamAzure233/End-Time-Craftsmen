@@ -1,0 +1,15 @@
+#6F1 biomesoplenty:burnt_forest
+#232 biomesoplenty:dead_forest
+#4ED biomesoplenty:dense_marsh
+#010 minecraft:forest
+#005 biomesoplenty:gravel_beach
+#467 biomesoplenty:highland
+#121 biomesoplenty:highland_crag
+#351 biomesoplenty:highland_moor
+#79A minecraft:lukewarm_ocean
+#20D biomesoplenty:marsh
+#5FF minecraft:river
+#2CF biomesoplenty:shrubland
+#462 biomesoplenty:shrubland_hills
+#1A0 biomesoplenty:tall_dead_forest
+#452 minecraft:wooded_hills

@@ -767,7 +767,9 @@
 			dependencies: [
 				"73B7431470E7625E"
 				"15825B8318BA76F5"
+				"024ACCD1348D0183"
 			]
+			hide: true
 			id: "6803C8199FD12AEA"
 			tasks: [{
 				id: "1146F4FF4E51E808"
@@ -788,6 +790,7 @@
 			y: -0.5d
 			subtitle: "完成此研究后开启第三章魔法线植物魔法部分"
 			dependencies: ["6803C8199FD12AEA"]
+			hide: true
 			id: "42B4FB7CA47F0EAE"
 			tasks: [
 				{

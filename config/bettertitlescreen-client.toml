@@ -1,7 +1,7 @@
 
 ["custom text"]
 	#Insert the custom title screen text you want here (supports multiple lines)
-	text = ["末世工匠V1.1.1"]
+	text = ["末世工匠V1.2.0"]
 
 [versions]
 	#Show how many mods are loaded.

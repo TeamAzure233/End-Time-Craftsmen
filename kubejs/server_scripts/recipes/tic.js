@@ -603,4 +603,52 @@ onEvent('recipes', event => {
         ]
       }
     )
+
+  event.custom(
+      {
+          "type": "tconstruct:casting_table",
+          "cast": {
+            "tag": "tconstruct:casts/multi_use/rod"
+          },
+          "fluid": {
+            "name": "tconstruct:blazing_blood",
+            "amount": 25
+          },
+          "result": {
+            "tag": "forge:rods/blaze"
+          },
+          "cooling_time": 40
+      }
+  )
+  event.custom(
+      {
+          "type": "tconstruct:casting_table",
+          "cast": {
+            "tag": "tconstruct:casts/single_use/rod",
+            "cast_consumed": true,
+          },
+          "fluid": {
+            "name": "tconstruct:blazing_blood",
+            "amount": 25
+          },
+          "result": {
+            "tag": "forge:rods/blaze"
+          },
+          "cooling_time": 40
+      }
+  )
+    event.custom(
+        {
+            "type": "tconstruct:melting",
+            "ingredient": {
+              "tag": "forge:rods/blaze"
+            },
+            "result": {
+              "fluid": "tconstruct:blazing_blood",
+              "amount": 25
+            },
+            "temperature": 1000,
+            "time": 40
+        }
+  )
 })

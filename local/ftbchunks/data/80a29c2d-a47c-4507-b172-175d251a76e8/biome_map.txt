@@ -1,0 +1,10 @@
+#556 minecraft:beach
+#34D minecraft:deep_lukewarm_ocean
+#79A minecraft:lukewarm_ocean
+#5A5 biomesoplenty:orchard
+#3DC minecraft:plains
+#698 biomesoplenty:redwood_forest
+#278 biomesoplenty:redwood_forest_edge
+#36B biomesoplenty:redwood_hills
+#5FF minecraft:river
+#774 minecraft:sunflower_plains

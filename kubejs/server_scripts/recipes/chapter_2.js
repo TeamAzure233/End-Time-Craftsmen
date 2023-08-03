@@ -153,7 +153,7 @@ onEvent('recipes', event => {
             "tag":"forge:ingots/steel"
           },
           {
-            "tag":"forge:ingots/steel"
+            "item":'kubejs:blaze_brass'
           },
           {
             "tag":'forge:gears/signalum'

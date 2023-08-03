@@ -7,18 +7,32 @@
 	icon: "botania:runic_altar"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	images: [{
-		x: -7.5d
-		y: 0.0d
-		width: 1.0d
-		height: 1.0d
-		rotation: 0.0d
-		image: "kubejs:textures/quest/start.png"
-		hover: [ ]
-		click: ""
-		dev: false
-		corner: false
-	}]
+	images: [
+		{
+			x: -7.5d
+			y: 0.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/start.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -6.0d
+			y: -3.0d
+			width: 6.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/chapter3m.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
 	quests: [
 		{
 			x: -4.5d
@@ -1054,6 +1068,7 @@
 			title: "TNT与热爆花"
 			x: 1.0d
 			y: 1.0d
+			subtitle: "有点挑食"
 			dependencies: ["4A217741F5A31CEC"]
 			optional: true
 			id: "49E1C317AF2D6365"
@@ -1268,22 +1283,6 @@
 					}
 				}
 			]
-		}
-		{
-			title: "彼方兰阵列自动化确认"
-			x: 2.0d
-			y: 3.0d
-			description: [
-				"沙漏里放6个沙子"
-				"不会做可以先点检查标记，会弹出示例"
-				"真的有人会选择这个而不是tnt与热爆花嘛"
-			]
-			dependencies: ["6BB4D11F100082A0"]
-			id: "33957CA26B308356"
-			tasks: [{
-				id: "09257F02A5D7E368"
-				type: "checkmark"
-			}]
 		}
 		{
 			title: "催化器"
@@ -2262,8 +2261,8 @@
 		{
 			title: "面对真实的自我"
 			icon: "extrabotany:challengeticket"
-			x: 8.1d
-			y: 8.1d
+			x: 9.6d
+			y: 6.6d
 			shape: "gear"
 			subtitle: "召唤并击杀本我"
 			dependencies: [
@@ -2273,11 +2272,18 @@
 			dependency_requirement: "one_completed"
 			size: 1.8d
 			id: "023BF89CB3FE66CE"
-			tasks: [{
-				id: "133FF9BC1FC23181"
-				type: "item"
-				item: "extrabotany:treasurebox"
-			}]
+			tasks: [
+				{
+					id: "133FF9BC1FC23181"
+					type: "item"
+					item: "extrabotany:treasurebox"
+				}
+				{
+					id: "038D85F40209422E"
+					type: "item"
+					item: "extrabotany:challengeticket"
+				}
+			]
 			rewards: [
 				{
 					id: "3E8D3D748DEA0457"
@@ -2328,8 +2334,8 @@
 		}
 		{
 			title: "裸装打本我推荐装备"
-			x: 8.0d
-			y: 11.0d
+			x: 9.5d
+			y: 9.5d
 			shape: "diamond"
 			description: [
 				"使用最初分型的剑气攻击本我"
@@ -2480,8 +2486,8 @@
 			]
 		}
 		{
-			x: 11.0d
-			y: 9.0d
+			x: 12.5d
+			y: 7.5d
 			description: ["绞肉机（）"]
 			dependencies: ["023BF89CB3FE66CE"]
 			hide: true
@@ -2511,8 +2517,8 @@
 			}]
 		}
 		{
-			x: 10.0d
-			y: 10.0d
+			x: 11.5d
+			y: 8.5d
 			description: ["好在不会误伤其他生物"]
 			dependencies: ["023BF89CB3FE66CE"]
 			hide: true
@@ -2542,8 +2548,8 @@
 			}]
 		}
 		{
-			x: 6.0d
-			y: 10.0d
+			x: 7.5d
+			y: 8.5d
 			description: ["飞的更舒服"]
 			dependencies: ["023BF89CB3FE66CE"]
 			hide: true
@@ -2573,8 +2579,8 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 10.5d
+			x: 8.5d
+			y: 9.0d
 			description: ["真的有必要吗"]
 			dependencies: ["023BF89CB3FE66CE"]
 			hide: true
@@ -2605,8 +2611,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 8.0d
+			x: 7.0d
+			y: 6.5d
 			description: ["可能使某些怪卡无敌bug"]
 			dependencies: ["023BF89CB3FE66CE"]
 			hide: true
@@ -2637,8 +2643,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: 9.0d
+			x: 6.5d
+			y: 7.5d
 			description: ["真的可以充满吗"]
 			dependencies: ["023BF89CB3FE66CE"]
 			hide: true
@@ -2667,8 +2673,8 @@
 			}]
 		}
 		{
-			x: 9.0d
-			y: 10.5d
+			x: 10.5d
+			y: 9.0d
 			description: ["这伤害也不行啊"]
 			dependencies: ["023BF89CB3FE66CE"]
 			hide: true
@@ -2697,8 +2703,8 @@
 			}]
 		}
 		{
-			x: 10.5d
-			y: 8.0d
+			x: 12.0d
+			y: 6.5d
 			description: ["甚至可以定格本我和队友"]
 			dependencies: ["023BF89CB3FE66CE"]
 			hide: true
@@ -2728,8 +2734,8 @@
 		}
 		{
 			title: "裸装打本我II"
-			x: 8.0d
-			y: 12.5d
+			x: 9.5d
+			y: 11.0d
 			description: ["这一套装备也是可以打赢的"]
 			dependencies: ["59A24C5C919439F1"]
 			hide: true
@@ -2854,8 +2860,8 @@
 		}
 		{
 			title: "单弓打本我"
-			x: 8.0d
-			y: 14.0d
+			x: 9.5d
+			y: 12.5d
 			description: ["难度很高，成功率极低，但是仍有机会获胜"]
 			dependencies: ["6E289D3253ECD126"]
 			id: "60B861B3C9522688"
@@ -3175,6 +3181,7 @@
 			x: 13.0d
 			y: -3.0d
 			subtitle: "在共振星杖的引导下找到水晶石吧"
+			description: ["在晚上手持星杖，从显示出的光柱向下挖"]
 			dependencies: ["48DBEDCF84B434D8"]
 			id: "57AB65079567CAEF"
 			tasks: [{
@@ -3231,6 +3238,7 @@
 		{
 			x: 14.5d
 			y: -3.0d
+			subtitle: "聚宝盆"
 			dependencies: ["57AB65079567CAEF"]
 			id: "4C31AC328A2DAA24"
 			tasks: [{
@@ -4002,6 +4010,7 @@
 		{
 			x: 27.0d
 			y: -1.5d
+			subtitle: "星能聚合器的好搭档"
 			description: ["将加速星能聚合器工作速度，主动吸收星能液并为祭坛补充星能液，这将花费更少的星能液"]
 			dependencies: ["3B4BE96974D51287"]
 			optional: true
@@ -4104,11 +4113,11 @@
 			}]
 		}
 		{
-			x: 20.5d
+			x: 25.0d
 			y: -1.5d
 			shape: "gear"
 			subtitle: "右键获得游戏阶段“blood_wizard”"
-			dependencies: ["4A7FC365C9F2AAA0"]
+			dependencies: ["1FF27694C8C23707"]
 			size: 1.5d
 			id: "127FE1CA85D87A9A"
 			tasks: [{

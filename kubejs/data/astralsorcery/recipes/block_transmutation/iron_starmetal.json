@@ -2,7 +2,7 @@
   "type": "astralsorcery:block_transmutation",
   "input": [
     {
-      "tag": "forge:storage_blocks/enderium"
+      "block": "emendatusenigmatica:enderium_block"
     }
   ],
   "output": {

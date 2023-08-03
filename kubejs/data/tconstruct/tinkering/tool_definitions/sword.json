@@ -12,7 +12,7 @@
   ],
   "stats": {
     "base": {
-      "tconstruct:attack_damage": 5.75,
+      "tconstruct:attack_damage": 3.5,
       "tconstruct:attack_speed": 1.6
     },
     "multipliers": {
@@ -26,7 +26,7 @@
   },
   "traits": [
     {
-      "name": "tconstruct:silky_shears",
+      "name": "tconstruct:piercing",
       "level": 1
     }
   ]

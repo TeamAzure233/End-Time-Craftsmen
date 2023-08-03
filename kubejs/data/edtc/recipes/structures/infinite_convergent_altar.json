@@ -1,0 +1,211 @@
+{
+  "type": "masterfulmachinery:machine_structure",
+  "id": "infinite_convergent_altar",
+  "controllerId": "infinite_convergent_altar",
+  "name": "无尽聚合祭坛",
+  "layout": [
+    [
+      " ))       )) ",
+      "))))*****))))",
+      "))+++++++++))",
+      " )++,+++,++) ",
+      "  +,+,+,+,+  ",
+      "  ++,+++,++  ",
+      "  ++,+++,++  ",
+      "  ++,+++,++  ",
+      "  +,+,,,+,+  ",
+      " )++,+++,++) ",
+      "))+++++++++))",
+      "))))     ))))",
+      " ))       )) "
+    ],
+    [
+      "             ",
+      " +         + ",
+      "  -       -  ",
+      "  .       /  ",
+      "  . 0   0 /  ",
+      "  .       /  ",
+      "  .   C   /  ",
+      "  .       /  ",
+      "  . 0   0 /  ",
+      "  .       /  ",
+      "  -1111111-  ",
+      " +         + ",
+      "             "
+    ],
+    [
+      "             ",
+      " 2         3 ",
+      "  4       4  ",
+      "             ",
+      "    5   5    ",
+      "             ",
+      "             ",
+      "             ",
+      "    5   5    ",
+      "             ",
+      "  4       4  ",
+      " 6         7 ",
+      "             "
+    ],
+    [
+      "             ",
+      "             ",
+      "  4       4  ",
+      "             ",
+      "    8   8    ",
+      "             ",
+      "             ",
+      "             ",
+      "    8   8    ",
+      "             ",
+      "  4       4  ",
+      "             ",
+      "             "
+    ],
+    [
+      "             ",
+      "             ",
+      "  9       :  ",
+      "             ",
+      "    8   8    ",
+      "             ",
+      "             ",
+      "             ",
+      "    8   8    ",
+      "             ",
+      "  ;       <  ",
+      "             ",
+      "             "
+    ],
+    [
+      "             ",
+      "  **** ****  ",
+      " *=))> >))=* ",
+      " *)  > >  )* ",
+      " *) 5   5 )* ",
+      "             ",
+      "             ",
+      "             ",
+      " *) 5   5 )* ",
+      " *)       )* ",
+      " *=))   ))=* ",
+      "  ***   ***  ",
+      "             "
+    ],
+    [
+      "             ",
+      "             ",
+      "             ",
+      "   ?)>*>)?   ",
+      "   )0@*@0)   ",
+      "   >@   @>   ",
+      "   ** A **   ",
+      "   >@   @>   ",
+      "   )0@*@0)   ",
+      "   ?)>*>)?   ",
+      "             ",
+      "             ",
+      "             "
+    ],
+    [
+      "             ",
+      "             ",
+      "             ",
+      "             ",
+      "    BDDDB    ",
+      "    D   D    ",
+      "    D   D    ",
+      "    D   D    ",
+      "    BDDDB    ",
+      "             ",
+      "             ",
+      "             ",
+      "             "
+    ]
+  ],
+  "legend": {
+    "@": {
+      "block": "astralsorcery:marble_engraved"
+    },
+    "A": {
+      "block": "extrabotany:powerframe"
+    },
+    "B": {
+      "block": "minecraft:sea_lantern"
+    },
+    "D": {
+      "block": "astralsorcery:marble_arch"
+    },
+    ")": {
+      "block": "astralsorcery:marble_bricks"
+    },
+    "*": {
+      "block": "astralsorcery:marble_slab"
+    },
+    "+": {
+      "block": "kubejs:infinite_convergent_altar_base"
+    },
+    ",": {
+      "block": "botania:shimmerrock"
+    },
+    "-": {
+      "block": "astralsorcery:marble_runed"
+    },
+    ".": {
+      "block": "bloodmagic:bettercapacityrune"
+    },
+    "/": {
+      "block": "bloodmagic:chargingrune"
+    },
+    "0": {
+      "block": "kubejs:antimatter_alloy_block"
+    },
+    "1": {
+      "block": "bloodmagic:accelerationrune"
+    },
+    "2": {
+      "block": "masterfulmachinery:infinite_convergent_altar_item_port_items_output"
+    },
+    "3": {
+      "block": "masterfulmachinery:infinite_convergent_altar_item_port_items_input"
+    },
+    "4": {
+      "block": "astralsorcery:marble_pillar"
+    },
+    "5": {
+      "block": "endless:neutronium_block"
+    },
+    "6": {
+      "block": "masterfulmachinery:infinite_convergent_altar_rotation_port_create_rotation_input"
+    },
+    "7": {
+      "block": "masterfulmachinery:infinite_convergent_altar_energy_port_energy_input"
+    },
+    "8": {
+      "block": "projecte:aeternalis_fuel_block"
+    },
+    "9": {
+      "block": "masterfulmachinery:infinite_convergent_altar_fluid_port_fluids_input"
+    },
+    ":": {
+      "block": "masterfulmachinery:infinite_convergent_altar_gas_port_mekanism_gas_input"
+    },
+    ";": {
+      "block": "masterfulmachinery:infinite_convergent_altar_star_port_astral_starlight_input"
+    },
+    "<": {
+      "block": "masterfulmachinery:infinite_convergent_altar_mana_port_botania_mana_input"
+    },
+    "=": {
+      "block": "minecraft:beacon"
+    },
+    ">": {
+      "block": "astralsorcery:marble_stairs"
+    },
+    "?": {
+      "block": "endless:crystal_matrix_block"
+    }
+  }
+}

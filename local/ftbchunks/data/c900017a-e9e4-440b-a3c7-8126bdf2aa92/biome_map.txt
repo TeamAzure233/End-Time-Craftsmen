@@ -1,0 +1,14 @@
+#15A biomesoplenty:bayou
+#556 minecraft:beach
+#34D minecraft:deep_lukewarm_ocean
+#3DE minecraft:deep_ocean
+#112 biomesoplenty:dense_woodland
+#181 minecraft:jungle_edge
+#79A minecraft:lukewarm_ocean
+#273 traverse:mini_jungle
+#4F1 minecraft:ocean
+#5A5 biomesoplenty:orchard
+#3DC minecraft:plains
+#4FE biomesoplenty:prairie
+#5FF minecraft:river
+#7F2 biomesoplenty:woodland

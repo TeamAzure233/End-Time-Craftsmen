@@ -33,7 +33,7 @@ customization {
   orientation_element = vanillabtn:400298
   x = 0
   action = movebutton
-  y = 27
+  y = 28
 }
 
 customization {
@@ -79,9 +79,9 @@ customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
   orientation = element
   orientation_element = 73d13baf-abaf-44dd-8c07-235bb2ab9b0a1674535355801
-  x = 96
+  x = 157
   action = movebutton
-  y = 166
+  y = 272
 }
 
 customization {
@@ -116,7 +116,7 @@ customization {
 customization {
   orientation = top-left
   hidden = false
-  x = 386
+  x = 546
   width = 189
   action = deep_customization_element:title_screen_forge_top
   actionid = cda55e9d-d34d-4974-aa03-146e6296aec31671344327987
@@ -131,18 +131,18 @@ customization {
   width = 81
   action = deep_customization_element:title_screen_branding
   actionid = a4892473-3531-4174-80e0-bbac2659e11b1671344327992
-  y = 457
+  y = 633
   height = 50
 }
 
 customization {
   orientation = top-left
   hidden = false
-  x = 794
+  x = 1114
   width = 165
   action = deep_customization_element:title_screen_forge_copyright
   actionid = 3573b412-618a-4e9f-a702-e167e6795d6f1671344327992
-  y = 489
+  y = 665
   height = 9
 }
 
@@ -160,7 +160,7 @@ customization {
 customization {
   orientation = top-left
   hidden = false
-  x = 343
+  x = 503
   width = 274
   action = deep_customization_element:title_screen_logo
   actionid = 1f4b13a7-29bf-45b9-905b-62c4f1a0739e1671344327992
@@ -184,12 +184,12 @@ customization {
 customization {
   path = kubejs/assets/edtc/texture/special/edtclogo.png
   orientation = top-centered
-  x = -202
-  width = 393
+  x = -256
+  width = 510
   action = addtexture
   actionid = 73d13baf-abaf-44dd-8c07-235bb2ab9b0a1674535355801
-  y = 55
-  height = 196
+  y = 63
+  height = 278
 }
 
 customization {
@@ -227,11 +227,11 @@ customization {
   orientation = element
   crouching = false
   orientation_element = vanillabtn:400346
-  x = 236
+  x = -37
   slim = true
   actionid = d8238671-df33-43c1-9ca3-23e310ab5fe31668082026182
   action = addentity
-  y = 50
+  y = 46
   scale = 30
   playername = %playername%
   parrot = false
@@ -241,11 +241,11 @@ customization {
   path = kubejs/assets/edtc/texture/special/logo.png
   orientation = element
   orientation_element = 73d13baf-abaf-44dd-8c07-235bb2ab9b0a1674535355801
-  x = 354
+  x = 364
   width = 128
   action = addtexture
   actionid = 3bc39257-c9f6-4d34-bd24-747ddcb8b25d1668082310634
-  y = 126
+  y = 191
   height = 128
 }
 
@@ -270,10 +270,10 @@ customization {
   skinpath = kubejs/assets/edtc/texture/special/gofishfly233333.png
   crouching = false
   orientation_element = 3bc39257-c9f6-4d34-bd24-747ddcb8b25d1668082310634
-  x = 65
+  x = 32
   actionid = 64f67b43-1ebe-49ff-9296-371a4877f43e1668080437406
   action = addentity
-  y = 158
+  y = 180
   playername = [作者]Gofishfly233333
   parrot = false
 }
@@ -282,14 +282,14 @@ customization {
   orientation = element
   restartbackgroundanimations = true
   buttonaction = opencustomgui
-  label = 参与人员名单
+  label = 参与者列表
   loopbackgroundanimations = true
   orientation_element = 64f67b43-1ebe-49ff-9296-371a4877f43e1668080437406
-  x = -35
-  width = 73
+  x = -17
+  width = 35
   actionid = e93ed3c4-9a74-451b-a5b6-6923dae973e71668176782765
   action = addbutton
-  y = 4
+  y = 5
   value = creators
   height = 20
 }
@@ -313,7 +313,7 @@ customization {
   loopbackgroundanimations = true
   orientation_element = e93ed3c4-9a74-451b-a5b6-6923dae973e71668176782765
   x = 0
-  width = 73
+  width = 36
   actionid = d2a58309-05df-4d4f-b605-47477a6c36671668959525619
   action = addbutton
   y = 21
@@ -342,16 +342,16 @@ customization {
   basecolor = #ffff00
   shadow = true
   splashfilepath = kubejs/assets/minecraft/texts/splashes.txt
-  rotation = -20.0
+  rotation = 10.0
   scale = 1.2
   refresh = true
   bouncing = true
   vanilla-like = false
   orientation_element = 73d13baf-abaf-44dd-8c07-235bb2ab9b0a1674535355801
-  x = 327
+  x = 100
   actionid = 76d97ded-1abd-4e2d-a327-2e707d4de7941668081945030
   action = addsplash
-  y = 137
+  y = 223
 }
 
 customization {

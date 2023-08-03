@@ -1,0 +1,15 @@
+#556 minecraft:beach
+#761 traverse:cliffs
+#34D minecraft:deep_lukewarm_ocean
+#3DE minecraft:deep_ocean
+#4ED biomesoplenty:dense_marsh
+#005 biomesoplenty:gravel_beach
+#46D biomesoplenty:grove
+#79A minecraft:lukewarm_ocean
+#20D biomesoplenty:marsh
+#4F1 minecraft:ocean
+#3DC minecraft:plains
+#4FE biomesoplenty:prairie
+#5FF minecraft:river
+#2CF biomesoplenty:shrubland
+#462 biomesoplenty:shrubland_hills

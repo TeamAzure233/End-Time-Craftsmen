@@ -7,18 +7,32 @@
 	icon: "mekanism:steel_casing"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	images: [{
-		x: -12.5d
-		y: -1.0d
-		width: 1.0d
-		height: 1.0d
-		rotation: 0.0d
-		image: "kubejs:textures/quest/start.png"
-		hover: [ ]
-		click: ""
-		dev: false
-		corner: false
-	}]
+	images: [
+		{
+			x: -12.5d
+			y: -1.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/start.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -12.5d
+			y: -3.5d
+			width: 6.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/chapter3t.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
 	quests: [
 		{
 			x: -11.0d
@@ -72,11 +86,17 @@
 				type: "item"
 				item: "mekanism:basic_control_circuit"
 			}]
+			rewards: [{
+				id: "270E4EE9D010545F"
+				type: "item"
+				item: "mekanism:basic_control_circuit"
+				count: 10
+			}]
 		}
 		{
 			title: "工厂安装器"
-			x: -9.0d
-			y: -0.5d
+			x: -8.5d
+			y: 1.5d
 			shape: "diamond"
 			subtitle: "机器：获得升级！（"
 			description: ["4个任务完成一个即可"]
@@ -87,6 +107,7 @@
 				"4B75097BEAADF376"
 				"135EA75518903E50"
 			]
+			hide: true
 			dependency_requirement: "one_completed"
 			min_required_tasks: 1
 			id: "3AA5900D6288E7A3"
@@ -124,6 +145,12 @@
 				type: "item"
 				item: "mekanism:alloy_infused"
 			}]
+			rewards: [{
+				id: "1FCF23D1BC4FEF8D"
+				type: "item"
+				item: "mekanism:alloy_infused"
+				count: 10
+			}]
 		}
 		{
 			x: -8.5d
@@ -140,9 +167,9 @@
 			}]
 		}
 		{
-			x: -8.5d
+			x: -10.0d
 			y: 2.0d
-			dependencies: ["73F657C733C16F95"]
+			dependencies: ["42E052EFEE02D9ED"]
 			id: "6A156C1161F25603"
 			tasks: [{
 				id: "77E001783865A0E9"
@@ -155,9 +182,27 @@
 					}
 				}
 			}]
+			rewards: [
+				{
+					id: "701E0BC0C303854F"
+					type: "item"
+					item: "mekanism:free_runners"
+				}
+				{
+					id: "4BF26C2DDC2A7923"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "epic"
+						}
+					}
+				}
+			]
 		}
 		{
-			x: -8.5d
+			x: -10.0d
 			y: 3.5d
 			dependencies: ["6A156C1161F25603"]
 			id: "6CD11F113C2162D6"
@@ -168,9 +213,9 @@
 			}]
 		}
 		{
-			x: -10.0d
-			y: 2.0d
-			dependencies: ["73F657C733C16F95"]
+			x: -8.0d
+			y: -3.0d
+			dependencies: ["10CE06C2043EF9C1"]
 			id: "404625C11A4A7F74"
 			tasks: [{
 				id: "010536AE069B847C"
@@ -183,10 +228,21 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "002501E679AD0B48"
+				type: "item"
+				item: {
+					id: "ftbquests:lootcrate"
+					Count: 1b
+					tag: {
+						type: "epic"
+					}
+				}
+			}]
 		}
 		{
 			x: -5.5d
-			y: 0.5d
+			y: 1.0d
 			dependencies: ["216DA5BCD4647473"]
 			id: "7A04C985B80826E3"
 			tasks: [{
@@ -197,7 +253,7 @@
 		}
 		{
 			x: -5.5d
-			y: 2.0d
+			y: 2.5d
 			dependencies: [
 				"4B75097BEAADF376"
 				"7A04C985B80826E3"
@@ -241,6 +297,8 @@
 			subtitle: "工业时代"
 			description: ["经过不懈的研究，我发现了一些更高级的机械，他们或许是之前的产物。但不管怎样，我现在能利用这些机械帮助我自动化物品的制作以及给予我高科技时代才能实现的行为——飞行"]
 			dependencies: ["532034C7F03CFC0B"]
+			hide: true
+			hide_text_until_complete: true
 			size: 2.0d
 			id: "10CE06C2043EF9C1"
 			tasks: [{
@@ -454,6 +512,25 @@
 				type: "item"
 				item: "mekanism:yellow_cake_uranium"
 			}]
+			rewards: [
+				{
+					id: "765FCEA40C988399"
+					type: "item"
+					item: "emendatusenigmatica:uranium_block"
+					count: 2
+				}
+				{
+					id: "2BFF835BCDE8F072"
+					type: "item"
+					item: {
+						id: "ftbquests:lootcrate"
+						Count: 1b
+						tag: {
+							type: "legendry"
+						}
+					}
+				}
+			]
 		}
 		{
 			icon: "mekanism:sulfuric_acid_bucket"
@@ -538,6 +615,7 @@
 				"799BE644345F4FAC"
 				"10A9E9394A3ECBC4"
 			]
+			hide: true
 			id: "3F97F557CF8A86C6"
 			tasks: [{
 				id: "292D3BCAFB626461"
@@ -745,6 +823,7 @@
 			subtitle: "全自动吞电、吞钋机（"
 			description: ["72个外壳中包含12个用来做端口"]
 			dependencies: ["1954D2015EF79FDA"]
+			hide: true
 			size: 2.0d
 			id: "0AD3B19FB30B7171"
 			tasks: [
@@ -893,6 +972,7 @@
 				"甚至可以使用木料加热器点燃"
 			]
 			dependencies: ["1954D2015EF79FDA"]
+			hide: true
 			size: 2.0d
 			id: "33752CB32BBDF7B3"
 			tasks: [
@@ -1282,6 +1362,7 @@
 				"157771602C680F4D"
 				"10A9E9394A3ECBC4"
 			]
+			hide: true
 			size: 2.0d
 			id: "037D0B92037F491B"
 			tasks: [
@@ -1464,6 +1545,7 @@
 			dependencies: ["037D0B92037F491B"]
 			hide: true
 			optional: true
+			secret: true
 			id: "187441AD334DC6B9"
 			tasks: [{
 				id: "168E91FFDE56CD8A"

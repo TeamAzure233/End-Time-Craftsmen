@@ -7,18 +7,32 @@
 	icon: "immersiveengineering:coil_lv"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	images: [{
-		x: -13.0d
-		y: 2.0d
-		width: 1.0d
-		height: 1.0d
-		rotation: 0.0d
-		image: "kubejs:textures/quest/start.png"
-		hover: [ ]
-		click: ""
-		dev: false
-		corner: false
-	}]
+	images: [
+		{
+			x: -13.0d
+			y: 2.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/start.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -13.0d
+			y: -1.5d
+			width: 6.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/chapter2.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
 	quests: [
 		{
 			title: "电力时代"
@@ -28,6 +42,7 @@
 			subtitle: "制造交流发电机和电动马达"
 			description: ["虽然我很讨厌那些科学家，但我有时候又不得不谢谢他们：我能产生电力了。这意味着，我能制作更多的物品，能节省更多的燃料去做别的事情了，这真是太美妙了！"]
 			dependencies: ["4CF50FCA4425F064"]
+			hide: true
 			hide_text_until_complete: true
 			size: 2.0d
 			id: "2A28B539AC1FB263"
@@ -86,6 +101,7 @@
 				"24F290F63198F8B8"
 				"065D1BD273F94726"
 			]
+			hide: true
 			size: 1.25d
 			min_required_tasks: 3
 			id: "4CF50FCA4425F064"
@@ -1203,6 +1219,7 @@
 				"后面的组合合成将解决这个问题"
 			]
 			dependencies: ["5C7A7264D50FAA5E"]
+			hide: true
 			size: 2.0d
 			id: "2EE7F2B5E00B235D"
 			tasks: [{
@@ -1881,6 +1898,11 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "5FE1FC4400FA2CDB"
+				type: "item"
+				item: "woot:headless_3"
+			}]
 		}
 		{
 			x: 23.5d
@@ -2058,11 +2080,11 @@
 			shape: "rsquare"
 			subtitle: "一种奇妙的化合物"
 			dependencies: [
-				"4DC2DFF370E4FF6D"
 				"1D4B85787D268FCE"
 				"48DBEDCF84B434D8"
 				"5D1BA2AF09C9B421"
 			]
+			hide: true
 			size: 1.15d
 			id: "21C016460E092370"
 			tasks: [{
@@ -2141,7 +2163,7 @@
 			x: 41.75d
 			y: -2.0d
 			shape: "gear"
-			subtitle: "完成此任务后开启研究：通用机械"
+			subtitle: "完成此任务后开启研究：工业时代"
 			dependencies: [
 				"009EF9F576D53515"
 				"676CF88060A4AA6F"
@@ -2149,52 +2171,17 @@
 			]
 			size: 1.5d
 			id: "63D71350804D10F2"
-			tasks: [
-				{
-					id: "60060D43A832C171"
-					type: "item"
-					item: "kubejs:chromatic_mechanism"
-				}
-				{
-					id: "5513FF2FB3E683FB"
-					type: "item"
-					item: "create:shadow_steel_casing"
-				}
-				{
-					id: "29FBD91010F54057"
-					type: "item"
-					item: "create:refined_radiance_casing"
-				}
-				{
-					id: "30942A6A26DDD544"
-					type: "item"
-					item: "createaddition:overcharged_casing"
-				}
-			]
+			tasks: [{
+				id: "60060D43A832C171"
+				type: "item"
+				item: "kubejs:chromatic_mechanism"
+			}]
 			rewards: [
 				{
 					id: "02E07D5D85DCD93A"
 					type: "item"
 					item: "kubejs:chromatic_mechanism"
 					count: 8
-				}
-				{
-					id: "30ABB118353A8AA2"
-					type: "item"
-					item: "create:shadow_steel_casing"
-					count: 4
-				}
-				{
-					id: "1878E7FAA821D56C"
-					type: "item"
-					item: "create:refined_radiance_casing"
-					count: 4
-				}
-				{
-					id: "7CAACD87F542157F"
-					type: "item"
-					item: "createaddition:overcharged_casing"
-					count: 4
 				}
 				{
 					id: "6870DA4CECA6EEAF"
@@ -2602,7 +2589,13 @@
 			tasks: [{
 				id: "63A7AAB175F434B5"
 				type: "item"
-				item: "minecraft:shulker_shell"
+				item: {
+					id: "minecraft:shulker_shell"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
 			}]
 			rewards: [{
 				id: "024E3CAA40F28572"

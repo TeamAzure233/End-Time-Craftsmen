@@ -27,12 +27,12 @@ customization {
 customization {
   path = kubejs/assets/edtc/texture/special/edtclogo.png
   orientation = mid-centered
-  x = -9
-  width = 459
+  x = -8
+  width = 556
   action = addtexture
   actionid = 06ddcf6a-64a6-4bf5-b771-78235b2428a21674546204403
-  y = -27
-  height = 229
+  y = 26
+  height = 307
 }
 
 customization {
@@ -51,11 +51,11 @@ customization {
 customization {
   path = kubejs/assets/edtc/texture/special/minecraft.png
   orientation = mid-centered
-  x = 0
+  x = -8
   width = 317
   action = addtexture
   actionid = cb920b77-a7da-46b6-98ec-b2f620c55b971668382469276
-  y = -148
+  y = -138
   height = 100
 }
 
@@ -96,11 +96,11 @@ customization {
 customization {
   path = kubejs/assets/edtc/texture/special/logo.png
   orientation = mid-centered
-  x = 238
+  x = 217
   width = 164
   action = addtexture
   actionid = b177522c-5f1a-4414-aa9e-04a42517614f1669246954016
-  y = 60
+  y = 44
   height = 162
 }
 

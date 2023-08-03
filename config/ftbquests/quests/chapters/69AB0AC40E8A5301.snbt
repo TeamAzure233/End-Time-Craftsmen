@@ -541,35 +541,23 @@
 			}]
 		}
 		{
-			title: "5级经验 --> 1Data"
+			title: "2级经验 --> 1Data"
 			disable_toast: true
 			x: 9.5d
 			y: -0.5d
 			dependencies: ["5301EB96F0EF2656"]
 			id: "5938F2D3DCD89EC6"
 			tasks: [{
-				id: "281D4A0FF9DD5532"
+				id: "148BB4E55A9B806E"
 				type: "xp"
-				value: 56L
-				points: true
+				value: 2L
+				points: false
 			}]
-			rewards: [
-				{
-					id: "2D6D4013676E97EF"
-					type: "questsadditions:repeat"
-					table_id: 2055434023738943033L
-				}
-				{
-					id: "33F74B0A1C03E67E"
-					type: "loot"
-					table_id: 8874855834272967715L
-				}
-				{
-					id: "62267B72B36EA761"
-					type: "loot"
-					table_id: 8874855834272967715L
-				}
-			]
+			rewards: [{
+				id: "2D6D4013676E97EF"
+				type: "questsadditions:repeat"
+				table_id: 2055434023738943033L
+			}]
 		}
 		{
 			title: "3x 任意生肉 --> 1Data"

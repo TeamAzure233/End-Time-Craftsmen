@@ -1,0 +1,10 @@
+
+#List of entity configurations
+[[entities]]
+	affixPermission = "BLACKLIST"
+	affixList = ["knocking", "wounding", "paralyzing", "molten"]
+	maxTier = 4
+	minTier = 0
+	entity = "minecraft:creeper"
+	presetAffixes = []
+

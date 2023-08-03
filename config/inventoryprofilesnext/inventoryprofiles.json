@@ -20,7 +20,9 @@
                 "keys": "KP_ADD"
             }
         },
-        "enable_auto_refill": false,
+        "enable_auto_refill": {
+            "value": false
+        },
         "enable_updates_check": false,
         "first_run": false
     },
@@ -28,11 +30,21 @@
         "continuous_crafting_saved_value": false
     },
     "AutoRefillSettings": {
-        "refill_armor": false,
-        "refill_before_tool_break": false,
-        "visual_durability_notification": false,
-        "visual_replace_success_notification": false,
-        "visual_replace_failed_notification": false
+        "refill_armor": {
+            "value": false
+        },
+        "refill_before_tool_break": {
+            "value": false
+        },
+        "visual_durability_notification": {
+            "value": false
+        },
+        "visual_replace_success_notification": {
+            "value": false
+        },
+        "visual_replace_failed_notification": {
+            "value": false
+        }
     },
     "Hotkeys": {
         "open_config_menu": {

@@ -214,6 +214,8 @@
 			type: "xp"
 			weight: 3
 		}
+		{ item: "minecraft:diamond", count: 2 }
+		{ item: "botania:mana_diamond" }
 	]
 	loot_crate: {
 		drops: {

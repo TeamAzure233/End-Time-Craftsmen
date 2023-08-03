@@ -9,8 +9,8 @@
 	default_hide_dependency_lines: false
 	images: [
 		{
-			x: -3.5d
-			y: -3.5d
+			x: -9.5d
+			y: -1.5d
 			width: 6.0d
 			height: 3.0d
 			rotation: 0.0d
@@ -27,6 +27,18 @@
 			height: 1.0d
 			rotation: 0.0d
 			image: "kubejs:textures/quest/start.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -5.5d
+			y: -8.5d
+			width: 30.0d
+			height: 16.92d
+			rotation: 0.0d
+			image: "edtc:texture/special/edtclogo.png"
 			hover: [ ]
 			click: ""
 			dev: false
@@ -195,7 +207,7 @@
 					id: "3B6DE3D07EB94FEF"
 					type: "item"
 					item: "tac:round45"
-					count: 256
+					count: 512
 				}
 				{
 					id: "5C793A88918B01E1"
@@ -211,13 +223,12 @@
 						tag: {
 							tic_multipliers: {
 								"tconstruct:mining_speed": 0.75f
-								"tconstruct:attack_damage": 1.15f
 								"tconstruct:durability": 1.0f
 							}
 							tic_stats: {
-								"tconstruct:attack_speed": 1.58125f
+								"tconstruct:attack_speed": 1.8975f
 								"tconstruct:mining_speed": 5.8500004f
-								"tconstruct:attack_damage": 10.867499f
+								"tconstruct:attack_damage": 9.0f
 								"tconstruct:harvest_level": 2.0f
 								"tconstruct:durability": 147.75f
 							}

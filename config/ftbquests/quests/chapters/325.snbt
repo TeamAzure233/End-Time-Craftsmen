@@ -7,25 +7,40 @@
 	icon: "twilightforest:twilight_portal_miniature_structure"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	images: [{
-		x: -5.0d
-		y: -0.5d
-		width: 1.0d
-		height: 1.0d
-		rotation: 0.0d
-		image: "kubejs:textures/quest/start.png"
-		hover: [ ]
-		click: ""
-		dev: false
-		corner: false
-	}]
+	images: [
+		{
+			x: -5.0d
+			y: -0.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/start.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -5.0d
+			y: -3.5d
+			width: 6.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/chapterz2.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
 	quests: [
 		{
-			title: "初入暮色森林"
+			title: "开启暮色之旅"
 			icon: "twilightforest:twilight_portal_miniature_structure"
 			x: -3.5d
 			y: -0.5d
 			shape: "rsquare"
+			subtitle: "初入暮色森林"
 			description: ["我制造出了一个宝石，并将其丢进了一个被花朵围绕的水池之中。随着一道闪电劈下，那水池变成了传送门。我跳了进去，竟进入了一个被永恒之夜笼罩的森林世界。"]
 			dependencies: ["41DE77F7F05DCACB"]
 			hide: true
@@ -142,9 +157,13 @@
 			x: 1.5d
 			y: -0.5d
 			subtitle: "击杀巫妖"
-			description: ["当然也可以是魔法vs魔法（"]
+			description: [
+				"与这个高塔顶端的亡灵法师交手后，你相信了魔法的存在。"
+				""
+				"解锁新线路：魔法线"
+				"完成此任务与第二章「流明锭」后开启研究：植物魔法"
+			]
 			dependencies: ["643E8A8EB06A7C20"]
-			hide_text_until_complete: true
 			id: "024ACCD1348D0183"
 			tasks: [{
 				id: "40A1F4567EEC4901"

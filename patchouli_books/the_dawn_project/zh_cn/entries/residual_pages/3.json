@@ -1,0 +1,12 @@
+{
+    "name": "残留记录卷3",
+    "icon": "minecraft:map",
+    "category": "residual_pages",
+    "advancement": "edtc:pages/page3",
+    "pages": [
+        {
+            "type": "text",
+            "text": "令员似乎也注意到了他们擅自更改实验数据，但是他为什么不阻止？我想不通"
+        }
+    ]
+}

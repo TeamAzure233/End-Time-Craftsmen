@@ -1,0 +1,13 @@
+#556 minecraft:beach
+#3D6 minecraft:cold_ocean
+#109 minecraft:deep_cold_ocean
+#7B1 traverse:meadow
+#5A5 bloodmagic:none
+#4F1 minecraft:ocean
+#5FF minecraft:river
+#72D minecraft:snowy_beach
+#68C biomesoplenty:snowy_coniferous_forest
+#180 traverse:snowy_coniferous_forest
+#4C8 biomesoplenty:snowy_fir_clearing
+#340 minecraft:snowy_taiga
+#2D3 minecraft:snowy_taiga_hills

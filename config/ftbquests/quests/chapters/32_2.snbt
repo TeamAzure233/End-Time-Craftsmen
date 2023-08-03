@@ -3,22 +3,36 @@
 	group: "42669CA32286EFD8"
 	order_index: 4
 	filename: "32_2"
-	title: "支线-4.5 血魔法"
+	title: "支线-5 血魔法"
 	icon: "bloodmagic:altar"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	images: [{
-		x: -11.0d
-		y: -2.5d
-		width: 1.0d
-		height: 1.0d
-		rotation: 0.0d
-		image: "kubejs:textures/quest/start.png"
-		hover: [ ]
-		click: ""
-		dev: false
-		corner: false
-	}]
+	images: [
+		{
+			x: -11.0d
+			y: -2.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/start.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -12.0d
+			y: -5.0d
+			width: 6.0d
+			height: 3.0d
+			rotation: 0.0d
+			image: "kubejs:textures/quest/chapterz5.png"
+			hover: [ ]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
 	quests: [
 		{
 			title: "血魔法之始"
@@ -604,23 +618,6 @@
 						Count: 1b
 						tag: {
 							type: "epic"
-						}
-					}
-				}
-				{
-					id: "02414F2B920AB311"
-					type: "item"
-					item: {
-						id: "haoyuezeughaus:rong_armor_helmet"
-						Count: 1b
-						tag: {
-							Damage: 1076
-							AS_Amulet_Holder: [I;
-								1905826405
-								908017989
-								-1617945607
-								308989581
-							]
 						}
 					}
 				}

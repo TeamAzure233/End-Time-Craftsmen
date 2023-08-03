@@ -1,0 +1,11 @@
+#736 traverse:autumnal_woods
+#229 traverse:coniferous_forest
+#232 biomesoplenty:dead_forest
+#010 minecraft:forest
+#042 minecraft:giant_tree_taiga
+#5FF minecraft:river
+#06A traverse:snowy_cliffs
+#68C biomesoplenty:snowy_coniferous_forest
+#7EA biomesoplenty:snowy_maple_forest
+#169 minecraft:taiga
+#63C minecraft:taiga_hills

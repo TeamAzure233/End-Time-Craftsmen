@@ -11,10 +11,10 @@
     "advancements.edtc.end.description":"该醒了",
 
     "tips.title.tip": "末世广播",
-    "edtc.tip.version": "当前整合包版本V1.1.1",
+    "edtc.tip.version": "当前整合包版本V1.2.0",
     "edtc.tip.nothing": "\n↑这里什么都没有！",
     "edtc.tip.basin_filter": "工作盆的配方过滤器是个好东西（才不是因为懒得改配方才加的这条",
-    "edtc.tip.website": "我们的官网：https://teamazure.rth1.one/#/（已失效",
+    "edtc.tip.website": "《关于我们的官网从1.1.0到1.2.0仍未修复这件事》",
     "edtc.tip.mascot": "你永远不知道我们有多少吉祥物。或许没有吉祥物，亦或是所有人都是吉祥物（",
     "edtc.tip.coding": "《论听音游曲写代码手会不会起飞》",
     "edtc.tip.github": "整合包已在GitHub上开源",
@@ -23,7 +23,7 @@
     "edtc.tip.village": "这是钟？这是村庄？村民呢？我村民呢？",
     "edtc.tip.calendar": "如果背包/饰品栏里有日历，小地图下面会显示目前的季节信息！",
     "edtc.tip.parcool": "跑酷模组添加了一些跑酷的动作，具体动作和键位可以在《§b跑酷指南§r》和按F7进入的键位设置中查阅！",
-    "edtc.tip.story": "热知识：这个整合包是有少量剧情的！可以在《§9曙光计划™ §b记录手册§r》中查看！",
+    "edtc.tip.story": "温知识：这个整合包是有少量剧情的！可以在《§9曙光计划™ §b记录手册§r》中查看！",
     "edtc.tip.questbook": "记得多看任务书",
     "edtc.tip.book": "今天你好好看书了吗.png",
     "edtc.tip.infect": "小心丧尸感染！",
@@ -54,5 +54,8 @@
     "edtc.tip.aw": "阿伟，你又在打电动哦，休息一下吧",
     "edtc.tip.gostudy": "初三/高三党 现在 立刻 马上 去学习！",
     "edtc.tip.nin": "工作室成员现状：您 您 您 （ （ （",
-    "edtc.tip.tools": "原版的工具（剑、锹、锄除外）只能用作合成，并不能使用（当然还是能拿来打怪（小声"
+    "edtc.tip.tools": "原版的工具（剑、锹、锄除外）只能用作合成，并不能使用（当然还是能拿来打怪（小声",
+
+    "block.edtc.neutrin_polymerizer": "中子素聚合器控制器",
+    "tile.edtc.neutrin_polymerizer":"中子素聚合器"
 }

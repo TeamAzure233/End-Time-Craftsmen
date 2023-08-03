@@ -18,7 +18,7 @@
 					tic_stats: {
 						"tconstruct:attack_speed": 1.43f
 						"tconstruct:mining_speed": 5.5935006f
-						"tconstruct:attack_damage": 61.6f
+						"tconstruct:attack_damage": 51.975f
 						"tconstruct:harvest_level": 4.0f
 						"tconstruct:durability": 14394.0f
 					}
@@ -206,7 +206,7 @@
 					tic_stats: {
 						"tconstruct:attack_speed": 1.6125f
 						"tconstruct:mining_speed": 18.898f
-						"tconstruct:attack_damage": 68.7555f
+						"tconstruct:attack_damage": 59.91975f
 						"tconstruct:harvest_level": 4.0f
 						"tconstruct:durability": 11995.2f
 					}

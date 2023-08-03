@@ -2,7 +2,7 @@
   "startingValue" : 0,
   "minValue" : 0,
   "maxValue" : 1000,
-  "changePerSecond" : 0.0,
+  "changePerSecond" : 0.0008,
   "mode" : {
     "type" : "distance_and_time",
     "distance" : {

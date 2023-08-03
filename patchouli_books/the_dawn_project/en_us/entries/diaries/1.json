@@ -1,0 +1,12 @@
+{
+    "name": "Diary 1",
+    "icon": "minecraft:paper",
+    "category": "diaries",
+    "advancement": "edtc:diaries/diary1",
+    "pages": [
+        {
+            "type": "text",
+            "text": ""
+        }
+    ]
+}

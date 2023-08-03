@@ -1,0 +1,13 @@
+#15A biomesoplenty:bayou
+#532 biomesoplenty:bayou_mangrove
+#556 minecraft:beach
+#24C zombie_extreme:dead_sand
+#047 biomesoplenty:deep_bayou
+#34D minecraft:deep_lukewarm_ocean
+#7EA minecraft:deep_warm_ocean
+#4B0 minecraft:jungle
+#7F2 minecraft:jungle_edge
+#79A minecraft:lukewarm_ocean
+#5FF minecraft:river
+#4D3 minecraft:swamp
+#2B7 minecraft:warm_ocean

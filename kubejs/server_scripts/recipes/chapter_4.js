@@ -6,11 +6,244 @@ settings.logSkippedRecipes = false
 settings.logErroringRecipes = true
 
 onEvent('recipes', event => {
+  event.custom(
+        {
+            "type": "astralsorcery:altar",
+            "altar_type": 3,
+            "duration": 180,
+            "starlight": 800,
+            "pattern": [
+              "_____",
+              "_AAA_",
+              "_A_A_",
+              "_AAA_",
+              "_____"
+            ],
+            "key": {
+              "A": {
+                "item": 'astralsorcery:starmetal_ingot'
+              }
+            },
+            "output": [
+              {
+                "item": 'endless:crystal_matrix_ingot',
+                "count": 4
+              }
+            ],
+            "focus_constellation": "astralsorcery:aevitas",
+            "relay_inputs": [
+                {
+                    "item": 'endless:diamond_lattice'
+                },
+                {
+                    "item": 'endless:diamond_lattice'
+                },
+                {
+                    "item": 'endless:diamond_lattice'
+                },
+                {
+                    "item": 'endless:diamond_lattice'
+                },
+                {
+                    "item": 'endless:diamond_lattice'
+                },
+                {
+                    "item": 'endless:diamond_lattice'
+                },
+                {
+                    "item": 'endless:diamond_lattice'
+                },
+                {
+                    "item": 'endless:diamond_lattice'
+                }
+            ],
+            "effects": [
+              "astralsorcery:built_in_effect_constellation_finish",
+              "astralsorcery:built_in_effect_trait_relay_highlight",
+              "astralsorcery:built_in_effect_discovery_central_beam",
+              "astralsorcery:built_in_effect_trait_focus_circle",
+              "astralsorcery:focus_dust_swirl",
+              "astralsorcery:focus_edge",
+              "astralsorcery:altar_focus_sparkle",
+              "astralsorcery:altar_default_sparkle",
+              "astralsorcery:built_in_effect_constellation_lines",
+              "astralsorcery:built_in_effect_attunement_sparkle"
+            ]
+        }
+  )//水晶矩阵锭
+
+  event.smithing('masterfulmachinery:neutrin_polymerizer_gas_port_mekanism_gas_input', 'kubejs:neutrin_polymerizer_casing','mekanism:basic_chemical_tank')
+  event.smithing('masterfulmachinery:neutrin_polymerizer_rotation_port_create_rotation_input', 'kubejs:neutrin_polymerizer_casing','create:shaft')
+  event.smithing('masterfulmachinery:neutrin_polymerizer_energy_port_energy_input', 'kubejs:neutrin_polymerizer_casing','mekanism:ultimate_energy_cube')
+  event.smithing('masterfulmachinery:neutrin_polymerizer_item_port_items_input', 'kubejs:neutrin_polymerizer_casing','#forge:chests')
+  event.smithing('masterfulmachinery:neutrin_polymerizer_controller', 'kubejs:neutrin_polymerizer_casing','mekanism:ultimate_control_circuit')
+  let result = ['gas_port_mekanism_gas', 'rotation_port_create_rotation', 'energy_port_energy', 'item_port_items']
+  let mmnp = 'masterfulmachinery:neutrin_polymerizer_'
+  for (let i of result) {
+      event.shapeless(`${mmnp}${i}_output`, [`${mmnp}${i}_input`])
+  }//中子素聚合器端口
+
+  event.custom(
+        {
+          "type": "masterfulmachinery:machine_process",
+          "structureId": "neutrin_polymerizer",
+          "controllerId": "neutrin_polymerizer",
+          "ticks": 100,
+          "inputs": [
+              {
+                "type": "masterfulmachinery:mekanism_gas",
+                "perTick": false,
+                "consumeInstantly": false,
+                "data":{
+                    "gas": 'mekanism:antimatter',
+                    "amount": 1
+                }
+              },
+              {
+                "type": "masterfulmachinery:energy",
+                "perTick": true,
+                "consumeInstantly": false,
+                "data":{
+                    "amount": 5000000
+                }
+              },
+              {
+                "type": "masterfulmachinery:create_rotation",
+                "data":{
+                    "speed": 256
+                }
+              }
+          ],
+          "outputs":[
+              {
+                  "type": "masterfulmachinery:items",
+                  "data":{
+                      "item": 'endless:neutronium_pile',
+                      "count": 1
+                  }
+              }
+          ]
+      }
+    )//中子素
+
+    event.custom(
+        {
+            "type": "astralsorcery:altar",
+            "altar_type": 3,
+            "duration": 180,
+            "starlight": 800,
+            "pattern": [
+              "CAAAC",
+              "ABBBA",
+              "ABDBA",
+              "ABBBA",
+              "CAAAC"
+            ],
+            "key": {
+              "A": {
+                "item": "projecte:aeternalis_fuel_block"
+              },
+              "B": {
+                "item": "mekanism:pellet_antimatter"
+              },
+              "C": {
+                "item": "endless:diamond_lattice"
+              },
+              "D": {
+                "item": "endless:neutronium_ingot"
+              },
+            },
+            "output": [
+              {
+                "item": "projecte:dark_matter",
+                "count": 8
+              }
+            ],
+            "focus_constellation": "astralsorcery:evorsio",
+            "relay_inputs": [],
+            "effects": [
+              "astralsorcery:built_in_effect_constellation_finish",
+              "astralsorcery:built_in_effect_trait_relay_highlight",
+              "astralsorcery:built_in_effect_discovery_central_beam",
+              "astralsorcery:built_in_effect_trait_focus_circle",
+              "astralsorcery:focus_dust_swirl",
+              "astralsorcery:focus_edge",
+              "astralsorcery:altar_focus_sparkle",
+              "astralsorcery:altar_default_sparkle",
+              "astralsorcery:built_in_effect_constellation_lines",
+              "astralsorcery:built_in_effect_attunement_sparkle"
+            ]
+        }
+    )//暗物质
+    event.custom(
+        {
+            "type": "astralsorcery:altar",
+            "altar_type": 3,
+            "duration": 180,
+            "starlight": 800,
+            "pattern": [
+              "CAAAC",
+              "ABBBA",
+              "ABDBA",
+              "ABBBA",
+              "CAAAC"
+            ],
+            "key": {
+              "A": {
+                "item": "projecte:aeternalis_fuel_block"
+              },
+              "B": {
+                "item": "projecte:dark_matter"
+              },
+              "C": {
+                "item": "endless:crystal_matrix_ingot"
+              },
+              "D": {
+                "item": "endless:neutronium_block"
+              },
+            },
+            "output": [
+              {
+                "item": "projecte:red_matter",
+                "count": 8
+              }
+            ],
+            "focus_constellation": "astralsorcery:discidia",
+            "relay_inputs": [],
+            "effects": [
+              "astralsorcery:built_in_effect_constellation_finish",
+              "astralsorcery:built_in_effect_trait_relay_highlight",
+              "astralsorcery:built_in_effect_discovery_central_beam",
+              "astralsorcery:built_in_effect_trait_focus_circle",
+              "astralsorcery:focus_dust_swirl",
+              "astralsorcery:focus_edge",
+              "astralsorcery:altar_focus_sparkle",
+              "astralsorcery:altar_default_sparkle",
+              "astralsorcery:built_in_effect_constellation_lines",
+              "astralsorcery:built_in_effect_attunement_sparkle"
+            ]
+        }
+    )//红物质
+
+    event.smithing('masterfulmachinery:infinite_convergent_altar_gas_port_mekanism_gas_input', 'kubejs:infinite_convergent_altar_base','mekanism:basic_chemical_tank')
+    event.smithing('masterfulmachinery:infinite_convergent_altar_rotation_port_create_rotation_input', 'kubejs:infinite_convergent_altar_base','create:shaft')
+    event.smithing('masterfulmachinery:infinite_convergent_altar_energy_port_energy_input', 'kubejs:infinite_convergent_altar_base','mekanism:ultimate_energy_cube')
+    event.smithing('masterfulmachinery:infinite_convergent_altar_item_port_items_input', 'kubejs:infinite_convergent_altar_base','#forge:chests')
+    event.smithing('masterfulmachinery:infinite_convergent_altar_controller', 'kubejs:infinite_convergent_altar_base','mekanism:ultimate_control_circuit')
+    event.smithing('masterfulmachinery:infinite_convergent_altar_fluid_port_fluids_input', 'kubejs:infinite_convergent_altar_base','mekanism:basic_fluid_tank')
+    event.smithing('masterfulmachinery:infinite_convergent_altar_star_port_astral_starlight_input', 'kubejs:infinite_convergent_altar_base','astralsorcery:aquamarine')
+    event.smithing('masterfulmachinery:infinite_convergent_altar_mana_port_botania_mana_input', 'kubejs:infinite_convergent_altar_base','botania:diluted_pool')
+    let result2 = ['gas_port_mekanism_gas', 'rotation_port_create_rotation', 'energy_port_energy', 'item_port_items', 'fluid_port_fluids', 'star_port_astral_starlight', 'mana_port_botania_mana']
+    let mmica = 'masterfulmachinery:infinite_convergent_altar_'
+    for (let i of result2) {
+        event.shapeless(`${mmica}${i}_output`, [`${mmica}${i}_input`])
+    }//无尽聚合祭坛端口
+
     event.custom(
       {
         "type": "masterfulmachinery:machine_process",
         "structureId": "infinite_convergent_altar",
-        "controllerId": "multiblock",
+        "controllerId": "infinite_convergent_altar",
         "ticks": 300,
         "inputs": [
             {
@@ -36,7 +269,7 @@ onEvent('recipes', event => {
               "perTick": true,
               "consumeInstantly": false,
               "data":{
-                  "amount": 300
+                  "amount": 6000000
               }
             },
             {
@@ -57,6 +290,22 @@ onEvent('recipes', event => {
               "perTick": true,
               "data":{
                   "amount": 300
+              }
+            },
+            {
+              "type": "masterfulmachinery:fluids",
+              "perTick": true,
+              "data":{
+                  "fluid": "bloodmagic:life_essence_fluid",
+                  "amount": 10
+              }
+            },
+            {
+              "type": "masterfulmachinery:mekanism_gas",
+              "perTick": true,
+              "data":{
+                  "gas": "mekanism:antimatter",
+                  "amount": 1
               }
             }
         ],
@@ -160,7 +409,7 @@ onEvent('recipes', event => {
             ]
         }
     )
-    event.recipes.bloodmagic.altar('projecte:philosophers_stone', 'kubejs:item_value_conversion_core').upgradeLevel(3).altarSyphon(10000).consumptionRate(20).drainRate(10)
+    event.recipes.bloodmagic.altar('projecte:philosophers_stone', 'kubejs:item_value_conversion_core').upgradeLevel(4).altarSyphon(25000).consumptionRate(20).drainRate(10)
 
     event.custom(
         {
@@ -576,6 +825,285 @@ onEvent('recipes', event => {
         }
     )
 
+    event.custom(
+        {
+          "type": "masterfulmachinery:machine_process",
+          "structureId": "infinite_convergent_altar",
+          "controllerId": "infinite_convergent_altar",
+          "ticks": 300,
+          "inputs": [
+              {
+                "type": "masterfulmachinery:items",
+                "perTick": false,
+                "consumeInstantly": false,
+                "data":{
+                    "item": 'endless:cosmic_meatballs',
+                    "count": 1
+                }
+              },
+              {
+                "type": "masterfulmachinery:items",
+                "perTick": false,
+                "consumeInstantly": false,
+                "data":{
+                    "item": 'endless:ultimate_stew',
+                    "count": 1
+                }
+              },
+              {
+                "type": "masterfulmachinery:items",
+                "perTick": false,
+                "consumeInstantly": false,
+                "data":{
+                    "item": 'endless:endest_pearl',
+                    "count": 1
+                }
+              },
+              {
+                "type": "masterfulmachinery:items",
+                "perTick": false,
+                "consumeInstantly": false,
+                "data":{
+                    "item": 'endless:neutronium_gear',
+                    "count": 1
+                }
+              },
+              {
+                "type": "masterfulmachinery:items",
+                "perTick": false,
+                "consumeInstantly": false,
+                "data":{
+                    "item": 'endless:record_fragment',
+                    "count": 1
+                }
+              },
+              {
+                "type": "masterfulmachinery:items",
+                "perTick": false,
+                "consumeInstantly": false,
+                "data":{
+                    "item": 'appliedenergistics2:singularity',
+                    "count": 1
+                }
+              },
+              {
+                "type": "masterfulmachinery:items",
+                "perTick": false,
+                "consumeInstantly": false,
+                "data":{
+                    "item": 'scalinghealth:power_crystal',
+                    "count": 1
+                }
+              },
+              {
+                "type": "masterfulmachinery:items",
+                "perTick": false,
+                "consumeInstantly": false,
+                "data":{
+                    "item": 'scalinghealth:heart_crystal',
+                    "count": 1
+                }
+              },
+              {
+                "type": "masterfulmachinery:items",
+                "perTick": false,
+                "consumeInstantly": false,
+                "data":{
+                    "item": 'miniutilities:the_final_opinium_core',
+                    "count": 1
+                }
+              },
+              {
+                "type": "masterfulmachinery:items",
+                "perTick": false,
+                "consumeInstantly": false,
+                "data":{
+                    "item": 'projecte:red_matter',
+                    "count": 1
+                }
+              },
+              {
+                "type": "masterfulmachinery:items",
+                "perTick": false,
+                "consumeInstantly": false,
+                "data":{
+                    "item": 'bloodmagic:etherealslate',
+                    "count": 1
+                }
+              },
+              {
+                "type": "masterfulmachinery:items",
+                "perTick": false,
+                "consumeInstantly": false,
+                "data":{
+                    "tag": 'twilightforest:trophies',
+                    "count": 1
+                }
+              },
+              {
+                "type": "masterfulmachinery:items",
+                "perTick": false,
+                "consumeInstantly": false,
+                "data":{
+                    "item": 'kubejs:data',
+                    "count": 1
+                }
+              },
+              {
+                "type": "masterfulmachinery:energy",
+                "perTick": true,
+                "consumeInstantly": false,
+                "data":{
+                    "amount": 6000000
+                }
+              },
+              {
+                "type": "masterfulmachinery:create_rotation",
+                "data":{
+                    "speed": 256
+                }
+              },
+              {
+                "type": "masterfulmachinery:astral_starlight",
+                "perTick": true,
+                "data":{
+                    "amount": 10
+                }
+              },
+              {
+                "type": "masterfulmachinery:botania_mana",
+                "perTick": true,
+                "data":{
+                    "amount": 10
+                }
+              },
+              {
+                "type": "masterfulmachinery:fluids",
+                "perTick": true,
+                "data":{
+                    "fluid": "bloodmagic:life_essence_fluid",
+                    "amount": 10
+                }
+              },
+              {
+                "type": "masterfulmachinery:mekanism_gas",
+                "perTick": true,
+                "data":{
+                    "gas": "mekanism:antimatter",
+                    "amount": 1
+                }
+              }
+          ],
+          "outputs":[
+              {
+                  "type": "masterfulmachinery:items",
+                  "data":{
+                      "item": 'endless:infinity_catalyst',
+                      "count": 1
+                  }
+              }
+          ]
+      }
+    )//无尽催化剂
+    event.custom(
+        {
+          "type": "masterfulmachinery:machine_process",
+          "structureId": "infinite_convergent_altar",
+          "controllerId": "infinite_convergent_altar",
+          "ticks": 300,
+          "inputs": [
+              {
+                "type": "masterfulmachinery:items",
+                "perTick": false,
+                "consumeInstantly": false,
+                "data":{
+                    "item": 'endless:infinity_catalyst',
+                    "count": 9
+                }
+              },
+              {
+                "type": "masterfulmachinery:items",
+                "perTick": false,
+                "consumeInstantly": false,
+                "data":{
+                    "item": 'endless:neutronium_ingot',
+                    "count": 18
+                }
+              },
+              {
+                "type": "masterfulmachinery:items",
+                "perTick": false,
+                "consumeInstantly": false,
+                "data":{
+                    "item": 'endless:crystal_matrix_ingot',
+                    "count": 18
+                }
+              },
+              {
+                "type": "masterfulmachinery:items",
+                "perTick": false,
+                "consumeInstantly": false,
+                "data":{
+                    "item": 'kubejs:antimatter_alloy',
+                    "count": 9
+                }
+              },
+              {
+                "type": "masterfulmachinery:energy",
+                "perTick": true,
+                "consumeInstantly": false,
+                "data":{
+                    "amount": 6000000
+                }
+              },
+              {
+                "type": "masterfulmachinery:create_rotation",
+                "data":{
+                    "speed": 256
+                }
+              },
+              {
+                "type": "masterfulmachinery:astral_starlight",
+                "perTick": true,
+                "data":{
+                    "amount": 10
+                }
+              },
+              {
+                "type": "masterfulmachinery:botania_mana",
+                "perTick": true,
+                "data":{
+                    "amount": 60
+                }
+              },
+              {
+                "type": "masterfulmachinery:fluids",
+                "perTick": true,
+                "data":{
+                    "fluid": "bloodmagic:life_essence_fluid",
+                    "amount": 50
+                }
+              },
+              {
+                "type": "masterfulmachinery:mekanism_gas",
+                "perTick": true,
+                "data":{
+                    "gas": "mekanism:antimatter",
+                    "amount": 1
+                }
+              }
+          ],
+          "outputs":[
+              {
+                  "type": "masterfulmachinery:items",
+                  "data":{
+                      "item": 'endless:infinity_ingot',
+                      "count": 1
+                  }
+              }
+          ]
+      }
+    )//无尽锭
     event.custom(
         {
             "type": "endless:extreme_craft",

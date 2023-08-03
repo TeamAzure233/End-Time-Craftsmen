@@ -1,0 +1,6 @@
+#3DE minecraft:deep_ocean
+#379 minecraft:mountains
+#4F1 minecraft:ocean
+#5FF minecraft:river
+#406 minecraft:stone_shore
+#306 minecraft:wooded_mountains

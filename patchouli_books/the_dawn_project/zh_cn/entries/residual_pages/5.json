@@ -1,0 +1,12 @@
+{
+    "name": "残留记录卷5",
+    "icon": "minecraft:map",
+    "category": "residual_pages",
+    "advancement": "edtc:pages/page5",
+    "pages": [
+        {
+            "type": "text",
+            "text": "该死，我身边的人都被买通了，差一点死在了白弟手上。幸好他还念及我们几十年的交情，我才得以出逃。"
+        }
+    ]
+}
