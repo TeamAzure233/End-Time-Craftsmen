@@ -219,12 +219,13 @@
 				tag: {
 					tic_multipliers: {
 						"tconstruct:mining_speed": 0.5f
+						"tconstruct:attack_damage": 1.05f
 						"tconstruct:durability": 1.1f
 					}
 					tic_stats: {
 						"tconstruct:attack_speed": 1.6f
 						"tconstruct:mining_speed": 3.3000002f
-						"tconstruct:attack_damage": 11.575f
+						"tconstruct:attack_damage": 12.153749f
 						"tconstruct:harvest_level": 2.0f
 						"tconstruct:durability": 438.625f
 					}
@@ -252,7 +253,7 @@
 					}
 				}
 			}
-			x: 13.5d
+			x: 14.0d
 			y: 1.5d
 			subtitle: "在这样一个世界中，没有一把趁手的武器是很难生存下去的"
 			dependencies: [
@@ -363,7 +364,7 @@
 		}
 		{
 			title: "钻石！"
-			x: 16.0d
+			x: 16.5d
 			y: 1.5d
 			subtitle: "挖到一颗钻石"
 			dependencies: ["193456CF7A20DDA1"]
@@ -389,7 +390,7 @@
 		}
 		{
 			title: "下界的敲门砖"
-			x: 18.0d
+			x: 18.5d
 			y: 1.5d
 			shape: "gear"
 			subtitle: "获得一块黑曜石"
@@ -918,13 +919,15 @@
 					}
 				}
 			}
-			x: 14.5d
+			x: 15.0d
 			y: 1.5d
+			shape: "pentagon"
 			subtitle: "制造一把铁镐"
 			dependencies: [
 				"7B968E0F6EEB5A0B"
 				"340DB86103FBA68D"
 			]
+			size: 1.25d
 			id: "193456CF7A20DDA1"
 			tasks: [{
 				id: "6C1D9C5728C71426"
@@ -989,9 +992,11 @@
 		{
 			x: 12.0d
 			y: -2.5d
+			shape: "gear"
 			subtitle: "调动机械的开始"
 			description: ["完成后开启研究：机械之初"]
 			dependencies: ["3E458E3C59605FC9"]
+			size: 1.25d
 			id: "1FECF4A4BFD9B7B5"
 			tasks: [{
 				id: "036C05DE9D550D5A"
@@ -1048,7 +1053,7 @@
 		}
 		{
 			title: "强化你的铁镐"
-			x: 18.0d
+			x: 18.5d
 			y: 3.0d
 			subtitle: "用钻石强化铁镐就可以挖黑曜石了"
 			dependencies: ["4BB767FDB83CA1E8"]
@@ -1436,7 +1441,7 @@
 			}]
 		}
 		{
-			x: 18.0d
+			x: 18.5d
 			y: 0.0d
 			shape: "gear"
 			subtitle: "手持右键获得游戏阶段“mysterious_asylum”"
@@ -1872,6 +1877,7 @@
 			description: ["我已经能制作比较高级的机器了，不过这些似乎还不是最高级的？让我想想，我似乎能用水来驱动机器的工作？"]
 			dependencies: ["4D2B7428680B2A8D"]
 			hide: true
+			hide_text_until_complete: true
 			size: 2.0d
 			id: "148C97D45C2F986D"
 			tasks: [{
@@ -2021,6 +2027,11 @@
 							type: "rare"
 						}
 					}
+				}
+				{
+					id: "6CA117A07F1894DB"
+					type: "item"
+					item: "miniutilities:flame_lily_seeds"
 				}
 			]
 		}
@@ -2408,6 +2419,7 @@
 			y: 7.0d
 			shape: "gear"
 			subtitle: "制作动力泵"
+			description: ["这玩意可能不太好用，但你目前只能用这个了（"]
 			dependencies: [
 				"102855107CE4D4F6"
 				"5F4274E3223E5EA0"
@@ -3121,6 +3133,7 @@
 				"513F8CEDF4A8B4C5"
 				"0411F0A525559C72"
 			]
+			hide: true
 			id: "06E5356D57628B9A"
 			tasks: [
 				{
@@ -3721,7 +3734,7 @@
 		}
 		{
 			title: "下界！"
-			x: 22.5d
+			x: 22.0d
 			y: 1.5d
 			shape: "diamond"
 			subtitle: "制造一个传送门去下界吧"
@@ -3765,7 +3778,7 @@
 			]
 		}
 		{
-			x: 21.5d
+			x: 21.0d
 			y: -0.5d
 			shape: "rsquare"
 			dependencies: ["76B41B1F8531D5BE"]
@@ -3802,7 +3815,7 @@
 			]
 		}
 		{
-			x: 23.5d
+			x: 23.0d
 			y: -0.5d
 			shape: "rsquare"
 			dependencies: ["76B41B1F8531D5BE"]

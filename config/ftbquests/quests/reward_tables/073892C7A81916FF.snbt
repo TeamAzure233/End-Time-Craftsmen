@@ -253,6 +253,7 @@
 			type: "xp"
 			weight: 3
 		}
+		{ item: "miniutilities:flame_lily_seeds", count: 2 }
 	]
 	loot_crate: {
 		drops: {

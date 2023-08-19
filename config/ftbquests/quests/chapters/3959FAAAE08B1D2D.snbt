@@ -46,31 +46,6 @@
 			}]
 		}
 		{
-			title: "顶级背包！"
-			x: -11.5d
-			y: 0.0d
-			subtitle: "制作下界合金背包"
-			hide_dependency_lines: false
-			dependencies: ["671413FBF8789100"]
-			id: "717B378A7C1A311E"
-			tasks: [{
-				id: "3F3AE56479D1D59F"
-				type: "item"
-				item: "sophisticatedbackpacks:netherite_backpack"
-			}]
-			rewards: [{
-				id: "5CBAB9FD290C018F"
-				type: "item"
-				item: {
-					id: "ftbquests:lootcrate"
-					Count: 1b
-					tag: {
-						type: "epic"
-					}
-				}
-			}]
-		}
-		{
 			title: "升级背包"
 			x: -9.5d
 			y: -1.5d
@@ -1097,6 +1072,20 @@
 						type: "basic"
 					}
 				}
+			}]
+		}
+		{
+			x: -11.5d
+			y: 0.0d
+			subtitle: "可以在墙上画红石线"
+			hide_dependency_lines: true
+			dependencies: ["0D725709CCFE27F6"]
+			hide: true
+			id: "39F75A8DFF01F52E"
+			tasks: [{
+				id: "0ACB3A42BF8E9814"
+				type: "item"
+				item: "redstonepen:quill"
 			}]
 		}
 	]

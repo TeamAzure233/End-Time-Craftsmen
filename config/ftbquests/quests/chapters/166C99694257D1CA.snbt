@@ -83,6 +83,7 @@
 					id: "54592CF737C8EDB9"
 					type: "custom"
 					title: "完成研究"
+					auto: "enabled"
 				}
 				{
 					id: "0A1422D2833883C8"
@@ -125,6 +126,7 @@
 					id: "3EE53AB5BE072617"
 					type: "custom"
 					title: "完成研究"
+					auto: "enabled"
 				}
 				{
 					id: "5BB7EBBA0227494D"
@@ -161,6 +163,7 @@
 					id: "6644D4FC7F03C96A"
 					type: "custom"
 					title: "完成研究"
+					auto: "enabled"
 				}
 				{
 					id: "75455978305B2CC1"
@@ -250,6 +253,7 @@
 					id: "1E94E1F96F16EC80"
 					type: "custom"
 					title: "完成研究"
+					auto: "enabled"
 				}
 				{
 					id: "17D5D4A7F122D550"
@@ -300,6 +304,7 @@
 					id: "30DBDDC0F5FB5FC0"
 					type: "custom"
 					title: "完成研究"
+					auto: "enabled"
 				}
 				{
 					id: "03B052544559B707"
@@ -350,6 +355,7 @@
 					id: "1D5D8165BBA7C571"
 					type: "custom"
 					title: "完成研究"
+					auto: "enabled"
 				}
 				{
 					id: "3CD59DF3ABB2ED5C"
@@ -400,6 +406,7 @@
 					id: "5B15E04A208A0785"
 					type: "custom"
 					title: "完成研究"
+					auto: "enabled"
 				}
 				{
 					id: "491452020F75D441"
@@ -451,6 +458,7 @@
 					id: "50B68496D1A6632B"
 					type: "custom"
 					title: "完成研究"
+					auto: "enabled"
 				}
 				{
 					id: "7566641B2BEDA11E"
@@ -501,6 +509,7 @@
 					id: "7F706E1EED3CE67C"
 					type: "custom"
 					title: "完成研究"
+					auto: "enabled"
 				}
 				{
 					id: "1122011E42EB388D"
@@ -551,6 +560,7 @@
 					id: "3338004A87E298CC"
 					type: "custom"
 					title: "完成研究"
+					auto: "enabled"
 				}
 				{
 					id: "511B7575CF3DAD92"
@@ -603,6 +613,7 @@
 					id: "696DF930A158EC44"
 					type: "custom"
 					title: "完成研究"
+					auto: "enabled"
 				}
 				{
 					id: "4F49135C0A5699CC"
@@ -653,6 +664,7 @@
 					id: "27EFC6276338B608"
 					type: "custom"
 					title: "完成研究"
+					auto: "enabled"
 				}
 				{
 					id: "3F686016F826A613"
@@ -667,6 +679,7 @@
 			dependencies: [
 				"10A9E9394A3ECBC4"
 				"0E67486615073974"
+				"3B4BE96974D51287"
 			]
 			id: "75FC99F5CF45A6E9"
 			tasks: [{
@@ -688,7 +701,7 @@
 					id: "089A544847A81BFA"
 					type: "questsadditions:time"
 					title: "研究剩余时间"
-					elapsedTime: 1800L
+					elapsedTime: 900L
 				}
 				{
 					id: "5B95A8FB04401FF6"
@@ -703,6 +716,7 @@
 					id: "7B7F335A9EA1D772"
 					type: "custom"
 					title: "完成研究"
+					auto: "enabled"
 				}
 				{
 					id: "051A88C76F7E8832"
@@ -753,6 +767,7 @@
 					id: "08CB055795081BF6"
 					type: "custom"
 					title: "完成研究"
+					auto: "enabled"
 				}
 				{
 					id: "78E2BC0CB37F5E8F"
@@ -790,7 +805,6 @@
 			y: -0.5d
 			subtitle: "完成此研究后开启第三章魔法线植物魔法部分"
 			dependencies: ["6803C8199FD12AEA"]
-			hide: true
 			id: "42B4FB7CA47F0EAE"
 			tasks: [
 				{
@@ -832,6 +846,7 @@
 					id: "780DFB7C282AB16E"
 					type: "custom"
 					title: "完成研究"
+					auto: "enabled"
 				}
 				{
 					id: "0CC2B8B1E2C8390A"

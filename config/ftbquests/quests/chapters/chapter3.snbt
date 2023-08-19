@@ -347,19 +347,6 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: -2.0d
-			dependencies: ["2A28B539AC1FB263"]
-			hide: true
-			optional: true
-			id: "1E9769D455052B2E"
-			tasks: [{
-				id: "0715CC377818A194"
-				type: "item"
-				item: "immersiveengineering:cloche"
-			}]
-		}
-		{
 			title: "沉浸工程的流体系统"
 			x: -1.0d
 			y: 0.0d
@@ -462,6 +449,7 @@
 			x: 9.5d
 			y: 1.5d
 			dependencies: ["41D21F87FCF09692"]
+			hide: true
 			id: "09007F17318052F9"
 			tasks: [{
 				id: "5DA08B7323930DA8"
@@ -476,6 +464,7 @@
 			y: 1.5d
 			shape: "rsquare"
 			dependencies: ["2A28B539AC1FB263"]
+			hide: true
 			id: "3DAC97A9AA2838F5"
 			tasks: [
 				{
@@ -522,6 +511,7 @@
 			y: 1.5d
 			shape: "rsquare"
 			dependencies: ["4F99104566F2AAC6"]
+			hide: true
 			id: "6298F314DBA1B7CE"
 			tasks: [
 				{
@@ -561,6 +551,7 @@
 			x: 4.5d
 			y: 1.5d
 			dependencies: ["6298F314DBA1B7CE"]
+			hide: true
 			id: "561374E09F66B093"
 			tasks: [{
 				id: "29BABECAFB3B975F"
@@ -656,6 +647,7 @@
 			y: 1.5d
 			shape: "rsquare"
 			dependencies: ["561374E09F66B093"]
+			hide: true
 			id: "7C48F27695400664"
 			tasks: [
 				{
@@ -703,6 +695,7 @@
 			shape: "rsquare"
 			subtitle: "造生物柴油不一定要用这个东西，但造石墨会用"
 			dependencies: ["3DAC97A9AA2838F5"]
+			hide: true
 			id: "4F99104566F2AAC6"
 			tasks: [
 				{
@@ -751,6 +744,7 @@
 			x: 1.5d
 			y: 3.0d
 			dependencies: ["4F99104566F2AAC6"]
+			hide: true
 			id: "1A350D9BC4FE2080"
 			tasks: [{
 				id: "616A5E620AEBD5E0"
@@ -762,6 +756,7 @@
 			x: 7.75d
 			y: 3.0d
 			dependencies: ["1A350D9BC4FE2080"]
+			hide: true
 			id: "1361153DA043E8AC"
 			tasks: [{
 				id: "2D0FA77671F53490"
@@ -925,9 +920,8 @@
 		}
 		{
 			title: "矿物勘测"
-			x: -2.5d
-			y: -3.0d
-			description: ["这里是支线，不必完成~"]
+			x: -2.0d
+			y: -2.0d
 			dependencies: ["2A28B539AC1FB263"]
 			hide: true
 			optional: true
@@ -1185,6 +1179,7 @@
 			x: 11.0d
 			y: 3.0d
 			dependencies: ["1361153DA043E8AC"]
+			hide: true
 			id: "231BAE646E1AFB97"
 			tasks: [{
 				id: "20E2D1FD94E1A13D"
@@ -1245,11 +1240,6 @@
 						}
 					}
 				}
-				{
-					id: "12277AF571BDA5E5"
-					type: "random"
-					table_id: 1564736420538994362L
-				}
 			]
 		}
 		{
@@ -1289,6 +1279,7 @@
 			x: 13.0d
 			y: 1.5d
 			dependencies: ["357374024B065F9A"]
+			hide: true
 			id: "5C7A7264D50FAA5E"
 			tasks: [{
 				id: "7C01FB243C6DE96B"
@@ -1843,6 +1834,7 @@
 			shape: "rsquare"
 			subtitle: "高温加热"
 			dependencies: ["2A644DBA8FE9C709"]
+			hide: true
 			id: "7D8A78E465D17E68"
 			tasks: [{
 				id: "070068ACE610C293"
@@ -1865,6 +1857,7 @@
 			x: 20.0d
 			y: 3.0d
 			dependencies: ["2A644DBA8FE9C709"]
+			hide: true
 			id: "6FDC3AE41D933121"
 			tasks: [{
 				id: "75F78C713559E9A8"
@@ -1936,6 +1929,7 @@
 			shape: "rsquare"
 			subtitle: "通过原子重组技术制造物品的精密仪器"
 			dependencies: ["6E9A9001E470EE7E"]
+			hide: true
 			id: "63B0B0F7CE7FCD75"
 			tasks: [
 				{
@@ -1964,7 +1958,11 @@
 		{
 			x: 31.0d
 			y: -4.0d
-			description: ["夹带私货（阿卡伊"]
+			description: [
+				"夹带私货（"
+				"616大量错封事件后留：616sb"
+				"（不过arc确实是个好游戏，就是运营逆天）"
+			]
 			dependencies: ["020C911C31CD3D93"]
 			id: "6F11C407C226FBDF"
 			tasks: [{
@@ -2067,11 +2065,6 @@
 						}
 					}
 				}
-				{
-					id: "7B886E832AD90029"
-					type: "random"
-					table_id: 1564736420538994362L
-				}
 			]
 		}
 		{
@@ -2079,11 +2072,7 @@
 			y: -2.0d
 			shape: "rsquare"
 			subtitle: "一种奇妙的化合物"
-			dependencies: [
-				"1D4B85787D268FCE"
-				"48DBEDCF84B434D8"
-				"5D1BA2AF09C9B421"
-			]
+			dependencies: ["1D4B85787D268FCE"]
 			hide: true
 			size: 1.15d
 			id: "21C016460E092370"
@@ -2199,11 +2188,6 @@
 						}
 					}
 				}
-				{
-					id: "3391D9C0338B2B15"
-					type: "random"
-					table_id: 1564736420538994362L
-				}
 			]
 		}
 		{
@@ -2277,6 +2261,7 @@
 			y: -4.0d
 			subtitle: "找到要塞"
 			dependencies: ["52E472A087063798"]
+			hide: true
 			min_required_tasks: 1
 			id: "5A0B9DEC3B7500CA"
 			tasks: [{
@@ -2350,6 +2335,7 @@
 				"Tip：柱子里面可能也有水晶"
 			]
 			dependencies: ["1BBB6B5CDAF81124"]
+			hide: true
 			size: 2.0d
 			min_required_tasks: 1
 			id: "671183FA9E622763"
@@ -2402,6 +2388,7 @@
 			y: -7.5d
 			subtitle: "获得龙蛋（注意别让它掉传送门里了"
 			dependencies: ["671183FA9E622763"]
+			hide: true
 			min_required_tasks: 1
 			id: "50FFE862CD4DF91C"
 			tasks: [{
@@ -2677,6 +2664,7 @@
 			x: 29.5d
 			y: -6.0d
 			dependencies: ["671183FA9E622763"]
+			hide: true
 			id: "020C911C31CD3D93"
 			tasks: [{
 				id: "4EDE1D7C3EBCE806"
@@ -2713,12 +2701,33 @@
 			shape: "rsquare"
 			subtitle: "手持右键获得游戏阶段“ender_link”"
 			dependencies: ["42BD2E975E511027"]
+			hide: true
 			id: "2953F2FE470AA573"
 			tasks: [{
 				id: "527915EC929C0281"
 				type: "item"
 				item: {
 					id: "kubejs:ender_link"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "捏~捏~捏~捏~捏~"
+			x: -2.5d
+			y: -3.0d
+			subtitle: "这玩意其实是控制电路通断的"
+			description: ["这玩意太生草了我必须给他写进任务里（"]
+			dependencies: ["2A28B539AC1FB263"]
+			hide: true
+			optional: true
+			id: "4AC34894A833FFEB"
+			tasks: [{
+				id: "587F2A093F51C50F"
+				type: "item"
+				item: {
+					id: "immersiveengineering:breaker_switch"
 					Count: 1b
 					tag: { }
 				}

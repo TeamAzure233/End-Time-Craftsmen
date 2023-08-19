@@ -6,6 +6,8 @@ settings.logSkippedRecipes = false
 settings.logErroringRecipes = true
 
 onEvent('recipes', event => {
+    event.replaceInput({id: 'mekanism:metallurgic_infuser'}, 'minecraft:iron_ingot', 'create:shadow_steel')
+
     event.custom(
         {
             "type":"mekanism:metallurgic_infusing",

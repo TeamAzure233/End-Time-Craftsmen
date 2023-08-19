@@ -159,6 +159,7 @@
 				"42E052EFEE02D9ED"
 				"532034C7F03CFC0B"
 			]
+			hide: true
 			id: "73F657C733C16F95"
 			tasks: [{
 				id: "4B8E675B2B04FCCC"
@@ -170,6 +171,7 @@
 			x: -10.0d
 			y: 2.0d
 			dependencies: ["42E052EFEE02D9ED"]
+			hide: true
 			id: "6A156C1161F25603"
 			tasks: [{
 				id: "77E001783865A0E9"
@@ -213,9 +215,10 @@
 			}]
 		}
 		{
-			x: -8.0d
-			y: -3.0d
-			dependencies: ["10CE06C2043EF9C1"]
+			x: -4.0d
+			y: 2.0d
+			dependencies: ["7A04C985B80826E3"]
+			hide: true
 			id: "404625C11A4A7F74"
 			tasks: [{
 				id: "010536AE069B847C"
@@ -283,6 +286,7 @@
 			x: -7.0d
 			y: 0.0d
 			dependencies: ["532034C7F03CFC0B"]
+			hide: true
 			id: "216DA5BCD4647473"
 			tasks: [{
 				id: "20506608265A6815"
@@ -352,6 +356,7 @@
 			x: -3.0d
 			y: -1.0d
 			dependencies: ["10CE06C2043EF9C1"]
+			hide: true
 			id: "64ABC01BB343A80D"
 			tasks: [{
 				id: "6040048B882F6921"
@@ -402,6 +407,7 @@
 			x: -5.5d
 			y: -3.0d
 			dependencies: ["10CE06C2043EF9C1"]
+			hide: true
 			optional: true
 			id: "63FB193653C256D1"
 			tasks: [{
@@ -487,7 +493,7 @@
 			x: -3.0d
 			y: -3.0d
 			dependencies: ["10CE06C2043EF9C1"]
-			hide: false
+			hide: true
 			id: "70D903A8198A28EC"
 			tasks: [{
 				id: "7F53597226EA51EC"
@@ -502,6 +508,7 @@
 		{
 			x: -1.0d
 			y: -3.0d
+			shape: "rsquare"
 			subtitle: "饼？能吃吗？来尝一口？（"
 			description: ["完成此任务和「化学溶解室」后开启研究：原子时代"]
 			dependencies: ["70D903A8198A28EC"]
@@ -555,7 +562,6 @@
 			hide_dependency_lines: true
 			dependencies: ["10CE06C2043EF9C1"]
 			hide: true
-			optional: true
 			id: "6DD0A95B22FFF76F"
 			tasks: [{
 				id: "71DFEE043EFD2620"
@@ -569,7 +575,6 @@
 			hide_dependency_lines: true
 			dependencies: ["10CE06C2043EF9C1"]
 			hide: true
-			optional: true
 			id: "48407016D5BA3C69"
 			tasks: [{
 				id: "742F1C5AF3F4E1B4"
@@ -583,7 +588,6 @@
 			hide_dependency_lines: true
 			dependencies: ["10CE06C2043EF9C1"]
 			hide: true
-			optional: true
 			id: "4F333F16ED7F31AB"
 			tasks: [{
 				id: "353D2F68A314284E"
@@ -594,6 +598,7 @@
 		{
 			x: 1.0d
 			y: -4.5d
+			shape: "rsquare"
 			subtitle: "五倍矿产线的核心之一"
 			description: ["完成此任务和「铀黄饼」后开启研究：原子时代"]
 			dependencies: ["2B97B1DE0AC25777"]
@@ -616,6 +621,7 @@
 				"10A9E9394A3ECBC4"
 			]
 			hide: true
+			size: 1.25d
 			id: "3F97F557CF8A86C6"
 			tasks: [{
 				id: "292D3BCAFB626461"
@@ -673,6 +679,7 @@
 			shape: "rsquare"
 			subtitle: "从合成表上看貌似就是给下界合金套裹了层塑料（"
 			dependencies: ["1954D2015EF79FDA"]
+			hide: true
 			optional: true
 			id: "61B8FCA7B158BF17"
 			tasks: [
@@ -766,6 +773,7 @@
 				"23D201F3C8693444"
 				"037D0B92037F491B"
 			]
+			hide: true
 			id: "1954D2015EF79FDA"
 			tasks: [
 				{
@@ -808,6 +816,7 @@
 			x: 5.5d
 			y: 1.0d
 			dependencies: ["1954D2015EF79FDA"]
+			hide: true
 			id: "6519F0CCD69F5903"
 			tasks: [{
 				id: "0F74107CAFAD80B8"
@@ -871,6 +880,7 @@
 			shape: "rsquare"
 			subtitle: "看起来好像挺好吃，来尝一口？（"
 			dependencies: ["0AD3B19FB30B7171"]
+			hide: true
 			id: "73DD18E31390C999"
 			tasks: [{
 				id: "43023F83B788FA14"
@@ -929,6 +939,7 @@
 			shape: "gear"
 			subtitle: "诞生于反物质的合金"
 			dependencies: ["0B9CB2710E2C8DBC"]
+			hide: true
 			size: 2.0d
 			id: "0E67486615073974"
 			tasks: [{
@@ -1300,8 +1311,8 @@
 		}
 		{
 			title: "蒸汽涡轮"
-			x: 8.0d
-			y: -3.0d
+			x: 6.5d
+			y: -4.5d
 			shape: "rsquare"
 			subtitle: "发电+回水"
 			description: ["产出的能量一定要及时导出"]
@@ -1538,8 +1549,8 @@
 			]
 		}
 		{
-			x: 6.5d
-			y: -4.5d
+			x: 8.0d
+			y: -3.0d
 			subtitle: "这难道要成为切尔诺贝利事件的重演吗"
 			description: ["这是你的最后一次机会"]
 			dependencies: ["037D0B92037F491B"]
@@ -1577,8 +1588,8 @@
 			]
 		}
 		{
-			x: 8.0d
-			y: -4.5d
+			x: 9.5d
+			y: -3.0d
 			dependencies: ["187441AD334DC6B9"]
 			hide: true
 			optional: true
@@ -1598,8 +1609,8 @@
 			}]
 		}
 		{
-			x: 9.5d
-			y: -4.5d
+			x: 11.0d
+			y: -3.0d
 			shape: "circle"
 			subtitle: "最后一次机会"
 			dependencies: ["1CBA0B1D21D2DB87"]

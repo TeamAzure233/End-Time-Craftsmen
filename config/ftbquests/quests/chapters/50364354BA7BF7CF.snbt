@@ -34,9 +34,9 @@
 		}
 		{
 			x: -5.5d
-			y: -8.5d
-			width: 30.0d
-			height: 16.92d
+			y: -8.0d
+			width: 22.5d
+			height: 12.69d
 			rotation: 0.0d
 			image: "edtc:texture/special/edtclogo.png"
 			hover: [ ]
@@ -223,12 +223,13 @@
 						tag: {
 							tic_multipliers: {
 								"tconstruct:mining_speed": 0.75f
+								"tconstruct:attack_damage": 0.9f
 								"tconstruct:durability": 1.0f
 							}
 							tic_stats: {
-								"tconstruct:attack_speed": 1.8975f
+								"tconstruct:attack_speed": 2.277f
 								"tconstruct:mining_speed": 5.8500004f
-								"tconstruct:attack_damage": 9.0f
+								"tconstruct:attack_damage": 8.099999f
 								"tconstruct:harvest_level": 2.0f
 								"tconstruct:durability": 147.75f
 							}

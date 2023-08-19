@@ -185,10 +185,11 @@ onEvent('recipes', event => {
     event.recipes.createMixing('2x #forge:ingots/constantan', ['#forge:ingots/copper','#forge:ingots/nickel']).superheated()
 
     event.recipes.createMixing('create:rose_quartz', ['minecraft:quartz','8x minecraft:redstone']).heated()
-    event.recipes.createMilling(['3x kubejs:crushed_rose_quartz'], ['create:rose_quartz'])
-    event.recipes.createCrushing(['3x kubejs:crushed_rose_quartz', Item.of('kubejs:crushed_rose_quartz').withChance(0.5)], ['create:rose_quartz'])
+    event.recipes.createMilling(['2x kubejs:crushed_rose_quartz'], ['create:rose_quartz'])
+    event.recipes.createCrushing(['2x kubejs:crushed_rose_quartz', Item.of('kubejs:crushed_rose_quartz').withChance(0.5)], ['create:rose_quartz'])
     event.recipes.createSequencedAssembly([
-        Item.of('2x create:polished_rose_quartz').withChance(100.0),
+        Item.of('create:polished_rose_quartz').withChance(99.0),
+        Item.of('2x kubejs:crushed_rose_quartz').withChance(1.0),
       ], 
       'kubejs:crushed_rose_quartz', 
       [
@@ -305,11 +306,6 @@ onEvent('recipes', event => {
     event.recipes.thermal.smelter('emendatusenigmatica:coke_gem', ['minecraft:charcoal']).energy(1000)
     event.recipes.thermal.smelter('emendatusenigmatica:steel_ingot', ['emendatusenigmatica:coke_gem','minecraft:iron_ingot']).energy(10000)
 
-    event.recipes.thermal.smelter('16x pipez:item_pipe', ['quark:pipe','2x minecraft:dropper','6x create:andesite_alloy']).energy(16000)
-    event.recipes.thermal.smelter('16x pipez:fluid_pipe', ['quark:pipe','2x minecraft:bucket','6x create:andesite_alloy']).energy(16000)
-    event.recipes.thermal.smelter('16x pipez:fluid_pipe', ['quark:pipe','2x minecraft:redstone_block','6x create:andesite_alloy']).energy(16000)
-    event.recipes.thermal.smelter('16x pipez:gas_pipe', ['quark:pipe','2x mekanism:alloy_infused','6x create:andesite_alloy']).energy(16000)
-
     event.recipes.thermal.smelter('emendatusenigmatica:aluminum_ore', ['#forge:stone','8x #forge:dusts/aluminum']).energy(8000)
     event.recipes.thermal.smelter('emendatusenigmatica:silver_ore', ['#forge:stone','8x #forge:dusts/silver']).energy(8000)
     event.recipes.thermal.smelter('emendatusenigmatica:nickel_ore', ['#forge:stone','8x #forge:dusts/nickel']).energy(8000)
@@ -325,7 +321,7 @@ onEvent('recipes', event => {
     event.recipes.thermal.bottler('2x quark:myalite_crystal', ['quark:myalite_crystal', Fluid.of('kubejs:chorus_solution', 50)]).energy(10000)
     event.recipes.thermal.bottler('2x minecraft:dragon_breath', ['minecraft:dragon_breath', Fluid.of('kubejs:chorus_solution', 100)]).energy(10000)
 
-    event.recipes.createMixing(['kubejs:chorus_chrome'], ['#forge:ingots/enderium', Fluid.of('kubejs:chorus_solution', 100)]).superheated()
+    event.recipes.createMixing(['kubejs:chorus_chrome'], ['#forge:ingots/enderium', Fluid.of('kubejs:chorus_solution', 200)]).superheated()
     event.recipes.thermal.crucible(Fluid.of('kubejs:chorus_solution', 1000), 'kubejs:chorus_crystal').energy(500000)
     event.recipes.thermal.crucible(Fluid.of('kubejs:cold_ice', 1000), 'thermal:blizz_rod').energy(200000)
     event.recipes.createMechanicalCrafting('kubejs:chorus_crystal', [
@@ -334,6 +330,23 @@ onEvent('recipes', event => {
         'P',
         'D',
         'H',
+        'P',
+        'M',
+        'S'
+    ], {
+        S: 'minecraft:shulker_shell',
+        M: 'quark:myalite_crystal',
+        P: 'minecraft:popped_chorus_fruit',
+        D: 'kubejs:core_desolate',
+        H: 'kubejs:core_hollow'
+    })
+
+    event.recipes.createMechanicalCrafting('kubejs:chorus_crystal', [
+        'S',
+        'M',
+        'P',
+        'H',
+        'D',
         'P',
         'M',
         'S'

@@ -282,7 +282,7 @@ onEvent('recipes', event => {
               "type": "masterfulmachinery:astral_starlight",
               "perTick": true,
               "data":{
-                  "amount": 300
+                  "amount": 10
               }
             },
             {
@@ -297,7 +297,7 @@ onEvent('recipes', event => {
               "perTick": true,
               "data":{
                   "fluid": "bloodmagic:life_essence_fluid",
-                  "amount": 10
+                  "amount": 50
               }
             },
             {
@@ -982,7 +982,7 @@ onEvent('recipes', event => {
                 "perTick": true,
                 "data":{
                     "fluid": "bloodmagic:life_essence_fluid",
-                    "amount": 10
+                    "amount": 50
                 }
               },
               {

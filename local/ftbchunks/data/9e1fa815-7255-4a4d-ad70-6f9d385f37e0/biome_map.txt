@@ -1,3 +1,5 @@
+#148 biomesoplenty:alps
+#4ED biomesoplenty:alps_foothills
 #556 minecraft:beach
 #47F minecraft:birch_forest
 #0D2 minecraft:birch_forest_hills
@@ -6,6 +8,7 @@
 #3DE minecraft:deep_ocean
 #005 biomesoplenty:gravel_beach
 #79A minecraft:lukewarm_ocean
+#379 minecraft:mountains
 #4F1 minecraft:ocean
 #5A5 biomesoplenty:orchard
 #3DC minecraft:plains
@@ -13,3 +16,5 @@
 #5FF minecraft:river
 #67B minecraft:savanna
 #706 minecraft:savanna_plateau
+#68C biomesoplenty:snowy_coniferous_forest
+#4C8 biomesoplenty:snowy_fir_clearing

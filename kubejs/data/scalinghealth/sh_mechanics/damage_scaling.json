@@ -1,6 +1,6 @@
 {
   "difficultyWeight": 1,
-  "genericScale": 0.2,
+  "genericScale": 0.001,
   "affectHostiles": true,
   "affectPeacefuls": false,
   "modBlacklist": [],
@@ -8,7 +8,7 @@
   "damageScales": [
     {
       "damageTypes" : ["mob_attack", "magic", "indirect_magic", "#is_projectile", "wither", "wither_skull", "#is_explosion"],
-      "scale" : 0.2
+      "scale" : 0.02
     }
   ]
 }

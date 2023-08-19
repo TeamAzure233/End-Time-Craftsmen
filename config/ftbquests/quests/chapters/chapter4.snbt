@@ -72,6 +72,7 @@
 			y: 0.0d
 			subtitle: "花~药~台"
 			dependencies: ["71F3E025A6D94E4B"]
+			hide: true
 			id: "0BCFE4BF432A14F7"
 			tasks: [{
 				id: "339B283857F2DAE5"
@@ -172,7 +173,9 @@
 			}
 			x: 0.5d
 			y: 0.0d
+			shape: "hexagon"
 			dependencies: ["4EDE3C1D68F394FE"]
+			size: 1.05d
 			id: "0C6D0A8ABFA01E83"
 			tasks: [
 				{
@@ -237,6 +240,7 @@
 			subtitle: "好能吃"
 			description: ["请使用多种食物交替投喂"]
 			dependencies: ["4A217741F5A31CEC"]
+			hide: true
 			optional: true
 			id: "6BB4D11F100082A0"
 			tasks: [{
@@ -300,6 +304,7 @@
 			y: 0.0d
 			shape: "rsquare"
 			dependencies: ["0C6D0A8ABFA01E83"]
+			hide: true
 			id: "4A217741F5A31CEC"
 			tasks: [{
 				id: "5B22713AD0C72BC4"
@@ -336,8 +341,10 @@
 			title: "制作泰拉钢"
 			x: 3.5d
 			y: 0.0d
+			shape: "rsquare"
 			subtitle: "半池魔力"
 			dependencies: ["4A217741F5A31CEC"]
+			hide: true
 			id: "5D1BA2AF09C9B421"
 			tasks: [
 				{
@@ -385,11 +392,8 @@
 		{
 			title: "战盖亚推荐"
 			x: 6.5d
-			y: -1.0d
-			dependencies: [
-				"236C944A61DBCDB1"
-				"5D1BA2AF09C9B421"
-			]
+			y: -1.5d
+			dependencies: ["236C944A61DBCDB1"]
 			hide: true
 			optional: true
 			id: "07863801216FCE66"
@@ -591,6 +595,7 @@
 				"尽量佩戴精巧饰品的气球，躲避地上的盖亚陷阱"
 			]
 			dependencies: ["48A5978A6E39885B"]
+			hide: true
 			size: 1.5d
 			id: "4592F792A915D8F1"
 			tasks: [
@@ -653,6 +658,7 @@
 			shape: "rsquare"
 			subtitle: "击杀盖亚II"
 			dependencies: ["4592F792A915D8F1"]
+			hide: true
 			id: "08A90E07FB5FC67D"
 			tasks: [{
 				id: "17694405EAD77FFB"
@@ -783,6 +789,7 @@
 			y: -1.5d
 			subtitle: "四种基础元素和魔力"
 			dependencies: ["4A217741F5A31CEC"]
+			hide: true
 			optional: true
 			id: "357B9AECA5832A75"
 			tasks: [
@@ -877,6 +884,7 @@
 			y: -3.0d
 			subtitle: "四季"
 			dependencies: ["357B9AECA5832A75"]
+			hide: true
 			dependency_requirement: "all_started"
 			optional: true
 			id: "2A1B07F8B1EF775C"
@@ -962,6 +970,7 @@
 			y: -4.5d
 			subtitle: "七宗罪"
 			dependencies: ["2A1B07F8B1EF775C"]
+			hide: true
 			dependency_requirement: "all_started"
 			optional: true
 			id: "16177E73765D982E"
@@ -1070,6 +1079,7 @@
 			y: 1.0d
 			subtitle: "有点挑食"
 			dependencies: ["4A217741F5A31CEC"]
+			hide: true
 			optional: true
 			id: "49E1C317AF2D6365"
 			tasks: [{
@@ -1097,6 +1107,7 @@
 			y: -1.0d
 			subtitle: "合成任意功能花"
 			dependencies: ["4A217741F5A31CEC"]
+			hide: true
 			optional: true
 			id: "3D90E3ADC22A83BB"
 			tasks: [{
@@ -1181,6 +1192,7 @@
 			y: -1.0d
 			subtitle: "制作所有产能花"
 			dependencies: ["4A217741F5A31CEC"]
+			hide: true
 			optional: true
 			id: "7C9C46069FD847A0"
 			tasks: [
@@ -1329,6 +1341,7 @@
 			title: "制作精灵钢"
 			x: 6.5d
 			y: 0.0d
+			shape: "rsquare"
 			subtitle: "两池魔力"
 			dependencies: ["236C944A61DBCDB1"]
 			id: "48A5978A6E39885B"
@@ -1399,6 +1412,7 @@
 			x: 3.0d
 			y: 1.0d
 			dependencies: ["4A217741F5A31CEC"]
+			hide: true
 			id: "172E003D439F3033"
 			tasks: [
 				{
@@ -1433,6 +1447,7 @@
 				"08A90E07FB5FC67D"
 				"3DBEB4D613061A5B"
 			]
+			hide: true
 			id: "44AB4CD268AADB64"
 			tasks: [{
 				id: "5A1BF0C42FE66ABD"
@@ -1465,6 +1480,7 @@
 			y: -6.0d
 			subtitle: "九族"
 			dependencies: ["16177E73765D982E"]
+			hide: true
 			optional: true
 			id: "5DAC597F7ADAE6C4"
 			tasks: [
@@ -1608,6 +1624,7 @@
 				"172E003D439F3033"
 				"44AB4CD268AADB64"
 			]
+			hide: true
 			id: "3C8E4360083F32A3"
 			tasks: [{
 				id: "2E9B2CC06DAA5FF1"
@@ -1639,6 +1656,7 @@
 			y: 5.0d
 			subtitle: "喝下之后跳进精灵传送门试试？"
 			dependencies: ["3C8E4360083F32A3"]
+			hide: true
 			id: "0CB5D88E2E8D6139"
 			tasks: [{
 				id: "42A946DF3067B04E"
@@ -1665,7 +1683,8 @@
 			shape: "hexagon"
 			subtitle: "进入亚尔夫海姆维度"
 			dependencies: ["0CB5D88E2E8D6139"]
-			size: 1.5d
+			hide: true
+			size: 1.25d
 			id: "1C8606FA3F310C38"
 			tasks: [{
 				id: "1FB4B8A4A5DB1C31"
@@ -1682,7 +1701,7 @@
 					id: "014E841FAD445EA5"
 					type: "custom"
 					title: "阶段"
-					auto: "invisible"
+					auto: "enabled"
 				}
 				{
 					id: "14A97F155822BBB6"
@@ -1703,6 +1722,7 @@
 			shape: "gear"
 			subtitle: "右键获得游戏阶段“mahoutsukai_all”"
 			dependencies: ["4592F792A915D8F1"]
+			hide: true
 			size: 1.5d
 			id: "5FE1FFA92EE06E6D"
 			tasks: [{
@@ -1772,10 +1792,11 @@
 		}
 		{
 			title: "额外的知识，从击败大地守护者开始……"
-			x: 12.5d
-			y: 0.0d
+			x: 9.5d
+			y: 1.5d
 			shape: "rsquare"
 			dependencies: ["4592F792A915D8F1"]
+			hide: true
 			id: "5C1E19EEFDF0C818"
 			tasks: [{
 				id: "5D840B2C7F6E297E"
@@ -1823,14 +1844,13 @@
 			]
 		}
 		{
-			x: 14.0d
-			y: 1.5d
+			x: 13.5d
+			y: 2.5d
 			description: [
 				"只建议穿着银翼套时佩戴"
 				"进一步增加容错率"
 			]
 			dependencies: ["29CEABFD72BEC153"]
-			hide: true
 			id: "48B9008745F51CF1"
 			tasks: [{
 				id: "3BCE44D2A44A5086"
@@ -1943,8 +1963,8 @@
 		}
 		{
 			title: "哥布林杀手套"
-			x: 15.5d
-			y: 1.5d
+			x: 9.5d
+			y: 3.5d
 			description: [
 				"加血量上限幅度十分高"
 				"并不是很好用（当然如果您有十分强力的生命回复手段也是可以用的）"
@@ -2016,7 +2036,7 @@
 		}
 		{
 			x: 12.5d
-			y: 3.0d
+			y: 3.5d
 			description: [
 				"召唤一次本我消耗200000自然之息"
 				"前置完成一个即可"
@@ -2051,13 +2071,12 @@
 		}
 		{
 			title: "推荐饰品"
-			x: 11.0d
-			y: 1.5d
+			x: 11.5d
+			y: 2.5d
 			dependencies: [
 				"29CEABFD72BEC153"
 				"4696EB756080DE38"
 			]
-			hide: true
 			dependency_requirement: "one_started"
 			id: "5518B9989F58BFC4"
 			tasks: [
@@ -2100,8 +2119,8 @@
 		}
 		{
 			title: "女仆套"
-			x: 9.5d
-			y: 1.5d
+			x: 10.5d
+			y: 2.5d
 			description: [
 				"我的推荐"
 				"要整整一组盖亚魂"
@@ -2234,18 +2253,28 @@
 			icon: "extrabotany:powerframe"
 			x: 12.5d
 			y: 5.0d
+			shape: "hexagon"
 			description: [
 				"魔力的加护约提供 50 mana/s的被动产魔。"
 				"再生的加护与泰拉套生命再生基本无异（无法在非满饱食度加提供加成或自动回复hp）。"
 				"森罗的加护与昴星团战斗女仆套装效果（自动祛除debuff）无异 。"
 			]
 			dependencies: ["4B1A0E950C5D66D3"]
+			hide: true
+			size: 1.25d
 			id: "16BFB4C4F49BD8D1"
-			tasks: [{
-				id: "717E17544843BC9A"
-				type: "checkmark"
-				title: "给宝珠充能"
-			}]
+			tasks: [
+				{
+					id: "717E17544843BC9A"
+					type: "checkmark"
+					title: "给宝珠充能"
+				}
+				{
+					id: "194B12A14FA3D3D1"
+					type: "item"
+					item: "extrabotany:powerframe"
+				}
+			]
 			rewards: [{
 				id: "026E3122541035DE"
 				type: "item"
@@ -2269,7 +2298,7 @@
 				"16BFB4C4F49BD8D1"
 				"1C8606FA3F310C38"
 			]
-			dependency_requirement: "one_completed"
+			hide: true
 			size: 1.8d
 			id: "023BF89CB3FE66CE"
 			tasks: [
@@ -2963,11 +2992,11 @@
 					}
 				}
 			}
-			x: 8.0d
-			y: -3.0d
+			x: 6.5d
+			y: -3.5d
 			shape: "diamond"
 			subtitle: "再次观测神殿中的聚能水晶并进行思索"
-			description: ["在植物魔法（染料科技（x）这里取得突破之后，你相信了魔法的存在。在翻看日记时，你又想起了之前碰到的那个水晶，于是你决定再去观察一次，并对其进行研究"]
+			description: ["在植物魔法这里取得突破之后，你相信了魔法的存在。在翻看日记时，你又想起了之前碰到的那个水晶，于是你决定再去观察一次，并对其进行研究。"]
 			dependencies: [
 				"33BCC7DA3F384759"
 				"42BD2E975E511027"
@@ -3055,8 +3084,8 @@
 			]
 		}
 		{
-			x: 9.5d
-			y: -4.0d
+			x: 8.0d
+			y: -4.5d
 			subtitle: "多读书"
 			dependencies: ["2CEF894C5EB27447"]
 			hide: true
@@ -3079,8 +3108,8 @@
 			}]
 		}
 		{
-			x: 9.5d
-			y: -2.0d
+			x: 8.0d
+			y: -2.5d
 			dependencies: ["2CEF894C5EB27447"]
 			hide: true
 			id: "66110567E042FE45"
@@ -3110,8 +3139,8 @@
 		{
 			title: "星辉合成"
 			icon: "astralsorcery:altar_discovery"
-			x: 11.0d
-			y: -3.0d
+			x: 9.0d
+			y: -3.5d
 			shape: "rsquare"
 			subtitle: "聚星座之力，合夜空之魔"
 			description: [
@@ -3154,8 +3183,8 @@
 		}
 		{
 			title: "观星者"
-			x: 12.0d
-			y: -4.0d
+			x: 10.0d
+			y: -4.5d
 			subtitle: "制作望远镜"
 			dependencies: ["48DBEDCF84B434D8"]
 			hide: true
@@ -3178,8 +3207,8 @@
 			}]
 		}
 		{
-			x: 13.0d
-			y: -3.0d
+			x: 10.5d
+			y: -3.5d
 			subtitle: "在共振星杖的引导下找到水晶石吧"
 			description: ["在晚上手持星杖，从显示出的光柱向下挖"]
 			dependencies: ["48DBEDCF84B434D8"]
@@ -3236,8 +3265,8 @@
 			]
 		}
 		{
-			x: 14.5d
-			y: -3.0d
+			x: 12.0d
+			y: -3.5d
 			subtitle: "聚宝盆"
 			dependencies: ["57AB65079567CAEF"]
 			id: "4C31AC328A2DAA24"
@@ -3268,8 +3297,8 @@
 		}
 		{
 			title: "制取星能液"
-			x: 16.0d
-			y: -3.0d
+			x: 13.5d
+			y: -3.5d
 			subtitle: "把海蓝宝石或者水晶石放进聚星缸里"
 			dependencies: ["4C31AC328A2DAA24"]
 			id: "6644CFC04A973A8B"
@@ -3298,8 +3327,8 @@
 			]
 		}
 		{
-			x: 16.0d
-			y: -1.5d
+			x: 13.5d
+			y: -2.0d
 			dependencies: ["6644CFC04A973A8B"]
 			id: "7A53151F687F0C52"
 			tasks: [
@@ -3346,8 +3375,8 @@
 			]
 		}
 		{
-			x: 17.5d
-			y: -1.5d
+			x: 15.0d
+			y: -2.0d
 			subtitle: "把原木扔进星能液里"
 			dependencies: ["6644CFC04A973A8B"]
 			id: "40977337DA70E6A1"
@@ -3370,8 +3399,8 @@
 		}
 		{
 			title: "星辉祭坛"
-			x: 17.5d
-			y: -3.0d
+			x: 15.0d
+			y: -3.5d
 			shape: "rsquare"
 			subtitle: "升级完成！"
 			dependencies: ["6644CFC04A973A8B"]
@@ -3418,10 +3447,11 @@
 			]
 		}
 		{
-			x: 17.5d
-			y: -4.5d
+			x: 15.0d
+			y: -5.0d
 			subtitle: "望远镜升级版"
 			dependencies: ["0464489347CE31E4"]
+			hide: true
 			id: "466E47F0716D2583"
 			tasks: [{
 				id: "15D3645BD564CCDE"
@@ -3442,14 +3472,13 @@
 		}
 		{
 			title: "水晶石制成的凸透镜对星光的会聚作用"
-			x: 19.0d
-			y: -3.0d
+			x: 16.5d
+			y: -3.5d
 			subtitle: "制作水晶透镜"
 			dependencies: [
 				"0464489347CE31E4"
 				"40977337DA70E6A1"
 			]
-			hide: true
 			id: "1D81326312BC880C"
 			tasks: [
 				{
@@ -3498,10 +3527,11 @@
 		}
 		{
 			title: "星辉金属"
-			x: 20.5d
-			y: -3.0d
+			x: 16.5d
+			y: -2.0d
 			shape: "diamond"
 			dependencies: ["1D81326312BC880C"]
+			hide: true
 			size: 1.25d
 			id: "4A7FC365C9F2AAA0"
 			tasks: [
@@ -3536,8 +3566,8 @@
 			]
 		}
 		{
-			x: 20.5d
-			y: -4.5d
+			x: 16.5d
+			y: -0.5d
 			shape: "rsquare"
 			subtitle: "星宿之力"
 			description: ["这祭坛搭建真烦"]
@@ -3570,9 +3600,11 @@
 		}
 		{
 			title: "个体共鸣"
-			x: 20.5d
-			y: -6.0d
+			x: 16.5d
+			y: 1.0d
+			subtitle: "Daisuke！（挡光"
 			dependencies: ["189E7FA81E0DFAAA"]
+			secret: true
 			id: "323CC20406FB5175"
 			tasks: [{
 				id: "14883BE5F3A6B354"
@@ -3593,8 +3625,8 @@
 			}]
 		}
 		{
-			x: 22.0d
-			y: -4.5d
+			x: 18.0d
+			y: -0.5d
 			description: ["水晶石：Daisuke（挡光"]
 			dependencies: ["189E7FA81E0DFAAA"]
 			hide_text_until_complete: true
@@ -3629,8 +3661,8 @@
 			}]
 		}
 		{
-			x: 22.0d
-			y: -3.0d
+			x: 18.0d
+			y: -2.0d
 			subtitle: "把要处理的东西扔到地上之后拿着它左键"
 			dependencies: ["4A7FC365C9F2AAA0"]
 			hide: true
@@ -3659,8 +3691,8 @@
 			}]
 		}
 		{
-			x: 23.5d
-			y: -4.5d
+			x: 19.5d
+			y: -3.5d
 			subtitle: "建议配合鞘翅使用"
 			description: ["芜湖起飞"]
 			dependencies: ["19E083B442F65D3D"]
@@ -3690,11 +3722,10 @@
 			}]
 		}
 		{
-			x: 23.5d
-			y: -3.0d
+			x: 19.5d
+			y: -2.0d
 			subtitle: "把星辉锭丢地上之后拿着切削工具左键"
 			dependencies: ["0905A71793563B78"]
-			hide: true
 			id: "19E083B442F65D3D"
 			tasks: [{
 				id: "66EF7B266B460B17"
@@ -3715,8 +3746,8 @@
 		}
 		{
 			title: "建筑用星杖"
-			x: 23.5d
-			y: -1.5d
+			x: 19.5d
+			y: -0.5d
 			subtitle: "比建筑小帮手功能多点"
 			dependencies: ["19E083B442F65D3D"]
 			optional: true
@@ -3775,8 +3806,8 @@
 		}
 		{
 			title: "天辉祭坛"
-			x: 25.0d
-			y: -3.0d
+			x: 21.0d
+			y: -2.0d
 			shape: "rsquare"
 			subtitle: "星痕于天"
 			dependencies: ["19E083B442F65D3D"]
@@ -3823,11 +3854,12 @@
 			]
 		}
 		{
-			x: 26.5d
-			y: -3.0d
+			x: 22.5d
+			y: -2.0d
 			shape: "rsquare"
 			description: ["配合纳星圣杯食用效果更佳"]
 			dependencies: ["1FF27694C8C23707"]
+			hide: true
 			id: "246D843657C6A7F9"
 			tasks: [{
 				id: "14058961BC5BDB49"
@@ -3849,8 +3881,8 @@
 		{
 			title: "五彩祭坛"
 			icon: "astralsorcery:altar_radiance"
-			x: 28.0d
-			y: -3.0d
+			x: 24.0d
+			y: -2.0d
 			shape: "rsquare"
 			subtitle: "看起来好像并不五彩（"
 			dependencies: [
@@ -3906,10 +3938,11 @@
 			]
 		}
 		{
-			x: 29.0d
-			y: -1.5d
+			x: 25.5d
+			y: -2.0d
 			description: ["可以看见朦胧的星座"]
 			dependencies: ["3B4BE96974D51287"]
+			hide: true
 			optional: true
 			id: "1B1C3864A7DA1BA1"
 			tasks: [{
@@ -3930,9 +3963,10 @@
 			}]
 		}
 		{
-			x: 28.0d
-			y: -1.5d
+			x: 25.5d
+			y: -0.5d
 			dependencies: ["3B4BE96974D51287"]
+			hide: true
 			optional: true
 			id: "0FA1264A33349BEA"
 			tasks: [{
@@ -3960,8 +3994,8 @@
 			}]
 		}
 		{
-			x: 29.0d
-			y: 0.0d
+			x: 25.5d
+			y: 1.0d
 			subtitle: "可以禁锢生物"
 			description: ["什么本我传送，拿来吧"]
 			dependencies: ["5362371280CFF216"]
@@ -3985,8 +4019,8 @@
 			}]
 		}
 		{
-			x: 27.0d
-			y: 0.0d
+			x: 24.0d
+			y: 1.0d
 			dependencies: ["0AF71314B452FA40"]
 			optional: true
 			id: "5362371280CFF216"
@@ -4008,11 +4042,12 @@
 			}]
 		}
 		{
-			x: 27.0d
-			y: -1.5d
+			x: 24.0d
+			y: -0.5d
 			subtitle: "星能聚合器的好搭档"
 			description: ["将加速星能聚合器工作速度，主动吸收星能液并为祭坛补充星能液，这将花费更少的星能液"]
 			dependencies: ["3B4BE96974D51287"]
+			hide: true
 			optional: true
 			id: "0AF71314B452FA40"
 			tasks: [{
@@ -4033,8 +4068,8 @@
 			}]
 		}
 		{
-			x: 27.0d
-			y: 1.5d
+			x: 24.0d
+			y: 2.5d
 			subtitle: "可以发射削除射线挖穿地底（雾"
 			description: ["啊其实是拿来挖地下的液体用的"]
 			dependencies: ["5362371280CFF216"]
@@ -4058,11 +4093,14 @@
 			}]
 		}
 		{
-			x: 25.75d
-			y: -4.5d
+			x: 21.849999999999998d
+			y: -3.4499999999999997d
+			shape: "diamond"
 			subtitle: "把水晶石和星尘丢进星能液后等待反应"
 			description: ["也许在星辉矿上种植并在星辉矿与聚能水晶之间建立链接会有奇效"]
 			dependencies: ["19E083B442F65D3D"]
+			hide: true
+			size: 1.15d
 			id: "07A68D99D3F56CCA"
 			tasks: [{
 				id: "782B6FB125D7E637"
@@ -4113,11 +4151,12 @@
 			}]
 		}
 		{
-			x: 25.0d
-			y: -1.5d
+			x: 21.0d
+			y: -0.5d
 			shape: "gear"
 			subtitle: "右键获得游戏阶段“blood_wizard”"
 			dependencies: ["1FF27694C8C23707"]
+			hide: true
 			size: 1.5d
 			id: "127FE1CA85D87A9A"
 			tasks: [{
@@ -4139,8 +4178,9 @@
 		}
 		{
 			title: "兑换璀璨棱镜"
-			x: 29.5d
-			y: -3.0d
+			x: 24.0d
+			y: -3.5d
+			shape: "octagon"
 			description: ["这可能需要一条产线"]
 			dependencies: ["3B4BE96974D51287"]
 			hide: true

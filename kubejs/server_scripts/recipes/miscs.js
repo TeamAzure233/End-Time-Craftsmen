@@ -12,16 +12,16 @@ onEvent('recipes', event => {
 
     event.replaceInput({output: 'tconstruct:efln_ball'}, 'minecraft:flint', 'minecraft:tnt')
 
-    event.shaped('8x pipez:item_pipe', [
+    event.shaped('16x pipez:item_pipe', [
       'AAA',
       'DRD',
       'AAA'
-  ], {
+    ], {
       A: 'create:andesite_alloy',
       R: 'quark:pipe',
       D: 'minecraft:dropper'
     })
-    event.shaped('8x pipez:fluid_pipe', [
+    event.shaped('16x pipez:fluid_pipe', [
           'AAA',
           'BRB',
           'AAA'
@@ -30,16 +30,16 @@ onEvent('recipes', event => {
         R: 'quark:pipe',
         B: 'minecraft:bucket'
     })
-    event.shaped('8x pipez:energy_pipe', [
+    event.shaped('16x pipez:energy_pipe', [
           'AAA',
           'BRB',
           'AAA'
     ], {
         A: 'create:andesite_alloy',
         R: 'quark:pipe',
-        B: 'minecraft:redstone_block'
+        B: 'minecraft:redstone'
     })
-    event.shaped('8x pipez:gas_pipe', [
+    event.shaped('16x pipez:gas_pipe', [
           'AAA',
           'IRI',
           'AAA'
@@ -48,7 +48,7 @@ onEvent('recipes', event => {
         R: 'quark:pipe',
         I: 'mekanism:alloy_infused'
     })
-    event.shaped('16x pipez:universal_pipe', [
+    event.shaped('2x pipez:universal_pipe', [
         'IFE',
         'ARA',
         'IFE'
@@ -57,7 +57,7 @@ onEvent('recipes', event => {
         I: 'pipez:item_pipe',
         F: 'pipez:fluid_pipe',
         E: 'pipez:energy_pipe',
-        R: 'minecraft:redstone_block'
+        R: 'minecraft:redstone'
     })
     event.shaped('8x quark:pipe', [
       'AAA',
@@ -65,8 +65,12 @@ onEvent('recipes', event => {
       'AAA'
     ], {
       A: '#forge:ingots/steel',
-      B: '#forge:storage_blocks/redstone'
+      B: 'minecraft:redstone'
     })
+    event.recipes.thermal.smelter('32x pipez:item_pipe', ['quark:pipe','2x minecraft:dropper','6x create:andesite_alloy']).energy(16000)
+    event.recipes.thermal.smelter('32x pipez:fluid_pipe', ['quark:pipe','2x minecraft:bucket','6x create:andesite_alloy']).energy(16000)
+    event.recipes.thermal.smelter('32x pipez:energy_pipe', ['quark:pipe','2x minecraft:redstone','6x create:andesite_alloy']).energy(16000)
+    event.recipes.thermal.smelter('32x pipez:gas_pipe', ['quark:pipe','2x mekanism:alloy_infused','6x create:andesite_alloy']).energy(16000)
 
     event.shaped('kubejs:hyperspace_time_broom_mk1', [
         '  A',

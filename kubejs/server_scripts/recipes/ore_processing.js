@@ -320,6 +320,8 @@ onEvent('recipes', event => {
             }
     )
 
+    event.recipes.mekanismEnriching(`minecraft:redstone`, `#mekanism:dirty_dusts/redstone`)
+
     let ae = ['fluix','certus_quartz']
     for (let i of ae) {
         event.remove({output: `#forge:dusts/${i}`})

@@ -156,14 +156,17 @@
 			}
 			x: 1.5d
 			y: -0.5d
+			shape: "hexagon"
 			subtitle: "击杀巫妖"
 			description: [
-				"与这个高塔顶端的亡灵法师交手后，你相信了魔法的存在。"
+				"起初，我不相信魔法这种东西的存在。可这个身居高塔顶端的大法师让我相信了魔法的存在。他既可以施放魔法球，也可以召唤分身和仆从。好在，经过几次复生后，我找到了击杀他的方法。"
 				""
 				"解锁新线路：魔法线"
 				"完成此任务与第二章「流明锭」后开启研究：植物魔法"
 			]
 			dependencies: ["643E8A8EB06A7C20"]
+			hide_text_until_complete: true
+			size: 1.25d
 			id: "024ACCD1348D0183"
 			tasks: [{
 				id: "40A1F4567EEC4901"
@@ -383,6 +386,7 @@
 			x: 5.5d
 			y: -2.0d
 			subtitle: "击杀九头蛇"
+			description: ["这玩意近战免疫（实际上是forge36.2.39的Bug被当成特性用了（"]
 			dependencies: ["736D0208A0B55F77"]
 			id: "6C3AC1DC133CEA2D"
 			tasks: [{

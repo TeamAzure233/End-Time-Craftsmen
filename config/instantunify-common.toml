@@ -7,7 +7,7 @@ listMode = "USE_BOTH_LISTS"
 #Preferred Mods
 preferredMods = ["emendatusenigmatica", "minecraft", "create", "immersiveengineering", "mekanism", "thermal", "steampowered", "createaddition"]
 #Blacklisted Mods
-blacklistMods = ["astralsorcery", "appliedenergistics2"]
+blacklistMods = ["astralsorcery", "appliedenergistics2", "miniutilities"]
 #Tag names that should be unified even if they are different
 alternatives = [["aluminum", "aluminium", "bauxite"]]
 

@@ -9,11 +9,11 @@
       "))))*****))))",
       "))+++++++++))",
       " )++,+++,++) ",
-      "  +,+,+,+,+  ",
+      "  +,-,+,-,+  ",
       "  ++,+++,++  ",
       "  ++,+++,++  ",
       "  ++,+++,++  ",
-      "  +,+,,,+,+  ",
+      "  +,-,,,-,+  ",
       " )++,+++,++) ",
       "))+++++++++))",
       "))))     ))))",
@@ -22,75 +22,75 @@
     [
       "             ",
       " +         + ",
-      "  -       -  ",
-      "  .       /  ",
-      "  . 0   0 /  ",
-      "  .       /  ",
-      "  .   C   /  ",
-      "  .       /  ",
-      "  . 0   0 /  ",
-      "  .       /  ",
-      "  -1111111-  ",
+      "  .       .  ",
+      "  /       0  ",
+      "  / 1   1 0  ",
+      "  /       0  ",
+      "  /   C   0  ",
+      "  /       0  ",
+      "  / 1   1 0  ",
+      "  /       0  ",
+      "  .2222222.  ",
       " +         + ",
       "             "
     ],
     [
       "             ",
-      " 2         3 ",
-      "  4       4  ",
-      "             ",
-      "    5   5    ",
+      " 3         4 ",
+      "  5       5  ",
       "             ",
       "             ",
       "             ",
-      "    5   5    ",
       "             ",
-      "  4       4  ",
+      "             ",
+      "             ",
+      "             ",
+      "  5       5  ",
       " 6         7 ",
       "             "
     ],
     [
       "             ",
       "             ",
-      "  4       4  ",
-      "             ",
-      "    8   8    ",
+      "  5       5  ",
       "             ",
       "             ",
       "             ",
-      "    8   8    ",
       "             ",
-      "  4       4  ",
+      "             ",
+      "             ",
+      "             ",
+      "  5       5  ",
       "             ",
       "             "
     ],
     [
       "             ",
       "             ",
-      "  9       :  ",
-      "             ",
-      "    8   8    ",
+      "  8       9  ",
       "             ",
       "             ",
       "             ",
-      "    8   8    ",
       "             ",
-      "  ;       <  ",
+      "             ",
+      "             ",
+      "             ",
+      "  :       ;  ",
       "             ",
       "             "
     ],
     [
       "             ",
       "  **** ****  ",
-      " *=))> >))=* ",
-      " *)  > >  )* ",
-      " *) 5   5 )* ",
+      " *<))= =))<* ",
+      " *)  = =  )* ",
+      " *) 1   1 )* ",
       "             ",
       "             ",
       "             ",
-      " *) 5   5 )* ",
+      " *) 1   1 )* ",
       " *)       )* ",
-      " *=))   ))=* ",
+      " *<))   ))<* ",
       "  ***   ***  ",
       "             "
     ],
@@ -98,13 +98,13 @@
       "             ",
       "             ",
       "             ",
-      "   ?)>*>)?   ",
-      "   )0@*@0)   ",
-      "   >@   @>   ",
-      "   ** A **   ",
-      "   >@   @>   ",
-      "   )0@*@0)   ",
-      "   ?)>*>)?   ",
+      "   >)=*=)>   ",
+      "   )-?*?-)   ",
+      "   =?   ?=   ",
+      "   ** @ **   ",
+      "   =?   ?=   ",
+      "   )-?*?-)   ",
+      "   >)=*=)>   ",
       "             ",
       "             ",
       "             "
@@ -114,11 +114,11 @@
       "             ",
       "             ",
       "             ",
-      "    BDDDB    ",
-      "    D   D    ",
-      "    D   D    ",
-      "    D   D    ",
-      "    BDDDB    ",
+      "    ABBBA    ",
+      "    B   B    ",
+      "    B   B    ",
+      "    B   B    ",
+      "    ABBBA    ",
       "             ",
       "             ",
       "             ",
@@ -127,15 +127,12 @@
   ],
   "legend": {
     "@": {
-      "block": "astralsorcery:marble_engraved"
-    },
-    "A": {
       "block": "extrabotany:powerframe"
     },
-    "B": {
+    "A": {
       "block": "minecraft:sea_lantern"
     },
-    "D": {
+    "B": {
       "block": "astralsorcery:marble_arch"
     },
     ")": {
@@ -151,31 +148,31 @@
       "block": "botania:shimmerrock"
     },
     "-": {
-      "block": "astralsorcery:marble_runed"
+      "block": "endless:neutronium_block"
     },
     ".": {
-      "block": "bloodmagic:bettercapacityrune"
+      "block": "astralsorcery:marble_runed"
     },
     "/": {
-      "block": "bloodmagic:chargingrune"
+      "block": "bloodmagic:bettercapacityrune"
     },
     "0": {
-      "block": "kubejs:antimatter_alloy_block"
+      "block": "bloodmagic:chargingrune"
     },
     "1": {
-      "block": "bloodmagic:accelerationrune"
+      "block": "kubejs:antimatter_alloy_block"
     },
     "2": {
-      "block": "masterfulmachinery:infinite_convergent_altar_item_port_items_output"
+      "block": "bloodmagic:accelerationrune"
     },
     "3": {
-      "block": "masterfulmachinery:infinite_convergent_altar_item_port_items_input"
+      "block": "masterfulmachinery:infinite_convergent_altar_item_port_items_output"
     },
     "4": {
-      "block": "astralsorcery:marble_pillar"
+      "block": "masterfulmachinery:infinite_convergent_altar_item_port_items_input"
     },
     "5": {
-      "block": "endless:neutronium_block"
+      "block": "astralsorcery:marble_pillar"
     },
     "6": {
       "block": "masterfulmachinery:infinite_convergent_altar_rotation_port_create_rotation_input"
@@ -184,28 +181,28 @@
       "block": "masterfulmachinery:infinite_convergent_altar_energy_port_energy_input"
     },
     "8": {
-      "block": "projecte:aeternalis_fuel_block"
-    },
-    "9": {
       "block": "masterfulmachinery:infinite_convergent_altar_fluid_port_fluids_input"
     },
-    ":": {
+    "9": {
       "block": "masterfulmachinery:infinite_convergent_altar_gas_port_mekanism_gas_input"
     },
-    ";": {
+    ":": {
       "block": "masterfulmachinery:infinite_convergent_altar_star_port_astral_starlight_input"
     },
-    "<": {
+    ";": {
       "block": "masterfulmachinery:infinite_convergent_altar_mana_port_botania_mana_input"
     },
-    "=": {
+    "<": {
       "block": "minecraft:beacon"
     },
-    ">": {
+    "=": {
       "block": "astralsorcery:marble_stairs"
     },
-    "?": {
+    ">": {
       "block": "endless:crystal_matrix_block"
+    },
+    "?": {
+      "block": "astralsorcery:marble_engraved"
     }
   }
 }

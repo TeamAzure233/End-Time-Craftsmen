@@ -1,13 +1,13 @@
 
 [General]
 	#Set to true to enable fuzzy spelling zh <=> z
-	enableFZh2z = false
+	enableFZh2z = true
 	#Set to true to enable fuzzy spelling eng <=> en
-	enableFEng2en = false
+	enableFEng2en = true
 	#Set to true to enable fuzzy spelling ch <=> c
-	enableFCh2c = false
+	enableFCh2c = true
 	#Set to true to enable fuzzy spelling ang <=> an
-	enableFAng2an = false
+	enableFAng2an = true
 	#Keyboard for the checker to use
 	#Allowed Values: QUANPIN, DAQIAN, XIAOHE, ZIRANMA
 	enumKeyboard = "QUANPIN"
@@ -18,9 +18,9 @@
 	#Set to false to disable chat message when entering world
 	enableChat = true
 	#Set to true to enable fuzzy spelling ing <=> in
-	enableFIng2in = false
+	enableFIng2in = true
 	#Set to true to enable fuzzy spelling sh <=> s
-	enableFSh2s = false
+	enableFSh2s = true
 
 [Utilities]
 	#List of classes to dump all the functions

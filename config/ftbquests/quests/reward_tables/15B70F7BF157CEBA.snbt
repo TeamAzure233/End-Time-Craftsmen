@@ -11,14 +11,13 @@
 				Count: 1b
 				tag: {
 					tic_multipliers: {
-						"tconstruct:mining_speed": 0.3f
-						"tconstruct:attack_damage": 1.25f
+						"tconstruct:mining_speed": 0.9f
 						"tconstruct:durability": 5.0f
 					}
 					tic_stats: {
-						"tconstruct:attack_speed": 1.43f
-						"tconstruct:mining_speed": 5.5935006f
-						"tconstruct:attack_damage": 51.975f
+						"tconstruct:attack_speed": 1.04f
+						"tconstruct:mining_speed": 16.7805f
+						"tconstruct:attack_damage": 41.58f
 						"tconstruct:harvest_level": 4.0f
 						"tconstruct:durability": 14394.0f
 					}
@@ -192,6 +191,7 @@
 					Damage: 0
 				}
 			}
+			random_bonus: 1
 		}
 		{
 			item: {
@@ -199,14 +199,14 @@
 				Count: 1b
 				tag: {
 					tic_multipliers: {
-						"tconstruct:mining_speed": 0.4f
+						"tconstruct:mining_speed": 0.7f
 						"tconstruct:attack_damage": 1.35f
 						"tconstruct:durability": 4.0f
 					}
 					tic_stats: {
 						"tconstruct:attack_speed": 1.6125f
-						"tconstruct:mining_speed": 18.898f
-						"tconstruct:attack_damage": 59.91975f
+						"tconstruct:mining_speed": 33.0715f
+						"tconstruct:attack_damage": 60.439503f
 						"tconstruct:harvest_level": 4.0f
 						"tconstruct:durability": 11995.2f
 					}
@@ -408,6 +408,7 @@
 					Damage: 0
 				}
 			}
+			random_bonus: 1
 		}
 	]
 }

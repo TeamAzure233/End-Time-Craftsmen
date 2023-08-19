@@ -1,1 +1,5 @@
 minecraft:overworld
+minecraft:the_nether
+twilightforest:twilightforest
+minecraft:the_end
+mythicbotany:alfheim

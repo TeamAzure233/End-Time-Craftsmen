@@ -19,6 +19,11 @@
       "tconstruct:attack_speed": 3.0,
       "tconstruct:mining_speed": 0.75,
       "tconstruct:durability": 0.75
+    },
+    "multipliers": {
+      "tconstruct:attack_damage": 0.75,
+      "tconstruct:mining_speed": 0.5,
+      "tconstruct:durability": 1.0
     }
   },
   "slots": {

@@ -255,4 +255,37 @@ events.listen('recipes', event => {
           ]
       }
   )
+
+    event.custom(
+      {
+          "type": "botanypots:crop",
+          "seed": {
+            "item": "miniutilities:flame_lily_seeds"
+          },
+          "categories":["nether"],
+          "growthTicks": 1200,
+          "growthModifier": 1,
+          "display": {
+            "block": "miniutilities:flame_lily_block",
+          },
+          "results": [
+            {
+              "chance": 1,
+              "output": {
+                "item": "miniutilities:flame_lily"
+              },
+              "minRolls": 1,
+              "maxRolls": 2
+            },
+            {
+              "chance": 0.75,
+              "output": {
+                "item": "miniutilities:flame_lily_seeds"
+              },
+              "minRolls": 1,
+              "maxRolls": 1
+            }
+          ]
+      }
+  )
 })
